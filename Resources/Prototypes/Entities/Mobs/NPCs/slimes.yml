@@ -269,7 +269,6 @@
   description: A geras of a slime - the name is ironic, isn't it?
   parent: BaseMobAdultSlimes
   id: MobSlimesGeras
-  noSpawn: true
   components:
     # they portable...
     - type: HTN
@@ -280,7 +279,7 @@
       size: Huge
     - type: Sprite
       sprite: Mobs/Aliens/slimes.rsi
-      color: "#FFFFFF55"
+    - type: GerasColor
     - type: MeleeWeapon
       attackRate: 2
       damage:
