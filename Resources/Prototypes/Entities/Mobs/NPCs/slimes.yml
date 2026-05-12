@@ -280,7 +280,7 @@
       size: Huge
     - type: Sprite
       sprite: Mobs/Aliens/slimes.rsi
-      color: "#FFFFFF55"
+    - type: GerasColor
     - type: MeleeWeapon
       attackRate: 2
       damage:
