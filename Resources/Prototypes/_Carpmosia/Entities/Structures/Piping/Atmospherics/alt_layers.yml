@@ -166,7 +166,7 @@
       map: [ "enabled", "enum.SubfloorLayers.FirstLayer" ]
   - type: Construction
     node: ventpumpAlt4
-    
+
 # Blimpuf - Start
 # SecureGasVentPump
 - type: entity
@@ -237,7 +237,7 @@
           map: [ "enum.SubfloorLayers.FirstLayer" ]
     - type: Construction
       node: passiveventAlt4
-         
+
 - type: entity
   parent: [GasPipeLayerAlt3, SecureGasDualPortVentPump]
   id: SecureGasDualPortVentPumpAlt3

@@ -333,7 +333,6 @@
             doAfter: 1
           - tool: Welding
             doAfter: 1
-    
     # Carpmosia-start - Atmos Alt Prototypes
   - node: ventpumpAlt1
     entity: SecureGasVentPumpAlt1
@@ -425,7 +424,6 @@
             doAfter: 1
           - tool: Welding
             doAfter: 1
-    
     # Carpmosia-start - Atmos Alt Prototypes
   - node: passiveventAlt1
     entity: SecureGasPassiveVentAlt1

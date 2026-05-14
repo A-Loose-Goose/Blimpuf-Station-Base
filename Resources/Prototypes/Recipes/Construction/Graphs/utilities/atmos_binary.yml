@@ -955,7 +955,7 @@
             doAfter: 1
           - tool: Welding
             doAfter: 1
-    
+
     # Carpmosia-start - Atmos Alt Prototypes
   - node: dualportventpumpAlt1
     entity: SecureGasDualPortVentPumpAlt1
@@ -1029,7 +1029,7 @@
           - tool: Welding
             doAfter: 1
   # Blimpuf - End
-  
+
   - node: radiator
     entity: HeatExchanger
     edges:
