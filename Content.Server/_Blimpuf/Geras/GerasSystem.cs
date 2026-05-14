@@ -40,26 +40,24 @@ public sealed class GerasSystem : SharedGerasSystem
         };
         _doAfter.TryStartDoAfter(doAfter);
     }
-    
     private void OnDoAfter(EntityUid uid, GerasComponent component, GerasAbilityDoAfterEvent args)
     {
         // Check if the event was cancelled or interrupted (e.g., moved while casting)
         if (args.Cancelled || args.Handled)
             return;
-        
+
         var ent = _polymorphSystem.PolymorphEntity(uid, component.GerasPolymorphId);
 
         if (!ent.HasValue)
             return;
-        
+
         if (!EntityManager.TryGetComponent<HumanoidAppearanceComponent>(uid, out var appearance))
             return;
-        
+
         var gerasColorComponent = EntityManager.EnsureComponent<GerasColorComponent>(ent.Value);
         gerasColorComponent.Color = appearance.SkinColor;
-        Dirty(ent.Value, gerasColorComponent); 
-        
-        
+        Dirty(ent.Value, gerasColorComponent);
+
         _popup.PopupEntity(Loc.GetString("geras-popup-morph-message-others", ("entity", ent.Value)), ent.Value, Filter.PvsExcept(ent.Value), true);
         _popup.PopupEntity(Loc.GetString("geras-popup-morph-message-user"), ent.Value, ent.Value);
 

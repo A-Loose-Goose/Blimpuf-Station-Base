@@ -766,8 +766,8 @@
       state: lights
       shader: unshaded
 
-  # Blimpuf - Start
-  #SecureGasVent
+# Blimpuf - Start
+#SecureGasVent
 - type: entity
   parent: [ GasPipeLayerAlt1, SecureGasVentPump ]
   id: SecureGasVentPumpAlt1

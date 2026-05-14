@@ -11,7 +11,6 @@ public sealed class ClientGerasSystem : EntitySystem
         base.Initialize();
         SubscribeLocalEvent<GerasColorComponent, AfterAutoHandleStateEvent>(OnUpdateColor);
     }
-    
     private void OnUpdateColor(EntityUid uid, GerasColorComponent comp, ref AfterAutoHandleStateEvent args)
     {
         if (TryComp<SpriteComponent>(uid, out var sprite))
@@ -19,5 +18,4 @@ public sealed class ClientGerasSystem : EntitySystem
             _sprite.LayerSetColor(uid, 0, comp.Color);
         }
     }
-    
 }
