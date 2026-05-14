@@ -148,9 +148,6 @@
   - type: ShowThirstIcons # starlight
   - type: SolutionScanner # starlight
   - type: Wagging # starlight
-  # Blimpuf - Start
-  - type: Geras
-  # Blimpuf - End
 
 - type: entity
   parent: MobHumanDummy
