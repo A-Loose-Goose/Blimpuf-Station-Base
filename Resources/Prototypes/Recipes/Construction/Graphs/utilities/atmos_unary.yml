@@ -315,6 +315,190 @@
       - tool: Welding
         doAfter: 1
   # Carpmosia-end - Atmos Alt Prototypes
+  # Blimpuf - Start
+  - node: ventpump
+    entity: SecureGasVentPump
+    edges:
+      - to: start
+        conditions:
+          - !type:EntityAnchored
+            anchored: false
+        completed:
+          - !type:SpawnPrototype
+            prototype: SheetPlasteel1
+            amount: 2
+          - !type:DeleteEntity
+        steps:
+          - tool: Screwing
+            doAfter: 1
+          - tool: Welding
+            doAfter: 1
+    
+    # Carpmosia-start - Atmos Alt Prototypes
+  - node: ventpumpAlt1
+    entity: SecureGasVentPumpAlt1
+    edges:
+      - to: start
+        conditions:
+          - !type:EntityAnchored
+            anchored: false
+        completed:
+          - !type:SpawnPrototype
+            prototype: SheetPlasteel1
+            amount: 2
+          - !type:DeleteEntity
+        steps:
+          - tool: Screwing
+            doAfter: 1
+          - tool: Welding
+            doAfter: 1
+
+  - node: ventpumpAlt2
+    entity: SecureGasVentPumpAlt2
+    edges:
+      - to: start
+        conditions:
+          - !type:EntityAnchored
+            anchored: false
+        completed:
+          - !type:SpawnPrototype
+            prototype: SheetPlasteel1
+            amount: 2
+          - !type:DeleteEntity
+        steps:
+          - tool: Screwing
+            doAfter: 1
+          - tool: Welding
+            doAfter: 1
+
+  - node: ventpumpAlt3
+    entity: SecureGasVentPumpAlt3
+    edges:
+      - to: start
+        conditions:
+          - !type:EntityAnchored
+            anchored: false
+        completed:
+          - !type:SpawnPrototype
+            prototype: SheetPlasteel1
+            amount: 2
+          - !type:DeleteEntity
+        steps:
+          - tool: Screwing
+            doAfter: 1
+          - tool: Welding
+            doAfter: 1
+
+  - node: ventpumpAlt4
+    entity: SecureGasVentPumpAlt4
+    edges:
+      - to: start
+        conditions:
+          - !type:EntityAnchored
+            anchored: false
+        completed:
+          - !type:SpawnPrototype
+            prototype: SheetPlasteel1
+            amount: 2
+          - !type:DeleteEntity
+        steps:
+          - tool: Screwing
+            doAfter: 1
+          - tool: Welding
+            doAfter: 1
+    # Carpmosia-end - Atmos Alt Prototypes
+
+  - node: passivevent
+    entity: SecureGasPassiveVent
+    edges:
+      - to: start
+        conditions:
+          - !type:EntityAnchored
+            anchored: false
+        completed:
+          - !type:SpawnPrototype
+            prototype: SheetPlasteel1
+            amount: 2
+          - !type:DeleteEntity
+        steps:
+          - tool: Screwing
+            doAfter: 1
+          - tool: Welding
+            doAfter: 1
+    
+    # Carpmosia-start - Atmos Alt Prototypes
+  - node: passiveventAlt1
+    entity: SecureGasPassiveVentAlt1
+    edges:
+      - to: start
+        conditions:
+          - !type:EntityAnchored
+            anchored: false
+        completed:
+          - !type:SpawnPrototype
+            prototype: SheetPlasteel1
+            amount: 2
+          - !type:DeleteEntity
+        steps:
+          - tool: Screwing
+            doAfter: 1
+          - tool: Welding
+            doAfter: 1
+
+  - node: passiveventAlt2
+    entity: SecureGasPassiveVentAlt2
+    edges:
+      - to: start
+        conditions:
+          - !type:EntityAnchored
+            anchored: false
+        completed:
+          - !type:SpawnPrototype
+            prototype: SheetPlasteel1
+            amount: 2
+          - !type:DeleteEntity
+        steps:
+          - tool: Screwing
+            doAfter: 1
+          - tool: Welding
+            doAfter: 1
+
+  - node: passiveventAlt3
+    entity: SecureGasPassiveVentAlt3
+    edges:
+      - to: start
+        conditions:
+          - !type:EntityAnchored
+            anchored: false
+        completed:
+          - !type:SpawnPrototype
+            prototype: SheetPlasteel1
+            amount: 2
+          - !type:DeleteEntity
+        steps:
+          - tool: Screwing
+            doAfter: 1
+          - tool: Welding
+            doAfter: 1
+
+  - node: passiveventAlt4
+    entity: SecureGasPassiveVentAlt4
+    edges:
+      - to: start
+        conditions:
+          - !type:EntityAnchored
+            anchored: false
+        completed:
+          - !type:SpawnPrototype
+            prototype: SheetPlasteel1
+            amount: 2
+          - !type:DeleteEntity
+        steps:
+          - tool: Screwing
+            doAfter: 1
+          - tool: Welding
+            doAfter: 1
+  # Blimpuf - End
 
   - node: ventscrubber
     entity: GasVentScrubber

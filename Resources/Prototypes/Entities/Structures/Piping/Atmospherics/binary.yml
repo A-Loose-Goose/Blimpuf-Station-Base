@@ -770,3 +770,84 @@
     - type: Construction
       graph: GasBinary
       node: bendradiator
+      
+# Blimpuf - Start
+- type: entity
+  parent: SecureGasVentPump
+  id: SecureGasDualPortVentPump
+  name: secure dual-port air vent
+  description: A highly secure vent that gas a valve and a pump attached to it. There are two ports, one is an input for releasing air, the other is an output when siphoning.
+  placement:
+    mode: AlignAtmosPipeLayers # starlight
+  components:
+    - type: SubFloorHide
+      visibleLayers:
+        - enum.SubfloorLayers.FirstLayer
+    - type: Sprite
+      drawdepth: FloorObjects
+      sprite: _Blimpuf/Structures/Piping/Atmospherics/securevent.rsi
+      layers:
+        - sprite: _Carpmosia/Structures/Piping/Atmospherics/pipe.rsi # Carpmosia-edit - 5 pipe layers
+          state: pipeBinaryConnectors
+          map: [ "enum.PipeVisualLayers.Pipe" ]
+        - state: vent_off
+          map: [ "enabled", "enum.SubfloorLayers.FirstLayer" ]
+    # Starlight Start
+    - type: AtmosPipeLayers
+      spriteRsiPaths: {}
+      # Starlight End
+      # Carpmosia-start - Atmos Alt Prototypes
+      alternativePrototypes:
+        Primary: SecureGasDualPortVentPump
+        Secondary: SecureGasDualPortVentPumpAlt1
+        Tertiary: SecureGasDualPortVentPumpAlt2
+        Quaternary: SecureGasDualPortVentPumpAlt3
+        Quinary: SecureGasDualPortVentPumpAlt4
+    # Carpmosia-end - Atmos Alt Prototypes
+    - type: GenericVisualizer
+      visuals:
+        enum.VentPumpVisuals.State:
+          enabled:
+            Off: { state: vent_off }
+            In: { state: vent_in }
+            Out: { state: vent_out }
+            Welded: { state: vent_welded }
+            Lockout: { state: vent_lockout }
+    - type: PipeColorVisuals
+    - type: GasVentPump
+      inlet: inlet
+      outlet: outlet
+      canLink: true
+    - type: DeviceNetwork
+      deviceNetId: Wireless
+      receiveFrequencyId: BasicDevice
+    - type: WirelessNetworkConnection
+      range: 200
+    - type: DeviceLinkSink
+      ports:
+        - Pressurize
+        - Depressurize
+    - type: Construction
+      graph: GasBinary
+      node: dualportventpump
+    - type: NodeContainer
+      nodes:
+        inlet:
+          !type:PipeNode
+          nodeGroupID: Pipe
+          pipeDirection: North
+        outlet:
+          !type:PipeNode
+          nodeGroupID: Pipe
+          pipeDirection: South
+    - type: AmbientSound
+      enabled: true
+    - type: AtmosMonitoringConsoleDevice
+      navMapBlip: GasVentOpening
+    - type: GuideHelp
+      guides:
+        - AirVent
+    # Blimpuf - Start
+    - type: SecuredVent
+    # Blimpuf - End
+# Blimpuf - End

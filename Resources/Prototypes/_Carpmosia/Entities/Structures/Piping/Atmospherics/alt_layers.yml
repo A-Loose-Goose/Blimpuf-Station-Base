@@ -166,6 +166,110 @@
       map: [ "enabled", "enum.SubfloorLayers.FirstLayer" ]
   - type: Construction
     node: ventpumpAlt4
+    
+# Blimpuf - Start
+# SecureGasVentPump
+- type: entity
+  parent: [GasPipeLayerAlt3, SecureGasVentPump]
+  id: SecureGasVentPumpAlt3
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      drawdepth: FloorObjects
+      sprite: _Blimpuf/Structures/Piping/Atmospherics/securevent.rsi
+      layers:
+        - sprite: _Carpmosia/Structures/Piping/Atmospherics/pipe_alt3.rsi
+          state: pipeUnaryConnectors
+          map: [ "enum.PipeVisualLayers.Pipe" ]
+        - state: vent_off
+          map: [ "enabled", "enum.SubfloorLayers.FirstLayer" ]
+    - type: Construction
+      node: ventpumpAlt3
+
+- type: entity
+  parent: [GasPipeLayerAlt4, SecureGasVentPump]
+  id: SecureGasVentPumpAlt4
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      drawdepth: FloorObjects
+      sprite: _Blimpuf/Structures/Piping/Atmospherics/securevent.rsi
+      layers:
+        - sprite: _Carpmosia/Structures/Piping/Atmospherics/pipe_alt4.rsi
+          state: pipeUnaryConnectors
+          map: [ "enum.PipeVisualLayers.Pipe" ]
+        - state: vent_off
+          map: [ "enabled", "enum.SubfloorLayers.FirstLayer" ]
+    - type: Construction
+      node: ventpumpAlt4
+
+#SecureGasPassiveVent
+- type: entity
+  parent: [GasPipeLayerAlt3, SecureGasPassiveVent]
+  id: SecureGasPassiveVentAlt3
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      drawdepth: FloorObjects
+      sprite: _Blimpuf/Structures/Piping/Atmospherics/securevent.rsi
+      layers:
+        - sprite: _Carpmosia/Structures/Piping/Atmospherics/pipe_alt3.rsi
+          state: pipeUnaryConnectors
+          map: [ "enum.PipeVisualLayers.Pipe" ]
+        - state: vent_passive
+          map: [ "enum.SubfloorLayers.FirstLayer" ]
+    - type: Construction
+      node: passiveventAlt3
+
+- type: entity
+  parent: [GasPipeLayerAlt4, SecureGasPassiveVent]
+  id: SecureGasPassiveVentAlt4
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      drawdepth: FloorObjects
+      sprite: _Blimpuf/Structures/Piping/Atmospherics/securevent.rsi
+      layers:
+        - sprite: _Carpmosia/Structures/Piping/Atmospherics/pipe_alt4.rsi
+          state: pipeUnaryConnectors
+          map: [ "enum.PipeVisualLayers.Pipe" ]
+        - state: vent_passive
+          map: [ "enum.SubfloorLayers.FirstLayer" ]
+    - type: Construction
+      node: passiveventAlt4
+         
+- type: entity
+  parent: [GasPipeLayerAlt3, SecureGasDualPortVentPump]
+  id: SecureGasDualPortVentPumpAlt3
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Structures/Piping/Atmospherics/securevent.rsi
+      layers:
+        - sprite: _Carpmosia/Structures/Piping/Atmospherics/pipe_alt3.rsi
+          state: pipeBinaryConnectors
+          map: [ "enum.PipeVisualLayers.Pipe" ]
+        - state: vent_off
+          map: [ "enabled", "enum.SubfloorLayers.FirstLayer" ]
+    - type: Construction
+      node: dualportventpumpAlt3
+
+- type: entity
+  parent: [GasPipeLayerAlt4, SecureGasDualPortVentPump]
+  id: SecureGasDualPortVentPumpAlt4
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Structures/Piping/Atmospherics/securevent.rsi
+      layers:
+        - sprite: _Carpmosia/Structures/Piping/Atmospherics/pipe_alt4.rsi
+          state: pipeBinaryConnectors
+          map: [ "enum.PipeVisualLayers.Pipe" ]
+        - state: vent_off
+          map: [ "enabled", "enum.SubfloorLayers.FirstLayer" ]
+    - type: Construction
+      node: dualportventpumpAlt4
+# Blimpuf - End
 
 # GasPassiveVent
 - type: entity

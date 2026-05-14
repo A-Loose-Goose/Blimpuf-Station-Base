@@ -72,7 +72,80 @@
   - GasPassiveVentAlt2
   - GasPassiveVentAlt3
   - GasPassiveVentAlt4
+# Blimpuf - Start
+- type: construction
+  id: SecureGasVentPumpAlt1
+  hide: true
+  graph: GasUnaryStarlight
+  startNode: start
+  targetNode: ventpumpAlt1
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasVentPump
+    - SecureGasVentPumpAlt1
+    - SecureGasVentPumpAlt2
+    - SecureGasVentPumpAlt3
+    - SecureGasVentPumpAlt4
 
+- type: construction
+  id: SecureGasVentPumpAlt2
+  hide: true
+  graph: GasUnaryStarlight
+  startNode: start
+  targetNode: ventpumpAlt2
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasVentPump
+    - SecureGasVentPumpAlt1
+    - SecureGasVentPumpAlt2
+    - SecureGasVentPumpAlt3
+    - SecureGasVentPumpAlt4
+
+
+- type: construction
+  id: SecureGasPassiveVentAlt1
+  hide: true
+  graph: GasUnaryStarlight
+  startNode: start
+  targetNode: passiveventAlt1
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasPassiveVent
+    - SecureGasPassiveVentAlt1
+    - SecureGasPassiveVentAlt2
+    - SecureGasPassiveVentAlt3
+    - SecureGasPassiveVentAlt4
+
+- type: construction
+  id: SecureGasPassiveVentAlt2
+  hide: true
+  graph: GasUnaryStarlight
+  startNode: start
+  targetNode: passiveventAlt2
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasPassiveVent
+    - SecureGasPassiveVentAlt1
+    - SecureGasPassiveVentAlt2
+    - SecureGasPassiveVentAlt3
+    - SecureGasPassiveVentAlt4
+# Blimpuf - End
 - type: construction
   id: GasVentScrubberAlt1
   hide: true
