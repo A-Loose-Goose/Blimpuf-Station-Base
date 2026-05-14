@@ -35684,25 +35684,4 @@ Entries:
   id: 390901
   time: '2026-03-24T18:02:33.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/3909
-- author: DivineHoBo
-  changes:
-  - message: Added Geras Color.
-    type: Add
-  - message: Added grayscale slime sprites.
-    type: Add
-  - message: Tweaked meta.json to include the grayscale slime sprites.
-    type: Tweak
-  - message: Fixed Typos in folder names.
-    type: Fix
-  id: 401
-  time: '2026-05-13T20:05:48.000000+00:00'
-  url: https://github.com/Blimpuf-Station/Blimpuf-Station/pull/4
-- author: DivineHoBo
-  changes:
-  - message: Added DoAfter for geras ability.
-    type: Add
-  id: 501
-  time: '2026-05-14T06:20:15.000000+00:00'
-  url: https://github.com/Blimpuf-Station/Blimpuf-Station/pull/5
-Order: -1
 
