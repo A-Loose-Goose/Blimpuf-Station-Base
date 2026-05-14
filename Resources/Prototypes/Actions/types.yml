@@ -513,3 +513,20 @@
   - type: Action
     icon: { sprite: Interface/Actions/voice-mask.rsi, state: icon }
     itemIconStyle: BigAction
+
+#Blimpuf - Start
+- type: entity
+  parent: BaseAction
+  id: ActionMorphGeras
+  name: Morph into Geras
+  description:  Morphs you into a Geras - a miniature version of you which allows you to move fast, at the cost of your inventory.
+  components:
+    - type: Action
+      icon: { sprite: Mobs/Aliens/slimes.rsi, state: blue_adult_slime }
+      itemIconStyle: BigAction
+      useDelay: 10 # prevent spam
+      priority: -20
+    - type: InstantAction
+      event: !type:MorphIntoGeras
+
+#Blimpuf - End

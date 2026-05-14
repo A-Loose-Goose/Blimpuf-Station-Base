@@ -197,6 +197,80 @@
         doAfter: 1
       - tool: Welding
         doAfter: 1
+        
+  # Blimpuf - Start
+  - node: ventpumpAlt1
+    entity: SecureGasVentPumpAlt1
+    edges:
+      - to: start
+        conditions:
+          - !type:EntityAnchored
+            anchored: false
+        completed:
+          - !type:SpawnPrototype
+            prototype: SheetPlasteel1
+            amount: 2
+          - !type:DeleteEntity
+        steps:
+          - tool: Screwing
+            doAfter: 1
+          - tool: Welding
+            doAfter: 1
+
+  - node: ventpumpAlt2
+    entity: SecureGasVentPumpAlt2
+    edges:
+      - to: start
+        conditions:
+          - !type:EntityAnchored
+            anchored: false
+        completed:
+          - !type:SpawnPrototype
+            prototype: SheetPlasteel1
+            amount: 2
+          - !type:DeleteEntity
+        steps:
+          - tool: Screwing
+            doAfter: 1
+          - tool: Welding
+            doAfter: 1
+
+  - node: passiveventAlt1
+    entity: SecureGasPassiveVentAlt1
+    edges:
+      - to: start
+        conditions:
+          - !type:EntityAnchored
+            anchored: false
+        completed:
+          - !type:SpawnPrototype
+            prototype: SheetPlasteel1
+            amount: 2
+          - !type:DeleteEntity
+        steps:
+          - tool: Screwing
+            doAfter: 1
+          - tool: Welding
+            doAfter: 1
+
+  - node: passiveventAlt2
+    entity: SecureGasPassiveVentAlt2
+    edges:
+      - to: start
+        conditions:
+          - !type:EntityAnchored
+            anchored: false
+        completed:
+          - !type:SpawnPrototype
+            prototype: SheetPlasteel1
+            amount: 2
+          - !type:DeleteEntity
+        steps:
+          - tool: Screwing
+            doAfter: 1
+          - tool: Welding
+            doAfter: 1
+  # Blimpuf - End
 
   - node: ventscrubberAlt1
     entity: GasVentScrubberAlt1

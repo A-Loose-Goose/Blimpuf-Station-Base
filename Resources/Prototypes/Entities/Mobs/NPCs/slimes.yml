@@ -265,3 +265,36 @@
       - MindRoleGhostRoleTeamAntagonist
       raffle:
         settings: short
+
+# Blimpuf - Start
+- type: entity
+  name: geras
+  description: A geras of a slime - the name is ironic, isn't it?
+  parent: BaseMobAdultSlimes
+  id: MobSlimesGeras
+  components:
+    # they portable...
+    - type: HTN
+      rootTask:
+        task: SimpleHostileCompound
+    - type: MultiHandedItem
+    - type: Item
+      size: Huge
+    - type: Sprite
+      sprite: Mobs/Aliens/slimes.rsi
+      layers:
+        - map: [ "enum.DamageStateVisualLayers.Base" ]
+          state: gray_adult_slime
+    - type: GerasColor
+    - type: MeleeWeapon
+      attackRate: 2
+      damage:
+        types:
+          Blunt: 4
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: gray_adult_slime
+        Dead:
+          Base: gray_adult_slime_dead
+# Blimpuf - End

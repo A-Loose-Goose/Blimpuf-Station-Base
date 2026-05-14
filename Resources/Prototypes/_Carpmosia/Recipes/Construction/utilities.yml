@@ -266,7 +266,79 @@
   - GasPassiveVentAlt2
   - GasPassiveVentAlt3
   - GasPassiveVentAlt4
+# Blimpuf - Start
+- type: construction
+  id: SecureGasVentPumpAlt3
+  hide: true
+  graph: GasUnary
+  startNode: start
+  targetNode: ventpumpAlt3
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasVentPump
+    - SecureGasVentPumpAlt1
+    - SecureGasVentPumpAlt2
+    - SecureGasVentPumpAlt3
+    - SecureGasVentPumpAlt4
 
+- type: construction
+  id: SecureGasVentPumpAlt4
+  hide: true
+  graph: GasUnary
+  startNode: start
+  targetNode: ventpumpAlt4
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasVentPump
+    - SecureGasVentPumpAlt1
+    - SecureGasVentPumpAlt2
+    - SecureGasVentPumpAlt3
+    - SecureGasVentPumpAlt4
+
+- type: construction
+  id: SecureGasPassiveVentAlt3
+  hide: true
+  graph: GasUnary
+  startNode: start
+  targetNode: passiveventAlt3
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasPassiveVent
+    - SecureGasPassiveVentAlt1
+    - SecureGasPassiveVentAlt2
+    - SecureGasPassiveVentAlt3
+    - SecureGasPassiveVentAlt4
+
+- type: construction
+  id: SecureGasPassiveVentAlt4
+  hide: true
+  graph: GasUnary
+  startNode: start
+  targetNode: passiveventAlt4
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasPassiveVent
+    - SecureGasPassiveVentAlt1
+    - SecureGasPassiveVentAlt2
+    - SecureGasPassiveVentAlt3
+    - SecureGasPassiveVentAlt4
+# Blimpuf - End
 - type: construction
   id: GasVentScrubberAlt3
   hide: true

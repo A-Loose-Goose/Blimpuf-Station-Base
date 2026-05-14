@@ -553,3 +553,127 @@
     guides:
     - GasCondensing
 
+#Blimpuf - Start
+- type: entity
+  parent: GasVentPump
+  id: SecureGasVentPump
+  name: secure air vent
+  description: A highly secure vent that has a valve and a pump attached to it.
+  placement:
+    mode: AlignAtmosPipeLayers # starlight
+  components:
+    - type: Weldable
+      time: 3
+    # Blimpuf - Start
+    - type: SecuredVent
+    # Blimpuf - End
+    # Starlight start
+    - type: VentCrawlTube
+    - type: VentCrawlEntry
+    - type: ContainerContainer
+      containers:
+        VentCrawlTube: !type:Container
+        # Starlight end
+    - type: ApcPowerReceiver
+    - type: ExtensionCableReceiver
+    - type: DeviceNetwork
+      prefix: device-address-prefix-vent
+    - type: Tag
+      tags:
+        - GasVent
+        - Unstackable
+    - type: SubFloorHide
+      visibleLayers:
+        - enum.SubfloorLayers.FirstLayer
+    - type: Sprite
+      drawdepth: FloorObjects
+      sprite: _Blimpuf/Structures/Piping/Atmospherics/securevent.rsi
+      layers:
+        - sprite: _Carpmosia/Structures/Piping/Atmospherics/pipe.rsi # Carpmosia-edit - 5 pipe layers
+          state: pipeUnaryConnectors
+          map: [ "enum.PipeVisualLayers.Pipe" ]
+        - state: vent_off
+          map: [ "enabled", "enum.SubfloorLayers.FirstLayer" ]
+    # Carpmosia-start - Atmos Alt Prototypes
+    - type: AtmosPipeLayers
+      alternativePrototypes:
+        Primary: SecureGasVentPump
+        Secondary: SecureGasVentPumpAlt1
+        Tertiary: SecureGasVentPumpAlt2
+        Quaternary: SecureGasVentPumpAlt3
+        Quinary: SecureGasVentPumpAlt4
+    # Carpmosia-end - Atmos Alt Prototypes
+    - type: Appearance
+    - type: PipeColorVisuals
+    - type: GenericVisualizer
+      visuals:
+        enum.VentPumpVisuals.State:
+          enabled:
+            Off: { state: vent_off }
+            In: { state: vent_in }
+            Out: { state: vent_out }
+            Welded: { state: vent_welded }
+            Lockout: { state: vent_lockout }
+    - type: GasVentPump
+    - type: Construction
+      graph: GasUnary
+      node: ventpump
+    - type: AmbientSound
+      enabled: true
+      volume: -12
+      range: 5
+      sound:
+        path: /Audio/Ambience/Objects/gas_vent.ogg
+    - type: AtmosMonitoringConsoleDevice
+      navMapBlip: GasVentOpening
+    - type: GuideHelp
+      guides:
+        - AirVent
+        - DeviceMonitoringAndControl
+      
+- type: entity
+  parent: GasPassiveVent
+  id: SecureGasPassiveVent
+  name: secure passive vent
+  description: It's an secure open vent.
+  placement:
+    mode: AlignAtmosPipeLayers # starlight
+  components:
+    # Blimpuf - Start
+    - type: SecuredVent
+    - type: VentCrawlTube
+    - type: VentCrawlEntry
+    # Blimpuf - End
+    - type: SubFloorHide
+      visibleLayers:
+        - enum.SubfloorLayers.FirstLayer
+    - type: Sprite
+      drawdepth: FloorObjects
+      sprite: _Blimpuf/Structures/Piping/Atmospherics/securevent.rsi
+      layers:
+        - sprite: _Carpmosia/Structures/Piping/Atmospherics/pipe.rsi # Carpmosia-edit - 5 pipe layers
+          state: pipeUnaryConnectors
+          map: [ "enum.PipeVisualLayers.Pipe" ]
+        - state: vent_passive
+          map: [ "enum.SubfloorLayers.FirstLayer" ]
+    # Carpmosia-start - Atmos Alt Prototypes
+    - type: AtmosPipeLayers
+      alternativePrototypes:
+        Primary: SecureGasPassiveVent
+        Secondary: SecureGasPassiveVentAlt1
+        Tertiary: SecureGasPassiveVentAlt2
+        Quaternary: SecureGasPassiveVentAlt3
+        Quinary: SecureGasPassiveVentAlt4
+    # Carpmosia-end - Atmos Alt Prototypes
+    - type: Appearance
+    - type: PipeColorVisuals
+    - type: GasPassiveVent
+    - type: Construction
+      graph: GasUnary
+      node: passivevent
+    - type: AtmosMonitoringConsoleDevice
+      navMapBlip: GasVentOpening
+    - type: GuideHelp
+      guides:
+        - PassiveVent
+#Blimpuf - End
