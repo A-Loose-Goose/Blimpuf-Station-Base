@@ -670,7 +670,7 @@
     - type: GasPassiveVent
     - type: Construction
       graph: GasUnary
-      node: securepassivevent
+      node: passivevent
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
     - type: GuideHelp
