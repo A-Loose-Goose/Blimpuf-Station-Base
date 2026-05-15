@@ -85,7 +85,7 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-    - SecureGasVentPump
+    - GasVentPump
     - SecureGasVentPumpAlt1
     - SecureGasVentPumpAlt2
     - SecureGasVentPumpAlt3
@@ -103,7 +103,7 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-    - SecureGasVentPump
+    - GasVentPump
     - SecureGasVentPumpAlt1
     - SecureGasVentPumpAlt2
     - SecureGasVentPumpAlt3
@@ -122,11 +122,11 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-    - SecureGasPassiveVent
-    - SecureGasPassiveVentAlt1
-    - SecureGasPassiveVentAlt2
-    - SecureGasPassiveVentAlt3
-    - SecureGasPassiveVentAlt4
+    - GasPassiveVent
+    - GasPassiveVentAlt1
+    - GasPassiveVentAlt2
+    - GasPassiveVentAlt3
+    - GasPassiveVentAlt4
 
 - type: construction
   id: SecureGasPassiveVentAlt2
@@ -140,11 +140,11 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-    - SecureGasPassiveVent
-    - SecureGasPassiveVentAlt1
-    - SecureGasPassiveVentAlt2
-    - SecureGasPassiveVentAlt3
-    - SecureGasPassiveVentAlt4
+    - GasPassiveVent
+    - GasPassiveVentAlt1
+    - GasPassiveVentAlt2
+    - GasPassiveVentAlt3
+    - GasPassiveVentAlt4
 # Blimpuf - End
 - type: construction
   id: GasVentScrubberAlt1

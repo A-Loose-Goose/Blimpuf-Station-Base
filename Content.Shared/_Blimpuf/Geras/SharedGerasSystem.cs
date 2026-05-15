@@ -12,5 +12,4 @@ public abstract class SharedGerasSystem : EntitySystem
 
 public sealed partial class MorphIntoGeras : InstantActionEvent
 {
-    
 }

@@ -630,7 +630,7 @@
       guides:
         - AirVent
         - DeviceMonitoringAndControl
-      
+
 - type: entity
   parent: GasPassiveVent
   id: SecureGasPassiveVent

@@ -947,7 +947,7 @@
             anchored: false
         completed:
           - !type:SpawnPrototype
-            prototype: SheetPlasteel1
+            prototype: SheetSteel1
             amount: 2
           - !type:DeleteEntity
         steps:
@@ -955,7 +955,7 @@
             doAfter: 1
           - tool: Welding
             doAfter: 1
-    
+
     # Carpmosia-start - Atmos Alt Prototypes
   - node: dualportventpumpAlt1
     entity: SecureGasDualPortVentPumpAlt1
@@ -966,7 +966,7 @@
             anchored: false
         completed:
           - !type:SpawnPrototype
-            prototype: SheetPlasteel1
+            prototype: SheetSteel1
             amount: 2
           - !type:DeleteEntity
         steps:
@@ -984,7 +984,7 @@
             anchored: false
         completed:
           - !type:SpawnPrototype
-            prototype: SheetPlasteel1
+            prototype: SheetSteel1
             amount: 2
           - !type:DeleteEntity
         steps:
@@ -1002,7 +1002,7 @@
             anchored: false
         completed:
           - !type:SpawnPrototype
-            prototype: SheetPlasteel1
+            prototype: SheetSteel1
             amount: 2
           - !type:DeleteEntity
         steps:
@@ -1020,7 +1020,7 @@
             anchored: false
         completed:
           - !type:SpawnPrototype
-            prototype: SheetPlasteel1
+            prototype: SheetSteel1
             amount: 2
           - !type:DeleteEntity
         steps:
@@ -1029,7 +1029,7 @@
           - tool: Welding
             doAfter: 1
   # Blimpuf - End
-  
+
   - node: radiator
     entity: HeatExchanger
     edges:

@@ -770,7 +770,7 @@
     - type: Construction
       graph: GasBinary
       node: bendradiator
-      
+
 # Blimpuf - Start
 - type: entity
   parent: SecureGasVentPump
