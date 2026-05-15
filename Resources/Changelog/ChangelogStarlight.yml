@@ -3008,5 +3008,16 @@ Entries:
   id: 201
   time: '2026-05-15T05:07:53.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/2
+- author: DivineHoBo
+  changes:
+  - message: access reader and lock component to secure vents.
+    type: Add
+  - message: some lines to check for lockcomponent instead.
+    type: Tweak
+  - message: Unnecessary SecuredVentComponent.
+    type: Remove
+  id: 301
+  time: '2026-05-15T07:13:28.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/3
 Order: -1
 
