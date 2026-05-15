@@ -851,7 +851,7 @@
       enabled: true
       access:
       - - Command # (Or any other specific access group)
-      - - Brig
+      - - Armory
     - type: Lock
       locked: true # Start locked
 # Blimpuf - End
