@@ -847,7 +847,10 @@
     - type: GuideHelp
       guides:
         - AirVent
-    # Blimpuf - Start
-    - type: SecuredVent
-    # Blimpuf - End
+    - type: AccessReader
+      enabled: true
+      access:
+      - - Command # (Or any other specific access group)
+    - type: Lock
+      locked: true # Start locked
 # Blimpuf - End

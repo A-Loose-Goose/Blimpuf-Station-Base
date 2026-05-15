@@ -1,12 +1,12 @@
 using System.Linq;
 using Content.Server.Construction.Completions;
 using Content.Server.Popups;
-using Content.Shared._Blimpuf.SecureVent.Components;
 using Content.Shared.VentCrawl.Tube.Components;
 using Content.Shared.VentCrawl.Components;
 using Content.Shared.Tools.Components;
 using Content.Shared.Destructible;
 using Content.Shared.DoAfter;
+using Content.Shared.Lock;
 using Content.Shared.Movement.Systems;
 using Content.Shared.VentCrawl;
 using Content.Shared.Verbs;
@@ -85,9 +85,9 @@ namespace Content.Server.VentCrawl
                 }
             }
             // Blimpuf - Start
-            if (TryComp<SecuredVentComponent>(uid, out var securedComponent))
+            if (TryComp<LockComponent>(uid, out var lockComponent))
             {
-                if (securedComponent.IsSecuredVent)
+                if (lockComponent.Locked)
                 {
                     _popup.PopupEntity(Loc.GetString("secured-vent-popup-message"), user);
                     return;
