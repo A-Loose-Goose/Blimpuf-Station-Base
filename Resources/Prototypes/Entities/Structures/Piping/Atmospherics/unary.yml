@@ -645,7 +645,6 @@
   placement:
     mode: AlignAtmosPipeLayers # starlight
   components:
-    # Blimpuf - Start
     - type: AccessReader
       enabled: true
       access:
