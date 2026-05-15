@@ -1,8 +1,8 @@
 using System.Linq;
-using Content.Shared._Blimpuf.SecureVent.Components;
 using Content.Shared.Body.Components;
 using Content.Shared.Tools.Components;
 using Content.Shared.Item;
+using Content.Shared.Lock;
 using Content.Shared.Movement.Events;
 using Content.Shared.VentCrawl.Tube.Components;
 using Content.Shared.VentCrawl.Components;
@@ -225,11 +225,11 @@ public sealed class SharedVentCrawlableSystem : EntitySystem
                 if (TryComp<WeldableComponent>(holder.NextTube.Value, out var weldableComponent))
                     welded = weldableComponent.IsWelded;
                 // Blimpuf - Start
-                var secured = false;
-                if (TryComp<SecuredVentComponent>(holder.NextTube.Value, out var securedComponent))
-                    secured = securedComponent.IsSecuredVent;
+                var locked = false;
+                if (TryComp<LockComponent>(holder.NextTube.Value, out var lockComponent))
+                    locked = lockComponent.Locked;
                 // Blimpuf - End
-                if (HasComp<VentCrawlEntryComponent>(holder.NextTube.Value) && !holder.FirstEntry && !welded && !secured)
+                if (HasComp<VentCrawlEntryComponent>(holder.NextTube.Value) && !holder.FirstEntry && !welded && !locked)
                 {
                     var ev = new VentCrawlExitEvent();
                     RaiseLocalEvent(uid, ref ev);

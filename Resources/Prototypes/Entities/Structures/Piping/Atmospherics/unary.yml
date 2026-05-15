@@ -565,7 +565,13 @@
     - type: Weldable
       time: 3
     # Blimpuf - Start
-    - type: SecuredVent
+    - type: AccessReader
+      enabled: true
+      access:
+        - - Command # (Or any other specific access group)
+        - - Brig
+    - type: Lock
+      locked: true # Start locked
     # Blimpuf - End
     # Starlight start
     - type: VentCrawlTube
@@ -640,7 +646,13 @@
     mode: AlignAtmosPipeLayers # starlight
   components:
     # Blimpuf - Start
-    - type: SecuredVent
+    - type: AccessReader
+      enabled: true
+      access:
+        - - Command # (Or any other specific access group)
+        - - Brig
+    - type: Lock
+      locked: true # Start locked
     - type: VentCrawlTube
     - type: VentCrawlEntry
     # Blimpuf - End
