@@ -3019,5 +3019,18 @@ Entries:
   id: 301
   time: '2026-05-15T07:13:28.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/3
+- author: ALooseGoose
+  changes:
+  - message: Traitors and Nukies now use 100TC basepoints
+    type: Tweak
+  - message: Syndicate IDs in the Uplink are now free to buy
+    type: Tweak
+  - message: Thieving gloves are removed, likely permanently, from the Syndicate Uplink
+    type: Remove
+  - message: Borgis are temporarily removed until Syndicate research is made
+    type: Remove
+  id: 401
+  time: '2026-05-15T20:04:21.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/4
 Order: -1
 
