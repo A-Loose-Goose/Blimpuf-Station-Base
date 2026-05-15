@@ -646,13 +646,7 @@
     mode: AlignAtmosPipeLayers # starlight
   components:
     # Blimpuf - Start
-    - type: AccessReader
-      enabled: true
-      access:
-        - - Command # (Or any other specific access group)
-        - - Brig
-    - type: Lock
-      locked: true # Start locked
+    - type: SecuredVent
     - type: VentCrawlTube
     - type: VentCrawlEntry
     # Blimpuf - End
