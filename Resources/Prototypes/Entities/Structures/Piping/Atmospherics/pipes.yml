@@ -518,3 +518,7 @@
     navMapBlip: GasPipeManifold
     showAbsentConnections: false
   - type: AtmosDevice
+  # Blimpuf - Start
+  - type: VentCrawlTube
+  - type: VentCrawlTransit
+  #Blimpuf - End
