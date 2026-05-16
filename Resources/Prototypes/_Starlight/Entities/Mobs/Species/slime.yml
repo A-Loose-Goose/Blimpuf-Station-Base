@@ -15,6 +15,10 @@
   # Starlight-end
   - type: UserInterface
     interfaces:
+      # Blimpuf - Start
+      enum.MagicMirrorUiKey.Key:
+        type: MagicMirrorBoundUserInterface
+      # Blimpuf - End
       enum.StorageUiKey.Key:
         type: StorageBoundUserInterface
       enum.HumanoidMarkingModifierKey.Key:
