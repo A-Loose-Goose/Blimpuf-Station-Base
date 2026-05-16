@@ -8,6 +8,8 @@ public sealed partial class GerasComponent : Component
 {
     [DataField] public ProtoId<PolymorphPrototype> GerasPolymorphId = "SlimeMorphGeras";
     [DataField] public EntProtoId GerasAction = "ActionMorphGeras";
+    [DataField] public EntProtoId HairStyleAction = "ChangeHairStyle";
 
     [DataField] public EntityUid? GerasActionEntity;
+    [DataField] public EntityUid? HairActionEntity;
 }

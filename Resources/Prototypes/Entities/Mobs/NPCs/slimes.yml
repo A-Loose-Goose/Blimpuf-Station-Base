@@ -274,6 +274,7 @@
   id: MobSlimesGeras
   components:
     # they portable...
+    - type: GerasBall
     - type: HTN
       rootTask:
         task: SimpleHostileCompound
