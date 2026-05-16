@@ -3365,5 +3365,14 @@ Entries:
   id: 801
   time: '2026-05-16T19:52:16.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/8
+- author: DivineHoBo
+  changes:
+  - message: Added hair cut ability for slimes.
+    type: Add
+  - message: Fixed slime and geras zombification.
+    type: Fix
+  id: 1001
+  time: '2026-05-16T20:53:10.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/10
 Order: -1
 
