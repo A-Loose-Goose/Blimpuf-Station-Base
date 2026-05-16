@@ -932,8 +932,6 @@
   name: uplink-syndicate-id-card-name
   description: uplink-syndicate-id-card-desc
   productEntity: SyndicateIDCard
-  cost:
-    Telecrystal: 0
   categories:
   - UplinkDeception
 
