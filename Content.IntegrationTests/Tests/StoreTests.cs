@@ -77,7 +77,7 @@ public sealed class StoreTests
             var mind = mindSystem.CreateMind(null);
             mindSystem.TransferTo(mind, human, mind: mind);
 
-            FixedPoint2 originalBalance = 20;
+            FixedPoint2 originalBalance = 100;
             uplinkSystem.AddUplink(human, originalBalance, null, true);
 
             var storeComponent = entManager.GetComponent<StoreComponent>(pda);
