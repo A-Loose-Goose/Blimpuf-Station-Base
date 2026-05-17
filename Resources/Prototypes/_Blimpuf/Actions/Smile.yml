@@ -9,7 +9,7 @@
       useDelay: 5
       itemIconStyle: BigAction
       icon:
-        sprite: Objects/specific/Chemistry/syringe.rsi
+        sprite: Objects/Specific/Chemistry/syringe.rsi
         state: syringe_base0
     - type: InstantAction
       event: !type:SuckUpLiquid
@@ -41,7 +41,7 @@
       useDelay: 5
       itemIconStyle: BigAction
       icon:
-        sprite: Objects/specific/janitorial/spray_bottle.rsi
+        sprite: Objects/Specific/Janitorial/spray_bottle.rsi
         state: cleaner
     - type: InstantAction
       event: !type:SprayLiquid
