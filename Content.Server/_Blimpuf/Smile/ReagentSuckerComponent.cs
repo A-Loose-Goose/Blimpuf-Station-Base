@@ -10,12 +10,11 @@ namespace Content.Server._Blimpuf.Smile;
         [DataField] public string SolutionName = "tank";
         [DataField] public float Radius = 1.0f;
         [DataField] public float SprayDistance = 3.5f;
-        [DataField("spraySound")] public SoundSpecifier SpraySound = new SoundPathSpecifier("/Audio/Effects/spray.ogg");
+        [DataField("spraySound")] public SoundSpecifier SpraySound = new SoundPathSpecifier("/Audio/Weapons/Guns/Gunshots/water_spray.ogg");
         [DataField] public float VaporSpread = 90f;
         [DataField] public FixedPoint2 TransferAmount = 10;
         [DataField] public int VaporAmount = 1;
         [DataField] public float SprayVelocity = 3.5f;
-        [DataField] public EntProtoId SprayedPrototype = "Vapor";
         [DataField] public float PushbackAmount = 5f;
 
         [DataField] public EntProtoId SuckUpLiquid = "ActionLiquidSuck";
