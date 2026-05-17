@@ -1,0 +1,13 @@
+﻿- type: entity
+  id: TeleportationRelay
+  parent: [BaseItem, BaseSyndicateContraband]
+  name: teleportation relay
+  description: Cybersun's finest have spent many years trying to replicate Nanotrasens Bluespace technology, and now they finally have done it. This new device taps into Redspace(TM), which is totally legally distinct from Bluespace, to allow the user to teleport wherever they please in a short distance. Though they couldn't exactly power it easily, so make sure you don't touch the exposed electical wiring. That's probably for the best. Has a pretty long cooldown between uses.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Devices/teleportation-relay.rsi
+    state: icon
+  - type: PolymorphOnUse
+    protoId: CorruptHonkmotherMorph
+  - type: UseDelay
+    delay: 150
