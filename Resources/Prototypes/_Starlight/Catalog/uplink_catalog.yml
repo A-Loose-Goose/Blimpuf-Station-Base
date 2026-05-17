@@ -326,6 +326,7 @@
       state: eyes_night,
     }
   productEntity: CyberEyeNightVision
+  discountCategory: rareDiscounts
   discountDownTo:
     Telecrystal: 10
   cost:
@@ -343,6 +344,7 @@
       state: eyes_thermal,
     }
   productEntity: CyberEyeThermal
+  discountCategory: rareDiscounts
   discountDownTo:
     Telecrystal: 20
   cost:
@@ -395,7 +397,7 @@
   productEntity: HandImplantClaws
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 0
+    Telecrystal: 5
   cost:
     Telecrystal: 10
   categories:
