@@ -1,0 +1,47 @@
+﻿- type: entity
+  parent: BaseAction
+  id: ActionLiquidSuck
+  name: Suck Liquids
+  description: Suck up nearby puddles directly into your internal storage tank.
+  components:
+    - type: Action
+      priority: -20
+      useDelay: 5
+      itemIconStyle: BigAction
+      icon:
+        sprite: Objects/Specific/Chemistry/syringe.rsi
+        state: syringe_base0
+    - type: InstantAction
+      event: !type:SuckUpLiquid
+
+- type: entity
+  parent: BaseAction
+  id: ActionLiquidEmpty
+  name: Empty Liquids
+  description: Empty liquids from your internal storage tank.
+  components:
+    - type: Action
+      priority: -20
+      useDelay: 5
+      itemIconStyle: BigAction
+      icon:
+        sprite: Objects/Tools/bucket.rsi
+        state: icon
+    - type: InstantAction
+      event: !type:EmptyLiquid
+
+- type: entity
+  parent: BaseAction
+  id: ActionLiquidSpray
+  name: Spray Liquids
+  description: Spray liquids from your internal storage tank.
+  components:
+    - type: Action
+      priority: -20
+      useDelay: 5
+      itemIconStyle: BigAction
+      icon:
+        sprite: Objects/Specific/Janitorial/spray_bottle.rsi
+        state: cleaner
+    - type: InstantAction
+      event: !type:SprayLiquid
