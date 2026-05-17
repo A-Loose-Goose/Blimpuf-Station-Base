@@ -74,7 +74,11 @@ public sealed class MagicMirrorSystem : SharedMagicMirrorSystem
 
         var doafterTime = component.SelectSlotTime;
         if (component.Target == message.Actor)
-            doafterTime /= 3;
+        {
+            _humanoid.SetMarkingId(component.Target.Value, message.Category == MagicMirrorCategory.Hair ? Content.Shared.Humanoid.Markings.MarkingCategories.Hair : Content.Shared.Humanoid.Markings.MarkingCategories.FacialHair, message.Slot, message.Marking);
+            UpdateInterface(uid, component.Target.Value, component);
+            return;
+        }
 
         var doAfter = new MagicMirrorSelectDoAfterEvent()
         {
@@ -157,7 +161,12 @@ public sealed class MagicMirrorSystem : SharedMagicMirrorSystem
 
         var doafterTime = component.ChangeSlotTime;
         if (component.Target == message.Actor)
-            doafterTime /= 3;
+        {
+            var category = message.Category == MagicMirrorCategory.Hair ? Content.Shared.Humanoid.Markings.MarkingCategories.Hair : Content.Shared.Humanoid.Markings.MarkingCategories.FacialHair;
+            _humanoid.SetMarkingColor(component.Target.Value, category, message.Slot, message.Colors);
+            _humanoid.SetMarkingGlowing(component.Target.Value, category, message.Slot, message.IsGlowing);
+            return;
+        }
 
         var doAfter = new MagicMirrorChangeColorDoAfterEvent()
         {

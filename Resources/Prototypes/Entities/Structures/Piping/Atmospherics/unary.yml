@@ -572,6 +572,16 @@
         - - Armory
     - type: Lock
       locked: true # Start locked
+    - type: DeviceNetwork
+      prefix: device-address-prefix-vent
+      deviceNetId: Wireless
+      receiveFrequencyId: BasicDevice
+    - type: WirelessNetworkConnection
+      range: 200
+    - type: DeviceLinkSink
+      ports:
+        - Pressurize
+        - Depressurize
     # Blimpuf - End
     # Starlight start
     - type: VentCrawlTube
@@ -582,8 +592,6 @@
         # Starlight end
     - type: ApcPowerReceiver
     - type: ExtensionCableReceiver
-    - type: DeviceNetwork
-      prefix: device-address-prefix-vent
     - type: Tag
       tags:
         - GasVent
@@ -621,6 +629,9 @@
             Welded: { state: vent_welded }
             Lockout: { state: vent_lockout }
     - type: GasVentPump
+      inlet: inlet
+      outlet: outlet
+      canLink: true
     - type: Construction
       graph: GasUnary
       node: ventpump

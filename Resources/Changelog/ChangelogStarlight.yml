@@ -3019,5 +3019,360 @@ Entries:
   id: 301
   time: '2026-05-15T07:13:28.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/3
+- author: ALooseGoose
+  changes:
+  - message: Traitors and Nukies now use 100TC basepoints
+    type: Tweak
+  - message: Syndicate IDs in the Uplink are now free to buy
+    type: Tweak
+  - message: Thieving gloves are removed, likely permanently, from the Syndicate Uplink
+    type: Remove
+  - message: Borgis are temporarily removed until Syndicate research is made
+    type: Remove
+  id: 401
+  time: '2026-05-15T20:04:21.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/4
+- author: Way
+  changes:
+  - message: (Bagel) Fixed various entities, revamped decals & tiles in some spots,
+      slightly more trash in genpop. NTR/BSO Combined room. Evac shuttle now has defibs.
+    type: Fix
+  id: 404982
+  time: '2026-05-15T05:59:55.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4444
+- author: Cvlancer & Ohelig
+  changes:
+  - message: (Kiloton) Added a fully functional nuclear reactor to engineering.
+    type: Add
+  id: 404983
+  time: '2026-05-15T06:58:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4440
+- author: Cvlancer & Ohelig
+  changes:
+  - message: (Kiloton) Added a bluespace harvester to engineering.
+    type: Add
+  id: 404984
+  time: '2026-05-15T06:58:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4440
+- author: Cvlancer & Ohelig
+  changes:
+  - message: (Kiloton) Added a laser tag arena to maints below the new nuclear reactor.(@Ohelig).
+    type: Add
+  id: 404985
+  time: '2026-05-15T06:58:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4440
+- author: Cvlancer & Ohelig
+  changes:
+  - message: (Kiloton) Added a lot of maints east of atsmo to link nuclear reactor
+      with the rest of station.
+    type: Add
+  id: 404986
+  time: '2026-05-15T06:58:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4440
+- author: Cvlancer & Ohelig
+  changes:
+  - message: (Kiloton) Added lawyer and lawyers office.
+    type: Add
+  id: 404987
+  time: '2026-05-15T06:58:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4440
+- author: Cvlancer & Ohelig
+  changes:
+  - message: (Kiloton) Added a windoor to disposals to maybe prevent all the trash
+      flying through the machine before its turned on.
+    type: Add
+  id: 404988
+  time: '2026-05-15T06:58:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4440
+- author: Cvlancer & Ohelig
+  changes:
+  - message: (Kiloton) Added Ipc repair bay to robotics.
+    type: Add
+  id: 404989
+  time: '2026-05-15T06:58:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4440
+- author: Cvlancer & Ohelig
+  changes:
+  - message: (Kiloton) Added drugstore and a third chemist to run it.
+    type: Add
+  id: 404990
+  time: '2026-05-15T06:58:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4440
+- author: Cvlancer & Ohelig
+  changes:
+  - message: (Kiloton) Changed HV wiring around smes bank slightly to better include
+      nuclear reactor.
+    type: Tweak
+  id: 404991
+  time: '2026-05-15T06:58:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4440
+- author: Cvlancer & Ohelig
+  changes:
+  - message: (Kiloton) Waste is now teleported to an alternate dimension.
+    type: Tweak
+  id: 404992
+  time: '2026-05-15T06:58:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4440
+- author: Cvlancer & Ohelig
+  changes:
+  - message: (Kiloton) Moved South Solar's to make more room.
+    type: Tweak
+  id: 404993
+  time: '2026-05-15T06:58:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4440
+- author: Cvlancer & Ohelig
+  changes:
+  - message: (Kiloton) Move CE'S bathroom to above the bedroom.
+    type: Tweak
+  id: 404994
+  time: '2026-05-15T06:58:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4440
+- author: Cvlancer & Ohelig
+  changes:
+  - message: (Kiloton) Moved arcade to laser tag arena.
+    type: Tweak
+  id: 404995
+  time: '2026-05-15T06:58:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4440
+- author: Cvlancer & Ohelig
+  changes:
+  - message: (Kiloton) Made one of the walls of solitary non reinforced so someone
+      can break you out.
+    type: Tweak
+  id: 404996
+  time: '2026-05-15T06:58:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4440
+- author: Cvlancer & Ohelig
+  changes:
+  - message: (Kiloton) Fixed yet another set of APC'S being double sub stationed.
+      (Teg power bank).
+    type: Fix
+  id: 404997
+  time: '2026-05-15T06:58:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4440
+- author: Cvlancer & Ohelig
+  changes:
+  - message: (Kiloton) Fixed tiles under dispensers in maints bar.
+    type: Fix
+  id: 404998
+  time: '2026-05-15T06:58:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4440
+- author: Cvlancer & Ohelig
+  changes:
+  - message: (Kiloton) Fixed xeniobio pipes not being painted.
+    type: Fix
+  id: 404999
+  time: '2026-05-15T06:58:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4440
+- author: Citrea
+  changes:
+  - message: Humans may now have cosmetic gene splicing done to add bunny ears to
+      themselves as a marking.
+    type: Add
+  id: 405000
+  time: '2026-05-15T06:58:08.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4432
+- author: Citrea
+  changes:
+  - message: Cat Ears for humans are no longer a special marking, you will find them
+      in the HeadTop category instead.
+    type: Tweak
+  id: 405001
+  time: '2026-05-15T06:58:08.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4432
+- author: Caws
+  changes:
+  - message: (Fland, Kiloton, Lagan, Manor, Ming, Orwell, Sepultum, Space Mall, Starboard)
+      Salvage teams has been standardized to 1 lead + 4 salvage specialists.
+    type: Tweak
+  id: 405002
+  time: '2026-05-15T06:58:11.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4437
+- author: Caws
+  changes:
+  - message: (Fland, Kiloton, Lagan, Manor, Ming, Orwell, Sepultum, Space Mall, Starboard)
+      Mining teams has been standardized to 4 mining specialists.
+    type: Tweak
+  id: 405003
+  time: '2026-05-15T06:58:11.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4437
+- author: Caws
+  changes:
+  - message: (Other Maps) Salvage teams have been standardized to 1 lead + 3 salvage
+      specialists.
+    type: Tweak
+  id: 405004
+  time: '2026-05-15T06:58:11.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4437
+- author: Caws
+  changes:
+  - message: (Other Maps) Salvage teams have been standardized to 3 mining specialists.
+    type: Tweak
+  id: 405005
+  time: '2026-05-15T06:58:11.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4437
+- author: CrazyPhantom
+  changes:
+  - message: Defibs will no longer randomly stop healing Asphyx Damage.
+    type: Fix
+  id: 405006
+  time: '2026-05-15T09:38:27.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4450
+- author: Caws
+  changes:
+  - message: 'New station beacons have been added for mapping: NTR, BSO, Nuclear Reactor,
+      and Xenobiology.'
+    type: Add
+  id: 405007
+  time: '2026-05-15T11:20:49.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4446
+- author: Sparlight
+  changes:
+  - message: Most antagonist gamerules now allow non-humanoids to be selected.
+    type: Tweak
+  id: 405008
+  time: '2026-05-15T12:03:56.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4419
+- author: CrazyPhantom
+  changes:
+  - message: Escape pods will no longer be stranded in space.
+    type: Fix
+  id: 405009
+  time: '2026-05-15T12:03:58.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4411
+- author: Unknown
+  changes:
+  - message: Added 49 new clothing items between cloaks, jumpsuits and coats.
+    type: Add
+  id: 405010
+  time: '2026-05-15T12:04:00.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4436
+- author: Unknown
+  changes:
+  - message: fixed ntr wig not showing up in the loadout preview and being equipped
+      as outer clothing at round start.
+    type: Fix
+  id: 405011
+  time: '2026-05-15T12:04:00.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4436
+- author: Caws
+  changes:
+  - message: The Central Administrative Division has rolled out a new program to ensure
+      all stations are spelling "NanoTrasen" correctly. Please report any further
+      misspelling (e.g. "Nanotrasen") to your local CAD officer at your earliest convenience.
+    type: Fix
+  id: 405012
+  time: '2026-05-15T12:04:03.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4431
+- author: Scarlet Lightweaver, Teapotterror, Conflee.
+  changes:
+  - message: Added the NTSF headsman axe, revs wheep.
+    type: Add
+  id: 405013
+  time: '2026-05-15T12:04:07.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4424
+- author: Swonki
+  changes:
+  - message: Borgi Sprite.
+    type: Add
+  id: 405014
+  time: '2026-05-15T12:37:10.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4433
+- author: kirb
+  changes:
+  - message: restores some previously removed animal themed trinkets.
+    type: Add
+  id: 405015
+  time: '2026-05-15T12:55:03.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4415
+- author: Swonki
+  changes:
+  - message: Corgi Firesuit+Helmet.
+    type: Add
+  id: 405016
+  time: '2026-05-15T15:52:48.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4453
+- author: Swonki
+  changes:
+  - message: Corgi Head of Security Hardsuit.
+    type: Add
+  id: 405017
+  time: '2026-05-15T15:52:48.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4453
+- author: Swonki
+  changes:
+  - message: Corgi Warden Hardsuit.
+    type: Add
+  id: 405018
+  time: '2026-05-15T15:52:48.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4453
+- author: Rinary
+  changes:
+  - message: Infection anomalies can actually be removed.
+    type: Fix
+  id: 405019
+  time: '2026-05-15T15:52:50.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4452
+- author: Rhetorica
+  changes:
+  - message: Peepoids.
+    type: Add
+  id: 405020
+  time: '2026-05-15T18:25:44.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4455
+- author: Rhetorica
+  changes:
+  - message: Slurpoids.
+    type: Add
+  id: 405021
+  time: '2026-05-15T18:25:44.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4455
+- author: Rhetorica
+  changes:
+  - message: SLIME TIME and SLIME CRIME graffiti.
+    type: Add
+  id: 405022
+  time: '2026-05-15T18:25:44.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4455
+- author: Rhetorica
+  changes:
+  - message: '#RobotGang graffito, for those special times when borgs and IPCs adopt
+      bots as friends.'
+    type: Add
+  id: 405023
+  time: '2026-05-15T18:25:44.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4455
+- author: Rhetorica
+  changes:
+  - message: MERGE NEOMOTH'S PR graffito.
+    type: Add
+  id: 405024
+  time: '2026-05-15T18:25:44.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4455
+- author: Rhetorica
+  changes:
+  - message: 11 aielith dark magic runes as graffiti.
+    type: Add
+  id: 405025
+  time: '2026-05-15T18:25:44.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/4455
+- author: DivineHobo
+  changes:
+  - message: Added commits from main starlight.
+    type: Add
+  - message: Manifold pipes not allowing vent crawling.
+    type: Fix
+  id: 801
+  time: '2026-05-16T19:52:16.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/8
+- author: DivineHoBo
+  changes:
+  - message: Added hair cut ability for slimes.
+    type: Add
+  - message: Fixed slime and geras zombification.
+    type: Fix
+  id: 1001
+  time: '2026-05-16T20:53:10.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/10
 Order: -1
 

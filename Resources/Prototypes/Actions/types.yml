@@ -528,5 +528,17 @@
       priority: -20
     - type: InstantAction
       event: !type:MorphIntoGeras
-
+- type: entity
+  parent: BaseAction
+  id: ChangeHairStyle
+  name: Change Hair Style
+  description:  Allows you to change your Hair style.
+  components:
+    - type: Action
+      icon: { sprite: Objects/Tools/scissors.rsi, state: icon }
+      itemIconStyle: BigAction
+      useDelay: 60 # prevent spam
+      priority: -20
+    - type: InstantAction
+      event: !type:ChangeHairStyle
 #Blimpuf - End
