@@ -24,25 +24,25 @@
 #    - RRCardTerminate
     - RRCardWar
 
-- type: entity
-  parent: BaseGameRule
-  id: RailroadingBrighteye
-  components:
-  - type: StationEvent
-    earliestStart: 1
-  - type: RailroadRule
-    preSpawnDelay: 1
-    delay: 1
-    cards:
-    - RRCardBrighteyeDark
-    - RRCardBrighteyePortalCritical
-    - RRCardBrighteyeTeachALesson
-    - RRCardBrighteyeProtect
-    - RRCardBrighteyeSanctuary
-    - RRCardBrighteyeReturnHome
-    - RRCardBrighteyeImpersonate
-    - RRCardBrighteyeLights
-    - RRCardBrighteyeStealSecureKnowledge
+#- type: entity
+#  parent: BaseGameRule
+#  id: RailroadingBrighteye
+#  components:
+#  - type: StationEvent
+#    earliestStart: 1
+#  - type: RailroadRule
+#    preSpawnDelay: 1
+#    delay: 1
+#    cards:
+#    - RRCardBrighteyeDark
+#    - RRCardBrighteyePortalCritical
+#    - RRCardBrighteyeTeachALesson
+#    - RRCardBrighteyeProtect
+#    - RRCardBrighteyeSanctuary
+#    - RRCardBrighteyeReturnHome
+#    - RRCardBrighteyeImpersonate
+#    - RRCardBrighteyeLights
+#    - RRCardBrighteyeStealSecureKnowledge
 
 # we don't just want a roundstart terminate gibbinator every round, so we make it a randomised event.
 # this also encourages players to engage with card system throughout the shift, not just meta-check for funny criminal/terminate

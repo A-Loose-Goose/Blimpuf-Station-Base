@@ -102,7 +102,7 @@
     randomTeleport: false
   - type: GuideHelp
     guides:
-      - Brighteye
+#      - Brighteye
       - Shadekin
   - type: StaticPrice
     price: 50000

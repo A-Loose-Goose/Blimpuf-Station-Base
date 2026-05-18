@@ -988,39 +988,39 @@
   - SecurityBomber
   - WindbreakerSecurity
 
-# Brighteye
-- type: loadoutGroup
-  id: BrighteyeJumpsuit
-  name: loadout-group-brighteye-jumpsuit
-  loadouts:
-    - BrighteyeTatteredClothes
-    - BrighteyeGladiator
-
-- type: loadoutGroup
-  id: BrighteyeNeck
-  name: Loadout-group-brighteye-neck
-  loadouts:
-    - BrighteyeTatteredHood
-    - BrighteyeMantle
-    - BrighteyeOldMantle
-    - BrighteyeGoliathCloak
-    - BrighteyeCloakVoid
-
-- type: loadoutGroup
-  id: BrighteyeShoes
-  name: loadout-group-civilian-shoes
-  minLimit: 0
-  defaultSelected: 1
-  loadouts:
-    - ClothWrapShoe
-    - BlackShoes
-
-- type: loadoutGroup
-  id: BrighteyeGloves
-  minLimit: 0
-  name: loadout-group-brighteye-gloves
-  loadouts:
-    - ClothWrapGlove
+## Brighteye
+#- type: loadoutGroup
+#  id: BrighteyeJumpsuit
+#  name: loadout-group-brighteye-jumpsuit
+#  loadouts:
+#    - BrighteyeTatteredClothes
+#    - BrighteyeGladiator
+#
+#- type: loadoutGroup
+#  id: BrighteyeNeck
+#  name: Loadout-group-brighteye-neck
+#  loadouts:
+#    - BrighteyeTatteredHood
+#    - BrighteyeMantle
+#    - BrighteyeOldMantle
+#    - BrighteyeGoliathCloak
+#    - BrighteyeCloakVoid
+#
+#- type: loadoutGroup
+#  id: BrighteyeShoes
+#  name: loadout-group-civilian-shoes
+#  minLimit: 0
+#  defaultSelected: 1
+#  loadouts:
+#    - ClothWrapShoe
+#    - BlackShoes
+#
+#- type: loadoutGroup
+#  id: BrighteyeGloves
+#  minLimit: 0
+#  name: loadout-group-brighteye-gloves
+#  loadouts:
+#    - ClothWrapGlove
 
 - type: loadoutGroup
   id: NanotrasenCareerTrainerJumpsuit

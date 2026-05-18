@@ -4461,28 +4461,28 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 6.5,-5.5
       parent: 2
-- proto: SpawnPointBrighteye
-  entities:
-  - uid: 745
-    components:
-    - type: Transform
-      pos: -2.5,-2.5
-      parent: 2
-  - uid: 746
-    components:
-    - type: Transform
-      pos: 3.5,-2.5
-      parent: 2
-  - uid: 747
-    components:
-    - type: Transform
-      pos: 3.5,3.5
-      parent: 2
-  - uid: 748
-    components:
-    - type: Transform
-      pos: -2.5,3.5
-      parent: 2
+#- proto: SpawnPointBrighteye
+#  entities:
+#  - uid: 745
+#    components:
+#    - type: Transform
+#      pos: -2.5,-2.5
+#      parent: 2
+#  - uid: 746
+#    components:
+#    - type: Transform
+#      pos: 3.5,-2.5
+#      parent: 2
+#  - uid: 747
+#    components:
+#    - type: Transform
+#      pos: 3.5,3.5
+#      parent: 2
+#  - uid: 748
+#    components:
+#    - type: Transform
+#      pos: -2.5,3.5
+#      parent: 2
 - proto: StoolBar
   entities:
   - uid: 749
