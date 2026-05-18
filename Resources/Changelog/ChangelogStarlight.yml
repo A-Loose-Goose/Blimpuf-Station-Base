@@ -3897,5 +3897,14 @@ Entries:
   id: 1301
   time: '2026-05-17T23:42:26.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/13
+- author: DivineHoBo
+  changes:
+  - message: Added Ability icons.
+    type: Add
+  - message: Changed spit ability.
+    type: Tweak
+  id: 1401
+  time: '2026-05-18T00:14:20.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/14
 Order: -1
 
