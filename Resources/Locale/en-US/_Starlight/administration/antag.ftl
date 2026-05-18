@@ -8,3 +8,6 @@ admin-verb-make-criminal = Make the target a Criminal, and alerts Security and C
 admin-verb-text-make-criminal = Make Criminal
 
 pirate-crew-briefing = You are a crew member of this pirate vessel. Your duty is to your captain and your crew. Follow orders, take what you can, and make it back to the ship alive. A pirate's code is law aboard this ship.
+admin-verb-make-devil = Make the target into a devil.
+
+admin-verb-text-make-devil = Make Devil
