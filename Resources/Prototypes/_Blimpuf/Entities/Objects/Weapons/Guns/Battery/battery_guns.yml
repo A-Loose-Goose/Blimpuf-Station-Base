@@ -1,0 +1,42 @@
+- type: entity
+  name: syndicate tactical laser pistol
+  parent: [BaseWeaponPowerCellSmall, BaseSyndicateContraband]
+  id: WeaponLaserSyndicateTacticalLaser
+  description: A sleek and shiny tactical laser pistol developed by the Syndicate. It has a Plasteel grip with Plastitanium coating. On the side is a blurry image of a Syndicate Operative and a Captain. The Captain is dead and the Syndicate Operative is striking a heroic pose. On closer inspection is that...Crayon...? Whoever made that definitely isn't the next Picasso.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Weapons/Guns/Battery/syndicatelaserpistol.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Item
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
+    storedOffset: 0,-7
+    sprite: _Blimpuf/Objects/Weapons/Guns/Battery/syndicatelaserpistol.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Tag
+    tags:
+    - Sidearm
+    - LaserWeapon
+  - type: BatteryAmmoProvider
+    proto: RedLaserBeam
+    fireCost: 50
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: Magazine
+        startingItem: PowerCellHyper
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        whitelist:
+          tags:
+            - PowerCell
+            - PowerCellSmall
