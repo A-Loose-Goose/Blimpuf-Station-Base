@@ -147,7 +147,7 @@ public sealed class AccessReaderSystem : EntitySystem
 
     private void OnEmagged(EntityUid uid, AccessReaderComponent reader, ref GotEmaggedEvent args)
     {
-        if (_emag.CompareFlag(args.Type, EmagType.Access))
+        if (_emag.CompareFlag(args.Type, EmagType.Access)) // Authentication Disruptor Logic Below
         {
             if (!reader.BreakOnAccessBreaker)
                 return;
@@ -165,7 +165,7 @@ public sealed class AccessReaderSystem : EntitySystem
             Dirty(uid, reader);
         }
 
-        if (_emag.CompareFlag(args.Type, EmagType.Hijack))
+        if (_emag.CompareFlag(args.Type, EmagType.Hijack)) // Access Hijacker Logic Below
         {
             if (!GetMainAccessReader(uid, out var accessReader))
                 return;
@@ -177,6 +177,10 @@ public sealed class AccessReaderSystem : EntitySystem
                     return;
                 }
             }
+
+            accessReader.Value.Comp.AccessListsOriginal ??= accessReader.Value.Comp.AccessLists
+                .Select(x => new HashSet<ProtoId<AccessLevelPrototype>>(x))
+                    .ToList();
 
             accessReader.Value.Comp.AccessLists.Add(
                 new HashSet<ProtoId<AccessLevelPrototype>>
