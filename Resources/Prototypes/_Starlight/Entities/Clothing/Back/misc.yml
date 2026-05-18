@@ -31,6 +31,6 @@
       interfaces:
         enum.ResearchClientUiKey.Key:
           type: ResearchClientBoundUserInterface
-    - type: GuideHelp
-      guides:
+#    - type: GuideHelp
+#      guides:
 #        - Brighteye
