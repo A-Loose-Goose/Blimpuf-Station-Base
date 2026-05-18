@@ -147,23 +147,46 @@ public sealed class AccessReaderSystem : EntitySystem
 
     private void OnEmagged(EntityUid uid, AccessReaderComponent reader, ref GotEmaggedEvent args)
     {
-        if (!_emag.CompareFlag(args.Type, EmagType.Access))
-            return;
+        if (_emag.CompareFlag(args.Type, EmagType.Access))
+        {
+            if (!reader.BreakOnAccessBreaker)
+                return;
 
-        if (!reader.BreakOnAccessBreaker)
-            return;
+            if (!GetMainAccessReader(uid, out var accessReader))
+                return;
 
-        if (!GetMainAccessReader(uid, out var accessReader))
-            return;
+            if (accessReader.Value.Comp.AccessLists.Count < 1)
+                return;
 
-        if (accessReader.Value.Comp.AccessLists.Count < 1)
-            return;
+            args.Repeatable = true;
+            args.Handled = true;
+            accessReader.Value.Comp.AccessLists.Clear();
+            accessReader.Value.Comp.AccessLog.Clear();
+            Dirty(uid, reader);
+        }
 
-        args.Repeatable = true;
-        args.Handled = true;
-        accessReader.Value.Comp.AccessLists.Clear();
-        accessReader.Value.Comp.AccessLog.Clear();
-        Dirty(uid, reader);
+        if (_emag.CompareFlag(args.Type, EmagType.Hijack))
+        {
+            if (!GetMainAccessReader(uid, out var accessReader))
+                return;
+
+            foreach (var set in accessReader.Value.Comp.AccessLists)
+            {
+                if (set.Contains("SyndicateAgent"))
+                {
+                    return;
+                }
+            }
+
+            accessReader.Value.Comp.AccessLists.Add(
+                new HashSet<ProtoId<AccessLevelPrototype>>
+                {
+                    "SyndicateAgent"
+                });
+
+            args.Repeatable = true;
+            args.Handled = true;
+        }
     }
 
     private void OnConfigurationAttempt(Entity<AccessReaderComponent> ent, ref AccessReaderConfigurationAttemptEvent args)
