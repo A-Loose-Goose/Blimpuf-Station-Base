@@ -33,4 +33,4 @@
           type: ResearchClientBoundUserInterface
     - type: GuideHelp
       guides:
-        - Brighteye
+#        - Brighteye

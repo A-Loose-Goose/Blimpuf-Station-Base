@@ -38,10 +38,10 @@
   name: guide-entry-terror-spiders
   text: "/ServerInfo/_StarLight/Guidebook/Antagonist/TerrorSpider.xml"
 
-- type: guideEntry
-  id: Brighteye
-  name: roles-antag-brighteye-name
-  text: "/ServerInfo/_StarLight/Guidebook/Antagonist/Brighteye.xml"
+#- type: guideEntry
+#  id: Brighteye
+#  name: roles-antag-brighteye-name
+#  text: "/ServerInfo/_StarLight/Guidebook/Antagonist/Brighteye.xml"
 
 - type: guideEntry
   id: SELFAgent
