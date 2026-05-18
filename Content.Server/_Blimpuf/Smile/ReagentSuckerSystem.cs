@@ -1,7 +1,6 @@
 ﻿using System.Linq;
 using System.Numerics;
 using Content.Server.Actions;
-using Content.Server.Chemistry.Components;
 using Content.Server.Chemistry.EntitySystems;
 using Content.Server.Fluids.EntitySystems;
 using Content.Server.Gravity;
@@ -12,6 +11,7 @@ using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.DoAfter;
 using Content.Shared.FixedPoint;
 using Content.Shared.Fluids.Components;
+using Content.Shared.Projectiles;
 using Content.Shared.Vapor;
 using Robust.Server.Containers;
 using Robust.Server.GameObjects;
@@ -41,6 +41,7 @@ namespace Content.Server._Blimpuf.Smile;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly IConfigurationManager _cfg = default!;
         [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
+        [Dependency] private readonly SharedProjectileSystem _projectile = default!;
 
         private float _gridImpulseMultiplier;
 
@@ -196,6 +197,7 @@ namespace Content.Server._Blimpuf.Smile;
             if (tank.Volume <= FixedPoint2.Zero)
             {
                 _popup.PopupEntity(Loc.GetString("smile-popup-spray-liquids-failure-message-user"), uid, uid);
+                args.Handled = true;
                 return; // nothing to empty
             }
             var xformQuery = GetEntityQuery<TransformComponent>();
@@ -205,8 +207,7 @@ namespace Content.Server._Blimpuf.Smile;
             var xform = Transform(uid);
             var throwing = xform.LocalRotation.ToWorldVec() * component.SprayDistance;
             var direction = xform.Coordinates.Offset(throwing);
-            var mapcoord = _transform.ToMapCoordinates(direction);
-            var clickMapPos = mapcoord;
+            var clickMapPos = _transform.ToMapCoordinates(direction);
 
             var diffPos = clickMapPos.Position - sprayerMapPos.Position;
             if (diffPos == Vector2.Zero || diffPos == Vector2Helpers.NaN)
@@ -222,52 +223,52 @@ namespace Content.Server._Blimpuf.Smile;
 
             var diffAngle = diffNorm.ToAngle();
 
-            // Vectors to determine the spawn offset of the vapor clouds.
-            var threeQuarters = diffNorm * 0.75f;
-            var quarter = diffNorm * 0.25f;
-
             var amount = Math.Max(Math.Min((tank.Volume / component.TransferAmount).Int(), component.VaporAmount), 1);
             var spread = component.VaporSpread / amount;
             for (var i = 0; i < amount; i++)
             {
                 var rotation = new Angle(diffAngle + Angle.FromDegrees(spread * i) - Angle.FromDegrees(spread * (amount - 1) / 2));
+                var directionVector = rotation.ToVec();
 
-                // Calculate the destination for the vapor cloud. Limit to the maximum spray distance.
-                var target = sprayerMapPos.Offset(((diffNorm + rotation.ToVec()).Normalized() * diffLength) + quarter);
-
-                var distance = (target.Position - sprayerMapPos.Position).Length();
-                if (distance > component.SprayDistance)
-                    target = sprayerMapPos.Offset(diffNorm * component.SprayDistance);
-
+                // Drain the fluid resource per shot
                 var adjustedSolutionAmount = component.TransferAmount / component.VaporAmount;
-                var newSolution = _solutionSystem.SplitSolution(tankSolution.Value, adjustedSolutionAmount);
-
-                if (newSolution.Volume <= FixedPoint2.Zero)
+                var consumed = _solutionSystem.SplitSolution(tankSolution.Value, adjustedSolutionAmount);
+                if (consumed.Volume <= FixedPoint2.Zero)
                     break;
 
-                // Spawn the vapor cloud onto the grid/map the user is present on. Offset the start position based on how far the target destination is.
-                var vaporPos = sprayerMapPos.Offset(distance < 1 ? quarter : threeQuarters);
-                var vapor = Spawn(component.SprayedPrototype, vaporPos);
-                var vaporXform = xformQuery.GetComponent(vapor);
+                var bullet = Spawn("BulletWaterShot", sprayerMapPos);
+                var bulletXform = xformQuery.GetComponent(bullet);
 
-                _transform.SetWorldRotation(vaporXform, rotation);
+                // Offsets the sprite rotation if the base artwork points up instead of right
+                var spriteCorrection = Angle.FromDegrees(90);
+                _transform.SetWorldRotation(bulletXform, rotation + spriteCorrection);
 
-                if (TryComp(vapor, out AppearanceComponent? appearance))
+                if (_solutionSystem.TryGetSolution(bullet, "vapor", out var bulletSolution))
                 {
-                    _appearance.SetData(vapor, VaporVisuals.Color, tank.GetColor(_proto).WithAlpha(1f), appearance);
-                    _appearance.SetData(vapor, VaporVisuals.State, true, appearance);
+                    _solutionSystem.TryAddSolution(bulletSolution.Value, consumed);
                 }
 
-                // Add the solution to the vapor and actually send the thing
-                var vaporComponent = Comp<VaporComponent>(vapor);
-                var ent = (vapor, vaporComponent);
-                _vapor.TryAddSolution(ent, newSolution);
+                // Set the color of the bullet to match the exact liquid solution color
+                if (TryComp<AppearanceComponent>(bullet, out var appearance))
+                {
+                    var liquidColor = tank.GetColor(_proto).WithAlpha(1f);
 
-                // impulse direction is defined in world-coordinates, not local coordinates
-                var impulseDirection = rotation.ToVec();
-                var time = diffLength / component.SprayVelocity;
+                    // Updates the visual layer using your prototype's VaporVisuals data
+                    _appearance.SetData(bullet, VaporVisuals.Color, liquidColor, appearance);
+                    _appearance.SetData(bullet, VaporVisuals.State, true, appearance);
+                }
 
-                _vapor.Start(ent, vaporXform, impulseDirection * diffLength, component.SprayVelocity, target, time, uid);
+                if (TryComp<PhysicsComponent>(bullet, out var bulletPhysics))
+                {
+                    _physics.SetLinearVelocity(bullet, Vector2.Zero, body: bulletPhysics);
+                    _physics.ApplyLinearImpulse(bullet, directionVector * component.SprayVelocity, body: bulletPhysics);
+                }
+
+                // Set shooter data so the bullet knows who to ignore (don't shoot yourself)
+                if (TryComp<ProjectileComponent>(bullet, out var projComp))
+                {
+                    _projectile.SetShooter(bullet, projComp, uid);
+                }
 
                 var thingGettingPushed = uid;
                 if (_container.TryGetOuterContainer(uid, sprayerXform, out var container))
@@ -275,23 +276,19 @@ namespace Content.Server._Blimpuf.Smile;
 
                 if (TryComp<PhysicsComponent>(thingGettingPushed, out var body))
                 {
+                    var impulseDir = rotation.ToVec();
                     if (_gravity.IsWeightless(thingGettingPushed))
                     {
-                        // push back the player
-                        _physics.ApplyLinearImpulse(thingGettingPushed, -impulseDirection * component.PushbackAmount, body: body);
+                        _physics.ApplyLinearImpulse(thingGettingPushed, -impulseDir * component.PushbackAmount, body: body);
                     }
                     else
                     {
-                        // push back the grid the player is standing on
                         var userTransform = Transform(thingGettingPushed);
                         if (userTransform.GridUid == userTransform.ParentUid)
                         {
-                            // apply both linear and angular momentum depending on the player position
-                            // multiply by a cvar because grid mass is currently extremely small compared to all other masses
-                            _physics.ApplyLinearImpulse(userTransform.GridUid.Value, -impulseDirection * _gridImpulseMultiplier * component.PushbackAmount, userTransform.LocalPosition);
+                            _physics.ApplyLinearImpulse(userTransform.GridUid.Value, -impulseDir * _gridImpulseMultiplier * component.PushbackAmount, userTransform.LocalPosition);
                         }
                     }
-
                 }
             }
             sprayedAnything = true;

@@ -9,8 +9,8 @@
       useDelay: 5
       itemIconStyle: BigAction
       icon:
-        sprite: Objects/Specific/Chemistry/syringe.rsi
-        state: syringe_base0
+        sprite: _Blimpuf/Smile/abilties.rsi
+        state: SmileDrinkIcon
     - type: InstantAction
       event: !type:SuckUpLiquid
 
@@ -25,8 +25,8 @@
       useDelay: 5
       itemIconStyle: BigAction
       icon:
-        sprite: Objects/Tools/bucket.rsi
-        state: icon
+        sprite: _Blimpuf/Smile/abilties.rsi
+        state: SmileVomitIcon
     - type: InstantAction
       event: !type:EmptyLiquid
 
@@ -38,10 +38,10 @@
   components:
     - type: Action
       priority: -20
-      useDelay: 5
+      useDelay: 60
       itemIconStyle: BigAction
       icon:
-        sprite: Objects/Specific/Janitorial/spray_bottle.rsi
-        state: cleaner
+        sprite: _Blimpuf/Smile/abilties.rsi
+        state: SmileSpitIcon
     - type: InstantAction
       event: !type:SprayLiquid
