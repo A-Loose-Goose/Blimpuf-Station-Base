@@ -3906,5 +3906,14 @@ Entries:
   id: 1401
   time: '2026-05-18T00:14:20.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/14
+- author: DivineHoBo
+  changes:
+  - message: Removed Night shift station event.
+    type: Remove
+  - message: Removed BrightEye Antag.
+    type: Remove
+  id: 1501
+  time: '2026-05-19T00:12:18.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/15
 Order: -1
 
