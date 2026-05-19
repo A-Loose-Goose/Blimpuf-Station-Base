@@ -535,7 +535,7 @@
   description:  Allows you to change your Hair style.
   components:
     - type: Action
-      icon: { sprite: Objects/Tools/scissors.rsi, state: icon }
+      icon: { sprite: _Blimpuf/Geras/abilities.rsi, state: HairAbilityIcon }
       itemIconStyle: BigAction
       useDelay: 60 # prevent spam
       priority: -20
