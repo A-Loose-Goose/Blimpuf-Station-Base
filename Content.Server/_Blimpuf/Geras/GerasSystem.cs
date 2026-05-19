@@ -6,10 +6,12 @@ using Content.Shared._Blimpuf.Geras.Components;
 using Content.Shared.DoAfter;
 using Content.Shared.Humanoid;
 using Content.Shared.MagicMirror;
-using Content.Shared.NPC.Systems;
 using Content.Shared.Popups;
+using Content.Shared.Storage;
+using Content.Shared.Storage.EntitySystems;
 using Content.Shared.Zombies;
 using Robust.Server.GameObjects;
+using Robust.Shared.Containers;
 using Robust.Shared.Player;
 
 namespace Content.Server._Blimpuf.Geras;
@@ -20,10 +22,11 @@ public sealed partial class GerasSystem : SharedGerasSystem
     [Dependency] private readonly ActionsSystem _actionsSystem = default!;
     [Dependency] private readonly PolymorphSystem _polymorphSystem = default!;
     [Dependency] private readonly EntityManager _entityManager = default!;
-    [Dependency] private readonly NpcFactionSystem _factionSystem = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
     [Dependency] private PopupSystem _popup = default!;
+    [Dependency] private readonly SharedStorageSystem _storageSystem = default!;
+    [Dependency] private readonly SharedContainerSystem _containerSystem = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -120,7 +123,25 @@ public sealed partial class GerasSystem : SharedGerasSystem
         _popup.PopupEntity(Loc.GetString("geras-popup-morph-message-others", ("entity", ent.Value)), ent.Value, Filter.PvsExcept(ent.Value), true);
         _popup.PopupEntity(Loc.GetString("geras-popup-morph-message-user"), ent.Value, ent.Value);
 
-        args.Handled = true;
+        if (!TryComp<StorageComponent>(uid, out var sourceStorage) ||
+            !TryComp<StorageComponent>(ent.Value, out var targetStorage))
+            return;
+
+        var storedEntities = new List<EntityUid>(sourceStorage.Container.ContainedEntities);
+
+        foreach (var item in storedEntities)
+        {
+            if (_storageSystem.CanInsert(ent.Value, item, out _, targetStorage))
+            {
+                _storageSystem.Insert(ent.Value, item, out _, ent.Value, targetStorage);
+            }
+            else
+            {
+                _containerSystem.Remove(item, sourceStorage.Container);
+            }
+        }
+        _storageSystem.UpdateUI(ent.Value);
+
     }
     private void OnZombification(EntityUid uid, GerasComponent component, EntityZombifiedEvent args)
     {

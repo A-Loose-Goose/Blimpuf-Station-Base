@@ -5,8 +5,13 @@ using Content.Shared.Polymorph;
 using Content.Shared.Popups;
 using Content.Shared.Zombies;
 using Content.Shared.Actions;
+using Content.Shared.Interaction;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Systems;
+using Content.Shared.Storage;
+using Content.Shared.Storage.EntitySystems;
+using Robust.Server.GameObjects;
+using Robust.Shared.Containers;
 
 
 namespace Content.Server._Blimpuf.Geras;
@@ -16,6 +21,9 @@ public sealed partial class GerasBallSystem : EntitySystem
     [Dependency] private PopupSystem _popup = default!;
     [Dependency] private readonly SharedActionsSystem _actionsSystem = default!;
     [Dependency] private readonly IEntityManager _entityManager = default!;
+    [Dependency] private readonly SharedStorageSystem _storageSystem = default!;
+    [Dependency] private readonly SharedContainerSystem _containerSystem = default!;
+    [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
     public override void Initialize()
     {
         base.Initialize();
@@ -24,7 +32,7 @@ public sealed partial class GerasBallSystem : EntitySystem
         SubscribeLocalEvent<PendingZombieComponent, ComponentShutdown>(OnPendingZombieShutdown);
         SubscribeLocalEvent<GerasBallComponent, EntityZombifiedEvent>(OnZombification);
         SubscribeLocalEvent<RevertPolymorphActionEvent>(OnManualRevertAction);
-
+        SubscribeLocalEvent<GerasBallComponent, ActivateInWorldEvent>(OnActivateInWorld);
     }
 
     private void OnPendingZombieStartup(EntityUid uid, PendingZombieComponent component, ComponentStartup args)
@@ -37,8 +45,49 @@ public sealed partial class GerasBallSystem : EntitySystem
             _popup.PopupEntity(Loc.GetString("geras-popup-morph-infected-failed-message-user"), uid, uid, PopupType.LargeCaution);
         }
     }
+    private void OnActivateInWorld(EntityUid uid, GerasBallComponent component, ActivateInWorldEvent args)
+    {
+        if (args.User != args.Target)
+            return;
+        if (_uiSystem.IsUiOpen(uid, StorageComponent.StorageUiKey.Key, args.User))
+        {
+            _uiSystem.CloseUi(uid, StorageComponent.StorageUiKey.Key, args.User);
+        }
+        else
+        {
+            TryComp<StorageComponent>(uid, out var storageComp);
+            _storageSystem.OpenStorageUI(uid, args.User, storageComp, false);
+        }
+    }
     private void OnManualRevertAction(RevertPolymorphActionEvent args)
     {
+        if (!TryComp<PolymorphedEntityComponent>(args.Performer, out var polymorphedComp))
+            return;
+
+        if (polymorphedComp.Parent is not { } originalEntity)
+            return;
+
+        if (!Exists(originalEntity))
+            return;
+        if (!TryComp<StorageComponent>(args.Performer, out var sourceStorage) ||
+            !TryComp<StorageComponent>(originalEntity, out var targetStorage))
+            return;
+
+        var storedEntities = new List<EntityUid>(sourceStorage.Container.ContainedEntities);
+
+        foreach (var item in storedEntities)
+        {
+            if (_storageSystem.CanInsert(originalEntity, item, out _, targetStorage))
+            {
+                _storageSystem.Insert(originalEntity, item, out _, originalEntity, targetStorage);
+            }
+            else
+            {
+                _containerSystem.Remove(item, sourceStorage.Container);
+            }
+        }
+
+        _storageSystem.UpdateUI(originalEntity);
         var morphedEntity = args.Performer;
         if (!HasComp<PendingZombieComponent>(morphedEntity))
             return;

@@ -293,7 +293,7 @@
   id: SlimeMorphGeras
   configuration:
     entity: MobSlimesGeras
-    transferName: false
+    transferName: true
     transferHumanoidAppearance: false
     inventory: Drop
     transferDamage: true
