@@ -38,6 +38,8 @@
           shader: unshaded
         - state: panel_open
           map: ["enum.WiresVisualLayers.MaintenancePanel"]
+          shader: unshaded
+          visible: false
         - state: sparks
           map: ["enum.DoorVisualLayers.BaseEmagging"]
           shader: unshaded
@@ -55,9 +57,6 @@
             - FullTileMask
           layer:
             - AirlockLayer
-    - type: LayerChangeOnWeld
-      unWeldedLayer: AirlockLayer
-      weldedLayer: WallLayer
     - type: AccessReader
       accessListsOriginal: [ ]
       access:
@@ -116,8 +115,6 @@
       interfaces:
         enum.AiUi.Key:
           type: StationAiBoundUserInterface
-        enum.WiresUiKey.Key:
-          type: WiresBoundUserInterface
     - type: Airtight
       noAirWhenFullyAirBlocked: false
     - type: RadiationBlocker
