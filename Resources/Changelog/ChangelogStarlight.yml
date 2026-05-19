@@ -3922,5 +3922,12 @@ Entries:
   id: 1601
   time: '2026-05-19T00:12:37.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/16
+- author: DivineHoBo
+  changes:
+  - message: Fixed geras internal storage.
+    type: Fix
+  id: 1701
+  time: '2026-05-19T10:53:28.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/17
 Order: -1
 
