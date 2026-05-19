@@ -59,10 +59,10 @@
       unWeldedLayer: AirlockLayer
       weldedLayer: WallLayer
     - type: AccessReader
+        denyAllUpgrades
       accessListsOriginal: [ ]
       access:
         - - CentralCommand
-      denyAllUpgrades: true
     - type: Door
       crushDamage:
         types:
