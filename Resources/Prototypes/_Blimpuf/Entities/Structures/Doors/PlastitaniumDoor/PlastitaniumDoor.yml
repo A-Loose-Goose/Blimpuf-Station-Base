@@ -5,6 +5,7 @@
   description: It opens, it closes, and maybe crushes you.
   components:
     - type: Untamperable
+    - type: PryUnpowered
     - type: Anchorable
       flags:
         - Anchorable
