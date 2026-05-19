@@ -110,10 +110,10 @@
           protoIdIcon: Stunbaton
           gameRule: SecurityDrill
           useDelay: 30m
-        - name: syndicate-disruptor-night-shift
-          protoIdIcon: LightBulb
-          gameRule: NightShift
-          useDelay: 15m
+#        - name: syndicate-disruptor-night-shift
+#          protoIdIcon: LightBulb
+#          gameRule: NightShift
+#          useDelay: 15m
         - name: syndicate-disruptor-syndie-evac
           protoIdIcon: PosterContrabandSyndicateRecruitment
           gameRule: UnknownShuttleSyndieEvacPod

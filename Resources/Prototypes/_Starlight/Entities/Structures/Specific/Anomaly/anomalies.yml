@@ -217,7 +217,7 @@
     - type: GuideHelp
       guides:
         - AnomalousResearch
-        - Brighteye
+#        - Brighteye
         - Shadekin
     - type: EntitySpawnAnomaly
       entries:
@@ -280,7 +280,7 @@
     - type: GuideHelp
       guides:
         - Shadekin
-        - Brighteye
+#        - Brighteye
 
 - type: entity
   id: ShadekinTrapSpawn
@@ -357,7 +357,7 @@
           - MobState
       blacklist:
         components:
-          - Brighteye
+#          - Brighteye
     - type: DarkTrap
     - type: SpawnOnTrigger
       proto: ShadekinTrapTrigger

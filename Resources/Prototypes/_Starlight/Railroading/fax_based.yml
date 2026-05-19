@@ -14,7 +14,7 @@
       - IPC
     - !type:SubjectMindAntagCondition
       blacklist:
-      - Brighteye
+#      - Brighteye
 
 # Example(Smokeable) Prototype
 

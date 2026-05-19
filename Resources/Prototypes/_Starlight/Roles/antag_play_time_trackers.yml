@@ -102,6 +102,6 @@
   id: AntagTerminator
   name: roles-antag-terminator-name
 
-- type: playTimeTracker
-  id: AntagBrighteye
-  name: roles-antag-brighteye-name
+#- type: playTimeTracker
+#  id: AntagBrighteye
+#  name: roles-antag-brighteye-name

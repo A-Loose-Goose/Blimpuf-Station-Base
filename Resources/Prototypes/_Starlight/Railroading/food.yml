@@ -18,7 +18,7 @@
       - IPC
     - !type:SubjectMindAntagCondition
       blacklist:
-      - Brighteye
+#      - Brighteye
 
 - type: entity
   id: FoodConditionWithReptilian
@@ -39,7 +39,7 @@
       - IPC
     - !type:SubjectMindAntagCondition
       blacklist:
-      - Brighteye
+#      - Brighteye
 
 - type: entity
   id: RRCardFoodApplePie
