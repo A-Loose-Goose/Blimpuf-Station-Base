@@ -3915,5 +3915,12 @@ Entries:
   id: 1501
   time: '2026-05-19T00:12:18.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/15
+- author: DivineHoBo
+  changes:
+  - message: Changed slime hair cut ability icon.
+    type: Tweak
+  id: 1601
+  time: '2026-05-19T00:12:37.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/16
 Order: -1
 
