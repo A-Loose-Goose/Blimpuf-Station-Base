@@ -212,10 +212,10 @@ namespace Content.Server.VentCrawl
             }
         }
 
-        private bool TryInsert(EntityUid uid, EntityUid entity, VentCrawlEntryComponent? entry = null)
-        {
-            if (!Resolve(uid, ref entry))
-                return false;
+    public bool TryInsert(EntityUid uid, EntityUid entity, VentCrawlEntryComponent? entry = null)
+    {
+        if (!Resolve(uid, ref entry))
+            return false;
 
             if (!TryComp<VentCrawlerComponent>(entity, out var ventCrawlerComponent))
                 return false;
