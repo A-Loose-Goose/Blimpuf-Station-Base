@@ -4,7 +4,7 @@ using Content.Shared.Polymorph;
 
 namespace Content.Server._Blimpuf.Polymorph;
 
-public sealed class TeleportationRelaySystem : EntitySystem
+public sealed class PolymorphOnUseSystem : EntitySystem
 {
     public override void Initialize()
     {
