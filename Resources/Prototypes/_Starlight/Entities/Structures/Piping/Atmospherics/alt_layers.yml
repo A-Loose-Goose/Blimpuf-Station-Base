@@ -783,8 +783,8 @@
         - state: vent_off
           map: [ "enabled", "enum.SubfloorLayers.FirstLayer" ]
     - type: Construction
-      graph: GasUnaryStarlight
-      node: ventpumpAlt1
+      graph: SecureVentsBlimpuf
+      node: secureventpumpAlt1
 
 - type: entity
   parent: [ GasPipeLayerAlt2, SecureGasVentPump ]
@@ -801,8 +801,8 @@
         - state: vent_off
           map: [ "enabled", "enum.SubfloorLayers.FirstLayer" ]
     - type: Construction
-      graph: GasUnaryStarlight
-      node: ventpumpAlt2
+      graph: SecureVentsBlimpuf
+      node: secureventpumpAlt2
 
 #SecureGasPassiveVent
 - type: entity
@@ -820,8 +820,8 @@
         - state: vent_passive
           map: [ "enum.SubfloorLayers.FirstLayer" ]
     - type: Construction
-      graph: GasUnaryStarlight
-      node: passiveventAlt1
+      graph: SecureVentsBlimpuf
+      node: securepassiveventAlt1
 
 - type: entity
   parent: [ GasPipeLayerAlt2, SecureGasPassiveVent ]
@@ -838,8 +838,8 @@
         - state: vent_passive
           map: [ "enum.SubfloorLayers.FirstLayer" ]
     - type: Construction
-      graph: GasUnaryStarlight
-      node: passiveventAlt2
+      graph: SecureVentsBlimpuf
+      node: securepassiveventAlt2
 
   # Dual vent
 - type: entity
@@ -856,8 +856,8 @@
         - state: vent_off
           map: [ "enum.SubfloorLayers.FirstLayer", "enabled" ]
     - type: Construction
-      graph: GasBinaryStarlight
-      node: dualportventpumpAlt1
+      graph: SecureVentsBlimpuf
+      node: securedualportventpumpAlt1
 
 - type: entity
   parent: [GasPipeLayerAlt2, SecureGasDualPortVentPump]
@@ -873,6 +873,6 @@
         - state: vent_off
           map: [ "enum.SubfloorLayers.FirstLayer", "enabled" ]
     - type: Construction
-      graph: GasBinaryStarlight
-      node: dualportventpumpAlt2
+      graph: SecureVentsBlimpuf
+      node: securedualportventpumpAlt2
   # Blimpuf - End

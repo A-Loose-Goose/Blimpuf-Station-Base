@@ -1,0 +1,365 @@
+﻿- type: constructionGraph
+  id: SecureVentsBlimpuf
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: secureventpump
+          steps:
+            - material: Plasteel
+              amount: 2
+              doAfter: 1
+
+        - to: secureventpumpAlt1
+          steps:
+            - material: Plasteel
+              amount: 2
+              doAfter: 1
+
+        - to: secureventpumpAlt2
+          steps:
+            - material: Plasteel
+              amount: 2
+              doAfter: 1
+
+        - to: secureventpumpAlt3
+          steps:
+            - material: Plasteel
+              amount: 2
+              doAfter: 1
+
+        - to: secureventpumpAlt4
+          steps:
+            - material: Plasteel
+              amount: 2
+              doAfter: 1
+
+        - to: securepassivevent
+          steps:
+            - material: Plasteel
+              amount: 2
+              doAfter: 1
+
+        - to: securepassiveventAlt1
+          steps:
+            - material: Plasteel
+              amount: 2
+              doAfter: 1
+
+        - to: securepassiveventAlt2
+          steps:
+            - material: Plasteel
+              amount: 2
+              doAfter: 1
+
+        - to: securepassiveventAlt3
+          steps:
+            - material: Plasteel
+              amount: 2
+              doAfter: 1
+
+        - to: securepassiveventAlt4
+          steps:
+            - material: Plasteel
+              amount: 2
+              doAfter: 1
+
+        - to: securedualportventpump
+          steps:
+            - material: Plasteel
+              amount: 2
+              doAfter: 1
+
+        - to: securedualportventpumpAlt1
+          steps:
+            - material: Plasteel
+              amount: 2
+              doAfter: 1
+
+        - to: securedualportventpumpAlt2
+          steps:
+            - material: Plasteel
+              amount: 2
+              doAfter: 1
+
+        - to: securedualportventpumpAlt3
+          steps:
+            - material: Plasteel
+              amount: 2
+              doAfter: 1
+
+        - to: securedualportventpumpAlt4
+          steps:
+            - material: Plasteel
+              amount: 2
+              doAfter: 1
+
+    - node: secureventpump
+      entity: SecureGasVentPump
+      edges:
+        - to: start
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 1
+
+    - node: secureventpumpAlt1
+      entity: SecureGasVentPumpAlt1
+      edges:
+        - to: start
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 1
+
+    - node: secureventpumpAlt2
+      entity: SecureGasVentPumpAlt2
+      edges:
+        - to: start
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 1
+
+    - node: secureventpumpAlt3
+      entity: SecureGasVentPumpAlt3
+      edges:
+        - to: start
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 1
+
+    - node: secureventpumpAlt4
+      entity: SecureGasVentPumpAlt4
+      edges:
+        - to: start
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 1
+
+    - node: securepassivevent
+      entity: SecureGasPassiveVent
+      edges:
+        - to: start
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 1
+
+    - node: securepassiveventAlt1
+      entity: SecureGasPassiveVentAlt1
+      edges:
+        - to: start
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 1
+
+    - node: securepassiveventAlt2
+      entity: SecureGasPassiveVentAlt2
+      edges:
+        - to: start
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 1
+
+    - node: securepassiveventAlt3
+      entity: SecureGasPassiveVentAlt3
+      edges:
+        - to: start
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 1
+
+    - node: securepassiveventAlt4
+      entity: SecureGasPassiveVentAlt4
+      edges:
+        - to: start
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 1
+
+    - node: securedualportventpump
+      entity: SecureGasDualPortVentPump
+      edges:
+        - to: start
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 1
+
+    - node: securedualportventpumpAlt1
+      entity: SecureGasDualPortVentPumpAlt1
+      edges:
+        - to: start
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 1
+
+    - node: securedualportventpumpAlt2
+      entity: SecureGasDualPortVentPumpAlt2
+      edges:
+        - to: start
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 1
+
+    - node: securedualportventpumpAlt3
+      entity: SecureGasDualPortVentPumpAlt3
+      edges:
+        - to: start
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 1
+
+    - node: securedualportventpumpAlt4
+      entity: SecureGasDualPortVentPumpAlt4
+      edges:
+        - to: start
+          conditions:
+            - !type:EntityAnchored
+              anchored: false
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPlasteel1
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Welding
+              doAfter: 1
