@@ -633,8 +633,8 @@
       outlet: outlet
       canLink: true
     - type: Construction
-      graph: GasUnary
-      node: ventpump
+      graph: SecureVentsBlimpuf
+      node: secureventpump
     - type: AmbientSound
       enabled: true
       volume: -12
@@ -692,8 +692,8 @@
     - type: PipeColorVisuals
     - type: GasPassiveVent
     - type: Construction
-      graph: GasUnary
-      node: passivevent
+      graph: SecureVentsBlimpuf
+      node: securepassivevent
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
     - type: GuideHelp

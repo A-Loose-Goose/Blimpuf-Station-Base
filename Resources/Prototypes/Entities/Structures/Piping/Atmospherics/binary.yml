@@ -828,8 +828,8 @@
         - Pressurize
         - Depressurize
     - type: Construction
-      graph: GasBinary
-      node: dualportventpump
+      graph: SecureVentsBlimpuf
+      node: securedualportventpump
     - type: NodeContainer
       nodes:
         inlet:
