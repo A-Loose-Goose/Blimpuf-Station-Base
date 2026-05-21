@@ -89,7 +89,7 @@ namespace Content.Server.VentCrawl
             {
                 if (lockComponent.Locked)
                 {
-                    _popup.PopupEntity(Loc.GetString("secured-vent-popup-message"), user);
+                    _popup.PopupEntity("vent is secured!", user);
                     return;
                 }
             }
