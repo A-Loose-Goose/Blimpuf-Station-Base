@@ -3950,5 +3950,12 @@ Entries:
   id: 2001
   time: '2026-05-21T07:19:48.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/20
+- author: DivineHoBo
+  changes:
+  - message: Fixed secure vents construction Recipes.
+    type: Fix
+  id: 2201
+  time: '2026-05-22T04:52:00.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/22
 Order: -1
 
