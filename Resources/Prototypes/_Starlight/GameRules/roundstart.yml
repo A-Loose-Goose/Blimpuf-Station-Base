@@ -125,8 +125,8 @@
       prob: 0.20
     - id: SubWizard
       prob: 0.05
-    - id: XenoborgsLP
-      prob: 0.08
+    - id: SubXenoborgs
+      prob: 0.05
     - id: SiliconLiberation
       prob: 0.20
 
