@@ -1,0 +1,264 @@
+﻿- type: construction
+  id: SecureGasVentPump
+  graph: SecureVentsBlimpuf
+  startNode: start
+  targetNode: secureventpump
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasVentPump
+    - SecureGasVentPumpAlt1
+    - SecureGasVentPumpAlt2
+    - SecureGasVentPumpAlt3
+    - SecureGasVentPumpAlt4
+
+- type: construction
+  id: SecureGasVentPumpAlt1
+  hide: true
+  graph: SecureVentsBlimpuf
+  startNode: start
+  targetNode: secureventpumpAlt1
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasVentPump
+    - SecureGasVentPumpAlt1
+    - SecureGasVentPumpAlt2
+    - SecureGasVentPumpAlt3
+    - SecureGasVentPumpAlt4
+
+- type: construction
+  id: SecureGasVentPumpAlt2
+  hide: true
+  graph: SecureVentsBlimpuf
+  startNode: start
+  targetNode: secureventpumpAlt2
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasVentPump
+    - SecureGasVentPumpAlt1
+    - SecureGasVentPumpAlt2
+    - SecureGasVentPumpAlt3
+    - SecureGasVentPumpAlt4
+
+- type: construction
+  id: SecureGasVentPumpAlt3
+  hide: true
+  graph: SecureVentsBlimpuf
+  startNode: start
+  targetNode: secureventpumpAlt3
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasVentPump
+    - SecureGasVentPumpAlt1
+    - SecureGasVentPumpAlt2
+    - SecureGasVentPumpAlt3
+    - SecureGasVentPumpAlt4
+
+- type: construction
+  id: SecureGasVentPumpAlt4
+  hide: true
+  graph: SecureVentsBlimpuf
+  startNode: start
+  targetNode: secureventpumpAlt4
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasVentPump
+    - SecureGasVentPumpAlt1
+    - SecureGasVentPumpAlt2
+    - SecureGasVentPumpAlt3
+    - SecureGasVentPumpAlt4
+
+- type: construction
+  id: SecureGasPassiveVent
+  graph: SecureVentsBlimpuf
+  startNode: start
+  targetNode: securepassivevent
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasPassiveVent
+    - SecureGasPassiveVentAlt1
+    - SecureGasPassiveVentAlt2
+    - SecureGasPassiveVentAlt3
+    - SecureGasPassiveVentAlt4
+
+- type: construction
+  id: SecureGasPassiveVentAlt1
+  hide: true
+  graph: SecureVentsBlimpuf
+  startNode: start
+  targetNode: securepassiveventAlt1
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasPassiveVent
+    - SecureGasPassiveVentAlt1
+    - SecureGasPassiveVentAlt2
+    - SecureGasPassiveVentAlt3
+    - SecureGasPassiveVentAlt4
+
+- type: construction
+  id: SecureGasPassiveVentAlt2
+  hide: true
+  graph: SecureVentsBlimpuf
+  startNode: start
+  targetNode: securepassiveventAlt2
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasPassiveVent
+    - SecureGasPassiveVentAlt1
+    - SecureGasPassiveVentAlt2
+    - SecureGasPassiveVentAlt3
+    - SecureGasPassiveVentAlt4
+
+- type: construction
+  id: SecureGasPassiveVentAlt3
+  hide: true
+  graph: SecureVentsBlimpuf
+  startNode: start
+  targetNode: securepassiveventAlt3
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasPassiveVent
+    - SecureGasPassiveVentAlt1
+    - SecureGasPassiveVentAlt2
+    - SecureGasPassiveVentAlt3
+    - SecureGasPassiveVentAlt4
+
+- type: construction
+  id: SecureGasPassiveVentAlt4
+  hide: true
+  graph: SecureVentsBlimpuf
+  startNode: start
+  targetNode: securepassiveventAlt4
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasPassiveVent
+    - SecureGasPassiveVentAlt1
+    - SecureGasPassiveVentAlt2
+    - SecureGasPassiveVentAlt3
+    - SecureGasPassiveVentAlt4
+
+- type: construction
+  id: SecureGasDualPortVentPump
+  graph: SecureVentsBlimpuf
+  startNode: start
+  targetNode: securedualportventpump
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  alternativePrototypes:
+    - SecureGasDualPortVentPump
+    - SecureGasDualPortVentPumpAlt1
+    - SecureGasDualPortVentPumpAlt2
+    - SecureGasDualPortVentPumpAlt3
+    - SecureGasDualPortVentPumpAlt4
+
+- type: construction
+  id: SecureGasDualPortVentPumpAlt1
+  hide: true
+  graph: SecureVentsBlimpuf
+  startNode: start
+  targetNode: securedualportventpumpAlt1
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasDualPortVentPump
+    - SecureGasDualPortVentPumpAlt1
+    - SecureGasDualPortVentPumpAlt2
+    - SecureGasDualPortVentPumpAlt3
+    - SecureGasDualPortVentPumpAlt4
+
+- type: construction
+  id: SecureGasDualPortVentPumpAlt2
+  hide: true
+  graph: SecureVentsBlimpuf
+  startNode: start
+  targetNode: securedualportventpumpAlt2
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasDualPortVentPump
+    - SecureGasDualPortVentPumpAlt1
+    - SecureGasDualPortVentPumpAlt2
+    - SecureGasDualPortVentPumpAlt3
+    - SecureGasDualPortVentPumpAlt4
+
+- type: construction
+  id: SecureGasDualPortVentPumpAlt3
+  hide: true
+  graph: SecureVentsBlimpuf
+  startNode: start
+  targetNode: securedualportventpumpAlt3
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasDualPortVentPump
+    - SecureGasDualPortVentPumpAlt1
+    - SecureGasDualPortVentPumpAlt2
+    - SecureGasDualPortVentPumpAlt3
+    - SecureGasDualPortVentPumpAlt4
+
+- type: construction
+  id: SecureGasDualPortVentPumpAlt4
+  hide: true
+  graph: SecureVentsBlimpuf
+  startNode: start
+  targetNode: securedualportventpumpAlt4
+  category: construction-category-utilities
+  placementMode: AlignAtmosPipeLayers
+  canBuildInImpassable: false
+  conditions:
+    - !type:NoUnstackableInTile
+  alternativePrototypes:
+    - SecureGasDualPortVentPump
+    - SecureGasDualPortVentPumpAlt1
+    - SecureGasDualPortVentPumpAlt2
+    - SecureGasDualPortVentPumpAlt3
+    - SecureGasDualPortVentPumpAlt4

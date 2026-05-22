@@ -184,7 +184,7 @@
         - state: vent_off
           map: [ "enabled", "enum.SubfloorLayers.FirstLayer" ]
     - type: Construction
-      node: ventpumpAlt3
+      node: secureventpumpAlt3
 
 - type: entity
   parent: [GasPipeLayerAlt4, SecureGasVentPump]
@@ -201,7 +201,7 @@
         - state: vent_off
           map: [ "enabled", "enum.SubfloorLayers.FirstLayer" ]
     - type: Construction
-      node: ventpumpAlt4
+      node: secureventpumpAlt4
 
 #SecureGasPassiveVent
 - type: entity
@@ -219,7 +219,7 @@
         - state: vent_passive
           map: [ "enum.SubfloorLayers.FirstLayer" ]
     - type: Construction
-      node: passiveventAlt3
+      node: securepassiveventAlt3
 
 - type: entity
   parent: [GasPipeLayerAlt4, SecureGasPassiveVent]
@@ -236,7 +236,7 @@
         - state: vent_passive
           map: [ "enum.SubfloorLayers.FirstLayer" ]
     - type: Construction
-      node: passiveventAlt4
+      node: securepassiveventAlt4
 
 - type: entity
   parent: [GasPipeLayerAlt3, SecureGasDualPortVentPump]
@@ -252,7 +252,7 @@
         - state: vent_off
           map: [ "enabled", "enum.SubfloorLayers.FirstLayer" ]
     - type: Construction
-      node: dualportventpumpAlt3
+      node: securedualportventpumpAlt3
 
 - type: entity
   parent: [GasPipeLayerAlt4, SecureGasDualPortVentPump]
@@ -268,7 +268,7 @@
         - state: vent_off
           map: [ "enabled", "enum.SubfloorLayers.FirstLayer" ]
     - type: Construction
-      node: dualportventpumpAlt4
+      node: securedualportventpumpAlt4
 # Blimpuf - End
 
 # GasPassiveVent

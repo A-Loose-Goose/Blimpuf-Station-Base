@@ -633,8 +633,8 @@
       outlet: outlet
       canLink: true
     - type: Construction
-      graph: GasUnary
-      node: ventpump
+      graph: SecureVentsBlimpuf
+      node: secureventpump
     - type: AmbientSound
       enabled: true
       volume: -12
@@ -647,6 +647,8 @@
       guides:
         - AirVent
         - DeviceMonitoringAndControl
+    - type: StaticPrice
+      price: 100
 
 - type: entity
   parent: GasPassiveVent
@@ -692,11 +694,13 @@
     - type: PipeColorVisuals
     - type: GasPassiveVent
     - type: Construction
-      graph: GasUnary
-      node: passivevent
+      graph: SecureVentsBlimpuf
+      node: securepassivevent
     - type: AtmosMonitoringConsoleDevice
       navMapBlip: GasVentOpening
     - type: GuideHelp
       guides:
         - PassiveVent
+    - type: StaticPrice
+      price: 100
 #Blimpuf - End
