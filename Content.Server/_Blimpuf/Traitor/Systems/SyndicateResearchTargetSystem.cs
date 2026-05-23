@@ -192,7 +192,6 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
                 return;
 
             _completedResearch.Research(component.ResearchUnlockId);
-
         }
 
     }
