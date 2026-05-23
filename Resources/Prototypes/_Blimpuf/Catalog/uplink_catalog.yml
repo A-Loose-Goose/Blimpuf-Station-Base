@@ -1,0 +1,19 @@
+# Research
+- type: listing
+  id: UplinkSyndicateTacticalLaser
+  name: uplink-syndicate-tactical-laser-name
+  description: uplink-syndicate-tactical-laser-desc
+  productEntity: WeaponLaserSyndicateTacticalLaser
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 25
+  cost:
+    Telecrystal: 35
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink

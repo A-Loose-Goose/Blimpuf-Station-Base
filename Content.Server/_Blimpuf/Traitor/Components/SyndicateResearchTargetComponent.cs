@@ -30,5 +30,7 @@ public sealed partial class SyndicateResearchTargetComponent : Component
 
     [DataField] public SoundSpecifier ResearchSound = new SoundPathSpecifier("/Audio/_Blimpuf/items/traitor-research.ogg");
 
+    [DataField] public String? ResearchUnlockId;
+
     public EntityUid? ActiveSound;
 }

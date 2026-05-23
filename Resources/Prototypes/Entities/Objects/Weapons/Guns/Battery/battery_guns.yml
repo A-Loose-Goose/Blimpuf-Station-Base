@@ -770,6 +770,8 @@
       - ClothingEyesHudDiagnostic
       - CoolingUnit
       - WireBrush
+    researchUnlockId: UplinkSyndicateTacticalLaser
+
 
 - type: entity
   name: advanced laser pistol

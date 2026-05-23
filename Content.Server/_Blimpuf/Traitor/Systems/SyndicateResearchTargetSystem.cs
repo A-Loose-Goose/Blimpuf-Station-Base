@@ -2,6 +2,7 @@ using System.Linq;
 using Content.Server._Blimpuf.Traitor.Components;
 using Content.Server.Mind;
 using Content.Server.Popups;
+using Content.Server.SyndicateResearch;
 using Content.Server.Traitor.Components;
 using Content.Shared._Blimpuf.Antags.Traitor.Components;
 using Content.Shared._Starlight.Antags.Traitor;
@@ -24,6 +25,7 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly AudioSystem _audio = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
+    [Dependency] private readonly SyndicateResearchSystem _completedResearch = default!;
 
     public override void Initialize()
     {
@@ -185,6 +187,12 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
         if (component.Task1Complete && component.Task2Complete && component.Task3Complete && component.Task4Complete)
         {
             component.ResearchComplete = true;
+
+            if (component.ResearchUnlockId == null)
+                return;
+
+            _completedResearch.Research(component.ResearchUnlockId);
+
         }
 
     }
