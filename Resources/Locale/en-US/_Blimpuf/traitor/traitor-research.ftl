@@ -1,0 +1,15 @@
+﻿traitor-research-incomplete = [color=red][bold]You are able to research this item for the Syndicate.[/bold][/color]
+traitor-research-complete = [color=red][bold]This item has already been researched for the Syndicate. New equipment has been added to the uplink.[/bold][/color]
+
+traitor-research-task-1-requirements = [color=red]For the first research task, you need to use a [/color][color=yellow]{$item1}.[/color]
+traitor-research-task-2-requirements = [color=red]For the second research task, you need to use a [/color][color=yellow]{$item2}.[/color]
+traitor-research-task-3-requirements = [color=red]For the third research task, you need to use a [/color][color=yellow]{$item3}.[/color]
+traitor-research-task-4-requirements = [color=red]For the fourth research task, you need to use a [/color][color=yellow]{$item4}.[/color]
+
+traitor-research-task-1-complete = [color=red]The first research task has been completed.[/color]
+traitor-research-task-2-complete = [color=red]The second research task has been completed.[/color]
+traitor-research-task-3-complete = [color=red]The third research task has been completed.[/color]
+traitor-research-task-4-complete = [color=red]The fourth research task has been completed.[/color]
+
+traitor-research-begin = {CAPITALIZE($user)} begins to research the {$researching} using a {$used}...
+traitor-research-finish = {CAPITALIZE($user)} finishes researching the {$researching}

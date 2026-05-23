@@ -760,6 +760,16 @@
   - type: FiringPinHolder
     supportedPins: [ AdvancedLaser ]
   # starlight end
+  - type: SyndicateResearchTarget
+    researchProtoIds:
+      - ClothingHandsGlovesCombat
+      - PowerDrill
+      - WeaponLaserSvalinn
+      - PlasmaTank
+      - Scalpel
+      - ClothingEyesHudDiagnostic
+      - CoolingUnit
+      - WireBrush
 
 - type: entity
   name: advanced laser pistol
