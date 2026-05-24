@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ ClothingHeadset, BaseLawContraband ]
+  parent: [ ClothingHeadset, BaseNanoTrasenContraband ]
   id: ClothingHeadsetIAA
   name: internal affairs agent headset
-  description: A headset for internal affairs agent to hear the captain's last words.
+  description: A headset for internal affairs agents to hear the captain's last words.
   components:
     - type: ContainerFill
       containers:
@@ -17,7 +17,7 @@
   parent: [ ClothingHeadset, BaseLawContraband ]
   id: ClothingHeadsetMagistrate
   name: magistrate headset
-  description: A headset for internal affairs agent to hear the captain's last words.
+  description: A headset for magistrates to hear the captain's last words.
   components:
     - type: ContainerFill
       containers:
@@ -123,10 +123,7 @@
     containers:
       key_slots:
       - EncryptionKeyCommand
-      - EncryptionKeyCargo
-      - EncryptionKeyEngineering
-      - EncryptionKeyMedicalScience
-      - EncryptionKeyService
+      - EncryptionKeyNCTrainer
       - EncryptionKeyCommon
   - type: Sprite
     sprite: Clothing/Ears/Headsets/centcom.rsi
