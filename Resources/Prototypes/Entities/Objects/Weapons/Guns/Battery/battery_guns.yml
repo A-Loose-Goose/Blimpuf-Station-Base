@@ -762,15 +762,42 @@
   # starlight end
   - type: SyndicateResearchTarget
     researchProtoIds:
-      - ClothingHandsGlovesCombat
-      - PowerDrill
-      - WeaponLaserSvalinn
-      - PlasmaTankFilled
-      - Scalpel
-      - ClothingEyesHudDiagnostic
-      - CoolingUnit
-      - WireBrush
+      - displayName: combat gloves
+        validPrototypes:
+          - ClothingHandsGlovesCombat
+          - ClothingHandsMercGlovesCombat
+          - ClothingHandsSalvageMercGlovesCombat
+      - displayName: power drill
+        validPrototypes:
+          - PowerDrill
+      - displayName: svalinn laser pistol
+        validPrototypes:
+          - WeaponLaserSvalinn
+      - displayName: plasma tank
+        validPrototypes:
+          - PlasmaTank
+          - PlasmaTankFilled
+      - displayName: scalpel
+        validPrototypes:
+          - Scalpel
+          - ScalpelRipper
+          - ScalpelLaser
+          - ScalpelAdvanced
+          - ScalpelCyber
+      - displayName: diagnostic hud
+        validPrototypes:
+          - ClothingEyesHudDiagnostic
+          - ClothingEyesEyepatchHudDiag
+          - ClothingEyesEyepatchHudDiagFlipped
+      - displayName: portable cooling unit
+        validPrototypes:
+          - CoolingUnit
+      - displayName: wire brush
+        validPrototypes:
+          - WireBrush
+          - WireBrushElectrical
     researchUnlockId: UplinkSyndicateTacticalLaser
+    researchAnnouncementString: research-announcement-syndicate-tactical-laser
 
 
 - type: entity

@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Server._Blimpuf.Traitor.Components;
+using Content.Server.Chat.Systems;
 using Content.Server.Mind;
 using Content.Server.Popups;
 using Content.Server.SyndicateResearch;
@@ -12,9 +13,11 @@ using Content.Shared.Interaction;
 using Content.Shared.Popups;
 using Content.Shared.Roles.Components;
 using Robust.Server.Audio;
+using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization;
+using Robust.Shared.Timing;
 
 namespace Content.Server._Blimpuf.Traitor.Systems;
 
@@ -26,6 +29,7 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
     [Dependency] private readonly AudioSystem _audio = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly SyndicateResearchSystem _completedResearch = default!;
+    [Dependency] private readonly ChatSystem _chat = default!;
 
     public override void Initialize()
     {
@@ -67,9 +71,7 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
 
         if (component.ResearchItem1 != null && !component.Task1Complete)
         {
-            var proto1 = _prototype.Index(component.ResearchItem1);
-
-            message += Loc.GetString("traitor-research-task-1-requirements", ("item1", proto1.Name)) + "\n";
+            message += Loc.GetString("traitor-research-task-1-requirements", ("item1", component.ResearchItem1.DisplayName)) + "\n";
         }
         else if (component.ResearchItem1 != null && component.Task1Complete)
         {
@@ -78,9 +80,7 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
 
         if (component.ResearchItem2 != null && !component.Task2Complete)
         {
-            var proto2 = _prototype.Index(component.ResearchItem2);
-
-            message += Loc.GetString("traitor-research-task-2-requirements", ("item2", proto2.Name)) + "\n";
+            message += Loc.GetString("traitor-research-task-2-requirements", ("item2", component.ResearchItem2.DisplayName)) + "\n";
         }
         else if (component.ResearchItem2 != null && component.Task2Complete)
         {
@@ -89,9 +89,7 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
 
         if (component.ResearchItem3 != null && !component.Task3Complete)
         {
-            var proto3 = _prototype.Index(component.ResearchItem3);
-
-            message += Loc.GetString("traitor-research-task-3-requirements", ("item3", proto3.Name)) + "\n";
+            message += Loc.GetString("traitor-research-task-3-requirements", ("item3", component.ResearchItem3.DisplayName)) + "\n";
         }
         else if (component.ResearchItem3 != null && component.Task3Complete)
         {
@@ -100,9 +98,7 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
 
         if (component.ResearchItem4 != null && !component.Task4Complete)
         {
-            var proto4 = _prototype.Index(component.ResearchItem4);
-
-            message += Loc.GetString("traitor-research-task-4-requirements", ("item4", proto4.Name));
+            message += Loc.GetString("traitor-research-task-4-requirements", ("item4", component.ResearchItem4.DisplayName)) + "\n";
         }
         else if (component.ResearchItem4 != null && component.Task4Complete)
         {
@@ -118,14 +114,28 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
 
         var proto = meta.EntityPrototype?.ID;
 
-        if (proto == component.ResearchItem1 && !component.Task1Complete)
+        if (proto == null)
+            return;
+
+        if (!HasComp<TraitorComponent>(args.User))
+            return;
+
+        if (component.ResearchItem1 != null && component.ResearchItem1.ValidPrototypes.Contains(proto) && !component.Task1Complete)
+        {
             component.ActiveResearchNumber = 1;
-        else if (proto == component.ResearchItem2 && !component.Task2Complete)
+        }
+        else if (component.ResearchItem2 != null && component.ResearchItem2.ValidPrototypes.Contains(proto) && !component.Task2Complete)
+        {
             component.ActiveResearchNumber = 2;
-        else if (proto == component.ResearchItem3 && !component.Task3Complete)
+        }
+        else if (component.ResearchItem3 != null && component.ResearchItem3.ValidPrototypes.Contains(proto) && !component.Task3Complete)
+        {
             component.ActiveResearchNumber = 3;
-        else if (proto == component.ResearchItem4 && !component.Task4Complete)
+        }
+        else if (component.ResearchItem4 != null && component.ResearchItem4.ValidPrototypes.Contains(proto) && !component.Task4Complete)
+        {
             component.ActiveResearchNumber = 4;
+        }
         else
             return;
 
@@ -192,6 +202,15 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
                 return;
 
             _completedResearch.Research(component.ResearchUnlockId);
+            var ResearchAnnouncementSound = new SoundPathSpecifier("/Audio/_Starlight/Announcements/attention.ogg");
+
+            var delay = TimeSpan.FromSeconds(_random.Next(60, 301));
+
+            Timer.Spawn(delay,
+                () =>
+                {
+                    _chat.DispatchGlobalAnnouncement(Loc.GetString(component.ResearchAnnouncementString), playSound: true, announcementSound: ResearchAnnouncementSound , colorOverride: Color.Red);
+                });
         }
 
     }

@@ -13,3 +13,5 @@ traitor-research-task-4-complete = [color=red]The fourth research task has been 
 
 traitor-research-begin = {CAPITALIZE($user)} begins to research the {$researching} using a {$used}...
 traitor-research-finish = {CAPITALIZE($user)} finishes researching the {$researching}
+
+research-announcement-syndicate-tactical-laser = Attention crew. We have detected outgoing signals sent to enemy forces detailing research notes on compact laser weaponary. Security is to find and arrest the individual that made these unauthorized communcations.

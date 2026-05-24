@@ -1,18 +1,18 @@
+using Content.Shared._Blimpuf.Antags.Traitor.Components;
 using Robust.Shared.Audio;
-using Robust.Shared.Prototypes;
 
 namespace Content.Server._Blimpuf.Traitor.Components;
 
 [RegisterComponent]
 public sealed partial class SyndicateResearchTargetComponent : Component
 {
-    [DataField] public String? ResearchItem1;
+    [DataField] public ResearchTargetEntry? ResearchItem1;
 
-    [DataField] public String? ResearchItem2;
+    [DataField] public ResearchTargetEntry? ResearchItem2;
 
-    [DataField] public String? ResearchItem3;
+    [DataField] public ResearchTargetEntry? ResearchItem3;
 
-    [DataField] public String? ResearchItem4;
+    [DataField] public ResearchTargetEntry? ResearchItem4;
 
     [DataField] public Boolean Task1Complete;
 
@@ -22,7 +22,7 @@ public sealed partial class SyndicateResearchTargetComponent : Component
 
     [DataField] public Boolean Task4Complete;
 
-    [DataField] public HashSet<EntProtoId> ResearchProtoIds = new();
+    [DataField(required: true)] public List<ResearchTargetEntry> ResearchProtoIds = new();
 
     [DataField] public Boolean ResearchComplete;
 
@@ -32,5 +32,8 @@ public sealed partial class SyndicateResearchTargetComponent : Component
 
     [DataField (required: true)] public String ResearchUnlockId;
 
+    [DataField (required: true)] public String ResearchAnnouncementString;
+
     public EntityUid? ActiveSound;
 }
+
