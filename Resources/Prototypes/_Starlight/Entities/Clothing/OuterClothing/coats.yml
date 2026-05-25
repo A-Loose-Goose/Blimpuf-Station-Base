@@ -35,7 +35,7 @@
 - type: entity
   parent: [ ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband ]
   id: ClothingOuterCoatMagi
-  name: magistrate's longcoat
+  name: magistrate longcoat
   description: New and improved, this jacket actually keeps you warm! Brought to you by the NanoTrasen Fashion Board.
   components:
   - type: Sprite
@@ -45,6 +45,8 @@
     clothingVisuals:
       outerClothing:
       - state: equipped-OUTERCLOTHING
+  - type: Pierceable
+    level: Metal
   - type: TemperatureProtection
     heatingCoefficient: 1.1
     coolingCoefficient: 0.35
@@ -54,7 +56,30 @@
         Blunt: 0.9
         Slash: 0.9
         Piercing: 0.8
+        Cold: 0.85
 
+- type: entity
+  parent: [ClothingOuterBase, BaseNanoTrasenContraband]
+  id: ClothingOuterRobesMagistrate
+  name: magistrate robes
+  description: This robe commands authority. Much more dense than the commoner variants.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Clothing/OuterClothing/Coats/magistrate.rsi
+  - type: Clothing
+    sprite: _Starlight/Clothing/OuterClothing/Coats/magistrate.rsi
+  - type: Pierceable
+    level: Metal
+  - type: TemperatureProtection
+    heatingCoefficient: 1.1
+    coolingCoefficient: 0.35
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.8
+        Cold: 0.85
 
 - type: entity
   parent: [ ClothingOuterStorageFoldableBase, ClothingOuterColdBase, BaseCommandContraband ]
@@ -68,12 +93,16 @@
     sprite: _Starlight/Clothing/OuterClothing/Coats/ntrep.rsi
   - type: Pierceable
     level: Metal
+  - type: TemperatureProtection
+    heatingCoefficient: 1.1
+    coolingCoefficient: 0.35
   - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.9
         Slash: 0.9
         Piercing: 0.8
+        Cold: 0.85
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatNtrep, BaseCommandContraband ]
