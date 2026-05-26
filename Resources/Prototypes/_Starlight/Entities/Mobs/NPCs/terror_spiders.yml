@@ -9,12 +9,10 @@
   - type: LanguageKnowledge
     speaks:
     - Chittin
-    - Darktongue
-    - Xeno
+    - Xenomind
     understands:
     - Chittin
-    - Darktongue
-    - Xeno
+    - Xenomind
   - type: ThermalVision
     useAlternativeShader: true
   - type: OptionsVisualizer
