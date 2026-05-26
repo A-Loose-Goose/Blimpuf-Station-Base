@@ -40,6 +40,7 @@
         - SmallMobMask
         layer:
         - SmallMobLayer
+        - SpiderlingImpassable
   - type: DamageStateVisuals
     states:
       Alive:
@@ -84,7 +85,7 @@
   - type: MobMover
   - type: HTN
     rootTask:
-      task: SimpleAvoidanceCompound
+      task: SimpleWebAvoidanceCompound
   - type: Jump
 
 # Default
