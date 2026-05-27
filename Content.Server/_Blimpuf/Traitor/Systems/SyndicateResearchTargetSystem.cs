@@ -1,22 +1,18 @@
 using System.Linq;
 using Content.Server._Blimpuf.Traitor.Components;
 using Content.Server.Chat.Systems;
-using Content.Server.Mind;
 using Content.Server.Popups;
 using Content.Server.SyndicateResearch;
-using Content.Server.Traitor.Components;
 using Content.Shared._Blimpuf.Antags.Traitor.Components;
 using Content.Shared._Starlight.Antags.Traitor;
 using Content.Shared.DoAfter;
 using Content.Shared.Examine;
 using Content.Shared.Interaction;
 using Content.Shared.Popups;
-using Content.Shared.Roles.Components;
 using Robust.Server.Audio;
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
-using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
 
 namespace Content.Server._Blimpuf.Traitor.Systems;
@@ -155,6 +151,8 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
             BreakOnDamage = true,
             NeedHand = true,
             BreakOnWeightlessMove = true,
+            BlockDuplicate = false,
+            CancelDuplicate = false
         };
 
         var userId = args.User;

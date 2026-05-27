@@ -5,6 +5,8 @@ namespace Content.Server.SyndicateResearch;
 
 public sealed partial class SyndicateResearchSystem : EntitySystem
 {
+    public int RequiredResearch { get; private set; }
+
     public override void Initialize()
     {
         base.Initialize();
@@ -16,6 +18,11 @@ public sealed partial class SyndicateResearchSystem : EntitySystem
     /// System for tracking researched items.
     /// </summary>
     private readonly HashSet<string> _completedResearch = new();
+
+    /// <summary>
+    /// Method for getting a count of research items completed
+    /// </summary>
+    public int ResearchCount => _completedResearch.Count;
 
     /// <summary>
     /// Adds a completed research unlock.
