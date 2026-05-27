@@ -14,6 +14,51 @@
     - HighRiskItem
   - type: StealTarget
     stealGroup: HandTeleporter
+  - type: SyndicateResearchTarget
+    researchProtoIds:
+      - displayName: volatile anomaly core
+        validPrototypes:
+          - AnomalyCorePyroclastic
+          - AnomalyCoreGravity
+          - AnomalyCoreIce
+          - AnomalyCoreFlesh
+          - AnomalyCoreRock
+          - AnomalyCoreLiquid
+          - AnomalyCoreBluespace
+          - AnomalyCoreElectricity
+          - AnomalyCoreFlora
+          - AnomalyCoreShadow
+          - AnomalyCoreTech
+          - AnomalyCoreSanta
+      - displayName: bluespace crystal
+        validPrototypes:
+          - BluespaceCrystal
+          - BluespaceCrystal1
+          - BluespaceCrystal3
+          - BluespaceCrystal5
+          - ArtificialBluespaceCrystal
+          - ArtificialBluespaceCrystal1
+          - ArtificialBluespaceCrystal5
+      - displayName: fire extinguisher
+        validPrototypes:
+          - FireExtinguisher
+      - displayName: engineering goggles
+        validPrototypes:
+          - ClothingEyesGlassesMenson
+      - displayName: insulated gloves
+        validPrototypes:
+          - ClothingHandsGlovesColorYellow
+      - displayName: RCD
+        validPrototypes:
+          - RCD
+      - displayName: poison auto-injector
+        validPrototypes:
+          - AntiPoisonMedipen
+      - displayName: cautery
+        validPrototypes:
+          - Cautery
+    researchUnlockId: UplinkTeleportationRelay
+    researchAnnouncementString: research-announcement-teleportation-relay
 
 - type: entity
   id: HandTeleporterAdmeme

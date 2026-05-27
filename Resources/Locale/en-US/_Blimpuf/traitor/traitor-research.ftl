@@ -15,3 +15,6 @@ traitor-research-begin = {CAPITALIZE($user)} begins to research the {$researchin
 traitor-research-finish = {CAPITALIZE($user)} finishes researching the {$researching}
 
 research-announcement-syndicate-tactical-laser = Attention crew. We have detected outgoing signals sent to enemy forces detailing research notes on compact laser weaponary. Security is to find and arrest the individual that made these unauthorized communcations.
+research-announcement-teleportation-relay = Attention crew. We have detected outgoing signals sent to enemy forces detailing research notes on advanced bluespace technology. Security is to find and arrest the individual that made these unauthorized communications.
+research-announcement-clothing-shoes-boots-mag-syndie-advanced = Attention crew. We have detected outgoing signals sent to enemy forces detailing research notes on state-of-the-art magnetic technology. Security is to find and arrest the individual that made these unauthorized communications.
+research-announcement-access-hijacker = Attention crew. We have detected outgoing signals sent to enemy forces detailing research notes on Nanotrasen's ID Card Accesses. Security is to find and arrest the individual that made these unauthorized communications.

@@ -17,3 +17,57 @@
       blacklist:
         tags:
           - NukeOpsUplink
+
+- type: listing
+  id: UplinkTeleportationRelay
+  name: uplink-teleportation-relay-name
+  description: uplink-teleportation-relay-desc
+  productEntity: TeleportationRelay
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 30
+  cost:
+    Telecrystal: 40
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+
+- type: listing
+  id: UplinkClothingShoesBootsMagSyndieAdvanced
+  name: uplink-clothing-shoes-boots-mag-syndie-advanced-name
+  description: uplink-clothing-shoes-boots-mag-syndie-advanced-desc
+  productEntity: ClothingShoesBootsMagSyndieAdvanced
+  cost:
+    Telecrystal: 25
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+
+- type: listing
+  id: UplinkAccessHijacker
+  name: uplink-access-hijacker-name
+  description: uplink-access-hijacker-desc
+  productEntity: AccessHijacker
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 15
+  cost:
+    Telecrystal: 25
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink

@@ -65,6 +65,48 @@
     price: 750
   - type: StealTarget
     stealGroup: ClothingShoesBootsMagAdv
+  - type: SyndicateResearchTarget
+    researchProtoIds:
+      - displayName: security-grade boots
+        validPrototypes:
+          - ClothingShoesBootsJack
+          - ClothingShoesBootsCombat
+      - displayName: jetpack
+        validPrototypes:
+          - JetpackBlue
+          - JetpackBlueFilled
+          - JetpackBlack
+          - JetpackBlackFilled
+          - JetpackVoid
+          - JetpackVoidFilled
+          - JetpackMini
+          - JetpackMiniFilled
+      - displayName: armor vest
+        validPrototypes:
+          - ClothingOuterArmorBasic
+          - ClothingOuterArmorBasicSlim
+      - displayName: disabler
+        validPrototypes:
+          - WeaponDisabler
+          - WeaponDisablerSMG
+      - displayName: spray painter
+        validPrototypes:
+          - SprayPainter
+      - displayName: magboots
+        validPrototypes:
+          - ClothingShoesBootsMagSci
+          - ClothingShoesBootsMag
+          - ClothingShoesBootsMagSec
+          - ClothingShoesBootsMagBSO
+      - displayName: portable cooling unit
+        validPrototypes: scythe
+          - HydroponicsToolScythe
+      - displayName: hydraulic clamp
+        validPrototypes:
+          - MechEquipmentGrabber
+          - MechEquipmentGrabberSmall
+    researchUnlockId: UplinkTeleportationRelay
+    researchAnnouncementString: research-announcement-syndicate-tactical-laser
 
 - type: entity
   parent: [ClothingShoesBootsMagBase]
