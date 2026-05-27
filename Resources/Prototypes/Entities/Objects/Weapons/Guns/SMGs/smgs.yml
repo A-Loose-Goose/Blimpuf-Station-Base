@@ -284,11 +284,6 @@
     - Burst
     - FullAuto
     - SemiAuto
-  - type: Wieldable
-    unwieldOnUse: false
-  - type: GunWieldBonus
-    minAngle: -10
-    maxAngle: -10
   - type: ItemSlots
     slots:
       gun_magazine:
