@@ -76,11 +76,6 @@
 #    RandomTraitorAliveObjective: 1 - Removed because the objective was boring and didn't progress the round.
     RandomTraitorProgressObjective: 1
 
-- type: weightedRandom
-  id: TraitorObjectiveGroupResearch
-  weights:
-    ResearchObjective: 1
-
 #Thief groups
 - type: weightedRandom
   id: ThiefObjectiveGroups
