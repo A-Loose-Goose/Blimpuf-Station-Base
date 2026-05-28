@@ -98,15 +98,15 @@
           - ClothingShoesBootsMag
           - ClothingShoesBootsMagSec
           - ClothingShoesBootsMagBSO
-      - displayName: portable cooling unit
-        validPrototypes: scythe
+      - displayName: scythe
+        validPrototypes:
           - HydroponicsToolScythe
       - displayName: hydraulic clamp
         validPrototypes:
           - MechEquipmentGrabber
           - MechEquipmentGrabberSmall
-    researchUnlockId: UplinkTeleportationRelay
-    researchAnnouncementString: research-announcement-syndicate-tactical-laser
+    researchUnlockId: UplinkClothingShoesBootsMagSyndieAdvanced
+    researchAnnouncementString: research-announcement-clothing-shoes-boots-mag-syndie-advanced
 
 - type: entity
   parent: [ClothingShoesBootsMagBase]
