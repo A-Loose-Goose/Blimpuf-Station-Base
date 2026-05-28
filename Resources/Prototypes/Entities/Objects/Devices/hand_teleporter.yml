@@ -44,7 +44,7 @@
           - FireExtinguisher
       - displayName: engineering goggles
         validPrototypes:
-          - ClothingEyesGlassesMenson
+          - ClothingEyesGlassesMeson
       - displayName: insulated gloves
         validPrototypes:
           - ClothingHandsGlovesColorYellow

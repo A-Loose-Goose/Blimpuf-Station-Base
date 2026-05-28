@@ -82,7 +82,7 @@
           - DoorElectronics
       - displayName: multitool
         validPrototypes:
-          - multitool
+          - Multitool
       - displayName: forensic scanner
         validPrototypes:
           - ForensicScanner

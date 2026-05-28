@@ -362,6 +362,8 @@
         shader: unshaded
   - type: Clothing
     sprite: _Starlight/Objects/Weapons/Guns/SMGs/wt550r.rsi
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
   - type: Gun
     fireRate: 5.5
     minAngle: 1
