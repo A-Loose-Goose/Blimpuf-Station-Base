@@ -1,0 +1,16 @@
+- type: entity
+  parent: BaseTraitorObjective
+  id: ResearchObjective
+  description: We need you to research some of Nanotrasens high tech equipment. This will likely be found on members of Command.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Misc/module.rsi
+      state: cargodisk
+    difficulty: 1
+  - type: ResearchObjectiveCondition
+  - type: NumberObjective
+    min: 4
+    max: 6
+    title: objective-condition-research-title
+    description: objective-condition-research-description

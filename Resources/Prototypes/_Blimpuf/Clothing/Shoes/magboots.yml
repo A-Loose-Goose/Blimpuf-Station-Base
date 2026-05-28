@@ -1,0 +1,32 @@
+- type: entity
+  parent: [ClothingShoesBootsMagBase, BaseJetpack, BaseSyndicateContraband, ClothingShoesMilitaryBase] # Starlight
+  id: ClothingShoesBootsMagSyndieAdvanced
+  name: advanced blood-red magboots
+  description: Reverse-engineered from the Chief Engineers state-of-the-art magboots. They have an experimental magnetic pull of which does not slow the user, as well as the old integrated thrusters previous models had. The magnetic pull of these boots keep the user so stable that they have a harder time falling over from typical methods of stamina damage. It can hold 1.5 L of gas. # Starlight
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Clothing/Shoes/Boots/magboots-syndicate-advanced.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Blimpuf/Clothing/Shoes/Boots/magboots-syndicate-advanced.rsi
+  - type: ClothingSlowOnDamageModifier #Starlight
+    modifier: 0.5 # Starlight
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  - type: GasTank
+    outputPressure: 42.6
+    air:
+      # 4 minutes of thrust
+      volume: 1.5
+      temperature: 293.15
+      moles:
+        Oxygen: 0.307706858 # oxygen
+        Nitrogen: 0.307706858 # nitrogen
+  - type: Item
+    sprite: null
+    size: Normal
+  - type: StaminaResistance # I cannot see how this could possibly be overpowered in the slightest c:
+    damageCoefficient: 0.5
+  - type: StaticPrice
+    price: 1500

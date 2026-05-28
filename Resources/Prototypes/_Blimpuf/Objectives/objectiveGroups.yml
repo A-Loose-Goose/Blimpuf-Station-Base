@@ -1,0 +1,4 @@
+- type: weightedRandom
+  id: TraitorObjectiveGroupResearch
+  weights:
+    ResearchObjective: 1

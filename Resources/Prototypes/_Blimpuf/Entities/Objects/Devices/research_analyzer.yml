@@ -1,0 +1,13 @@
+﻿- type: entity
+  name: syndicate research analyzer
+  parent: [ BaseItem, BaseSyndicateContraband ]
+  id: ResearchAnalyzer
+  description: A handheld device that scans devices to tell all Syndicate Agents what needs to be done to research a given object of interest.
+  components:
+    - type: Sprite
+      sprite: Objects/Devices/forensic_scanner.rsi
+      state: icon
+    - type: Item
+      size: Small
+      storedRotation: 90
+    - type: SyndicateResearchScanner

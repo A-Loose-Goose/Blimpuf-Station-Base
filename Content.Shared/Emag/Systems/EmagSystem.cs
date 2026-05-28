@@ -154,7 +154,8 @@ public enum EmagType
     None = 0,
     All = ~None,
     Interaction = 1 << 1,
-    Access = 1 << 2
+    Access = 1 << 2,
+    Hijack = 1 << 3
 }
 /// <summary>
 /// Shows a popup to emag user (client side only!) and adds <see cref="EmaggedComponent"/> to the entity when handled

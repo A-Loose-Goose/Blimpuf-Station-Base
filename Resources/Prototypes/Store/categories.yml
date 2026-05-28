@@ -87,7 +87,7 @@
 - type: storeCategory
   id: UplinkPointless
   name: store-category-pointless
-  priority: 10
+  priority: 11
 
 #nukie delivery
 

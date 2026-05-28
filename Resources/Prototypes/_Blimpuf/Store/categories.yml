@@ -1,0 +1,5 @@
+#uplink categoires
+- type: storeCategory
+  id: UplinkResearch
+  name: Research
+  priority: 10

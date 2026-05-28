@@ -251,7 +251,7 @@
   name: WT550
   parent: [BaseWeaponSubMachineGun, BaseSecurityContraband] # Starlight
   id: WeaponSubMachineGunWt550
-  description: A truly unique firearm, the WT550 was designed by NanoTrasen's Small Arms Division as a compact submachine gun fully controllable with one hand. It contains an exotic internal recoil buffer and feeds from special top-mounted .35 magazines. # SL
+  description: A truly unique firearm, the WT550 was designed by NanoTrasen's Small Arms Division as a compact submachine gun that is almost fully controllable with one hand. Even though it does have quite some recoil, it is nowhere near as comparable to other SMGs. It feeds from special top-mounted .35 magazines. # SL
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/SMGs/wt550.rsi
@@ -272,8 +272,8 @@
     boltClosed: null
   - type: Gun
     fireRate: 5.5
-    minAngle: 1
-    maxAngle: 6
+    minAngle: 11
+    maxAngle: 16
     angleIncrease: 1.5
     angleDecay: 6
     selectedMode: FullAuto

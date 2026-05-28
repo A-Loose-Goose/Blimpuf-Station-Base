@@ -1,0 +1,25 @@
+- type: entity
+  parent: [BaseItem, BaseSyndicateContraband]
+  id: AccessHijackerUnlimited
+  suffix: Unlimited
+  name: access hijacker
+  description: An advanced Syndicate tool that easily and quickly applies Syndicate Accesses onto doors that do not already have them. Looks like they tried to make it look like gold but they just used gold paint. It's actually brass. The paint is mostly faded. Feels like it could snap pretty easily too.
+  components:
+  - type: Emag
+    emagImmuneTag: AccessBreakerImmune
+    emagType: Hijack
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Tools/accesshijacker.rsi
+    state: icon
+  - type: Item
+    sprite: _Blimpuf/Objects/Tools/accesshijacker.rsi
+
+- type: entity
+  parent: AccessHijackerUnlimited
+  id: AccessHijacker
+  suffix: Limited
+  components:
+  - type: LimitedCharges
+  - type: AutoRecharge
+  - type: StaticPrice
+    price: 2000
