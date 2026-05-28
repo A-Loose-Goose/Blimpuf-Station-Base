@@ -30,28 +30,9 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
     public override void Initialize()
     {
         SubscribeLocalEvent<SyndicateResearchTargetComponent, ExaminedEvent>(OnExamined);
-        SubscribeLocalEvent<SyndicateResearchTargetComponent, ComponentStartup>(OnStartup);
         SubscribeLocalEvent<SyndicateResearchTargetComponent, InteractUsingEvent>(OnInteractUsing);
         SubscribeLocalEvent<SyndicateResearchTargetComponent, SyndicateResearchDoAfterEvent>(OnDoAfter);
     }
-
-    private void OnStartup(EntityUid uid, SyndicateResearchTargetComponent component, ComponentStartup args)
-    {
-        if (component.ResearchProtoIds.Count < 4)
-            return;
-
-        var list = component.ResearchProtoIds.ToList();
-
-        _random.Shuffle(list);
-
-        var selected = list.Take(4).ToList();
-
-        component.ResearchItem1 = selected[0];
-        component.ResearchItem2 = selected[1];
-        component.ResearchItem3 = selected[2];
-        component.ResearchItem4 = selected[3];
-    }
-
     private void OnExamined(EntityUid uid, SyndicateResearchTargetComponent component, ExaminedEvent args)
     {
         if (!HasComp<TraitorComponent>(args.Examiner))
@@ -64,6 +45,13 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
         }
 
         var message = Loc.GetString("traitor-research-incomplete") + "\n";
+
+        if (!component.ItemScanned)
+        {
+            message += Loc.GetString("traitor-research-requires-scan");
+            args.PushMarkup(message);
+            return;
+        }
 
         if (component.ResearchItem1 != null && !component.Task1Complete)
         {
@@ -115,6 +103,36 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
 
         if (!HasComp<TraitorComponent>(args.User))
             return;
+
+        if (HasComp<SyndicateResearchScannerComponent>(args.Used))
+        {
+            if (component.ItemScanned)
+                return;
+
+            if (component.ResearchProtoIds.Count < 4)
+            {
+                _popup.PopupEntity(Loc.GetString("traitor-research-scan-failed"), uid);
+                return;
+            }
+
+            var list = component.ResearchProtoIds.ToList();
+
+            _random.Shuffle(list);
+
+            var selected = list.Take(4).ToList();
+
+            component.ResearchItem1 = selected[0];
+            component.ResearchItem2 = selected[1];
+            component.ResearchItem3 = selected[2];
+            component.ResearchItem4 = selected[3];
+
+            var confirm = _audio.PlayPvs("/Audio/Machines/scan_finish.ogg", uid)?.Entity;
+
+
+            _popup.PopupEntity(Loc.GetString("traitor-research-scan-success"), uid);
+
+            component.ItemScanned = true;
+        }
 
         if (component.ResearchItem1 != null && component.ResearchItem1.ValidPrototypes.Contains(proto) && !component.Task1Complete)
         {
@@ -169,8 +187,8 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
             return;
 
         _doAfter.TryStartDoAfter(doAfter);
-        var popupOthers = Loc.GetString("traitor-research-begin", ("user", userMeta.EntityName), ("researching", researchingMeta.EntityName), ("used", usedMeta.EntityName));
-        _popup.PopupEntity(popupOthers, uid, PopupType.LargeCaution);
+        var popup = Loc.GetString("traitor-research-begin", ("user", userMeta.EntityName), ("researching", researchingMeta.EntityName), ("used", usedMeta.EntityName));
+        _popup.PopupEntity(popup, uid, PopupType.LargeCaution);
     }
 
     private void OnDoAfter(EntityUid uid, SyndicateResearchTargetComponent component, SyndicateResearchDoAfterEvent args)

@@ -1,8 +1,10 @@
 ﻿traitor-research-incomplete = [color=red][bold]You are able to research this item for the Syndicate.[/bold][/color]
 traitor-research-complete = [color=red][bold]This item has already been researched for the Syndicate. New equipment has been added to the uplink.[/bold][/color]
 
-traitor-research-scan-success = You scan the object using the device!
+traitor-research-scan-success = You scan the object using the device.
 traitor-research-scan-failed = You fail to scan the object.
+
+traitor-research-requires-scan = [color=red]You must scan the item first. Purchase a Syndicate Research Analyzer for free in your uplink.[/color]
 
 traitor-research-task-1-requirements = [color=red]For the first research task, you need to use a [/color][color=yellow]{$item1}.[/color]
 traitor-research-task-2-requirements = [color=red]For the second research task, you need to use a [/color][color=yellow]{$item2}.[/color]

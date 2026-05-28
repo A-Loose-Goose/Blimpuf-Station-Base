@@ -1,5 +1,18 @@
 # Research
 - type: listing
+  id: UplinkResearchAnalyzer
+  name: uplink-research-analyzer-name
+  description: uplink-research-analyzer-desc
+  productEntity: ResearchAnalyzer
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+
+- type: listing
   id: UplinkSyndicateTacticalLaser
   name: uplink-syndicate-tactical-laser-name
   description: uplink-syndicate-tactical-laser-desc

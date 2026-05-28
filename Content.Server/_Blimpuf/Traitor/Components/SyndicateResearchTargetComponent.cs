@@ -6,6 +6,8 @@ namespace Content.Server._Blimpuf.Traitor.Components;
 [RegisterComponent]
 public sealed partial class SyndicateResearchTargetComponent : Component
 {
+    [DataField] public Boolean ItemScanned;
+
     [DataField] public ResearchTargetEntry? ResearchItem1;
 
     [DataField] public ResearchTargetEntry? ResearchItem2;
