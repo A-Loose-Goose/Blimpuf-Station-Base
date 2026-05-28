@@ -3957,5 +3957,16 @@ Entries:
   id: 2201
   time: '2026-05-22T04:52:00.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/22
+- author: ALooseGoose, ItsMaitake, Archangel_06
+  changes:
+  - message: Added in the beginning framework for Syndicate Research. To Be continued.
+    type: Add
+  - message: Nerfed the WT550 to make HoS' WT550r stand out more.
+    type: Tweak
+  - message: Removed Steal Objectives to replace them with Research Objectives.
+    type: Remove
+  id: 2301
+  time: '2026-05-28T15:14:45.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/23
 Order: -1
 
