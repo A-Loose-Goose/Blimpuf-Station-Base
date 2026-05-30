@@ -23,3 +23,5 @@
     CableHVStack: 3 #SL
   contrabandInventory:
     FoodBurgerRobot: 1
+  emaggedInventory:
+    OverlordCircuitBoard: 1 #Blimpuf
