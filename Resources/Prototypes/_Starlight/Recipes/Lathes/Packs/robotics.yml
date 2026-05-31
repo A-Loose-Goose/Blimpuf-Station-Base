@@ -118,7 +118,6 @@
     - CommandmentCircuitBoard
     - PaladinCircuitBoard
     - PanicmovCircuitBoard
-    - GenieCircuitBoard
     - ReporterCircuitBoard
     - LiveLetLiveCircuitBoard
     - StationEfficiencyCircuitBoard
@@ -126,7 +125,6 @@
     - GameMasterCircuitBoard
     - ArtistCircuitBoard
     - NutimovCircuitBoard
-    - JermovCircuitBoard
 
 # Dangerous Lawboards (Emag only)
 - type: latheRecipePack
