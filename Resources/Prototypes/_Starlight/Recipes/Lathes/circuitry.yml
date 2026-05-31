@@ -74,17 +74,6 @@
     Gold: 1000
     Silver: 500
 
-# Genie
-- type: latheRecipe
-  parent: BaseLawboardRecipe
-  id: GenieCircuitBoard
-  result: GenieCircuitBoard
-  materials:
-    UraniumGlass: 1000
-    Plastic: 500
-    Gold: 1000
-    Silver: 500
-
 # Reporter
 - type: latheRecipe
   parent: BaseLawboardRecipe
@@ -167,17 +156,6 @@
   parent: BaseLawboardRecipe
   id: NutimovCircuitBoard
   result: NutimovCircuitBoard
-  materials:
-    UraniumGlass: 1000
-    Plastic: 500
-    Gold: 1000
-    Silver: 500
-
-# Jermov
-- type: latheRecipe
-  parent: BaseLawboardRecipe
-  id: JermovCircuitBoard
-  result: JermovCircuitBoard
   materials:
     UraniumGlass: 1000
     Plastic: 500
