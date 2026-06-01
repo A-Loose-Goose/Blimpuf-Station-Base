@@ -31,7 +31,6 @@
     - CommandmentCircuitBoard
     - PaladinCircuitBoard
     - PanicmovCircuitBoard
-    - GenieCircuitBoard
     - ReporterCircuitBoard
     - LiveLetLiveCircuitBoard
     - StationEfficiencyCircuitBoard
@@ -39,7 +38,6 @@
     - GameMasterCircuitBoard
     - ArtistCircuitBoard
     - NutimovCircuitBoard
-    - JermovCircuitBoard
   radioChannels:
     - Binary
 
