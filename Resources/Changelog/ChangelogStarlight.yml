@@ -3968,5 +3968,19 @@ Entries:
   id: 2301
   time: '2026-05-28T15:14:45.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/23
+- author: Limerent-Sun
+  changes:
+  - message: Overlord lawboard in emag inventory of RoboTech.
+    type: Add
+  - message: Genie, Reporter, Overlord, Game Master, Artist, Nutimov, Jermov, 10 Commandments
+      boards from AI Lawboard crate.
+    type: Remove
+  - message: Jermov, Jenie board from tier 2 experimental research.
+    type: Remove
+  - message: Station AI default lawset changed to Crewsimov.
+    type: Tweak
+  id: 2401
+  time: '2026-06-01T20:52:32.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/24
 Order: -1
 
