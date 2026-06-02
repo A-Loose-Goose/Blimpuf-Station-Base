@@ -24,6 +24,9 @@
   <GuideEntityEmbed Entity="AppearanceVox" Caption="Vox"/>
   <GuideEntityEmbed Entity="AppearanceVulpkanin" Caption="Vulpkanin"/>
   </Box>
+  <Box>
+  <GuideEntityEmbed Entity="AppearanceProtogen" Caption="Protogen"/>
+  </Box>
 
     <!--   <GuideEntityEmbed Entity="AppearanceDwarf" Caption="Dwarf"/>
 <GuideEntityEmbed Entity="AppearanceFelionoid" Caption="Felionoid"/>

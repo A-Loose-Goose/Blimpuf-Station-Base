@@ -16,7 +16,7 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Human, Animal, Rat, Plant, Harpy ]
+          type: [ Human, Animal, Rat, Plant, Harpy, Protogen ]
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:
@@ -47,7 +47,7 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Human, Animal, Rat, Plant, Arachnid, Moth, Harpy ]
+          type: [ Human, Animal, Rat, Plant, Arachnid, Moth, Harpy, Protogen ]
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:
