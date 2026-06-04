@@ -34,6 +34,9 @@
       species: ProtoKin
       hideLayersOnEquip:
       - Hair
+    - type: Inventory
+      speciesId: protokin #to be replaced with proto[species] when new sprites are made
+      templateId: protogen
     - type: Icon
       sprite: _FarHorizons/Mobs/Species/Proto-Kin/parts.rsi
       state: full
