@@ -562,6 +562,42 @@
   - type: StealTarget
     stealGroup: ClothingOuterHardsuitRd
   - type: TheDarkImmune # Starlight
+  - type: SyndicateResearchTarget
+    researchProtoIds:
+      - displayName: uranium
+        validPrototypes:
+          - SheetUranium
+          - SheetUranium1
+          - SheetUranium30
+      - displayName: baseball bat
+        validPrototypes:
+          - BaseBallBat
+      - displayName: stun baton
+        validPrototypes:
+          - Stunbaton
+      - displayName: flash
+        validPrototypes:
+          - Flash
+          - SciFlash
+      - displayName: defibrillator
+        validPrototypes:
+          - BaseDefibrillator
+          - Defibrillator
+          - DefibrillatorEmpty
+          - DefibrillatorOneHandedUnpowered
+          - DefibrillatorCompact
+          - DefibrillatorSyndicate
+      - displayName: plasma spear
+        validPrototypes:
+          - SpearPlasma
+      - displayName: fireaxe
+        validPrototypes:
+          - FireAxe
+      - displayName: pickaxe
+        validPrototypes:
+          - Pickaxe
+    researchUnlockId: UplinkClothingOuterHardsuitUltima
+    researchAnnouncementString: research-announcement-clothing-outer-hardsuit-ultima
 
 #Head of Security's Hardsuit
 - type: entity

@@ -84,3 +84,22 @@
       blacklist:
         tags:
           - NukeOpsUplink
+
+- type: listing
+  id: UplinkClothingOuterHardsuitUltima
+  name: uplink-clothing-outer-hardsuit-ultima-name
+  description: uplink-clothing-outer-hardsuit-ultima-desc
+  productEntity: ClothingOuterHardsuitUltima
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 50
+  cost:
+    Telecrystal: 75
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink

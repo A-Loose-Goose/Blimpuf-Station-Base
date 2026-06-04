@@ -13,3 +13,6 @@ uplink-clothing-shoes-boots-mag-syndie-advanced-desc = A strict upgrade from the
 
 uplink-access-hijacker-name = Access Hijacker
 uplink-access-hijacker-desc = A unique device similar to that of the Emag and Authentication Disruptor. Use this on an item that is locked behind access, and it will covertly add the Syndicate Access to the device, allowing for easy and mostly stealthy infiltration. Hard to remove too!
+
+uplink-clothing-outer-hardsuit-ultima-name = Cybersun Ultima Hardsuit
+uplink-clothing-outer-hardsuit-ultima-desc = Cybersun's most advanced suit yet! It is capable of a variety of self-destructs, allowing the user to activate a localized EMP, Flashbang, or Blast Explosion directly from the suit. While not stellar in Combat, this unique feature would certainly make up for it. Extremely explosive resistant and Rad-Proofed.
