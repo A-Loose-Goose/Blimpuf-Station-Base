@@ -8,9 +8,7 @@
       sprite: _Blimpuf/Clothing/Head/Hardsuits/syndicate-experimental-hardsuit.rsi
       layers:
         - state: icon
-        - state: icon-unshaded
-          shader: unshaded
-        - state: light-overlay
+        - state: icon-flash
           visible: false
           shader: unshaded
           map: [ "light" ]
@@ -20,54 +18,51 @@
       spriteLayer: light
       clothingVisuals:
         head:
-          - state: equipped-head-light
+          - state: on-equipped-HELMET
             shader: unshaded
         head-vox:
-          - state: equipped-head-light-vox
+          - state: on-equipped-HELMET-vox
             shader: unshaded
         head-vulpkanin:
-          - state: equipped-head-light-vulpkanin
+          - state: on-equipped-HELMET
             shader: unshaded
         head-reptilian:
-          - state: equipped-head-light-reptilian
+          - state: on-equipped-HELMET
             shader: unshaded
         head-dog:
-          - state: equipped-head-light-dog
+          - state: on-equipped-HELMET-dog
             shader: unshaded
         # Starlight - Start
         head-avali:
-          - state: equipped-head-light-avali
+          - state: on-equipped-HELMET-avali
             shader: unshaded
         head-resomi:
-          - state: equipped-head-light-resomi
+          - state: on-equipped-HELMET
             shader: unshaded
         # Starlight - End
     - type: Clothing
       clothingVisuals:
         head:
-          - state: equipped-head
-          - state: equipped-head-unshaded
+          - state: off-equipped-HELMET
             shader: unshaded
         head-vox:
-          - state: equipped-head-vox
-          - state: equipped-head-unshaded-vox
+          - state: off-equipped-HELMET-vox
             shader: unshaded
         head-vulpkanin:
-          - state: equipped-head-vulpkanin
-          - state: equipped-head-unshaded-vulpkanin
+          - state: off-equipped-HELMET
             shader: unshaded
         head-reptilian:
-          - state: equipped-head-reptilian
-          - state: equipped-head-unshaded-reptilian
+          - state: off-equipped-HELMET
+            shader: unshaded
+        head-dog:
+          - state: off-equipped-HELMET-dog
             shader: unshaded
         # Starlight - Start
         head-avali:
-          - state: equipped-head-avali
-          - state: equipped-head-unshaded-avali
+          - state: off-equipped-HELMET-avali
             shader: unshaded
         head-resomi:
-          - state: equipped-head-resomi
-          - state: equipped-head-unshaded-resomi
+          - state: off-equipped-HELMET-resomi
             shader: unshaded
         # Starlight - End
     - type: PointLight

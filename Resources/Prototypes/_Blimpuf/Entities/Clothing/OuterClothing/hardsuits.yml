@@ -43,6 +43,10 @@
     - type: ContainerContainer
       containers:
         cell_slot: !type:ContainerSlot
+    - type: Tag
+      tags:
+        - CorgiWearable
+        - WhitelistChameleon
     - type: ItemSlots
       slots:
         cell_slot:
