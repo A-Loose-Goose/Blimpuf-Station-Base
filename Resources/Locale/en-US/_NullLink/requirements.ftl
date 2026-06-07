@@ -7,7 +7,7 @@ requirements-playtime =
        *[other] You still need {$time} of gameplay time for {$tracker} on the {$server} server.
     }
 
-roles-req-discord-starlight = 🌟 STARLIGHT 🌟
+roles-req-discord-starlight = Blimpuf Station
 roles-req-discord-wizden = Wizden
 
 roles-req-mentor-roles = mentor
