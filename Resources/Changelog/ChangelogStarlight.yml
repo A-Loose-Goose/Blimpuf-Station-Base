@@ -3982,5 +3982,14 @@ Entries:
   id: 2401
   time: '2026-06-01T20:52:32.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/24
+- author: Limerent-Sun
+  changes:
+  - message: Overwrote STARLIGHT logos and icons with Blimpuf Station logos and icons.
+    type: Tweak
+  - message: Replaced window manifest data with Blimpuf Station related branding.
+    type: Tweak
+  id: 2501
+  time: '2026-06-07T20:55:46.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/25
 Order: -1
 
