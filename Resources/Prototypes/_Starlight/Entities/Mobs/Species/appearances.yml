@@ -133,6 +133,18 @@
     - type: HumanoidAppearance
       species: Shadekin
 
+- type: entity # Shadekin sprite for guidebook that plays nicer with their ears/tail
+  save: false
+  id: AppearanceShadekinGuidebook
+  categories: [HideSpawnMenu]
+  description: A guidebook dummy shadekin with tight sprite bounds.
+  components:
+    - type: Sprite
+      drawdepth: Mobs
+      layers:
+        - sprite: _Starlight/Mobs/Species/Shadekin/parts.rsi
+          state: full
+
 - type: entity
   parent: [BaseSpeciesDummy, BaseInventoryFemaleJumpsuit]
   id: AppearanceSkeletonPerson
