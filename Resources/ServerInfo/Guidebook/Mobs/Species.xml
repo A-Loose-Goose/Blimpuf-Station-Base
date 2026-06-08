@@ -14,7 +14,7 @@
   <Box>
   <GuideEntityEmbed Entity="AppearanceMoth" Caption="Moth Person"/>
   <GuideEntityEmbed Entity="AppearanceReptilian" Caption="Reptilian"/>
-  <GuideEntityEmbed Entity="AppearanceSlimePerson" Caption="Laspi"/>
+  <GuideEntityEmbed Entity="AppearanceSlimePerson" Caption="Slime Person"/>
   <GuideEntityEmbed Entity="AppearanceVox" Caption="Vox"/>
   <GuideEntityEmbed Entity="AppearanceVulpkanin" Caption="Vulpkanin"/>
   <GuideEntityEmbed Entity="AppearanceCyclorite" Caption="Cyclorite"/>
