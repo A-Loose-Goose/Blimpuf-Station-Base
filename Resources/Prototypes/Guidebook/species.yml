@@ -3,24 +3,24 @@
   name: guide-entry-species
   text: "/ServerInfo/Guidebook/Mobs/Species.xml"
   children:
-  - Elf # Starlight
   - Arachnid
-  - Avali
   - Cyclorite
   - Diona
-  - Dwarf
-  - Felionoid
+  - Elf
   - Human
-  - Lagomorph #Afterlight
-  - SlimePerson
   - Moth
   - Reptilian
   - Resomi
-  - Shadekin # Starlight
+  - Shadekin
+  - SlimePerson
+  - Thaven
   - Vox
   - Vulpkanin
-  - Thaven #Starlight
-  - IPC #FH
+  #- Avali Blimpuf disabled roundstart
+  #- Dwarf Blimpuf disabled roundstart
+  #- Felionoid Blimpuf disabled roundstart
+  #- IPC Blimpuf disabled roundstart
+  #- Lagomorph Blimpuf disabled roundstart
 
 - type: guideEntry
   id: Arachnid
