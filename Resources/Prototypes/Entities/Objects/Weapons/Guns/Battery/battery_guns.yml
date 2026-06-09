@@ -1040,6 +1040,44 @@
   - type: FiringPinHolder
     supportedPins: [ AdvancedLaser ]
   # starlight end
+  - type: SyndicateResearchTarget
+    researchProtoIds:
+      - displayName: seismic charge
+        validPrototypes:
+          - SeismicCharge
+      - displayName: gunpowder
+        validPrototypes:
+          - MaterialGunpowder
+      - displayName: empty implanter
+        validPrototypes:
+          - BaseImplanter
+      - displayName: flash
+        validPrototypes:
+          - Flash
+          - SciFlash
+      - displayName: node scanner
+        validPrototypes:
+          - NodeScanner
+      - displayName: gyroscope machine board
+        validPrototypes:
+          - GyroscopeMachineCircuitboard
+      - displayName: regular command member's cloak
+        validPrototypes:
+          - ClothingNeckCloakCap
+          - ClothingNeckCloakCC
+          - ClothingNeckCloakNtr
+          - ClothingNeckCloakHos
+          - ClothingNeckCloakHop
+          - ClothingNeckCloakCe
+          - ClothingNeckCloakRd
+          - ClothingNeckCloakCe
+      - displayName: modular grenade payload
+        validPrototypes:
+          - ExplosivePayload
+          - FlashPayload
+          - ChemicalPayload
+    researchUnlockId: UplinkWeaponLaserTaipanRevolver
+    researchAnnouncementString: research-announcement-weapon-laser-taipan
 
 - type: entity
   name: temperature gun

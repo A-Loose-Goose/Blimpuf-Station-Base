@@ -40,3 +40,96 @@
           tags:
             - PowerCell
             - PowerCellSmall
+
+- type: entity
+  name: taipan energy revolver
+  parent: [ BaseSyndicateContraband, BaseWeaponBatterySmall ]
+  id: WeaponLaserTaipanRevolver
+  description: An energy revolver that feels way too heavy for how small it is. It's covered in warning signage. What the hell did they put in this? 5 bricks of C-4? Oh wait...There's a tag that says "Made with 5 bricks of C-4"...This has to be incredibly unstable.
+  suffix: Not Exploding
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Weapons/Guns/Battery/syndicate-taipan-revolver.rsi # Starlight Edit: _CD -> _Starlight
+    state: icon
+  - type: Item
+    shape:
+      - 0,0,1,0
+      - 0,1,0,1
+    storedOffset: 0,-7
+    sprite: _Blimpuf/Objects/Weapons/Guns/Battery/syndicate-taipan-revolver.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 5
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+            params:
+              volume: -4
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            WeaponLaserTaipanRevolverExploding:
+              min: 1
+              max: 1
+          transferForensics: true
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+  - type: DamageOnLand
+    damage:
+      types:
+        Blunt: 10
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 5
+  - type: DamageOnHighSpeedImpact
+    minimumSpeed: 2
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
+  - type: BatteryAmmoProvider
+    proto: BulletLaserTaipan  # Starlight - Hitscan
+    fireCost: 75
+
+- type: entity
+  name: taipan energy revolver
+  parent: [ BaseSyndicateContraband, BaseItem ]
+  id: WeaponLaserTaipanRevolverExploding
+  description: Now it's extremely unstable! Those 5 bricks of C-4 can't be doing it any favors! Fuckin' RUN!!!
+  suffix: Exploding
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Weapons/Guns/Battery/syndicate-taipan-revolver.rsi # Starlight Edit: _CD -> _Starlight
+    state: base-on
+  - type: Item
+    shape:
+      - 0,0,1,0
+      - 0,1,0,1
+    storedOffset: 0,-7
+    sprite: _Blimpuf/Objects/Weapons/Guns/Battery/syndicate-taipan-revolver.rsi
+  - type: TriggerOnSpawn
+  - type: TimerTrigger
+    delay: 6
+    beepSound:
+      path: /Audio/_Blimpuf/Effects/fuze.ogg
+      params:
+        volume: 1
+    beepInterval: 1
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 50
+    intensitySlope: 125
+    totalIntensity: 1000
+  - type: ExplodeOnTrigger
+    keysIn:
+      - timer

@@ -11,6 +11,10 @@
       blacklist:
         tags:
           - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
 
 - type: listing
   id: UplinkSyndicateTacticalLaser
@@ -30,6 +34,10 @@
       blacklist:
         tags:
           - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
 
 - type: listing
   id: UplinkTeleportationRelay
@@ -49,6 +57,10 @@
       blacklist:
         tags:
           - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
 
 - type: listing
   id: UplinkClothingShoesBootsMagSyndieAdvanced
@@ -65,6 +77,10 @@
       blacklist:
         tags:
           - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
 
 - type: listing
   id: UplinkAccessHijacker
@@ -84,6 +100,10 @@
       blacklist:
         tags:
           - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
 
 - type: listing
   id: UplinkClothingOuterHardsuitUltima
@@ -103,3 +123,30 @@
       blacklist:
         tags:
           - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
+
+- type: listing
+  id: UplinkWeaponLaserTaipanRevolver
+  name: uplink-weapon-laser-taipan-name
+  description: uplink-weapon-laser-taipan-desc
+  productEntity: WeaponLaserTaipanRevolver
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 50
+  cost:
+    Telecrystal: 75
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle

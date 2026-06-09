@@ -16,3 +16,6 @@ uplink-access-hijacker-desc = A unique device similar to that of the Emag and Au
 
 uplink-clothing-outer-hardsuit-ultima-name = Cybersun Ultima Hardsuit
 uplink-clothing-outer-hardsuit-ultima-desc = Cybersun's most advanced suit yet! It is capable of a variety of self-destructs, allowing the user to activate a localized EMP, Flashbang, or Blast Explosion directly from the suit. While not stellar in Combat, this unique feature would certainly make up for it. Extremely explosive resistant and Rad-Proofed.
+
+uplink-weapon-laser-taipan-name = Taipan Energy Revolver
+uplink-weapon-laser-taipan-desc = A battery powered revolver that fires explosive, non-window penetrative bullets. Incredibly unstable, and can be damaged or thrown to cause it to explode in a small but devastating explosion.
