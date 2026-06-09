@@ -1,9 +1,9 @@
 - type: radioChannel
-  id: Law
-  name: chat-radio-law
-  keycode: "l"
+  id: Corporate
+  name: chat-radio-corporate
+  keycode: "p"
   frequency: 1780
-  color: "#ff178b"
+  color: "#1d66a2"
   icon:
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: law
@@ -40,7 +40,7 @@
 - type: radioChannel
   id: Merchant
   name: chat-radio-merchant
-  keycode: 'p'
+  keycode: '$'
   frequency: 1882
   color: "#ffce2e"
 

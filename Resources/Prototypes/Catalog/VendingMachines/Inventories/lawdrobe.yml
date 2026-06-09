@@ -20,7 +20,7 @@
     LuxuryPen: 2
     HandLabeler: 2
     #added law encryption key for starlight
-    EncryptionKeyLaw: 1
+    EncryptionKeyCorporate: 1
   contrabandInventory:
     ClothingOuterRobesJudge: 1
     ClothingHeadHatPwig: 1

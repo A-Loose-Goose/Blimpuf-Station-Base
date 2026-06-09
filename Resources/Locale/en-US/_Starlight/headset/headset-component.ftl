@@ -1,4 +1,4 @@
-chat-radio-law = Law
+chat-radio-corporate = Corporate
 chat-radio-soviet = Soviet
 chat-radio-expedition = Expedition
 chat-radio-tsf = Trans-Solar

@@ -1,13 +1,13 @@
 - type: entity
   parent: [ EncryptionKey, BaseLawContraband ]
-  id: EncryptionKeyLaw
-  name: law encryption key
+  id: EncryptionKeyCorporate
+  name: Corporate encryption key
   description: An encryption key used by the most meticulous person.
   components:
     - type: EncryptionKey
       channels:
-      - Law
-      defaultChannel: Law
+      - Corporate
+      defaultChannel: Corporate
     - type: Sprite
       layers:
       - state: crypt_silver
@@ -178,7 +178,7 @@
     - Security
     - Service
     - Supply
-    - Law
+    - Corporate
     - Winds
     defaultChannel: Winds
   - type: Sprite
