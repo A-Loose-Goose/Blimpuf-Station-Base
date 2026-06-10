@@ -1271,7 +1271,11 @@ namespace Content.Client.Lobby.UI
                     }
                     description.AddMessage(!reason.IsEmpty ? reason : FormattedMessage.FromMarkupPermissive(Loc.GetString("job-no-requirements")));
 
-                    selector.Setup(items, job.LocalizedName, 200, description, icon, job.Guides);
+                    var jobName = job.ID == "NanoTrasenRepresentative" // make CCR's name fit nicely on job selection
+                        ? "CC Representative"
+                        : job.LocalizedName;
+
+                    selector.Setup(items, jobName, 200, description, icon, job.Guides);
 
                     if (!allowed)
                     {

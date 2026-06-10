@@ -20,7 +20,7 @@
   suffix: DO NOT MAP
   components:
   - type: Stamp
-    stampedName: "NanoTrasen Representative"
+    stampedName: "Central Command Representative"
     stampedColor: "#fcc032"
     stampState: "paper_stamp-ntrep"
   - type: Sprite

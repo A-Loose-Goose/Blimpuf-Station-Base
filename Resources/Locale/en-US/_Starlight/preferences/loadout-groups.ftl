@@ -21,12 +21,12 @@ loadout-group-musician-head = Musician head
 
 # Command
 
-loadout-group-nanotrasenrepresentative-head = NanoTrasen representative head
-loadout-group-nanotrasenrepresentative-outerclothing = NanoTrasen representative outer clothing
-loadout-group-nanotrasenrepresentative-jumpsuit = NanoTrasen representative jumpsuit
-loadout-group-nanotrasenrepresentative-eyewear = NanoTrasen representative eyewear
-loadout-group-nanotrasenrepresentative-shoes = NanoTrasen representative shoes
-loadout-group-nanotrasenrepresentative-neck = NanoTrasen representative neck
+loadout-group-nanotrasenrepresentative-head = Central Command representative head
+loadout-group-nanotrasenrepresentative-outerclothing = Central Command representative outer clothing
+loadout-group-nanotrasenrepresentative-jumpsuit = Central Command representative jumpsuit
+loadout-group-nanotrasenrepresentative-eyewear = Central Command representative eyewear
+loadout-group-nanotrasenrepresentative-shoes = Central Command representative shoes
+loadout-group-nanotrasenrepresentative-neck = Central Command representative neck
 
 loadout-group-captain-shoes = Captain shoes
 loadout-group-hop-shoes = Head of Personnel shoes

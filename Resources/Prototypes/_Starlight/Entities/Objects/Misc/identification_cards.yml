@@ -60,7 +60,7 @@
 - type: entity
   parent: [ IDCardStandard, BaseCommandContraband ]
   id: NanoTrasenRepresentativeIDCard
-  name: NanoTrasen representative ID Card
+  name: Central Command representative ID Card
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Misc/id_cards.rsi

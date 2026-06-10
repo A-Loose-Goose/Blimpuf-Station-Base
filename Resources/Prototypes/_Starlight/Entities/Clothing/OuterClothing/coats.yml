@@ -46,7 +46,7 @@
   parent: [ ClothingOuterStorageFoldableBase, BaseCommandContraband ]
   id: ClothingOuterCoatNtrep
   name: nt representative jacket
-  description: A fancy black jacket, standart issue to NanoTrasen Representatives.
+  description: A fancy black jacket, standart issue to Central Command Representatives.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/OuterClothing/Coats/ntrep.rsi

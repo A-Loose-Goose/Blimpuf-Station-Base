@@ -79,7 +79,7 @@
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ]
   id: ClothingHeadHelmetHardsuitNtrep
   categories: [ HideSpawnMenu ]
-  name: NanoTrasen representative's hardsuit helmet
+  name: Central Command representative's hardsuit helmet
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Head/Hardsuits/ntrep.rsi

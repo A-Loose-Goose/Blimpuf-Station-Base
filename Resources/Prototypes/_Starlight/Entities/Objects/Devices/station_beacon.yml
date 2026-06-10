@@ -2,7 +2,7 @@
 - type: entity
   parent: DefaultStationBeaconCommand
   id: DefaultStationBeaconNTR
-  suffix: NanoTrasen Representative
+  suffix: Central Command Representative
   components:
   - type: NavMapBeacon
     defaultText: station-beacon-nanotrasen-representative

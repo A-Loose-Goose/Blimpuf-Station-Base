@@ -28,7 +28,7 @@
 - type: entity
   id: SpawnPointNtrep
   parent: SpawnPointJobBase
-  name: NanoTrasen representative
+  name: Central Command representative
   components:
   - type: SpawnPoint
     job_id: NanoTrasenRepresentative

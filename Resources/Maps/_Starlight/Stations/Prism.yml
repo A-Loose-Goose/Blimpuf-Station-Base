@@ -72572,7 +72572,7 @@ entities:
       pos: 46.5,4.5
       parent: 2
     - type: FaxMachine
-      name: Nanotrasen Representative
+      name: Central Command Representative
   - uid: 11086
     components:
     - type: Transform

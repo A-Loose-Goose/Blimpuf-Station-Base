@@ -54,7 +54,7 @@
   - type: AccessReader
     access: [["Brigmedic"]]
 
-# NanoTrasen Representatives
+# Central Command VIPs
 #BSO
 - type: entity
   id: LockerBlueshield
