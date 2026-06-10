@@ -105,6 +105,8 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
          * Add custom handling here for forks / version numbers if you care.
          */
 
+        export.Profile.ForcedPrototype = string.Empty;
+
         var profile = export.Profile;
         var collection = IoCManager.Instance;
         profile.EnsureValid(session, collection!);
