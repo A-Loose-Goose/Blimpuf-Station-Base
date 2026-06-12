@@ -59,7 +59,7 @@
         Cold: 0.85
 
 - type: entity
-  parent: [ClothingOuterBase, BaseNanoTrasenContraband]
+  parent: [ ClothingOuterBase, BaseNanoTrasenContraband, AllowSuitStorageClothingGasTanks ]
   id: ClothingOuterRobesMagistrate
   name: magistrate robes
   description: This robe commands authority. Much more dense than the commoner variants.
@@ -82,10 +82,10 @@
         Cold: 0.85
 
 - type: entity
-  parent: [ ClothingOuterStorageFoldableBase, ClothingOuterColdBase, BaseCommandContraband ]
+  parent: [ ClothingOuterStorageFoldableBase, ClothingOuterColdBase, BaseCommandContraband, AllowSuitStorageClothingGasTanks ]
   id: ClothingOuterCoatNtrep
   name: cc representative jacket
-  description: A fancy black jacket, standart issue to Central Command Representatives.
+  description: A fancy black jacket, standard issue to Central Command Representatives.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/OuterClothing/Coats/ntrep.rsi
@@ -491,7 +491,7 @@
   - type: Item
 
 - type: entity
-  parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing, BaseCommandContraband ]
+  parent: [ ClothingOuterStorageBase, BaseCommandContraband, AllowSuitStorageClothingGasTanks ]
   id: ClothingOuterCoatNCT
   name: nt career trainer's jacket
   description: A sharp black coat with beige trim around the cuffs and collar, offering a mix of professionalism and approachability.
