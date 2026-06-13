@@ -26,6 +26,7 @@
   </Box>
   <Box>
   <GuideEntityEmbed Entity="AppearanceProtogen" Caption="Protogen"/>
+  <GuideEntityEmbed Entity="AppearanceRodentia" Caption="Rodentia"/>
   </Box>
 
     <!--   <GuideEntityEmbed Entity="AppearanceDwarf" Caption="Dwarf"/>
