@@ -13,3 +13,6 @@ uplink-clothing-shoes-boots-mag-syndie-advanced-desc = A strict upgrade from the
 
 uplink-access-hijacker-name = Access Hijacker
 uplink-access-hijacker-desc = A unique device similar to that of the Emag and Authentication Disruptor. Use this on an item that is locked behind access, and it will covertly add the Syndicate Access to the device, allowing for easy and mostly stealthy infiltration. Hard to remove too!
+
+uplink-advanced-gorlex-hypospray-name = Advanced Gorlex Hypospray
+uplink-advanced-gorlex-hypospray-desc = An upgraded version of the standard NanoTrasen model of hyposprays - it boasts a higher injection yield, but has slightly less total internal capacity.

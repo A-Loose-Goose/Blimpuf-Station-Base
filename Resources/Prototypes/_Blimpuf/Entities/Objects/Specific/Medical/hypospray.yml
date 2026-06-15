@@ -1,0 +1,32 @@
+- type: entity
+  parent: [BaseHypospray, BaseSyndicateContraband]
+  id: SyndiAdvancedGorlexHypo
+  name: advanced gorlex hypospray
+  description: A sterile injector for rapid administration of drugs. Reverse-engineered from NanoTrasen's most updated designs, this state of the art medical device boasts less internal fluid storage, but a higher delivery yield per injection. # Blimpuf
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Specific/Medical/advancedgorlexhypospray.rsi
+    layers:
+      - state: hypo
+        map: ["enum.SolutionContainerLayers.Base"]
+      - state: hypo_fill1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Item
+    sprite: _Blimpuf/Objects/Specific/Medical/advancedgorlexhypospray.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 24
+  - type: SolutionContainerVisuals
+    maxFillLevels: 8
+    fillBaseName: hypo_fill
+    solutionName: hypospray
+  - type: Injector
+    solutionName: hypospray
+    currentTransferAmount: 8
+    activeModeProtoId: HyposprayDynamicMode
+    allowedModes:
+    - HyposprayDynamicMode
+    - HyposprayInjectMode
+

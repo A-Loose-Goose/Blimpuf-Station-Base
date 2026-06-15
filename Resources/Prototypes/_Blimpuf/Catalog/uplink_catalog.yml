@@ -84,3 +84,22 @@
       blacklist:
         tags:
           - NukeOpsUplink
+
+- type: listing
+  id: UplinkAdvancedGorlexHypospray
+  name: uplink-advanced-gorlex-hypospray-name
+  description: uplink-advanced-gorlex-hypospray-desc
+  productEntity: SyndiAdvancedGorlexHypo
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 15
+  cost:
+    Telecrystal: 25
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
