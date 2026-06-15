@@ -753,7 +753,7 @@
     spawned:
     - id: FoodMeat
       amount: 3
-    - id: Telecrystal20
+    - id: Telecrystal
       amount: 1
   - type: Grammar
     attributes:
