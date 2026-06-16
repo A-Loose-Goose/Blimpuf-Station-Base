@@ -55,7 +55,8 @@
     - SiliconLiberation #Starlight
 #    - Brighteye #Starlight
     - ThiefGamerule # Starlight, Event Light
-    # - CosmicCult #Starlight
+    - CosmicCult #Starlight
+    - TerrorSpidersSpawn # Starlight
 
 - type: gamePreset
   id: AllerAtOnce
@@ -96,9 +97,10 @@
 #    - Brighteye #Starlight
     - ThiefGamerule # Starlight, Event Light
     - LoneOpsSpawn # Starlight
-    #- RailroadingTerminator Blimpuf disable railroading
-    #- RailroadingMinor Blimpuf disable railroading
-    # - CosmicCult # Starlight
+    #- RailroadingTerminator # Starlight
+    #- RailroadingMinor # Starlight
+    - CosmicCult # Starlight
+    - TerrorSpidersSpawn # Starlight
 
 - type: gamePreset
   id: Extended
