@@ -1,0 +1,44 @@
+# Blimpuf Wizard Robes by Vee
+- type: entity
+  parent: ClothingOuterWizard # Saves tag reuse
+  id: ClothingOuterWizardBlackGilded
+  name: gilded black wizard robes
+  description: An ornate black robe from the 5th Age, it features an ornate gilded trim.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Clothing/OuterClothing/Misc/wizard_black_gilded.rsi
+  - type: Clothing
+    sprite: _Blimpuf/Clothing/OuterClothing/Misc/wizard_black_gilded.rsi
+
+- type: entity
+  parent: ClothingOuterWizard # Saves tag reuse
+  id: ClothingOuterWizardBlackTrim
+  name: trimmed black wizard robes
+  description: An ornate black robe from the 5th Age, it it features an ornate trim.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Clothing/OuterClothing/Misc/wizard_black_trim.rsi
+  - type: Clothing
+    sprite: _Blimpuf/Clothing/OuterClothing/Misc/wizard_black_trim.rsi
+
+- type: entity
+  parent: ClothingOuterWizard # Saves tag reuse
+  id: ClothingOuterWizardBlueGilded
+  name: gilded blue wizard robes
+  description: An ornate blue robe from the 5th Age, it features an ornate gilded trim.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Clothing/OuterClothing/Misc/wizard_blue_gilded.rsi
+  - type: Clothing
+    sprite: _Blimpuf/Clothing/OuterClothing/Misc/wizard_blue_gilded.rsi
+
+- type: entity
+  parent: ClothingOuterWizard # Saves tag reuse
+  id: ClothingOuterWizardBlueTrim
+  name: trimmed blue wizard robes
+  description: An ornate blue robe from the 5th Age, it features an ornate trim.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Clothing/OuterClothing/Misc/wizard_blue_trim.rsi
+  - type: Clothing
+    sprite: _Blimpuf/Clothing/OuterClothing/Misc/wizard_blue_trim.rsi
