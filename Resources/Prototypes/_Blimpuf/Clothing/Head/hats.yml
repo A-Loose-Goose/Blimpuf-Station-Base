@@ -1,0 +1,44 @@
+# Wizard Hats by Vee
+- type: entity
+  parent: ClothingHeadHatWizard # Parents blue since blue wizard hat sprite base
+  id: ClothingHeadHatWizardBlackGilded
+  name: gilded black wizard hat
+  description: A strange-looking black hat that most certainly belongs to a powerful magic-user.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Clothing/Head/Hats/wizard_black_gilded.rsi
+  - type: Clothing
+    sprite: _Blimpuf/Clothing/Head/Hats/wizard_black_gilded.rsi
+
+- type: entity
+  parent: ClothingHeadHatWizard # Parents blue since blue wizard hat sprite base
+  id: ClothingHeadHatWizardBlackTrim
+  name: trimmed black wizard hat
+  description: A strange-looking black hat that most certainly belongs to a powerful magic-user.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Clothing/Head/Hats/wizard_black_trim.rsi
+  - type: Clothing
+    sprite: _Blimpuf/Clothing/Head/Hats/wizard_black_trim.rsi
+
+- type: entity
+  parent: ClothingHeadHatWizard # Parents blue since blue wizard hat sprite base
+  id: ClothingHeadHatBlueGilded
+  name: gilded blue wizard hat
+  description: A strange-looking purple hat that most certainly belongs to a powerful magic-user.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Clothing/Head/Hats/wizard_blue_gilded.rsi
+  - type: Clothing
+    sprite: _Blimpuf/Clothing/Head/Hats/wizard_blue_gilded.rsi
+
+- type: entity
+  parent: ClothingHeadHatWizard # Parents blue since blue wizard hat sprite base
+  id: ClothingHeadHatBlueTrim
+  name: trimmed blue wizard hat
+  description: A strange-looking orange hat that most certainly belongs to a powerful magic-user.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Clothing/Head/Hats/wizard_blue_trim.rsi
+  - type: Clothing
+    sprite: _Blimpuf/Clothing/Head/Hats/wizard_blue_trim.rsi
