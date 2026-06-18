@@ -6,6 +6,7 @@ using Content.Shared.Gibbing;
 using Content.Shared.Temperature.Components;
 using Robust.Server.Containers;
 using Robust.Shared.Physics.Components;
+using Content.Shared.Humanoid;
 using Robust.Shared.Timing;
 
 namespace Content.Server.Atmos.Rotting;
@@ -54,13 +55,23 @@ public sealed class RottingSystem : SharedRottingSystem
     /// <returns></returns>
     private float GetRotRate(EntityUid uid)
     {
+        float rotRate = 1f; //Base Rot-Rate
+
+        // Blimpuf - Vox Decay only at half the rate 
+        if (EntityManager.TryGetComponent<HumanoidAppearanceComponent>(uid, out var humanoid) &&
+            humanoid != null &&
+            humanoid.Species.Id == "Vox")
+        {
+            rotRate *= 0.5f;
+        }
+
         if (_container.TryGetContainingContainer((uid, null, null), out var container) &&
             TryComp<ProRottingContainerComponent>(container.Owner, out var rotContainer))
         {
-            return rotContainer.DecayModifier;
+            rotRate *= rotContainer.DecayModifier;
         }
 
-        return 1f;
+        return rotRate;
     }
 
     public override void Update(float frameTime)
