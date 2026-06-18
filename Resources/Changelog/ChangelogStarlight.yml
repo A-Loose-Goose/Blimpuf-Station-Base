@@ -4013,5 +4013,14 @@ Entries:
   id: 2701
   time: '2026-06-16T04:14:49.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/27
+- author: LadyLiliana
+  changes:
+  - message: Vox now decay at half speed
+    type: Add
+  - message: made graves compatible with the new Vox decay speed
+    type: Tweak
+  id: 2801
+  time: '2026-06-18T17:05:07.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/28
 Order: -1
 
