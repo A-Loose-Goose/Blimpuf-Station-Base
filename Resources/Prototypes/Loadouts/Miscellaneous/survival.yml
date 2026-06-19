@@ -226,7 +226,7 @@
   - !type:GroupLoadoutEffect
     proto: EffectSpeciesVox
   equipment:
-    suitstorage: DoubleEmergencyNitrogenTankFilled
+    voxtankstorage: DoubleEmergencyNitrogenTankFilled
 
 # Full EVA Tank, Any Species
 - type: loadout
@@ -263,13 +263,13 @@
     pocket1: DoubleEmergencyOxygenTankFilled
 
 # Tank Harness
-- type: loadout
-  id: LoadoutTankHarness
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: EffectSpeciesVox
-  equipment:
-    outerClothing: ClothingOuterVestTank
+#- type: loadout
+#  id: LoadoutTankHarness
+#  effects:
+#  - !type:GroupLoadoutEffect
+#    proto: EffectSpeciesVox
+#  equipment:
+#    outerClothing: ClothingOuterVestTank
 
 # Breath Tool On Face
 - type: loadout
