@@ -8,6 +8,7 @@ using Robust.Server.Containers;
 using Robust.Shared.Physics.Components;
 using Content.Shared.Humanoid;
 using Robust.Shared.Timing;
+using Content.Server._Blimpuf.RotMultiplier;
 
 namespace Content.Server.Atmos.Rotting;
 
@@ -57,12 +58,11 @@ public sealed class RottingSystem : SharedRottingSystem
     {
         float rotRate = 1f; //Base Rot-Rate
 
-        // Blimpuf - Vox Decay only at half the rate
-        if (EntityManager.TryGetComponent<HumanoidAppearanceComponent>(uid, out var humanoid) &&
-            humanoid != null &&
-            humanoid.Species.Id == "Vox")
+        // Blimpuf - Required so Vox Decay only at half the rate
+        if (TryComp<RotRateMulitplierComponent>(uid, out var multiplier) &&
+            multiplier != null)
         {
-            rotRate *= 0.5f;
+            rotRate *= multiplier.RotRateMulitplier;
         }
 
         if (_container.TryGetContainingContainer((uid, null, null), out var container) &&
