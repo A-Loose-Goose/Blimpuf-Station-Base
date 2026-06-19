@@ -262,14 +262,14 @@
   equipment:
     pocket1: DoubleEmergencyOxygenTankFilled
 
-# Tank Harness
-#- type: loadout
-#  id: LoadoutTankHarness
-#  effects:
-#  - !type:GroupLoadoutEffect
-#    proto: EffectSpeciesVox
-#  equipment:
-#    outerClothing: ClothingOuterVestTank
+ Tank Harness
+- type: loadout
+  id: LoadoutTankHarness
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: EffectSpeciesVox
+  equipment:
+    outerClothing: ClothingOuterVestTank
 
 # Breath Tool On Face
 - type: loadout
