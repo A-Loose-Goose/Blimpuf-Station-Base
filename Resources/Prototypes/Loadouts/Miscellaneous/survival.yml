@@ -262,7 +262,7 @@
   equipment:
     pocket1: DoubleEmergencyOxygenTankFilled
 
- Tank Harness
+# Tank Harness
 - type: loadout
   id: LoadoutTankHarness
   effects:

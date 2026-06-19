@@ -100,7 +100,7 @@
         - type: AllowSuitStorage
       displayName: Suit Storage
     - name: voxtankstorage
-      slotTexture: suit_storage
+      slotTexture: vox_tank_storage
       slotFlags: SUITSTORAGE
       slotGroup: MainHotbar
       stripTime: 3
