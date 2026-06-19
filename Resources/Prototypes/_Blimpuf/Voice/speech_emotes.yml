@@ -1,0 +1,26 @@
+- type: emote
+  id: Coo
+  name: chat-emote-name-coo
+  category: Vocal
+  available: true
+  icon: _Starlight/Interface/Emotes/emote-hum.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-msg-coo"]
+  chatTriggers:
+  - coo
+  - coo.
+  - coo?
+  - coo!
+  - coos
+  - coos.
+  - coos?
+  - coos!
+  - cooos
+  - cooos.
+  - cooos?
+  - cooos!
