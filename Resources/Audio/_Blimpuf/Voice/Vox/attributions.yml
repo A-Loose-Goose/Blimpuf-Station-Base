@@ -1,8 +1,8 @@
 - files:
   - vox_coo.ogg
   license: "CC-BY-SA-3.0"
-  copyright: "Pieced together by ItsMaitake on Blimpuf Station"
-  source: "Made using soundbyte from https://pixabay.com/sound-effects/nature-the-mourning-dove-335483/ and the Vox Chitter sound by JhennaSide using https://freesound.org/people/JhennaSide/sounds/455906/"
+  copyright: "Pieced together by ItsMaitake on Blimpuf Station using the Vox Chitter sound by JhennaSide using https://freesound.org/people/JhennaSide/sounds/455906/"
+  source: "https://pixabay.com/sound-effects/nature-the-mourning-dove-335483/"
 
 - files:
   - vox_whistle.ogg
