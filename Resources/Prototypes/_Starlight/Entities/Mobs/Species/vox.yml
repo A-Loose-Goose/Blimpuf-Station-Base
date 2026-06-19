@@ -3,6 +3,10 @@
   id: BaseMobVox
   abstract: true
   components:
+  # Blimpuf-start
+  - type: RotRateMulitplier
+    rotRateMulitplier: 0.5
+  # Blimpuf-end
   # Starlight-start: Languages
   - type: LanguageKnowledge
     speaks:
