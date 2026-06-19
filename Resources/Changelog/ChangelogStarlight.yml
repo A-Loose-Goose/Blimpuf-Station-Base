@@ -4022,5 +4022,18 @@ Entries:
   id: 2801
   time: '2026-06-18T17:05:07.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/28
+- author: ItsMaitake
+  changes:
+  - message: Vox footstep modifier that makes them walk silently.
+    type: Add
+  - message: Coo/Whistle/Yawn sounds to Vox.
+    type: Add
+  - message: A new slot for the Vox gas tanks on their back.
+    type: Add
+  - message: Custom Vox tank storage icons for each of the game HUD themes.
+    type: Add
+  id: 2901
+  time: '2026-06-19T03:28:11.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/29
 Order: -1
 
