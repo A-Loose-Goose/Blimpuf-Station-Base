@@ -4044,5 +4044,14 @@ Entries:
   id: 3001
   time: '2026-06-19T05:07:19.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/30
+- author: LadyLiliana
+  changes:
+  - message: The rot rate multiplier system to work universally.
+    type: Tweak
+  - message: Some issues with Vox rot rate multiplier.
+    type: Fix
+  id: 3101
+  time: '2026-06-19T18:37:20.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/31
 Order: -1
 
