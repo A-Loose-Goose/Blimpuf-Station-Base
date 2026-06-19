@@ -356,6 +356,12 @@
       path: /Audio/Voice/Vox/vox_click.ogg
     Chitter:
       path: /Audio/Voice/Vox/vox_chitter.ogg
+    Whistle:
+      path: /Audio/_Blimpuf/Voice/Vox/vox_whistle.ogg
+    Yawn:
+      path: /Audio/_Blimpuf/Voice/Vox/vox_yawn.ogg
+    Coo:
+      path: /Audio/_Blimpuf/Voice/Vox/vox_coo.ogg
     Honk:
       collection: BikeHorn
     Crying:

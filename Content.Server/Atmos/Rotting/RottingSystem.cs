@@ -57,7 +57,7 @@ public sealed class RottingSystem : SharedRottingSystem
     {
         float rotRate = 1f; //Base Rot-Rate
 
-        // Blimpuf - Vox Decay only at half the rate 
+        // Blimpuf - Vox Decay only at half the rate
         if (EntityManager.TryGetComponent<HumanoidAppearanceComponent>(uid, out var humanoid) &&
             humanoid != null &&
             humanoid.Species.Id == "Vox")

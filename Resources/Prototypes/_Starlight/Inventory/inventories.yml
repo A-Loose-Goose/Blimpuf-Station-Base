@@ -476,6 +476,7 @@
   components:
   - type: Inventory
     speciesId: vox
+    templateId: vox
     displacements:
       jumpsuit:
         sizeMaps:

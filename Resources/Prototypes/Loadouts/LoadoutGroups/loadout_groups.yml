@@ -140,7 +140,7 @@
 - type: loadoutGroup
   id: GroupTankHarness
   name: loadout-group-tank-harness
-  minLimit: 1
+  minLimit: 0
   hidden: true
   loadouts:
   - LoadoutTankHarness

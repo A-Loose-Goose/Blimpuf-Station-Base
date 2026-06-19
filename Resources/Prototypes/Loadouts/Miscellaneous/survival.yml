@@ -226,7 +226,7 @@
   - !type:GroupLoadoutEffect
     proto: EffectSpeciesVox
   equipment:
-    suitstorage: DoubleEmergencyNitrogenTankFilled
+    voxtankstorage: DoubleEmergencyNitrogenTankFilled
 
 # Full EVA Tank, Any Species
 - type: loadout
