@@ -2,7 +2,6 @@ using Content.Shared.Eui;
 using Content.Shared.Roles;
 using Robust.Shared.Player;
 using Robust.Shared.Serialization;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared._Starlight.NewLife;
 
