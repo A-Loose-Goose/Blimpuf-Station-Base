@@ -9,7 +9,7 @@ using Robust.Shared.Player;
 using Content.Shared.NodeContainer;
 using Content.Server._Starlight.Medical.Body.Systems;
 
-namespace Content.Server.VentCrawl;
+namespace Content.Server._Starlight.VentCrawl;
 
 public sealed class BeingVentCrawlSystem : EntitySystem
 {

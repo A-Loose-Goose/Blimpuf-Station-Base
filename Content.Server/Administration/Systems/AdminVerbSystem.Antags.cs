@@ -23,7 +23,8 @@ using Robust.Shared.Utility;
 using Content.Shared.Roles.Components;
 using Content.Shared._Starlight.Shadekin;
 using Content.Server.Speech.Components; // Starlight
-using Robust.Shared.Audio; // Starlight
+using Robust.Shared.Audio;
+using Content.Shared._Starlight.Shadekin.Components; // Starlight
 
 namespace Content.Server.Administration.Systems;
 

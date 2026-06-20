@@ -515,7 +515,7 @@ public sealed partial class RadioSystem : EntitySystem
     // Starlight - End
 
     /// <inheritdoc cref="TelecomServerComponent"/>
-    public bool HasActiveServer(MapId mapId, string channelId)
+    private bool HasActiveServer(MapId mapId, string channelId)
     {
         var servers = EntityQuery<TelecomServerComponent, EncryptionKeyHolderComponent, ApcPowerReceiverComponent, TransformComponent>();
         foreach (var (_, keys, power, transform) in servers)

@@ -43,7 +43,7 @@ using System.Linq;
 using Content.Shared.Silicons.Laws.Components;
 using Content.Shared.DeviceLinking;
 using System.Numerics;
-using Content.Server.Administration.Systems;
+using Content.Shared._Starlight;
 #endregion Starlight
 
 namespace Content.Shared.Silicons.StationAi;
