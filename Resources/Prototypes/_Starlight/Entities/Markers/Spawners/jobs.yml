@@ -56,7 +56,7 @@
 - type: entity
   id: SpawnPointBlueShield
   parent: SpawnPointJobBase
-  name: blue shield officer
+  name: central command enforcement officer
   components:
   - type: SpawnPoint
     job_id: BlueShield

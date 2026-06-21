@@ -45,12 +45,12 @@
 
 ## END OF ARCHETYPES
 
-#BSO Hardsuit
+# CCE hardsuit
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ]
   id: ClothingHeadHelmetHardsuitBlueshield
   categories: [ HideSpawnMenu ]
-  name: blue shield hardsuit helmet
+  name: central command enforcer hardsuit helmet
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Head/Hardsuits/blueshield.rsi

@@ -55,8 +55,8 @@
 - type: entity
   parent: [ClothingBackpackSatchel, BaseBlueShieldContraband]
   id: ClothingBackpackSatchelBlueShield
-  name: blueshield officer satchel
-  description: Useful for holding everything a speedy Blueshield Officer needs!
+  name: central command enforcement officer satchel
+  description: Useful for holding everything a speedy Central Command Enforcement Officer needs!
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Back/Satchels/blueshield.rsi

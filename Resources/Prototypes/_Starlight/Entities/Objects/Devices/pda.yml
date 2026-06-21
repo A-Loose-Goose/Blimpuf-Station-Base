@@ -250,7 +250,7 @@
 - type: entity
   parent: [ BasePDA, BaseBlueShieldContraband ]
   id: BlueShieldPDA
-  name: blue shield PDA
+  name: central command enforcer PDA
   description: Comes with a built-in medtek to assess command staff's wounds after you heroically save them.
   components:
   - type: Sprite
@@ -281,7 +281,7 @@
 - type: entity
   parent: BlueShieldPDA
   id: VeteranBlueShieldPDA
-  name: veteran blue shield PDA
+  name: veteran central command enforcer PDA
   description: Comes with a built-in medtek to assess command staff's wounds after you heroically save them.
   components:
   - type: Sprite

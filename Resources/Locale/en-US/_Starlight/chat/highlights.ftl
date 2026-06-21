@@ -1,7 +1,7 @@
 # Command
 
 # NanoTrasen
-highlights-blue-shield-officer = Blue Shield Officer, Blue Shield, Blueshield, "BSO"
+highlights-blue-shield-officer = Central Command Enforcement, Central Command Enforcer, "CCE"
 highlights-magistrate = Magistrate, "Law", "Magi"
 highlights-nanotrasen-representative = Central Command Representative, "NTR", NT Rep, NTRep, "CCR", CC Rep, CCRep, "SOP", Standard Operating Procedure
 highlights-nanotrasen-career-trainer = NanoTrasen Career Trainer, Career Trainer, "NCT"

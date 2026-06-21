@@ -1,8 +1,8 @@
-#BSO Hardsuit
+# CCE hardsuit
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseBlueShieldContraband]
   id: ClothingOuterHardsuitBlueshield
-  name: blue shield hardsuit
+  name: central command enforcer hardsuit
   description: A high-tech hardsuit perfect for diving in front of Mr. Pre- Er, Captain.
   components:
   - type: Tag

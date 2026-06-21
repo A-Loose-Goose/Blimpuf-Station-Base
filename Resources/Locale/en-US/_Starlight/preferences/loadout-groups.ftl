@@ -31,14 +31,14 @@ loadout-group-nanotrasenrepresentative-neck = Central Command representative nec
 loadout-group-captain-shoes = Captain shoes
 loadout-group-hop-shoes = Head of Personnel shoes
 
-loadout-group-blueshield-head = Blueshield head
-loadout-group-blueshield-backpack = Blueshield backpack
-loadout-group-blueshield-jumpsuit = Blueshield jumpsuit
-loadout-group-blueshield-eyewear = Blueshield eyewear
-loadout-group-blueshield-outerclothing = Blueshield Outer Clothing
-loadout-group-blueshield-belt = Blueshield Belt
-loadout-group-blueshield-neck = Blueshield Neck
-loadout-group-blueshield-id = Blueshield ID
+loadout-group-blueshield-head = Central Command Enforcer head
+loadout-group-blueshield-backpack = Central Command Enforcer backpack
+loadout-group-blueshield-jumpsuit = Central Command Enforcer jumpsuit
+loadout-group-blueshield-eyewear = Central Command Enforcer eyewear
+loadout-group-blueshield-outerclothing = Central Command Enforcer outer clothing
+loadout-group-blueshield-belt = Central Command Enforcer belt
+loadout-group-blueshield-neck = Central Command Enforcer neck
+loadout-group-blueshield-id = Central Command Enforcer ID
 
 # Security
 loadout-group-security-tie = Security tie

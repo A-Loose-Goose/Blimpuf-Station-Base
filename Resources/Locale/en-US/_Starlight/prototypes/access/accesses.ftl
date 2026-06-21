@@ -1,7 +1,7 @@
 id-card-access-level-debrief = Debrief
 id-card-access-level-magistrate = Magistrate
 id-card-access-level-ntrep = CC Representative
-id-card-access-level-blueshield = BlueShield
+id-card-access-level-blueshield = CC Enforcer
 id-card-access-level-iaa = Internal Affairs
 
 id-card-access-level-brigmedic = Brigmedic

@@ -112,7 +112,7 @@
   parent: PosterBase
   id: PosterContrabandRobirdVox
   name: "Robird Voxes Do Crime"
-  description: "A poster vandalised to look like a Blueshield Officer, signed by Jack D.?"
+  description: "A poster vandalised to look like a Central Command Enforcement Officer, signed by Jack D.?"
   components:
   - type: Sprite
     sprite: _Starlight/Structures/Wallmounts/posters/robird.rsi

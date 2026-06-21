@@ -55,11 +55,11 @@
     access: [["Brigmedic"]]
 
 # Central Command VIPs
-#BSO
+# CCE
 - type: entity
   id: LockerBlueshield
   parent: LockerBaseSecure
-  name: blue shield locker
+  name: central command enforcer locker
   components:
   - type: Appearance
   - type: Sprite

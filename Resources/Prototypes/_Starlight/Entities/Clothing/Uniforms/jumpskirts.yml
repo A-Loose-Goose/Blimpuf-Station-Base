@@ -1,7 +1,7 @@
 - type: entity
   parent: [ ClothingUniformSkirtBase, BaseCommandContraband ]
   id: ClothingUniformJumpskirtNtrep
-  name: nt representative skirt
+  name: cc representative skirt
   description: That skirt that is better not to see.
   components:
   - type: Sprite
@@ -12,7 +12,7 @@
 - type: entity
   parent: [ ClothingUniformSkirtBase, BaseCommandContraband ]
   id: ClothingUniformJumpskirtNtrepTurtleneck
-  name: nt representative's turtleneck jumpskirt
+  name: cc representative's turtleneck jumpskirt
   description: For a more casual look while on the job.
   components:
   - type: Sprite
@@ -23,7 +23,7 @@
 - type: entity
   parent: [ ClothingUniformSkirtBase, BaseBlueShieldContraband ]
   id: ClothingUniformJumpskirtBlueShield
-  name: blueshield skirt
+  name: central command enforcement skirt
   description: The skirt of a glorified bodyguard.
   components:
   - type: Sprite
@@ -34,8 +34,8 @@
 - type: entity
   parent: [ ClothingUniformSkirtBase, BaseBlueShieldContraband ]
   id: ClothingUniformJumpskirtEliteBlueShield
-  name: elite blueshield skirt
-  description: The skirt of an elite BSO. To reach such a level, you must have protected Command from [REDACTED].
+  name: elite central command enforcement skirt
+  description: The skirt of an elite CCE. To reach such a level, you must have protected Command from [REDACTED].
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Uniforms/Jumpskirt/eliteblueshield.rsi
@@ -45,8 +45,8 @@
 - type: entity
   parent: [ClothingUniformBase, BaseBlueShieldContraband ]
   id: ClothingUniformJumpskirtBlueShieldSkirt
-  name: blueshield officer's pencil skirt
-  description: A collared shirt and pencil skirt for the blueshield officer who likes to keep it business casual.
+  name: central command enforcement officer's pencil skirt
+  description: A collared shirt and pencil skirt for the central command enforcement officer who likes to keep it business casual.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Uniforms/Jumpskirt/blueshieldskirt.rsi
