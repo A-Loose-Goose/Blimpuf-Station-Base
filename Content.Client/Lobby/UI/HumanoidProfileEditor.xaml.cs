@@ -1271,9 +1271,7 @@ namespace Content.Client.Lobby.UI
                     }
                     description.AddMessage(!reason.IsEmpty ? reason : FormattedMessage.FromMarkupPermissive(Loc.GetString("job-no-requirements")));
 
-                    var jobName = job.ID == "NanoTrasenRepresentative" // make CCR's name fit nicely on job selection
-                        ? "CC Representative"
-                        : job.LocalizedName;
+                    var jobName = JobDisplayNameOverrides.GetLobbyDisplayName(job);
 
                     selector.Setup(items, jobName, 200, description, icon, job.Guides);
 
@@ -2118,4 +2116,3 @@ namespace Content.Client.Lobby.UI
         }
     }
 }
-

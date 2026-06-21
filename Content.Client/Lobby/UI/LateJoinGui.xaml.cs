@@ -274,7 +274,7 @@ namespace Content.Client.Lobby.UI
                             Margin = new Thickness(5f, 0, 0, 0)
                         };
 
-                        var jobButton = new JobButton(jobLabel, prototype.ID, prototype.LocalizedName, value);
+                        var jobButton = new JobButton(jobLabel, prototype.ID, JobDisplayNameOverrides.GetLobbyDisplayName(prototype), value);
 
                         var jobSelector = new BoxContainer
                         {
