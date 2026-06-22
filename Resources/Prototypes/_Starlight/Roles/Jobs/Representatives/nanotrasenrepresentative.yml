@@ -10,7 +10,7 @@
     - !type:RoleTimeRequirement
       role: JobIAA
       time: 8h
-  startingGear: NanoTrasenRepresentativeGear
+  startingGear: CentralCommandRepresentativeGear
   icon: JobIconNanoTrasenRepresentative
   rules: job-rules-corporate-aligned
   supervisors: job-supervisors-centcom
@@ -57,7 +57,7 @@
         - type: CommandStaff
 
 - type: startingGear
-  id: NanoTrasenRepresentativeGear
+  id: CentralCommandRepresentativeGear
   equipment:
     #shoes: ClothingShoesBootsLaceup
     #head: ClothingHeadHatCapNtrep

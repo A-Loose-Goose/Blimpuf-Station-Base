@@ -15,7 +15,7 @@
       time: 5h # obligatory brigmed (and thus paramed) hours
     - !type:RolesRequirement
       proto: CCEReq
-  startingGear: BlueShieldGear
+  startingGear: CentralCommandEnforcerGear
   icon: JobIconBlueShield
   rules: job-rules-corporate-aligned
   supervisors: job-supervisors-centcom
@@ -58,7 +58,7 @@
       implants: [MindShieldImplant]
 
 - type: startingGear
-  id: BlueShieldGear
+  id: CentralCommandEnforcerGear
   equipment:
     # head: ClothingHeadHatBeretBlueShield
     # id: BlueShieldPDA
