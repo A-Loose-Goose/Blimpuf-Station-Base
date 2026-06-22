@@ -4053,5 +4053,20 @@ Entries:
   id: 3101
   time: '2026-06-19T18:37:20.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/31
+- author: Limerent-Sun
+  changes:
+  - message: Law department.
+    type: Remove
+  - message: Blueshield Officer is now Central Command Enforcer.
+    type: Tweak
+  - message: NanoTrasen Representative is now Central Command Representative.
+    type: Tweak
+  - message: CCR and Magi no longer part of Command department.
+    type: Tweak
+  - message: CCR, Magi, CCE, IAA, NCT job icon updates.
+    type: Tweak
+  id: 3201
+  time: '2026-06-22T06:59:55.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/32
 Order: -1
 
