@@ -7,7 +7,7 @@
       sprite: _Starlight/Objects/Misc/id_cards.rsi
       layers:
         - state: silver
-        - sprite: &starlight-icon-rsi _Starlight/Interface/Misc/job_icons.rsi
+        - sprite: &blimpuf-icon-rsi _Blimpuf/Interface/Misc/job_icons.rsi
           offset: &icon-offset -0.09375, 0.0625 #3 pixels left, 2 pixels up
           state: Magistrate
     - type: PresetIdCard
@@ -29,7 +29,7 @@
     - sprite: *id-rsi
       state: stripe_bottom
       color: &color-centcomm-bottom "#0d304d"
-    - sprite: *starlight-icon-rsi
+    - sprite: &starlight-icon-rsi _Starlight/Interface/Misc/job_icons.rsi
       offset: *icon-offset
       state: CentCommOperator
   - type: Item
@@ -88,7 +88,7 @@
     sprite: _Starlight/Objects/Misc/id_cards.rsi
     layers:
     - state: silver
-    - sprite: *starlight-icon-rsi
+    - sprite: *blimpuf-icon-rsi
       offset: *icon-offset
       state: IAA
   - type: PresetIdCard
@@ -109,9 +109,9 @@
     - sprite: *id-rsi
       state: stripe_bottom
       color: "#1b67a5"
-    - sprite: *starlight-icon-rsi
+    - sprite: *blimpuf-icon-rsi
       offset: *icon-offset
-      state: BlueShield
+      state: CentralCommandEnforcement
   - type: PresetIdCard
     job: BlueShield
 
@@ -533,7 +533,7 @@
     - sprite: *id-rsi
       state: stripe_bottom
       color: "#630232"
-    - sprite: *starlight-icon-rsi
+    - sprite: *blimpuf-icon-rsi
       offset: *icon-offset
       state: NanotrasenCareerTrainer
   - type: PresetIdCard
