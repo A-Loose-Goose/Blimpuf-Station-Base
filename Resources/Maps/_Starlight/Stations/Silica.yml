@@ -86490,7 +86490,7 @@ entities:
     - type: Transform
       pos: 33.67443,46.61361
       parent: 2
-- proto: EncryptionKeyLaw
+- proto: EncryptionKeyCorporate
   entities:
   - uid: 13630
     components:
