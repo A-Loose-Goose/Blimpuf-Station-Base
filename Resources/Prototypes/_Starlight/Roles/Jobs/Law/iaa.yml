@@ -15,7 +15,7 @@
   rules: job-rules-corporate-aligned
   supervisors: job-supervisors-magistrate
   canBeAntag: false
-  displayWeight: 40
+  displayWeight: 20
   access:
   - IAA
   - Brig
