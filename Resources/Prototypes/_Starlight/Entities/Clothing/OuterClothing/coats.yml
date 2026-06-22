@@ -1,8 +1,8 @@
 - type: entity
   parent: [ClothingOuterStorageBase, AllowSuitStorageClothing, BaseBlueShieldContraband]
   id: ClothingOuterCoatBlueShield
-  name: blueshield overcoat
-  description: A coat worn by Blueshield Officers who don't mind a little cold. Heavily reinforced, for when diplomacy won't cut it.
+  name: enforcer's overcoat
+  description: A coat worn by Central Command Enforcement Officers who don't mind a little cold. Heavily reinforced, for when diplomacy won't cut it.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/OuterClothing/Coats/blueshield_coat.rsi
@@ -45,8 +45,8 @@
 - type: entity
   parent: [ ClothingOuterStorageFoldableBase, BaseCommandContraband ]
   id: ClothingOuterCoatNtrep
-  name: nt representative jacket
-  description: A fancy black jacket, standart issue to NanoTrasen Representatives.
+  name: cc representative jacket
+  description: A fancy black jacket, standart issue to Central Command Representatives.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/OuterClothing/Coats/ntrep.rsi
@@ -64,7 +64,7 @@
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatNtrep, BaseCommandContraband ]
   id: ClothingOuterCoatNtrepOpen
-  name: nt representative jacket
+  name: cc representative jacket
 
 - type: entity
   parent: ClothingOuterStorageFoldableBase

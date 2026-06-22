@@ -98,7 +98,7 @@
   abstract: true
   components:
   - type: Contraband
-    allowedDepartments: [ Law ]
+    allowedDepartments: [ Representatives ]
 
 - type: entity
   id: BaseJanitorSecurityContraband

@@ -201,7 +201,7 @@
       - EncryptionKeySecurity
       - EncryptionKeyService
       - EncryptionKeyCommand
-      - EncryptionKeyLaw # Starlight
+      - EncryptionKeyCommand # Starlight
 
 - type: entity
   parent: TelecomServer

@@ -470,10 +470,8 @@
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
-     # !type:RoleTimeRequirement # Starlight start: switch to law dept
-     # role: JobLawyer
       !type:DepartmentTimeRequirement
-      department: Law # Starlight end
+      department: Representatives #Blimpuf
       time: 100h
   storage:
     back:

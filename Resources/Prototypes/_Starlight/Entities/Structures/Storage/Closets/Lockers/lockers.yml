@@ -54,12 +54,12 @@
   - type: AccessReader
     access: [["Brigmedic"]]
 
-# NanoTrasen Representatives
-#BSO
+# Central Command VIPs
+# CCE
 - type: entity
   id: LockerBlueshield
   parent: LockerBaseSecure
-  name: blue shield locker
+  name: central command enforcer locker
   components:
   - type: Appearance
   - type: Sprite

@@ -156,7 +156,7 @@
     - Security
     - Service
     - Supply
-    - Law
+    - Corporate
   - type: ActiveRadio
     channels:
     - Binary
@@ -169,7 +169,7 @@
     - Security
     - Service
     - Supply
-    - Law
+    - Corporate
   - type: SiliconLawProvider
     laws: NTNCLawset
   - type: ShowHealthBars

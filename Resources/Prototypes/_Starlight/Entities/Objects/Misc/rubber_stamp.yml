@@ -14,13 +14,13 @@
     state: stamp-magistrate
 
 - type: entity
-  name: nt representative's rubber stamp
+  name: cc representative's rubber stamp
   parent: [ RubberStampBase, BaseCommandContraband ]
   id: RubberStampNtrep
   suffix: DO NOT MAP
   components:
   - type: Stamp
-    stampedName: "NanoTrasen Representative"
+    stampedName: "Central Command Representative"
     stampedColor: "#fcc032"
     stampState: "paper_stamp-ntrep"
   - type: Sprite
@@ -42,13 +42,13 @@
       state: stamp-iaa
 
 - type: entity
-  name: blueshield rubber stamp
+  name: central enforcer rubber stamp
   parent: [ RubberStampBase, BaseBlueShieldContraband ]
   id: RubberStampBSO
   suffix: DO NOT MAP
   components:
   - type: Stamp
-    stampedName: "Blueshield Officer"
+    stampedName: "Central Command Enforcement Officer"
     stampedColor: "#004281"
     stampState: "paper_stamp-bso"
   - type: Sprite

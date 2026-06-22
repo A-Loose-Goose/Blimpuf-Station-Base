@@ -986,7 +986,7 @@ doc-text-printer-art-permit =
     Subject of the artpiece:[color=#0000ff] [form] [/color]
     Location of the artpiece:[color=#0000ff] [form] [/color] [italic][color=#a9a9a9]
 
-    Art permits require a stamp from the Head of Personnel, the NanoTrasen Representative, or the Captain. If an artwork is located inside of a department or at its lobby the stamp of the relevant head of staff is required as well.
+    Art permits require a stamp from the Head of Personnel, the Central Command Representative, or the Captain. If an artwork is located inside of a department or at its lobby the stamp of the relevant head of staff is required as well.
 
     Any artwork that requires significant modification to the station's structure may also require the stamp of the Chief Engineer.[/color][/italic]
 

@@ -8,17 +8,6 @@
     },
     "states": [
         {
-            "name": "Magistrate",
-            "copyright": "Chim"
-        },
-        {
-            "name": "IAA",
-            "copyright": "Chim"
-        },
-        {
-            "name": "BlueShield"
-        },
-        {
             "name": "Vampire"
         },
         {
@@ -52,10 +41,6 @@
         {
             "name": "Decimus",
             "copyright": "by teapoterror"
-        },
-        {
-            "name": "NanotrasenCareerTrainer",
-            "copyright": "by ShadesMars"
         },
         {
             "name": "CentCommOperator",

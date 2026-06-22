@@ -6,17 +6,18 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Command
-      time: 180000 #50 hrs
+      time: 30h
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 36000 # 10h
+      time: 30h
     - !type:RolesRequirement
-      proto: ExtRolesReq
+      proto: MagiReq
   startingGear: MagistrateGear
   icon: "JobIconMagistrate"
   rules: job-rules-corporate-aligned
   supervisors: job-supervisors-centcom
   canBeAntag: false
+  displayWeight: 45
   setPreference: true
   access:
   - Magistrate

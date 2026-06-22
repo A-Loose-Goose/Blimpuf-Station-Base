@@ -77,8 +77,8 @@
 - type: entity
   parent: [ClothingBackpackDuffel, BaseBlueShieldContraband]
   id: ClothingBackpackDuffelBlueShield
-  name: blueshield duffel bag
-  description: The bag for a Blueshield Officer who is ready for any contingency.
+  name: central command enforcer duffel bag
+  description: The bag for a Central Command Enforcement Officer who is ready for any contingency.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Back/Duffels/blueshield.rsi

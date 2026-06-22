@@ -12,7 +12,7 @@
 ## NTCC Blueshield
 
 - type: entity
-  name: NT-NC Consortium Blueshield
+  name: NT-NC Consortium Marine
   suffix: Basic
   id: RandomHumanoidNTNCConsortiumBlueshieldSpawnerBasic
   components:
@@ -23,7 +23,7 @@
       settings: NTNCConsortiumBlueshieldBasic
 
 - type: entity
-  name: NT-NC Consortium Blueshield
+  name: NT-NC Consortium Marine
   suffix: Hardsuit
   id: RandomHumanoidNTNCConsortiumBlueshieldSpawnerEVA
   components:
