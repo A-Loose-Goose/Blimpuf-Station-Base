@@ -37,6 +37,12 @@ public sealed partial class RadioChannelPrototype : IPrototype
     [DataField("longRange"), ViewVariables]
     public bool LongRange = false;
 
+    /// <summary>
+    /// Whether headsets are able to transmit the channel
+    /// </summary>
+    [DataField]
+    public bool HeadsetTransmittable = true;
+
     [DataField("icon")]
     public SpriteSpecifier Icon = new SpriteSpecifier.Rsi(new ResPath("_Starlight/Interface/Radial/Radio/channel_icons.rsi"), "unknown");
 }
