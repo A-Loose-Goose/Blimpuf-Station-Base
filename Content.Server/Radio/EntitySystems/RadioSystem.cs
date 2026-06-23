@@ -4,7 +4,6 @@ using Content.Server._Starlight.Radio.Systems;
 using Content.Server.Administration.Logs;
 using Content.Server.Chat.Systems;
 using Content.Server.Power.Components;
-using Content.Server.Starlight.TTS;
 using Content.Server.VoiceMask;
 using Content.Shared;
 using Content.Shared._Starlight.Language;
@@ -24,7 +23,6 @@ using Content.Shared.Roles;
 using Content.Shared.Silicons.Borgs.Components;
 using Content.Shared.Silicons.StationAi;
 using Content.Shared.Speech;
-using Content.Shared.Starlight.TextToSpeech;
 using Content.Shared.StatusIcon;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
@@ -113,10 +111,9 @@ public sealed class RadioSystem : EntitySystem
         ProtoId<RadioChannelPrototype> channel,
         EntityUid radioSource,
         LanguagePrototype? language = null, // Starlight
-        bool suppressTTS = false, // Starlight
         bool escapeMarkup = true)
     {
-        SendRadioMessage(messageSource, message, _prototype.Index(channel), radioSource, escapeMarkup: escapeMarkup, language: language, suppressTTS: suppressTTS); // Starlight
+        SendRadioMessage(messageSource, message, _prototype.Index(channel), radioSource, escapeMarkup: escapeMarkup, language: language); // Starlight
     }
 
     /// <summary>
@@ -130,7 +127,6 @@ public sealed class RadioSystem : EntitySystem
         RadioChannelPrototype channel,
         EntityUid radioSource,
         LanguagePrototype? language = null, // Starlight
-        bool suppressTTS = false, // Starlight
         bool escapeMarkup = true)
     {
         // Starlight - start
@@ -242,18 +238,6 @@ public sealed class RadioSystem : EntitySystem
             RaiseLocalEvent(receiver, ref ev);
         }
 
-        // Starlight start
-        RaiseLocalEvent(new RadioSpokeEvent
-        {
-            Channel = channel,
-            Source = messageSource,
-            Message = message,
-            Language = language,
-            SuppressTTS = suppressTTS,
-            Receivers = [.. ev.Receivers]
-        });
-        // Starlight end
-
         if (name != Name(messageSource))
             _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Radio message from {ToPrettyString(messageSource):user} as {name} on {channel.LocalizedName}: {message}");
         else
@@ -355,9 +339,6 @@ public sealed class RadioSystem : EntitySystem
             RaiseLocalEvent(receiver, ref ev);
 
         }
-
-        // Do not add TTS here.
-        // No prototype, no TTS.
 
         if (name != Name(messageSource))
             _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Radio message from {ToPrettyString(messageSource):user} as {name} on {channel.LocalizedName}: {message}");

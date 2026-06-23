@@ -3,7 +3,6 @@ using Content.Server._NullLink.Core;
 using Content.Server._NullLink.EventBus;
 using Content.Server._NullLink.PlayerData;
 using Content.Server._Starlight.BugReports; // Staright
-using Content.Server._Starlight.TextToSpeech;
 using Content.Server.Acz;
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
@@ -87,7 +86,6 @@ namespace Content.Server.Entry
         [Dependency] private readonly ServerUpdateManager _updateManager = default!;
 
 #region Starlight
-        [Dependency] private readonly ITTSClient _ttsClient = default!;
         [Dependency] private readonly HolidaySystem _holidaySystem = default!;
         [Dependency] private readonly IBugReportManager _bugReport = default!;
         [Dependency] private readonly PreWrittenDocumentManager _preWrittenDocument = default!;
@@ -156,7 +154,6 @@ namespace Content.Server.Entry
             _rateLimit.Initialize();
 
             //🌟Starlight🌟 start
-            _ttsClient.Initialize();
             _holidaySystem.Initialize();
 			_bugReport.Initialize();
 			_preWrittenDocument.Initialize();
