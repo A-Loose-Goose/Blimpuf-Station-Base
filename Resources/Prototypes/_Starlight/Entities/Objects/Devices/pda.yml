@@ -76,6 +76,7 @@
     - WantedListCartridge
     - MedTekCartridge
     - NanoChatCartridge
+    - SOSCartridge # Imp
 
 - type: entity
   parent: BaseMedicalPDA
@@ -108,6 +109,7 @@
     - WantedListCartridge
     - MedTekCartridge
     - NanoChatCartridge
+    - SOSCartridge # Imp
 
 - type: entity
   parent: BaseMedicalPDA
@@ -140,6 +142,7 @@
     - WantedListCartridge
     - MedTekCartridge
     - NanoChatCartridge
+    - SOSCartridge # Imp
 
 - type: entity
   parent: BaseSecurityPDA
@@ -170,6 +173,7 @@
       - NewsReaderCartridge
       - WantedListCartridge
       - NanoChatCartridge
+      - SOSCartridge # Imp
 
 - type: entity
   parent: BasePDA
@@ -277,6 +281,7 @@
       - NewsReaderCartridge
       - MedTekCartridge
       - NanoChatCartridge
+      - SOSCartridge # Imp
 
 - type: entity
   parent: BlueShieldPDA
@@ -332,6 +337,7 @@
       - NewsReaderCartridge
       - AstroNavCartridge
       - NanoChatCartridge
+      - SOSCartridge # Imp
 
 - type: entity
   parent: SalvageLeadPDA
@@ -408,6 +414,7 @@
     - NewsReaderCartridge
     - AstroNavCartridge
     - NanoChatCartridge
+    - SOSCartridge # Imp
 
 - type: entity
   parent: MiningPDA
@@ -545,6 +552,7 @@
       - LogProbeCartridge
       - AstroNavCartridge
       - NanoChatCartridge
+      - SOSCartridge # Imp
 
 - type: entity
   parent: BasePDA
@@ -575,6 +583,7 @@
       - LogProbeCartridge
       - AstroNavCartridge
       - NanoChatCartridge
+      - SOSCartridge # Imp
 
 - type: entity
   parent: ClearPDA
@@ -642,6 +651,7 @@
       - LogProbeCartridge
       - AstroNavCartridge
       - NanoChatCartridge
+      - SOSCartridge # Imp
 
 - type: entity
   parent: CentcomPDA
@@ -669,6 +679,7 @@
       - LogProbeCartridge
       - AstroNavCartridge
       - NanoChatCartridge
+      - SOSCartridge # Imp
 
 - type: entity
   parent: BasePDA
@@ -697,6 +708,7 @@
       - MedTekCartridge
       - AstroNavCartridge
       - NanoChatCartridge
+      - SOSCartridge # Imp
 
 - type: entity
   parent: [BasePDA, BaseTSFContraband]
@@ -727,6 +739,7 @@
       - NewsReaderCartridge
       - AstroNavCartridge
       - NanoChatCartridge
+      - SOSCartridge # Imp
 
 - type: entity
   parent: SolGovPDA

@@ -57,7 +57,8 @@ public sealed class HeadsetSystem : SharedHeadsetSystem
     {
         if (args.Channel != null
             && TryComp(component.Headset, out EncryptionKeyHolderComponent? keys)
-            && keys.Channels.Contains(args.Channel.ID))
+            && keys.Channels.Contains(args.Channel.ID)
+            && args.Channel.HeadsetTransmittable) // Remove common from headsets
         {
             _radio.SendRadioMessage(uid, args.Message, args.Channel, component.Headset, args.Language); // Starlight-edit: This literally never specified language??? bruh.
             args.Channel = null; // prevent duplicate messages from other listeners.
