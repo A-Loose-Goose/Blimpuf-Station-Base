@@ -1,65 +1,89 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "sprite made by Gtheglorious based on the sprite made by Alekshhh for SS14. Vox states by Flareguy for Space Station 14. Vulpkanin and Reptilian states by TiniestShark (Github). Resomi state created by Huaqas (Github). Avali state by DocMoth (Github).",
+  "copyright": "Made blue by ItsMaitake on Blimpuf Station (github.com/Blimpuf-Station/BlimpufStation). Original from Starlight",
   "size": {
     "x": 32,
     "y": 32
   },
   "states": [
     {
-      "name": "icon"
+      "name": "icon",
+	  "copyright": "ItsAbby"
     },
     {
-      "name": "icon-flash"
+      "name": "icon-flash",
+	  "copyright": "ItsAbby"
     },
     {
       "name": "off-equipped-HELMET",
-      "directions": 4
+      "directions": 4,
+	  "copyright": "ItsAbby"
     },
     {
       "name": "on-equipped-HELMET",
-      "directions": 4
+      "directions": 4,
+	  "copyright": "ItsAbby"
     },
-    {
+	{
+      "name": "off-equipped-HELMET-reptilian",
+      "directions": 4,
+	  "copyright": "Conflee"
+    },
+	{
+      "name": "on-equipped-HELMET-reptilian",
+      "directions": 4,
+	  "copyright": "Conflee"
+    },
+	{
+      "name": "off-equipped-HELMET-resomi",
+      "directions": 4,
+	  "copyright": "Conflee"
+    },
+	{
+      "name": "on-equipped-HELMET-resomi",
+      "directions": 4,
+	  "copyright": "Conflee"
+    },
+	{
       "name": "off-equipped-HELMET-vulpkanin",
-      "directions": 4
+      "directions": 4,
+	  "copyright": "Conflee"
     },
-    {
+	{
       "name": "on-equipped-HELMET-vulpkanin",
-      "directions": 4
+      "directions": 4,
+	  "copyright": "Conflee"
     },
     {
       "name": "off-equipped-HELMET-vox",
-      "directions": 4
+      "directions": 4,
+	  "copyright": "ItsAbby"
     },
     {
       "name": "on-equipped-HELMET-vox",
-      "directions": 4
-    },
-    {
-      "name": "off-equipped-HELMET-resomi",
-      "directions": 4
-    },
-    {
-      "name": "on-equipped-HELMET-resomi",
-      "directions": 4
-    },
-    {
-      "name": "off-equipped-HELMET-reptilian",
-      "directions": 4
-    },
-    {
-      "name": "on-equipped-HELMET-reptilian",
-      "directions": 4
+      "directions": 4,
+	  "copyright": "ItsAbby"
     },
     {
       "name": "off-equipped-HELMET-avali",
-      "directions": 4
+      "directions": 4,
+	  "copyright": "DocMoth"
     },
     {
       "name": "on-equipped-HELMET-avali",
-      "directions": 4
+      "directions": 4,
+	  "copyright": "DocMoth"
+    },
+    {
+      "name": "off-equipped-HELMET-dog",
+      "directions": 4,
+	  "copyright": "Swonkus"
+    },
+    {
+      "name": "on-equipped-HELMET-dog",
+      "directions": 4,
+	  "copyright": "Swonkus"
     }
   ]
 }
