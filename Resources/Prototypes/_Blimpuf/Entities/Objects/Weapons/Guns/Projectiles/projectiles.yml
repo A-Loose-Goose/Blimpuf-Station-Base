@@ -24,3 +24,47 @@
       intensitySlope: 5
       totalIntensity: 45
       maxTileBreak: 5
+
+- type: entity
+  name: incinerator igniting bolt
+  id: BulletEnergyIncineratorLaser
+  parent: BulletEnergyTurretBase
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Ammo
+      muzzleFlash: MuzzleFlashEffectHeavyLaser
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+      layers:
+        - state: heavylaser
+          shader: unshaded
+    - type: Projectile
+      impactEffect: BulletImpactEffectOrangeDisabler
+      damage:
+        types:
+          Heat: 2
+    - type: IgniteOnCollide
+      fireStacks: 0.75
+
+- type: entity
+  name: incinerator electrocuting bolt
+  id: BulletEnergyIncineratorDisabler
+  parent: BulletEnergyTurretBase
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Ammo
+      muzzleFlash: MuzzleFlashEffectOmnilaser
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+      layers:
+        - state: omnilaser
+          shader: unshaded
+    - type: Projectile
+      impactEffect: BulletImpactEffectDisabler
+      damage:
+        types:
+          Shock: 1
+    - type: StaminaDamageOnCollide
+      damage: 4
+    - type: CyberneticDisruptionOnCollide
+      disableChance: 0.02

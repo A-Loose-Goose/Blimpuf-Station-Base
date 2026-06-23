@@ -19,3 +19,6 @@ uplink-clothing-outer-hardsuit-ultima-desc = Cybersun's most advanced suit yet! 
 
 uplink-weapon-laser-taipan-name = Taipan Energy Revolver
 uplink-weapon-laser-taipan-desc = A battery powered revolver that fires explosive energy rounds. These rounds are incapable of penetrating windows as they blow up on contact. Incredibly unstable, and can be damaged or thrown to cause it to explode in a small but devastating explosion.
+
+uplink-weapon-laser-incinerator-name = Incinerator Overcharged Energy SMG
+uplink-weapon-laser-incinerator-desc = A hugely overclocked SMG. Capable of firing igniting energy bolts that deal extremely minor heat damage and ignite enemies, or electrocuting energy bolts that deal minor stamina and shock damage. Has an incredibly large 100 round mag and recharges relatively fast, but has incredibly difficult recoil, and it really relies off of burning foes.
