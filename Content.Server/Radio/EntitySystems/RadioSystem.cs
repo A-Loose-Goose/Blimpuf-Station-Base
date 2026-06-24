@@ -373,6 +373,19 @@ public sealed class RadioSystem : EntitySystem
         var iconId = "JobIconNoId";
         var jobName = "";
 
+        if (TryComp<IdCardComponent>(messageSource, out var sourceId)) // PDAs inherit job icon from their ID card
+        {
+            iconId = sourceId.JobIcon;
+            jobName = sourceId.LocalizedJobTitle;
+        }
+        else if (TryComp<PdaComponent>(messageSource, out var sourcePda)
+                 && sourcePda.ContainedId != null
+                 && TryComp(sourcePda.ContainedId, out sourceId))
+        {
+            iconId = sourceId.JobIcon;
+            jobName = sourceId.LocalizedJobTitle;
+        }
+
         if (_accessReader.FindAccessItemsInventory(messageSource, out var items))
         {
             foreach (var item in items)
