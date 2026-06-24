@@ -419,4 +419,4 @@
       mindRoles:
       - MindRoleParadoxClone
   - type: DynamicRuleCost
-    cost: 50
+    cost: 125
