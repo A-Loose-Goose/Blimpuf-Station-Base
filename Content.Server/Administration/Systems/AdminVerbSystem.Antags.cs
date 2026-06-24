@@ -1,5 +1,6 @@
 using Content.Server._Starlight.Administration.Systems;
 using Content.Server._Starlight.GameTicking.Rules.Components;
+using Content.Server._Blimpuf.Administration.Systems;
 using Content.Server.Antag;
 using Content.Server.Clothing.Systems;
 using Content.Server.GameTicking;
@@ -28,6 +29,7 @@ public sealed partial class AdminVerbSystem
     [Dependency] private readonly GameTicker _gameTicker = default!;
     [Dependency] private readonly OutfitSystem _outfit = default!;
     [Dependency] private readonly AutoDiscordLogSystem _autolog = default!; //Starlight
+    [Dependency] private readonly CriminalAntagSystem _criminalAntag = default!;
 
     private static readonly EntProtoId DefaultTraitorRule = "Traitor";
     private static readonly EntProtoId DefaultInitialInfectedRule = "Zombie";
@@ -171,6 +173,22 @@ public sealed partial class AdminVerbSystem
             Message = string.Join(": ", thiefName, Loc.GetString("admin-verb-make-thief")),
         };
         args.Verbs.Add(thief);
+
+        var criminalName = Loc.GetString("admin-verb-text-make-criminal");
+        Verb criminal = new()
+        {
+            Text = criminalName,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Misc/job_icons.rsi"), "Prisoner"),
+            Act = () =>
+            {
+                _criminalAntag.MakeCriminal(args.Target);
+                _autolog.LogToDiscord(string.Join(": ", criminalName, Loc.GetString("admin-verb-make-criminal")), player.Name);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", criminalName, Loc.GetString("admin-verb-make-criminal")),
+        };
+        args.Verbs.Add(criminal);
 
         var changelingName = Loc.GetString("admin-verb-text-make-changeling-wip"); //SL edit, -wip as we allready have lings
         Verb changeling = new()

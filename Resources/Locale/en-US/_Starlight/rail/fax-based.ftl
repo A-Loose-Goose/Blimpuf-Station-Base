@@ -1,8 +1,8 @@
 rr-criminal = Criminal
-rr-criminal-desc = That was a mistake, at any moment I could be reported and the hunt would begin.
+rr-criminal-desc = They know what I did. I need to run.
 
-rr-criminal-message = Well-wisher: We have just intercepted a fax, you’ve been declared wanted. Nevertheless, your recent malicious act against NT has greatly impressed us. We’ll send you a gift by mail, it should arrive in about 20 minutes.
-rr-criminal-wrapped-message = [bold]Well-wisher[/bold]: We have just intercepted a fax, you’ve been declared wanted. Nevertheless, your recent malicious act against NT has greatly impressed us. We’ll send you a gift by mail, it should arrive in about 20 minutes.
+rr-criminal-message = Well-wisher: We have just intercepted a fax, you’ve been declared wanted. Nevertheless, your recent criminal activity has greatly impressed us. We’ll send you a gift by mail, it should arrive in about 20 minutes.
+rr-criminal-wrapped-message = [bold]Well-wisher[/bold]: We have just intercepted a fax, you’ve been declared wanted. Nevertheless, your recent criminal activity has greatly impressed us. We’ll send you a gift by mail, it should arrive in about 20 minutes.
 
 rr-criminal-letter-name = ORDER, dangerous criminal {$subject} is wanted
 rr-criminal-1-letter-content =
