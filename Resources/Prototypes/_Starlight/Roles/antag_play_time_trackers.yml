@@ -117,3 +117,7 @@
 - type: playTimeTracker
   id: AntagCosmicMinion
   name: ghost-role-information-cosmic-minion-name
+
+- type: playTimeTracker
+  id: AntagSamurai
+  name: roles-antag-samurai-name
