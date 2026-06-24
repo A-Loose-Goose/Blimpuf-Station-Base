@@ -1,4 +1,4 @@
-a{
+{
   "version": 1,
   "license": "CC-BY-SA-3.0",
   "copyright": "Made blue by ItsMaitake on Blimpuf Station (github.com/Blimpuf-Station/BlimpufStation). Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/547852588166c8e091b441e4e67169e156bb09c1",
@@ -12,6 +12,10 @@ a{
     },
     {
       "name": "equipped-BACKPACK",
+      "directions": 4
+    },
+    {
+      "name": "equipped-BACK",
       "directions": 4
     },
     {

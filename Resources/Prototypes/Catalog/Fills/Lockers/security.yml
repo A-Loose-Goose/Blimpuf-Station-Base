@@ -75,7 +75,7 @@
   id: FillLockerSecurity
   table: !type:AllSelector
     children:
-    - id: ClothingHandsGlovesSecurityRed #Starlight
+    - id: ClothingHandsGlovesSecurityBlue # Blimpuf Bluesec Edit
     - id: ClothingEyesHudSecurity #Starlight
     - id: FlashlightSeclite
       prob: 0.8

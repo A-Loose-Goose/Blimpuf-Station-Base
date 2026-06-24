@@ -41,7 +41,7 @@
           amount: 2
         - id: ClothingHeadsetSecurity
           amount: 2
-        - id: ClothingHandsGlovesSecurityRed
+        - id: ClothingHandsGlovesSecurityBlue # Blimpuf Bluesec Edit
           amount: 2
         - id: ClothingShoesBootsJack
           amount: 2
