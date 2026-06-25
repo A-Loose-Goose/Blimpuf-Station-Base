@@ -111,7 +111,7 @@
     - type: PointLight
       enabled: true
       radius: 3
-      color: red
+      color: blue
       castShadows: false #SL lighting optimization
     - type: Climbable
     - type: Clickable
