@@ -890,7 +890,7 @@
   name: loadout-group-security-tie
   minLimit: 0
   loadouts:
-    - SecurityRedNeckTie
+    - SecurityBlueNeckTie
     - SecurityDetNeckTie
 
 # HoS/Ward Masks

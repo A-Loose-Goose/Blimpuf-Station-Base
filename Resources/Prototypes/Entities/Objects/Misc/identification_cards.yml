@@ -195,9 +195,9 @@
     layers:
     - state: silver
     - state: stripe_top
-      color: &color-security-top "#cb0000"
+      color: &color-security-top "#043242" # Blimpuf Blue SEC
     - state: stripe_bottom
-      color: &color-security-bottom "#830000"
+      color: &color-security-bottom "#043242" # Blimpuf Blue SEC
     - sprite: *icon-rsi
       offset: *icon-offset
       state: HeadOfSecurity

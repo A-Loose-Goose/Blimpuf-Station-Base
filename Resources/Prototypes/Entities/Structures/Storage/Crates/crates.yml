@@ -604,11 +604,11 @@
     layers:
     - state: base
     - state: overlay
-      color: "#c12d30"
+      color: "#3a819b" # Blimpuf Blue SEC
     - state: closed
       map: ["enum.StorageVisualLayers.Door"]
     - state: overlay-closed
-      color: "#c12d30"
+      color: "#3a819b" # Blimpuf Blue SEC
       map: [ lid_overlay ]
     - state: welded
       visible: false

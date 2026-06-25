@@ -17,16 +17,15 @@
   - type: SolutionContainerManager
     solutions:
       hypospray:
-        maxVol: 24
+        maxVol: 30
   - type: SolutionContainerVisuals
     maxFillLevels: 8
     fillBaseName: hypo_fill
     solutionName: hypospray
   - type: Injector
     solutionName: hypospray
-    currentTransferAmount: 8
+    currentTransferAmount: 10
     activeModeProtoId: HyposprayDynamicMode
     allowedModes:
     - HyposprayDynamicMode
     - HyposprayInjectMode
-

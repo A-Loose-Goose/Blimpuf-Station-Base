@@ -230,10 +230,10 @@
     - state: default
     - sprite: *id-rsi
       state: stripe_top
-      color: &color-security-top "#cb0000"
+      color: &color-security-top "#043242" # Blimpuf Blue SEC
     - sprite: *id-rsi
       state: stripe_bottom
-      color: &color-security-bottom "#830000"
+      color: &color-security-bottom "#043242" # Blimpuf Blue SEC
     - sprite: *starlight-icon-rsi
       offset: *icon-offset
       state: DutyOfficer
