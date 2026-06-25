@@ -430,6 +430,8 @@ public sealed partial class RadioSystem : EntitySystem
 
         jobName ??= "";
 
+        jobName = FormattedMessage.EscapeStringParameter(jobName); // Starlight: Prevent markup injection
+
         return (iconId, jobName);
     }
     private string WrapRadioMessage(
