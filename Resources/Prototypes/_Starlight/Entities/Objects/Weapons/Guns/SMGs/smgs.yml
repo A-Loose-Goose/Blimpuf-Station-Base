@@ -403,3 +403,42 @@
   - type: Appearance
   - type: StealTarget
     stealGroup: HOSWeapon # Proto5x and WT550r
+  - type: SyndicateResearchTarget
+    researchProtoIds:
+      - displayName: fulton beacon
+        validPrototypes:
+          - FultonBeacon
+      - displayName: artifact crusher machine board
+        validPrototypes:
+          - ArtifactCrusherMachineCircuitboard
+      - displayName: security hud
+        validPrototypes:
+          - ClothingEyesGlassesSecurity
+          - ClothingEyesHudSecurity
+          - ClothingEyesEyepatchHudSecurity
+      - displayName: circular saw
+        validPrototypes:
+          - SawElectric
+          - SawRipper
+          - SawCyber
+          - SawAdvanced
+      - displayName: APC/Substation/SMES electronics
+        validPrototypes:
+          - APCElectronics
+          - SubstationMachineCircuitboard
+          - WallmountSubstationElectronics
+          - SMESMachineCircuitboard
+          - SMESAdvancedMachineCircuitboard
+      - displayName: thruster machine board
+        validPrototypes:
+          - ThrusterMachineCircuitboard
+      - displayName: gavel hammer
+        validPrototypes:
+          - GavelHammer
+      - displayName: knife
+        validPrototypes:
+          - KitchenKnife
+          - CombatKnife
+          - SurvivalKnife
+    researchUnlockId: UplinkWt551Compact
+    researchAnnouncementString: research-announcement-wt551-compact

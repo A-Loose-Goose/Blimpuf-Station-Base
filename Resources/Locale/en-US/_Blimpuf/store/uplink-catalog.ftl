@@ -1,3 +1,7 @@
+# Ammo
+uplink-pistol-magazine-wt550-name = WT550 Magazine (.35 Auto top-mounted)
+uplink-pistol-magazine-wt550-desc = An exotic SMG Magazine that contains 30 rounds of .35 Auto. Compatible with the WT550. Unfortunately, the Syndicate does not produce anything compatible with it, at least at time of writing. It may still come in handy later, though.
+
 # Research
 uplink-research-analyzer-name = Research Analyzer
 uplink-research-analyzer-desc = A simple device that scans high value objects to determine what is required to research them.
@@ -22,3 +26,6 @@ uplink-weapon-laser-taipan-desc = A battery powered revolver that fires explosiv
 
 uplink-weapon-laser-incinerator-name = Incinerator Overcharged Energy SMG
 uplink-weapon-laser-incinerator-desc = A hugely overclocked SMG. Capable of firing igniting energy bolts that deal extremely minor heat damage and ignite enemies, or electrocuting energy bolts that deal minor stamina and shock damage. Has an incredibly large 100 round mag and recharges relatively fast, but has incredibly difficult recoil, and it really relies off of burning foes.
+
+uplink-wt551-compact-name = WT551 Compact
+uplink-wt551-compact-desc = An incredibly compressed weapon that has a folded and unfolded state. While folded, it only takes up 2 slots and can fit into pockets, but cannot be fired. When unfolded, it is able to fire like normal but takes up much more space. The perfect tool for a smuggler!

@@ -1,3 +1,15 @@
+# Ammo
+- type: listing
+  id: UplinkMagazinePistolWt550
+  name: uplink-pistol-magazine-wt550-name
+  description: uplink-pistol-magazine-wt550-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag_top_mounted.rsi, state: base }
+  productEntity: MagazinePistolSubMachineGunTopMounted
+  cost:
+    Telecrystal: 10
+  categories:
+    - UplinkAmmo
+
 # Research
 - type: listing
   id: UplinkResearchAnalyzer
@@ -161,6 +173,53 @@
     Telecrystal: 70
   cost:
     Telecrystal: 85
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
+
+- type: listing
+  id: UplinkWeaponLaserIncinerator
+  name: uplink-weapon-laser-incinerator-name
+  description: uplink-weapon-laser-incinerator-desc
+  productEntity: WeaponLaserIncinerator
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 70
+  cost:
+    Telecrystal: 85
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
+
+- type: listing
+  id: UplinkWt551Compact
+  name: uplink-wt551-compact-name
+  description: uplink-wt551-compact-desc
+  icon: { sprite: /Textures/_Blimpuf/Objects/Weapons/Guns/SMGs/syndicate-wt551.rsi, state: icon }
+  productEntity: WeaponSubMachineGunWt551Compact
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 50
+  cost:
+    Telecrystal: 70
   categories:
     - UplinkResearch
   conditions:

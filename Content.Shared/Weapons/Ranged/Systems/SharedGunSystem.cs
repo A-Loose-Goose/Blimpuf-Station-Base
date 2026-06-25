@@ -1,5 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
+using Content.Shared._Blimpuf.Item.ItemToggle.Components;
 using Content.Shared._Starlight.Weapon.Components;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Actions;
@@ -12,6 +13,7 @@ using Content.Shared.Damage.Systems;
 using Content.Shared.Examine;
 using Content.Shared.Hands;
 using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Item.ItemToggle.Components;
 using Content.Shared.Popups;
 using Content.Shared.Projectiles;
 using Content.Shared.Tag;
@@ -125,6 +127,7 @@ public abstract partial class SharedGunSystem : EntitySystem
         SubscribeLocalEvent<GunComponent, GetVerbsEvent<AlternativeVerb>>(OnAltVerb);
         SubscribeLocalEvent<GunComponent, ExaminedEvent>(OnExamine);
         SubscribeLocalEvent<GunComponent, CycleModeEvent>(OnCycleMode);
+        SubscribeLocalEvent<ItemToggleGunComponent, ItemToggledEvent>(OnItemToggle);
         SubscribeLocalEvent<GunComponent, HandSelectedEvent>(OnGunSelected);
         SubscribeLocalEvent<GunComponent, MapInitEvent>(OnMapInit);
     }
@@ -139,6 +142,104 @@ public abstract partial class SharedGunSystem : EntitySystem
 #endif
 
         RefreshModifiers((gun, gun));
+    }
+
+    /// <summary>
+    /// Used to update the GunComponent component on item toggle.
+    /// </summary>
+    private void OnItemToggle(EntityUid uid, ItemToggleGunComponent itemToggleGun, ItemToggledEvent args)
+    {
+        if (!TryComp(uid, out GunComponent? gun))
+            return;
+
+        if (args.Activated)
+        {
+            if (itemToggleGun.ActivatedFirerate != null)
+            {
+                //Setting deactivated fire rate to the weapon's regular value before changing it.
+                itemToggleGun.DeactivatedFirerate ??= gun.FireRateModified;
+                gun.FireRateModified = itemToggleGun.ActivatedFirerate.Value;
+                DirtyField(uid, gun, nameof(GunComponent.FireRateModified));
+            }
+
+            if (itemToggleGun.ActivatedSoundFire != null)
+            {
+                //Setting the deactivated sound on gunshot to the weapon's regular value before changing it.
+                itemToggleGun.DeactivatedSoundFire ??= gun.SoundGunshotModified;
+                gun.SoundGunshotModified = itemToggleGun.ActivatedSoundFire;
+                DirtyField(uid, gun, nameof(GunComponent.SoundGunshotModified));
+            }
+
+            if (itemToggleGun.ActivatedMaxAngle != null)
+            {
+                //Setting deactivated max angle to the weapon's regular value before changing it.
+                itemToggleGun.DeactivatedMaxAngle ??= gun.MaxAngleModified;
+                gun.MaxAngleModified = itemToggleGun.ActivatedMaxAngle.Value;
+                DirtyField(uid, gun, nameof(GunComponent.MaxAngleModified));
+            }
+
+            if (itemToggleGun.ActivatedMinAngle != null)
+            {
+                //Setting deactivated min angle to the weapon's regular value before changing it.
+                itemToggleGun.DeactivatedMinAngle ??= gun.MinAngleModified;
+                gun.MinAngleModified = itemToggleGun.ActivatedMinAngle.Value;
+                DirtyField(uid, gun, nameof(GunComponent.MinAngleModified));
+            }
+
+            if (itemToggleGun.ActivatedAngleIncrease != null)
+            {
+                //Setting deactivated max angle to the weapon's regular value before changing it.
+                itemToggleGun.DeactivatedAngleIncrease ??= gun.AngleIncreaseModified;
+                gun.AngleIncreaseModified = itemToggleGun.ActivatedAngleIncrease.Value;
+                DirtyField(uid, gun, nameof(GunComponent.AngleIncreaseModified));
+            }
+
+            if (itemToggleGun.ActivatedAngleDecay != null)
+            {
+                //Setting deactivated max angle to the weapon's regular value before changing it.
+                itemToggleGun.DeactivatedAngleDecay ??= gun.AngleDecayModified;
+                gun.AngleDecayModified = itemToggleGun.ActivatedAngleDecay.Value;
+                DirtyField(uid, gun, nameof(GunComponent.AngleDecayModified));
+            }
+        }
+        else
+        {
+            if (itemToggleGun.DeactivatedFirerate != null)
+            {
+                gun.FireRateModified = itemToggleGun.DeactivatedFirerate.Value;
+                DirtyField(uid, gun, nameof(GunComponent.FireRateModified));
+            }
+
+            if (itemToggleGun.DeactivatedSoundFire != null)
+            {
+                gun.SoundGunshotModified = itemToggleGun.DeactivatedSoundFire;
+                DirtyField(uid, gun, nameof(GunComponent.SoundGunshotModified));
+            }
+
+            if (itemToggleGun.DeactivatedMaxAngle != null)
+            {
+                gun.MaxAngleModified = itemToggleGun.DeactivatedMaxAngle.Value;
+                DirtyField(uid, gun, nameof(GunComponent.MaxAngleModified));
+            }
+
+            if (itemToggleGun.DeactivatedMinAngle != null)
+            {
+                gun.MinAngleModified = itemToggleGun.DeactivatedMinAngle.Value;
+                DirtyField(uid, gun, nameof(GunComponent.MinAngleModified));
+            }
+
+            if (itemToggleGun.DeactivatedAngleIncrease != null)
+            {
+                gun.AngleIncreaseModified = itemToggleGun.DeactivatedAngleIncrease.Value;
+                DirtyField(uid, gun, nameof(GunComponent.AngleIncreaseModified));
+            }
+
+            if (itemToggleGun.DeactivatedAngleDecay != null)
+            {
+                gun.AngleDecayModified = itemToggleGun.DeactivatedAngleDecay.Value;
+                DirtyField(uid, gun, nameof(GunComponent.AngleDecayModified));
+            }
+        }
     }
 
     private void OnGunMelee(Entity<GunComponent> ent, ref MeleeHitEvent args)
