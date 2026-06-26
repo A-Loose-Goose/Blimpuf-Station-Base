@@ -49,7 +49,7 @@ public sealed partial class FlightComponent : Component
     public float SpeedModifier = 2.0f;
 
     /// <summary>
-    ///     DeltaV - Friction modifier while in flight. Should be less than one so 
+    ///     DeltaV - Friction modifier while in flight. Should be less than one so
     ///     they have less control while flying. Also applies to friction with no inputs.
     /// </summary>
     [DataField, AutoNetworkedField]
