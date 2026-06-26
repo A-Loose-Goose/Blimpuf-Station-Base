@@ -217,6 +217,14 @@
       - map: [ "head" ]
 
 - type: entity
+  parent: AppearanceHuman
+  id: AppearanceHarpy
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: HumanoidAppearance
+      species: Harpy
+
+- type: entity
   parent: BaseAction
   id: ActionHarpyPlayMidi
   name: Play MIDI

@@ -9,7 +9,7 @@
   skinColoration: HumanToned
   baseScale: "0.8, 0.8"
   minHeight: 0.8
-  defaultHeight: 0.91
+  defaultHeight: 1
   maxHeight: 1
   standardSize: 150
   standardWeight: 31
