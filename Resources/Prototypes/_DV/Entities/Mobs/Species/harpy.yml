@@ -26,7 +26,6 @@
       "Piano": {1: 0}
       "Church Organ": {19: 0}
       "Harp": {46: 0}
-    onlySetBySelf: true # Frontier
   - type: UserInterface
     interfaces:
       enum.InstrumentUiKey.Key:
@@ -148,7 +147,6 @@
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost
-    - OviniaEmotes
 
 - type: entity
   save: false

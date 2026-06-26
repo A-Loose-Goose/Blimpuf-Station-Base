@@ -7,7 +7,6 @@
   markingLimits: MobHarpyMarkingLimits
   dollPrototype: MobHarpyDummy
   skinColoration: HumanToned
-  baseScale: "0.8, 0.8"
   minHeight: 0.8
   defaultHeight: 1
   maxHeight: 1
