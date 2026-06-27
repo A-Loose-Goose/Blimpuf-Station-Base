@@ -4075,5 +4075,14 @@ Entries:
   id: 3301
   time: '2026-06-27T00:55:53.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/33
+- author: 'Port: Moffstation'
+  changes:
+  - message: SOS cartridge.
+    type: Add
+  - message: Outgoing common radio from headsets.
+    type: Remove
+  id: 3401
+  time: '2026-06-27T00:56:16.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/34
 Order: -1
 
