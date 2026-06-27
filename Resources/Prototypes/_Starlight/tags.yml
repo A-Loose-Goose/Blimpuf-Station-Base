@@ -613,6 +613,9 @@
   id: Sausage # MetamorphRecipe: FoodSausageBun
 
 - type: Tag
+  id: Samurai
+
+- type: Tag
   id: ScanGateMachineBoard
 
 - type: Tag
