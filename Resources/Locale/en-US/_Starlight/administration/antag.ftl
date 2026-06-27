@@ -4,4 +4,7 @@ admin-verb-text-make-selfagent = Make S.E.L.F Agent
 admin-verb-make-pirate-sl = Make the target a proper Starlight pirate — sets faction, antag role, equips gear, and plays the pirate briefing sting.
 admin-verb-text-make-pirate-sl = Make Pirate (SL)
 
+admin-verb-make-criminal = Make the target a Criminal, and alerts Security and Command of their presence.
+admin-verb-text-make-criminal = Make Criminal
+
 pirate-crew-briefing = You are a crew member of this pirate vessel. Your duty is to your captain and your crew. Follow orders, take what you can, and make it back to the ship alive. A pirate's code is law aboard this ship.

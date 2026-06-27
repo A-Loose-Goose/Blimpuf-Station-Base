@@ -186,6 +186,6 @@
 #    - Brighteye #Starlight
     - ThiefGamerule # Starlight, Event Light
     - LoneOpsSpawn # Starlight
-    - RailroadingTerminator # Starlight
-    - RailroadingMinor # Starlight
+    # - RailroadingTerminator # Blimpuf - disabled railroading
+    # - RailroadingMinor # Blimpuf - disabled railroading
     # - CosmicCult # Starlight

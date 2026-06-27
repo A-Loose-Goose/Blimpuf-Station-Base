@@ -35,7 +35,7 @@ public sealed partial class RailroadingSystem : SharedRailroadingSystem
     {
         base.Initialize();
         SubscribeLocalEvent<RailroadCardComponent, MapInitEvent>(OnMapInit);
-        SubscribeLocalEvent<RailroadableComponent, OpenCardsAlertEvent>(ShowCardsUi);
+        // SubscribeLocalEvent<RailroadableComponent, OpenCardsAlertEvent>(ShowCardsUi); Blimpuf - disabled railroading
         SubscribeLocalEvent<RailroadableComponent, ExaminedEvent>(OnExamined);
         SubscribeLocalEvent<RailroadableComponent, CollectObjectivesEvent>(OnCollectObjectiveInfo);
     }
@@ -138,10 +138,10 @@ public sealed partial class RailroadingSystem : SharedRailroadingSystem
     // todo: timer
     public void ShowAlert(EntityUid owner)
     {
-        if (!_players.TryGetSessionByEntity(owner, out var user) || _openUis.ContainsKey(user))
+        // if (!_players.TryGetSessionByEntity(owner, out var user) || _openUis.ContainsKey(user)) Blimpuf disabling railroading
             return;
 
-        _alerts.ShowAlert(owner, AlertProtoId);
+        // _alerts.ShowAlert(owner, AlertProtoId); Blimpuf disabling railroading
     }
 
     public void OnCardSelected(Entity<RailroadableComponent> subject, NetEntity cardNetUid)

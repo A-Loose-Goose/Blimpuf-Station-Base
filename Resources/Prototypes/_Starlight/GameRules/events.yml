@@ -100,7 +100,7 @@
       - id: Xenoborgs
       # Starlight gamerules:
       - id: AbductorsSpawn
-      - id: RailroadingTerminator
+      #- id: RailroadingTerminator Blimpuf disable railroading
 #      - id: Brighteye
 
 - type: entity

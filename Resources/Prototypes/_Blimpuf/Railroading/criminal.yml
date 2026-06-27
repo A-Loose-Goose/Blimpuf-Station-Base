@@ -1,26 +1,5 @@
-# Conditions
-- type: entity
-  id: CrewCondition
-  categories: [ HideSpawnMenu ]
-  abstract: true
-  components:
-  - type: Conditions
-    conditions:
-    - !type:SubjectSpeciesCondition
-      blacklist:
-      - Abductor
-      - Skeleton
-      - Terminator
-      - IPC
-    - !type:SubjectMindAntagCondition
-      blacklist:
-#      - Brighteye
-
-# Example(Smokeable) Prototype
-
 - type: entity
   id: RRCardCriminal
-  parent: CrewCondition
   categories: [ HideSpawnMenu ]
   components:
   - type: RailroadCard
@@ -28,8 +7,8 @@
     icon: ""
     iconColor: "#fd3f3f" # Antag
     color: "#6c15ae" # Mythical
-    image: /Textures/_Starlight/Railroading/criminal.png
     description: rr-criminal-desc
+  - type: RuleOwner
   - type: RailroadFaxOnChosen
     addresses:
     - Captain's Office
@@ -76,7 +55,7 @@
     role: RRMindRoleCriminal
   - type: RailroadModifyIdCard
     title: Criminal
-    icon: "JobIconPrisoner"
+    icon: JobIconPrisoner
   - type: RailroadMessageOnChosen
     messages:
     - message: rr-criminal-message
@@ -91,6 +70,6 @@
     dataset: railroadingDeliveryMessages
     wrappedDataset: railroadingDeliveryWrappedMessages
   - type: RailroadDonationReward
-    amount: # 20 min survival
+    amount:
       min: 200
       max: 300

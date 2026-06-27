@@ -43,7 +43,7 @@
     - id: ClosetSkeleton
     - id: KingRatMigration
     - id: RevenantSpawn
-    - id: RailroadingTerminator # Starlight
+    #- id: RailroadingTerminator Blimpuf disabled railroading
     - !type:NestedSelector
       tableId: DerelictBorgEventTable
 
