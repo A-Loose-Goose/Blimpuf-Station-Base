@@ -11,7 +11,7 @@
   <GuideEntityEmbed Entity="AppearanceElf" Caption="Elf"/>
   </Box>
   <Box>
-  <GuideEntityEmbed Entity="AppearanceHuman" Caption="Harpy[PH]"/><!--Harpy placeholder-->
+  <GuideEntityEmbed Entity="AppearanceHarpy" Caption="Harpy"/>
   <GuideEntityEmbed Entity="AppearanceHuman" Caption="Human"/>
   <GuideEntityEmbed Entity="AppearanceMoth" Caption="Moth Person"/>
   <GuideEntityEmbed Entity="AppearanceReptilian" Caption="Reptilian"/>

@@ -460,6 +460,11 @@
         damage:
           types:
             Heat: 3
+      - !type:Oxygenate # DeltaV - Harpy sensitive to air quality
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Harpy ]
+        factor: -1
 
 - type: reagent
   id: Ice

@@ -25,6 +25,7 @@
     - Avali #🌟Starlight🌟
     - Thaven # Starlight
     - Lagomorph # Starlight
+    - Harpy # Blimpuf
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox
@@ -83,6 +84,7 @@
     - Human
     - Reptilian
     - Vulpkanin
+    - Harpy # Blimpuf
 
 - type: loadoutEffectGroup
   id: OxygenBreatherMimeMoth

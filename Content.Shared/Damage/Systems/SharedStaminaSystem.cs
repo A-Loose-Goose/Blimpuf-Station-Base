@@ -372,10 +372,18 @@ public abstract partial class SharedStaminaSystem : EntitySystem
         {
             // Just in case we have active but not stamina we'll check and account for it.
             if (!stamQuery.TryGetComponent(uid, out var comp) ||
-                comp.StaminaDamage <= 0f && !comp.Critical)
+                comp.StaminaDamage <= 0f && !comp.Critical && comp.ActiveDrains.Count == 0)
             {
                 RemComp<ActiveStaminaComponent>(uid);
                 continue;
+            }
+
+            if (comp.ActiveDrains.Count > 0)
+            {
+                foreach (var (source, (drainRate, _)) in comp.ActiveDrains)
+                {
+                    TakeStaminaDamage(uid, drainRate * frameTime, comp, source: source, visual: false);
+                }
             }
 
             // Shouldn't need to consider paused time as we're only iterating non-paused stamina components.
@@ -395,10 +403,13 @@ public abstract partial class SharedStaminaSystem : EntitySystem
                 comp.DecayModifiers.Aggregate<(NetEntity, float, TimeSpan), float>(1,
                     (current, modifier) => current * modifier.Item2);
 
-            TakeStaminaDamage(
-                uid,
-                comp.AfterCritical ? -comp.Decay * comp.AfterCritDecayMultiplier * totalDecayMod : -comp.Decay * totalDecayMod, // Recover faster after crit
-                comp);
+            if (comp.ActiveDrains.Count == 0)
+            {
+                TakeStaminaDamage(
+                    uid,
+                    comp.AfterCritical ? -comp.Decay * comp.AfterCritDecayMultiplier * totalDecayMod : -comp.Decay * totalDecayMod, // Recover faster after crit
+                    comp);
+            }
             //Starlight end
 
             Dirty(uid, comp);
