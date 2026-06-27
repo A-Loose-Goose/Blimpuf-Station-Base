@@ -19,7 +19,7 @@ using Content.Shared.VentCrawl;
 using Robust.Shared.Containers;
 using Content.Shared.FixedPoint;
 using Robust.Shared.Timing;
-using Content.Shared._Starlight.VentCrawl.Components;
+using Content.Shared.VentCrawl.Components;
 using Content.Shared._Starlight.Medical.Surgery.Components;
 using Content.Shared._Starlight.Antags.Abductor.Components;
 

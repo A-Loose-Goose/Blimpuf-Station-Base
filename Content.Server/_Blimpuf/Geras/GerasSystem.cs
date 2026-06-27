@@ -6,6 +6,7 @@ using Content.Shared._Blimpuf.Geras.Components;
 using Content.Shared.DoAfter;
 using Content.Shared.Humanoid;
 using Content.Shared.MagicMirror;
+using Content.Shared._Starlight.MagicMirror;
 using Content.Shared.Popups;
 using Content.Shared.Storage;
 using Content.Shared.Storage.EntitySystems;

@@ -43,7 +43,7 @@ using Content.Shared.Mech.Components;
 using Content.Shared._Starlight.Utility;
 using Content.Shared.Weapons.Hitscan.Events;
 using Content.Shared._Starlight.Camera;
-using Content.Shared._Starlight.VentCrawl.Components;
+using Content.Shared.VentCrawl.Components;
 using Content.Shared._Starlight.Weapons.Hitscan.Events;
 #endregion Starlight
 

@@ -36,7 +36,6 @@ using Content.Shared.Radio.Components;
 using Content.Shared._Starlight.Silicons.Borgs;
 using Content.Shared.Actions.Components;
 // Starlight begin
-using Content.Shared._Starlight.TextToSpeech;
 using Content.Shared.Tag;
 // Starlight end
 
