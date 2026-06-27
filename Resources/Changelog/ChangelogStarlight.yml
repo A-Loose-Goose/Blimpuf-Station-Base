@@ -4084,5 +4084,12 @@ Entries:
   id: 3401
   time: '2026-06-27T00:56:16.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/34
+- author: Limerent-Sun
+  changes:
+  - message: Railroading system.
+    type: Remove
+  id: 3501
+  time: '2026-06-27T00:56:38.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/35
 Order: -1
 
