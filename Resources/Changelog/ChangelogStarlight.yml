@@ -4098,5 +4098,12 @@ Entries:
   id: 3601
   time: '2026-06-27T00:57:00.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/36
+- author: ItsMaitake
+  changes:
+  - message: Changed all of the pre-existing SEC colors to be blue, instead of red.
+    type: Tweak
+  id: 3701
+  time: '2026-06-27T13:55:42.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/37
 Order: -1
 
