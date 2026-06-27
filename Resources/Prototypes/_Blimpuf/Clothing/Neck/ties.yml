@@ -1,0 +1,20 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTieBlue
+  name: blue tie
+  description: A neosilk clip-on blue tie.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Clothing/Neck/bluetie.rsi
+  - type: Clothing
+    sprite: _Blimpuf/Clothing/Neck/bluetie.rsi
+  - type: Item
+    storedSprite:
+      state: storage
+      sprite: _Blimpuf/Clothing/Neck/bluetie.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - ClothMade
+    - Recyclable

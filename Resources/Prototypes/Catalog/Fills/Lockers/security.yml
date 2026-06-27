@@ -75,7 +75,7 @@
   id: FillLockerSecurity
   table: !type:AllSelector
     children:
-    - id: ClothingHandsGlovesSecurityRed #Starlight
+    - id: ClothingHandsGlovesSecurityBlue # Blimpuf Bluesec Edit
     - id: ClothingEyesHudSecurity #Starlight
     - id: FlashlightSeclite
       prob: 0.8
@@ -159,8 +159,6 @@
         prob: 1.8
     - id: ClothingNeckCloakMoth #bzzz Moth-pocalypse
       prob: 0.15
-    - id: PlushieMorgana #starlight
-    - id: PlushieKiller #starlight
     - id: JawsOfLifeMed #Starlight
 
 

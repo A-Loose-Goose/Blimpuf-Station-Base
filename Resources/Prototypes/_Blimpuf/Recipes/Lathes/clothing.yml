@@ -1,0 +1,5 @@
+# Ties
+- type: latheRecipe
+  parent: BaseNeckClothingRecipe
+  id: ClothingNeckTieBlue
+  result: ClothingNeckTieBlue

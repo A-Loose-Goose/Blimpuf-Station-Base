@@ -1,12 +1,12 @@
 - type: loadout
   id: SecGloves
   equipment:
-    gloves: ClothingHandsGlovesSecurityRed
+    gloves: ClothingHandsGlovesSecurityBlue
 
 - type: loadout
   id: SecGlovesFingerless
   equipment:
-    gloves: ClothingHandsGlovesSecurityFingerlessRed
+    gloves: ClothingHandsGlovesSecurityFingerlessBlue
 
 - type: loadout
   id: PawsWhite

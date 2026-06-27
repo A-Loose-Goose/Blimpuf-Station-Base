@@ -71611,7 +71611,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: ClothingHandsGlovesSecurityRed
+- proto: ClothingHandsGlovesSecurityBlue
   entities:
   - uid: 11875
     components:

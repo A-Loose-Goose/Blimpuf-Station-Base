@@ -273,7 +273,7 @@
   id: WardrobeSecurityFilled
   suffix: Filled
   parent: WardrobeSecurity
-  description: "Cross the thin red line."
+  description: "Cross the thin blue line."
   components:
   - type: EntityTableContainerFill
     containers:

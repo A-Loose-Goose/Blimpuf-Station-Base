@@ -41,7 +41,7 @@
           amount: 2
         - id: ClothingHeadsetSecurity
           amount: 2
-        - id: ClothingHandsGlovesSecurityRed
+        - id: ClothingHandsGlovesSecurityBlue # Blimpuf Bluesec Edit
           amount: 2
         - id: ClothingShoesBootsJack
           amount: 2
@@ -122,8 +122,6 @@
           prob: 0.35
         - id: RubberStampBrigmedic
           amount: 2
-        - id: PlushieMorgana
-        - id: PlushieKiller
         - id: JawsOfLifeMed #Starlight
         - id: JawsOfLifeMed #Starlight
 

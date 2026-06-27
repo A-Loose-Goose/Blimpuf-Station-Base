@@ -83,20 +83,20 @@
 
 - type: entity
   parent: ClothingHeadHatHairFlowerBase
-  id: ClothingHeadHatHairFlowerRed
-  name: security red hairflower
+  id: ClothingHeadHatHairFlowerSECBlue
+  name: security blue hairflower
   components:
   - type: Sprite
     layers:
     - state: icon
-      color: "#de3a3a"
+      color: "#c12d30" # Blimpuf Blue SEC
   - type: Clothing
     clothingVisuals:
       head:
       - state: equipped-HELMET
-        color: "#de3a3a"
+        color: "#c12d30" # Blimpuf Blue SEC
   - type: ChameleonClothing
-    default: ClothingHeadHatHairFlowerRed
+    default: ClothingHeadHatHairFlowerSECBlue
 
 - type: entity
   parent: ClothingHeadHatHairFlowerBase
