@@ -38,7 +38,6 @@ using Robust.Shared.Utility;
 #region Starlight
 using Content.Shared._Starlight.Silicons.Borgs;
 using Content.Shared.Silicons.Borgs.Components;
-using Content.Shared.Starlight.TextToSpeech;
 using Robust.Shared.Player;
 using System.Linq;
 using Content.Shared.Silicons.Laws.Components;
@@ -671,14 +670,6 @@ public abstract partial class SharedStationAiSystem : EntitySystem
         {
             state = customization.State;
 
-            //Load voice from mind 🌟Starlight🌟
-            //Because APPARENTLY this is the best place to do it
-            //Station AIs will have to update their picture at least once for this to be called
-            if (TryComp<TextToSpeechComponent>(stationAi, out var ttscomp) &&
-                _mind.TryGetMind(stationAi.Value, out var _, out var mindcomp))
-            {
-                ttscomp.VoicePrototypeId = mindcomp.SiliconVoice;
-            }
         }
 
         // If the entity is not an AI core, let generic visualizers handle the appearance update

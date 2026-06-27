@@ -15,21 +15,18 @@ public sealed class RadioChimeSystem : EntitySystem
     [Dependency] private readonly IConfigurationManager _cfg = default!;
 
     public bool IsMuted = false;
-    private bool _ttsEnabled = false;
 
     public override void Initialize()
     {
         base.Initialize();
 
-        Subs.CVar(_cfg, StarlightCCVars.TTSClientEnabled, x => _ttsEnabled = x, true);
         Subs.CVar(_cfg, StarlightCCVars.RadioChimeMuted, x => IsMuted = x, true);
     }
 
     public void PlayChime(SoundSpecifier? chimeSound)
     {
         if (chimeSound is not SoundSpecifier chime
-            || IsMuted
-            || _ttsEnabled)
+            || IsMuted)
             return;
 
         _audio.PlayGlobal(_audio.ResolveSound(chime), Filter.Local(), true, AudioParams.Default.WithVolume(-10f));

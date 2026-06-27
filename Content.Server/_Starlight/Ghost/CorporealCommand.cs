@@ -7,7 +7,6 @@ using Content.Shared.Eye;
 using Content.Shared.Ghost;
 using Content.Shared.Speech;
 using Content.Shared.Speech.Components;
-using Content.Shared.Starlight.TextToSpeech;
 using Robust.Server.GameObjects;
 using Robust.Shared.Player;
 using Robust.Shared.Toolshed;
@@ -40,7 +39,6 @@ public sealed class CorporealCommand : ToolshedCommand
         EnsureComp<SpeechComponent>(uid);
         EnsureComp<EmotingComponent>(uid);
         EnsureComp<VocalComponent>(uid);
-        EnsureComp<TextToSpeechComponent>(uid);
         ToggleVisibility(uid, true);
         _ghost.CorporealStateChanged(uid, true);
         return uid;

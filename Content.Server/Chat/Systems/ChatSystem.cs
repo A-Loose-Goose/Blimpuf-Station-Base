@@ -9,7 +9,6 @@ using Content.Server.Chat.Managers;
 using Content.Server.GameTicking;
 using Content.Server.Speech.EntitySystems;
 using Content.Server.Speech.Prototypes;
-using Content.Server.Starlight.TTS;
 using Content.Server.Station.Systems;
 using Content.Shared._Starlight.Language;
 using Content.Shared._Starlight.Speech;
@@ -375,15 +374,6 @@ public sealed partial class ChatSystem : SharedChatSystem
         {
             _audio.PlayGlobal(announcementSound ?? DefaultAnnouncementSound, Filter.Broadcast(), true, AudioParams.Default.WithVolume(-2f));
         }
-        // Starlight start
-        RaiseLocalEvent(new AnnouncementSpokeEvent
-        {
-            Message = message,
-            Receivers = Filter.Broadcast(),
-            SpeakerUid = speaker.HasValue ? GetNetEntity(speaker.Value) : null,
-            AnnouncementSound = announcementSound,
-        });
-        // Starlight end
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Global station announcement from {sender}: {message.Text}");// Starlight
     }
 
@@ -406,14 +396,6 @@ public sealed partial class ChatSystem : SharedChatSystem
         {
             _audio.PlayGlobal(announcementSound ?? DefaultAnnouncementSound, filter, recordToReplay, AudioParams.Default.WithVolume(-2f)); // Starlight-edit
         }
-        // Starlight start
-        RaiseLocalEvent(new AnnouncementSpokeEvent
-        {
-            AnnouncementSound = announcementSound,
-            Message = message,
-            Receivers = filter
-        });
-        // Starlight end
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Station Announcement from {sender}: {message.Text}");
     }
 
@@ -447,15 +429,6 @@ public sealed partial class ChatSystem : SharedChatSystem
         {
             _audio.PlayGlobal(announcementSound ?? DefaultAnnouncementSound, filter, true, AudioParams.Default.WithVolume(-2f));
         }
-
-        // Starlight start
-        RaiseLocalEvent(new AnnouncementSpokeEvent
-        {
-            AnnouncementSound = announcementSound,
-            Message = message,
-            Receivers = filter
-        });
-        // Starlight end
 
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Station Announcement on {station} from {sender}: {message.Text}"); // Starlight
     }
@@ -504,14 +477,6 @@ public sealed partial class ChatSystem : SharedChatSystem
             var resolvedSound = _audio.ResolveSound(commsConsoleSound);
             _audio.PlayGlobal(resolvedSound, filter, true, AudioParams.Default.WithVolume(-2f));
         }
-
-        RaiseLocalEvent(new AnnouncementSpokeEvent
-        {
-            AnnouncementSound = announcementSound,
-            Message = message,
-            SpeakerUid = speaker.HasValue ? GetNetEntity(speaker.Value) : null,
-            Receivers = filter
-        });
 
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Communications Console Announcement on {station} from {sender}: {message}");
     }
@@ -603,14 +568,6 @@ public sealed partial class ChatSystem : SharedChatSystem
             admins,
             collectiveMind.Color);
 
-        //raise event so TTS and other related things work
-        var ev = new CollectiveMindSpokeEvent
-        {
-            Source = source,
-            Message = message,
-            Receivers = receivers.ToArray()
-        };
-        RaiseLocalEvent(source, ev, true);
     }
 
     private void SendEntitySpeak(

@@ -31,7 +31,6 @@ public sealed partial class ContentAudioSystem : SharedContentAudioSystem
     public const float InterfaceMultiplier = 2f;
 
     //Starlight
-    public const float TtsMultiplier = 1f;
 
     public override void Initialize()
     {
