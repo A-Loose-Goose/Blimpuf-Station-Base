@@ -1041,8 +1041,10 @@
       state: Samurai
   - type: IdCard
     jobTitle: Samurai
-    jobIcon: Samurai
-  - type: PresetIdCard
-    job: Visitor
+    jobIcon: JobIconSamurai
+  - type: Access
+    tags:
+      - External
+      - Maintenance    
   - type: NanoChatCard # CD
     listNumber: false
