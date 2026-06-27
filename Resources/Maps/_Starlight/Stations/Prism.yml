@@ -125878,13 +125878,6 @@ entities:
           showEnts: False
           occludes: True
           ent: 18036
-- proto: PlushieMatthew
-  entities:
-  - uid: 18037
-    components:
-    - type: Transform
-      pos: -1.2592541,-8.015773
-      parent: 2
 - proto: PlushieMoth
   entities:
   - uid: 18038

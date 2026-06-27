@@ -155201,13 +155201,6 @@ entities:
     - type: Transform
       pos: 43.553154,15.004568
       parent: 2
-- proto: PlushieMorgana
-  entities:
-  - uid: 24125
-    components:
-    - type: Transform
-      pos: -39.516224,65.554794
-      parent: 2
 - proto: PlushieMoth
   entities:
   - uid: 24127
