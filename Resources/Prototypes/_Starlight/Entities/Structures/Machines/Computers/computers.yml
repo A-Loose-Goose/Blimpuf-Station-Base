@@ -222,6 +222,7 @@
 - type: entity
   parent: BaseComputerShuttle
   id: CompuerShuttleSalvage
+  categories: [ ShouldMapStation ]
   name: salvage shuttle console
   components:
   - type: Sprite
@@ -396,6 +397,7 @@
 - type: entity
   parent: BaseComputerShuttle
   id: ComputerShuttleMining
+  categories: [ ShouldMapStation ]
   name: mining shuttle console
   components:
     - type: Sprite
@@ -501,6 +503,7 @@
 - type: entity
   parent: ComputerComms
   id: ComputerCommsEngineering
+  categories: [ ShouldMapStation ]
   name: engineering communications console
   description: A computer used to make station wide announcements via keyboard, set the appropriate alert level, and call the emergency shuttle.
   components:
@@ -530,7 +533,7 @@
       canBroadcast: false
       canShuttle: false
     - type: SecureCommandTerminalConsole
-      authTerminal: true
+      enabled: false
     - type: Computer
       board: EngineeringCommsComputerCircuitboard
     - type: PointLight
@@ -542,6 +545,7 @@
 - type: entity
   parent: ComputerComms
   id: ComputerCommsMedical
+  categories: [ ShouldMapStation ]
   name: medical communications console
   description: A computer used to make station wide announcements via keyboard, set the appropriate alert level, and call the emergency shuttle.
   components:
@@ -568,7 +572,7 @@
       canBroadcast: false
       canShuttle: false
     - type: SecureCommandTerminalConsole
-      authTerminal: true
+      enabled: false
     - type: Computer
       board: MedicalCommsComputerCircuitboard
     - type: PointLight
@@ -580,6 +584,7 @@
 - type: entity
   parent: ComputerComms
   id: ComputerCommsScience
+  categories: [ ShouldMapStation ]
   name: science communications console
   description: A computer used to make station wide announcements via keyboard, set the appropriate alert level, and call the emergency shuttle.
   components:
@@ -606,7 +611,7 @@
       canBroadcast: false
       canShuttle: false
     - type: SecureCommandTerminalConsole
-      authTerminal: true
+      enabled: false
     - type: Computer
       board: ScienceCommsComputerCircuitboard
     - type: PointLight
@@ -618,6 +623,7 @@
 - type: entity
   parent: ComputerComms
   id: ComputerCommsSecurity
+  categories: [ ShouldMapStation ]
   name: security communications console
   description: A computer used to make station wide announcements via keyboard, set the appropriate alert level, and call the emergency shuttle.
   components:
@@ -647,7 +653,7 @@
       canBroadcast: false
       canShuttle: false
     - type: SecureCommandTerminalConsole
-      authTerminal: true
+      enabled: false
     - type: Computer
       board: SecurityCommsComputerCircuitboard
     - type: PointLight
@@ -659,6 +665,7 @@
 - type: entity
   parent: ComputerComms
   id: ComputerCommsService
+  categories: [ ShouldMapStation ]
   name: service communications console
   description: A computer used to make station wide announcements via keyboard, set the appropriate alert level, and call the emergency shuttle.
   components:
@@ -685,7 +692,7 @@
       canBroadcast: false
       canShuttle: false
     - type: SecureCommandTerminalConsole
-      authTerminal: true
+      enabled: false
     - type: Computer
       board: ServiceCommsComputerCircuitboard
     - type: PointLight
@@ -697,6 +704,7 @@
 - type: entity
   parent: ComputerComms
   id: ComputerCommsCargo
+  categories: [ ShouldMapStation ]
   name: cargo communications console
   description: A computer used to make station wide announcements via keyboard, set the appropriate alert level, and call the emergency shuttle.
   components:
@@ -723,7 +731,7 @@
       canBroadcast: false
       canShuttle: false
     - type: SecureCommandTerminalConsole
-      authTerminal: true
+      enabled: false
     - type: Computer
       board: CargoCommsComputerCircuitboard
     - type: PointLight
@@ -735,6 +743,7 @@
 - type: entity
   parent: ComputerComms
   id: ComputerCommsLaw
+  categories: [ ShouldMapStation ]
   name: law communications console
   description: A computer used to make station wide announcements via keyboard, set the appropriate alert level, and call the emergency shuttle.
   components:
@@ -761,7 +770,7 @@
       canBroadcast: false
       canShuttle: false
     - type: SecureCommandTerminalConsole
-      authTerminal: true
+      enabled: false
     - type: Computer
       board: LawCommsComputerCircuitboard
     - type: PointLight
@@ -806,3 +815,5 @@
     radius: 1.5
     energy: 1.6
     color: "#b89f25"
+  - type: StealTarget
+    stealGroup: ShipyardComputerCircuitboard

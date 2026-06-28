@@ -1,21 +1,20 @@
 using System.Linq;
 using Content.Server.Construction.Completions;
 using Content.Server.Popups;
-using Content.Shared.VentCrawl.Tube.Components;
-using Content.Shared.VentCrawl.Components;
+using Content.Shared._Starlight.VentCrawl.Components;
 using Content.Shared.Tools.Components;
 using Content.Shared.Destructible;
 using Content.Shared.DoAfter;
 using Content.Shared.Lock;
 using Content.Shared.Movement.Systems;
-using Content.Shared.VentCrawl;
+using Content.Shared._Starlight.VentCrawl;
 using Content.Shared.Verbs;
 using Robust.Shared.Containers;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 
-namespace Content.Server.VentCrawl
+namespace Content.Server._Starlight.VentCrawl
 {
     public sealed class VentCrawlTubeSystem : EntitySystem
     {

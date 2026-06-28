@@ -48,6 +48,7 @@
 - type: entity
   parent: [IDCardStandard, BaseGrandTheftContraband]
   id: CaptainIDCard
+  categories: [ ShouldMapStation ] # Starlight
   name: captain ID card
   components:
   - type: Sprite
@@ -696,7 +697,7 @@
 - type: entity
   parent: IDCardStandard
   id: PunPunIDCard
-  name: pun pun ID card
+  name: pun pun's ID card # Starlight apostrophe
   components:
   - type: Sprite
     layers:

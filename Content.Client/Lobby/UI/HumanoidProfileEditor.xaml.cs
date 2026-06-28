@@ -37,8 +37,11 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
 #region Starlight
-using Content.Shared.Starlight.CCVar;
+using Content.Shared._Starlight.CCVar;
 using Content.Shared._Starlight.Traits;
+using Content.Client._Starlight.Lobby.UI;
+using Content.Shared._Starlight.Humanoid;
+using Content.Client._Starlight.Humanoid;
 #endregion Starlight
 
 namespace Content.Client.Lobby.UI
@@ -289,12 +292,12 @@ namespace Content.Client.Lobby.UI
 
             WidthSlider.OnValueChanged += args =>
             {
-                SetWidth(args.Value);
+                SetCharacterWidth(args.Value);
             };
 
             HeightSlider.OnValueChanged += args =>
             {
-                SetHeight(args.Value);
+                SetCharacterHeight(args.Value);
             };
 
             WidthResetButton.OnPressed += _ =>
@@ -1545,20 +1548,20 @@ namespace Content.Client.Lobby.UI
             }
         }
 
-        private void SetWidth(float newWidth)
+        private void SetCharacterWidth(float newWidth)
         {
             if (Profile is null) return;
-            Profile.Appearance = Profile.Appearance.WithWidth(newWidth);
+            Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithWidth(newWidth));
             UpdateSizeText();
-            ReloadPreview();
+            ReloadProfilePreview();
         }
 
-        private void SetHeight(float newHeight)
+        private void SetCharacterHeight(float newHeight)
         {
             if (Profile is null) return;
-            Profile.Appearance = Profile.Appearance.WithHeight(newHeight);
+            Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithHeight(newHeight));
             UpdateSizeText();
-            ReloadPreview();
+            ReloadProfilePreview();
         }
         //starlight end
 

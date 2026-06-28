@@ -16,7 +16,7 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Human, Animal, Rat, Plant, Harpy ]
+          type: [ Human, Animal, Rat, Plant, Harpy, Protogen ]
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:
@@ -47,7 +47,7 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Human, Animal, Rat, Plant, Arachnid, Moth, Harpy ]
+          type: [ Human, Animal, Rat, Plant, Arachnid, Moth, Harpy, Protogen ]
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:
@@ -263,9 +263,10 @@
         damage:
           types:
             Cold: 0.5 # liquid nitrogen is cold
-        conditions:
+        conditions: # Starlight start
           - !type:MetabolizerTypeCondition
             type: [ Cyclorite ]
+            inverted: true # Starlight end
     Gas:
       effects:
       - !type:Oxygenate

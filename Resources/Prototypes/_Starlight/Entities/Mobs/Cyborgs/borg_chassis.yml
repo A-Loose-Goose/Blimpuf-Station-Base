@@ -277,6 +277,7 @@
       damageContainers:
       - Biological
       - IPC
+      - Hybrid
     - type: SolutionScanner
     - type: FlashImmunity
       showInExamine: false
