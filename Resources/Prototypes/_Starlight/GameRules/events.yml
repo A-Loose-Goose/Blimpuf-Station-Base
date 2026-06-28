@@ -284,4 +284,4 @@
         color: red
         sound: /Audio/Misc/ninja_greeting.ogg
   - type: DynamicRuleCost
-    cost: 75
+    cost: 100
