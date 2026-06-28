@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by ItsMaitake on Blimpuf Station (https://github.com/Blimpuf-Station/BlimpufStation)",
+  "size": {"x": 32, "y": 32},
+  "states": [
+    {
+      "name": "beholder",
+      "directions": 4
+    },
+    {
+      "name": "blind",
+      "directions": 4
+    },
+    {
+      "name": "cone",
+      "directions": 4
+    },
+    {
+      "name": "cross",
+      "directions": 4
+    },
+    {
+      "name": "elf",
+      "directions": 4
+    },
+    {
+      "name": "side",
+      "directions": 4
+    },
+    {
+      "name": "stalks",
+      "directions": 4
+    },
+    {
+      "name": "peepers",
+      "directions": 4
+    },
+    {
+      "name": "striped",
+      "directions": 4
+    },
+    {
+      "name": "tendrils",
+      "directions": 4
+    },
+    {
+      "name": "tentacles",
+      "directions": 4
+    }
+  ]
+}
