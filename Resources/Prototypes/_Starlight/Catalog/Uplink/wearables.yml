@@ -57,18 +57,19 @@
   categories:
     - UplinkWearables
 
-- type: listing
-  id: UplinkClothingThievingGloves
-  name: uplink-clothing-chameleon-thieving-gloves-name
-  description: uplink-clothing-chameleon-thieving-gloves-desc
-  productEntity: ClothingHandsChameleonThief
-  discountCategory: veryRareDiscounts
-  discountDownTo:
-    Telecrystal: 7
-  cost:
-    Telecrystal: 10
-  categories:
-    - UplinkWearables
+# Blimpuf edit - Too strong with upcoming research mechanics.
+#- type: listing
+#  id: UplinkClothingThievingGloves
+#  name: uplink-clothing-chameleon-thieving-gloves-name
+#  description: uplink-clothing-chameleon-thieving-gloves-desc
+#  productEntity: ClothingHandsChameleonThief
+#  discountCategory: veryRareDiscounts
+#  discountDownTo:
+#    Telecrystal: 7
+#  cost:
+#    Telecrystal: 10
+#  categories:
+#    - UplinkWearables
 
 - type: listing
   id: UplinkClothingOuterArmorBasic

@@ -110,7 +110,7 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledSyndicateCyborgAssault
   icon: { sprite: Objects/Devices/communication.rsi, state: old-radio-borg-assault }
   cost:
-    Telecrystal: 40 # Starlight
+    Telecrystal: 200
   categories:
     - UplinkDAGD
   conditions:
@@ -133,7 +133,7 @@
       state: old-radio-borg-assault,
     } # TODO BETTER ICON
   cost:
-    Telecrystal: 30
+    Telecrystal: 150
   categories:
     - UplinkDAGD
   conditions:
@@ -156,7 +156,7 @@
       state: old-radio-borg-assault,
     } # TODO BETTER ICON
   cost:
-    Telecrystal: 30
+    Telecrystal: 150
   categories:
     - UplinkDAGD
   conditions:
@@ -179,7 +179,7 @@
       state: old-radio-borg-assault,
     } # TODO BETTER ICON
   cost:
-    Telecrystal: 20
+    Telecrystal: 100
   categories:
     - UplinkDAGD
   conditions:
@@ -192,49 +192,51 @@
         components:
           - SurplusBundle
 
-- type: listing
-  id: UplinkSyndicateBorgiKittedBundleDAGD
-  name: uplink-syndicate-borgi-kitted-bundle-name
-  description: uplink-syndicate-borgi-kitted-bundle-desc
-  icon: { sprite: Objects/Fun/Balloons/corgi.rsi, state: icon }
-  productEntity: SyndiBorgiKit1Bundle
-  cost:
-    Telecrystal: 40
-  categories:
-    - UplinkDAGD
-  conditions:
-    - !type:ListingLimitedStockCondition
-      stock: 1
-    - !type:BuyerObjectiveWhitelistCondition
-      whitelist:
-        components:
-          - DieCondition
-    - !type:BuyerWhitelistCondition
-      blacklist:
-        components:
-          - SurplusBundle
+# Blimpuf edit - Temporary removal until research tab is done.
+#- type: listing
+#  id: UplinkSyndicateBorgiKittedBundleDAGD
+#  name: uplink-syndicate-borgi-kitted-bundle-name
+#  description: uplink-syndicate-borgi-kitted-bundle-desc
+#  icon: { sprite: Objects/Fun/Balloons/corgi.rsi, state: icon }
+#  productEntity: SyndiBorgiKit1Bundle
+#  cost:
+#    Telecrystal: 40
+#  categories:
+#    - UplinkDAGD
+#  conditions:
+#    - !type:ListingLimitedStockCondition
+#      stock: 1
+#    - !type:BuyerObjectiveWhitelistCondition
+#      whitelist:
+#        components:
+#          - DieCondition
+#    - !type:BuyerWhitelistCondition
+#      blacklist:
+#        components:
+#          - SurplusBundle
 
-- type: listing
-  id: UplinkSyndicateBorgiSpeedBundleDAGD
-  name: uplink-syndicate-borgi-speed-bundle-name
-  description: uplink-syndicate-borgi-speed-bundle-desc
-  icon: { sprite: Objects/Fun/Balloons/corgi.rsi, state: icon }
-  productEntity: SyndiBorgiKit2Bundle
-  cost:
-    Telecrystal: 30
-  categories:
-    - UplinkDAGD
-  conditions:
-    - !type:ListingLimitedStockCondition
-      stock: 1
-    - !type:BuyerObjectiveWhitelistCondition
-      whitelist:
-        components:
-          - DieCondition
-    - !type:BuyerWhitelistCondition
-      blacklist:
-        components:
-          - SurplusBundle
+# Blimpuf edit - Temporary removal until research tab is done.
+#- type: listing
+#  id: UplinkSyndicateBorgiSpeedBundleDAGD
+#  name: uplink-syndicate-borgi-speed-bundle-name
+#  description: uplink-syndicate-borgi-speed-bundle-desc
+#  icon: { sprite: Objects/Fun/Balloons/corgi.rsi, state: icon }
+#  productEntity: SyndiBorgiKit2Bundle
+#  cost:
+#    Telecrystal: 30
+#  categories:
+#    - UplinkDAGD
+#  conditions:
+#    - !type:ListingLimitedStockCondition
+#      stock: 1
+#    - !type:BuyerObjectiveWhitelistCondition
+#      whitelist:
+#        components:
+#          - DieCondition
+#    - !type:BuyerWhitelistCondition
+#      blacklist:
+#        components:
+#          - SurplusBundle
 
 - type: listing
   id: UplinkMicroBombImplanterDAGD
@@ -482,7 +484,7 @@
   description: uplink-energy-dome-desc
   productEntity: EnergyDomeGeneratorPersonalSyndie
   cost:
-    Telecrystal: 10
+    Telecrystal: 50
   categories:
     - UplinkDAGD
   conditions:
