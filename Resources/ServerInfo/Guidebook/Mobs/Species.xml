@@ -14,24 +14,16 @@
   <GuideEntityEmbed Entity="AppearanceHarpy" Caption="Harpy"/>
   <GuideEntityEmbed Entity="AppearanceHuman" Caption="Human"/>
   <GuideEntityEmbed Entity="AppearanceMoth" Caption="Moth Person"/>
+  <GuideEntityEmbed Entity="AppearanceProtogen" Caption="Protogen"/>
   <GuideEntityEmbed Entity="AppearanceReptilian" Caption="Reptilian"/>
   <GuideEntityEmbed Entity="AppearanceResomi" Caption="Resomi"/>
   </Box>
   <Box>
+  <GuideEntityEmbed Entity="AppearanceRodentia" Caption="Rodentia"/>
   <GuideEntityEmbed Entity="AppearanceShadekinGuidebook" Caption="Shadekin"/>
   <GuideEntityEmbed Entity="AppearanceSlimePerson" Caption="Slime Person"/>
   <GuideEntityEmbed Entity="AppearanceThaven" Caption="Thaven"/>
   <GuideEntityEmbed Entity="AppearanceVox" Caption="Vox"/>
   <GuideEntityEmbed Entity="AppearanceVulpkanin" Caption="Vulpkanin"/>
   </Box>
-  <Box>
-  <GuideEntityEmbed Entity="AppearanceProtogen" Caption="Protogen"/>
-  <GuideEntityEmbed Entity="AppearanceRodentia" Caption="Rodentia"/>
-  </Box>
-
-    <!--   <GuideEntityEmbed Entity="AppearanceDwarf" Caption="Dwarf"/>
-<GuideEntityEmbed Entity="AppearanceFelionoid" Caption="Felionoid"/>
-<GuideEntityEmbed Entity="AppearanceAvali" Caption="Avali"/>
-<GuideEntityEmbed Entity="AppearanceLagomorph" Caption="Lagomorph"/>
-<GuideEntityEmbed Entity="AppearanceIPC" Caption="IPC"/>         Blimpuf disabled-->
 </Document>

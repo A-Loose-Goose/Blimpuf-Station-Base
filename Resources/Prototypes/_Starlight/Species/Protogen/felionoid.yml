@@ -1,7 +1,7 @@
 - type: species
   id: ProtoFelionoid
   name: subspecies-name-protofelionoid
-  roundStart: true
+  roundStart: false # Blimpuf disabled
   prototype: MobProtoFelionoid
   sprites: MobProtoFelionoidSprites
   defaultSkinTone: "#666666"

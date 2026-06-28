@@ -5,21 +5,17 @@
   children:
   - ProtogenFrames # Starlight
   - TrueProtogen # Starlight, true Protogen
-  - ProtoElf # Starlight
   - ProtoArachnid
-  - ProtoAvali
   - ProtoCyclorite # Starlight
   - ProtoDiona # Starlight
-  - ProtoDwarf # Starlight
-  - ProtoFelionoid # Starlight
+  - ProtoElf # Starlight
   - ProtoHuman # Starlight
   - ProtoKin # Starlight, moved alphabetically
-  - ProtoLagomorph # Starlight
-  - ProtoSlimePerson
-  - ProtoThaven # Starlight, moved alphabetically
   - ProtoMoth
   - ProtoReptilian # Starlight
   - ProtoResomi
+  - ProtoSlimePerson
+  - ProtoThaven # Starlight, moved alphabetically
   - ProtoVox
   - ProtoVulp
 

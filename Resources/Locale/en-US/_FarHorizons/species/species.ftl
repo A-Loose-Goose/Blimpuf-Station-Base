@@ -2,12 +2,12 @@ species-name-ipc = IPC
 
 species-name-protogen = Protogen
 guidebook-armor-protogen = Protogen Frames
-# Starlight, Protogen Frames, True Protogen, Proto Laspi, Human, Felionoid, Dwarf, and Cyclorite renamed
+# Starlight, Protogen Frames, True Protogen, Proto Slime, Human, Felionoid, Dwarf, and Cyclorite renamed
 subspecies-name-trueprotogen = True Protogen
 subspecies-name-protovulp = Proto-Vulpkanin
 subspecies-name-protovox = Proto-Vox
 subspecies-name-protothaven = Proto-Thaven
-subspecies-name-protoslimeperson = Proto-Laspi
+subspecies-name-protoslimeperson = Proto-Slime
 subspecies-name-protokin = Proto-Kin
 subspecies-name-protoresomi = Proto-Resomi
 subspecies-name-protoreptilian = Proto-Reptilian
@@ -21,5 +21,5 @@ subspecies-name-protoavali = Proto-Avali
 subspecies-name-protoarachnid = Proto-Arachnid
 
 # Starlight Species added after Protogens
-subspecies-name-protoelf = Proto-Aielithii
+subspecies-name-protoelf = Proto-Elf
 subspecies-name-protolagomorph = Proto-Lagomorph

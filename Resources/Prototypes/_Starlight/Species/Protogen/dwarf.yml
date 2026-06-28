@@ -1,7 +1,7 @@
 - type: species
   id: ProtoDwarf
   name: subspecies-name-protodwarf
-  roundStart: true
+  roundStart: false # Blimpuf disabled
   prototype: MobProtoDwarf
   sprites: MobProtoHumanSprites
   markingLimits: MobProtoDwarfMarkingLimits
