@@ -149,7 +149,7 @@
     - ShitStationEventScheduler
     - Vampire
     - SiliconLiberation
-    - Brighteye
+    #- Brighteye
     - ThiefGamerule
     - CosmicCult
 
@@ -211,4 +211,4 @@
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
-  - RailroadingMinor # 🌟Starlight🌟
+  #- RailroadingMinor # 🌟Starlight🌟

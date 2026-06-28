@@ -11,7 +11,7 @@
         children:
         - id: BriefDocumentRevs
         - id: BriefDocumentLings
-        - id: BriefDocumentBrightEyes
+        #- id: BriefDocumentBrightEyes
         - id: BriefDocumentVampires
         - id: BriefDocumentSyndicate
         - id: BriefDocumentWizard

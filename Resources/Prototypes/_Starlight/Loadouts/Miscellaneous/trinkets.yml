@@ -851,7 +851,7 @@
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement
-      department: Law
+      department: Representatives
       time: 100h
   storage:
     back:
@@ -894,4 +894,3 @@
     back:
     - TowelColorGold
   groupBy: "towels"
-

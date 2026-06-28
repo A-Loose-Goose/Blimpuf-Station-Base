@@ -110,6 +110,14 @@
     allowedDepartments: [ Representatives ]
 
 - type: entity
+  id: BaseNanoTrasenContraband
+  parent: BaseRestrictedContraband
+  abstract: true
+  components:
+  - type: Contraband
+    allowedDepartments: [ Representatives ]
+
+- type: entity
   id: BaseJanitorSecurityContraband
   parent: BaseRestrictedContraband
   abstract: true

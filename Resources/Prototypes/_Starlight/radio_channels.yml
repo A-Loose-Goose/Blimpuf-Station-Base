@@ -12,7 +12,7 @@
 - type: radioChannel
   id: NanoTrasen
   name: chat-radio-nanotrasen
-  keycode: "z"
+  keycode: "d"
   frequency: 2000
   color: "#2253b5"
   longRange: true
