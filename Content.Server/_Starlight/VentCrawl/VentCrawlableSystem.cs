@@ -1,11 +1,11 @@
 using System.Linq;
-using Content.Shared.VentCrawl.Components;
-using Content.Shared.VentCrawl;
+using Content.Shared._Starlight.VentCrawl.Components;
+using Content.Shared._Starlight.VentCrawl;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Containers;
 
-namespace Content.Server.VentCrawl;
+namespace Content.Server._Starlight.VentCrawl;
 
 public sealed class VentCrawlableSystem : EntitySystem
 {

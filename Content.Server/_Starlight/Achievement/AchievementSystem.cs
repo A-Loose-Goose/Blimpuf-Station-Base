@@ -56,7 +56,7 @@ using Content.Shared.Smoking;
 using Content.Shared.Station.Components;
 using Content.Shared.Stunnable;
 using Content.Shared.Tag;
-using Content.Shared.VentCrawl.Components;
+using Content.Shared._Starlight.VentCrawl.Components;
 using Content.Shared.Weapons.Melee.Events;
 using Robust.Server.Player;
 using Robust.Shared.Enums;

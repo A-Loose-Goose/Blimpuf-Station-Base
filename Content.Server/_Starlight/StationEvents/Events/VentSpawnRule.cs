@@ -3,11 +3,11 @@ using Content.Server._Starlight.StationEvents.Components;
 using Content.Server.Antag;
 using Content.Server.StationEvents.Components;
 using Content.Server.StationEvents.Events;
-using Content.Server.VentCrawl;
+using Content.Server._Starlight.VentCrawl;
 using Content.Shared.GameTicking.Components;
 using Content.Shared.Random.Helpers;
 using Content.Shared.Station.Components;
-using Content.Shared.VentCrawl;
+using Content.Shared._Starlight.VentCrawl;
 using Robust.Shared.Map;
 using Robust.Shared.Utility;
 

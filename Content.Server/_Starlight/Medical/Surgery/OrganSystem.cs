@@ -15,11 +15,11 @@ using Content.Shared._Starlight.Cybernetics.Components;
 using Content.Shared._Starlight.Language.Components;
 using Content.Shared._Starlight.Medical.Surgery.Events;
 using Content.Shared.Tag;
-using Content.Shared.VentCrawl;
+using Content.Shared._Starlight.VentCrawl;
 using Robust.Shared.Containers;
 using Content.Shared.FixedPoint;
 using Robust.Shared.Timing;
-using Content.Shared.VentCrawl.Components;
+using Content.Shared._Starlight.VentCrawl.Components;
 using Content.Shared._Starlight.Medical.Surgery.Components;
 using Content.Shared._Starlight.Antags.Abductor.Components;
 

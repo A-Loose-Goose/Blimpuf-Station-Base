@@ -1,8 +1,8 @@
 using Content.Shared.Clothing;
-using Content.Shared.VentCrawl.Components;
-using Content.Shared.VentCrawl;
+using Content.Shared._Starlight.VentCrawl.Components;
+using Content.Shared._Starlight.VentCrawl;
 
-namespace Content.Server.VentCrawl;
+namespace Content.Server._Starlight.VentCrawl;
 
 public sealed class VentCrawlClothingSystem : EntitySystem
 {

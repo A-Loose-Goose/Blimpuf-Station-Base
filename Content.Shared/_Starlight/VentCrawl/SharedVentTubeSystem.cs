@@ -1,9 +1,9 @@
 using System.Linq;
-using Content.Shared.VentCrawl.Tube.Components;
+using Content.Shared._Starlight.VentCrawl.Components;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 
-namespace Content.Shared.VentCrawl;
+namespace Content.Shared._Starlight.VentCrawl;
 
 public sealed class SharedVentTubeSystem : EntitySystem
 {

@@ -1,8 +1,8 @@
-using Content.Shared.VentCrawl.Components;
+using Content.Shared._Starlight.VentCrawl.Components;
 using Robust.Shared.Audio;
 using Robust.Shared.Containers;
 
-namespace Content.Shared.VentCrawl.Components;
+namespace Content.Shared._Starlight.VentCrawl.Components;
 
 [RegisterComponent]
 public sealed partial class VentCrawlHolderComponent : Component
