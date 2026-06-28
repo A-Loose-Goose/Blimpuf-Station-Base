@@ -21,11 +21,11 @@
 - type: entity
   parent: FaxMachineNTBase
   id: FaxMachineNTRep
-  suffix: "NT: NTR"
+  suffix: "NT: CCR"
   components:
     - type: FaxMachine
       group: FaxGroupNanoTrasen
-      name: "NT Representative"
+      name: "CC Representative"
       order: 100
 
 - type: entity

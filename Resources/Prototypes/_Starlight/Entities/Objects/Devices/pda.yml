@@ -733,7 +733,7 @@
   parent: CentcomPDA
   id: DecimusPDA
   name: jailbroken PDA
-  description: An illegally modified generic NanoTrasen PDA. Please report this to your nearest NanoTrasen Representative for investigation.
+  description: An illegally modified generic NanoTrasen PDA. Please report this to your nearest NanoTrasen Career Trainer for investigation.
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Devices/pda.rsi
