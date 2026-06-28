@@ -79775,7 +79775,7 @@ entities:
         [head=3] The first thing you should know about your supermatter crystal is that it's very shy! Any contact with the supermatter crystal will result in your instant [head=1][color=red]vaporization![/color][/head]
 
 
-        The supermatter crystal is VERY dangerous to the station, make sure you read this guide fully! Please feel free to ask your nearest Central Command representative for assistance if needed.
+        The supermatter crystal is VERY dangerous to the station, make sure you read this guide fully! Please feel free to ask your nearest nanotrasen representative for assistance if needed.
 
 
         [head=1][color=darkred]Basic details of the crystal:[/head][/color]
@@ -79813,7 +79813,7 @@ entities:
         [color=red]WEAR A RADIATION SUIT![/color] The supermatter has been recorded as producing upwards of 6 rads at its lowest levels. Through radiation shielding.
 
 
-        Hopefully this guide is enough to get you started. Please ask your nearest Central Command representative if you require further assistance.
+        Hopefully this guide is enough to get you started. Please ask your nearest NanoTrasen representative if you require further assistance.
 
 
         [head=1][color=darkblue]Glory to NanoTrasen!
@@ -80017,7 +80017,7 @@ entities:
         The lower the temperature on the freezer, the faster the patient will cool. If Leporazine is available to raise body temperature after treatment, the freezer may safely be set to its lowest possible temperature.
 
 
-        The gas filter removes unwanted gasses from the pipe loop. This is most commonly carbon dioxide produced by the patient exhaling, but ammonia may also be produced by Vox patients or those experiencing decomposition, and nitrous oxide may be produced by slime or Cyclorite patients. The removed gas will be routed directly into the room’s waste pipe, while filtered air will go back into the cryogenic tubes.
+        The gas filter removes unwanted gasses from the pipe loop. This is most commonly carbon dioxide produced by the patient exhaling, but ammonia may also be produced by Vox patients or those experiencing decomposition, and nitrous oxide may be produced by Laspi or Cyclorite patients. The removed gas will be routed directly into the room’s waste pipe, while filtered air will go back into the cryogenic tubes.
       editingDisabled: True
   - uid: 11795
     components:

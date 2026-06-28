@@ -89399,7 +89399,7 @@ entities:
     - type: Transform
       pos: 33.67443,46.61361
       parent: 2
-- proto: EncryptionKeyCorporate
+- proto: EncryptionKeyLaw
   entities:
   - uid: 14149
     components:

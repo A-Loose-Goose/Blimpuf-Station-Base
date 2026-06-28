@@ -110641,16 +110641,16 @@ entities:
   - uid: 18167
     components:
     - type: MetaData
-      name: station beacon (Central Command Representative)
+      name: station beacon (NanoTrasen Representative)
     - type: Transform
       pos: -14.5,41.5
       parent: 2
     - type: NavMapBeacon
-      text: Central Command Representative
+      text: NanoTrasen Representative
     - type: WarpPoint
-      location: Central Command Representative
+      location: NanoTrasen Representative
     - type: Label
-      currentLabel: Central Command Representative
+      currentLabel: NanoTrasen Representative
     - type: NameModifier
       baseName: station beacon
   - uid: 18168
