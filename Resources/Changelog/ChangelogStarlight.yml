@@ -4105,5 +4105,15 @@ Entries:
   id: 3701
   time: '2026-06-27T13:55:42.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/37
+- author: ItsMaitake
+  changes:
+  - message: Beholder, Blind, Cone, Cross, Elf, Side, Peepers, Stalks, Striped, Tendrils,
+      and Tentacles head markings.
+    type: Add
+  - message: Tentacle and Tendril leg and arm markings.
+    type: Add
+  id: 3901
+  time: '2026-06-28T08:16:38.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/39
 Order: -1
 
