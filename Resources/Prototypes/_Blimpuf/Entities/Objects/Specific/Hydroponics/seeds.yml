@@ -1,9 +1,0 @@
-- type: entity
-  parent: SeedBase
-  name: packet of goat seeds
-  id: GoatSeeds
-  components:
-  - type: Seed
-    seedId: goat
-  - type: Sprite
-    sprite: _Blimpuf/Objects/Specific/Hydroponics/goat.rsi

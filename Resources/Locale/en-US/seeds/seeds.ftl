@@ -144,5 +144,3 @@ seeds-anomaly-berry-name = anomaly berry
 seeds-anomaly-berry-display-name = anomaly berries
 seeds-bloonion-name = bloonion
 seeds-bloonion-display-name = bloonion bulbs
-seeds-goat-name = goat
-seeds-goat-display-name = goat
