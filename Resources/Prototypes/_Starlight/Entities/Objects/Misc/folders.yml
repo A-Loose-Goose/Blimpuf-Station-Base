@@ -263,3 +263,8 @@
         children:
         - id: PrintedDocumentReportMorgue
           amount: 18
+
+- type: entity
+  parent: BoxFolderNuclearCodes
+  id: BoxFolderAllNuclearCodes
+  name: nuclear code folder
