@@ -4122,5 +4122,12 @@ Entries:
   id: 3801
   time: '2026-06-28T19:20:14.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/38
+- author: ItsMaitake
+  changes:
+  - message: SEC posters made blue.
+    type: Tweak
+  id: 4001
+  time: '2026-06-29T01:56:19.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/40
 Order: -1
 
