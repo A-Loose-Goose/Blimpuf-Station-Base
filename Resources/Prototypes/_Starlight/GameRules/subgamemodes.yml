@@ -157,7 +157,7 @@
       # max: 1 # Blimpuf: disabled
       min: 0
       max: 0
-      playerRatio: 20
+      playerRatio: 50
       lateJoinAdditional: false
       allowNonHumans: true
       multiAntagSetting: NotExclusive
