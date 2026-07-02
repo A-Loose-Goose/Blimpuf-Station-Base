@@ -23229,30 +23229,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 80.5,-8.5
       parent: 2
-- proto: BenchRedComfyEndLeft
-  entities:
-  - uid: 1629
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 6.5,19.5
-      parent: 2
-- proto: BenchRedComfyEndRight
-  entities:
-  - uid: 1630
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 4.5,19.5
-      parent: 2
-- proto: BenchRedComfyMiddle
-  entities:
-  - uid: 1631
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 5.5,19.5
-      parent: 2
 - proto: BigBox
   entities:
   - uid: 1632
@@ -189117,4 +189093,28 @@ entities:
     - type: Transform
       pos: 14.5,20.5
       parent: 2
+- proto: BenchBlueComfyEndRight
+  entities:
+  - uid: 29652
+    components:
+    - type: Transform
+      pos: 4.5,19.5
+      parent: 2
+      rot: 3.141592653589793 rad
+- proto: BenchBlueComfyMiddle
+  entities:
+  - uid: 29650
+    components:
+    - type: Transform
+      pos: 5.5,19.5
+      parent: 2
+      rot: 3.141592653589793 rad
+- proto: BenchBlueComfyEndLeft
+  entities:
+  - uid: 29651
+    components:
+    - type: Transform
+      pos: 6.5,19.5
+      parent: 2
+      rot: 3.141592653589793 rad
 ...
