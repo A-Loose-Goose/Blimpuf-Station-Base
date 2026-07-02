@@ -83617,8 +83617,6 @@ entities:
     - type: Transform
       pos: -0.5,14.5
       parent: 2
-- proto: CryogenicSleepUnit
-  entities:
   - uid: 13224
     components:
     - type: Transform
