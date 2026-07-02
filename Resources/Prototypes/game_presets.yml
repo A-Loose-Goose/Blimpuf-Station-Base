@@ -140,8 +140,8 @@
   description: dynamic-description
   minPlayers: 50 # 🌟Starlight🌟
   rules:
-  - DynamicRule
-  - DummyNonAntag
+  - SLDynamicRule # Starlight, we have a modified scheduler.
+#  - DummyNonAntag # Starlight, remove DummyNonAntag
   - DynamicStationEventScheduler
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
