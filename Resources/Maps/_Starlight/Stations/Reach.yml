@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 06/10/2026 13:37:11
-  entityCount: 3462
+  entityCount: 3461
 maps:
 - 1
 grids:
@@ -6881,26 +6881,6 @@ entities:
       parent: 2
 - proto: Carpet
   entities:
-  - uid: 944
-    components:
-    - type: Transform
-      pos: 16.5,-3.5
-      parent: 2
-  - uid: 945
-    components:
-    - type: Transform
-      pos: 15.5,-3.5
-      parent: 2
-  - uid: 946
-    components:
-    - type: Transform
-      pos: 17.5,-3.5
-      parent: 2
-  - uid: 947
-    components:
-    - type: Transform
-      pos: 18.5,-3.5
-      parent: 2
   - uid: 948
     components:
     - type: Transform
@@ -6937,6 +6917,26 @@ entities:
     components:
     - type: Transform
       pos: 24.5,-3.5
+      parent: 2
+  - uid: 3463
+    components:
+    - type: Transform
+      pos: 15.5,-3.5
+      parent: 2
+  - uid: 3464
+    components:
+    - type: Transform
+      pos: 16.5,-3.5
+      parent: 2
+  - uid: 3465
+    components:
+    - type: Transform
+      pos: 17.5,-3.5
+      parent: 2
+  - uid: 3466
+    components:
+    - type: Transform
+      pos: 18.5,-3.5
       parent: 2
 - proto: CarpetSBlue
   entities:
@@ -17127,13 +17127,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 3.5,15.5
-      parent: 2
-- proto: protectionanchor
-  entities:
-  - uid: 2433
-    components:
-    - type: Transform
-      pos: 16.5,-3.5
       parent: 2
 - proto: Protolathe
   entities:
