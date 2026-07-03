@@ -54,7 +54,8 @@
         Piercing: 1.15
   - type: ClothingSpeedModifier
     walkModifier: 1.05 # I mean, sure I guess.
-    sprintModifier: 1.05 #Speed for weakness. Worth the trade?
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.25 # Blimpuf 25% less slowdown from damage in place of sprint speed
 # No explosion resist. This armor is entirely for increasing your speed.
 
 - type: entity
