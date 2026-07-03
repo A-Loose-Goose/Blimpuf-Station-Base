@@ -14,6 +14,7 @@ orphans: []
 nullspace: []
 tilemap:
   5: Space
+  55: FloorArcadeBlue
   37: FloorArcadeRed
   53: FloorAstroGrass
   38: FloorBar
@@ -230,7 +231,7 @@ entities:
           version: 7
         3,2:
           ind: 3,2
-          tiles: AQAAAAAAACQAAAAAAAAkAAAAAAAAJAAAAAAAACQAAAAAAAAkAAAAAAAAAQAAAAAAAAYAAAAAAAAGAAAAAAAABgAAAAAAAAYAAAAAAAAGAAAAAAAAAQAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAEAAAAAAAAJAAAAAAAAJAAAAAAAACQAAAAAAAAlAAAAAAAAJQAAAAAAAAEAAAAAAAAGAAAAAAAABgAAAAAAAAYAAAAAAAAGAAAAAAAABgAAAAAAAAEAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAABAAAAAAAACQAAAAAAACQAAAAAAAAkAAAAAAAAJQAAAAAAACUAAAAAAAABAAAAAAAABgAAAAAAAAYAAAAAAAAGAAAAAAAABgAAAAAAAAYAAAAAAAACAAAAAAAADgAAAAAAABAAAAAAAAAQAAAAAAAAAgAAAAAAAAYAAAAAAAAGAAAAAAAABgAAAAAAAAYAAAAAAAAGAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAYAAAAAAAAGAAAAAAAAAgAAAAAAAA4AAAAAAAAQAAAAAAAAEAAAAAAAAAEAAAAAAAAGAAAAAAAABgAAAAAAAAYAAAAAAAAGAAAAAAAABgAAAAAAABgAAAAAAAAYAAAAAAAAGAAAAAAAAAEAAAAAAAAGAAAAAAAABgAAAAAAAAIAAAAAAAAOAAAAAAAAEAAAAAAAAAkAAAAAAAABAAAAAAAAAQAAAAAAAAYAAAAAAAAGAAAAAAAABgAAAAAAAAYAAAAAAAAYAAAAAAAAGAAAAAAAABgAAAAAAAABAAAAAAAABgAAAAAAAAYAAAAAAAABAAAAAAAADgAAAAAAABAAAAAAAAAQAAAAAAAAIAAAAAAAAAEAAAAAAAAGAAAAAAAABgAAAAAAAAYAAAAAAAAGAAAAAAAAGAAAAAAAABgAAAAAAAAYAAAAAAAAAQAAAAAAAAYAAAAAAAAGAAAAAAAAAQAAAAAAAA4AAAAAAAAQAAAAAAAAEAAAAAAAACAAAAAAAAABAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAAAEAAAAAAAAGAAAAAAAABgAAAAAAAAEAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAAgAAAAAAAAAQAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAEAAAAAAAACAAAAAAAAAQAAAAAAAAIAAAAAAAABAAAAAAAABgAAAAAAAAYAAAAAAAABAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAAIAAAAAAAAAEAAAAAAAABAAAAAAAAAgAAAAAAAAEAAAAAAAABAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAAQAAAAAAAAYAAAAAAAAGAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAACAAAAAAAAABAAAAAAAAFwAAAAAAABcAAAAAAAAXAAAAAAAAAQAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAAAIAAAAAAAAGAAAAAAAABgAAAAAAAAEAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAABAAAAAAAAAQAAAAAAABcAAAAAAAAXAAAAAAAAFwAAAAAAAAEAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAABAAAAAAAABgAAAAAAAAYAAAAAAAABAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAAQAAAAAAABYAAAAAAAAXAAAAAAAAHgAAAAAAABcAAAAAAAABAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAAQAAAAAAAAYAAAAAAAAGAAAAAAAAAQAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAAAEAAAAAAAAWAAAAAAAAFwAAAAAAAB4AAAAAAAAXAAAAAAAAAQAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAAAEAAAAAAAAGAAAAAAAABgAAAAAAAAEAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAABAAAAAAAAFgAAAAAAABcAAAAAAAAXAAAAAAAAFwAAAAAAAAEAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAABAAAAAAAABgAAAAAAAAYAAAAAAAABAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAgAAAAAAAAEAAAAAAAABAAAAAAAAAgAAAAAAAAIAAAAAAAABAAAAAAAAAQAAAAAAAAYAAAAAAAAGAAAAAAAAAQAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAAA==
+          tiles: AQAAAAAAACQAAAAAAAAkAAAAAAAAJAAAAAAAACQAAAAAAAAkAAAAAAAAAQAAAAAAAAYAAAAAAAAGAAAAAAAABgAAAAAAAAYAAAAAAAAGAAAAAAAAAQAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAEAAAAAAAAJAAAAAAAAJAAAAAAAACQAAAAAAAA3AAAAAAAANwAAAAAAAAEAAAAAAAAGAAAAAAAABgAAAAAAAAYAAAAAAAAGAAAAAAAABgAAAAAAAAEAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAABAAAAAAAACQAAAAAAACQAAAAAAAAkAAAAAAAANwAAAAAAADcAAAAAAAABAAAAAAAABgAAAAAAAAYAAAAAAAAGAAAAAAAABgAAAAAAAAYAAAAAAAACAAAAAAAADgAAAAAAABAAAAAAAAAQAAAAAAAAAgAAAAAAAAYAAAAAAAAGAAAAAAAABgAAAAAAAAYAAAAAAAAGAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAYAAAAAAAAGAAAAAAAAAgAAAAAAAA4AAAAAAAAQAAAAAAAAEAAAAAAAAAEAAAAAAAAGAAAAAAAABgAAAAAAAAYAAAAAAAAGAAAAAAAABgAAAAAAABgAAAAAAAAYAAAAAAAAGAAAAAAAAAEAAAAAAAAGAAAAAAAABgAAAAAAAAIAAAAAAAAOAAAAAAAAEAAAAAAAAAkAAAAAAAABAAAAAAAAAQAAAAAAAAYAAAAAAAAGAAAAAAAABgAAAAAAAAYAAAAAAAAYAAAAAAAAGAAAAAAAABgAAAAAAAABAAAAAAAABgAAAAAAAAYAAAAAAAABAAAAAAAADgAAAAAAABAAAAAAAAAQAAAAAAAAIAAAAAAAAAEAAAAAAAAGAAAAAAAABgAAAAAAAAYAAAAAAAAGAAAAAAAAGAAAAAAAABgAAAAAAAAYAAAAAAAAAQAAAAAAAAYAAAAAAAAGAAAAAAAAAQAAAAAAAA4AAAAAAAAQAAAAAAAAEAAAAAAAACAAAAAAAAABAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAAAEAAAAAAAAGAAAAAAAABgAAAAAAAAEAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAAgAAAAAAAAAQAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAEAAAAAAAACAAAAAAAAAQAAAAAAAAIAAAAAAAABAAAAAAAABgAAAAAAAAYAAAAAAAABAAAAAAAACwAAAAAAAAsAAAAAAAALAAAAAAAAIAAAAAAAAAEAAAAAAAABAAAAAAAAAgAAAAAAAAEAAAAAAAABAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAAQAAAAAAAAYAAAAAAAAGAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAACAAAAAAAAABAAAAAAAAFwAAAAAAABcAAAAAAAAXAAAAAAAAAQAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAAAIAAAAAAAAGAAAAAAAABgAAAAAAAAEAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAABAAAAAAAAAQAAAAAAABcAAAAAAAAXAAAAAAAAFwAAAAAAAAEAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAABAAAAAAAABgAAAAAAAAYAAAAAAAABAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAAQAAAAAAABYAAAAAAAAXAAAAAAAAHgAAAAAAABcAAAAAAAABAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAAQAAAAAAAAYAAAAAAAAGAAAAAAAAAQAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAAAEAAAAAAAAWAAAAAAAAFwAAAAAAAB4AAAAAAAAXAAAAAAAAAQAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAAAEAAAAAAAAGAAAAAAAABgAAAAAAAAEAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAABAAAAAAAAFgAAAAAAABcAAAAAAAAXAAAAAAAAFwAAAAAAAAEAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAABAAAAAAAABgAAAAAAAAYAAAAAAAABAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAgAAAAAAAAEAAAAAAAABAAAAAAAAAgAAAAAAAAIAAAAAAAABAAAAAAAAAQAAAAAAAAYAAAAAAAAGAAAAAAAAAQAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAAA==
           version: 7
         3,1:
           ind: 3,1
@@ -744,7 +745,7 @@ entities:
             6224: 66,13
             6225: 66,12
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BoxGreyscale
           decals:
             4411: 46,42
@@ -752,7 +753,7 @@ entities:
             4413: 46,40
             4419: 46,42
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickBoxOverlay
           decals:
             4068: 35,38
@@ -816,7 +817,7 @@ entities:
             4763: 62,70
             4982: 75,70
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickCornerOverlayNE
           decals:
             4228: 37,47
@@ -902,7 +903,7 @@ entities:
             3075: 30,22
             7874: 25,12
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickCornerOverlayNW
           decals:
             4237: 33,47
@@ -974,7 +975,7 @@ entities:
           decals:
             2602: 24,5
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickCornerOverlaySE
           decals:
             4139: 37,31
@@ -1068,7 +1069,7 @@ entities:
             3053: 30,17
             7873: 25,8
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickCornerOverlaySW
           decals:
             4131: 35,31
@@ -1102,7 +1103,7 @@ entities:
             3372: 58,29
             3615: 63,46
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickEndOverlayN
           decals:
             3960: 51,45
@@ -1113,7 +1114,7 @@ entities:
             3346: 67,26
             3373: 58,27
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickEndOverlayS
           decals:
             3959: 51,44
@@ -1297,7 +1298,7 @@ entities:
             2873: 40,5
             8117: 19,18
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickLineOverlayE
           decals:
             4001: 41,45
@@ -1539,7 +1540,7 @@ entities:
             2879: 28,5
             7869: 26,12
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickLineOverlayN
           decals:
             3881: 48,49
@@ -1771,7 +1772,7 @@ entities:
             8133: 23,17
             8134: 21,17
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickLineOverlayS
           decals:
             3438: 62,26
@@ -2000,7 +2001,7 @@ entities:
             7893: 19,9
             8131: 21,18
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickLineOverlayW
           decals:
             3990: 39,33
@@ -2128,7 +2129,6 @@ entities:
             4286: 39,49
             4350: 40,48
             4381: 54,38
-            4447: 41,53
             4720: 51,76
             5394: 19,40
             5679: 33,34
@@ -2737,8 +2737,6 @@ entities:
             3775: 59,23
             3776: 58,23
             3777: 57,23
-            3933: 55,46
-            3934: 54,46
             4118: 34,34
             4119: 36,34
             4123: 37,34
@@ -2768,7 +2766,6 @@ entities:
             4365: 49,54
             4382: 55,38
             4383: 56,38
-            4451: 42,53
             4500: 39,31
             4502: 41,31
             4513: 40,31
@@ -2919,6 +2916,12 @@ entities:
             7902: 19,12
             7903: 20,12
             8010: 4,32
+        - node:
+            color: '#97DBFFFF'
+            id: BrickTileDarkLineN
+          decals:
+            3933: 55,46
+            3934: 54,46
         - node:
             angle: 6.283185307179586 rad
             color: '#FFFFFFFF'
@@ -4562,7 +4565,7 @@ entities:
           decals:
             7010: 11,13
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickTileWhiteInnerNe
           decals:
             6885: 38,28
@@ -4620,7 +4623,7 @@ entities:
             7318: 57,57
             7538: 57,56
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickTileWhiteInnerNw
           decals:
             6887: 58,47
@@ -4689,7 +4692,7 @@ entities:
           decals:
             7009: 11,15
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickTileWhiteInnerSe
           decals:
             4141: 37,33
@@ -4797,7 +4800,7 @@ entities:
           decals:
             7163: 35,22
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickTileWhiteInnerSw
           decals:
             4140: 35,33
@@ -5059,7 +5062,7 @@ entities:
           decals:
             5003: 63,59
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: CheckerNESW
           decals:
             3961: 50,46
@@ -5224,8 +5227,6 @@ entities:
             color: '#334E6DC8'
             id: HalfTileOverlayGreyscale
           decals:
-            4437: 41,54
-            4438: 42,54
             4439: 43,54
             5947: 65,2
             5948: 64,2
@@ -5263,7 +5264,7 @@ entities:
             5302: 31,15
             5303: 32,15
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: HalfTileOverlayGreyscale
           decals:
             4053: 36,40
@@ -5324,7 +5325,7 @@ entities:
             7896: 20,14
             7897: 19,14
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: HalfTileOverlayGreyscale180
           decals:
             4051: 36,36
@@ -5344,8 +5345,6 @@ entities:
             color: '#334E6DC8'
             id: HalfTileOverlayGreyscale270
           decals:
-            4433: 40,52
-            4434: 40,53
             5953: 61,3
             5954: 61,2
             5955: 61,1
@@ -5369,7 +5368,7 @@ entities:
             2155: 32,12
             2156: 32,13
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: HalfTileOverlayGreyscale270
           decals:
             4055: 33,39
@@ -5417,7 +5416,7 @@ entities:
             5304: 33,12
             5305: 33,11
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: HalfTileOverlayGreyscale90
           decals:
             4058: 37,39
@@ -5464,7 +5463,7 @@ entities:
           decals:
             8059: 63,34
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: MiniTileCheckerBOverlay
           decals:
             3974: 49,46
@@ -5477,12 +5476,12 @@ entities:
             2924: 41,9
             3721: 65,24
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: MiniTileCornerOverlayNE
           decals:
             4036: 48,42
         - node:
-            color: '#FF5F0041'
+            color: '#97DBFF41'
             id: MiniTileCornerOverlayNE
           decals:
             3932: 56,46
@@ -5499,7 +5498,7 @@ entities:
           decals:
             2931: 41,8
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: MiniTileCornerOverlaySE
           decals:
             4035: 48,38
@@ -5511,7 +5510,7 @@ entities:
             3720: 66,25
             3725: 64,21
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: MiniTileCornerOverlaySW
           decals:
             4034: 43,37
@@ -5521,7 +5520,7 @@ entities:
           decals:
             8058: 63,34
         - node:
-            color: '#FFFFFFFF'
+            color: '#97DBFFFF'
             id: MiniTileDarkCornerSw
           decals:
             4457: 54,41
@@ -5578,7 +5577,7 @@ entities:
             3701: 65,23
             3702: 65,22
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: MiniTileLineOverlayE
           decals:
             4040: 48,41
@@ -5593,7 +5592,7 @@ entities:
             3264: 65,36
             3298: 65,37
         - node:
-            color: '#FF5F0041'
+            color: '#97DBFF41'
             id: MiniTileLineOverlayE
           decals:
             3928: 56,41
@@ -5612,7 +5611,7 @@ entities:
             3716: 70,33
             3717: 69,33
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: MiniTileLineOverlayN
           decals:
             7858: 46,43
@@ -5639,7 +5638,7 @@ entities:
             3711: 67,36
             3712: 67,37
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: MiniTileLineOverlayW
           decals:
             4032: 43,41
@@ -5654,7 +5653,7 @@ entities:
             3268: 61,36
             3269: 61,35
         - node:
-            color: '#FF5F0041'
+            color: '#97DBFF41'
             id: MiniTileLineOverlayW
           decals:
             3921: 54,46
@@ -5722,7 +5721,7 @@ entities:
             3677: 68,25
             3678: 69,25
         - node:
-            color: '#F56F0066'
+            color: '#97DBFF66'
             id: MiniTileWhiteLineW
           decals:
             4458: 54,41
@@ -5963,7 +5962,6 @@ entities:
             color: '#334E6DC8'
             id: ThreeQuarterTileOverlayGreyscale
           decals:
-            4443: 40,54
             5927: 57,0
             5929: 61,4
         - node:
@@ -5977,7 +5975,7 @@ entities:
           decals:
             2159: 13,15
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: ThreeQuarterTileOverlayGreyscale
           decals:
             4060: 33,40
@@ -6004,7 +6002,7 @@ entities:
           decals:
             5307: 33,8
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: ThreeQuarterTileOverlayGreyscale180
           decals:
             4061: 37,36
@@ -6034,7 +6032,7 @@ entities:
             2160: 13,14
             5309: 32,8
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: ThreeQuarterTileOverlayGreyscale270
           decals:
             4062: 33,36
@@ -6063,7 +6061,7 @@ entities:
           decals:
             2158: 33,15
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: ThreeQuarterTileOverlayGreyscale90
           decals:
             4063: 37,40
@@ -6648,7 +6646,7 @@ entities:
           decals:
             3433: 60,26
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: WarnLineGreyscaleE
           decals:
             3427: 60,26
@@ -6804,7 +6802,7 @@ entities:
             7904: 19,12
             7905: 20,12
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: WarnLineGreyscaleN
           decals:
             3914: 50,49
@@ -6978,7 +6976,7 @@ entities:
             7906: 19,14
             7907: 20,14
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: WarnLineGreyscaleS
           decals:
             3915: 51,48
@@ -7006,7 +7004,7 @@ entities:
             7400: 59,12
         - node:
             angle: 0.7853981633974483 rad
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: WarnLineGreyscaleS
           decals:
             7239: 53.978157,31.42278
@@ -7130,7 +7128,7 @@ entities:
           decals:
             3431: 66,26
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: WarnLineGreyscaleW
           decals:
             3430: 66,26
@@ -7745,7 +7743,7 @@ entities:
             6585: 3,-23
         - node:
             cleanable: True
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: body
           decals:
             4366: 50.87648,51.652416
@@ -7789,7 +7787,7 @@ entities:
             7601: 63.749237,50.585876
         - node:
             cleanable: True
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: guy
           decals:
             4487: 37.046825,55.443996
@@ -18981,13 +18979,6 @@ entities:
     - type: Transform
       pos: 73.5,35.5
       parent: 2
-- proto: BannerNanotrasen
-  entities:
-  - uid: 1052
-    components:
-    - type: Transform
-      pos: 47.5,4.5
-      parent: 2
 - proto: BannerSyndicate
   entities:
   - uid: 1053
@@ -19326,6 +19317,16 @@ entities:
       rot: 3.141592653589793 rad
       pos: 25.5,51.5
       parent: 2
+  - uid: 25097
+    components:
+    - type: Transform
+      pos: 50.5,39.5
+      parent: 2
+  - uid: 25098
+    components:
+    - type: Transform
+      pos: 50.5,40.5
+      parent: 2
 - proto: BedsheetBrigmedic
   entities:
   - uid: 1108
@@ -19435,16 +19436,6 @@ entities:
       parent: 2
 - proto: BedsheetOrange
   entities:
-  - uid: 1124
-    components:
-    - type: Transform
-      pos: 50.5,39.5
-      parent: 2
-  - uid: 1125
-    components:
-    - type: Transform
-      pos: 50.5,40.5
-      parent: 2
   - uid: 1126
     components:
     - type: Transform
@@ -20359,14 +20350,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 53.77314,72.28024
-      parent: 2
-- proto: BoxFolderNanoTrasenClipboard
-  entities:
-  - uid: 1305
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 46.50336,5.770339
       parent: 2
 - proto: BoxFolderRed
   entities:
@@ -50727,61 +50710,6 @@ entities:
       parent: 2
 - proto: Carpet
   entities:
-  - uid: 7353
-    components:
-    - type: Transform
-      pos: 35.5,54.5
-      parent: 2
-  - uid: 7354
-    components:
-    - type: Transform
-      pos: 34.5,54.5
-      parent: 2
-  - uid: 7355
-    components:
-    - type: Transform
-      pos: 41.5,53.5
-      parent: 2
-  - uid: 7356
-    components:
-    - type: Transform
-      pos: 42.5,54.5
-      parent: 2
-  - uid: 7357
-    components:
-    - type: Transform
-      pos: 40.5,53.5
-      parent: 2
-  - uid: 7358
-    components:
-    - type: Transform
-      pos: 42.5,53.5
-      parent: 2
-  - uid: 7359
-    components:
-    - type: Transform
-      pos: 40.5,54.5
-      parent: 2
-  - uid: 7360
-    components:
-    - type: Transform
-      pos: 41.5,54.5
-      parent: 2
-  - uid: 7361
-    components:
-    - type: Transform
-      pos: 40.5,52.5
-      parent: 2
-  - uid: 7362
-    components:
-    - type: Transform
-      pos: 41.5,52.5
-      parent: 2
-  - uid: 7363
-    components:
-    - type: Transform
-      pos: 42.5,52.5
-      parent: 2
   - uid: 7364
     components:
     - type: Transform
@@ -50811,16 +50739,6 @@ entities:
     components:
     - type: Transform
       pos: 50.5,-18.5
-      parent: 2
-  - uid: 7370
-    components:
-    - type: Transform
-      pos: 35.5,53.5
-      parent: 2
-  - uid: 7371
-    components:
-    - type: Transform
-      pos: 34.5,53.5
       parent: 2
 - proto: CarpetBlack
   entities:
@@ -57526,6 +57444,18 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 4.6807256,35.5
       parent: 2
+  - uid: 25121
+    components:
+    - type: Transform
+      pos: 52.5,34.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 25122
+    components:
+    - type: Transform
+      pos: 52.5,33.5
+      parent: 2
+      rot: 1.5707963267948966 rad
 - proto: ChairOfficeDark
   entities:
   - uid: 8623
@@ -62927,11 +62857,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 10.5,44.5
-      parent: 2
-  - uid: 9453
-    components:
-    - type: Transform
-      pos: 47.5,54.5
       parent: 2
   - uid: 9454
     components:
@@ -130143,12 +130068,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 41.5,60.5
       parent: 2
-  - uid: 18703
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 33.5,46.5
-      parent: 2
   - uid: 18704
     components:
     - type: Transform
@@ -131274,11 +131193,6 @@ entities:
     components:
     - type: Transform
       pos: 45.5,40.5
-      parent: 2
-  - uid: 18880
-    components:
-    - type: Transform
-      pos: 59.5,13.5
       parent: 2
 - proto: Protolathe
   entities:
@@ -145464,18 +145378,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 7.4968557,40.835342
       parent: 2
-  - uid: 21125
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 53.109844,33.598843
-      parent: 2
-  - uid: 21126
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 53.06818,34.505722
-      parent: 2
   - uid: 21127
     components:
     - type: Transform
@@ -151950,6 +151852,16 @@ entities:
     - type: Transform
       pos: 39.5,17.5
       parent: 2
+  - uid: 25101
+    components:
+    - type: Transform
+      pos: 33.5,47.5
+      parent: 2
+  - uid: 25102
+    components:
+    - type: Transform
+      pos: 34.5,54.5
+      parent: 2
 - proto: VendingMachineCondiments
   entities:
   - uid: 21917
@@ -152012,6 +151924,11 @@ entities:
     - type: Transform
       pos: 6.5,64.5
       parent: 2
+  - uid: 25100
+    components:
+    - type: Transform
+      pos: 33.5,46.5
+      parent: 2
 - proto: VendingMachineDonut
   entities:
   - uid: 21927
@@ -152025,11 +151942,6 @@ entities:
     components:
     - type: Transform
       pos: 24.5,5.5
-      parent: 2
-  - uid: 21929
-    components:
-    - type: Transform
-      pos: 33.5,47.5
       parent: 2
   - uid: 21930
     components:
@@ -152244,11 +152156,6 @@ entities:
       parent: 2
 - proto: VendingMachineSnack
   entities:
-  - uid: 21963
-    components:
-    - type: Transform
-      pos: 33.5,46.5
-      parent: 2
   - uid: 21964
     components:
     - type: Transform
@@ -168596,5 +168503,102 @@ entities:
     components:
     - type: Transform
       pos: 5.4821196,-25.41238
+      parent: 2
+- proto: AlwaysPoweredlightBlue
+  entities:
+  - uid: 25099
+    components:
+    - type: Transform
+      pos: 33.5,46.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+- proto: CarpetBlue
+  entities:
+  - uid: 25103
+    components:
+    - type: Transform
+      pos: 42.5,52.5
+      parent: 2
+  - uid: 25104
+    components:
+    - type: Transform
+      pos: 41.5,52.5
+      parent: 2
+  - uid: 25105
+    components:
+    - type: Transform
+      pos: 40.5,52.5
+      parent: 2
+  - uid: 25106
+    components:
+    - type: Transform
+      pos: 40.5,53.5
+      parent: 2
+  - uid: 25107
+    components:
+    - type: Transform
+      pos: 40.5,54.5
+      parent: 2
+  - uid: 25108
+    components:
+    - type: Transform
+      pos: 41.5,54.5
+      parent: 2
+  - uid: 25109
+    components:
+    - type: Transform
+      pos: 41.5,53.5
+      parent: 2
+  - uid: 25110
+    components:
+    - type: Transform
+      pos: 42.5,53.5
+      parent: 2
+  - uid: 25111
+    components:
+    - type: Transform
+      pos: 42.5,54.5
+      parent: 2
+  - uid: 25116
+    components:
+    - type: Transform
+      pos: 34.5,54.5
+      parent: 2
+  - uid: 25117
+    components:
+    - type: Transform
+      pos: 34.5,53.5
+      parent: 2
+  - uid: 25119
+    components:
+    - type: Transform
+      pos: 35.5,53.5
+      parent: 2
+  - uid: 25120
+    components:
+    - type: Transform
+      pos: 35.5,54.5
+      parent: 2
+- proto: CurtainsSkyBlueOpen
+  entities:
+  - uid: 25123
+    components:
+    - type: Transform
+      pos: 47.5,54.5
+      parent: 2
+- proto: BoxFolderCentComClipboardEmpty
+  entities:
+  - uid: 25124
+    components:
+    - type: Transform
+      pos: 46.5,5.5
+      parent: 2
+      rot: 4.71238898038469 rad
+- proto: CentCommFlag
+  entities:
+  - uid: 25125
+    components:
+    - type: Transform
+      pos: 50.5,6.5
       parent: 2
 ...
