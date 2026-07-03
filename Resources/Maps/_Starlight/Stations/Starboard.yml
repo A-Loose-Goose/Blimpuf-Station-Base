@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 06/07/2026 00:37:29
-  entityCount: 42343
+  entityCount: 42340
 maps:
 - 1
 grids:
@@ -1198,7 +1198,7 @@ entities:
             14846: 58,57
             14847: 55,59
         - node:
-            color: '#37789BFF'
+            color: '#D80500FF'
             id: BotGreyscale
           decals:
             14572: 4.1548333,13.158985
@@ -1751,7 +1751,6 @@ entities:
             3824: 24,-17
             3827: 18,-10
             3829: 17,-12
-            3830: 17,-13
             3831: 17,-14
             3832: 17,-15
             3833: 17,-16
@@ -5996,7 +5995,7 @@ entities:
           decals:
             1628: -40,-25
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: DeliveryGreyscale
           decals:
             17144: 25,81
@@ -11763,7 +11762,7 @@ entities:
           decals:
             790: -28,51
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: HalfTileOverlayGreyscale
           decals:
             16974: -24,44
@@ -11807,7 +11806,7 @@ entities:
             753: -28,52
             786: -28,52
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: HalfTileOverlayGreyscale180
           decals:
             16969: -24,45
@@ -20684,7 +20683,7 @@ entities:
             13347: -13.931817,52.456055
             13348: -14.088067,51.959156
         - node:
-            color: '#37789BFF'
+            color: '#D80500FF'
             id: disk
           decals:
             15180: -8.02163,42.00153
@@ -20702,7 +20701,7 @@ entities:
           decals:
             7666: 88,-40
         - node:
-            color: '#37789BFF'
+            color: '#D80500FF'
             id: end
           decals:
             15179: -7.998193,40.993717
@@ -40693,6 +40692,12 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -3.5,-31.5
       parent: 2
+  - uid: 42435
+    components:
+    - type: Transform
+      pos: 57.5,23.5
+      parent: 2
+      rot: 4.71238898038469 rad
 - proto: BenchBlueComfyEndRight
   entities:
   - uid: 2100
@@ -40793,6 +40798,12 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 6.5,-36.5
       parent: 2
+  - uid: 42436
+    components:
+    - type: Transform
+      pos: 57.5,22.5
+      parent: 2
+      rot: 4.71238898038469 rad
 - proto: BenchBlueComfyMiddle
   entities:
   - uid: 2117
@@ -40989,12 +41000,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -29.5,29.5
       parent: 2
-  - uid: 2147
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 57.5,23.5
-      parent: 2
   - uid: 2148
     components:
     - type: Transform
@@ -41085,12 +41090,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -28.5,30.5
-      parent: 2
-  - uid: 2163
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 57.5,22.5
       parent: 2
   - uid: 2164
     components:
@@ -42247,6 +42246,11 @@ entities:
     - type: Transform
       pos: 0.6152921,11.524767
       parent: 2
+  - uid: 42432
+    components:
+    - type: Transform
+      pos: 4.5454187,-5.523943
+      parent: 2
 - proto: BoxFolderClipboard
   entities:
   - uid: 2331
@@ -42299,11 +42303,6 @@ entities:
     components:
     - type: Transform
       pos: 0.37936592,11.368517
-      parent: 2
-  - uid: 2339
-    components:
-    - type: Transform
-      pos: 4.5454187,-5.523943
       parent: 2
 - proto: BoxFolderWhite
   entities:
@@ -97793,6 +97792,36 @@ entities:
     - type: Transform
       pos: -54.5,-49.5
       parent: 2
+  - uid: 42426
+    components:
+    - type: Transform
+      pos: 2.5,12.5
+      parent: 2
+  - uid: 42427
+    components:
+    - type: Transform
+      pos: 2.5,13.5
+      parent: 2
+  - uid: 42428
+    components:
+    - type: Transform
+      pos: 3.5,13.5
+      parent: 2
+  - uid: 42429
+    components:
+    - type: Transform
+      pos: 3.5,12.5
+      parent: 2
+  - uid: 42430
+    components:
+    - type: Transform
+      pos: 4.5,13.5
+      parent: 2
+  - uid: 42431
+    components:
+    - type: Transform
+      pos: 4.5,12.5
+      parent: 2
 - proto: CarpetBlack
   entities:
   - uid: 13449
@@ -97980,6 +98009,16 @@ entities:
     components:
     - type: Transform
       pos: -66.5,5.5
+      parent: 2
+  - uid: 42451
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 2
+  - uid: 42452
+    components:
+    - type: Transform
+      pos: 4.5,4.5
       parent: 2
 - proto: CarpetBlue
   entities:
@@ -99554,36 +99593,6 @@ entities:
     components:
     - type: Transform
       pos: -2.5,-26.5
-      parent: 2
-  - uid: 42359
-    components:
-    - type: Transform
-      pos: 4.5,13.5
-      parent: 2
-  - uid: 42360
-    components:
-    - type: Transform
-      pos: 3.5,13.5
-      parent: 2
-  - uid: 42363
-    components:
-    - type: Transform
-      pos: 2.5,13.5
-      parent: 2
-  - uid: 42364
-    components:
-    - type: Transform
-      pos: 3.5,12.5
-      parent: 2
-  - uid: 42365
-    components:
-    - type: Transform
-      pos: 4.5,12.5
-      parent: 2
-  - uid: 42366
-    components:
-    - type: Transform
-      pos: 2.5,12.5
       parent: 2
 - proto: Catwalk
   entities:
@@ -115393,6 +115402,21 @@ entities:
     - type: Transform
       pos: 8.5,86.5
       parent: 2
+  - uid: 42437
+    components:
+    - type: Transform
+      pos: 27.5,-17.5
+      parent: 2
+  - uid: 42438
+    components:
+    - type: Transform
+      pos: 27.5,-15.5
+      parent: 2
+  - uid: 42439
+    components:
+    - type: Transform
+      pos: 13.5,-17.5
+      parent: 2
 - proto: ClosetToolFilled
   entities:
   - uid: 16566
@@ -115938,36 +115962,6 @@ entities:
     - type: Transform
       pos: 21.620827,83.40797
       parent: 2
-- proto: ClothingBeltSyndieHolster
-  entities:
-  - uid: 16618
-    components:
-    - type: MetaData
-      desc: A deep shoulder holster capable of holding many types of ballistics. Originally property of the Syndicate; recently requisitioned from a gang of nuclear agents.
-      name: warden's shoulder holster
-    - type: Transform
-      pos: 2.467296,-5.3701463
-      parent: 2
-    - type: Storage
-      storedItems:
-        16620:
-          position: 0,0
-          _rotation: South
-        16622:
-          position: 2,0
-          _rotation: South
-        16619:
-          position: 3,0
-          _rotation: South
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 16620
-          - 16622
-          - 16619
 - proto: ClothingBeltUtility
   entities:
   - uid: 16623
@@ -116104,13 +116098,6 @@ entities:
     components:
     - type: Transform
       pos: 13.603372,-64.22455
-      parent: 2
-- proto: ClothingHandsGlovesBoxingRed
-  entities:
-  - uid: 16652
-    components:
-    - type: Transform
-      pos: 19.659592,-0.29027444
       parent: 2
 - proto: ClothingHandsGlovesColorYellow
   entities:
@@ -121974,6 +121961,11 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 12.5,-39.5
+      parent: 2
+  - uid: 42450
+    components:
+    - type: Transform
+      pos: 4.5,-1.5
       parent: 2
 - proto: CurtainsGreenOpen
   entities:
@@ -202071,30 +202063,6 @@ entities:
       bodyType: Static
 - proto: LockerSyndicate
   entities:
-  - uid: 28452
-    components:
-    - type: Transform
-      anchored: True
-      pos: 13.5,-17.5
-      parent: 2
-    - type: Physics
-      bodyType: Static
-  - uid: 28453
-    components:
-    - type: Transform
-      anchored: True
-      pos: 27.5,-17.5
-      parent: 2
-    - type: Physics
-      bodyType: Static
-  - uid: 28454
-    components:
-    - type: Transform
-      anchored: True
-      pos: 27.5,-15.5
-      parent: 2
-    - type: Physics
-      bodyType: Static
   - uid: 28455
     components:
     - type: Transform
@@ -203686,26 +203654,6 @@ entities:
     - type: Transform
       pos: -16.689575,-55.315487
       parent: 2
-- proto: MagazinePistolFMJ
-  entities:
-  - uid: 16619
-    components:
-    - type: Transform
-      parent: 16618
-    - type: Physics
-      canCollide: False
-  - uid: 16621
-    components:
-    - type: Transform
-      parent: 16620
-    - type: Physics
-      canCollide: False
-  - uid: 16622
-    components:
-    - type: Transform
-      parent: 16618
-    - type: Physics
-      canCollide: False
 - proto: MagazinePistolHP
   entities:
   - uid: 28728
@@ -215121,6 +215069,18 @@ entities:
       rot: 3.141592653589793 rad
       pos: -68.5,-28.5
       parent: 2
+  - uid: 42433
+    components:
+    - type: Transform
+      pos: -9.5,5.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 42434
+    components:
+    - type: Transform
+      pos: -5.5,5.5
+      parent: 2
+      rot: 4.71238898038469 rad
 - proto: PoweredlightLED
   entities:
   - uid: 30520
@@ -215259,18 +215219,6 @@ entities:
       parent: 2
 - proto: PoweredlightRed
   entities:
-  - uid: 30543
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -5.5,5.5
-      parent: 2
-  - uid: 30544
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -9.5,5.5
-      parent: 2
   - uid: 30545
     components:
     - type: Transform
@@ -217815,23 +217763,6 @@ entities:
       - Experimental
       - CivilianServices
       - Biochemical
-- proto: protectionanchor
-  entities:
-  - uid: 30967
-    components:
-    - type: Transform
-      pos: -6.5,4.5
-      parent: 2
-  - uid: 30968
-    components:
-    - type: Transform
-      pos: -6.5,-0.5
-      parent: 2
-  - uid: 30969
-    components:
-    - type: Transform
-      pos: 1.5,-47.5
-      parent: 2
 - proto: Protolathe
   entities:
   - uid: 30970
@@ -247089,6 +247020,11 @@ entities:
     - type: Transform
       pos: 3.5,-0.5
       parent: 2
+  - uid: 42425
+    components:
+    - type: Transform
+      pos: 26.5,6.5
+      parent: 2
 - proto: TableFancyGreen
   entities:
   - uid: 35628
@@ -247185,12 +247121,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 34.5,23.5
-      parent: 2
-  - uid: 35645
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 26.5,6.5
       parent: 2
   - uid: 35647
     components:
@@ -283743,15 +283673,6 @@ entities:
     - type: Transform
       pos: -36.41351,61.752823
       parent: 2
-- proto: WeaponPistolBlueguard
-  entities:
-  - uid: 41781
-    components:
-    - type: Transform
-      pos: -16.49215,-54.45713
-      parent: 2
-    - type: ChamberMagazineAmmoProvider
-      selectedPrefix: dust
 - proto: WeaponPistolEnforcer
   entities:
   - uid: 28727
@@ -283796,28 +283717,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: WeaponPistolStechkin
-  entities:
-  - uid: 16620
-    components:
-    - type: Transform
-      parent: 16618
-    - type: Physics
-      canCollide: False
-    - type: ContainerContainer
-      containers:
-        gun_magazine: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 16621
-        gun_chamber: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        firing_pin: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
 - proto: WeaponShotgunGA12
   entities:
   - uid: 16608
@@ -287219,5 +287118,26 @@ entities:
     components:
     - type: Transform
       pos: -7.5,18.5
+      parent: 2
+- proto: ClothingHandsGlovesBoxingBlue
+  entities:
+  - uid: 42447
+    components:
+    - type: Transform
+      pos: 19.659592,-0.29027444
+      parent: 2
+- proto: WeaponPistolStechkin
+  entities:
+  - uid: 42448
+    components:
+    - type: Transform
+      pos: 2.5,-5.5
+      parent: 2
+- proto: WeaponPistolBlueguard
+  entities:
+  - uid: 42449
+    components:
+    - type: Transform
+      pos: -16.5,-54.5
       parent: 2
 ...
