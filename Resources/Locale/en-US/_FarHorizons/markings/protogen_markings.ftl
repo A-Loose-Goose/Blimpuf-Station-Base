@@ -94,15 +94,15 @@ marking-ProtoSlimePersonLights-body = Circular LEDs
 marking-ProtoSlimePersonMediumArmor = Standard Neo-Laspi Cybernetics
 marking-ProtoSlimePersonMediumArmor-medium = Standard Neo-Laspi Cybernetics
 
-marking-ProtoKinVisor = Kin Visor
-marking-ProtoKinVisor-visor = Kin Visor
-marking-ProtoKinLEDFace = Default Kin LEDs
-marking-ProtoKinLEDFace-face = Default Kin LEDs
+marking-ProtoKinVisor = Shadekin Visor
+marking-ProtoKinVisor-visor = Shadekin Visor
+marking-ProtoKinLEDFace = Default Shadekin LEDs
+marking-ProtoKinLEDFace-face = Default Shadekin LEDs
 marking-ProtoKinLights = Circular LEDs
 marking-ProtoKinLights-body = Circular LEDs
 
-marking-ProtoKinMediumArmor = Standard Neo-Kin Cybernetics
-marking-ProtoKinMediumArmor-medium = Standard Neo-Kin Cybernetics
+marking-ProtoKinMediumArmor = Standard Neo-Shadekin Cybernetics
+marking-ProtoKinMediumArmor-medium = Standard Neo-Shadekin Cybernetics
 
 marking-ProtoResomiVisor = Resomi Visor
 marking-ProtoResomiVisor-visor = Resomi Visor
