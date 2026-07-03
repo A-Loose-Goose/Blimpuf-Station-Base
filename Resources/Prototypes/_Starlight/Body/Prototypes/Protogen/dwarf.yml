@@ -1,6 +1,6 @@
 - type: body
   id: ProtoDwarf # Starlight, name changed
-  name: proto-dwarf # Starlight, quotation marks removed, name changed
+  name: neo-dwarf # Starlight, quotation marks removed, name changed
   root: torso
   slots:
     head:

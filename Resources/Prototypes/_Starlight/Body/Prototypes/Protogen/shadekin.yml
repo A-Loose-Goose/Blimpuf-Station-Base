@@ -1,6 +1,6 @@
 - type: body
   id: ProtoKin
-  name: protokin # Starlight, quotation marks removed
+  name: neokin # Starlight, quotation marks removed
   root: torso
   slots:
     head:

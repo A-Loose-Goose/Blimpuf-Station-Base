@@ -2,7 +2,7 @@
   id: OrganProtoDwarfHeart
   parent: OrganProtogenHeart
   name: dwarf cybernetic heart
-  suffix: Proto-Dwarf
+  suffix: Neo-Dwarf
   description: Doesn't actually need to beat, simply mimics the movement to provide comfort for the user.
   components:
   - type: Metabolizer
@@ -12,7 +12,7 @@
   id: OrganProtoDwarfLiver
   parent: OrganProtogenLiver
   name: dwarf cybernetic liver
-  suffix: Proto-Dwarf
+  suffix: Neo-Dwarf
   description: Pairing suggestion, a side of fermented RAM sticks and a nice CPU.
   components:
   - type: Metabolizer
@@ -22,8 +22,8 @@
   id: OrganProtoDwarfStomach
   parent: OrganProtogenStomach
   name: dwarf biological reactor
-  suffix: Proto-Dwarf
-  description: Some call it over-engineered, but it's vital to the function of a protogen. Turns organic matter into organic and electrical energy to power the protogen's cybernetics and flesh.
+  suffix: Neo-Dwarf
+  description: Some call it over-engineered, but it's vital to the function of a neocyte. Turns organic matter into organic and electrical energy to power the neocyte's cybernetics and flesh.
   components:
   - type: Sprite
     sprite: _FarHorizons/Mobs/Species/Protogen/organs.rsi

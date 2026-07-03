@@ -1,25 +1,25 @@
 species-name-ipc = IPC
 
-species-name-protogen = Protogen
-guidebook-armor-protogen = Protogen Frames
-# Starlight, Protogen Frames, True Protogen, Proto Slime, Human, Felionoid, Dwarf, and Cyclorite renamed
-subspecies-name-trueprotogen = True Protogen
-subspecies-name-protovulp = Proto-Vulpkanin
-subspecies-name-protovox = Proto-Vox
-subspecies-name-protothaven = Proto-Thaven
-subspecies-name-protoslimeperson = Proto-Slime
-subspecies-name-protokin = Proto-Kin
-subspecies-name-protoresomi = Proto-Resomi
-subspecies-name-protoreptilian = Proto-Reptilian
-subspecies-name-protomoth = Proto-Moth
-subspecies-name-protohuman = Proto-Human
-subspecies-name-protofelionoid = Proto-Felionoid
-subspecies-name-protodwarf = Proto-Dwarf
-subspecies-name-protodiona = Proto-Diona
-subspecies-name-protocyclorite = Proto-Cyclorite
-subspecies-name-protoavali = Proto-Avali
-subspecies-name-protoarachnid = Proto-Arachnid
+species-name-protogen = Neocyte
+guidebook-armor-protogen = Neocyte Frames
+# Starlight, Neocyte Frames, True Neocyte, Neo Slime, Human, Felionoid, Dwarf, and Cyclorite renamed
+subspecies-name-trueprotogen = True Neocyte
+subspecies-name-protovulp = Neo-Vulpkanin
+subspecies-name-protovox = Neo-Vox
+subspecies-name-protothaven = Neo-Thaven
+subspecies-name-protoslimeperson = Neo-Slime
+subspecies-name-protokin = Neo-Kin
+subspecies-name-protoresomi = Neo-Resomi
+subspecies-name-protoreptilian = Neo-Reptilian
+subspecies-name-protomoth = Neo-Moth
+subspecies-name-protohuman = Neo-Human
+subspecies-name-protofelionoid = Neo-Felionoid
+subspecies-name-protodwarf = Neo-Dwarf
+subspecies-name-protodiona = Neo-Diona
+subspecies-name-protocyclorite = Neo-Cyclorite
+subspecies-name-protoavali = Neo-Avali
+subspecies-name-protoarachnid = Neo-Arachnid
 
-# Starlight Species added after Protogens
-subspecies-name-protoelf = Proto-Elf
-subspecies-name-protolagomorph = Proto-Lagomorph
+# Starlight Species added after Neocytes
+subspecies-name-protoelf = Neo-Elf
+subspecies-name-protolagomorph = Neo-Lagomorph

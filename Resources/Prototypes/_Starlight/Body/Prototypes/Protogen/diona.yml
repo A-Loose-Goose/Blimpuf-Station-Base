@@ -1,6 +1,6 @@
 - type: body
   id: ProtoDiona # Starlight, name changed
-  name: proto-diona # Starlight, quotation marks removed, name changed
+  name: neo-diona # Starlight, quotation marks removed, name changed
   root: torso
   slots:
     head:

@@ -1,6 +1,6 @@
 - type: body
   id: ProtoCyclorite # Starlight, name changed
-  name: proto-cyclorite # Starlight, quotation marks removed, name changed
+  name: neo-cyclorite # Starlight, quotation marks removed, name changed
   root: torso
   slots:
     head:

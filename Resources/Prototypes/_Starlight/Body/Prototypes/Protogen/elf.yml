@@ -1,6 +1,6 @@
 - type: body
   id: ProtoElf
-  name: proto-elf
+  name: neo-elf
   root: torso
   slots:
     head:

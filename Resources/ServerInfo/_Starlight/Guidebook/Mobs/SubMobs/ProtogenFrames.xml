@@ -1,12 +1,12 @@
 <Document>
-  # Protogen Frames
+  # Neocyte Frames
 
   <Box>
-    <GuideEntityEmbed Entity="ClothingOuterArmorProtogenMediumBasic" Caption="Protogen Frames"/>
+    <GuideEntityEmbed Entity="ClothingOuterArmorProtogenMediumBasic" Caption="Neocyte Frames"/>
   </Box>
 
-  The foundation of a Protogen is their cybernetic frame, the thing that truly makes them distinct from their purely-biological brethren.
-  Currently, there are 6 Protogen frames approved for usage by NanoTrasen and Central Command. They have been split up into Light, Medium, and Heavy.
+  The foundation of a Neocyte is their cybernetic frame, the thing that truly makes them distinct from their purely-biological brethren.
+  Currently, there are 6 Neocyte frames approved for usage by NanoTrasen and Central Command. They have been split up into Light, Medium, and Heavy.
 
   ## Light Frames
   <Box>

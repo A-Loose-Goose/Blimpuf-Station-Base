@@ -2,7 +2,7 @@
   id: OrganProtoDionaStomach
   parent: OrganDionaStomach
   name: augmented stomach
-  suffix: Proto-Diona
+  suffix: Neo-Diona
   description: "The diona's equivalent of a stomach, it reeks of asparagus and vinegar."
   components:
   - type: Stomach
@@ -34,7 +34,7 @@
   id: OrganProtoDionaLungs
   parent: OrganDionaLungs
   name: diona augmented lungs
-  suffix: Proto-Diona
+  suffix: Neo-Diona
   description: "A spongy mess of slimy, leaf-like structures. Capable of breathing both carbon dioxide and oxygen."
   components:
   - type: OrganDamage
@@ -50,8 +50,8 @@
   id: OrganProtoDionaStomachNymph
   categories: [ HideSpawnMenu ]
   parent: OrganProtoDionaStomach
-  name: proto-diona nymph stomach
-  suffix: Proto-Diona Nymph
+  name: neo-diona nymph stomach
+  suffix: Neo-Diona Nymph
   description: "Gross. This is hard to stomach."
   components:
   - type: Nymph
@@ -61,9 +61,9 @@
   id: OrganProtoDionaNymphStomach
   categories: [ HideSpawnMenu ]
   parent: MobDionaNymphAccent
-  name: proto-diona nymph stomach
-  suffix: Proto-Diona Nymph
-  description: Contains the stomach of a formerly fully-formed Proto-Diona. It doesn't taste any better for it.
+  name: neo-diona nymph stomach
+  suffix: Neo-Diona Nymph
+  description: Contains the stomach of a formerly fully-formed Neo-Diona. It doesn't taste any better for it.
   components:
   - type: IsDeadIC
   - type: Body
@@ -73,8 +73,8 @@
   id: OrganProtoDionaLungsNymph
   categories: [ HideSpawnMenu ]
   parent: OrganProtoDionaLungs
-  name: proto-diona nymph lungs
-  suffix: Proto-Diona Nymph
+  name: Neo-Diona nymph lungs
+  suffix: Neo-Diona Nymph
   description: "Filters oxygen from an atmosphere, which is then sent into the bloodstream to be used as an electron carrier."
   components:
   - type: Nymph
@@ -84,9 +84,9 @@
   id: OrganProtoDionaNymphLungs
   categories: [ HideSpawnMenu ]
   parent: MobDionaNymphAccent
-  name: proto-diona nymph lungs
-  suffix: Proto-Diona Nymph
-  description: Contains the lungs of a formerly fully-formed Proto-Diona. Breathtaking.
+  name: Neo-Diona nymph lungs
+  suffix: Neo-Diona Nymph
+  description: Contains the lungs of a formerly fully-formed Neo-Diona. Breathtaking.
   components:
   - type: IsDeadIC
   - type: Body

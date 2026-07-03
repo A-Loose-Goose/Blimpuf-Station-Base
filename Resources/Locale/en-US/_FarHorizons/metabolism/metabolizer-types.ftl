@@ -1,1 +1,1 @@
-metabolizer-type-protogen = Protogen
+metabolizer-type-protogen = Neocyte
