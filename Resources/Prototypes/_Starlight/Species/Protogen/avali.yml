@@ -14,8 +14,6 @@
   lastNames: names_avali_packs
   naming: FirstLast
   roundstartCyberwareCapacity: 6
-  subspeciesOf: Protogen
-  subspeciesName: subspecies-name-protoavali
   loadout: ProtogenLoadout
   minAge: 20
   youngAge: 100
