@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 06/26/2026 19:51:59
-  entityCount: 13985
+  entityCount: 13983
 maps:
 - 1
 grids:
@@ -1747,19 +1747,19 @@ entities:
             527: 22,27
         - node:
             angle: 1.5707963267948966 rad
-            color: '#DE3A3AFF'
+            color: '#37789BFF'
             id: ArrowsGreyscale
           decals:
             863: -13,9
         - node:
             angle: 4.71238898038469 rad
-            color: '#DE3A3AFF'
+            color: '#37789BFF'
             id: ArrowsGreyscale
           decals:
             864: -11,7
         - node:
             angle: 6.283185307179586 rad
-            color: '#DE3A3AFF'
+            color: '#37789BFF'
             id: ArrowsGreyscale
           decals:
             865: -8,7
@@ -3659,7 +3659,7 @@ entities:
             1174: 4,-37
         - node:
             angle: 1.5707963267948966 rad
-            color: '#DE3A3AFF'
+            color: '#37789BFF'
             id: StandClearGreyscale
           decals:
             862: -11,11
@@ -66166,6 +66166,12 @@ entities:
       rot: 3.141592653589793 rad
       pos: -13.5,19.5
       parent: 2
+  - uid: 14000
+    components:
+    - type: Transform
+      pos: -14.5,24.5
+      parent: 2
+      rot: 1.5707963267948966 rad
 - proto: PoweredlightExterior
   entities:
   - uid: 10185
@@ -66204,14 +66210,6 @@ entities:
     components:
     - type: Transform
       pos: 30.5,33.5
-      parent: 2
-- proto: PoweredlightRed
-  entities:
-  - uid: 10191
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -14.5,24.5
       parent: 2
 - proto: PoweredlightSodium
   entities:
@@ -66884,18 +66882,6 @@ entities:
       - Experimental
       - CivilianServices
       - Biochemical
-- proto: protectionanchor
-  entities:
-  - uid: 10282
-    components:
-    - type: Transform
-      pos: -13.5,21.5
-      parent: 2
-  - uid: 10283
-    components:
-    - type: Transform
-      pos: -2.5,17.5
-      parent: 2
 - proto: Protolathe
   entities:
   - uid: 10284
