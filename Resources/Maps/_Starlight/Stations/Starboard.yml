@@ -97627,26 +97627,6 @@ entities:
     - type: Transform
       pos: -31.5,-14.5
       parent: 2
-  - uid: 13400
-    components:
-    - type: Transform
-      pos: 31.5,6.5
-      parent: 2
-  - uid: 13401
-    components:
-    - type: Transform
-      pos: 31.5,5.5
-      parent: 2
-  - uid: 13402
-    components:
-    - type: Transform
-      pos: 32.5,6.5
-      parent: 2
-  - uid: 13403
-    components:
-    - type: Transform
-      pos: 32.5,5.5
-      parent: 2
   - uid: 13408
     components:
     - type: Transform
@@ -98557,6 +98537,26 @@ entities:
     components:
     - type: Transform
       pos: 8.5,3.5
+      parent: 2
+  - uid: 42453
+    components:
+    - type: Transform
+      pos: 32.5,6.5
+      parent: 2
+  - uid: 42454
+    components:
+    - type: Transform
+      pos: 31.5,6.5
+      parent: 2
+  - uid: 42455
+    components:
+    - type: Transform
+      pos: 31.5,5.5
+      parent: 2
+  - uid: 42456
+    components:
+    - type: Transform
+      pos: 32.5,5.5
       parent: 2
 - proto: CarpetChapel
   entities:
@@ -121967,6 +121967,11 @@ entities:
     - type: Transform
       pos: 4.5,-1.5
       parent: 2
+  - uid: 42457
+    components:
+    - type: Transform
+      pos: 32.5,6.5
+      parent: 2
 - proto: CurtainsGreenOpen
   entities:
   - uid: 17481
@@ -122092,11 +122097,6 @@ entities:
       parent: 2
 - proto: CurtainsRedOpen
   entities:
-  - uid: 17508
-    components:
-    - type: Transform
-      pos: 32.5,6.5
-      parent: 2
   - uid: 17509
     components:
     - type: Transform
