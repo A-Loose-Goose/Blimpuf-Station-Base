@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 06/12/2026 03:21:39
-  entityCount: 10617
+  entityCount: 10610
 maps:
 - 1
 grids:
@@ -376,7 +376,7 @@ entities:
           decals:
             1624: -43.6708,16.645977
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: Bot
           decals:
             3752: -11,14
@@ -440,6 +440,7 @@ entities:
             id: BotGreyscale
           decals:
             852: 26,-11
+            4074: -9,14
         - node:
             color: '#FFFFFFFF'
             id: BotRight
@@ -501,32 +502,32 @@ entities:
           decals:
             3602: 6,-14
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickTileSteelLineE
           decals:
             475: -2,14
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickTileWhiteCornerSe
           decals:
             3365: -2,9
         - node:
-            color: '#F98324FF'
+            color: '#97DBFFFF'
             id: BrickTileWhiteCornerSw
           decals:
             4062: -5,14
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickTileWhiteEndS
           decals:
             461: -6,7
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickTileWhiteInnerSe
           decals:
             465: -6,9
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickTileWhiteLineE
           decals:
             158: -2,8
@@ -550,27 +551,27 @@ entities:
           decals:
             734: 27,7
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickTileWhiteLineS
           decals:
             460: -5,9
             3366: -3,9
             3367: -4,9
         - node:
-            color: '#F98324FF'
+            color: '#97DBFFFF'
             id: BrickTileWhiteLineS
           decals:
             4059: -3,14
             4065: -4,14
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickTileWhiteLineW
           decals:
             456: -3,6
             463: -6,8
             464: -6,9
         - node:
-            color: '#F98324FF'
+            color: '#97DBFFFF'
             id: BrickTileWhiteLineW
           decals:
             4063: -5,15
@@ -624,7 +625,7 @@ entities:
             1882: -29,27
             4054: -17,24
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: ConcreteTrimLineE
           decals:
             466: -2,11
@@ -668,7 +669,7 @@ entities:
             549: 12,-14
             2244: 12,-13
         - node:
-            color: '#DE0512BF'
+            color: '#FFFFFFBF'
             id: Delivery
           decals:
             160: -3,6
@@ -1222,7 +1223,7 @@ entities:
             122: 16,-6
             123: 16,-7
         - node:
-            color: '#D9101768'
+            color: '#37789B68'
             id: QuarterTileOverlayGreyscale90
           decals:
             143: -6,5
@@ -1596,13 +1597,13 @@ entities:
           decals:
             1787: -50,20
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: arrow
           decals:
             3369: -4,25
         - node:
             angle: 3.141592653589793 rad
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: arrow
           decals:
             3370: -2,25
@@ -1618,14 +1619,14 @@ entities:
           decals:
             4026: 28.297428,-0.8605033
         - node:
-            color: '#B02E26FF'
+            color: '#37789BFF'
             id: arrowupsl
           decals:
             4055: -3.017683,15.91641
             4058: -3.0097976,23.924452
         - node:
             angle: 3.141592653589793 rad
-            color: '#B02E26FF'
+            color: '#37789BFF'
             id: arrowupsl
           decals:
             4056: -4.9874096,16.07266
@@ -3170,6 +3171,25 @@ entities:
             id: trimlinecornerne
           decals:
             3724: 21.166939,-12.953894
+        - node:
+            color: '#4795BEFF'
+            id: DeliveryGreyscale
+          decals:
+            4066: -2,8
+            4067: -2,6
+            4068: -3,6
+        - node:
+            color: '#4795BEFF'
+            id: BotGreyscale
+          decals:
+            4069: -11,12
+            4070: -10,12
+            4071: -9,12
+            4072: -8,12
+            4073: -8,14
+            4075: -9,14
+            4076: -10,14
+            4077: -11,14
     - type: GridAtmosphere
       version: 2
       data:
@@ -10373,6 +10393,11 @@ entities:
     - type: Transform
       pos: -18.5,-7.5
       parent: 2
+  - uid: 10629
+    components:
+    - type: Transform
+      pos: -6.5,16.5
+      parent: 2
 - proto: BenchBlueComfyEndRight
   entities:
   - uid: 386
@@ -10390,16 +10415,7 @@ entities:
     - type: Transform
       pos: -17.5,-7.5
       parent: 2
-- proto: BenchRedComfyEndLeft
-  entities:
-  - uid: 389
-    components:
-    - type: Transform
-      pos: -6.5,16.5
-      parent: 2
-- proto: BenchRedComfyEndRight
-  entities:
-  - uid: 390
+  - uid: 10630
     components:
     - type: Transform
       pos: -5.5,16.5
@@ -25853,30 +25869,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -22.5,14.5
       parent: 2
-  - uid: 3084
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -16.5,13.5
-      parent: 2
-  - uid: 3085
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -15.5,14.5
-      parent: 2
-  - uid: 3086
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -15.5,13.5
-      parent: 2
-  - uid: 3087
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -16.5,14.5
-      parent: 2
   - uid: 3088
     components:
     - type: Transform
@@ -25936,50 +25928,6 @@ entities:
     components:
     - type: Transform
       pos: 12.5,-18.5
-      parent: 2
-  - uid: 3100
-    components:
-    - type: Transform
-      pos: -7.5,7.5
-      parent: 2
-  - uid: 3101
-    components:
-    - type: Transform
-      pos: -6.5,7.5
-      parent: 2
-  - uid: 3102
-    components:
-    - type: Transform
-      pos: -7.5,8.5
-      parent: 2
-  - uid: 3103
-    components:
-    - type: Transform
-      pos: -6.5,8.5
-      parent: 2
-  - uid: 3104
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -9.5,19.5
-      parent: 2
-  - uid: 3105
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -8.5,19.5
-      parent: 2
-  - uid: 3106
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -9.5,18.5
-      parent: 2
-  - uid: 3107
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -8.5,18.5
       parent: 2
   - uid: 9151
     components:
@@ -26216,6 +26164,46 @@ entities:
     - type: Transform
       pos: -1.5,6.5
       parent: 10280
+  - uid: 10621
+    components:
+    - type: Transform
+      pos: -6.5,8.5
+      parent: 2
+  - uid: 10622
+    components:
+    - type: Transform
+      pos: -7.5,8.5
+      parent: 2
+  - uid: 10623
+    components:
+    - type: Transform
+      pos: -7.5,7.5
+      parent: 2
+  - uid: 10624
+    components:
+    - type: Transform
+      pos: -6.5,7.5
+      parent: 2
+  - uid: 10625
+    components:
+    - type: Transform
+      pos: -9.5,19.5
+      parent: 2
+  - uid: 10626
+    components:
+    - type: Transform
+      pos: -8.5,19.5
+      parent: 2
+  - uid: 10627
+    components:
+    - type: Transform
+      pos: -8.5,18.5
+      parent: 2
+  - uid: 10628
+    components:
+    - type: Transform
+      pos: -9.5,18.5
+      parent: 2
 - proto: CarpetCard
   entities:
   - uid: 3127
@@ -30802,17 +30790,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -21.5,7.5
       parent: 2
-  - uid: 3748
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -13.5,14.5
-      parent: 2
-  - uid: 3749
-    components:
-    - type: Transform
-      pos: -12.5,9.5
-      parent: 2
   - uid: 3750
     components:
     - type: Transform
@@ -30833,11 +30810,6 @@ entities:
       parent: 2
 - proto: CurtainsRedOpen
   entities:
-  - uid: 3753
-    components:
-    - type: Transform
-      pos: -11.5,9.5
-      parent: 2
   - uid: 3754
     components:
     - type: Transform
@@ -54198,23 +54170,6 @@ entities:
       - Experimental
       - CivilianServices
       - Biochemical
-- proto: protectionanchor
-  entities:
-  - uid: 6604
-    components:
-    - type: Transform
-      pos: -12.5,18.5
-      parent: 2
-  - uid: 6605
-    components:
-    - type: Transform
-      pos: -9.5,21.5
-      parent: 2
-  - uid: 6606
-    components:
-    - type: Transform
-      pos: 4.5,-0.5
-      parent: 2
 - proto: Protolathe
   entities:
   - uid: 6607
@@ -59213,14 +59168,6 @@ entities:
       fixtures: {}
 - proto: SignLawyer
   entities:
-  - uid: 7277
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -11.5,5.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
   - uid: 7278
     components:
     - type: Transform
@@ -73895,5 +73842,29 @@ entities:
     components:
     - type: Transform
       pos: 5.693084,43.3906
+      parent: 2
+- proto: CurtainsBlueOpen
+  entities:
+  - uid: 10618
+    components:
+    - type: Transform
+      pos: -13.5,14.5
+      parent: 2
+  - uid: 10619
+    components:
+    - type: Transform
+      pos: -11.5,9.5
+      parent: 2
+  - uid: 10620
+    components:
+    - type: Transform
+      pos: -12.5,9.5
+      parent: 2
+- proto: SignLawyerOffice
+  entities:
+  - uid: 10631
+    components:
+    - type: Transform
+      pos: -11.5,5.5
       parent: 2
 ...
