@@ -173,11 +173,6 @@
   id: Languages
   name: store-category-languages
 
-# Secret
-- type: storeCategory
-  id: SLSecret
-  name: store-category-secret
-
 - type: storeCategory # funkystation start
   id: UplinkDAGD
   name: store-category-dagd
