@@ -11,6 +11,10 @@
     - !type:RoleTimeRequirement
       role: JobIAA
       time: 8h
+    - !type:TraitsRequirement
+      traits:
+        - Iterator
+      inverted: true
   startingGear: CentralCommandRepresentativeGear
   icon: JobIconNanoTrasenRepresentative
   rules: job-rules-corporate-aligned

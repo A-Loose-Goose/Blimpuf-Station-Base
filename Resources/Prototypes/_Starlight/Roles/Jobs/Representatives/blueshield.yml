@@ -16,6 +16,10 @@
       time: 5h # obligatory brigmed (and thus paramed) hours
     - !type:RolesRequirement
       proto: CCEReq
+    - !type:TraitsRequirement
+      traits:
+        - Iterator
+      inverted: true
   startingGear: CentralCommandEnforcerGear
   icon: JobIconBlueShield
   rules: job-rules-corporate-aligned

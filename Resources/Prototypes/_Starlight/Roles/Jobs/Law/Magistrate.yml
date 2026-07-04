@@ -12,6 +12,10 @@
       time: 30h
     - !type:RolesRequirement
       proto: MagiReq
+    - !type:TraitsRequirement
+      traits:
+        - Iterator
+      inverted: true
   startingGear: MagistrateGear
   icon: "JobIconMagistrate"
   rules: job-rules-corporate-aligned
