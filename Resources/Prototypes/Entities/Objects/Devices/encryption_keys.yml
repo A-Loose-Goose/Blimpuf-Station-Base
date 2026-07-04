@@ -82,7 +82,6 @@
     - Security
     - Service
     - Supply
-    - Corporate
     defaultChannel: Command
   - type: Sprite
     layers:
