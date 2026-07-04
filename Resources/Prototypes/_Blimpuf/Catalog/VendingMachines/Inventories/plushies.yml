@@ -1,0 +1,10 @@
+- type: listing
+  id: VendorPlushieKara
+  productEntity: PlushieKara
+  cost:
+    NTCredit: 100
+  categories:
+    - BlimpufCrew
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 1

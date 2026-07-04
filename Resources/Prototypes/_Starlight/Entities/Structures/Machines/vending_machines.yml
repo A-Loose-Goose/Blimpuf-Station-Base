@@ -103,7 +103,7 @@
     categories:
     - SLPlushies
     - SLSpecies
-    - SLCrew
+    - BlimpufCrew
 
 - type: entity
   parent: SLVendingMachine

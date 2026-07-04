@@ -1,0 +1,35 @@
+- type: entity
+  parent: BasePlushieVocalizer
+  id: PlushieKara
+  name: cargo slime plushie
+  description: This hard working cargo tech looks like she's literally bubbling with excitement.
+  components:
+    - type: Item
+      size: Small
+      sprite: _Blimpuf/Objects/Fun/Plushies/kara_plushie.rsi
+    - type: Sprite
+      sprite: _Blimpuf/Objects/Fun/Plushies/kara_plushie.rsi
+      state: icon
+    - type: ItemToggle
+      onUse: false
+      verbToggleOn: plushie-voicebox-activate
+      verbToggleOff: plushie-voicebox-deactivate
+    - type: ComponentToggler
+      components:
+        - type: DatasetVocalizer
+          dataset: PlushiesKara
+    - type: EmitSoundOnUse
+      sound: &PlushieKaraSound
+        path: /Audio/Voice/Slime/slime_squish.ogg
+    - type: EmitSoundOnLand
+      sound: *PlushieKaraSound
+    - type: EmitSoundOnActivate
+      sound: *PlushieKaraSound
+    - type: EmitSoundOnCollide
+      sound: *PlushieKaraSound
+    - type: EmitSoundOnTrigger
+      sound: *PlushieKaraSound
+    - type: MeleeWeapon
+      soundHit: *PlushieKaraSound
+    - type: Edible
+      useSound: *PlushieKaraSound
