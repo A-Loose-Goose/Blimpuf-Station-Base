@@ -2,7 +2,7 @@
   id: Devil
   name: roles-antag-devil-name
   antagonist: true
-  setPreference: true
+#  setPreference: true # Blimpuf: disabled
   objective: roles-antag-devil-objective
   guides: [ Devil ]
   requirements:
