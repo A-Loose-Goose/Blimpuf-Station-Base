@@ -1,6 +1,6 @@
 - type: body
   id: ProtoResomi
-  name: proto-resomi # Starlight, quotation marks removed
+  name: neo-resomi # Starlight, quotation marks removed
   root: torso
   slots:
     head:

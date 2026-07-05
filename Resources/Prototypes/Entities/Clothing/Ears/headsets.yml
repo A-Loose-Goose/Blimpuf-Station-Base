@@ -101,6 +101,7 @@
     containers:
       key_slots:
       - EncryptionKeyCentCom
+      - EncryptionKeyCorporate
       - EncryptionKeyStationMaster
   - type: Sprite
     sprite: Clothing/Ears/Headsets/centcom.rsi

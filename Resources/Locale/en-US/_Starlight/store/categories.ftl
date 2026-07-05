@@ -7,7 +7,6 @@ store-category-medical-surgery = Surgery
 store-category-enginery-main = Enginery
 store-category-service-clown = Clown
 store-category-security-main = Security
-store-category-secret = Secret
 
 # Changeling
 store-ling-category-combat = Combat

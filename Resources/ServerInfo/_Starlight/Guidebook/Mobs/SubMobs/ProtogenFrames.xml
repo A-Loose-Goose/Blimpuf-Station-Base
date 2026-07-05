@@ -1,12 +1,12 @@
 <Document>
-  # Protogen Frames
+  # Neocyte Frames
 
   <Box>
-    <GuideEntityEmbed Entity="ClothingOuterArmorProtogenMediumBasic" Caption="Protogen Frames"/>
+    <GuideEntityEmbed Entity="ClothingOuterArmorProtogenMediumBasic" Caption="Neocyte Frames"/>
   </Box>
 
-  The foundation of a Protogen is their cybernetic frame, the thing that truly makes them distinct from their purely-biological brethren.
-  Currently, there are 6 Protogen frames approved for usage by NanoTrasen and Central Command. They have been split up into Light, Medium, and Heavy.
+  The foundation of a Neocyte is their cybernetic frame, the thing that truly makes them distinct from their purely-biological brethren.
+  Currently, there are 6 Neocyte frames approved for usage by NanoTrasen and Central Command. They have been split up into Light, Medium, and Heavy.
 
   ## Light Frames
   <Box>
@@ -22,7 +22,7 @@
 
   The Hermes-Class light frame boasts the following specs.
   - Receive [color=#65807d]15% more slash damage[/color] and [color=#b9bf93]15% more pierce damage[/color].
-  - Gain a [color=#03fce7]+5% sprint modifier[/color] and a [color=#03fce7]+5% walk modifier[/color].
+  - Gain a [color=#03fce7]+5% walk modifier[/color] and [color=#03fce7]25% less slowdown from injuries[/color].
 
   ## Medium Frames
   <Box>

@@ -1,4 +1,4 @@
-# We've rewritten every entry, and we've changed every Protogen's resistances, so I think that's sufficient reasoning to move the guidebook entries to our files.
+# We've rewritten every entry, and we've changed every Neocyte's resistances, so I think that's sufficient reasoning to move the guidebook entries to our files.
 - type: guideEntry
   id: ProtogenFrames
   name: guidebook-armor-protogen
@@ -15,11 +15,6 @@
   text: "/ServerInfo/_Starlight/Guidebook/Mobs/SubMobs/ProtoArachnid.xml"
 
 - type: guideEntry
-  id: ProtoAvali
-  name: subspecies-name-protoavali
-  text: "/ServerInfo/_Starlight/Guidebook/Mobs/SubMobs/ProtoAvali.xml"
-
-- type: guideEntry
   id: ProtoCyclorite
   name: subspecies-name-protocyclorite
   text: "/ServerInfo/_Starlight/Guidebook/Mobs/SubMobs/ProtoCyclorite.xml"
@@ -28,16 +23,6 @@
   id: ProtoDiona
   name: subspecies-name-protodiona
   text: "/ServerInfo/_Starlight/Guidebook/Mobs/SubMobs/ProtoDiona.xml"
-
-- type: guideEntry
-  id: ProtoDwarf
-  name: subspecies-name-protodwarf
-  text: "/ServerInfo/_Starlight/Guidebook/Mobs/SubMobs/ProtoDwarf.xml"
-
-- type: guideEntry
-  id: ProtoFelionoid
-  name: subspecies-name-protofelionoid
-  text: "/ServerInfo/_Starlight/Guidebook/Mobs/SubMobs/ProtoFelionoid.xml"
 
 - type: guideEntry
   id: ProtoElf
@@ -53,11 +38,6 @@
   id: ProtoKin
   name: subspecies-name-protokin
   text: "/ServerInfo/_Starlight/Guidebook/Mobs/SubMobs/ProtoKin.xml"
-
-- type: guideEntry
-  id: ProtoLagomorph
-  name: subspecies-name-protolagomorph
-  text: "/ServerInfo/_Starlight/Guidebook/Mobs/SubMobs/ProtoLagomorph.xml"
 
 - type: guideEntry
   id: ProtoSlimePerson

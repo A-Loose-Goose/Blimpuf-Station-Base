@@ -10,8 +10,6 @@
   skinColoration: Hues
   customName: true
   roundstartCyberwareCapacity: 6
-  subspeciesOf: Protogen # This is alternative version of other species. It will only be displayed in subspecies list
-  subspeciesName: subspecies-name-protolagomorph
   loadout: ProtogenLoadout
   minAge: 22
   youngAge: 25

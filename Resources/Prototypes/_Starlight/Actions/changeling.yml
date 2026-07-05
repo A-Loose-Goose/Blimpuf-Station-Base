@@ -648,8 +648,8 @@
 
 - type: entity
   id: ActionToggleProtogenDisguise
-  name: Toggle Protogen Disguise
-  description: Form a fake protogen cybernetic frame. Costs 0 chemicals.
+  name: Toggle Neocyte Disguise
+  description: Form a fake neocyte cybernetic frame. Costs 0 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action

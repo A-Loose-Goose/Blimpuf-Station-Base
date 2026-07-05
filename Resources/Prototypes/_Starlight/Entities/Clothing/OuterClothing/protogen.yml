@@ -24,7 +24,7 @@
 - type: entity
   parent: ClothingOuterArmorProtogenBase
   id: ClothingOuterArmorProtogenLightBasic
-  name: Basic-Class light protogen frame
+  name: Basic-Class light neocyte frame
   description: Comes in-built with light armor plating to shield the cybernetics within. Removal of this would require killing you.
   components:
   - type: Sprite
@@ -41,7 +41,7 @@
 - type: entity
   parent: ClothingOuterArmorProtogenBase
   id: ClothingOuterArmorProtogenLightSpeed
-  name: Hermes-Class light protogen frame
+  name: Hermes-Class light neocyte frame
   description: Augments your body's agility, at the cost of being incredibly susceptible to sharp objects. Removal of this would require killing you.
   components:
   - type: Sprite
@@ -54,7 +54,8 @@
         Piercing: 1.15
   - type: ClothingSpeedModifier
     walkModifier: 1.05 # I mean, sure I guess.
-    sprintModifier: 1.05 #Speed for weakness. Worth the trade?
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.25 # Blimpuf 25% less slowdown from damage in place of sprint speed
 # No explosion resist. This armor is entirely for increasing your speed.
 
 - type: entity
@@ -75,7 +76,7 @@
 - type: entity
   parent: ClothingOuterArmorProtogenBase
   id: ClothingOuterArmorProtogenMediumBasic
-  name: Basic-Class medium protogen frame
+  name: Basic-Class medium neocyte frame
   description: Comes in-built with moderate armor plating to shield the cybernetics within and protect the user. Removal of this would require killing you.
   components:
   - type: Sprite
@@ -94,7 +95,7 @@
 - type: entity
   parent: ClothingOuterArmorProtogenBase
   id: ClothingOuterArmorProtogenMediumMagic
-  name: Hecate-Class medium protogen frame
+  name: Hecate-Class medium neocyte frame
   description: Its self-cleansing module grants resistance to biological hazards. Removal of this would require killing you.
   components:
   - type: Sprite
@@ -138,7 +139,7 @@
 - type: entity
   parent: ClothingOuterArmorProtogenBase
   id: ClothingOuterArmorProtogenHeavyBasic
-  name: Basic-Class heavy protogen frame
+  name: Basic-Class heavy neocyte frame
   description: Comes in-built with heavy armor plating for active combat scenarios. Very heavy. Removal of this would require killing you.
   components:
   - type: Sprite
@@ -159,7 +160,7 @@
 - type: entity
   parent: [ClothingOuterArmorProtogenBase, AllowSuitStorageClothing]
   id: ClothingOuterArmorProtogenHeavySpace
-  name: Nyx-Class heavy protogen frame
+  name: Nyx-Class heavy neocyte frame
   description: Comes in-built with heavy insulation for spacefaring. A bit weighty. Removal of this would require killing you.
   components:
   - type: Sprite
@@ -205,7 +206,7 @@
 - type: entity
   parent: ClothingOuterArmorProtogenBase
   id: ChangelingClothingProtogenArmor
-  name: Basic-Class light protogen frame
+  name: Basic-Class light neocyte frame
   description: Comes in-built with light armor plating to shield the cybernetics within. Removal of this would require killing you.
   suffix: Unremoveable
   components:

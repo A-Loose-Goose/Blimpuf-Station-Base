@@ -1,0 +1,5 @@
+- type: localizedDataset
+  id: PlushiesKara
+  values:
+    prefix: plushie-kara-
+    count: 6

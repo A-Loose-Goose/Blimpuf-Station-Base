@@ -1,6 +1,6 @@
 - type: body
   id: ProtoLagomorph
-  name: proto-lagomorph
+  name: neo-lagomorph
   root: torso
   slots:
     head:

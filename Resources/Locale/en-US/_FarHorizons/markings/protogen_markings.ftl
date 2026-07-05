@@ -5,18 +5,18 @@ marking-ProtogenTailBushy-bushy_tail_protogen = Bushy Tail
 marking-ProtogenTail = Tail
 marking-ProtogenTail-tail_protogen = Tail
 
-marking-ProtogenEars = Four Protogen Ears
-marking-ProtogenEars-ears_protogen = Four Protogen Ears
-marking-ProtogenEars-ears_protogen_tips = Four Protogen Ears (Tips)
-marking-TwoProtogenEars = Two Protogen Ears
-marking-TwoProtogenEars-two_ears_protogen = Two Protogen Ears
+marking-ProtogenEars = Four Neocyte Ears
+marking-ProtogenEars-ears_protogen = Four Neocyte Ears
+marking-ProtogenEars-ears_protogen_tips = Four Neocyte Ears (Tips)
+marking-TwoProtogenEars = Two Neocyte Ears
+marking-TwoProtogenEars-two_ears_protogen = Two Neocyte Ears
 
 marking-ProtogenLights = Circular LEDs
 marking-ProtogenLights-body = Circular LEDs
-marking-ProtogenVisor = Protogen Visor
-marking-ProtogenVisor-visor = Protogen Visor
-marking-ProtogenLEDFace = Default Protogen LEDs
-marking-ProtogenLEDFace-face = Default Protogen LEDs
+marking-ProtogenVisor = Neocyte Visor
+marking-ProtogenVisor-visor = Neocyte Visor
+marking-ProtogenLEDFace = Default Neocyte LEDs
+marking-ProtogenLEDFace-face = Default Neocyte LEDs
 marking-ProtogenLEDFaceNoseless = Noseless LEDs
 marking-ProtogenLEDFaceNoseless-noseless = Noseless LEDs
 marking-ProtogenVisorRound = Round Visor
@@ -24,8 +24,8 @@ marking-ProtogenVisorRound-rounded = Round Visor
 marking-ProtogenLEDFaceRound = Round LEDs
 marking-ProtogenLEDFaceRound-rounded = Round LEDs
 
-marking-ProtogenMediumArmor = Standard Protogen Cybernetics
-marking-ProtogenMediumArmor-medium = Standard Protogen Cybernetics
+marking-ProtogenMediumArmor = Standard Neocyte Cybernetics
+marking-ProtogenMediumArmor-medium = Standard Neocyte Cybernetics
 
 marking-ProtoVulpPawSocksFeet = Paw Socks (Feet)
 marking-ProtoVulpPawSocksFeet-pawsocks_feet = Paw Socks (Feet)
@@ -57,10 +57,10 @@ marking-ProtoVulpClawsLong-clawslong = Long Vulpine Claws
 marking-ProtoVulpVisorSideWings = Side Visor Wings
 marking-ProtoVulpVisorSideWings-side-visor-wings = Side Visor Wings
 
-marking-ProtoVulpMediumArmor = Standard Protogen-Vulpine Cybernetics
-marking-ProtoVulpMediumArmor-medium = Standard Protogen-Vulpine Cybernetics
-marking-ProtoVulpMediumArmorAngled = Angled Standard Protogen-Vulpine Cybernetics
-marking-ProtoVulpMediumArmorAngled-mediumangled = Angled Standard Protogen-Vulpine Cybernetics
+marking-ProtoVulpMediumArmor = Standard Neo-Vulpine Cybernetics
+marking-ProtoVulpMediumArmor-medium = Standard Neo-Vulpine Cybernetics
+marking-ProtoVulpMediumArmorAngled = Angled Standard Neo-Vulpine Cybernetics
+marking-ProtoVulpMediumArmorAngled-mediumangled = Angled Standard Neo-Vulpine Cybernetics
 
 marking-ProtoVoxVisor = Vox Visor
 marking-ProtoVoxVisor-visor = Vox Visor
@@ -71,8 +71,8 @@ marking-ProtoVoxLights-body = Circular LEDs
 marking-ProtoVoxClaws = Long Vox Claws
 marking-ProtoVoxClaws-claws = Long Vox Claws
 
-marking-ProtoVoxMediumArmor = Standard Protogen-Vox Cybernetics
-marking-ProtoVoxMediumArmor-medium = Standard Protogen-Vox Cybernetics
+marking-ProtoVoxMediumArmor = Standard Neo-Vox Cybernetics
+marking-ProtoVoxMediumArmor-medium = Standard Neo-Vox Cybernetics
 
 marking-ProtoThavenVisor = Thaven Visor
 marking-ProtoThavenVisor-visor = Thaven Visor
@@ -81,8 +81,8 @@ marking-ProtoThavenLEDFace-face = Default Thaven LEDs
 marking-ProtoThavenLights = Circular LEDs
 marking-ProtoThavenLights-body = Circular LEDs
 
-marking-ProtoThavenMediumArmor = Standard Protogen-Thaven Cybernetics
-marking-ProtoThavenMediumArmor-medium = Standard Protogen-Thaven Cybernetics
+marking-ProtoThavenMediumArmor = Standard Neo-Thaven Cybernetics
+marking-ProtoThavenMediumArmor-medium = Standard Neo-Thaven Cybernetics
 
 marking-ProtoSlimePersonVisor = Laspi Visor
 marking-ProtoSlimePersonVisor-visor = Laspi Visor
@@ -91,18 +91,18 @@ marking-ProtoSlimePersonLEDFace-face = Default Laspi LEDs
 marking-ProtoSlimePersonLights = Circular LEDs
 marking-ProtoSlimePersonLights-body = Circular LEDs
 
-marking-ProtoSlimePersonMediumArmor = Standard Protogen-Laspi Cybernetics
-marking-ProtoSlimePersonMediumArmor-medium = Standard Protogen-Laspi Cybernetics
+marking-ProtoSlimePersonMediumArmor = Standard Neo-Laspi Cybernetics
+marking-ProtoSlimePersonMediumArmor-medium = Standard Neo-Laspi Cybernetics
 
-marking-ProtoKinVisor = Kin Visor
-marking-ProtoKinVisor-visor = Kin Visor
-marking-ProtoKinLEDFace = Default Kin LEDs
-marking-ProtoKinLEDFace-face = Default Kin LEDs
+marking-ProtoKinVisor = Shadekin Visor
+marking-ProtoKinVisor-visor = Shadekin Visor
+marking-ProtoKinLEDFace = Default Shadekin LEDs
+marking-ProtoKinLEDFace-face = Default Shadekin LEDs
 marking-ProtoKinLights = Circular LEDs
 marking-ProtoKinLights-body = Circular LEDs
 
-marking-ProtoKinMediumArmor = Standard Protogen-Kin Cybernetics
-marking-ProtoKinMediumArmor-medium = Standard Protogen-Kin Cybernetics
+marking-ProtoKinMediumArmor = Standard Neo-Shadekin Cybernetics
+marking-ProtoKinMediumArmor-medium = Standard Neo-Shadekin Cybernetics
 
 marking-ProtoResomiVisor = Resomi Visor
 marking-ProtoResomiVisor-visor = Resomi Visor
@@ -111,16 +111,16 @@ marking-ProtoResomiLEDFace-face = Default Resomi LEDs
 marking-ProtoResomiLights = Circular LEDs
 marking-ProtoResomiLights-body = Circular LEDs
 
-marking-ProtoResomiMediumArmor = Standard Protogen-Resomi Cybernetics
-marking-ProtoResomiMediumArmor-medium = Standard Protogen-Resomi Cybernetics
+marking-ProtoResomiMediumArmor = Standard Neo-Resomi Cybernetics
+marking-ProtoResomiMediumArmor-medium = Standard Neo-Resomi Cybernetics
 
 marking-ProtoReptilianLEDFaceBoxy = Default Reptile LEDs
 marking-ProtoReptilianLEDFaceBoxy-boxy = Default Reptile LEDs
 marking-ProtoReptilianClaws = Long Reptile Claws
 marking-ProtoReptilianClaws-claws = Long Reptile Claws
 
-marking-ProtoReptilianMediumArmor = Standard Protogen-Reptile Cybernetics
-marking-ProtoReptilianMediumArmor-medium = Standard Protogen-Reptile Cybernetics
+marking-ProtoReptilianMediumArmor = Standard Neo-Reptile Cybernetics
+marking-ProtoReptilianMediumArmor-medium = Standard Neo-Reptile Cybernetics
 
 marking-ProtoMothVisor = Moth Visor
 marking-ProtoMothVisor-visor = Moth Visor
@@ -131,8 +131,8 @@ marking-ProtoMothLights-body = Circular LEDs
 marking-ProtoMothClaws = Long Moth Claws
 marking-ProtoMothClaws-claws = Long Moth Claws
 
-marking-ProtoMothMediumArmor = Standard Protogen-Moth Cybernetics
-marking-ProtoMothMediumArmor-medium = Standard Protogen-Moth Cybernetics
+marking-ProtoMothMediumArmor = Standard Neo-Moth Cybernetics
+marking-ProtoMothMediumArmor-medium = Standard Neo-Moth Cybernetics
 
 marking-ProtoFelionoidVisor = Felionoid Visor
 marking-ProtoFelionoidVisor-visor = Felionoid Visor
@@ -143,8 +143,8 @@ marking-ProtoFelionoidLights-body = Circular LEDs
 marking-ProtoFelionoidClaws = Long Felionoid Claws
 marking-ProtoFelionoidClaws-claws = Long Felionoid Claws
 
-marking-ProtoFelionoidMediumArmor = Standard Protogen-Felionoid Cybernetics
-marking-ProtoFelionoidMediumArmor-medium = Standard Protogen-Felionoid Cybernetics
+marking-ProtoFelionoidMediumArmor = Standard Neo-Felionoid Cybernetics
+marking-ProtoFelionoidMediumArmor-medium = Standard Neo-Felionoid Cybernetics
 
 marking-ProtoDionaVisor = Diona Visor
 marking-ProtoDionaVisor-visor = Diona Visor
@@ -155,8 +155,8 @@ marking-ProtoDionaLights-body = Circular LEDs
 marking-ProtoDionaVines = Long Diona Vines
 marking-ProtoDionaVines-vines = Long Diona Vines
 
-marking-ProtoDionaMediumArmor = Standard Protogen-Diona Cybernetics
-marking-ProtoDionaMediumArmor-medium = Standard Protogen-Diona Cybernetics
+marking-ProtoDionaMediumArmor = Standard Neo-Diona Cybernetics
+marking-ProtoDionaMediumArmor-medium = Standard Neo-Diona Cybernetics
 
 marking-ProtoCycloriteVisor = Cyclorite Visor
 marking-ProtoCycloriteVisor-visor = Cyclorite Visor
@@ -165,8 +165,8 @@ marking-ProtoCycloriteLEDFace-face = Default Cyclorite LEDs
 marking-ProtoCycloriteLights = Circular LEDs
 marking-ProtoCycloriteLights-body = Circular LEDs
 
-marking-ProtoCycloriteMediumArmor = Standard Protogen-Cyclorite Cybernetics
-marking-ProtoCycloriteMediumArmor-medium = Standard Protogen-Cyclorite Cybernetics
+marking-ProtoCycloriteMediumArmor = Standard Neo-Cyclorite Cybernetics
+marking-ProtoCycloriteMediumArmor-medium = Standard Neo-Cyclorite Cybernetics
 
 marking-ProtoAvaliVisor = Avali Visor
 marking-ProtoAvaliVisor-visor = Avali Visor
@@ -177,8 +177,8 @@ marking-ProtoAvaliLights-body = Circular LEDs
 marking-ProtoAvaliWings = Hardlight Avali Wings
 marking-ProtoAvaliWings-wings = Hardlight Avali Wings
 
-marking-ProtoAvaliMediumArmor = Standard Protogen-Avali Cybernetics
-marking-ProtoAvaliMediumArmor-medium = Standard Protogen-Avali Cybernetics
+marking-ProtoAvaliMediumArmor = Standard Neo-Avali Cybernetics
+marking-ProtoAvaliMediumArmor-medium = Standard Neo-Avali Cybernetics
 
 marking-ProtoArachnidVisor = Arachnid Visor
 marking-ProtoArachnidVisor-visor = Arachnid Visor

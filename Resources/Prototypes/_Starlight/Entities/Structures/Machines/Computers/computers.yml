@@ -739,12 +739,12 @@
       energy: 1.5
       color: "#b48b57"
 
-# Law
+# Corporate
 - type: entity
   parent: ComputerComms
   id: ComputerCommsLaw
   categories: [ ShouldMapStation ]
-  name: law communications console
+  name: corporate communications console
   description: A computer used to make station wide announcements via keyboard, set the appropriate alert level, and call the emergency shuttle.
   components:
     - type: Sprite

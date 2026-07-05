@@ -1,6 +1,6 @@
 - type: body
   id: ProtoSlime
-  name: proto-slime
+  name: neo-slime
   root: torso
   slots:
     head:

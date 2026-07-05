@@ -1,6 +1,6 @@
 - type: body
   id: ProtoAvali
-  name: proto-avali # Starlight, quotation marks removed
+  name: neo-avali # Starlight, quotation marks removed
   root: torso
   slots:
     head:

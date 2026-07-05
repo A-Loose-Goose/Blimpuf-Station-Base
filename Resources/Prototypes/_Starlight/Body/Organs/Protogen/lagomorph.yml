@@ -2,7 +2,7 @@
   id: OrganProtoLagomorphStomach
   parent: OrganProtogenStomach
   name: lagomorph biological reactor
-  suffix: Proto-Lagomorph
+  suffix: Neo-Lagomorph
   components:
   - type: Metabolizer
     updateInterval: 0.75
@@ -16,7 +16,7 @@
   id: OrganProtoLagomorphHeart
   parent: OrganProtogenHeart
   name: lagomorph cybernetic heart
-  suffix: Proto-Lagomorph
+  suffix: Neo-Lagomorph
   components:
   - type: Metabolizer
     updateInterval: 0.75

@@ -1,6 +1,6 @@
 - type: body
   id: Protogen
-  name: protogen # Starlight, quotation marks removed
+  name: neocyte # Starlight, quotation marks removed
   root: torso
   slots:
     head:

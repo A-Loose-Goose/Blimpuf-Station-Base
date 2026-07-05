@@ -89,7 +89,7 @@
 
 - type: body
   id: AnimalProtoNymphStomach
-  name: "proto-nymph"
+  name: "neo-nymph"
   root: torso
   slots:
     torso:
