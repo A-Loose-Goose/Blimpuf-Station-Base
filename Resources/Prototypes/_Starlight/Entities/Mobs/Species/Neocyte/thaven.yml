@@ -1,6 +1,6 @@
 - type: entity
   save: false
-  parent: [BaseMobNeocyte, BaseSpeciesPickupableLarge]
+  parent: BaseMobNeocyte
   id: BaseMobNeoThaven
   name: Urist McEarster
   abstract: true
