@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 06/26/2026 18:54:51
-  entityCount: 25033
+  entityCount: 25045
 maps:
 - 1
 grids:
@@ -14250,6 +14250,11 @@ entities:
     - type: Transform
       pos: -23.5,-1.5
       parent: 2
+  - uid: 25075
+    components:
+    - type: Transform
+      pos: -12.5,-5.5
+      parent: 2
 - proto: BedsheetBrigmedic
   entities:
   - uid: 833
@@ -14269,14 +14274,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 14.5,4.5
-      parent: 2
-- proto: BedsheetBrown
-  entities:
-  - uid: 836
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -12.5,-5.5
       parent: 2
 - proto: BedsheetCaptain
   entities:
@@ -51409,6 +51406,21 @@ entities:
     - type: Transform
       pos: -18.5,-5.5
       parent: 2
+  - uid: 25080
+    components:
+    - type: Transform
+      pos: 2.5,-3.5
+      parent: 2
+  - uid: 25082
+    components:
+    - type: Transform
+      pos: 1.5,-3.5
+      parent: 2
+  - uid: 25083
+    components:
+    - type: Transform
+      pos: 2.5,-4.5
+      parent: 2
 - proto: CarpetCard
   entities:
   - uid: 8196
@@ -51702,24 +51714,6 @@ entities:
     - type: Transform
       pos: 10.5,-16.5
       parent: 2
-  - uid: 8249
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 1.5,-3.5
-      parent: 2
-  - uid: 8250
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 2.5,-4.5
-      parent: 2
-  - uid: 8251
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 2.5,-3.5
-      parent: 2
   - uid: 25053
     components:
     - type: Transform
@@ -51729,6 +51723,66 @@ entities:
     components:
     - type: Transform
       pos: -16.5,4.5
+      parent: 2
+  - uid: 25062
+    components:
+    - type: Transform
+      pos: -18.5,9.5
+      parent: 2
+  - uid: 25063
+    components:
+    - type: Transform
+      pos: -18.5,10.5
+      parent: 2
+  - uid: 25064
+    components:
+    - type: Transform
+      pos: -17.5,10.5
+      parent: 2
+  - uid: 25065
+    components:
+    - type: Transform
+      pos: -17.5,9.5
+      parent: 2
+  - uid: 25066
+    components:
+    - type: Transform
+      pos: -18.5,8.5
+      parent: 2
+  - uid: 25067
+    components:
+    - type: Transform
+      pos: -17.5,8.5
+      parent: 2
+  - uid: 25068
+    components:
+    - type: Transform
+      pos: -22.5,5.5
+      parent: 2
+  - uid: 25069
+    components:
+    - type: Transform
+      pos: -21.5,5.5
+      parent: 2
+  - uid: 25070
+    components:
+    - type: Transform
+      pos: -21.5,4.5
+      parent: 2
+  - uid: 25071
+    components:
+    - type: Transform
+      pos: -22.5,4.5
+      parent: 2
+  - uid: 25072
+    components:
+    - type: Transform
+      pos: -21.5,3.5
+      parent: 2
+  - uid: 25073
+    components:
+    - type: Transform
+      pos: -22.5,3.5
       parent: 2
 - proto: CarpetOrange
   entities:
@@ -70456,14 +70510,13 @@ entities:
     - type: Transform
       pos: 10.5,-3.5
       parent: 2
-- proto: CurtainsOrangeOpen
-  entities:
-  - uid: 11583
+  - uid: 25074
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
       pos: -12.5,-5.5
       parent: 2
+- proto: CurtainsOrangeOpen
+  entities:
   - uid: 11584
     components:
     - type: Transform
