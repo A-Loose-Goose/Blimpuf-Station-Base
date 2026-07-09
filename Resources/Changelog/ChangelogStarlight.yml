@@ -4162,5 +4162,20 @@ Entries:
   id: 4401
   time: '2026-07-09T11:06:33.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/44
+- author: LadyLiliana & ItsMaitake
+  changes:
+  - message: Sec decals are blue now.
+    type: Tweak
+  - message: Sec furniture/decor is blue now.
+    type: Tweak
+  - message: Sec now shows as blue on maps.
+    type: Tweak
+  - message: IAA/Magi Offices are green now.
+    type: Tweak
+  - message: Protection Anchors from Maps.
+    type: Remove
+  id: 4501
+  time: '2026-07-09T21:50:12.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/45
 Order: -1
 
