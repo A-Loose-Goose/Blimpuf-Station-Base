@@ -104,3 +104,63 @@
   - type: Construction
     graph: WindowDiagonal
     node: reinforcedWindowDiagonal
+
+- type: entity
+  id: WindowReinforcedDirectionalBrass
+  parent: [BaseDeltaPressureReinforcedGlassQuarter, WindowDirectional]
+  name: directional reinforced brass window
+  description: Don't smudge up the glass down there.
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Window
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Structures/Windows/directional.rsi
+      state: reinforced_brass_window
+    - type: Icon
+      sprite: _Blimpuf/Structures/Windows/directional.rsi
+      state: reinforced_brass_window
+    - type: Construction
+      graph: WindowDirectional
+      node: windowReinforcedDirectional
+    - type: Appearance
+    - type: DamageVisuals
+      thresholds: [5, 10, 20]
+      damageDivisor: 1.5
+      trackAllDamage: true
+      damageOverlay:
+        sprite: Structures/Windows/cracks_directional.rsi
+    - type: Damageable
+      damageModifierSet: RGlass
+    - type: RCDDeconstructable
+      cost: 4
+      delay: 4
+      fx: EffectRCDDeconstruct4
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 75
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: WindowShatter
+        - trigger:
+            !type:DamageTrigger
+            damage: 37
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: WindowShatter
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ShardGlassReinforced:
+                  min: 1
+                  max: 1
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+    - type: StaticPrice
+      price: 22.5
