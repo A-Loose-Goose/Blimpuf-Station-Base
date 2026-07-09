@@ -206,7 +206,7 @@ entities:
             415: 3,-10
             416: 3,-9
         - node:
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileWhiteInnerNe
           decals:
             477: 21,2
@@ -243,7 +243,7 @@ entities:
             421: -3,-7
             422: -3,-5
         - node:
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileWhiteInnerNw
           decals:
             475: 22,2
@@ -406,7 +406,7 @@ entities:
             385: 18,2
             386: 19,2
         - node:
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileWhiteLineN
           decals:
             473: 24,2
@@ -3126,13 +3126,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: BedsheetRed
-  entities:
-  - uid: 214
-    components:
-    - type: Transform
-      pos: 28.5,15.5
-      parent: 2
 - proto: BenchGrayComfyEndLeft
   entities:
   - uid: 215
@@ -27649,5 +27642,12 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 3.5,5.5
+      parent: 2
+- proto: BedsheetBlue
+  entities:
+  - uid: 4091
+    components:
+    - type: Transform
+      pos: 28.5,15.5
       parent: 2
 ...
