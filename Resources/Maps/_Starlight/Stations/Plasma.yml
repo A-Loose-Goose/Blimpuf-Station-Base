@@ -522,7 +522,7 @@ entities:
             6210: -71,-19
             7280: -25,-1
         - node:
-            color: '#9C2020FF'
+            color: '#4795BEFF'
             id: Bot
           decals:
             8405: -83,-22
@@ -7350,7 +7350,7 @@ entities:
             6414: -137,-40
             7011: -122,-83
         - node:
-            color: '#DE39397F'
+            color: '#4795BE7F'
             id: WarnLineGreyscaleW
           decals:
             9222: -79,-27
@@ -8559,6 +8559,20 @@ entities:
             9329: -80,-38
             9330: -79,-38
             9331: -79,-39
+        - node:
+            color: '#4795BEFF'
+            id: BotGreyscale
+          decals:
+            9332: -83,-22
+            9333: -118,-87
+            9334: -124,-87
+            9335: -124,-80
+            9336: -118,-80
+            9337: -76,-5
+            9338: -72,-5
+            9339: -72,-1
+            9340: -76,-1
+            9341: -119,-73
     - type: GridAtmosphere
       version: 2
       data:
@@ -26076,6 +26090,11 @@ entities:
     - type: Transform
       pos: -61.5,-38.5
       parent: 2
+  - uid: 28053
+    components:
+    - type: Transform
+      pos: -5.5,-6.5
+      parent: 2
 - proto: BenchBlueComfyEndRight
   entities:
   - uid: 2356
@@ -26105,6 +26124,11 @@ entities:
     components:
     - type: Transform
       pos: -60.5,-38.5
+      parent: 2
+  - uid: 28054
+    components:
+    - type: Transform
+      pos: -4.5,-6.5
       parent: 2
 - proto: BenchBlueComfyMiddle
   entities:
@@ -26600,11 +26624,6 @@ entities:
       parent: 2
 - proto: BenchRedComfyEndLeft
   entities:
-  - uid: 2446
-    components:
-    - type: Transform
-      pos: -5.5,-6.5
-      parent: 2
   - uid: 2447
     components:
     - type: Transform
@@ -26619,11 +26638,6 @@ entities:
       parent: 2
 - proto: BenchRedComfyEndRight
   entities:
-  - uid: 2449
-    components:
-    - type: Transform
-      pos: -4.5,-6.5
-      parent: 2
   - uid: 2450
     components:
     - type: Transform
@@ -60155,54 +60169,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -67.5,-54.5
       parent: 2
-  - uid: 9129
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -99.5,-68.5
-      parent: 2
-  - uid: 9130
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -98.5,-69.5
-      parent: 2
-  - uid: 9131
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -101.5,-68.5
-      parent: 2
-  - uid: 9132
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -101.5,-69.5
-      parent: 2
-  - uid: 9133
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -100.5,-69.5
-      parent: 2
-  - uid: 9134
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -100.5,-68.5
-      parent: 2
-  - uid: 9135
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -99.5,-69.5
-      parent: 2
-  - uid: 9136
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -98.5,-68.5
-      parent: 2
   - uid: 28007
     components:
     - type: Transform
@@ -60625,36 +60591,6 @@ entities:
     - type: Transform
       pos: -43.5,-6.5
       parent: 2
-  - uid: 27991
-    components:
-    - type: Transform
-      pos: -99.5,-23.5
-      parent: 2
-  - uid: 27992
-    components:
-    - type: Transform
-      pos: -98.5,-23.5
-      parent: 2
-  - uid: 27993
-    components:
-    - type: Transform
-      pos: -98.5,-22.5
-      parent: 2
-  - uid: 27994
-    components:
-    - type: Transform
-      pos: -99.5,-22.5
-      parent: 2
-  - uid: 27995
-    components:
-    - type: Transform
-      pos: -99.5,-21.5
-      parent: 2
-  - uid: 27996
-    components:
-    - type: Transform
-      pos: -98.5,-21.5
-      parent: 2
   - uid: 27997
     components:
     - type: Transform
@@ -60824,6 +60760,76 @@ entities:
     components:
     - type: Transform
       pos: -107.5,-52.5
+      parent: 2
+  - uid: 28055
+    components:
+    - type: Transform
+      pos: -98.5,-23.5
+      parent: 2
+  - uid: 28056
+    components:
+    - type: Transform
+      pos: -99.5,-23.5
+      parent: 2
+  - uid: 28057
+    components:
+    - type: Transform
+      pos: -99.5,-22.5
+      parent: 2
+  - uid: 28058
+    components:
+    - type: Transform
+      pos: -99.5,-21.5
+      parent: 2
+  - uid: 28059
+    components:
+    - type: Transform
+      pos: -98.5,-21.5
+      parent: 2
+  - uid: 28060
+    components:
+    - type: Transform
+      pos: -98.5,-22.5
+      parent: 2
+  - uid: 28064
+    components:
+    - type: Transform
+      pos: -101.5,-68.5
+      parent: 2
+  - uid: 28065
+    components:
+    - type: Transform
+      pos: -101.5,-69.5
+      parent: 2
+  - uid: 28066
+    components:
+    - type: Transform
+      pos: -100.5,-68.5
+      parent: 2
+  - uid: 28067
+    components:
+    - type: Transform
+      pos: -100.5,-69.5
+      parent: 2
+  - uid: 28068
+    components:
+    - type: Transform
+      pos: -99.5,-68.5
+      parent: 2
+  - uid: 28069
+    components:
+    - type: Transform
+      pos: -99.5,-69.5
+      parent: 2
+  - uid: 28070
+    components:
+    - type: Transform
+      pos: -98.5,-68.5
+      parent: 2
+  - uid: 28071
+    components:
+    - type: Transform
+      pos: -98.5,-69.5
       parent: 2
 - proto: CarpetOrange
   entities:
@@ -70136,12 +70142,6 @@ entities:
       rot: 1.5707963267948966 rad
 - proto: ComfyChairBrown
   entities:
-  - uid: 10895
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -99.5,-66.5
-      parent: 2
   - uid: 10896
     components:
     - type: Transform
@@ -72509,13 +72509,6 @@ entities:
     components:
     - type: Transform
       pos: -26.354109,-28.288689
-      parent: 2
-- proto: CurtainsBlack
-  entities:
-  - uid: 11246
-    components:
-    - type: Transform
-      pos: -98.5,-67.5
       parent: 2
 - proto: CurtainsBlue
   entities:
@@ -144699,18 +144692,6 @@ entities:
       - Experimental
       - CivilianServices
       - Biochemical
-- proto: protectionanchor
-  entities:
-  - uid: 21545
-    components:
-    - type: Transform
-      pos: -82.5,-21.5
-      parent: 2
-  - uid: 21546
-    components:
-    - type: Transform
-      pos: -74.5,-2.5
-      parent: 2
 - proto: Protolathe
   entities:
   - uid: 21547
@@ -183217,4 +183198,33 @@ entities:
       pos: -108.5,-52.5
       parent: 2
       rot: 4.71238898038469 rad
+- proto: SignMagistrate
+  entities:
+  - uid: 28061
+    components:
+    - type: Transform
+      pos: -99.5,-67.5
+      parent: 2
+- proto: ComfyChairGreen
+  entities:
+  - uid: 28062
+    components:
+    - type: Transform
+      pos: -99.5,-66.5
+      parent: 2
+      rot: 3.141592653589793 rad
+- proto: CurtainsGreen
+  entities:
+  - uid: 28063
+    components:
+    - type: Transform
+      pos: -98.5,-67.5
+      parent: 2
+- proto: CentCommFlag
+  entities:
+  - uid: 28072
+    components:
+    - type: Transform
+      pos: -97.5,-69.5
+      parent: 2
 ...
