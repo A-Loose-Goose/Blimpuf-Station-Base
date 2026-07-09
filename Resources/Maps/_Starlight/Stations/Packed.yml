@@ -4491,7 +4491,7 @@ entities:
             1697: 28,44
             1698: 26,44
         - node:
-            color: '#DE3A3A31'
+            color: '#4E98C031'
             id: FullTileOverlayGreyscale
           decals:
             1712: 25,48
@@ -45169,12 +45169,6 @@ entities:
       parent: 2
 - proto: ComfyChair
   entities:
-  - uid: 6813
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 17.5,31.5
-      parent: 2
   - uid: 6814
     components:
     - type: Transform
@@ -46566,14 +46560,6 @@ entities:
     components:
     - type: Transform
       parent: 6685
-    - type: Physics
-      canCollide: False
-- proto: CrowbarRed
-  entities:
-  - uid: 7007
-    components:
-    - type: Transform
-      parent: 7006
     - type: Physics
       canCollide: False
 - proto: CryogenicSleepUnit
@@ -76277,12 +76263,6 @@ entities:
       parent: 2
 - proto: HandLabeler
   entities:
-  - uid: 7008
-    components:
-    - type: Transform
-      parent: 7006
-    - type: Physics
-      canCollide: False
   - uid: 11316
     components:
     - type: Transform
@@ -77732,6 +77712,11 @@ entities:
     - type: Transform
       pos: 54.354797,38.122463
       parent: 2
+  - uid: 16992
+    components:
+    - type: Transform
+      pos: 18.5,32.5
+      parent: 2
 - proto: LampInterrogator
   entities:
   - uid: 11532
@@ -78268,14 +78253,6 @@ entities:
       parent: 2
 - proto: LockerEvidence
   entities:
-  - uid: 11570
-    components:
-    - type: Transform
-      pos: 19.5,33.5
-      parent: 2
-    - type: AccessReader
-      accessListsOriginal:
-      - - Security
   - uid: 11571
     components:
     - type: Transform
@@ -79346,12 +79323,6 @@ entities:
     components:
     - type: Transform
       parent: 6685
-    - type: Physics
-      canCollide: False
-  - uid: 7009
-    components:
-    - type: Transform
-      parent: 7006
     - type: Physics
       canCollide: False
   - uid: 11725
@@ -84002,13 +83973,6 @@ entities:
       - Experimental
       - CivilianServices
       - Biochemical
-- proto: protectionanchor
-  entities:
-  - uid: 12371
-    components:
-    - type: Transform
-      pos: 42.5,35.5
-      parent: 2
 - proto: Protolathe
   entities:
   - uid: 12372
@@ -95566,11 +95530,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 30.5,41.5
       parent: 2
-  - uid: 14158
-    components:
-    - type: Transform
-      pos: 18.5,31.5
-      parent: 2
   - uid: 14159
     components:
     - type: Transform
@@ -95674,11 +95633,6 @@ entities:
     components:
     - type: Transform
       pos: 54.5,37.5
-      parent: 2
-  - uid: 14179
-    components:
-    - type: Transform
-      pos: 18.5,29.5
       parent: 2
   - uid: 14180
     components:
@@ -96070,40 +96024,6 @@ entities:
     - type: Transform
       pos: 36.482082,-14.3137665
       parent: 2
-- proto: ToolboxEmergency
-  entities:
-  - uid: 7006
-    components:
-    - type: MetaData
-      desc: A bright red toolbox, stocked with everything a warden needs to maintain their brig.
-      name: warden's toolbox
-    - type: Transform
-      pos: 44.461845,24.599695
-      parent: 2
-    - type: Storage
-      storedItems:
-        7008:
-          position: 3,0
-          _rotation: North
-        7007:
-          position: 0,0
-          _rotation: South
-        7010:
-          position: 1,0
-          _rotation: South
-        7009:
-          position: 2,0
-          _rotation: South
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 7007
-          - 7010
-          - 7009
-          - 7008
 - proto: ToolboxEmergencyFilled
   entities:
   - uid: 14243
@@ -110564,12 +110484,6 @@ entities:
       parent: 2
 - proto: Wrench
   entities:
-  - uid: 7010
-    components:
-    - type: Transform
-      parent: 7006
-    - type: Physics
-      canCollide: False
   - uid: 16929
     components:
     - type: Transform
@@ -110624,5 +110538,63 @@ entities:
     components:
     - type: Transform
       pos: 36.5,39.5
+      parent: 2
+- proto: GavelBlock
+  entities:
+  - uid: 16984
+    components:
+    - type: Transform
+      pos: 18.5,31.5
+      parent: 2
+- proto: GavelHammer
+  entities:
+  - uid: 16985
+    components:
+    - type: Transform
+      pos: 18.5,31.5
+      parent: 2
+- proto: TableFancyGreen
+  entities:
+  - uid: 16986
+    components:
+    - type: Transform
+      pos: 18.5,31.5
+      parent: 2
+  - uid: 16987
+    components:
+    - type: Transform
+      pos: 18.5,29.5
+      parent: 2
+  - uid: 16989
+    components:
+    - type: Transform
+      pos: 18.5,32.5
+      parent: 2
+  - uid: 16990
+    components:
+    - type: Transform
+      pos: 17.5,32.5
+      parent: 2
+- proto: BoxFolderGreenThreePapers
+  entities:
+  - uid: 16991
+    components:
+    - type: Transform
+      pos: 17.5,32.5
+      parent: 2
+- proto: ComfyChairGreen
+  entities:
+  - uid: 16993
+    components:
+    - type: Transform
+      pos: 17.5,31.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+- proto: ToolboxMechanicalFilledAllTools
+  entities:
+  - uid: 16999
+    components:
+    - type: Transform
+      pos: 44.5,24.5
       parent: 2
 ...
