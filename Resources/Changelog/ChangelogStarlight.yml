@@ -4153,5 +4153,14 @@ Entries:
   id: 4301
   time: '2026-07-09T03:54:54.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/43
+- author: ItsMaitake
+  changes:
+  - message: Added Brass Walls and Reinforced Brass Walls.
+    type: Add
+  - message: Added Brass Windows and Reinforced Brass Windows.
+    type: Add
+  id: 4401
+  time: '2026-07-09T11:06:33.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/44
 Order: -1
 
