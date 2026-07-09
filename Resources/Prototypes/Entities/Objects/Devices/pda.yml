@@ -255,8 +255,8 @@
        !type:String
        pda-interncadet
   - type: PdaBorderColor
-    borderColor: "#717059"
-    accentVColor: "#A32D26"
+    borderColor: "#596271"
+    accentVColor: "#3a819b"
   - type: Icon
     state: pda-interncadet
 
@@ -922,8 +922,8 @@
        !type:String
        pda-hos
   - type: PdaBorderColor
-    borderColor: "#A32D26"
-    accentHColor: "#447987"
+    borderColor: "#333333"
+    accentHColor: "#3a819b"
   - type: Icon
     state: pda-hos
   - type: CartridgeLoader
@@ -951,8 +951,8 @@
        !type:String
        pda-warden
   - type: PdaBorderColor
-    borderColor: "#A32D26"
-    accentVColor: "#949137"
+    borderColor: "#333333"
+    accentVColor: "#3a819b"
   - type: Icon
     state: pda-warden
 
@@ -960,7 +960,7 @@
   parent: BaseSecurityPDA
   id: SecurityPDA
   name: security PDA
-  description: Red to hide the stains of assistant blood.
+  description: Blue to hide the stains of arachnid blood.
   components:
   - type: Pda
     id: SecurityIDCard
@@ -970,7 +970,7 @@
        !type:String
        pda-security
   - type: PdaBorderColor
-    borderColor: "#A32D26"
+    borderColor: "#333333"
   - type: Icon
     state: pda-security
 
@@ -1448,9 +1448,9 @@
        !type:String
        pda-brigmedic
   - type: PdaBorderColor
-    borderColor: "#A32D26"
-    accentHColor: "#d7d7d0"
-    accentVColor: "#d7d7d0"
+    borderColor: "#20526f"
+    accentHColor: "#ffffff"
+    accentVColor: "#ffffff"
   - type: Icon
     state: pda-brigmedic
   - type: CartridgeLoader
@@ -1582,8 +1582,8 @@
        !type:String
        pda-seniorofficer
   - type: PdaBorderColor
-    borderColor: "#A32D26"
-    accentVColor: "#DFDFDF"
+    borderColor: "#333333"
+    accentVColor: "#3a819b"
   - type: Icon
     state: pda-seniorofficer
 
