@@ -101345,7 +101345,6 @@ entities:
       pos: 40.5,13.5
       parent: 2
     - type: NavMapBeacon
-      color: '#FF00B1FF'
       text: Magistrate's Office
     - type: WarpPoint
       location: Magistrate's Office
@@ -101530,13 +101529,6 @@ entities:
     - type: Transform
       pos: 11.5,8.5
       parent: 29399
-- proto: DefaultStationBeaconLawOffice
-  entities:
-  - uid: 11475
-    components:
-    - type: Transform
-      pos: 40.5,4.5
-      parent: 2
 - proto: DefaultStationBeaconLibrary
   entities:
   - uid: 11476
@@ -101658,6 +101650,24 @@ entities:
     - type: Transform
       pos: 32.5,-11.5
       parent: 2
+  - uid: 36713
+    components:
+    - type: Transform
+      pos: 56.5,-36.5
+      parent: 2
+    - type: NavMapBeacon
+      text: Shooting Range
+    - type: WarpPoint
+      location: Shooting Range
+  - uid: 36714
+    components:
+    - type: Transform
+      pos: 40.5,-26.5
+      parent: 2
+    - type: NavMapBeacon
+      text: Sec Dock
+    - type: WarpPoint
+      location: Sec Dock
 - proto: DefaultStationBeaconSecurityCheckpoint
   entities:
   - uid: 34085
@@ -101777,34 +101787,6 @@ entities:
       text: Training
     - type: WarpPoint
       location: Training
-  - uid: 11506
-    components:
-    - type: Transform
-      anchored: True
-      pos: 56.5,-36.5
-      parent: 2
-    - type: Physics
-      canCollide: False
-      bodyType: Static
-    - type: NavMapBeacon
-      color: '#DE3A3A96'
-      text: Shooting Range
-    - type: WarpPoint
-      location: Shooting Range
-  - uid: 11507
-    components:
-    - type: Transform
-      anchored: True
-      pos: 40.5,-26.5
-      parent: 2
-    - type: Physics
-      canCollide: False
-      bodyType: Static
-    - type: NavMapBeacon
-      color: '#DE3A3A96'
-      text: Sec Dock
-    - type: WarpPoint
-      location: Sec Dock
   - uid: 11508
     components:
     - type: Transform
@@ -237630,5 +237612,12 @@ entities:
     components:
     - type: Transform
       pos: 34.5,16.5
+      parent: 2
+- proto: DefaultStationBeaconIAA
+  entities:
+  - uid: 36711
+    components:
+    - type: Transform
+      pos: 40.5,4.5
       parent: 2
 ...

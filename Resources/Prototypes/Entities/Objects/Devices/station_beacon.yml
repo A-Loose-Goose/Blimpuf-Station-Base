@@ -170,7 +170,7 @@
   components:
   - type: NavMapBeacon
     defaultText: station-beacon-security
-    color: "#DE3A3A"
+    color: "#37789B"
 
 - type: entity
   parent: DefaultStationBeaconSecurity

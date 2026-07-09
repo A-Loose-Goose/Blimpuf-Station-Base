@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 06/26/2026 19:35:59
-  entityCount: 16935
+  entityCount: 16941
 maps:
 - 1
 grids:
@@ -110596,5 +110596,47 @@ entities:
     components:
     - type: Transform
       pos: 44.5,24.5
+      parent: 2
+- proto: DefaultStationBeaconHOSRoom
+  entities:
+  - uid: 17001
+    components:
+    - type: Transform
+      pos: 47.5,40.5
+      parent: 2
+- proto: DefaultStationBeaconArmory
+  entities:
+  - uid: 17002
+    components:
+    - type: Transform
+      pos: 42.5,34.5
+      parent: 2
+- proto: DefaultStationBeaconWardensOffice
+  entities:
+  - uid: 17004
+    components:
+    - type: Transform
+      pos: 38.5,25.5
+      parent: 2
+- proto: DefaultStationBeaconBrig
+  entities:
+  - uid: 17005
+    components:
+    - type: Transform
+      pos: 35.5,19.5
+      parent: 2
+- proto: DefaultStationBeaconBrigMed
+  entities:
+  - uid: 17006
+    components:
+    - type: Transform
+      pos: 44.5,28.5
+      parent: 2
+- proto: DefaultStationBeaconSecurity
+  entities:
+  - uid: 17007
+    components:
+    - type: Transform
+      pos: 32.5,29.5
       parent: 2
 ...

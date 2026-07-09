@@ -62989,36 +62989,6 @@ entities:
       text: Break
     - type: WarpPoint
       location: Break
-  - uid: 9480
-    components:
-    - type: Transform
-      pos: 35.5,38.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#DE3A3A93'
-      text: Lockers
-    - type: WarpPoint
-      location: Lockers
-  - uid: 9481
-    components:
-    - type: Transform
-      pos: 35.5,45.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#DE3A3A93'
-      text: Break
-    - type: WarpPoint
-      location: Break
-  - uid: 9482
-    components:
-    - type: Transform
-      pos: 50.5,52.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#DE3A3A93'
-      text: Interrogation
-    - type: WarpPoint
-      location: Interrogation
   - uid: 9483
     components:
     - type: Transform
@@ -63459,6 +63429,33 @@ entities:
     - type: Transform
       pos: 43.5,47.5
       parent: 2
+  - uid: 25148
+    components:
+    - type: Transform
+      pos: 50.5,52.5
+      parent: 2
+    - type: NavMapBeacon
+      text: Interrogation
+    - type: WarpPoint
+      location: Interrogation
+  - uid: 25149
+    components:
+    - type: Transform
+      pos: 35.5,45.5
+      parent: 2
+    - type: NavMapBeacon
+      text: Break
+    - type: WarpPoint
+      location: Sec Break
+  - uid: 25150
+    components:
+    - type: Transform
+      pos: 35.5,38.5
+      parent: 2
+    - type: NavMapBeacon
+      text: Lockers
+    - type: WarpPoint
+      location: Sec Lockers
 - proto: DefaultStationBeaconServerRoom
   entities:
   - uid: 9543

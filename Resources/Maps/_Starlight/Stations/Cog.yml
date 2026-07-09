@@ -86090,13 +86090,6 @@ entities:
       parent: 2
 - proto: DefaultStationBeaconCommand
   entities:
-  - uid: 13468
-    components:
-    - type: Transform
-      pos: -48.5,38.5
-      parent: 2
-    - type: NavMapBeacon
-      text: NT Rep Office
   - uid: 13469
     components:
     - type: MetaData
@@ -86253,15 +86246,6 @@ entities:
     - type: Transform
       pos: 29.5,57.5
       parent: 2
-- proto: DefaultStationBeaconLawOffice
-  entities:
-  - uid: 13491
-    components:
-    - type: Transform
-      pos: -22.5,0.5
-      parent: 2
-    - type: NavMapBeacon
-      text: IAA Office
 - proto: DefaultStationBeaconLawyer
   entities:
   - uid: 13492
@@ -86370,19 +86354,6 @@ entities:
       parent: 2
 - proto: DefaultStationBeaconSecurity
   entities:
-  - uid: 13506
-    components:
-    - type: MetaData
-      name: station beacon (Blue Shield Officer)
-    - type: Transform
-      pos: -10.5,32.5
-      parent: 2
-    - type: NavMapBeacon
-      text: BSO Office
-    - type: Label
-      currentLabel: Blue Shield Officer
-    - type: NameModifier
-      baseName: station beacon
   - uid: 13507
     components:
     - type: Transform
@@ -212796,5 +212767,26 @@ entities:
     components:
     - type: Transform
       pos: -42.5,34.5
+      parent: 2
+- proto: DefaultStationBeaconIAA
+  entities:
+  - uid: 33109
+    components:
+    - type: Transform
+      pos: -22.5,0.5
+      parent: 2
+- proto: DefaultStationBeaconNTR
+  entities:
+  - uid: 33110
+    components:
+    - type: Transform
+      pos: -48.5,38.5
+      parent: 2
+- proto: DefaultStationBeaconBSO
+  entities:
+  - uid: 33111
+    components:
+    - type: Transform
+      pos: -10.5,32.5
       parent: 2
 ...

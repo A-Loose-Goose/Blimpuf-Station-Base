@@ -79926,14 +79926,6 @@ entities:
       text: West Airlock
     - type: WarpPoint
       location: West Airlock
-  - uid: 12537
-    components:
-    - type: Transform
-      pos: 24.5,1.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#DE3A3AFF'
-      text: Evidence
   - uid: 12538
     components:
     - type: Transform
@@ -80025,16 +80017,6 @@ entities:
       text: East Airlock
     - type: WarpPoint
       location: East Airlock
-  - uid: 12548
-    components:
-    - type: Transform
-      pos: 64.5,1.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#DE3A3AFF'
-      text: SEC Docking Arm
-    - type: WarpPoint
-      location: SEC Docking Arm
   - uid: 12549
     components:
     - type: Transform
@@ -80396,6 +80378,24 @@ entities:
     - type: Transform
       pos: 26.5,9.5
       parent: 2
+  - uid: 28372
+    components:
+    - type: Transform
+      pos: 64.5,1.5
+      parent: 2
+    - type: NavMapBeacon
+      text: SEC Docking Arm
+    - type: WarpPoint
+      location: SEC Docking Arm
+  - uid: 28373
+    components:
+    - type: Transform
+      pos: 24.5,1.5
+      parent: 2
+    - type: NavMapBeacon
+      text: Evidence
+    - type: WarpPoint
+      location: Evidence
 - proto: DefaultStationBeaconSingularity
   entities:
   - uid: 12600
