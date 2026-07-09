@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 06/26/2026 20:07:01
-  entityCount: 29483
+  entityCount: 29486
 maps:
 - 1
 grids:
@@ -1007,6 +1007,10 @@ entities:
             4415: 20,10
             4416: 13,5
             4653: -20,11
+        - node:
+            color: '#334E6D96'
+            id: BrickCornerOverlayNW
+          decals:
             4655: -13,21
         - node:
             color: '#79150096'
@@ -1106,7 +1110,6 @@ entities:
             4235: -7,15
             4236: -6,15
             4265: -10,21
-            4266: -11,21
             4267: -9,21
             4268: -8,21
             4269: -7,21
@@ -1149,6 +1152,11 @@ entities:
             4435: 18,5
             4436: 19,5
             4443: 22,7
+        - node:
+            color: '#334E6D96'
+            id: BrickLineOverlayN
+          decals:
+            4266: -11,21
             4656: -12,21
         - node:
             color: '#334E6DC8'
@@ -1229,8 +1237,6 @@ entities:
           decals:
             4240: -13,14
             4241: -13,13
-            4248: -13,19
-            4249: -13,18
             4301: -13,4
             4302: -13,5
             4303: -13,6
@@ -1260,6 +1266,12 @@ entities:
             4440: 20,6
             4651: -20,9
             4652: -20,10
+        - node:
+            color: '#334E6D96'
+            id: BrickLineOverlayW
+          decals:
+            4248: -13,19
+            4249: -13,18
             4657: -13,20
         - node:
             color: '#8D1C9996'
@@ -20317,6 +20329,26 @@ entities:
     - type: Transform
       pos: -14.688918,-45.5256
       parent: 2
+  - uid: 29484
+    components:
+    - type: Transform
+      pos: -9.249649,7.650796
+      parent: 2
+  - uid: 29485
+    components:
+    - type: Transform
+      pos: -17.59528,11.402665
+      parent: 2
+  - uid: 29492
+    components:
+    - type: Transform
+      pos: 2.5,8.5
+      parent: 2
+  - uid: 29491
+    components:
+    - type: Transform
+      pos: 2.409619,8.478355
+      parent: 2
 - proto: BoxFolderBlueThreePapers
   entities:
   - uid: 1486
@@ -20415,21 +20447,6 @@ entities:
     components:
     - type: Transform
       pos: -2.7330809,35.705204
-      parent: 2
-  - uid: 1505
-    components:
-    - type: Transform
-      pos: -17.59528,11.402665
-      parent: 2
-  - uid: 1506
-    components:
-    - type: Transform
-      pos: -9.249649,7.650796
-      parent: 2
-  - uid: 1507
-    components:
-    - type: Transform
-      pos: 2.409619,8.478355
       parent: 2
   - uid: 1508
     components:
@@ -142033,18 +142050,6 @@ entities:
       - Experimental
       - CivilianServices
       - Biochemical
-- proto: protectionanchor
-  entities:
-  - uid: 21423
-    components:
-    - type: Transform
-      pos: 6.5,38.5
-      parent: 2
-  - uid: 21424
-    components:
-    - type: Transform
-      pos: 7.5,21.5
-      parent: 2
 - proto: Protolathe
   entities:
   - uid: 21425
@@ -146227,11 +146232,6 @@ entities:
     components:
     - type: Transform
       pos: -9.5,17.5
-      parent: 2
-  - uid: 22195
-    components:
-    - type: Transform
-      pos: -11.5,19.5
       parent: 2
   - uid: 22196
     components:
@@ -159026,6 +159026,11 @@ entities:
     - type: Transform
       pos: 39.923622,25.97841
       parent: 2
+  - uid: 29486
+    components:
+    - type: Transform
+      pos: -12.25,20.6
+      parent: 2
 - proto: SprayPainterAmmo
   entities:
   - uid: 24167
@@ -159037,6 +159042,21 @@ entities:
     components:
     - type: Transform
       pos: 39.55649,26.292698
+      parent: 2
+  - uid: 29489
+    components:
+    - type: Transform
+      pos: -11.3,20.18
+      parent: 2
+  - uid: 29488
+    components:
+    - type: Transform
+      pos: -11.47,20.5
+      parent: 2
+  - uid: 29487
+    components:
+    - type: Transform
+      pos: -11.8,20.26
       parent: 2
 - proto: StairDark
   entities:
@@ -187751,5 +187771,12 @@ entities:
     components:
     - type: Transform
       pos: -9.552427,49.802536
+      parent: 2
+- proto: ToolboxMechanicalFilled
+  entities:
+  - uid: 29493
+    components:
+    - type: Transform
+      pos: -12.1,19.7
       parent: 2
 ...
