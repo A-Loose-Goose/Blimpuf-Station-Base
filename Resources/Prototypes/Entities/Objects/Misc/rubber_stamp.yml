@@ -153,7 +153,7 @@
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-hos
-    stampedColor: "#cc0000"
+    stampedColor: "#2c6682"
     stampState: "paper_stamp-hos"
   - type: Sprite
     state: stamp-hos
@@ -233,7 +233,7 @@
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-warden
-    stampedColor: "#5b0000"
+    stampedColor: "#00245b"
     stampState: "paper_stamp-warden"
   - type: Sprite
     state: stamp-warden

@@ -64,7 +64,7 @@
   components:
     - type: Stamp
       stampedName: "Brigmedic"
-      stampedColor: "#ae2e33"
+      stampedColor: "#000000"
       stampState: "paper_stamp-brigmedic"
     - type: Sprite
       sprite: _Starlight/Objects/Misc/stamps.rsi

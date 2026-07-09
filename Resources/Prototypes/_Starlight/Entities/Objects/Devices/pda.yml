@@ -62,9 +62,9 @@
        !type:String
        pda-veteranbrigmedic
   - type: PdaBorderColor
-    borderColor: "#A32D26"
-    accentHColor: "#d7d7d0"
-    accentVColor: "#d7d7d0"
+    borderColor: "#20526f"
+    accentHColor: "#ffffff"
+    accentVColor: "#ffffff"
   - type: Icon
     sprite: _Starlight/Objects/Devices/pda.rsi
     state: pda-veteranbrigmedic
@@ -95,9 +95,9 @@
        !type:String
        pda-corpsman
   - type: PdaBorderColor
-    borderColor: "#A32D26"
-    accentHColor: "#d7d7d0"
-    accentVColor: "#d7d7d0"
+    borderColor: "#20526f"
+    accentHColor: "#121010"
+    accentVColor: "#121010"
   - type: Icon
     sprite: _Starlight/Objects/Devices/pda.rsi
     state: pda-corpsman
@@ -128,9 +128,9 @@
        !type:String
        pda-veterancorpsman
   - type: PdaBorderColor
-    borderColor: "#A32D26"
-    accentHColor: "#d7d7d0"
-    accentVColor: "#d7d7d0"
+    borderColor: "#20526f"
+    accentHColor: "#121010"
+    accentVColor: "#121010"
   - type: Icon
     sprite: _Starlight/Objects/Devices/pda.rsi
     state: pda-veterancorpsman
@@ -161,7 +161,8 @@
         !type:String
         pda-dutyofficer
   - type: PdaBorderColor
-    borderColor: "#A32D26"
+    borderColor: "#333333"
+    accentVColor: "#ffffff"
   - type: Icon
     sprite: _Starlight/Objects/Devices/pda.rsi
     state: pda-dutyofficer

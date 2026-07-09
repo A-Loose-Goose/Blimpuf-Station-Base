@@ -371,7 +371,7 @@
   - type: Appearance
   - type: EntityStorageVisuals
     stateBaseClosed: brigmedic
-    stateDoorOpen: armory_open
+    stateDoorOpen: sec_open
     stateDoorClosed: brigmedic_door
   - type: AccessReader
     access: [["Brigmedic"]]
