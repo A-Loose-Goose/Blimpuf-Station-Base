@@ -127,15 +127,12 @@ namespace Content.Client.Lobby.UI
         public event Action<List<ProtoId<GuideEntryPrototype>>>? OnOpenGuidebook;
 
         private readonly ISawmill _sawmill;
-
-        #region Starlight
+        
 
 
         // Cosmatic Drift Record System-start
         private readonly RecordEditorGui _recordsTab; // Tracks CD records UI state
         // Cosmatic Drift Record System-end
-
-        #endregion Starlight
 
         public HumanoidProfileEditor(
             IClientPreferencesManager preferencesManager,
