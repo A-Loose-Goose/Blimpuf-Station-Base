@@ -3,7 +3,7 @@
   name: Secure Briefing Documents
   suffix: Do Not Map
   description: A set of classified documents to inform new members of Security
-  parent: [ BoxFolderRedEmpty, BaseCommandContraband ]
+  parent: [ BoxFolderBlueEmpty, BaseCommandContraband ]
   components:
   - type: EntityTableContainerFill
     containers:
