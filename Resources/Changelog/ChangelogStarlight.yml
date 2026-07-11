@@ -4177,5 +4177,17 @@ Entries:
   id: 4501
   time: '2026-07-09T21:50:12.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/45
+- author: ItsMaitake
+  changes:
+  - message: Changed the armory door remote, bola, secure briefings folder, and crisis
+      button to be blue.
+    type: Tweak
+  - message: Energy shotgun now properly references the blue sprites.
+    type: Tweak
+  - message: Brigmedic locker's open door is no longer blue, since the locker is black.
+    type: Tweak
+  id: 4601
+  time: '2026-07-11T02:32:56.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/46
 Order: -1
 
