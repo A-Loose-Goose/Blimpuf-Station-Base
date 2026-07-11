@@ -1,6 +1,6 @@
 ## Bruise packs
 - type: entity
-  name: red bruise pack
+  name: security bruise pack
   description: Security-Graded Bruise Packs for all your harmbaton needs!
   parent: BaseStarlightHealingItem
   id: RedBrutePack
@@ -34,7 +34,7 @@
         - IPC
 
 - type: entity
-  name: red bruise pack
+  name: security bruise pack
   description: Security-Graded Bruise Packs for all your harmbaton needs! You really went ham with that baton, huh?
   parent: RedBrutePack
   id: RedBrutePack1
@@ -47,7 +47,7 @@
     count: 1
 
 - type: entity
-  name: red bruise pack
+  name: security bruise pack
   description: Security-Graded Bruise Packs for all your harmbaton needs! Someone's been busy!
   parent: RedBrutePack
   id: RedBrutePack10
@@ -68,7 +68,7 @@
 
 # Ointments
 - type: entity
-  name: red ointment
+  name: security ointment
   description: Uses a special blend of pyrazine and aloe to treat severe burns. Does nothing for caustic.
   parent: BaseStarlightHealingItem
   id: RedOintment
@@ -104,7 +104,7 @@
         - IPC
 
 - type: entity
-  name: red ointment
+  name: security ointment
   description: Uses a special blend of pyrazine and aloe to treat severe burns. Does nothing for caustic. Gotta really squeeze for that last bit.
   parent: RedOintment
   id: RedOintment1
@@ -117,7 +117,7 @@
     count: 1
 
 - type: entity
-  name: red ointment
+  name: security ointment
   description: Uses a special blend of pyrazine and aloe to treat severe burns. Does nothing for caustic. Partially used..
   parent: RedOintment
   id: RedOintment10
