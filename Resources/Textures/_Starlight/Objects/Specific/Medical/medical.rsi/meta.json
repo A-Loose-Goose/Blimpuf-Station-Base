@@ -1,7 +1,7 @@
 {
 	"version": 1,
 	"license": "CC-BY-SA-3.0",
-    "copyright": "Base bruise pack/ointments taken from https://github.com/tgstation/tgstation/blob/a3568da5634e756d0849480104afda402c6f1c3c/icons/obj/medical/stack_medical.dmi, recolored by KillerTheFlareon for Starlight. Menders and Bandaid's taked from Paradise Station. Yellow brute packs and ointments by wonderfulnewworld (GitHub).",
+    "copyright": "Base bruise pack/ointments taken from https://github.com/tgstation/tgstation/blob/a3568da5634e756d0849480104afda402c6f1c3c/icons/obj/medical/stack_medical.dmi, recolored by KillerTheFlareon for Starlight. Menders and Bandaid's taked from Paradise Station. Yellow brute packs and ointments by wonderfulnewworld (GitHub), bluesec updates by ItsMaitake - edits to bruizinebrutepack, puncturate, redointment, and redbrutepack.",
 	"size": {
 		"x": 32,
 		"y": 32
