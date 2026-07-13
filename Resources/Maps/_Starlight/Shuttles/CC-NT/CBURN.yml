@@ -254,7 +254,7 @@ entities:
           decals:
             85: 7,14
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: HalfTileOverlayGreyscale270
           decals:
             62: 0,-11
@@ -268,7 +268,7 @@ entities:
           decals:
             95: 13,14
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: HalfTileOverlayGreyscale90
           decals:
             59: 2,-9
@@ -282,7 +282,7 @@ entities:
           decals:
             161: 13,2
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: QuarterTileOverlayGreyscale270
           decals:
             72: 1,-7
@@ -291,7 +291,7 @@ entities:
             75: 1,-10
             82: 1,-11
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: QuarterTileOverlayGreyscale90
           decals:
             68: 1,-10
@@ -320,22 +320,22 @@ entities:
           decals:
             94: 13,15
         - node:
-            color: '#DE3A3AFF'
+            color: '#97DBFFFF'
             id: WarnCornerNE
           decals:
             35: 5,-7
         - node:
-            color: '#DE3A3AFF'
+            color: '#97DBFFFF'
             id: WarnCornerNW
           decals:
             36: 4,-7
         - node:
-            color: '#DE3A3AFF'
+            color: '#97DBFFFF'
             id: WarnCornerSE
           decals:
             37: 5,-8
         - node:
-            color: '#DE3A3AFF'
+            color: '#97DBFFFF'
             id: WarnCornerSW
           decals:
             38: 4,-8
@@ -368,7 +368,7 @@ entities:
             119: 9,-6
             120: 11,-6
         - node:
-            color: '#DE3A3AFF'
+            color: '#97DBFFFF'
             id: WarnLineE
           decals:
             39: -1,-7
@@ -411,7 +411,7 @@ entities:
             9: 8,3
             13: 12,1
         - node:
-            color: '#DE3A3AFF'
+            color: '#97DBFFFF'
             id: WarnLineN
           decals:
             44: 3,-10
@@ -448,6 +448,42 @@ entities:
             30: 1,0
             31: 1,1
             32: 1,1
+        - node:
+            color: '#4795BEFF'
+            id: WarnCornerGreyscale
+          decals:
+            163: 4,-8
+        - node:
+            color: '#4795BEFF'
+            id: WarnCornerGreyscaleNE
+          decals:
+            164: 5,-7
+        - node:
+            color: '#4795BEFF'
+            id: WarnCornerFlippedGreyscale
+          decals:
+            165: 5,-8
+        - node:
+            color: '#4795BEFF'
+            id: WarnCornerGreyscaleNW
+          decals:
+            166: 4,-7
+        - node:
+            color: '#4795BEFF'
+            id: WarnLineGreyscaleE
+          decals:
+            167: -1,-10
+            168: -1,-11
+            169: -1,-9
+            170: -1,-8
+            171: -1,-7
+        - node:
+            color: '#4795BEFF'
+            id: WarningLineGreyscale
+          decals:
+            172: 3,-10
+            173: 4,-10
+            179: 5,-10
     - type: GridAtmosphere
       version: 2
       data:
