@@ -67,94 +67,94 @@ entities:
         version: 2
         nodes:
         - node:
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileSteelCornerNe
           decals:
             11: 1,0
             27: 2,-3
         - node:
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileSteelCornerNw
           decals:
             6: -2,-3
             12: -1,0
             26: 1,-3
         - node:
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileSteelCornerSe
           decals:
             3: 2,-5
             7: -1,-5
         - node:
             zIndex: 2
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileSteelCornerSe
           decals:
             31: 1,-1
         - node:
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileSteelCornerSw
           decals:
             5: 1,-5
             8: -2,-5
         - node:
             zIndex: 2
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileSteelEndN
           decals:
             16: 0,1
         - node:
             zIndex: 2
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileSteelInnerNe
           decals:
             18: 0,0
         - node:
             zIndex: 2
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileSteelInnerNw
           decals:
             17: 0,0
         - node:
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileSteelLineE
           decals:
             28: 2,-4
         - node:
             zIndex: 2
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileSteelLineE
           decals:
             33: -1,-3
         - node:
             zIndex: 2
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileSteelLineS
           decals:
             15: 0,-1
         - node:
             zIndex: 2
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileSteelLineW
           decals:
             32: -1,-1
         - node:
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: WarnLineGreyscaleE
           decals:
             20: -1,-4
         - node:
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: WarnLineGreyscaleN
           decals:
             29: -1,-3
         - node:
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: WarnLineGreyscaleS
           decals:
             30: -1,-1
         - node:
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: WarnLineGreyscaleW
           decals:
             21: 1,-4
@@ -266,13 +266,6 @@ entities:
 - proto: Bed
   entities:
   - uid: 8
-    components:
-    - type: Transform
-      pos: 2.5,-2.5
-      parent: 1
-- proto: BedsheetOrange
-  entities:
-  - uid: 9
     components:
     - type: Transform
       pos: 2.5,-2.5
@@ -1035,5 +1028,12 @@ entities:
     components:
     - type: Transform
       pos: 1.5,-2.5
+      parent: 1
+- proto: BedsheetBlue
+  entities:
+  - uid: 126
+    components:
+    - type: Transform
+      pos: 2.5,-2.5
       parent: 1
 ...
