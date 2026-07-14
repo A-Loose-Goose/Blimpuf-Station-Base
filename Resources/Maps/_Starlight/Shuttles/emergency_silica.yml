@@ -104,8 +104,8 @@ entities:
             251: -1,32
             254: -0.99737495,30.472572
         - node:
-            zIndex: 1
             angle: 3.141592653589793 rad
+            zIndex: 1
             color: '#FFFFFFFF'
             id: Arrows
           decals:
@@ -143,7 +143,7 @@ entities:
             325: 1,21
         - node:
             zIndex: 1
-            color: '#FF5C5CFF'
+            color: '#4795BEFF'
             id: BrickTileSteelCornerNe
           decals:
             209: -3,21
@@ -157,7 +157,7 @@ entities:
             322: -1,21
         - node:
             zIndex: 1
-            color: '#FF5C5CFF'
+            color: '#4795BEFF'
             id: BrickTileSteelCornerNw
           decals:
             207: -5,21
@@ -192,7 +192,7 @@ entities:
             140: -1,4
         - node:
             zIndex: 1
-            color: '#FF5C5CFF'
+            color: '#4795BEFF'
             id: BrickTileSteelInnerSe
           decals:
             246: -5,18
@@ -205,7 +205,7 @@ entities:
             134: -1,10
         - node:
             zIndex: 1
-            color: '#FF5C5CFF'
+            color: '#4795BEFF'
             id: BrickTileSteelInnerSw
           decals:
             245: -3,18
@@ -241,17 +241,12 @@ entities:
             321: 1,24
         - node:
             zIndex: 1
-            color: '#DE3A3AFF'
-            id: BrickTileSteelLineE
-          decals:
-            234: -3,18
-        - node:
-            zIndex: 1
-            color: '#FF5C5CFF'
+            color: '#4795BEFF'
             id: BrickTileSteelLineE
           decals:
             216: -3,19
             217: -3,20
+            234: -3,18
         - node:
             color: '#FFFFFFFF'
             id: BrickTileSteelLineE
@@ -283,7 +278,7 @@ entities:
             326: 0,21
         - node:
             zIndex: 1
-            color: '#FF5C5CFF'
+            color: '#4795BEFF'
             id: BrickTileSteelLineN
           decals:
             208: -4,21
@@ -308,7 +303,7 @@ entities:
             331: 0,15
         - node:
             zIndex: 1
-            color: '#FF5C5CFF'
+            color: '#4795BEFF'
             id: BrickTileSteelLineS
           decals:
             244: -4,18
@@ -333,17 +328,12 @@ entities:
             337: -1,19
         - node:
             zIndex: 1
-            color: '#DE3A3AFF'
-            id: BrickTileSteelLineW
-          decals:
-            233: -5,18
-        - node:
-            zIndex: 1
-            color: '#FF5C5CFF'
+            color: '#4795BEFF'
             id: BrickTileSteelLineW
           decals:
             210: -5,20
             211: -5,19
+            233: -5,18
         - node:
             color: '#FFFFFFFF'
             id: BrickTileSteelLineW
@@ -373,7 +363,7 @@ entities:
             272: 5,29
         - node:
             zIndex: 1
-            color: '#FA750096'
+            color: '#37789B96'
             id: BrickTileWhiteCornerSe
           decals:
             229: -3,15
@@ -386,7 +376,7 @@ entities:
             270: 3,29
         - node:
             zIndex: 1
-            color: '#FA750096'
+            color: '#37789B96'
             id: BrickTileWhiteCornerSw
           decals:
             227: -5,15
@@ -414,7 +404,7 @@ entities:
             299: 3,33
         - node:
             zIndex: 1
-            color: '#FA750096'
+            color: '#37789B96'
             id: BrickTileWhiteInnerNe
           decals:
             240: -5,16
@@ -426,7 +416,7 @@ entities:
             297: -3,33
         - node:
             zIndex: 1
-            color: '#FA750096'
+            color: '#37789B96'
             id: BrickTileWhiteInnerNw
           decals:
             241: -3,16
@@ -464,7 +454,7 @@ entities:
             204: 3,16
         - node:
             zIndex: 1
-            color: '#FA750096'
+            color: '#37789B96'
             id: BrickTileWhiteLineE
           decals:
             235: -3,17
@@ -480,7 +470,7 @@ entities:
             280: 1,34
         - node:
             zIndex: 1
-            color: '#FA750096'
+            color: '#37789B96'
             id: BrickTileWhiteLineN
           decals:
             239: -4,16
@@ -500,7 +490,7 @@ entities:
             271: 4,29
         - node:
             zIndex: 1
-            color: '#FA750096'
+            color: '#37789B96'
             id: BrickTileWhiteLineS
           decals:
             228: -4,15
@@ -527,7 +517,7 @@ entities:
             202: 3,16
         - node:
             zIndex: 1
-            color: '#FA750096'
+            color: '#37789B96'
             id: BrickTileWhiteLineW
           decals:
             237: -5,17
@@ -602,8 +592,8 @@ entities:
             27: 5,25
             28: 5,23
         - node:
-            zIndex: 2
             angle: -1.5707963267948966 rad
+            zIndex: 2
             color: '#FFFFFFFF'
             id: StandClear
           decals:
@@ -623,8 +613,8 @@ entities:
             311: 0,27
             312: 0,29
         - node:
-            zIndex: 2
             angle: 1.5707963267948966 rad
+            zIndex: 2
             color: '#FFFFFFFF'
             id: StandClear
           decals:
@@ -1442,14 +1432,6 @@ entities:
     components:
     - type: Transform
       pos: 5.5,15.5
-      parent: 1
-- proto: BedsheetOrange
-  entities:
-  - uid: 75
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -2.5,15.5
       parent: 1
 - proto: Bloodpack
   entities:
@@ -9056,5 +9038,12 @@ entities:
     components:
     - type: Transform
       pos: -4.5,24.5
+      parent: 1
+- proto: BedsheetBlue
+  entities:
+  - uid: 1262
+    components:
+    - type: Transform
+      pos: -2.5,15.5
       parent: 1
 ...

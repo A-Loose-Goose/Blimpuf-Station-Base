@@ -233,7 +233,7 @@ entities:
             94: -3,23
             95: -1,23
         - node:
-            color: '#7915004C'
+            color: '#224A604C'
             id: CheckerNWSE
           decals:
             163: 4,15
@@ -345,7 +345,7 @@ entities:
             70: 7,3
             71: 8,3
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: QuarterTileOverlayGreyscale
           decals:
             77: 3,13
