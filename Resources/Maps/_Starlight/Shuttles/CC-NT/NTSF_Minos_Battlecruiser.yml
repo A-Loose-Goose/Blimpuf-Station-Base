@@ -258,7 +258,7 @@ entities:
             1569: -13,7
             1570: -13,6
         - node:
-            color: '#9C2020FF'
+            color: '#37789BFF'
             id: MiniTileDarkLineE
           decals:
             1479: 12,-18
@@ -298,11 +298,11 @@ entities:
             1560: -10,11
             1561: -9,11
         - node:
-            color: '#9C2020FF'
+            color: '#37789BFF'
             id: MiniTileDarkLineN
           decals:
             1488: 11,-14
-            1489: 13,-14
+            1489: 13,-15
             1491: 12,-14
             1508: 9,8
             1509: 10,8
@@ -490,7 +490,7 @@ entities:
           decals:
             898: 9,22
         - node:
-            color: '#9C2020FF'
+            color: '#37789BFF'
             id: MiniTileSteelCornerSw
           decals:
             1492: 13,-13
@@ -746,7 +746,7 @@ entities:
             1919: 7,29
             1920: 7,30
         - node:
-            color: '#9C2020FF'
+            color: '#37789BFF'
             id: MiniTileWhiteCornerSw
           decals:
             1493: 13,-13
@@ -849,7 +849,7 @@ entities:
             1418: 7,-11
             2217: 8,-11
         - node:
-            color: '#9C2020FF'
+            color: '#37789BFF'
             id: MiniTileWhiteLineS
           decals:
             1269: 12,-13
@@ -921,7 +921,7 @@ entities:
             2220: 8,-15
             2221: 8,-16
         - node:
-            color: '#9C2020FF'
+            color: '#37789BFF'
             id: MiniTileWhiteLineW
           decals:
             1253: 13,-11
@@ -959,7 +959,7 @@ entities:
             1863: 6,10
             1864: 6,11
         - node:
-            color: '#9C2020FF'
+            color: '#37789BFF'
             id: OldConcreteTrimLineE
           decals:
             1261: 12,-18
@@ -971,7 +971,7 @@ entities:
             1267: 12,-12
             1268: 12,-11
         - node:
-            color: '#9C2020FF'
+            color: '#37789BFF'
             id: OldConcreteTrimLineN
           decals:
             1273: 12,-14

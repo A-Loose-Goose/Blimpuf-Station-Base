@@ -89,27 +89,27 @@ entities:
             176: -1,-3
             177: -1,-4
         - node:
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileSteelCornerNe
           decals:
             73: -5,4
         - node:
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileSteelCornerNw
           decals:
             74: -7,4
         - node:
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileSteelCornerSe
           decals:
             76: -5,3
         - node:
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileSteelCornerSw
           decals:
             75: -7,3
         - node:
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: BrickTileSteelLineN
           decals:
             77: -6,4
@@ -119,13 +119,13 @@ entities:
           decals:
             42: 1,5
         - node:
-            color: '#DE3A3ACD'
+            color: '#37789BCD'
             id: BrickTileWhiteCornerNe
           decals:
             7: -2,8
             24: -2,12
         - node:
-            color: '#F9801DE6'
+            color: '#224A60E6'
             id: BrickTileWhiteCornerNe
           decals:
             63: 1,8
@@ -135,17 +135,17 @@ entities:
           decals:
             41: 0,5
         - node:
-            color: '#DE3A3ACD'
+            color: '#37789BCD'
             id: BrickTileWhiteCornerNw
           decals:
             25: -6,12
         - node:
-            color: '#F53A3A93'
+            color: '#37789B93'
             id: BrickTileWhiteCornerNw
           decals:
             85: -3,8
         - node:
-            color: '#F9801DE6'
+            color: '#224A60E6'
             id: BrickTileWhiteCornerNw
           decals:
             62: 0,8
@@ -160,18 +160,18 @@ entities:
           decals:
             48: 1,-4
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickTileWhiteCornerSe
           decals:
             54: -2,-3
             55: -2,-3
         - node:
-            color: '#DE3A3ACD'
+            color: '#37789BCD'
             id: BrickTileWhiteCornerSe
           decals:
             27: -2,10
         - node:
-            color: '#F9801DE6'
+            color: '#224A60E6'
             id: BrickTileWhiteCornerSe
           decals:
             61: 1,7
@@ -181,32 +181,32 @@ entities:
           decals:
             43: 0,4
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickTileWhiteCornerSw
           decals:
             72: -3,-3
         - node:
-            color: '#DE3A3ACD'
+            color: '#37789BCD'
             id: BrickTileWhiteCornerSw
           decals:
             26: -6,10
         - node:
-            color: '#F9801DE6'
+            color: '#224A60E6'
             id: BrickTileWhiteCornerSw
           decals:
             60: 0,7
         - node:
-            color: '#DE3A3ACD'
+            color: '#37789BCD'
             id: BrickTileWhiteEndN
           decals:
             36: -6,8
         - node:
-            color: '#DE3A3ACD'
+            color: '#37789BCD'
             id: BrickTileWhiteEndS
           decals:
             37: -6,6
         - node:
-            color: '#DE3A3ACD'
+            color: '#37789BCD'
             id: BrickTileWhiteLineE
           decals:
             8: -2,-2
@@ -222,19 +222,19 @@ entities:
             28: -2,11
             38: -6,7
         - node:
-            color: '#DE3A3ACD'
+            color: '#37789BCD'
             id: BrickTileWhiteLineN
           decals:
             33: -5,12
             34: -4,12
             35: -3,12
         - node:
-            color: '#79150096'
+            color: '#224A6096'
             id: BrickTileWhiteLineS
           decals:
             90: -6,3
         - node:
-            color: '#DE3A3ACD'
+            color: '#37789BCD'
             id: BrickTileWhiteLineS
           decals:
             30: -5,10
@@ -246,7 +246,7 @@ entities:
           decals:
             87: -3,4
         - node:
-            color: '#DE3A3ACD'
+            color: '#37789BCD'
             id: BrickTileWhiteLineW
           decals:
             18: -3,5
@@ -258,19 +258,19 @@ entities:
             39: -6,7
         - node:
             zIndex: 1
-            color: '#DE3A3AFF'
+            color: '#37789BFF'
             id: BrickTileWhiteLineW
           decals:
             95: -3,-2
         - node:
             zIndex: 2
-            color: '#DE3A3AFF'
+            color: '#37789BFF'
             id: BrickTileWhiteLineW
           decals:
             133: -3,2
             134: -3,1
         - node:
-            color: '#F9801DFF'
+            color: '#224A60FF'
             id: BrickTileWhiteLineW
           decals:
             86: -3,7
@@ -302,7 +302,7 @@ entities:
             69: -4,-5
             70: -2,-5
         - node:
-            color: '#DE3A3A41'
+            color: '#37789B41'
             id: MonoOverlay
           decals:
             56: -5,13
@@ -356,17 +356,13 @@ entities:
           decals:
             165: 1,-1
         - node:
-            color: '#79150096'
-            id: WarnFullGreyscale
-          decals:
-            94: -6,5
-        - node:
-            color: '#DE3A3A96'
+            color: '#4795BE96'
             id: WarnFullGreyscale
           decals:
             91: -3,9
             92: -2,9
             93: -6,9
+            94: -6,5
         - node:
             color: '#FFFFFFFF'
             id: WoodTrimThinBox
@@ -794,30 +790,6 @@ entities:
     - type: Transform
       pos: 0.5,2.5
       parent: 1
-- proto: BedsheetOrange
-  entities:
-  - uid: 33
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 1.5,5.5
-      parent: 1
-  - uid: 34
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 1.5,8.5
-      parent: 1
-  - uid: 35
-    components:
-    - type: Transform
-      pos: 0.5,5.5
-      parent: 1
-  - uid: 36
-    components:
-    - type: Transform
-      pos: 0.5,8.5
-      parent: 1
 - proto: BorgCharger
   entities:
   - uid: 37
@@ -867,13 +839,6 @@ entities:
     components:
     - type: Transform
       pos: -4.2180023,8.766628
-      parent: 1
-- proto: BoxFolderRed
-  entities:
-  - uid: 41
-    components:
-    - type: Transform
-      pos: -0.53362274,11.605877
       parent: 1
 - proto: BoxHandcuff
   entities:
@@ -4452,5 +4417,34 @@ entities:
     components:
     - type: Transform
       pos: -6.504833,7.159015
+      parent: 1
+- proto: BedsheetBlue
+  entities:
+  - uid: 587
+    components:
+    - type: Transform
+      pos: 0.5,5.5
+      parent: 1
+  - uid: 588
+    components:
+    - type: Transform
+      pos: 1.5,5.5
+      parent: 1
+  - uid: 589
+    components:
+    - type: Transform
+      pos: 0.5,8.5
+      parent: 1
+  - uid: 590
+    components:
+    - type: Transform
+      pos: 1.5,8.5
+      parent: 1
+- proto: BoxFolderBlue
+  entities:
+  - uid: 591
+    components:
+    - type: Transform
+      pos: -0.53362274,11.605877
       parent: 1
 ...

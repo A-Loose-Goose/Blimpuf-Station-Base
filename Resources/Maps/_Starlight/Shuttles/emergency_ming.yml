@@ -797,7 +797,7 @@ entities:
             553: 11,-8
             554: 12,-8
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: HalfTileOverlayGreyscale180
           decals:
             19: 8,13
@@ -810,7 +810,7 @@ entities:
             707: 7,-11
             708: 7,-10
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: HalfTileOverlayGreyscale270
           decals:
             24: 3,14
@@ -824,7 +824,7 @@ entities:
             585: 12,-11
             586: 12,-10
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: HalfTileOverlayGreyscale90
           decals:
             20: 9,14
@@ -859,7 +859,7 @@ entities:
           decals:
             704: 7,-9
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: ThreeQuarterTileOverlayGreyscale180
           decals:
             18: 9,13
@@ -869,7 +869,7 @@ entities:
           decals:
             705: 7,-13
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: ThreeQuarterTileOverlayGreyscale270
           decals:
             17: 3,13
@@ -8869,4 +8869,30 @@ entities:
       parent: 1
     - type: DeltaPressure
       gridUid: 1
+- proto: SignSecurity
+  entities:
+  - uid: 1333
+    components:
+    - type: Transform
+      pos: 4.5,9.5
+      parent: 1
+  - uid: 1334
+    components:
+    - type: Transform
+      pos: 8.5,9.5
+      parent: 1
+- proto: SignMedical
+  entities:
+  - uid: 1335
+    components:
+    - type: Transform
+      pos: 11.5,-2.5
+      parent: 1
+- proto: SignEngineering
+  entities:
+  - uid: 1336
+    components:
+    - type: Transform
+      pos: 1.5,-2.5
+      parent: 1
 ...
