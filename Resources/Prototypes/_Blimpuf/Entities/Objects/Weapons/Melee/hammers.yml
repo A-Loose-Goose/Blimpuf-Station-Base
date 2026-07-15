@@ -1,6 +1,6 @@
 - type: entity
   name: Chief Engineer's Breaching Hammer
-  parent: [BaseItem, BaseSecurityContraband]
+  parent: [BaseItem, BaseCommandContraband]
   id: HammerBreachingCE
   description: An orange colored, weighty hammer made for breaching through walls and doors. Its reinforced head and sturdy handle make it ideal for demolition tasks.
   components:
@@ -31,7 +31,7 @@
     - Prying
     useSound: /Audio/Items/jaws_pry.ogg
   - type: Prying
-    speedModifier: 1.5
+    speedModifier: 2
     pryPowered: true
     useSound: /Audio/Items/jaws_pry.ogg
   - type: Clothing
