@@ -251,6 +251,7 @@
     - id: RubberStampCE
     - id: MetalFoamGrenade
     - id: PrintedDocumentGreenshiftAlert #SL
+    - id: HammerBreachingCE # Blimpuf
       conditions: #SL
       - !type:GamemodeCondition #SL
         presets: #SL
