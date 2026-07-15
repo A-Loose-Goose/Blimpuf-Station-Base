@@ -8,7 +8,7 @@
       department: Security
       time: 72000 # 20 hrs
     - !type:RolesRequirement
-      proto: ExtRolesReq
+      proto: CCEReq
   setPreference: false
   startingGear: DecimusGear
   icon: JobIconDecimus
@@ -54,5 +54,4 @@
     - FreedomImplanter
   inhand:
   - PrototypeVibroblade
-
 
