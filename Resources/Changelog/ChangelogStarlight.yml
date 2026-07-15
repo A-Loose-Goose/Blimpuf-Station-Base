@@ -4189,5 +4189,14 @@ Entries:
   id: 4601
   time: '2026-07-11T02:32:56.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/46
+- author: LadyLiliana
+  changes:
+  - message: Sec Colours changed to Blue on Shuttles.
+    type: Tweak
+  - message: Sec Colours changed to Blue on Centcom.
+    type: Tweak
+  id: 4801
+  time: '2026-07-15T18:12:05.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/48
 Order: -1
 
