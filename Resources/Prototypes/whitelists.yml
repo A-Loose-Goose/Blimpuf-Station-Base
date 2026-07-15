@@ -5,3 +5,17 @@
       action: Allow # Allow connection if matched
     - !type:ConditionAlwaysMatch # Condition that always matches
       action: Deny # Deny connection if matched
+
+- type: playerConnectionWhitelist
+  id: blimpufDiscordWhitelist
+  conditions:
+    - !type:ConditionManualBlacklistMembership
+      action: Deny
+    - !type:ConditionManualWhitelistMembership
+      action: Allow
+    - !type:BlimpufDiscordRolesCondition
+      roles:
+        - 1526329038573011315
+      action: Allow
+    - !type:ConditionAlwaysMatch
+      action: Deny

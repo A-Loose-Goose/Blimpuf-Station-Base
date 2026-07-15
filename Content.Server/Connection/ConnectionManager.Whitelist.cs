@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
-using Content.Server._NullLink;
+using Content.Server._Blimpuf.Discord;
 using Content.Server.Connection.Whitelist;
 using Content.Server.Connection.Whitelist.Conditions;
 using Content.Server.Database;
@@ -16,6 +16,8 @@ namespace Content.Server.Connection;
 /// </summary>
 public sealed partial class ConnectionManager
 {
+    [Dependency] private IBlimpufDiscordRoleProvider _blimpufDiscordRoles = default!;
+
     private PlayerConnectionWhitelistPrototype[]? _whitelists;
 
     private void InitializeWhitelist()
@@ -87,12 +89,12 @@ public sealed partial class ConnectionManager
                     matched = CheckConditionNotesPlaytimeRange(conditionNotesPlaytimeRange, cacheRemarks, cachePlaytime);
                     denyMessage = Loc.GetString("whitelist-notes");
                     break;
-                // NullLink Whitelist start
-                case NullLinkRolesCondition nullLinkRolesCondition:
-                    matched = await CheckNullLinkRolesCondition(nullLinkRolesCondition, data.UserId);
+				// Blimpuf start
+                case BlimpufDiscordRolesCondition blimpufDiscordRolesCondition:
+                    matched = await CheckBlimpufDiscordRolesCondition(blimpufDiscordRolesCondition, data.UserId);
                     denyMessage = Loc.GetString("whitelist-roles");
                     break;
-                // NullLink Whitelist end
+				// Blimpuf end
                 default:
                     throw new NotImplementedException($"Whitelist condition {condition.GetType().Name} not implemented");
             }
@@ -165,21 +167,19 @@ public sealed partial class ConnectionManager
         return tracker.TimeSpent.TotalMinutes >= conditionPlaytime.MinimumPlaytime;
     }
 
-    // NullLink Whitelist start
-    private async Task<bool> CheckNullLinkRolesCondition(NullLinkRolesCondition condition, NetUserId userId)
+    private async Task<bool> CheckBlimpufDiscordRolesCondition(BlimpufDiscordRolesCondition condition, NetUserId userId)
     {
         try
         {
-            return _actors.TryGetServerGrain(out var server)
-                && await server.HasPlayerAnyRole(userId, [.. condition.Roles]);
+            var snapshot = await _blimpufDiscordRoles.GetRolesAsync(userId);
+            return snapshot?.Roles.Any(condition.Roles.Contains) == true;
         }
-        catch (Exception)
+        catch (Exception ex)
         {
+            _sawmill.Warning("Blimpuf Discord whitelist role lookup failed for {UserId}: {Error}", userId, ex.Message);
+            return false;
         }
-        return false;
     }
-
-    // NullLink Whitelist end
 
     private bool CheckConditionNotesPlaytimeRange(
         ConditionNotesPlaytimeRange conditionNotesPlaytimeRange,
