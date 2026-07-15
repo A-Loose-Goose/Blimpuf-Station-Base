@@ -11,6 +11,7 @@ using Content.Server.Discord.DiscordLink;
 using Content.Server.Discord.WebhookMessages;
 using Content.Server.EUI;
 using Content.Server.GhostKick;
+using Content.Server._Blimpuf.Discord;
 using Content.Server.Info;
 using Content.Server.Mapping;
 using Content.Server.Maps;
@@ -120,5 +121,6 @@ internal static class ServerContentIoC
         deps.Register<ISharedNullLinkPlayerResourcesManager, NullLinkPlayerResourcesManager>();
 
         // nulllink end
+        deps.Register<IBlimpufDiscordRoleProvider, BlimpufDiscordRoleProvider>(); // Blimpuf
     }
 }
