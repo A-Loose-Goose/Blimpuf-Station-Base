@@ -113,6 +113,11 @@
       color: "#afd759"
       roles:
       - 1348034282370896012 # Contributor
+  - # blimpuf role badges
+    titles:
+    - text: "[font=\"Icon\"]\uEC7B[/font]"
+      roles:
+      - 1514361823770710057 # Blimpuf Mentor
   - # badge
     titles:
     - text: "[font=\"Icon\"][/font]"
