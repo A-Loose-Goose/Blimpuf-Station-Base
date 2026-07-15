@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 05/22/2026 05:40:57
-  entityCount: 1398
+  entityCount: 1400
 maps: []
 grids:
 - 1
@@ -137,7 +137,7 @@ entities:
             466: 18,-7
             491: 0,-6
         - node:
-            color: '#B02E26FF'
+            color: '#37789BFF'
             id: BrickTileSteelCornerNe
           decals:
             362: 3,-15
@@ -149,7 +149,7 @@ entities:
             505: -4,-7
             510: 16,-10
         - node:
-            color: '#B02E26FF'
+            color: '#37789BFF'
             id: BrickTileSteelCornerNw
           decals:
             378: -3,-15
@@ -178,7 +178,7 @@ entities:
             501: -4,-9
             509: 16,-6
         - node:
-            color: '#B02E26FF'
+            color: '#37789BFF'
             id: BrickTileSteelCornerSw
           decals:
             389: -6,-17
@@ -202,7 +202,7 @@ entities:
             493: 0,-8
             497: 0,-9
         - node:
-            color: '#B02E26FF'
+            color: '#37789BFF'
             id: BrickTileSteelLineE
           decals:
             376: 3,-17
@@ -231,7 +231,7 @@ entities:
             489: -2,-6
             490: -1,-6
         - node:
-            color: '#B02E26FF'
+            color: '#37789BFF'
             id: BrickTileSteelLineN
           decals:
             363: 2,-15
@@ -266,7 +266,7 @@ entities:
             498: -1,-10
             499: -2,-10
         - node:
-            color: '#B02E26FF'
+            color: '#37789BFF'
             id: BrickTileSteelLineS
           decals:
             388: -5,-17
@@ -297,7 +297,7 @@ entities:
             514: 17,-9
             515: 17,-8
         - node:
-            color: '#B02E26FF'
+            color: '#37789BFF'
             id: BrickTileSteelLineW
           decals:
             380: -3,-16
@@ -788,7 +788,7 @@ entities:
             455: 14,-4
             473: 17,-13
         - node:
-            color: '#B02E26FF'
+            color: '#37789BFF'
             id: diagonalsteel
           decals:
             387: -4,-17
@@ -802,7 +802,7 @@ entities:
             456: 13,-4
             474: 16,-13
         - node:
-            color: '#B02E26FF'
+            color: '#37789BFF'
             id: diagonalsteel1
           decals:
             411: -3,-18
@@ -815,7 +815,7 @@ entities:
             458: 14,-3
             460: 17,-3
         - node:
-            color: '#B02E26FF'
+            color: '#37789BFF'
             id: diagonalsteel3
           decals:
             386: -4,-15
@@ -833,7 +833,7 @@ entities:
           decals:
             469: 17,-9
         - node:
-            color: '#B02E26FF'
+            color: '#37789BFF'
             id: diagonalsteelcorner
           decals:
             392: -4,-16
@@ -859,7 +859,7 @@ entities:
           decals:
             465: 17,-7
         - node:
-            color: '#B02E26FF'
+            color: '#37789BFF'
             id: diagonalsteelcorner3
           decals:
             391: -4,-16
@@ -10199,5 +10199,19 @@ entities:
     components:
     - type: Transform
       pos: 7.557244,-6.490247
+      parent: 1
+- proto: SignArmory
+  entities:
+  - uid: 1399
+    components:
+    - type: Transform
+      pos: 2.5,-13.5
+      parent: 1
+- proto: SignChem
+  entities:
+  - uid: 1400
+    components:
+    - type: Transform
+      pos: 6.5,-4.5
       parent: 1
 ...
