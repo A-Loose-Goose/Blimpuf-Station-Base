@@ -90,6 +90,10 @@
       reagents:
       - Lexorin
       - Lead
+    - quantity: 5
+      weight: 1.5
+      reagents:
+        - Romerol #We're so back, gamers.
 
 - type: entity
   name: strange pill
