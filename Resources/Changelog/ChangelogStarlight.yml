@@ -4198,5 +4198,18 @@ Entries:
   id: 4801
   time: '2026-07-15T18:12:05.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/48
+- author: ItsMaitake
+  changes:
+  - message: Added romerol back to the strange pill chemical table.
+    type: Tweak
+  - message: CE's breaching hammer to the game, and put it in the CE's locker.
+    type: Add
+  - message: HOS's job icon is now different than the security officer icon.
+    type: Tweak
+  - message: Changed color of medsec hud to fit the bluesec theme.
+    type: Tweak
+  id: 4701
+  time: '2026-07-16T05:36:40.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/47
 Order: -1
 
