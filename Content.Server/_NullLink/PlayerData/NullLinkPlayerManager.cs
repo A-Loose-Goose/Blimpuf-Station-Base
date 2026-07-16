@@ -35,6 +35,7 @@ public sealed partial class NullLinkPlayerManager : INullLinkPlayerManager, IAch
     [Dependency] private IAdminManager _adminManager = default!;
     [Dependency] private ITaskManager _taskManager = default!;
     [Dependency] private IBlimpufDiscordRoleProvider _blimpufDiscordRoles = default!;
+    [Dependency] private IBlimpufDiscordLinkService _blimpufDiscordLink = default!;
 
     private readonly ConcurrentDictionary<Guid, PlayerData> _playerById = [];
     private readonly ConcurrentDictionary<Guid, ICommonSession> _mentors = [];
@@ -58,7 +59,6 @@ public sealed partial class NullLinkPlayerManager : INullLinkPlayerManager, IAch
         _netMgr.RegisterNetMessage<MsgAchievementList>();
         _netMgr.RegisterNetMessage<MsgAchievementNotification>();
         _playerManager.PlayerStatusChanged += PlayerStatusChanged;
-        InitializeLinking();
         _cfg.OnValueChanged(NullLinkCCVars.RoleReqMentors, UpdateMentors, true);
         _cfg.OnValueChanged(NullLinkCCVars.AdminRankBuilder, UpdateAdminBuilder, true);
         _cfg.OnValueChanged(NullLinkCCVars.TitleBuild, UpdateTitleBuilder, true);
@@ -113,7 +113,6 @@ public sealed partial class NullLinkPlayerManager : INullLinkPlayerManager, IAch
                     serverGrain.PlayerConnected(e.Session.UserId)
                         .FireAndForget(err=> _sawmill.Error($"PlayerConnected dispatch failed: {err}"));
                 SendPlayerRoles(e.Session, state.Roles);
-                CheckDiscordLink(e.Session);
                 SyncBlimpufDiscordRoles(e.Session);
                 break;
             case SessionStatus.InGame:
@@ -191,7 +190,13 @@ public sealed partial class NullLinkPlayerManager : INullLinkPlayerManager, IAch
             }
 
             if (snapshot == null)
+            {
+                var url = _blimpufDiscordLink.GetAuthUrl(session.UserId.ToString());
+                if (!string.IsNullOrEmpty(url))
+                    _taskManager.RunOnMainThread(() => OpenDiscordPrompt(session, url));
+
                 return;
+            }
 
             _taskManager.RunOnMainThread(() =>
             {

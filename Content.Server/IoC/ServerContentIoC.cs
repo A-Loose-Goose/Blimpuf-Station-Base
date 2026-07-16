@@ -122,5 +122,6 @@ internal static class ServerContentIoC
 
         // nulllink end
         deps.Register<IBlimpufDiscordRoleProvider, BlimpufDiscordRoleProvider>(); // Blimpuf
+        deps.Register<IBlimpufDiscordLinkService, BlimpufDiscordLinkService>(); // Blimpuf
     }
 }
