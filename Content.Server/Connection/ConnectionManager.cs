@@ -243,7 +243,11 @@ namespace Content.Server.Connection
                     properties["delay"] = _cfg.GetCVar(CCVars.GameServerFullReconnectDelay);
 
                 //NullLink discord link
-                properties["discord"] = _nullLinkPlayerManager.GetDiscordAuthUrl(e.UserId.ToString());
+                var discordAuthUrl = _nullLinkPlayerManager.GetDiscordAuthUrl(e.UserId.ToString());
+                properties["discord"] = discordAuthUrl;
+
+                if (reason == ConnectionDenyReason.Whitelist)
+                    msg = BuildWhitelistDenyMessage(msg, properties);
 
                 e.Deny(new NetDenyReason(msg, properties));
             }
@@ -473,6 +477,39 @@ namespace Content.Server.Connection
             }
 
             return null;
+        }
+
+        private string BuildWhitelistDenyMessage(string baseMessage, Dictionary<string, object> properties)
+        {
+            var lines = new List<string>
+            {
+                baseMessage,
+                "",
+                Loc.GetString("blimpuf-whitelist-denial-sync"),
+            };
+
+            var discordUrl = _cfg.GetCVar(CCVars.InfoLinksDiscord).Trim();
+            var websiteUrl = _cfg.GetCVar(CCVars.InfoLinksWebsite).Trim();
+
+            if (!string.IsNullOrWhiteSpace(discordUrl) || !string.IsNullOrWhiteSpace(websiteUrl))
+            {
+                lines.Add("");
+
+                if (!string.IsNullOrWhiteSpace(discordUrl) && !string.IsNullOrWhiteSpace(websiteUrl))
+                    lines.Add(Loc.GetString("blimpuf-whitelist-denial-apply-discord-and-website"));
+                else if (!string.IsNullOrWhiteSpace(discordUrl))
+                    lines.Add(Loc.GetString("blimpuf-whitelist-denial-apply-discord"));
+                else
+                    lines.Add(Loc.GetString("blimpuf-whitelist-denial-apply-website"));
+
+                if (!string.IsNullOrWhiteSpace(discordUrl))
+                    properties["applyDiscord"] = discordUrl;
+
+                if (!string.IsNullOrWhiteSpace(websiteUrl))
+                    properties["applyWebsite"] = websiteUrl;
+            }
+
+            return string.Join('\n', lines);
         }
 
         private bool HasTemporaryBypass(NetUserId user)
