@@ -4227,5 +4227,12 @@ Entries:
   id: 5101
   time: '2026-07-17T05:01:08.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/51
+- author: ItsMaitake
+  changes:
+  - message: Changed Central Command Enforcer's color palette to CC green and gold.
+    type: Tweak
+  id: 5201
+  time: '2026-07-17T07:50:33.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/52
 Order: -1
 
