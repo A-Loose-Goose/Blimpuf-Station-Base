@@ -4211,5 +4211,12 @@ Entries:
   id: 4701
   time: '2026-07-16T05:36:40.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/47
+- author: STARLIGHT TEAM
+  changes:
+  - message: Added Blimpuf Discord role syncing and integration.
+    type: Add
+  id: 4901
+  time: '2026-07-17T01:36:18.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/49
 Order: -1
 
