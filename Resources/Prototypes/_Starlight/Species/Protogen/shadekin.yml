@@ -1,7 +1,7 @@
 - type: species
   id: ProtoKin
   name: subspecies-name-protokin
-  roundStart: true
+  roundStart: false
   prototype: MobProtoKin
   sprites: MobProtoKinSprites
   defaultSkinTone: "#ffffff"
@@ -10,8 +10,6 @@
   skinColoration: Hues
   customName: true
   roundstartCyberwareCapacity: 6
-  subspeciesOf: Protogen
-  subspeciesName: subspecies-name-protokin
   maleFirstNames: names_shadekin
   femaleFirstNames: names_shadekin
   naming: First
