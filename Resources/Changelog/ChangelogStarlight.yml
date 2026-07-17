@@ -4218,5 +4218,14 @@ Entries:
   id: 4901
   time: '2026-07-17T01:36:18.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/49
+- author: ItsMaitake and ColeTheConqueror
+  changes:
+  - message: Secure vents to all secure areas across all 29 maps.
+    type: Add
+  - message: Secure vent animation.
+    type: Tweak
+  id: 5101
+  time: '2026-07-17T05:01:08.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/51
 Order: -1
 
