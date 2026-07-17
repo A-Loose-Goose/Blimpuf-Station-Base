@@ -720,7 +720,8 @@
       alternativePrototypes:
         Primary: SecureCCGasVentPump
         Secondary: SecureCCGasVentPumpAlt1
-        Tertiary: SecureCCasVentPumpAlt2
+        Tertiary: SecureCCGasVentPumpAlt2
         Quaternary: SecureCCGasVentPumpAlt3
         Quinary: SecureCCGasVentPumpAlt4
 #Blimpuf - End
+
