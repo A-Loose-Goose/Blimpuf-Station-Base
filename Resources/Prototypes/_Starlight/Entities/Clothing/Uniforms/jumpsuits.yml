@@ -83,7 +83,7 @@
 - type: entity
   parent: [ClothingUniformBase, BaseBlueShieldContraband]
   id: ClothingUniformJumpsuitBlueShield
-  name: central command enforcement suit
+  name: enforcer suit
   description: The suit of a glorified bodyguard.
   components:
   - type: Sprite
@@ -94,7 +94,7 @@
 - type: entity
   parent: [ClothingUniformBase, BaseBlueShieldContraband]
   id: ClothingUniformJumpsuitEliteBlueShield
-  name: elite central command enforcement suit
+  name: elite enforcer suit
   description: The suit of an elite CCE. To reach such a level, you must have protected Command from [REDACTED].
   components:
   - type: Sprite
@@ -105,7 +105,7 @@
 - type: entity
   parent: [ClothingUniformBase, BaseBlueShieldContraband]
   id: ClothingUniformJumpsuitBlueShieldShirt
-  name: central command enforcement officer's shirt
+  name: enforcement officer's shirt
   description: A collared shirt and pants for the central command enforcement officer who likes to keep it business casual.
   components:
   - type: Sprite
@@ -580,7 +580,7 @@
 - type: entity
   parent: [ClothingUniformBase, BaseBlueShieldContraband]
   id: ClothingUniformJumpsuitFormalBlueShield
-  name: formal central command enforcement officer suit
+  name: formal enforcer suit
   description: A textile jumpsuit, reinforced with thick leather in some areas.
   components:
   - type: Sprite

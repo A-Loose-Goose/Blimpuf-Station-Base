@@ -173,7 +173,7 @@
 - type: entity
   parent: [ ClothingNeckBase, BaseBlueShieldContraband ]
   id: ClothingNeckCloakBsoElite
-  name: elite central command enforcer cloak
+  name: elite enforcer cloak
   description: An elite Central Command Enforcement Officer's cloak crafted from the latest composite glowing fabric. No true CCE is afraid of shining in the dark!
   components:
   - type: Sprite
@@ -190,7 +190,7 @@
 - type: entity
   parent: [ ClothingNeckBase, BaseBlueShieldContraband ]
   id: ClothingNeckCloakBsoCape
-  name: central command enforcement formal cloak
+  name: enforcer formal cloak
   description: An incredibly large coat, owned only by the most experienced Central Command Enforcement Officers. It's said the sleeves have never been worn.
   components:
   - type: Sprite
@@ -202,7 +202,7 @@
 - type: entity
   parent: [ ClothingNeckBase, BaseBlueShieldContraband ]
   id: ClothingNeckCloakBsoPoncho
-  name: central command enforcement poncho
+  name: enforcer poncho
   description: This type of poncho was the signature garment of a legendary CCE with no name, or so it is said.
   components:
   - type: Sprite
