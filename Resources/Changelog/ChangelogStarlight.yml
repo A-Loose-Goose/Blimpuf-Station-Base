@@ -4248,5 +4248,12 @@ Entries:
   id: 5001
   time: '2026-07-17T20:22:30.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/50
+- author: ItsMaitake
+  changes:
+  - message: Fixed the secure vent's off texture reflecting that it is still secure.
+    type: Tweak
+  id: 5401
+  time: '2026-07-17T21:35:11.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/54
 Order: -1
 
