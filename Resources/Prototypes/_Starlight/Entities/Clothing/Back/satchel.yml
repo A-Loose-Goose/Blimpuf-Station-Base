@@ -55,7 +55,7 @@
 - type: entity
   parent: [ClothingBackpackSatchel, BaseBlueShieldContraband]
   id: ClothingBackpackSatchelBlueShield
-  name: central command enforcement officer satchel
+  name: enforcer satchel
   description: Useful for holding everything a speedy Central Command Enforcement Officer needs!
   components:
   - type: Sprite
