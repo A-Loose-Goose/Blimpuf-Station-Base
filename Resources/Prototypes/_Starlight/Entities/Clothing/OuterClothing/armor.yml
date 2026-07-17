@@ -1,7 +1,7 @@
 - type: entity
   parent: [ClothingOuterArmorBase, BaseBlueShieldContraband]
   id: ClothingOuterArmorBlueShield
-  name: central command enforcemer bulletproof vest
+  name: central command enforcer bulletproof vest
   description: Much better than a standard Type 1 security vest. Try not to lose it, you won't get a second replacement.
   components:
     - type: Sprite

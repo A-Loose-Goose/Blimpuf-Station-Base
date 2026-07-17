@@ -68,7 +68,7 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: Stunbaton
+        - id: EnforcerStunbaton
         - id: Handcuffs
         - id: Handcuffs
         - id: GrenadeFlashBang

@@ -49,7 +49,7 @@
   components:
   - type: Stamp
     stampedName: "Central Command Enforcement Officer"
-    stampedColor: "#004281"
+    stampedColor: "#386c30"
     stampState: "paper_stamp-bso"
   - type: Sprite
     sprite: _Starlight/Objects/Misc/stamps.rsi

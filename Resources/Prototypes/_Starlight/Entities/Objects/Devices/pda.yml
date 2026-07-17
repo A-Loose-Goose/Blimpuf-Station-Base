@@ -270,7 +270,7 @@
        pda-blueshield
   - type: PdaBorderColor
     borderColor: "#202125"
-    accentHColor: "#004281"
+    accentHColor: "#386c30"
   - type: Icon
     sprite: _Starlight/Objects/Devices/pda.rsi
     state: pda-blueshield
@@ -302,8 +302,8 @@
        pda-veteranblueshield
   - type: PdaBorderColor
     borderColor: "#202125"
-    accentHColor: "#004281"
-    accentVColor: "#c2c1c9"
+    accentHColor: "#386c30"
+    accentVColor: "#386c30"
   - type: Icon
     sprite: _Starlight/Objects/Devices/pda.rsi
     state: pda-veteranblueshield
