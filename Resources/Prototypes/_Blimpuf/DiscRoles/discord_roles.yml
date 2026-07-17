@@ -16,7 +16,7 @@
   id: MentorReq
   roles:
     - 1500725068937040013 # Blimpuf Staff
-    - 1514361823770710057 # Mentor
+    - 1526356067137749062 # Mentor
   discord: roles-req-discord-blimpuf
   rolesLoc: roles-req-mentor
 

@@ -3,18 +3,18 @@ using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.CustomControls;
 
-namespace Content.Client._NullLink;
+namespace Content.Client._Blimpuf.Discord;
 
-public sealed class DiscordLinkWindow : DefaultWindow
+public sealed class BlimpufDiscordLinkWindow : DefaultWindow
 {
     private readonly IUriOpener _uriOpener;
     private string _url = "";
 
-    public DiscordLinkWindow()
+    public BlimpufDiscordLinkWindow()
     {
         _uriOpener = IoCManager.Resolve<IUriOpener>();
 
-        Title = Loc.GetString("nulllink-discord-link-title");
+        Title = Loc.GetString("blimpuf-discord-link-title");
         MinSize = new Vector2(440, 0);
 
         var box = new BoxContainer
@@ -24,12 +24,12 @@ public sealed class DiscordLinkWindow : DefaultWindow
         };
 
         var text = new RichTextLabel { HorizontalExpand = true };
-        text.SetMessage(Loc.GetString("nulllink-discord-link-text"));
+        text.SetMessage(Loc.GetString("blimpuf-discord-link-text"));
         box.AddChild(text);
 
         var linkButton = new Button
         {
-            Text = Loc.GetString("nulllink-discord-link-button"),
+            Text = Loc.GetString("blimpuf-discord-link-button"),
             HorizontalAlignment = Control.HAlignment.Center,
             Margin = new Thickness(0, 12, 0, 0),
         };

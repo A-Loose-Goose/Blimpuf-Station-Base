@@ -13,5 +13,5 @@ public sealed partial class SalaryRoleBonusPrototype : IPrototype
     public ulong[] Roles { get; set; } = [];
 
     [DataField(required: true)]
-    public float Multiplayer;
+    public float Multiplier;
 }

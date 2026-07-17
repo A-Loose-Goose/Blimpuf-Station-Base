@@ -1,14 +1,14 @@
 using Content.Client.Eui;
-using Content.Shared._NullLink;
+using Content.Shared._Blimpuf.Discord;
 using Content.Shared.Eui;
 using JetBrains.Annotations;
 
-namespace Content.Client._NullLink;
+namespace Content.Client._Blimpuf.Discord;
 
 [UsedImplicitly]
-public sealed class DiscordLinkEui : BaseEui
+public sealed class BlimpufDiscordLinkEui : BaseEui
 {
-    private readonly DiscordLinkWindow _window = new();
+    private readonly BlimpufDiscordLinkWindow _window = new();
 
     public override void Opened()
     {
@@ -25,7 +25,7 @@ public sealed class DiscordLinkEui : BaseEui
     public override void HandleState(EuiStateBase state)
     {
         base.HandleState(state);
-        if (state is DiscordLinkEuiState linkState)
+        if (state is BlimpufDiscordLinkEuiState linkState)
             _window.SetUrl(linkState.Url);
     }
 }

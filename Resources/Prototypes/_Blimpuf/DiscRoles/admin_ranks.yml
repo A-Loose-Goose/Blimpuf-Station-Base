@@ -1,0 +1,17 @@
+- type: adminRankBuilder
+  id: BlimpufAdminRanks
+  ranks:
+    - name: Director
+      roles:
+        - 1499230491943895110 # Blimpuf Directors
+      flags: [ADMIN, BAN, DEBUG, FUN, PERMISSIONS, SERVER, SPAWN, VAREDIT, MAPPING, LOGS, ROUND, QUERY, ADMINHELP, VIEWNOTES, EDITNOTES, MASSBAN, STEALTH, ADMINCHAT, PII, MODERATOR, ADMINWHO, DANGER, HOST, NAMECOLOR]
+
+    - name: Game Admin
+      roles:
+        - 1500725068937040013 # Blimpuf Staff
+      flags: [ADMIN, BAN, DEBUG, FUN, SERVER, SPAWN, VAREDIT, LOGS, ROUND, QUERY, ADMINHELP, VIEWNOTES, EDITNOTES, ADMINCHAT, MODERATOR, ADMINWHO]
+
+    - name: Trial Game Admin
+      roles:
+        - 1526335907219640490 # Blimpuf Trial Admin
+      flags: [ADMIN, BAN, DEBUG, SERVER, LOGS, ADMINHELP, VIEWNOTES, EDITNOTES, ADMINCHAT, ADMINWHO]

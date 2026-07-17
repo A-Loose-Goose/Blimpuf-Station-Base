@@ -35,6 +35,13 @@ internal sealed partial class ChatManager : IChatManager
         { "revolutionary", "#aa00ff" }
     };
 
+    private static readonly Dictionary<string, Color> BlimpufAdminOocColors = new()
+    {
+        { "Director", Color.FromHex("#cc87f0") },
+        { "Game Admin", Color.FromHex("#f1c40f") },
+        { "Trial Game Admin", Color.FromHex("#ddce93") },
+    };
+
     [Dependency] private IReplayRecordingManager _replay = default!;
     [Dependency] private IServerNetManager _netManager = default!;
     [Dependency] private IAdminManager _adminManager = default!;
@@ -297,7 +304,6 @@ internal sealed partial class ChatManager : IChatManager
         Color? colorOverride = null;
         var nameColor = Color.LightSkyBlue;
         var messageColor = Color.LightSkyBlue;
-        var titleColor = Color.LightSkyBlue;
 
         var playerName = player.Name;
         var playerTitle = "";
@@ -305,10 +311,18 @@ internal sealed partial class ChatManager : IChatManager
         if(_playerRoles.TryGetPlayerData(player.UserId, out var playerData))
             playerTitle = playerData.Title ?? "";
 
-        if (_adminManager.HasAdminFlag(player, AdminFlags.NameColor))
+        if (_adminManager.GetAdminData(player) is { Title: { } adminTitle }
+            && BlimpufAdminOocColors.TryGetValue(adminTitle, out var rankColor))
+        {
+            colorOverride = rankColor;
+            nameColor = rankColor;
+            messageColor = rankColor;
+        }
+        else if (_adminManager.HasAdminFlag(player, AdminFlags.NameColor))
         {
             var prefs = _preferencesManager.GetPreferences(player.UserId);
             colorOverride = prefs.AdminOOCColor;
+            nameColor = prefs.AdminOOCColor;
             messageColor = prefs.AdminOOCColor;
         }
 
