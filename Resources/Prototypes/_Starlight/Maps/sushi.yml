@@ -1,7 +1,7 @@
 - type: gameMap
   id: BlimpufSushi
   mapName: 'Sushi Station'
-  mapPath: /Maps/_Blimpuf/Stations/sushi.yml
+  mapPath: /Maps/_Blimpuf/Stations/Sushi.yml
   minPlayers: 25
   maxPlayers: 80
   stations:
