@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightCluster
+  id: BlimpufCluster
   mapName: 'Cluster'
-  mapPath: /Maps/_Starlight/Stations/Cluster.yml
+  mapPath: /Maps/_Blimpuf/Stations/Cluster.yml
   minPlayers: 0
   maxPlayers: 35
   stations:
-    StarlightCluster:
+    BlimpufCluster:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

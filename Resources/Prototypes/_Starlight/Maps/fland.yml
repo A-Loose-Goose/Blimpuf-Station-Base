@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightFland
+  id: BlimpufFland
   mapName: 'Fland Installation'
-  mapPath: /Maps/_Starlight/Stations/Fland.yml
+  mapPath: /Maps/_Blimpuf/Stations/Fland.yml
   minPlayers: 65
   maxPlayers: 350
   stations:
-    StarlightFland:
+    BlimpufFland:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

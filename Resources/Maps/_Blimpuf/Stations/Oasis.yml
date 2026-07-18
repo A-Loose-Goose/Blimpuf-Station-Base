@@ -11077,7 +11077,7 @@ entities:
     - type: RadiationGridResistance
     - type: NavMap
     - type: BecomesStation
-      id: StarlightOasis
+      id: BlimpufOasis
     - type: ImplicitRoof
     - type: ExplosionAirtightGrid
   - uid: 29399

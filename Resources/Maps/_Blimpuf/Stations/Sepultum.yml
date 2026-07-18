@@ -11480,7 +11480,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: Sepultum
+      id: BlimpufSepultum
     - type: ImplicitRoof
     - type: NavMap
     - type: ExplosionAirtightGrid

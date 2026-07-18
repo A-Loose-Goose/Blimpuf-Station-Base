@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightBagel
+  id: BlimpufBagel
   mapName: 'Bagel Station'
-  mapPath: /Maps/_Starlight/Stations/Bagel.yml
+  mapPath: /Maps/_Blimpuf/Stations/Bagel.yml
   minPlayers: 35
   maxPlayers: 140
   stations:
-    StarlightBagel:
+    BlimpufBagel:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

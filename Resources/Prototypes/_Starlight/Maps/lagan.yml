@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightLagan
+  id: BlimpufLagan
   mapName: 'Lagan'
-  mapPath: /Maps/_Starlight/Stations/Lagan.yml
+  mapPath: /Maps/_Blimpuf/Stations/Lagan.yml
   minPlayers: 50
   maxPlayers: 350
   stations:
-    StarlightLagan:
+    BlimpufLagan:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightReach
+  id: BlimpufReach
   mapName: 'Reach'
-  mapPath: /Maps/_Starlight/Stations/Reach.yml
+  mapPath: /Maps/_Blimpuf/Stations/Reach.yml
   minPlayers: 0
   maxPlayers: 15
   stations:
-    StarlightReach:
+    BlimpufReach:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

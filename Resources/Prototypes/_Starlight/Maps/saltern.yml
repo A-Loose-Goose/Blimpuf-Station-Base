@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightSaltern
+  id: BlimpufSaltern
   mapName: 'Saltern'
-  mapPath: /Maps/_Starlight/Stations/Saltern.yml
+  mapPath: /Maps/_Blimpuf/Stations/Saltern.yml
   minPlayers: 0
   maxPlayers: 40
   stations:
-    StarlightSaltern:
+    BlimpufSaltern:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

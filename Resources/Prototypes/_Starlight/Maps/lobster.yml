@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightLobster
+  id: BlimpufLobster
   mapName: 'Lobster Station'
-  mapPath: /Maps/_Starlight/Stations/Lobster.yml
+  mapPath: /Maps/_Blimpuf/Stations/Lobster.yml
   minPlayers: 40
   maxPlayers: 150
   stations:
-    StarlightLobster:
+    BlimpufLobster:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

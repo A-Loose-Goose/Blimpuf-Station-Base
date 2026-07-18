@@ -14959,7 +14959,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: StarlightKiloton
+      id: BlimpufKiloton
     - type: ImplicitRoof
     - type: NavMap
     - type: ExplosionAirtightGrid

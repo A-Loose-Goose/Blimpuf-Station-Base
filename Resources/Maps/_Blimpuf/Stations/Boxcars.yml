@@ -6356,7 +6356,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: StarlightBoxcars
+      id: BlimpufBoxcars
     - type: ExplosionAirtightGrid
 - proto: ActionToggleInternals
   entities:

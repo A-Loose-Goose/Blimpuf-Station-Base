@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightKiloton
+  id: BlimpufKiloton
   mapName: 'Kiloton Station'
-  mapPath: /Maps/_Starlight/Stations/Kiloton.yml
+  mapPath: /Maps/_Blimpuf/Stations/Kiloton.yml
   minPlayers: 50
   maxPlayers: 350
   stations:
-    StarlightKiloton:
+    BlimpufKiloton:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

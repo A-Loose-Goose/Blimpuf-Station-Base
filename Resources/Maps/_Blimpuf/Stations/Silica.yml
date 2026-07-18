@@ -10789,7 +10789,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: StarlightSilica
+      id: BlimpufSilica
     - type: NavMap
     - type: ExplosionAirtightGrid
 - proto: AcousticGuitarInstrument

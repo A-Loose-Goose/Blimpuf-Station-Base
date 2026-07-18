@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightElkridge
+  id: BlimpufElkridge
   mapName: 'Elkridge Depot'
-  mapPath: /Maps/_Starlight/Stations/Elkridge.yml
+  mapPath: /Maps/_Blimpuf/Stations/Elkridge.yml
   minPlayers: 15
   maxPlayers: 75
   stations:
-    StarlightElkridge:
+    BlimpufElkridge:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

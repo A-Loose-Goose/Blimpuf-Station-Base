@@ -8907,7 +8907,7 @@ entities:
     - type: RadiationGridResistance
     - type: NavMap
     - type: BecomesStation
-      id: StarlightLagan
+      id: BlimpufLagan
     - type: ExplosionAirtightGrid
 - proto: AcousticGuitarInstrument
   entities:

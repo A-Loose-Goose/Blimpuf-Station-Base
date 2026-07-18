@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightOrwell
+  id: BlimpufOrwell
   mapName: 'Orwell "Citadel" Station'
-  mapPath: /Maps/_Starlight/Stations/Orwell.yml
+  mapPath: /Maps/_Blimpuf/Stations/Orwell.yml
   minPlayers: 50
   maxPlayers: 350
   stations:
-    StarlightOrwell:
+    BlimpufOrwell:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

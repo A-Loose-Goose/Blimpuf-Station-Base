@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightManor
+  id: BlimpufManor
   mapName: 'Manor Station'
-  mapPath: /Maps/_Starlight/Stations/Manor.yml
+  mapPath: /Maps/_Blimpuf/Stations/Manor.yml
   minPlayers: 50
   maxPlayers: 350
   stations:
-    StarlightManor:
+    BlimpufManor:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

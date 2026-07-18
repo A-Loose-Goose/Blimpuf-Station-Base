@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightHotel
+  id: BlimpufHotel
   mapName: 'Hotel'
-  mapPath: /Maps/_Starlight/Stations/Hotel.yml
+  mapPath: /Maps/_Blimpuf/Stations/Hotel.yml
   minPlayers: 7
   maxPlayers: 55
   stations:
-    StarlightHotel:
+    BlimpufHotel:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

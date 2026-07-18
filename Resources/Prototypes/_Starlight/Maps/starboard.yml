@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightStarboard
+  id: BlimpufStarboard
   mapName: 'Starboard'
-  mapPath: /Maps/_Starlight/Stations/Starboard.yml
+  mapPath: /Maps/_Blimpuf/Stations/Starboard.yml
   minPlayers: 90
   maxPlayers: 500
   stations:
-    StarlightStarboard:
+    BlimpufStarboard:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

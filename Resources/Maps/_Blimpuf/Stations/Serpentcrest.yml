@@ -7592,7 +7592,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: StarlightSerpentcrest
+      id: BlimpufSerpentcrest
     - type: ImplicitRoof
     - type: NavMap
     - type: ExplosionAirtightGrid

@@ -1509,7 +1509,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: StarlightStationBuilding
+      id: BlimpufStationBuilding
     - type: ImplicitRoof
     - type: NavMap
     - type: ExplosionAirtightGrid

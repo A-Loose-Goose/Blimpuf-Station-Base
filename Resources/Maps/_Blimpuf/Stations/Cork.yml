@@ -1,4 +1,4 @@
-meta:
+Blimpufmeta:
   format: 7
   category: Map
   engineVersion: 277.0.0
@@ -4047,7 +4047,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: StarlightCork
+      id: BlimpufCork
     - type: NavMap
     - type: Joint
       joints: {}

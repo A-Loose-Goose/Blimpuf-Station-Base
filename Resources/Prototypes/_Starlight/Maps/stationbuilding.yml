@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightStationBuilding
+  id: BlimpufStationBuilding
   mapName: 'Under Construction'
-  mapPath: /Maps/_Starlight/Stations/StationBuilding.yml
+  mapPath: /Maps/_Blimpuf/Stations/StationBuilding.yml
   minPlayers: 20
   maxPlayers: 100
   stations:
-    StarlightStationBuilding:
+    BlimpufStationBuilding:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

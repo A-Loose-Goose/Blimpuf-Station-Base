@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightSepultum
+  id: BlimpufSepultum
   mapName: 'Sepultum Station'
-  mapPath: /Maps/_Starlight/Stations/Sepultum.yml
+  mapPath: /Maps/_Blimpuf/Stations/Sepultum.yml
   minPlayers: 50
   maxPlayers: 350
   stations:
-    Sepultum:
+    BlimpufSepultum:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

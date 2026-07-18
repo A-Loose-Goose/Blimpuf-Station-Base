@@ -10956,7 +10956,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: StarlightPlasma
+      id: BlimpufPlasma
     - type: ImplicitRoof
     - type: NavMap
     - type: ExplosionAirtightGrid

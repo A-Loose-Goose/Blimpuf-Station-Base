@@ -8646,7 +8646,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: StarlightOrwell
+      id: BlimpufOrwell
     - type: ImplicitRoof
     - type: NavMap
     - type: ExplosionAirtightGrid
