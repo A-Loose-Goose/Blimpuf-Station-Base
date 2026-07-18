@@ -1,6 +1,7 @@
 - type: job
   id: BlueShield
   name: job-name-blueshield
+  jobSelectName: job-name-blueshield-job-select
   description: job-description-blueshield
   playTimeTracker: JobBlueShield
   requirements:

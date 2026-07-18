@@ -1,7 +1,5 @@
 job-name-magistrate = Magistrate
-job-name-ntrep = Central Command Representative
 job-name-iaa = Internal Affairs Agent
-job-name-blueshield = Central Command Enforcer
 job-name-ntncblueshield = NanoTrasen Navy Corps Marine
 job-name-greenshield = Greenshield Officer
 job-name-miningspec = Mining Specialist

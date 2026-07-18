@@ -276,7 +276,7 @@ namespace Content.Client._Starlight.Lobby.UI
                             Margin = new Thickness(5f, 0, 0, 0)
                         };
 
-                        var jobButton = new JobButton(jobLabel, prototype.ID, JobDisplayNameOverrides.GetLobbyDisplayName(prototype), value);
+                        var jobButton = new JobButton(jobLabel, prototype.ID, prototype.LocalizedJobSelectName, value);
 
                         var jobSelector = new BoxContainer
                         {
