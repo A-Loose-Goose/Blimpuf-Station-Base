@@ -46784,7 +46784,7 @@ entities:
     - type: Transform
       pos: -44.5,-31.5
       parent: 1
-- proto: GasVentPump
+- proto: SecureCCGasVentPump
   entities:
   - uid: 6943
     components:
