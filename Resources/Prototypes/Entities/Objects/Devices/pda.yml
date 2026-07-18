@@ -1148,6 +1148,10 @@
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener
+  - type: CartridgeLoader # Starlight
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - AstroNavCartridge
 
 - type: entity
   parent: [ BasePDA, BaseSyndicateContraband ]
