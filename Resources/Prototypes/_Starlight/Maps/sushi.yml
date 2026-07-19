@@ -41,6 +41,7 @@
             MedicalIntern: [ 4, 4 ]
             Psychologist: [ 1, 1 ]
             Scientist: [ 4, 4 ]
+            Roboticist: [ 1, 1 ]
             ResearchAssistant: [ 4, 4 ]
             Warden: [ 1, 1 ]
             SecurityOfficer: [ 5, 5 ]
