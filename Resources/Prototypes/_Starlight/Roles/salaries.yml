@@ -16,6 +16,7 @@
     Magistrate: 170
 
     Chemist: 90
+    Psychologist: 76
     Paramedic: 50
     MedicalDoctor: 58
     MedicalIntern: 23
@@ -47,10 +48,13 @@
     Clown: 30
     ServiceWorker: 23
     Performer: 23
+    Reporter: 46
     Assistant: 15
+    Boxer: 23
+    Zookeeper: 34
 
     Scientist: 65
-    Roboticist: 56
+    Roboticist: 58
     ResearchAssistant: 23
 
     SalvageLead: 75
