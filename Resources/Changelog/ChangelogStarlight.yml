@@ -4255,5 +4255,14 @@ Entries:
   id: 5401
   time: '2026-07-17T21:35:11.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/54
+- author: ItsMaitake, JiyuSoftware & Codebreak
+  changes:
+  - message: Sushi Station.
+    type: Add
+  - message: Naming convention for our maps.
+    type: Tweak
+  id: 5501
+  time: '2026-07-21T01:35:54.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/55
 Order: -1
 
