@@ -92,6 +92,9 @@ public sealed partial class LoadoutSystem : EntitySystem
 
     public string GetName(LoadoutPrototype loadout)
     {
+        if (loadout.LoadoutName is not null)
+            return loadout.LoadoutName;
+
         if (loadout.DummyEntity is not null && _protoMan.Resolve(loadout.DummyEntity, out var proto))
             return proto.Name;
 

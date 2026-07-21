@@ -1,6 +1,7 @@
 - type: job
   id: NanoTrasenRepresentative
   name: job-name-ntrep
+  jobSelectName: job-name-ntrep-job-select
   description: job-description-ntrep
   playTimeTracker: JobNanoTrasenRepresentative
   requirements:

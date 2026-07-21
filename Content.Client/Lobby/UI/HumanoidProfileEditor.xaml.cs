@@ -1186,9 +1186,7 @@ namespace Content.Client.Lobby.UI
                     }
                     description.AddMessage(!reason.IsEmpty ? reason : FormattedMessage.FromMarkupPermissive(Loc.GetString("job-no-requirements")));
 
-                    var jobName = JobDisplayNameOverrides.GetLobbyDisplayName(job);
-
-                    selector.Setup(items, jobName, 200, description, icon, job.Guides);
+                    selector.Setup(items, job.LocalizedJobSelectName, 200, description, icon, job.Guides);
 
                     if (!allowed)
                     {

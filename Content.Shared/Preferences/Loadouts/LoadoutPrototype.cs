@@ -18,6 +18,13 @@ public sealed partial class LoadoutPrototype : IPrototype, IEquipmentLoadout
     /// </summary>
     [DataField]
     public string? GroupBy;
+
+    /// <summary>
+    /// Optional alternate name for compact loadout menu UI.
+    /// </summary>
+    [DataField]
+    public string? LoadoutName;
+
     /*
      * You can either use an existing StartingGearPrototype or specify it inline to avoid bloating yaml.
      */
