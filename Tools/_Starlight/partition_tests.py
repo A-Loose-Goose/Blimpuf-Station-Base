@@ -110,7 +110,7 @@ WEIGHT_OVERRIDES = {
     "JobWeightTest": 1.0,
     "KillAndReviveTest": 0.5,
     "LoadSaveTicksSave": 0.5,
-    "LoadTickLoad": 0.5,
+    "LoadTickLoad": 300.0,
     "MagazineVisualsSpritesExist": 0.125,
     "MicrowaveRecipesFreezeTest": 0.125,
     "MouseMoveOverTest": 0.25,
