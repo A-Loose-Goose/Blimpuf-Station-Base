@@ -4264,5 +4264,16 @@ Entries:
   id: 5501
   time: '2026-07-21T01:35:54.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/55
+- author: LadyLiliana
+  changes:
+  - message: Changed Centcom to use Secure Vents instead of regular vents.
+    type: Tweak
+  - message: Changed Secure Vents to not allow VentCritters.
+    type: Tweak
+  - message: Fixed Secure Vents not linking to AirAlarms.
+    type: Fix
+  id: 5701
+  time: '2026-07-21T01:36:06.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/57
 Order: -1
 
