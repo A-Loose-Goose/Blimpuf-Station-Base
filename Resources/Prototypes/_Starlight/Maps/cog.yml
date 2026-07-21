@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightCog
+  id: BlimpufCog
   mapName: 'Cog'
-  mapPath: /Maps/_Starlight/Stations/Cog.yml
+  mapPath: /Maps/_Blimpuf/Stations/Cog.yml
   minPlayers: 40
   maxPlayers: 150 #big map
   stations:
-    StarlightCog:
+    BlimpufCog:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

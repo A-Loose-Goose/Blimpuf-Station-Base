@@ -1,13 +1,13 @@
 - type: gameMap
-  id: StarlightCork
+  id: BlimpufCork
   mapName: 'Cork Outpost'
-  mapPath: /Maps/_Starlight/Stations/Cork.yml
+  mapPath: /Maps/_Blimpuf/Stations/Cork.yml
   maxRandomOffset: 0
   randomRotation: false
   minPlayers: 0
   maxPlayers: 15
   stations:
-    StarlightCork:
+    BlimpufCork:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

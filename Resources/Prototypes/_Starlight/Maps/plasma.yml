@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightPlasma
+  id: BlimpufPlasma
   mapName: 'Plasma'
-  mapPath: /Maps/_Starlight/Stations/Plasma.yml
+  mapPath: /Maps/_Blimpuf/Stations/Plasma.yml
   minPlayers: 25
   maxPlayers: 80
   stations:
-    StarlightPlasma:
+    BlimpufPlasma:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightBox
+  id: BlimpufBox
   mapName: 'Box Station'
-  mapPath: /Maps/_Starlight/Stations/Box.yml
+  mapPath: /Maps/_Blimpuf/Stations/Box.yml
   minPlayers: 50
   maxPlayers: 120
   stations:
-    StarlightBox:
+    BlimpufBox:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

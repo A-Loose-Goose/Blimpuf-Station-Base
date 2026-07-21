@@ -88,7 +88,7 @@ namespace Content.IntegrationTests.Tests
             await pair.CleanReturnAsync();
         }
 
-        private const string TestMap = "Maps/_Starlight/Stations/Saltern.yml"; //Starlight path instead of upstream path
+        private const string TestMap = "Maps/_Blimpuf/Stations/Saltern.yml"; //Starlight path instead of upstream path
 
         /// <summary>
         ///     Loads the default map, runs it for 5 ticks, then assert that it did not change.

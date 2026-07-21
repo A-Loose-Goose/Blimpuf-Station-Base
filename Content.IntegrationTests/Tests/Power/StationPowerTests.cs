@@ -42,35 +42,36 @@ public sealed class StationPowerTests
         "Exo",
         */// Starlight-comment end
         //Starlight, do not accept any upstream maps into this list, we are keeping them out for package size and just general management reasons
-        #region Starlight
-        "StarlightBarratry",
-        "StarlightCork",
-        "StarlightKiloton",
-        "StarlightLagan",
-        "StarlightLobster",
-        "StarlightManor",
-        "StarlightLeth",
-        "StarlightMing",
-        "StarlightOrwell",
-        "StarlightPrism",
-        "StarlightStarboard",
-        "StarlightBagel",
-        "StarlightBox",
-        "StarlightCog",
-        "StarlightElkridge",
-        "StarlightFland",
-        "StarlightHotel",
-        "StarlightOasis",
-        "StarlightPacked",
-        "StarlightReach",
-        "StarlightSaltern",
-        "StarlightSilica",
-        "StarlightSpaceMall",
-        "StarlightCluster",
-        "StarlightStationBuilding",
-        "StarlightPlasma",
-        "StarlightSepultum",
-        "StarlightBoxcars"
+        #region Blimpuf
+        "BlimpufBarratry",
+        "BlimpufCork",
+        "BlimpufKiloton",
+        "BlimpufLagan",
+        "BlimpufLobster",
+        "BlimpufManor",
+        "BlimpufLeth",
+        "BlimpufMing",
+        "BlimpufOrwell",
+        "BlimpufPrism",
+        "BlimpufStarboard",
+        "BlimpufBagel",
+        "BlimpufBox",
+        "BlimpufCog",
+        "BlimpufElkridge",
+        "BlimpufFland",
+        "BlimpufHotel",
+        "BlimpufOasis",
+        "BlimpufPacked",
+        "BlimpufReach",
+        "BlimpufSaltern",
+        "BlimpufSilica",
+        "BlimpufSpaceMall",
+        "BlimpufCluster",
+        "BlimpufStationBuilding",
+        "BlimpufPlasma",
+        "BlimpufSepultum",
+        "BlimpufSushi",
+        "BlimpufBoxcars"
         #endregion
     ];
 
@@ -256,7 +257,7 @@ public sealed class StationPowerTests
             // Starlight start
             Assert.That(estimatedDuration, Is.LessThanOrEqualTo(MaximumPowerDurationSeconds),
                 $"Initial power for {mapProtoId} lasts too long! Max allowed {MaximumPowerDurationSeconds}s " +
-                $"but estimated to last {estimatedDuration}s — remove some stored power!");
+                $"but estimated to last {estimatedDuration}s ï¿½ remove some stored power!");
             Assert.That(totalStartingCharge, Is.LessThanOrEqualTo(maximumStoredPower),
                 $"Has {totalStartingCharge - maximumStoredPower} too much stored power!");
             // Starlight end

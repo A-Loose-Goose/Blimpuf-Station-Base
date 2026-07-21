@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightLeth
+  id: BlimpufLeth
   mapName: 'Leth Vessel'
-  mapPath: /Maps/_Starlight/Stations/Leth.yml
+  mapPath: /Maps/_Blimpuf/Stations/Leth.yml
   minPlayers: 15
   maxPlayers: 65
   stations:
-    StarlightLeth:
+    BlimpufLeth:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

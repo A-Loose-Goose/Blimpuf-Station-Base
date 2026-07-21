@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightMing
+  id: BlimpufMing
   mapName: 'Ming "Complex" Station'
-  mapPath: /Maps/_Starlight/Stations/Ming.yml
+  mapPath: /Maps/_Blimpuf/Stations/Ming.yml
   minPlayers: 55
   maxPlayers: 350
   stations:
-    StarlightMing:
+    BlimpufMing:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

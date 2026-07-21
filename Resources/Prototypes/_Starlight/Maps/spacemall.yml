@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightSpaceMall
+  id: BlimpufSpaceMall
   mapName: 'Space Mall'
-  mapPath: /Maps/_Starlight/Stations/SpaceMall.yml
+  mapPath: /Maps/_Blimpuf/Stations/SpaceMall.yml
   minPlayers: 60
   maxPlayers: 350
   stations:
-    StarlightSpaceMall:
+    BlimpufSpaceMall:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

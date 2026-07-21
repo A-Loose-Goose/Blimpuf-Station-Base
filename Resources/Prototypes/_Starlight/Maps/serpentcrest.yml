@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightSerpentcrest
+  id: BlimpufSerpentcrest
   mapName: 'Serpentcrest'
-  mapPath: /Maps/_Starlight/Stations/Serpentcrest.yml
+  mapPath: /Maps/_Blimpuf/Stations/Serpentcrest.yml
   minPlayers: 60
   maxPlayers: 150
   stations:
-    StarlightSerpentcrest:
+    BlimpufSerpentcrest:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

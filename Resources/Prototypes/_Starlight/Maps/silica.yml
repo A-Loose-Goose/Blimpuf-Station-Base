@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightSilica
+  id: BlimpufSilica
   mapName: 'Silica Station'
-  mapPath: /Maps/_Starlight/Stations/Silica.yml
+  mapPath: /Maps/_Blimpuf/Stations/Silica.yml
   minPlayers: 25
   maxPlayers: 120
   stations:
-    StarlightSilica:
+    BlimpufSilica:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

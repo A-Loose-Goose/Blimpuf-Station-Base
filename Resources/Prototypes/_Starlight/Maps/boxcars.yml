@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightBoxcars
+  id: BlimpufBoxcars
   mapName: 'Boxcars'
-  mapPath: /Maps/_Starlight/Stations/Boxcars.yml
+  mapPath: /Maps/_Blimpuf/Stations/Boxcars.yml
   minPlayers: 25
   maxPlayers: 95
   stations:
-    StarlightBoxcars:
+    BlimpufBoxcars:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

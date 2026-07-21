@@ -81,6 +81,9 @@
 - files: ["starboard.yml"]
   authors: choccy4, Starlight Team
 
+- files: ["sushi.yml"]
+  authors: SuperDicq, Codebreak
+
 # centcomms
 
 - files: ["CC_Outpost_G24.yml"]

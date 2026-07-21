@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightBarratry
+  id: BlimpufBarratry
   mapName: 'Barratry'
-  mapPath: /Maps/_Starlight/Stations/Barratry.yml
+  mapPath: /Maps/_Blimpuf/Stations/Barratry.yml
   minPlayers: 40
   maxPlayers: 130
   stations:
-    StarlightBarratry:
+    BlimpufBarratry:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

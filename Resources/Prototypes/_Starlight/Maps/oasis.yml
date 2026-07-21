@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightOasis
+  id: BlimpufOasis
   mapName: 'Oasis'
-  mapPath: /Maps/_Starlight/Stations/Oasis.yml
+  mapPath: /Maps/_Blimpuf/Stations/Oasis.yml
   minPlayers: 50
   maxPlayers: 150
   stations:
-    StarlightOasis:
+    BlimpufOasis:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

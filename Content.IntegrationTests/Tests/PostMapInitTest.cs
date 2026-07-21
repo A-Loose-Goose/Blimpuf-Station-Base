@@ -72,7 +72,7 @@ namespace Content.IntegrationTests.Tests
             {"/Maps/Shuttles/ShuttleEvent/syndie_evacpod.yml", ["RubberStampSyndicate"]},
             {"/Maps/Shuttles/ShuttleEvent/cruiser.yml", ["ShuttleGunPerforator"]},
             {"/Maps/Shuttles/ShuttleEvent/instigator.yml", ["ShuttleGunFriendship"]},
-            {"/Maps/_Starlight/Stations/Cork.yml", ["RubberStampSyndicate"]}, // Starlight start
+            {"/Maps/_Blimpuf/Stations/Cork.yml", ["RubberStampSyndicate"]}, // Starlight start
             {"/Maps/_Starlight/Shuttles/CC-NT/NTSF_Minos_Battlecruiser.yml", ["ShuttleGunPerforator"]},
             {"/Maps/_Starlight/Shuttles/RecluseClassSHC.yml", ["RubberStampSyndicate"]},
             {"/Maps/_Starlight/Shuttles/Signaleer.yml", ["RubberStampSyndicate"]},
@@ -111,10 +111,10 @@ namespace Content.IntegrationTests.Tests
         /// </summary>
         private static readonly string[] ShouldMapWhitelist =
         {
-            "/Maps/_Starlight/Stations/StationBuilding.yml", // event map
-            "/Maps/_Starlight/Stations/Reach.yml",           // very small, can't fit everything
-            "/Maps/_Starlight/Stations/Cork.yml",            // very small, can't fit everything
-            "/Maps/_Starlight/Stations/Boxcars.yml",         // no longer in map rotation / admeme only
+            "/Maps/_Blimpuf/Stations/StationBuilding.yml", // event map
+            "/Maps/_Blimpuf/Stations/Reach.yml",           // very small, can't fit everything
+            "/Maps/_Blimpuf/Stations/Cork.yml",            // very small, can't fit everything
+            "/Maps/_Blimpuf/Stations/Boxcars.yml",         // no longer in map rotation / admeme only
         };
         // starlight end
 
@@ -126,7 +126,7 @@ namespace Content.IntegrationTests.Tests
             .ToArray();
 
         private static readonly string[] GameMaps = GameDataScrounger.PrototypesOfKind<GameMapPrototype>().Where(x => x != PoolManager.TestMap).ToArray();
-        private static readonly ResPath[] AllMapFiles = GameDataScrounger.FilesInDirectoryInVfs("/Maps/_Starlight", "*.yml"); // Starlight map folder
+        private static readonly ResPath[] AllMapFiles = GameDataScrounger.FilesInDirectoryInVfs("/Maps/_Blimpuf", "*.yml"); // Starlight map folder
         private static readonly ResPath[] ShuttleMapFiles = GameDataScrounger.FilesInDirectoryInVfs("/Maps/_Starlight/Shuttles", "*.yml"); // Starlight shuttle folder
 
         private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";
