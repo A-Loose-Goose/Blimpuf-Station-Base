@@ -45595,7 +45595,7 @@ entities:
       - - Engineering
     - type: Lock
       locked: False
-- proto: GasVentPump
+- proto: SecureCCGasVentPump
   entities:
   - uid: 6416
     components:
@@ -45614,7 +45614,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -7.5,-20.5
       parent: 1
-- proto: GasVentPumpAlt3
+- proto: SecureCCGasVentPumpAlt3
   entities:
   - uid: 6419
     components:

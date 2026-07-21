@@ -36589,7 +36589,7 @@ entities:
       parent: 1
     - type: AtmosPipeColor
       color: '#990000FF'
-- proto: GasVentPump
+- proto: SecureCCGasVentPump
   entities:
   - uid: 5437
     components:
@@ -36693,7 +36693,7 @@ entities:
       parent: 1
     - type: AtmosPipeColor
       color: '#0055CCFF'
-- proto: GasVentPumpAlt1
+- proto: SecureCCGasVentPumpAlt1
   entities:
   - uid: 5450
     components:
