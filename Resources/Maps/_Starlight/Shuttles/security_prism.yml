@@ -684,7 +684,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 0.5,13.5
       parent: 1
-- proto: GasVentPump
+- proto: SecureGasVentPump
   entities:
   - uid: 86
     components:
