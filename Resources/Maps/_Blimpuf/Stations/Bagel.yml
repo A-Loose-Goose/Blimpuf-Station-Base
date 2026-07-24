@@ -9755,7 +9755,7 @@ entities:
       devices:
       - 540
       - 15465
-      - 15285
+      - 26193
     - type: Fixtures
       fixtures: {}
   - uid: 8
@@ -9768,7 +9768,6 @@ entities:
       devices:
       - 15449
       - 10378
-      - 10377
     - type: Fixtures
       fixtures: {}
   - uid: 9
@@ -9912,6 +9911,7 @@ entities:
     - type: DeviceList
       devices:
       - 15444
+      - 15324
     - type: Fixtures
       fixtures: {}
   - uid: 19
@@ -9945,7 +9945,6 @@ entities:
       devices:
       - 15446
       - 8137
-      - 15324
     - type: Fixtures
       fixtures: {}
   - uid: 22
@@ -9969,6 +9968,7 @@ entities:
     - type: DeviceList
       devices:
       - 15445
+      - 10377
     - type: Fixtures
       fixtures: {}
   - uid: 24
@@ -9992,7 +9992,7 @@ entities:
       fixtures: {}
     - type: DeviceList
       devices:
-      - 26181
+      - 26188
   - uid: 26
     components:
     - type: Transform
@@ -10038,7 +10038,6 @@ entities:
       - 15474
       - 15476
       - 15287
-      - 8156
     - type: Fixtures
       fixtures: {}
   - uid: 30
@@ -10108,7 +10107,6 @@ entities:
     - type: DeviceList
       devices:
       - 15507
-      - 15202
       - 15210
     - type: Fixtures
       fixtures: {}
@@ -10121,7 +10119,7 @@ entities:
     - type: DeviceList
       devices:
       - 15424
-      - 15316
+      - 8139
     - type: Fixtures
       fixtures: {}
   - uid: 36
@@ -10186,6 +10184,7 @@ entities:
       parent: 2
     - type: DeviceList
       devices:
+      - 15537
       - 608
       - 15242
     - type: Fixtures
@@ -10220,7 +10219,6 @@ entities:
       - 15521
       - 15340
       - 15523
-      - 15217
     - type: Fixtures
       fixtures: {}
   - uid: 43
@@ -10235,7 +10233,6 @@ entities:
       - 558
       - 11834
       - 8140
-      - 15211
     - type: Fixtures
       fixtures: {}
   - uid: 44
@@ -10478,7 +10475,7 @@ entities:
       - 15418
       - 15417
       - 15228
-      - 26185
+      - 26176
     - type: Fixtures
       fixtures: {}
   - uid: 58
@@ -10495,7 +10492,6 @@ entities:
       - 15283
       - 15471
       - 15241
-      - 8145
     - type: Fixtures
       fixtures: {}
   - uid: 59
@@ -10561,7 +10557,6 @@ entities:
       devices:
       - 15401
       - 8136
-      - 15315
     - type: Fixtures
       fixtures: {}
   - uid: 63
@@ -10601,7 +10596,6 @@ entities:
       - 15218
       - 15406
       - 587
-      - 8157
     - type: Fixtures
       fixtures: {}
   - uid: 65
@@ -10810,12 +10804,10 @@ entities:
       - 15194
       - 15499
       - 603
+      - 15498
       - 15195
       - 15497
       - 602
-      - 15498
-      - 15193
-      - 15201
     - type: Fixtures
       fixtures: {}
   - uid: 77
@@ -10867,8 +10859,6 @@ entities:
       - 15545
       - 615
       - 618
-      - 15274
-      - 15276
     - type: Fixtures
       fixtures: {}
   - uid: 80
@@ -10906,7 +10896,7 @@ entities:
       devices:
       - 617
       - 15544
-      - 25259
+      - 15273
     - type: Fixtures
       fixtures: {}
   - uid: 83
@@ -10957,6 +10947,7 @@ entities:
     - type: DeviceList
       devices:
       - 15508
+      - 15202
     - type: Fixtures
       fixtures: {}
   - uid: 87
@@ -11093,7 +11084,7 @@ entities:
       devices:
       - 15556
       - 553
-      - 26174
+      - 26170
     - type: Fixtures
       fixtures: {}
   - uid: 97
@@ -11109,9 +11100,9 @@ entities:
       - 15496
       - 623
       - 11843
-      - 11518
+      - 26172
       - 15192
-      - 26173
+      - 11518
     - type: Fixtures
       fixtures: {}
   - uid: 98
@@ -11134,6 +11125,9 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+    - type: DeviceList
+      devices:
+      - 8132
   - uid: 100
     components:
     - type: Transform
@@ -61931,6 +61925,12 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 38.567585,-20.270008
       parent: 2
+  - uid: 9700
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -43.5,3.5
+      parent: 2
   - uid: 9701
     components:
     - type: Transform
@@ -61941,12 +61941,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -40.5,12.5
-      parent: 2
-  - uid: 26170
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -43.5,3.5
       parent: 2
 - proto: ChairOfficeSleek
   entities:
@@ -65066,14 +65060,6 @@ entities:
     components:
     - type: Transform
       pos: 10.5,21.5
-      parent: 2
-- proto: ComputerCommsLaw
-  entities:
-  - uid: 10132
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -53.5,-18.5
       parent: 2
 - proto: ComputerCommsMedical
   entities:
@@ -102255,17 +102241,6 @@ entities:
       - 27
     - type: AtmosPipeColor
       color: '#0055CCFF'
-  - uid: 15285
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -8.5,2.5
-      parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 7
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
   - uid: 15286
     components:
     - type: Transform
@@ -102712,14 +102687,6 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 91
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 15354
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 21.5,19.5
-      parent: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 15355
@@ -120627,12 +120594,6 @@ entities:
     - type: Transform
       pos: -32.5,-34.5
       parent: 2
-  - uid: 18365
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 4.5,-3.5
-      parent: 2
   - uid: 18366
     components:
     - type: Transform
@@ -120833,6 +120794,12 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 11.5,-36.5
+      parent: 2
+  - uid: 26182
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 4.5,-3.5
       parent: 2
 - proto: PoweredLEDSmallLight
   entities:
@@ -122733,23 +122700,23 @@ entities:
       rot: 3.141592653589793 rad
       pos: -20.5,-24.5
       parent: 2
+  - uid: 26171
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -1.5,35.5
+      parent: 2
   - uid: 26178
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
-      pos: -1.5,36.5
-      parent: 2
-  - uid: 26179
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -25.5,2.5
-      parent: 2
-  - uid: 26184
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
       pos: 3.5,-10.5
+      parent: 2
+  - uid: 26190
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -25.5,1.5
       parent: 2
 - proto: PoweredlightExterior
   entities:
@@ -123266,6 +123233,13 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 43.5,15.5
       parent: 2
+  - uid: 18760
+    components:
+    - type: Transform
+      pos: 7.5,-31.5
+      parent: 2
+    - type: ApcPowerReceiver
+      powerLoad: 0
   - uid: 18761
     components:
     - type: Transform
@@ -123650,19 +123624,12 @@ entities:
       parent: 25811
     - type: ApcPowerReceiver
       powerLoad: 0
-  - uid: 26176
+  - uid: 26174
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 12.5,18.5
       parent: 2
-  - uid: 26187
-    components:
-    - type: Transform
-      pos: 7.5,-31.5
-      parent: 2
-    - type: ApcPowerReceiver
-      powerLoad: 0
 - proto: PoweredSmallLightEmpty
   entities:
   - uid: 18814
@@ -130677,36 +130644,48 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
-  - uid: 26173
-    components:
-    - type: Transform
-      pos: -1.5,36.5
-      parent: 2
-      rot: 1.5707963267948966 rad
-  - uid: 26174
+  - uid: 26170
     components:
     - type: Transform
       pos: 8.5,33.5
       parent: 2
       rot: 3.141592653589793 rad
-  - uid: 26181
+  - uid: 26172
     components:
     - type: Transform
-      pos: -25.5,1.5
+      pos: -1.5,36.5
       parent: 2
       rot: 1.5707963267948966 rad
-  - uid: 26182
+  - uid: 26175
+    components:
+    - type: Transform
+      pos: 21.5,19.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 26176
+    components:
+    - type: Transform
+      pos: 48.5,-29.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 26181
     components:
     - type: Transform
       pos: 4.5,-3.5
       parent: 2
       rot: 3.141592653589793 rad
-  - uid: 26185
+  - uid: 26188
     components:
     - type: Transform
-      pos: 48.5,-29.5
+      pos: -25.5,1.5
       parent: 2
-      rot: 4.71238898038469 rad
+      rot: 1.5707963267948966 rad
+  - uid: 26193
+    components:
+    - type: Transform
+      pos: -8.5,2.5
+      parent: 2
+      rot: 1.5707963267948966 rad
 - proto: SecurityTechFab
   entities:
   - uid: 20060
@@ -138705,11 +138684,6 @@ entities:
       parent: 2
 - proto: SpawnPointSecurityOfficer
   entities:
-  - uid: 15316
-    components:
-    - type: Transform
-      pos: -19.5,-2.5
-      parent: 2
   - uid: 21179
     components:
     - type: Transform
@@ -138730,11 +138704,6 @@ entities:
     - type: Transform
       pos: -20.5,0.5
       parent: 2
-  - uid: 21184
-    components:
-    - type: Transform
-      pos: -20.5,-2.5
-      parent: 2
   - uid: 21185
     components:
     - type: Transform
@@ -138744,6 +138713,16 @@ entities:
     components:
     - type: Transform
       pos: -20.5,-1.5
+      parent: 2
+  - uid: 26184
+    components:
+    - type: Transform
+      pos: -20.5,-2.5
+      parent: 2
+  - uid: 26185
+    components:
+    - type: Transform
+      pos: -19.5,-2.5
       parent: 2
 - proto: SpawnPointServiceWorker
   entities:
@@ -140084,16 +140063,6 @@ entities:
       - SurveillanceCameraCommand
       nameSet: True
       id: Bridge Airlock
-  - uid: 21378
-    components:
-    - type: Transform
-      pos: 4.5,-3.5
-      parent: 2
-    - type: SurveillanceCamera
-      setupAvailableNetworks:
-      - SurveillanceCameraCommand
-      nameSet: True
-      id: Bridge Power Closet
   - uid: 21379
     components:
     - type: Transform
@@ -140115,6 +140084,16 @@ entities:
       - SurveillanceCameraCommand
       nameSet: True
       id: AI Core Tunnel Exterior Camera
+  - uid: 26183
+    components:
+    - type: Transform
+      pos: 4.5,-3.5
+      parent: 2
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraCommand
+      nameSet: True
+      id: Bridge Power Closet
 - proto: SurveillanceCameraEngineering
   entities:
   - uid: 21381
@@ -145832,10 +145811,10 @@ entities:
     - type: Transform
       pos: 54.5,-1.5
       parent: 2
-  - uid: 26180
+  - uid: 26189
     components:
     - type: Transform
-      pos: -24.5,2.5
+      pos: -25.5,1.5
       parent: 2
 - proto: VendingMachineTheater
   entities:
@@ -161906,17 +161885,17 @@ entities:
       rot: 3.141592653589793 rad
       pos: -109.5,8.5
       parent: 2
-  - uid: 25259
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -112.5,11.5
-      parent: 2
   - uid: 25260
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -110.5,11.5
+      parent: 2
+  - uid: 26169
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -112.5,11.5
       parent: 2
 - proto: WindoorSecureCourtroomLocked
   entities:
@@ -165057,5 +165036,13 @@ entities:
     components:
     - type: Transform
       pos: 23.533411,-13.4549055
+      parent: 2
+- proto: ComputerCommsLaw
+  entities:
+  - uid: 26192
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -53.5,-18.5
       parent: 2
 ...
