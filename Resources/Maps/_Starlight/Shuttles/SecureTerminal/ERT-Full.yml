@@ -2721,7 +2721,7 @@ entities:
       open: False
     - type: AtmosPipeColor
       color: '#FF22FFFF'
-- proto: GasVentPump
+- proto: SecureCCGasVentPump
   entities:
   - uid: 328
     components:

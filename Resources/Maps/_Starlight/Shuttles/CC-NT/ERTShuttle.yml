@@ -2929,7 +2929,7 @@ entities:
       bodyType: Dynamic
     - type: AtmosPipeColor
       color: '#FF1212FF'
-- proto: GasVentPump
+- proto: SecureCCGasVentPump
   entities:
   - uid: 442
     components:

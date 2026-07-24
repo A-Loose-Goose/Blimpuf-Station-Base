@@ -3517,7 +3517,7 @@ entities:
     - type: Transform
       pos: 5.5,0.5
       parent: 2
-- proto: GasVentPump
+- proto: SecureCCGasVentPump
   entities:
   - uid: 525
     components:
