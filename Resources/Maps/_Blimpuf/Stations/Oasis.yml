@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 07/17/2026 03:50:06
-  entityCount: 36607
+  entityCount: 36606
 maps:
 - 1
 grids:
@@ -17743,18 +17743,6 @@ entities:
     - type: Transform
       pos: -16.5,-60.5
       parent: 2
-  - uid: 399
-    components:
-    - type: Transform
-      pos: -19.5,-60.5
-      parent: 2
-  - uid: 400
-    components:
-    - type: Transform
-      pos: -13.5,-60.5
-      parent: 2
-    - type: DeviceLinkSink
-      invokeCounter: 1
 - proto: AirlockExternalGlassShuttleLocked
   entities:
   - uid: 401
@@ -18056,12 +18044,6 @@ entities:
           - DoorBolt
 - proto: AirlockExternalShuttleLocked
   entities:
-  - uid: 413
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -61.5,-2.5
-      parent: 2
   - uid: 414
     components:
     - type: Transform
@@ -18101,6 +18083,12 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -74.5,-17.5
+      parent: 2
+  - uid: 36858
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -61.5,-2.5
       parent: 2
 - proto: AirlockFreezerLocked
   entities:
@@ -38356,11 +38344,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -61.5,-18.5
       parent: 2
-  - uid: 1234
-    components:
-    - type: Transform
-      pos: -13.5,-60.5
-      parent: 2
   - uid: 1235
     components:
     - type: Transform
@@ -38425,11 +38408,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 2.5,-68.5
-      parent: 2
-  - uid: 1246
-    components:
-    - type: Transform
-      pos: -19.5,-60.5
       parent: 2
   - uid: 1247
     components:
@@ -43204,28 +43182,6 @@ entities:
           _rotation: South
         1934:
           position: 5,0
-          _rotation: South
-  - uid: 36814
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 30.752617,20.619299
-      parent: 2
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 1918
-        pen_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent:
-    - type: Storage
-      storedItems:
-        1918:
-          position: 0,0
           _rotation: South
 - proto: BoxFolderClipboardThreePapers
   entities:
@@ -67918,11 +67874,6 @@ entities:
     components:
     - type: Transform
       pos: 28.5,-24.5
-      parent: 2
-  - uid: 6016
-    components:
-    - type: Transform
-      pos: 29.5,-24.5
       parent: 2
   - uid: 6017
     components:
@@ -166783,6 +166734,31 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 29.5,66.5
       parent: 29399
+  - uid: 36862
+    components:
+    - type: Transform
+      pos: -19.5,-60.5
+      parent: 2
+  - uid: 36863
+    components:
+    - type: Transform
+      pos: -19.5,-66.5
+      parent: 2
+  - uid: 36864
+    components:
+    - type: Transform
+      pos: -18.5,-60.5
+      parent: 2
+  - uid: 36865
+    components:
+    - type: Transform
+      pos: -14.5,-60.5
+      parent: 2
+  - uid: 36866
+    components:
+    - type: Transform
+      pos: -13.5,-60.5
+      parent: 2
 - proto: GrilleBroken
   entities:
   - uid: 19587
@@ -175291,71 +175267,6 @@ entities:
     - type: Transform
       pos: -5.7430634,58.623096
       parent: 2
-  - uid: 36767
-    components:
-    - type: Transform
-      rot: -3.141592653589793 rad
-      pos: 3.5014403000000005,43.310246
-      parent: 2
-    - type: Paper
-      content: |8
-        [bold]=====================================================[/bold]
-
-        [head=1][bold][color=green]  SHUTTLE CONSTRUCTION
-            AUTHORIZATION FORM[/color][/bold][/head]
-        [bold]=====================================================[/bold]
-
-        [bold]Authorizing Entity:[/bold]
-        Name: ______________________ , Position: _______________________
-
-        [bold]Approved Shipwright(s):[/bold]
-        Name: ______________________ , Position: _______________________
-        Name: ______________________ , Position: _______________________
-        Name: ______________________ , Position: _______________________
-        Name: ______________________ , Position: _______________________
-
-        [bold]1. PROJECT DETAILS
-        [/bold]
-        Shuttle Name: ________________________
-        Class/Model: __________________________
-        Design Specifications: ______________________________
-
-        [bold]2. AUTHORIZATION
-        [/bold]
-        The Authorizing Entity grants the Shipwright permission to commence construction of the specified shuttle. All designs and materials are to be approved by the Authorizing Entity before fabrication begins.
-
-        [bold]3. TERMS OF CONSTRUCTION
-        [/bold]
-        [bullet] [bold]Duration:[/bold] Construction to be completed within ______.
-        [bullet] [bold]Resources:[/bold] All materials and components required for construction are to be sourced by the Shipwright, with costs covered by the Authorizing Entity only when preapproved unless otherwise specified.
-        [bullet] [bold]Modifications:[/bold] Any design changes must receive prior approval from the Authorizing Entity.
-        [bullet] [bold]Remittance:[/bold] As payment for authorization and support services the Shipwright agrees to provide the Authorizing Entity the sum of ___________ in either materials or speso equivalent.
-
-        [bold]4. INSPECTION & TESTING
-        [/bold]
-        The Authorizing Entity reserves the right to inspect the vessel at any stage of construction. Upon completion, the Shipwright must conduct a series of spaceworthiness tests, overseen by the Authorizing Entity.
-
-        [bold]5. WARRANTIES & LIABILITY
-        [/bold]
-        The Shipwright guarantees the vessel will be constructed according to the highest standards of interstellar engineering. Any defects or malfunctions discovered within ______ minutes of delivery must be rectified at the Shipwright’s expense.
-
-        [bold]6. DISPUTE RESOLUTION
-        [/bold]
-        Any disagreements will be resolved by the Station’s Resident Arbitrator.
-
-        [bold]SIGNED:
-        [/bold]
-        Shipwright(s):
-        __________________________
-        __________________________
-        __________________________
-        __________________________
-
-        Authorizing Entity:
-        __________________________ (Stamp)
-
-
-
 - proto: PaperBin
   entities:
   - uid: 20492
@@ -191434,6 +191345,26 @@ entities:
     - type: Transform
       pos: 48.5,-22.5
       parent: 2
+  - uid: 36867
+    components:
+    - type: Transform
+      pos: -14.5,-60.5
+      parent: 2
+  - uid: 36868
+    components:
+    - type: Transform
+      pos: -13.5,-60.5
+      parent: 2
+  - uid: 36869
+    components:
+    - type: Transform
+      pos: -19.5,-60.5
+      parent: 2
+  - uid: 36870
+    components:
+    - type: Transform
+      pos: -18.5,-60.5
+      parent: 2
 - proto: ReinforcedWindowDiagonal
   entities:
   - uid: 22927
@@ -196805,26 +196736,18 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-  - uid: 23405
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -14.5,-60.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-  - uid: 23406
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -18.5,-60.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
   - uid: 23407
     components:
     - type: Transform
       pos: 28.5,54.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+  - uid: 36861
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -17.5,-60.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -218263,11 +218186,6 @@ entities:
     - type: Transform
       pos: 32.5,54.5
       parent: 2
-  - uid: 26581
-    components:
-    - type: Transform
-      pos: -18.5,-60.5
-      parent: 2
   - uid: 26582
     components:
     - type: Transform
@@ -222955,11 +222873,6 @@ entities:
     components:
     - type: Transform
       pos: -11.5,-60.5
-      parent: 2
-  - uid: 27518
-    components:
-    - type: Transform
-      pos: -14.5,-60.5
       parent: 2
   - uid: 27519
     components:

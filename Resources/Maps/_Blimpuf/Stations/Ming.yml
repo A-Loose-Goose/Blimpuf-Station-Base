@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 07/15/2026 00:46:21
-  entityCount: 29851
+  entityCount: 29852
 maps:
 - 1
 grids:
@@ -72689,6 +72689,11 @@ entities:
     components:
     - type: Transform
       pos: -64.46573,3.977374
+      parent: 2
+  - uid: 29985
+    components:
+    - type: Transform
+      pos: -18.5,-33.5
       parent: 2
 - proto: ClothingEyesGlasses
   entities:
@@ -184612,45 +184617,6 @@ entities:
       pos: -9.5,2.5
       parent: 2
       rot: 1.5707963267948966 rad
-- proto: ClothingBeltUtility
-  entities:
-  - uid: 29937
-    components:
-    - type: Transform
-      pos: -17.508026,-33.282497
-      parent: 2
-    - type: Storage
-      storedItems:
-        11986:
-          position: 5,0
-          _rotation: South
-        11987:
-          position: 0,0
-          _rotation: South
-        11988:
-          position: 4,0
-          _rotation: South
-        11989:
-          position: 2,0
-          _rotation: South
-        11990:
-          position: 3,0
-          _rotation: South
-        11991:
-          position: 1,0
-          _rotation: South
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 11986
-          - 11989
-          - 11990
-          - 11988
-          - 11987
-          - 11991
 - proto: DresserResearchDirectorFilled
   entities:
   - uid: 29939
@@ -184692,5 +184658,12 @@ entities:
     components:
     - type: Transform
       pos: 9.458134,-4.463339
+      parent: 2
+- proto: PowerDrill
+  entities:
+  - uid: 29984
+    components:
+    - type: Transform
+      pos: -17.5,-33.5
       parent: 2
 ...
