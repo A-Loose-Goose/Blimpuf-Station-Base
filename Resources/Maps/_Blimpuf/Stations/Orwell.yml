@@ -146575,27 +146575,11 @@ entities:
     - type: Transform
       pos: 72.50527,-8.203985
       parent: 2
-  - uid: 31848
+  - uid: 31886
     components:
     - type: Transform
-      pos: 12.725367,-12.267633
+      pos: 12.5,-12.5
       parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 5
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent:
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 5
-    - type: Physics
-      canCollide: True
-    - type: ActionsContainer
 - proto: LampInterrogator
   entities:
   - uid: 22713
