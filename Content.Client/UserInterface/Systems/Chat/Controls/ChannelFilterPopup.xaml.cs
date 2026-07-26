@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using Content.Shared.Chat;
 using Content.Shared.CCVar;
@@ -15,6 +16,10 @@ namespace Content.Client.UserInterface.Systems.Chat.Controls;
 [GenerateTypedNameReferences]
 public sealed partial class ChannelFilterPopup : Popup
 {
+    // Starlight begin
+    [Dependency] private readonly IConfigurationManager _cfg = default!;
+    [Dependency] private readonly IPrototypeManager _protoManager = default!;
+    // Starlight end
     // order in which the available channel filters show up when available
     private static readonly ChatChannel[] ChannelFilterOrder =
     {
@@ -46,8 +51,7 @@ public sealed partial class ChannelFilterPopup : Popup
         HighlightEdit.Placeholder = new Rope.Leaf(Loc.GetString("hud-chatbox-highlights-placeholder"));
 
         // Load highlights if any were saved.
-        var cfg = IoCManager.Resolve<IConfigurationManager>();
-        string highlights = cfg.GetCVar(CCVars.ChatHighlights);
+        string highlights = _cfg.GetCVar(CCVars.ChatHighlights); // Starlight
 
         if (!string.IsNullOrEmpty(highlights))
         {
@@ -128,6 +132,50 @@ public sealed partial class ChannelFilterPopup : Popup
     {
         OnNewHighlights?.Invoke(Rope.Collapse(HighlightEdit.TextRope));
     }
+
+    // Starlight start
+    /// <summary>
+    ///     Event handler triggered when the auto-fill highlights checkbox is toggled.
+    /// </summary>
+    private void OnAutoFillToggled(ButtonToggledEventArgs args)
+    {
+        _cfg.SetCVar(CCVars.ChatAutoFillHighlights, args.Pressed);
+        _cfg.SaveToFile();
+    }
+
+    /// <summary>
+    ///     Event handler triggered when the auto-fill highlights CVar value changes.
+    /// </summary>
+    private void OnAutoFillCVarChanged(bool value)
+    {
+        AutoFillCheckBox.Pressed = value;
+    }
+
+    /// <summary>
+    ///     Updates and renders the list of active auto-generated highlights in the UI.
+    /// </summary>
+    public void UpdateAutoHighlights(string autoHighlights)
+    {
+        if (string.IsNullOrEmpty(autoHighlights))
+        {
+            AutoHighlightsLabel.Visible = false;
+            return;
+        }
+
+        var list = autoHighlights
+            .Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+            .Select(h => h.TrimStart('@'))
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .Select(FormattedMessage.EscapeText)
+            .Select(h => Loc.GetString("hud-chatbox-auto-highlights-bullet", ("item", h)));
+
+        var bullets = string.Join("\n", list);
+        var markup = Loc.GetString("hud-chatbox-auto-highlights-wrapper", ("bullets", bullets));
+
+        AutoHighlightsLabel.SetMessage(FormattedMessage.FromMarkupOrThrow(markup));
+        AutoHighlightsLabel.Visible = true;
+    }
+    // Starlight end
 
     public void UpdateUnread(ChatChannel channel, int? unread)
     {
