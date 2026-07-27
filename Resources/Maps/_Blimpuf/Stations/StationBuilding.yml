@@ -1648,6 +1648,9 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+    - type: DeviceList
+      devices:
+      - 2395
   - uid: 13
     components:
     - type: Transform
@@ -1666,6 +1669,7 @@ entities:
       - 1870
       - 2433
       - 1869
+      - 2406
     - type: Fixtures
       fixtures: {}
   - uid: 14
@@ -1679,6 +1683,7 @@ entities:
       - 1869
       - 1871
       - 2435
+      - 3396
     - type: Fixtures
       fixtures: {}
   - uid: 15
@@ -1690,6 +1695,8 @@ entities:
     - type: DeviceList
       devices:
       - 2436
+      - 2410
+      - 2411
     - type: Fixtures
       fixtures: {}
   - uid: 16
@@ -1703,6 +1710,7 @@ entities:
       - 1864
       - 1839
       - 2438
+      - 2390
     - type: Fixtures
       fixtures: {}
   - uid: 17
@@ -1716,6 +1724,7 @@ entities:
       - 1872
       - 2437
       - 1839
+      - 2412
     - type: Fixtures
       fixtures: {}
   - uid: 18
@@ -1728,6 +1737,7 @@ entities:
       devices:
       - 1875
       - 2423
+      - 2394
     - type: Fixtures
       fixtures: {}
   - uid: 19
@@ -1958,6 +1968,7 @@ entities:
       - 1846
       - 1847
       - 1849
+      - 1935
     - type: Fixtures
       fixtures: {}
   - uid: 32
@@ -1970,6 +1981,7 @@ entities:
       devices:
       - 1870
       - 1871
+      - 2407
     - type: Fixtures
       fixtures: {}
   - uid: 33
@@ -1983,6 +1995,7 @@ entities:
       - 1874
       - 1872
       - 2422
+      - 2393
     - type: Fixtures
       fixtures: {}
 - proto: AirCanister

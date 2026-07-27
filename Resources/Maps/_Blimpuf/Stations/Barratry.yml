@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 07/13/2026 04:34:53
-  entityCount: 16110
+  entityCount: 16111
 maps:
 - 1
 grids:
@@ -11383,6 +11383,7 @@ entities:
       - 9197
       - 9350
       - 6919
+      - 9118
     - type: Fixtures
       fixtures: {}
   - uid: 7
@@ -11406,9 +11407,10 @@ entities:
       - 6885
       - 9269
       - 9274
-      - 9111
       - 9273
       - 9268
+      - 12682
+      - 4525
     - type: Fixtures
       fixtures: {}
   - uid: 9
@@ -11418,6 +11420,10 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+    - type: DeviceList
+      devices:
+      - 16142
+      - 4532
   - uid: 10
     components:
     - type: Transform
@@ -11435,6 +11441,10 @@ entities:
       - 9279
       - 9282
       - 9281
+      - 9107
+      - 9089
+      - 9094
+      - 9101
     - type: Fixtures
       fixtures: {}
   - uid: 11
@@ -11576,6 +11586,8 @@ entities:
       - 9175
       - 9171
       - 9328
+      - 9113
+      - 16145
     - type: Fixtures
       fixtures: {}
   - uid: 17
@@ -11762,6 +11774,7 @@ entities:
       - 9341
       - 9188
       - 9343
+      - 9115
     - type: Fixtures
       fixtures: {}
   - uid: 25
@@ -11830,6 +11843,12 @@ entities:
       - 9379
       - 9378
       - 9392
+      - 9121
+      - 9122
+      - 9120
+      - 9139
+      - 9168
+      - 9123
     - type: Fixtures
       fixtures: {}
   - uid: 28
@@ -11933,6 +11952,7 @@ entities:
       - 9368
       - 6931
       - 6930
+      - 16146
     - type: Fixtures
       fixtures: {}
   - uid: 33
@@ -11971,6 +11991,7 @@ entities:
       - 9099
       - 6923
       - 6924
+      - 729
     - type: Fixtures
       fixtures: {}
   - uid: 34
@@ -12083,6 +12104,7 @@ entities:
       - 9245
       - 9388
       - 9390
+      - 9186
     - type: Fixtures
       fixtures: {}
 - proto: AirCanister
@@ -15612,11 +15634,6 @@ entities:
     - type: Transform
       pos: -15.5,22.5
       parent: 2
-  - uid: 623
-    components:
-    - type: Transform
-      pos: -54.5,84.5
-      parent: 2
   - uid: 624
     components:
     - type: Transform
@@ -15631,6 +15648,11 @@ entities:
     components:
     - type: Transform
       pos: 17.5,48.5
+      parent: 2
+  - uid: 16138
+    components:
+    - type: Transform
+      pos: -54.5,84.5
       parent: 2
 - proto: BedsheetCaptain
   entities:
@@ -15749,7 +15771,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -54.5,90.5
       parent: 2
-  - uid: 645
+  - uid: 16139
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
@@ -35624,7 +35646,7 @@ entities:
   - uid: 4585
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
+      rot: 3.141592653589793 rad
       pos: -45.5,-2.5
       parent: 2
   - uid: 4586
@@ -39477,23 +39499,11 @@ entities:
       rot: 3.141592653589793 rad
       pos: -22.5,45.5
       parent: 2
-  - uid: 5302
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -21.5,45.5
-      parent: 2
   - uid: 5303
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -55.5,82.5
-      parent: 2
-  - uid: 5304
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -55.5,88.5
       parent: 2
   - uid: 5305
     components:
@@ -39621,6 +39631,18 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -56.5,41.5
+      parent: 2
+  - uid: 16141
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -55.5,88.5
+      parent: 2
+  - uid: 16148
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -21.5,45.5
       parent: 2
 - proto: ChairCursed
   entities:
@@ -40450,11 +40472,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 24.5,13.5
       parent: 2
-  - uid: 5469
-    components:
-    - type: Transform
-      pos: -45.5,-2.5
-      parent: 2
   - uid: 5470
     components:
     - type: Transform
@@ -40534,6 +40551,11 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -69.5,39.5
+      parent: 2
+  - uid: 16144
+    components:
+    - type: Transform
+      pos: -46.5,-2.5
       parent: 2
 - proto: CheapLighter
   entities:
@@ -43108,13 +43130,6 @@ entities:
     components:
     - type: Transform
       pos: 0.5,34.5
-      parent: 2
-- proto: ComputerPersonalDesktop
-  entities:
-  - uid: 5770
-    components:
-    - type: Transform
-      pos: -62.5,39.5
       parent: 2
 - proto: ComputerPowerMonitoring
   entities:
@@ -67068,25 +67083,10 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
-  - uid: 9111
-    components:
-    - type: Transform
-      pos: -53.5,56.5
-      parent: 2
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
   - uid: 9114
     components:
     - type: Transform
       pos: -55.5,64.5
-      parent: 2
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 9117
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -51.5,67.5
       parent: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
@@ -67749,14 +67749,6 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
-  - uid: 9215
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 26.5,3.5
-      parent: 2
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
   - uid: 9216
     components:
     - type: Transform
@@ -67931,6 +67923,11 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
+  - uid: 16145
+    components:
+    - type: Transform
+      pos: -45.5,-2.5
+      parent: 2
 - proto: GasVentScrubber
   entities:
   - uid: 9249
@@ -80734,26 +80731,11 @@ entities:
       parent: 2
     - type: ApcPowerReceiver
       powerLoad: 0
-  - uid: 11281
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -55.5,88.5
-      parent: 2
-    - type: ApcPowerReceiver
-      powerLoad: 0
   - uid: 11282
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -54.5,86.5
-      parent: 2
-    - type: ApcPowerReceiver
-      powerLoad: 0
-  - uid: 11283
-    components:
-    - type: Transform
-      pos: -55.5,84.5
       parent: 2
     - type: ApcPowerReceiver
       powerLoad: 0
@@ -80973,6 +80955,21 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -87.5,28.5
+      parent: 2
+    - type: ApcPowerReceiver
+      powerLoad: 0
+  - uid: 16133
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -54.5,88.5
+      parent: 2
+    - type: ApcPowerReceiver
+      powerLoad: 0
+  - uid: 16140
+    components:
+    - type: Transform
+      pos: -54.5,84.5
       parent: 2
     - type: ApcPowerReceiver
       powerLoad: 0
@@ -86194,14 +86191,6 @@ entities:
       - - Armory
     - type: AtmosPipeColor
       color: '#0055CCFF'
-  - uid: 9112
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -45.5,-2.5
-      parent: 2
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
   - uid: 9113
     components:
     - type: Transform
@@ -86341,6 +86330,29 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
+  - uid: 16128
+    components:
+    - type: Transform
+      pos: -62.5,39.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 16142
+    components:
+    - type: Transform
+      pos: -51.5,67.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 16143
+    components:
+    - type: Transform
+      pos: -53.5,56.5
+      parent: 2
+  - uid: 16146
+    components:
+    - type: Transform
+      pos: 26.5,3.5
+      parent: 2
+      rot: 3.141592653589793 rad
 - proto: SecurityTechFab
   entities:
   - uid: 12259
@@ -92753,11 +92765,6 @@ entities:
     - type: Transform
       pos: -63.5,39.5
       parent: 2
-  - uid: 13238
-    components:
-    - type: Transform
-      pos: -62.5,39.5
-      parent: 2
   - uid: 13239
     components:
     - type: Transform
@@ -92808,6 +92815,11 @@ entities:
     components:
     - type: Transform
       pos: 17.5,52.5
+      parent: 2
+  - uid: 16132
+    components:
+    - type: Transform
+      pos: -62.5,39.5
       parent: 2
 - proto: TelecomServerFilledCargo
   entities:
@@ -108644,5 +108656,12 @@ entities:
     components:
     - type: Transform
       pos: -24.486898,29.543127
+      parent: 2
+- proto: ComputerPersonalDesktop
+  entities:
+  - uid: 16131
+    components:
+    - type: Transform
+      pos: -62.5,39.5
       parent: 2
 ...
