@@ -5,3 +5,7 @@ job-name-stirstir = Stir Stir
 JobBoxer = Boxer
 JobMagistrate = Magistrate
 JobZookeeper = Zookeeper
+JobCentCommServiceWorker = CentComm Service Worker
+JobCentCommChef = CentComm Chef
+JobCentCommBartender = CentComm Bartender
+JobCentCommJanitor = CentComm Janitor
