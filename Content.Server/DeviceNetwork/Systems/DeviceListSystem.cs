@@ -115,7 +115,7 @@ public sealed partial class DeviceListSystem : SharedDeviceListSystem
     public void OnDeviceShutdown(Entity<DeviceListComponent?> list, Entity<DeviceNetworkComponent> device)
     {
         device.Comp.DeviceLists.Remove(list.Owner);
-        if (!Resolve(list.Owner, out list.Comp))
+        if (!TryComp(list.Owner, out list.Comp))
             return;
 
         list.Comp.Devices.Remove(device);
