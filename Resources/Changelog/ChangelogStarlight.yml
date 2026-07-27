@@ -4275,5 +4275,14 @@ Entries:
   id: 5701
   time: '2026-07-21T01:36:06.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/57
+- author: ItsMaitake
+  changes:
+  - message: Secure vents added in secure areas previously unsecured.
+    type: Add
+  - message: Secure vents are now linked to the air alarms.
+    type: Add
+  id: 5801
+  time: '2026-07-27T23:39:58.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/58
 Order: -1
 
