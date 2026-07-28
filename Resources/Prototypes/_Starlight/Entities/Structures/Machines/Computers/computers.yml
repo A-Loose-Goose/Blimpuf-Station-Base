@@ -645,7 +645,7 @@
     - type: CommunicationsConsole
       title: comms-console-announcement-title-sec
       sound: /Audio/_Starlight/Announcements/announce2.ogg
-      color: "#ff4242"
+      color: "#37789B"
       settableAlertLevels:
         - green
         - blue
@@ -765,7 +765,7 @@
     - type: CommunicationsConsole
       title: comms-console-announcement-title-law
       sound: /Audio/_Starlight/Announcements/announce2.ogg
-      color: "#ff178b"
+      color: "#007700"
       settableAlertLevels: []
       canBroadcast: false
       canShuttle: false
