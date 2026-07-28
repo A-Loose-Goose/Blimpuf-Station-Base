@@ -4284,5 +4284,14 @@ Entries:
   id: 5801
   time: '2026-07-27T23:39:58.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/58
+- author: LadyLiliana
+  changes:
+  - message: Added SecureVents to most Shuttles.
+    type: Add
+  - message: Changed SushiEvac to have BlueSec Paintjob.
+    type: Tweak
+  id: 5901
+  time: '2026-07-28T00:39:28.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/59
 Order: -1
 
