@@ -17,6 +17,7 @@
   - BlackAndWhiteOverlay
   - Clumsy
   - ImpairedMobility
+  - NightVisionBlocker # Starlight
   # - LegsParalyzed (you get healed)
   - LightweightDrunk
   - Muted
@@ -58,7 +59,6 @@
   - LanguageSpeaker
   - ForeignerTrait
     # TTS - Starlight
-  - TextToSpeech
   eventComponents:
   - LanguageKnowledge #Clone languages via event so if they get changed you dont suddently re-learn languages.
 

@@ -10,7 +10,6 @@ using Content.Shared.IdentityManagement;
 using Content.Shared.Inventory;
 using Content.Shared.Preferences;
 using Content.Shared.Roles;
-using Content.Shared.Starlight.TextToSpeech;
 using Robust.Shared;
 using Robust.Shared.Configuration;
 using Robust.Shared.Enums;
@@ -22,7 +21,6 @@ using Robust.Shared.Serialization.Manager;
 using Robust.Shared.Serialization.Markdown;
 using Robust.Shared.Utility;
 using YamlDotNet.RepresentationModel;
-
 namespace Content.Shared.Humanoid;
 
 /// <summary>
@@ -34,15 +32,15 @@ namespace Content.Shared.Humanoid;
 ///     you still need a local copy so that players can set up their
 ///     characters.
 /// </summary>
-public abstract class SharedHumanoidAppearanceSystem : EntitySystem
+public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
 {
-    [Dependency] private readonly IConfigurationManager _cfgManager = default!;
-    [Dependency] private readonly INetManager _netManager = default!;
-    [Dependency] private readonly IPrototypeManager _proto = default!;
-    [Dependency] private readonly ISerializationManager _serManager = default!;
-    [Dependency] private readonly MarkingManager _markingManager = default!;
-    [Dependency] private readonly GrammarSystem _grammarSystem = default!;
-    [Dependency] private readonly IdentitySystem _identity = default!;
+    [Dependency] private IConfigurationManager _cfgManager = default!;
+    [Dependency] private INetManager _netManager = default!;
+    [Dependency] private IPrototypeManager _proto = default!;
+    [Dependency] private ISerializationManager _serManager = default!;
+    [Dependency] private MarkingManager _markingManager = default!;
+    [Dependency] private GrammarSystem _grammarSystem = default!;
+    [Dependency] private IdentitySystem _identity = default!;
 
     public static readonly ProtoId<SpeciesPrototype> DefaultSpecies = "Human";
 
@@ -105,6 +103,8 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         /*
          * Add custom handling here for forks / version numbers if you care.
          */
+
+        export.Profile.ForcedPrototype = string.Empty;
 
         var profile = export.Profile;
         var collection = IoCManager.Instance;
@@ -190,11 +190,6 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
         SetSex(target, sourceHumanoid.Sex, false, targetHumanoid);
         SetGender((target, targetHumanoid), sourceHumanoid.Gender);
-
-        // Starlight start
-        if (sourceHumanoid.Voice != null)
-            SetTTSVoice(target, sourceHumanoid.Voice, targetHumanoid);
-        // Starlight end
 
         Dirty(target, targetHumanoid);
 
@@ -533,7 +528,6 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         }
 
         EnsureDefaultMarkings(uid, humanoid);
-        SetTTSVoice(uid, profile.Voice, humanoid);
 
         humanoid.Gender = profile.Gender;
         if (TryComp<GrammarComponent>(uid, out var grammar))
@@ -595,7 +589,8 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         markingObject.Forced = forced;
         if (color != null)
         {
-            for (var i = 0; i < prototype.Sprites.Count; i++)
+            // Starlight edit - color only the marking's exposed color slots.
+            for (var i = 0; i < prototype.ColorSlotCount; i++)
             {
                 markingObject.SetColor(i, color.Value);
             }
@@ -650,15 +645,6 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
         var ev = new MarkingsUpdateEvent(); //starlight
         RaiseLocalEvent(uid, ref ev); //starlight
-    }
-    //Starlight
-    public void SetTTSVoice(EntityUid uid, string voiceId, HumanoidAppearanceComponent humanoid)
-    {
-        if (!TryComp<TextToSpeechComponent>(uid, out var comp))
-            return;
-
-        humanoid.Voice = voiceId;
-        comp.VoicePrototypeId = voiceId;
     }
     /// <summary>
     /// Takes ID of the species prototype, returns UI-friendly name of the species.

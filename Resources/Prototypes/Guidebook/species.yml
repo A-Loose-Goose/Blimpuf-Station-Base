@@ -3,24 +3,27 @@
   name: guide-entry-species
   text: "/ServerInfo/Guidebook/Mobs/Species.xml"
   children:
-  - Elf # Starlight
   - Arachnid
-  - Avali
   - Cyclorite
   - Diona
-  - Dwarf
-  - Felionoid
+  - Elf
+  - Harpy
   - Human
-  - Lagomorph #Afterlight
-  - SlimePerson
   - Moth
+  - Protogen
   - Reptilian
   - Resomi
-  - Shadekin # Starlight
+  - Rodentia #Starlight
+  - Shadekin
+  - SlimePerson
+  - Thaven
   - Vox
   - Vulpkanin
-  - Thaven #Starlight
-  - IPC #FH
+  #- Avali Blimpuf disabled roundstart
+  #- Dwarf Blimpuf disabled roundstart
+  #- Felionoid Blimpuf disabled roundstart
+  #- IPC Blimpuf disabled roundstart
+  #- Lagomorph Blimpuf disabled roundstart
 
 - type: guideEntry
   id: Arachnid
@@ -31,11 +34,6 @@
   id: Diona
   name: species-name-diona
   text: "/ServerInfo/Guidebook/Mobs/Diona.xml"
-
-- type: guideEntry
-  id: Dwarf
-  name: species-name-dwarf
-  text: "/ServerInfo/Guidebook/Mobs/Dwarf.xml"
 
 - type: guideEntry
   id: Human

@@ -34,17 +34,17 @@ public abstract partial class SharedStaminaSystem : EntitySystem
 {
     public static readonly EntProtoId StaminaLow = "StatusEffectStaminaLow";
 
-    [Dependency] private readonly IConfigurationManager _config = default!;
-    [Dependency] protected readonly IGameTiming Timing = default!;
-    [Dependency] private readonly INetManager _net = default!;
-    [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
-    [Dependency] private readonly AlertsSystem _alerts = default!;
-    [Dependency] private readonly MetaDataSystem _metadata = default!;
-    [Dependency] private readonly MovementModStatusSystem _movementMod = default!;
-    [Dependency] private readonly SharedAudioSystem _audio = default!;
-    [Dependency] private readonly SharedColorFlashEffectSystem _color = default!;
-    [Dependency] private readonly StatusEffectsSystem _status = default!;
-    [Dependency] protected readonly SharedStunSystem StunSystem = default!;
+    [Dependency] private IConfigurationManager _config = default!;
+    [Dependency] protected IGameTiming Timing = default!;
+    [Dependency] private INetManager _net = default!;
+    [Dependency] private ISharedAdminLogManager _adminLogger = default!;
+    [Dependency] private AlertsSystem _alerts = default!;
+    [Dependency] private MetaDataSystem _metadata = default!;
+    [Dependency] private MovementModStatusSystem _movementMod = default!;
+    [Dependency] private SharedAudioSystem _audio = default!;
+    [Dependency] private SharedColorFlashEffectSystem _color = default!;
+    [Dependency] private StatusEffectsSystem _status = default!;
+    [Dependency] protected SharedStunSystem StunSystem = default!;
 
     /// <summary>
     /// How much of a buffer is there between the stun duration and when stuns can be re-applied.
@@ -372,10 +372,18 @@ public abstract partial class SharedStaminaSystem : EntitySystem
         {
             // Just in case we have active but not stamina we'll check and account for it.
             if (!stamQuery.TryGetComponent(uid, out var comp) ||
-                comp.StaminaDamage <= 0f && !comp.Critical)
+                comp.StaminaDamage <= 0f && !comp.Critical && comp.ActiveDrains.Count == 0)
             {
                 RemComp<ActiveStaminaComponent>(uid);
                 continue;
+            }
+
+            if (comp.ActiveDrains.Count > 0)
+            {
+                foreach (var (source, (drainRate, _)) in comp.ActiveDrains)
+                {
+                    TakeStaminaDamage(uid, drainRate * frameTime, comp, source: source, visual: false);
+                }
             }
 
             // Shouldn't need to consider paused time as we're only iterating non-paused stamina components.
@@ -395,10 +403,13 @@ public abstract partial class SharedStaminaSystem : EntitySystem
                 comp.DecayModifiers.Aggregate<(NetEntity, float, TimeSpan), float>(1,
                     (current, modifier) => current * modifier.Item2);
 
-            TakeStaminaDamage(
-                uid,
-                comp.AfterCritical ? -comp.Decay * comp.AfterCritDecayMultiplier * totalDecayMod : -comp.Decay * totalDecayMod, // Recover faster after crit
-                comp);
+            if (comp.ActiveDrains.Count == 0)
+            {
+                TakeStaminaDamage(
+                    uid,
+                    comp.AfterCritical ? -comp.Decay * comp.AfterCritDecayMultiplier * totalDecayMod : -comp.Decay * totalDecayMod, // Recover faster after crit
+                    comp);
+            }
             //Starlight end
 
             Dirty(uid, comp);

@@ -29,3 +29,6 @@ uplink-weapon-laser-incinerator-desc = A hugely overclocked SMG. Capable of firi
 
 uplink-wt551-compact-name = WT551 Compact
 uplink-wt551-compact-desc = An incredibly compressed weapon that has a folded and unfolded state. While folded, it only takes up 2 slots and can fit into pockets, but cannot be fired. When unfolded, it is able to fire like normal but takes up much more space. The perfect tool for a smuggler!
+
+uplink-advanced-gorlex-hypospray-name = Advanced Gorlex Hypospray
+uplink-advanced-gorlex-hypospray-desc = An upgraded version of the standard NanoTrasen model of hyposprays - it boasts a higher injection yield, but has slightly less total internal capacity.

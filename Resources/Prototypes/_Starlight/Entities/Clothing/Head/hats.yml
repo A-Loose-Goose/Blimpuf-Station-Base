@@ -1,7 +1,7 @@
 - type: entity
   parent: [ClothingHeadBase, BaseCommandContraband]
   id: ClothingHeadHatCapNtrep
-  name: nt representative cap
+  name: cc representative cap
   description: The cap of justice over command!
   components:
     - type: Sprite
@@ -12,8 +12,8 @@
 - type: entity
   parent: [ClothingHeadBase, BaseBlueShieldContraband]
   id: ClothingHeadHatBeretBlueShield
-  name: blueshield beret
-  description: This beret completes the outfit of any true Blueshield Officer.
+  name: central command enforcer beret
+  description: This beret completes the outfit of any true Central Command Enforcement Officer.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Head/Hats/blueshield.rsi
@@ -23,7 +23,7 @@
 - type: entity
   parent: [ClothingHeadBase, BaseBlueShieldContraband]
   id: ClothingHeadHatBlueShieldSheriff
-  name: blueshield bounty hunter's hat
+  name: central command enforcement bounty hunter's hat
   description: For when your charges do not wish to be tracked down.
   components:
     - type: Sprite

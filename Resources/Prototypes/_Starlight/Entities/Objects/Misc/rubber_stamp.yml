@@ -14,13 +14,13 @@
     state: stamp-magistrate
 
 - type: entity
-  name: nt representative's rubber stamp
+  name: cc representative's rubber stamp
   parent: [ RubberStampBase, BaseCommandContraband ]
   id: RubberStampNtrep
   suffix: DO NOT MAP
   components:
   - type: Stamp
-    stampedName: "NanoTrasen Representative"
+    stampedName: "Central Command Representative"
     stampedColor: "#fcc032"
     stampState: "paper_stamp-ntrep"
   - type: Sprite
@@ -42,13 +42,13 @@
       state: stamp-iaa
 
 - type: entity
-  name: blueshield rubber stamp
+  name: central enforcer rubber stamp
   parent: [ RubberStampBase, BaseBlueShieldContraband ]
   id: RubberStampBSO
   suffix: DO NOT MAP
   components:
   - type: Stamp
-    stampedName: "Blueshield Officer"
+    stampedName: "Central Command Enforcement Officer"
     stampedColor: "#004281"
     stampState: "paper_stamp-bso"
   - type: Sprite
@@ -64,7 +64,7 @@
   components:
     - type: Stamp
       stampedName: "Brigmedic"
-      stampedColor: "#ae2e33"
+      stampedColor: "#000000"
       stampState: "paper_stamp-brigmedic"
     - type: Sprite
       sprite: _Starlight/Objects/Misc/stamps.rsi
@@ -460,3 +460,18 @@
     stampState: "paper_stamp-syndicate"
   - type: Sprite
     state: stamp-syndicate
+
+# Civilian stamps
+- type: entity
+  name: reporter rubber stamp
+  parent: RubberStampBase
+  id: RubberStampReporter
+  description: A rubber stamp for stamping important documents. Write all the articles!
+  components:
+    - type: Stamp
+      stampedName: Reporter
+      stampedColor: "#4B75FF"
+      stampState: "paper_stamp-psychologist"
+    - type: Sprite
+      state: stamp-hop
+

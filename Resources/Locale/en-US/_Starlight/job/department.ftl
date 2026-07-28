@@ -1,3 +1,2 @@
-department-Law = Law Department
-department-Representatives = NT Representatives
+department-Representatives = CC Representatives
 department-TSF = Trans-Solar Federation

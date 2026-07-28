@@ -4,3 +4,4 @@ job-supervisors-service-arts = the Clown, the Mime, Musicians, and the Head of P
 job-supervisors-warden = the Warden
 job-supervisors-none = Nobody
 job-supervisors-solgov = Trans-Solar Federation
+job-supervisors-station-ai = the Station AI

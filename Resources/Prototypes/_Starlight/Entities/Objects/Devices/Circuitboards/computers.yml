@@ -163,8 +163,8 @@
 - type: entity
   parent: [ BaseComputerCircuitboard, BaseCommandContraband ]
   id: LawCommsComputerCircuitboard
-  name: law communications console board
-  description: A computer printed circuit board for a law communications console.
+  name: corporate communications console board
+  description: A computer printed circuit board for a corporate communications console.
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Misc/module.rsi
@@ -186,3 +186,5 @@
       prototype: ComputerShipyard
     - type: StaticPrice
       price: 750
+    - type: StealTarget
+      stealGroup: ShipyardComputerCircuitboard

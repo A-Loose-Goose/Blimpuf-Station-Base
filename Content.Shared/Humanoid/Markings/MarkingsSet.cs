@@ -241,9 +241,9 @@ public sealed partial class MarkingSet
     {
         IoCManager.Resolve(ref markingManager);
 
-        var toRemove = new List<int>();
         foreach (var (category, list) in Markings)
         {
+            var toRemove = new List<int>(); // Starlight - keep invalid indexes scoped to this category.
             for (var i = 0; i < list.Count; i++)
             {
                 if (!markingManager.TryGetMarking(list[i], out var marking))
@@ -252,15 +252,21 @@ public sealed partial class MarkingSet
                     continue;
                 }
 
-                if (marking.Sprites.Count != list[i].MarkingColors.Count)
+                // Starlight start - normalize old sprite-layer colors into shared color slots.
+                if (marking.ColorSlotCount != list[i].MarkingColors.Count)
                 {
-                    list[i] = new Marking(marking.ID, marking.Sprites.Count);
+                    list[i] = new Marking(marking.ID, marking.GetColorSlotColors(list[i].MarkingColors), list[i].IsGlowing)
+                    {
+                        Forced = list[i].Forced,
+                        Visible = list[i].Visible,
+                    };
                 }
+                // Starlight end
             }
 
-            foreach (var i in toRemove)
+            for (var i = toRemove.Count - 1; i >= 0; i--) // Starlight - remove descending so indexes do not shift.
             {
-                Remove(category, i);
+                Remove(category, toRemove[i]);
             }
         }
     }
@@ -284,9 +290,9 @@ public sealed partial class MarkingSet
             }
 
             var index = 0;
-            while (points.Points > 0 || index < points.DefaultMarkings.Count)
+            while (points.Points > 0 && index < points.DefaultMarkings.Count)
             {
-                if (index < points.DefaultMarkings.Count && markingManager.Markings.TryGetValue(points.DefaultMarkings[index], out var prototype)) //starlight: add index sanity check to avoid problems when removing markings
+                if (markingManager.Markings.TryGetValue(points.DefaultMarkings[index], out var prototype)) //starlight: add index sanity check to avoid problems when removing markings
                 {
                     var colors = MarkingColoring.GetMarkingLayerColors(
                             prototype,

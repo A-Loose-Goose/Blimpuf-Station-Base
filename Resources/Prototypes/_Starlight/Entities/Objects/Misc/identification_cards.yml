@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   parent: [ IDCardStandard, BaseCommandContraband ]
   id: MagistrateIDCard
   name: magistrate ID card
@@ -7,7 +7,7 @@
       sprite: _Starlight/Objects/Misc/id_cards.rsi
       layers:
         - state: silver
-        - sprite: &starlight-icon-rsi _Starlight/Interface/Misc/job_icons.rsi
+        - sprite: &blimpuf-icon-rsi _Blimpuf/Interface/Misc/job_icons.rsi
           offset: &icon-offset -0.09375, 0.0625 #3 pixels left, 2 pixels up
           state: Magistrate
     - type: PresetIdCard
@@ -29,7 +29,7 @@
     - sprite: *id-rsi
       state: stripe_bottom
       color: &color-centcomm-bottom "#0d304d"
-    - sprite: *starlight-icon-rsi
+    - sprite: &starlight-icon-rsi _Starlight/Interface/Misc/job_icons.rsi
       offset: *icon-offset
       state: CentCommOperator
   - type: Item
@@ -60,7 +60,7 @@
 - type: entity
   parent: [ IDCardStandard, BaseCommandContraband ]
   id: NanoTrasenRepresentativeIDCard
-  name: NanoTrasen representative ID Card
+  name: Central Command representative ID Card
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Misc/id_cards.rsi
@@ -88,7 +88,7 @@
     sprite: _Starlight/Objects/Misc/id_cards.rsi
     layers:
     - state: silver
-    - sprite: *starlight-icon-rsi
+    - sprite: *blimpuf-icon-rsi
       offset: *icon-offset
       state: IAA
   - type: PresetIdCard
@@ -97,7 +97,7 @@
 - type: entity
   parent: [ IDCardStandard, BaseBlueShieldContraband ]
   id: BlueShieldIDCard
-  name: blue shield ID card
+  name: central command enforcement ID card
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Misc/id_cards.rsi
@@ -109,9 +109,9 @@
     - sprite: *id-rsi
       state: stripe_bottom
       color: "#1b67a5"
-    - sprite: *starlight-icon-rsi
+    - sprite: *blimpuf-icon-rsi
       offset: *icon-offset
-      state: BlueShield
+      state: CentralCommandEnforcement
   - type: PresetIdCard
     job: BlueShield
 
@@ -137,6 +137,31 @@
     job: NTNCBlueShield
   - type: NanoChatCard
     listNumber: false
+
+- type: entity
+  parent: [ IDCardStandard, BaseCommandContraband ]
+  categories: [ DoNotMap ]
+  id: CCGreenShieldIDCard
+  name: greenshield ID card
+  description: Why are you looking at this instead of the person you're supposed to protect?
+  components:
+    - type: Sprite
+      sprite: _Starlight/Objects/Misc/id_cards.rsi
+      layers:
+        - state: gold
+        - sprite: *id-rsi
+          state: stripe_top
+          color: "#1b67a5"
+        - sprite: *id-rsi
+          state: stripe_bottom
+          color: "#1b67a5"
+        - sprite: *starlight-icon-rsi
+          offset: *icon-offset
+          state: NTNCBlueShield
+    - type: PresetIdCard
+      job: CentralCommandGreenShield
+    - type: NanoChatCard
+      listNumber: false
 
 - type: entity
   parent: [ IDCardStandard, BaseCargoContraband ]
@@ -230,15 +255,37 @@
     - state: default
     - sprite: *id-rsi
       state: stripe_top
-      color: &color-security-top "#cb0000"
+      color: &color-security-top "#043242" # Blimpuf Blue SEC
     - sprite: *id-rsi
       state: stripe_bottom
-      color: &color-security-bottom "#830000"
+      color: &color-security-bottom "#043242" # Blimpuf Blue SEC
     - sprite: *starlight-icon-rsi
       offset: *icon-offset
       state: DutyOfficer
   - type: PresetIdCard
     job: DutyOfficer
+
+- type: entity
+  parent: IDCardStandard
+  id: KikiIDCard
+  name: kiki's ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: stripe_top
+      color: *color-service-top
+    - state: stripe_bottom
+      color: *color-service-bottom
+    - sprite: *icon-rsi
+      offset: *icon-offset
+      state: Botanist
+  - type: PresetIdCard
+    job: Botanist
+    name: Kiki
+  - type: Tag # Ignore Chameleon tags
+    tags:
+    - DoorBumpOpener
 
 - type: entity
   parent: IDCardStandard
@@ -256,6 +303,25 @@
   - type: Access
     tags:
       - Communist
+
+- type: entity
+  parent: [ SyndicateIDCard, BaseSyndicateContraband ]
+  id: SyndicateFootsoldierIDCard
+  name: syndicate ID card
+  suffix: Footsoldier, Not Agent ID
+  components:
+  - type: Sprite
+    layers:
+    - state: black
+    - state: stripe_top
+      color: &color-syndicate-top "#e80c0c"
+    - state: stripe_bottom
+      color: &color-syndicate-bottom "#960606"
+    - sprite: *icon-rsi
+      offset: *icon-offset
+      state: Syndicate
+  - type: IdCard
+    jobIcon: JobIconSyndicate
 
 - type: entity
   parent: [ IDCardStandard, BaseSyndicateContraband ]
@@ -533,7 +599,7 @@
     - sprite: *id-rsi
       state: stripe_bottom
       color: "#630232"
-    - sprite: *starlight-icon-rsi
+    - sprite: *blimpuf-icon-rsi
       offset: *icon-offset
       state: NanotrasenCareerTrainer
   - type: PresetIdCard
@@ -588,26 +654,6 @@
     - DoorBumpOpener
     - WhitelistChameleon
     - WhitelistChameleonIdCard
-
-# Blackstar
-- type: entity
-  parent: IDCardStandard
-  id: BlackstarIDCard
-  name: Blackstar ID card
-  components:
-    - type: Sprite
-      sprite: _Starlight/Objects/Misc/id_cards.rsi
-      layers:
-        - state: mercenary
-        - sprite: *starlight-icon-rsi
-          offset: *icon-offset
-          state: Blackstar
-    - type: IdCard
-      jobTitle: job-name-blackstar
-      jobIcon: JobIconBlackstar
-    - type: Access
-      tags:
-        - Blackstar
 
 # MedTak
 - type: entity

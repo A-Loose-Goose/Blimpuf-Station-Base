@@ -48,6 +48,7 @@
 - type: entity
   parent: [IDCardStandard, BaseGrandTheftContraband]
   id: CaptainIDCard
+  categories: [ ShouldMapStation ] # Starlight
   name: captain ID card
   components:
   - type: Sprite
@@ -195,9 +196,9 @@
     layers:
     - state: silver
     - state: stripe_top
-      color: &color-security-top "#cb0000"
+      color: &color-security-top "#043242" # Blimpuf Blue SEC
     - state: stripe_bottom
-      color: &color-security-bottom "#830000"
+      color: &color-security-bottom "#043242" # Blimpuf Blue SEC
     - sprite: *icon-rsi
       offset: *icon-offset
       state: HeadOfSecurity
@@ -696,7 +697,7 @@
 - type: entity
   parent: IDCardStandard
   id: PunPunIDCard
-  name: pun pun ID card
+  name: pun pun's ID card # Starlight apostrophe
   components:
   - type: Sprite
     layers:

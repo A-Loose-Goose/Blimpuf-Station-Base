@@ -8,10 +8,10 @@
     ClothingShoesBootsJack: 3
     ClothingHeadHatBeretSecurity: 3
     ClothingHeadHatSecsoft: 3
-    ClothingHeadBandRed: 3
-    ClothingMaskNeckGaiterRed: 3
-    ClothingHandsGlovesSecurityRed: 3
-    ClothingHandsGlovesSecurityFingerlessRed: 3
+    ClothingHeadBandBlue: 3 # Blimpuf Bluesec Edit
+    ClothingMaskNeckGaiter: 3 # Blimpuf Bluesec Edit
+    ClothingHandsGlovesSecurityBlue: 3 # Blimpuf Bluesec Edit
+    ClothingHandsGlovesSecurityFingerlessBlue: 3 # Blimpuf Bluesec Edit
     ClothingUniformJumpskirtSec: 3
     ClothingUniformJumpsuitSecGrey: 3
     ClothingUniformJumpskirtSecGrey: 3
@@ -27,7 +27,7 @@
     ClothingHeadHelmetPlate: 2
     ClothingHeadHelmetStabproof: 2
     ClothingHeadHelmetHeatAbsorbent: 2
-    ClothingNeckScarfStripedRed: 3
+    ClothingNeckScarfStripedBlue: 3 # Blimpuf Bluesec Edit
     ClothingEyesBlindfold: 1
     ClothingShoesBootsCombat: 1
     ClothingShoesBootsWinterSec: 2

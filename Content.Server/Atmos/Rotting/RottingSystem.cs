@@ -6,16 +6,18 @@ using Content.Shared.Gibbing;
 using Content.Shared.Temperature.Components;
 using Robust.Server.Containers;
 using Robust.Shared.Physics.Components;
+using Content.Shared.Humanoid;
 using Robust.Shared.Timing;
+using Content.Server._Blimpuf.RotMultiplier;
 
 namespace Content.Server.Atmos.Rotting;
 
-public sealed class RottingSystem : SharedRottingSystem
+public sealed partial class RottingSystem : SharedRottingSystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly AtmosphereSystem _atmosphere = default!;
-    [Dependency] private readonly ContainerSystem _container = default!;
-    [Dependency] private readonly DamageableSystem _damageable = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private AtmosphereSystem _atmosphere = default!;
+    [Dependency] private ContainerSystem _container = default!;
+    [Dependency] private DamageableSystem _damageable = default!;
 
     public override void Initialize()
     {
@@ -54,13 +56,22 @@ public sealed class RottingSystem : SharedRottingSystem
     /// <returns></returns>
     private float GetRotRate(EntityUid uid)
     {
+        float rotRate = 1f; //Base Rot-Rate
+
+        // Blimpuf - Required so Vox Decay only at half the rate
+        if (TryComp<RotRateMulitplierComponent>(uid, out var multiplier) &&
+            multiplier != null)
+        {
+            rotRate *= multiplier.RotRateMulitplier;
+        }
+
         if (_container.TryGetContainingContainer((uid, null, null), out var container) &&
             TryComp<ProRottingContainerComponent>(container.Owner, out var rotContainer))
         {
-            return rotContainer.DecayModifier;
+            rotRate *= rotContainer.DecayModifier;
         }
 
-        return 1f;
+        return rotRate;
     }
 
     public override void Update(float frameTime)

@@ -3982,5 +3982,200 @@ Entries:
   id: 2401
   time: '2026-06-01T20:52:32.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/24
+- author: Limerent-Sun
+  changes:
+  - message: Overwrote STARLIGHT logos and icons with Blimpuf Station logos and icons.
+    type: Tweak
+  - message: Replaced window manifest data with Blimpuf Station related branding.
+    type: Tweak
+  id: 2501
+  time: '2026-06-07T20:55:46.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/25
+- author: Limerent-Sun
+  changes:
+  - message: Removed avali, dwarf, IPC, lagomorph, felionoid from round start.
+    type: Remove
+  - message: Shadekin guidebook sprite no longer comically large.
+    type: Fix
+  - message: Reverted laspi name to slime person.
+    type: Tweak
+  - message: Reverted aielith name to elf.
+    type: Tweak
+  - message: Dwarves from random species selection.
+    type: Remove
+  id: 2601
+  time: '2026-06-10T03:21:55.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/26
+- author: ItsMaitake
+  changes:
+  - message: Added gilded and trimmed blue and black wizard robes and hats.
+    type: Add
+  id: 2701
+  time: '2026-06-16T04:14:49.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/27
+- author: LadyLiliana
+  changes:
+  - message: Vox now decay at half speed
+    type: Add
+  - message: made graves compatible with the new Vox decay speed
+    type: Tweak
+  id: 2801
+  time: '2026-06-18T17:05:07.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/28
+- author: ItsMaitake
+  changes:
+  - message: Vox footstep modifier that makes them walk silently.
+    type: Add
+  - message: Coo/Whistle/Yawn sounds to Vox.
+    type: Add
+  - message: A new slot for the Vox gas tanks on their back.
+    type: Add
+  - message: Custom Vox tank storage icons for each of the game HUD themes.
+    type: Add
+  id: 2901
+  time: '2026-06-19T03:28:11.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/29
+- author: ItsMaitake
+  changes:
+  - message: Vox Guidebook entries.
+    type: Fix
+  - message: Vox footstep volume increased.
+    type: Tweak
+  id: 3001
+  time: '2026-06-19T05:07:19.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/30
+- author: LadyLiliana
+  changes:
+  - message: The rot rate multiplier system to work universally.
+    type: Tweak
+  - message: Some issues with Vox rot rate multiplier.
+    type: Fix
+  id: 3101
+  time: '2026-06-19T18:37:20.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/31
+- author: Limerent-Sun
+  changes:
+  - message: Law department.
+    type: Remove
+  - message: Blueshield Officer is now Central Command Enforcer.
+    type: Tweak
+  - message: NanoTrasen Representative is now Central Command Representative.
+    type: Tweak
+  - message: CCR and Magi no longer part of Command department.
+    type: Tweak
+  - message: CCR, Magi, CCE, IAA, NCT job icon updates.
+    type: Tweak
+  id: 3201
+  time: '2026-06-22T06:59:55.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/32
+- author: Limerent-Sun
+  changes:
+  - message: Text-to-speech system.
+    type: Remove
+  id: 3301
+  time: '2026-06-27T00:55:53.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/33
+- author: 'Port: Moffstation'
+  changes:
+  - message: SOS cartridge.
+    type: Add
+  - message: Outgoing common radio from headsets.
+    type: Remove
+  id: 3401
+  time: '2026-06-27T00:56:16.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/34
+- author: Limerent-Sun
+  changes:
+  - message: Railroading system.
+    type: Remove
+  id: 3501
+  time: '2026-06-27T00:56:38.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/35
+- author: 'Port: Delta-V'
+  changes:
+  - message: Added Harpy species.
+    type: Add
+  id: 3601
+  time: '2026-06-27T00:57:00.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/36
+- author: ItsMaitake
+  changes:
+  - message: Changed all of the pre-existing SEC colors to be blue, instead of red.
+    type: Tweak
+  id: 3701
+  time: '2026-06-27T13:55:42.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/37
+- author: ItsMaitake
+  changes:
+  - message: Beholder, Blind, Cone, Cross, Elf, Side, Peepers, Stalks, Striped, Tendrils,
+      and Tentacles head markings.
+    type: Add
+  - message: Tentacle and Tendril leg and arm markings.
+    type: Add
+  id: 3901
+  time: '2026-06-28T08:16:38.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/39
+- author: Limerent-Sun
+  changes:
+  - message: Added Starlight updates.
+    type: Add
+  id: 3801
+  time: '2026-06-28T19:20:14.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/38
+- author: ItsMaitake
+  changes:
+  - message: SEC posters made blue.
+    type: Tweak
+  id: 4001
+  time: '2026-06-29T01:56:19.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/40
+- author: Limerent-Sun
+  changes:
+  - message: Purple cargo slime plushie.
+    type: Add
+  - message: Devil antagonist.
+    type: Remove
+  - message: STARLIGHT server browser.
+    type: Remove
+  - message: Protogens renamed to Neocytes.
+    type: Tweak
+  - message: Hermes neocyte frame rebalanced.
+    type: Tweak
+  - message: CC Rep department comms.
+    type: Tweak
+  id: 4101
+  time: '2026-07-05T02:50:44.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/41
+- author: ItsMaitake
+  changes:
+  - message: Even more things are blue now.
+    type: Tweak
+  id: 4301
+  time: '2026-07-09T03:54:54.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/43
+- author: ItsMaitake
+  changes:
+  - message: Added Brass Walls and Reinforced Brass Walls.
+    type: Add
+  - message: Added Brass Windows and Reinforced Brass Windows.
+    type: Add
+  id: 4401
+  time: '2026-07-09T11:06:33.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/44
+- author: LadyLiliana & ItsMaitake
+  changes:
+  - message: Sec decals are blue now.
+    type: Tweak
+  - message: Sec furniture/decor is blue now.
+    type: Tweak
+  - message: Sec now shows as blue on maps.
+    type: Tweak
+  - message: IAA/Magi Offices are green now.
+    type: Tweak
+  - message: Protection Anchors from Maps.
+    type: Remove
+  id: 4501
+  time: '2026-07-09T21:50:12.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/45
 Order: -1
 

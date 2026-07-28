@@ -208,7 +208,6 @@
             32:
               sprite: _Starlight/Admeme/neomoth/xenomoproach-displacements.rsi
               state: ears
-    - type: TextToSpeech
     - type: DamageOnHighSpeedImpact
       damage:
         types:
@@ -338,6 +337,7 @@
       damageContainers:
         - Inorganic
         - Silicon
+        - Hybrid
     - type: ItemSlots
       slots:
         cell_slot:
@@ -539,6 +539,6 @@
       organs:
         stomach: OrganMothStomach
     lefthand:
-      part: LeftHandSmartCorgi
+      part: LeftHandAnimal
     righthand:
-      part: RightHandSmartCorgi
+      part: RightHandAnimal

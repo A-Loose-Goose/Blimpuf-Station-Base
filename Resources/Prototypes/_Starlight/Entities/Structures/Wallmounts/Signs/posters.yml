@@ -112,7 +112,7 @@
   parent: PosterBase
   id: PosterContrabandRobirdVox
   name: "Robird Voxes Do Crime"
-  description: "A poster vandalised to look like a Blueshield Officer, signed by Jack D.?"
+  description: "A poster vandalised to look like a Central Command Enforcement Officer, signed by Jack D.?"
   components:
   - type: Sprite
     sprite: _Starlight/Structures/Wallmounts/posters/robird.rsi
@@ -626,3 +626,13 @@
   - type: Sprite
     sprite: _Starlight/Structures/Wallmounts/posters/hereticalexomorph.rsi
     state: hereticalexomorph
+
+- type: entity
+  parent: PosterBase
+  id: PosterContrabandBeep100
+  name: "Beep 100"
+  description: "A handmade memorial poster for 'Beep 100', the 100th Flashclone of the Resomi named Beep. May 31, 2526. It looks like someone took a bite out of the bottom corner."
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Wallmounts/posters/beep100.rsi
+    state: poster

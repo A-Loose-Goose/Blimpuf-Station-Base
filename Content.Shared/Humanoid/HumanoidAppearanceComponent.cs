@@ -1,7 +1,6 @@
 using Content.Shared.DisplacementMap;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
-using Content.Shared.Starlight.TextToSpeech;
 using Content.Shared.Inventory;
 using Content.Shared.Preferences;
 using Robust.Shared.Enums;
@@ -118,15 +117,6 @@ public sealed partial class HumanoidAppearanceComponent : Component
     /// If null, the entity was not spawned with a profile.
     /// </summary>
     public HumanoidCharacterProfile? BaseProfile;
-
-    public static readonly Dictionary<Sex, string> DefaultSexVoice = new()
-    {
-        {Sex.Male, "Voljin"},
-        {Sex.Female, "Amina"},
-        {Sex.Unsexed, "Charlotte"}
-    };
-    [DataField("voice", customTypeSerializer: typeof(PrototypeIdSerializer<VoicePrototype>))]
-    public string? Voice { get; set; }
 
     /// <summary>
     ///     The displacement maps that will be applied to specific layers of the humanoid.

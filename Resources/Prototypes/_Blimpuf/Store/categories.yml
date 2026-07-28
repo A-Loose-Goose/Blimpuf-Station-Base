@@ -3,3 +3,8 @@
   id: UplinkResearch
   name: Research
   priority: 10
+
+# Blimpuf brand huggables
+- type: storeCategory
+  id: BlimpufCrew
+  name: Crew

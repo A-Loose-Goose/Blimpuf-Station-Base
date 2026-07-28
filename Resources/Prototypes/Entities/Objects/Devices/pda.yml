@@ -86,6 +86,7 @@
       - NanoTaskCartridge
       - NewsReaderCartridge
       - NanoChatCartridge # CD
+      - SOSCartridge # Imp
     cartridgeSlot:
       priority: -1
       name: device-pda-slot-component-slot-name-cartridge
@@ -159,6 +160,7 @@
     - NewsReaderCartridge
     - WantedListCartridge
     - NanoChatCartridge # CD
+    - SOSCartridge # Imp
 
 - type: entity
   parent: BasePDA
@@ -174,6 +176,7 @@
       - NewsReaderCartridge
       - MedTekCartridge
       - NanoChatCartridge # CD
+      - SOSCartridge # Imp
 
 - type: entity
   parent: BasePDA
@@ -204,6 +207,17 @@
     accentVColor: "#949137"
   - type: Icon
     state: pda-interntech
+    # Starlight BEGIN
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NanoTaskCartridge
+      - NewsReaderCartridge
+      - AstroNavCartridge
+      - NanoChatCartridge
+    # Starlight END
 
 - type: entity
   parent: BaseMedicalPDA
@@ -241,8 +255,8 @@
        !type:String
        pda-interncadet
   - type: PdaBorderColor
-    borderColor: "#717059"
-    accentVColor: "#A32D26"
+    borderColor: "#596271"
+    accentVColor: "#3a819b"
   - type: Icon
     state: pda-interncadet
 
@@ -487,6 +501,7 @@
     - NewsReaderCartridge
     - AstroNavCartridge
     - NanoChatCartridge # CD
+    - SOSCartridge # Imp
 
 - type: entity
   parent: BasePDA
@@ -533,6 +548,7 @@
       - NewsReaderCartridge
       - AstroNavCartridge
       - NanoChatCartridge # CD
+      - SOSCartridge # Imp
 
 - type: entity
   parent: BasePDA
@@ -716,6 +732,7 @@
       - NewsReaderCartridge
       - AstroNavCartridge #FH
       - NanoChatCartridge # CD
+      - SOSCartridge # Imp
 
 - type: entity
   parent: BasePDA
@@ -744,6 +761,7 @@
       - NewsReaderCartridge
       - AstroNavCartridge #FH
       - NanoChatCartridge # CD
+      - SOSCartridge # Imp
 
 - type: entity
   parent: BaseMedicalPDA
@@ -904,8 +922,8 @@
        !type:String
        pda-hos
   - type: PdaBorderColor
-    borderColor: "#A32D26"
-    accentHColor: "#447987"
+    borderColor: "#333333"
+    accentHColor: "#3a819b"
   - type: Icon
     state: pda-hos
   - type: CartridgeLoader
@@ -917,6 +935,7 @@
     - WantedListCartridge
     - LogProbeCartridge
     - NanoChatCartridge # CD
+    - SOSCartridge # Imp
 
 - type: entity
   parent: BaseSecurityPDA
@@ -932,8 +951,8 @@
        !type:String
        pda-warden
   - type: PdaBorderColor
-    borderColor: "#A32D26"
-    accentVColor: "#949137"
+    borderColor: "#333333"
+    accentVColor: "#3a819b"
   - type: Icon
     state: pda-warden
 
@@ -941,7 +960,7 @@
   parent: BaseSecurityPDA
   id: SecurityPDA
   name: security PDA
-  description: Red to hide the stains of assistant blood.
+  description: Blue to hide the stains of arachnid blood.
   components:
   - type: Pda
     id: SecurityIDCard
@@ -951,7 +970,7 @@
        !type:String
        pda-security
   - type: PdaBorderColor
-    borderColor: "#A32D26"
+    borderColor: "#333333"
   - type: Icon
     state: pda-security
 
@@ -990,6 +1009,7 @@
       - LogProbeCartridge
       - AstroNavCartridge
       - NanoChatCartridge # CD
+      - SOSCartridge # Imp
 
 - type: entity
   parent: CentcomPDA
@@ -1017,6 +1037,7 @@
       - MedTekCartridge
       - AstroNavCartridge
       - NanoChatCartridge # CD
+      - SOSCartridge # Imp
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener
@@ -1098,6 +1119,7 @@
       - NewsReaderCartridge
       - AstroNavCartridge #FH
       - NanoChatCartridge # CD
+      - SOSCartridge # Imp
 
 - type: entity
   parent: BasePDA
@@ -1239,6 +1261,7 @@
       - LogProbeCartridge
       - AstroNavCartridge
       - NanoChatCartridge # CD
+      - SOSCartridge # Imp
 
 - type: entity
   parent: ERTLeaderPDA
@@ -1409,6 +1432,7 @@
     - WantedListCartridge
     - LogProbeCartridge
     - NanoChatCartridge # CD
+    - SOSCartridge # Imp
 
 - type: entity
   parent: BaseMedicalPDA
@@ -1424,9 +1448,9 @@
        !type:String
        pda-brigmedic
   - type: PdaBorderColor
-    borderColor: "#A32D26"
-    accentHColor: "#d7d7d0"
-    accentVColor: "#d7d7d0"
+    borderColor: "#20526f"
+    accentHColor: "#ffffff"
+    accentVColor: "#ffffff"
   - type: Icon
     state: pda-brigmedic
   - type: CartridgeLoader
@@ -1438,6 +1462,7 @@
     - WantedListCartridge
     - MedTekCartridge
     - NanoChatCartridge # CD
+    - SOSCartridge # Imp
 
 - type: entity
   parent: ClownPDA
@@ -1475,33 +1500,6 @@
   #endregion Starlight
 
 - type: entity
-  parent: ClownPDA
-  id: CluwneBeastPDA
-  name: cluwne PDA
-  suffix: Unremoveable
-  description: Cursed cluwne PDA.
-  components:
-  - type: Pda
-    id: CluwneBeastIDCard
-    penSlot:
-      startingItem: CrayonGreen
-      ejectSound: /Audio/Items/bikehorn.ogg
-      priority: -1
-      whitelist:
-        tags:
-        - Write
-  - type: Appearance
-    appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-cluwne
-  - type: PdaBorderColor
-    borderColor: "#1c8f4d"
-  - type: Icon
-    state: pda-cluwne
-  - type: Unremoveable
-
-- type: entity
   parent: BasePDA
   id: SeniorEngineerPDA
   name: senior engineer PDA
@@ -1528,6 +1526,7 @@
       - NewsReaderCartridge
       - AstroNavCartridge #FH
       - NanoChatCartridge # CD
+      - SOSCartridge # Imp
 
 - type: entity
   parent: BasePDA
@@ -1583,8 +1582,8 @@
        !type:String
        pda-seniorofficer
   - type: PdaBorderColor
-    borderColor: "#A32D26"
-    accentVColor: "#DFDFDF"
+    borderColor: "#333333"
+    accentVColor: "#3a819b"
   - type: Icon
     state: pda-seniorofficer
 

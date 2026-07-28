@@ -1,7 +1,7 @@
 - type: entity
   parent: [ClothingEyesBase, BaseBlueShieldContraband]
   id: ClothingEyesHudBlueShield
-  name: blue shield hud
+  name: central command enforcer hud
   description: An innovative heads-up display that scans the humanoids in view and provides accurate data about their ID status, security records, and medical information.
   components:
     - type: Sprite
@@ -15,10 +15,12 @@
       damageContainers:
         - Biological
         - IPC
+        - Hybrid
     - type: ShowHealthIcons
       damageContainers:
         - Biological
         - IPC
+        - Hybrid
     - type: Tag
       tags:
         - HudMedical
@@ -28,7 +30,7 @@
 - type: entity
   parent: [ClothingEyesHudBlueShield, ClothingHeadEyeBaseFlippable]
   id: ClothingEyesEyepatchHudBlueShield
-  name: blue shield hud eyepatch
+  name: central command enforcement hud eyepatch
   description: An innovative heads-up display that scans the humanoids in view and provides accurate data about their ID status, security records, and medical information. For true patriots.
   components:
     - type: Sprite
@@ -44,7 +46,7 @@
 - type: entity
   parent: [ClothingEyesEyepatchHudBlueShield, ClothingHeadEyeBaseFlipped]
   id: ClothingEyesEyepatchHudBlueShieldFlipped
-  name: blue shield hud eyepatch
+  name: central command enforcement hud eyepatch
 
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]
@@ -104,6 +106,9 @@
     - type: EyeProtection
       protectionTime: 5
     - type: ShowHealthBars
+      damageContainers:
+        - Biological
+        - Hybrid # Protogens
     - type: SolutionScanner
     - type: Construction
       graph: GlassesSecHUD
@@ -185,9 +190,11 @@
     - type: ShowHealthBars
       damageContainers:
         - Biological
+        - Hybrid
     - type: ShowHealthIcons
       damageContainers:
         - Biological
+        - Hybrid
     - type: Tag
       tags:
         - HudMedical
@@ -197,7 +204,7 @@
 - type: entity
   parent: [ClothingEyesBase, BaseCommandContraband]
   id: ClothingEyesNTRMonocle
-  name: NanoTrasen representative monocle
+  name: Central Command representative monocle
   description: A fancy monocle that also functions as a HUD to make sure no functionality is lost for style.
   components:
     - type: Sprite

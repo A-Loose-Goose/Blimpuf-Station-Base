@@ -55,7 +55,8 @@
     - SiliconLiberation #Starlight
 #    - Brighteye #Starlight
     - ThiefGamerule # Starlight, Event Light
-    # - CosmicCult #Starlight
+    - CosmicCult #Starlight
+    - TerrorSpidersSpawn # Starlight
 
 - type: gamePreset
   id: AllerAtOnce
@@ -96,9 +97,10 @@
 #    - Brighteye #Starlight
     - ThiefGamerule # Starlight, Event Light
     - LoneOpsSpawn # Starlight
-    - RailroadingTerminator # Starlight
-    - RailroadingMinor # Starlight
-    # - CosmicCult # Starlight
+    #- RailroadingTerminator # Starlight
+    #- RailroadingMinor # Starlight
+    - CosmicCult # Starlight
+    - TerrorSpidersSpawn # Starlight
 
 - type: gamePreset
   id: Extended
@@ -136,7 +138,7 @@
   name: dynamic-title
   showInVote: false # admin-only for now until we fix some bugs
   description: dynamic-description
-  minPlayers: 5 # 🌟Starlight🌟
+  minPlayers: 50 # 🌟Starlight🌟
   rules:
   - DynamicRule
   - DummyNonAntag
@@ -156,7 +158,7 @@
   description: secret-description
   rules:
     - Secret
-    - RailroadingMinor # 🌟Starlight🌟
+   # - RailroadingMinor Blimpuf disable railroading
 
 - type: gamePreset
   id: Sandbox
@@ -186,7 +188,7 @@
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
-  - RailroadingMinor # 🌟Starlight🌟
+  #- RailroadingMinor # Blimpuf disable railroading
 
 #Starlight start, disabled because maps are removed
 # - type: gamePreset

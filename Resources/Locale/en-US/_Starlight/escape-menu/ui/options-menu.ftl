@@ -7,18 +7,6 @@ server-info-connect-discord-button = Link Discord
 ui-options-arachnophobia = Arachnophobia Mode
 ui-options-disable-job-icon-animation = Disable animation for chat and status icons
 
-## TTS
-
-ui-options-tts-label = Text-To-Speech
-ui-options-tts-volume = TTS Volume:
-ui-options-tts-chime-volume = Chime Volume:
-credits-window-tts-title = TTS (Text-To-Speech) Feature
-
-ui-options-tts-radio-volume = Radio Volume:
-ui-options-tts-announce-volume = Announcement Volume:
-
-ui-options-tts-enabled = Text-To-Speech Enabled
-ui-options-tts-radio-queue-enabled = Queue Radio TTS
 ui-options-radio-chime-mute = Mute Radio Chimes
 
 ## UI
@@ -55,3 +43,9 @@ ui-options-admin-ghost-hud-setting-health-iconsandbars = Icons and bars
 
 ui-options-admin-ghost-hud-show-faction-icons = Show faction icons
 ui-options-admin-ghost-hud-show-satiation-icons = Show satiation icons
+
+ui-options-admin-ghost = Admin Ghost Config
+ui-options-admin-ghost-script-label = aghost Script
+ui-options-admin-ghost-script-tooltip =
+    The name of the script you want to automatically run when becoming admin ghost, either by command or by observing from lobby.
+    Path is relative to your launcher's data directory, typically inside AppData on Windows or .local/share on Linux.

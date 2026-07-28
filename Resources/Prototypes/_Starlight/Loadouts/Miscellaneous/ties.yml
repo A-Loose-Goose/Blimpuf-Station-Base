@@ -14,3 +14,12 @@
         proto: MasterDet
   equipment:
     neck: ClothingNeckTieDet
+
+# Blimpuf Station Ties
+- type: loadout
+  id: SecurityBlueNeckTie
+  effects:
+    - !type:GroupLoadoutEffect
+      proto: NoviceOfficer
+  equipment:
+    neck: ClothingNeckTieBlue

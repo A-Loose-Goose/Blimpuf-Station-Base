@@ -16,6 +16,10 @@
     solution: hypospray
     exactVolume: true
   - type: Appearance
+  - type: MeleeWeapon # Starlight start
+    damage:
+      types:
+        Piercing: 5 # Starlight end
 
 - type: entity
   parent: [BaseHypospray, BaseGrandTheftContraband]
@@ -52,6 +56,37 @@
     maxFillLevels: 6
     fillBaseName: hypo_fill
     solutionName: hypospray
+  - type: SyndicateResearchTarget
+    researchProtoIds:
+      - displayName: jet injector
+        validPrototypes:
+          - JetInjector
+          - AdvancedJetInjector
+          - TacticalJetInjector
+      - displayName: spray painter
+        validPrototypes:
+          - SprayPainter
+      - displayName: multitool
+        validPrototypes:
+          - Multitool
+      - displayName: health analyzer
+        validPrototypes:
+          - HandheldHealthAnalyzer
+      - displayName: silver bar
+        validPrototypes:
+          - IngotSilver
+          - IngotSilver1
+      - displayName: chem dispenser machine board
+        validPrototypes:
+          - ChemDispenserMachineCircuitboard
+      - displayName: chemmaster 4000 machine board
+        validPrototypes:
+          - ChemMasterMachineCircuitboard
+      - displayName: jug
+        validPrototypes:
+          - Jug
+    researchUnlockId: UplinkAdvancedGorlexHypospray
+    researchAnnouncementString: research-announcement-advanced-gorlex-hypospray
 
 - type: entity
   parent: [BaseHypospray, BaseSyndicateContraband]

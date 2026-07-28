@@ -16,7 +16,7 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Human, Animal, Rat, Plant ]
+          type: [ Human, Animal, Rat, Plant, Harpy, Protogen ]
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:
@@ -47,7 +47,7 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Human, Animal, Rat, Plant, Arachnid, Moth ]
+          type: [ Human, Animal, Rat, Plant, Arachnid, Moth, Harpy, Protogen ]
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:
@@ -98,6 +98,11 @@
       - !type:AdjustReagent
         reagent: Inaprovaline
         amount: -2.0
+      - !type:Oxygenate # DeltaV - Harpy sensitive to air quality
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Harpy ]
+        factor: -8
     Gas:
       effects:
       - !type:HealthChange
@@ -112,6 +117,11 @@
         minScale: 1.5
         clear: True
         time: 5
+      - !type:Oxygenate # DeltaV - Harpy sensitive to air quality
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Harpy ]
+        factor: -8
   reactiveEffects:
     Flammable:
       methods: [ Touch ]
@@ -143,6 +153,11 @@
         damage:
           types:
             Radiation: 1.5
+      - !type:Oxygenate # DeltaV - Harpy sensitive to air quality
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Harpy ]
+        factor: -8
     Gas:
       effects:
       - !type:HealthChange
@@ -157,6 +172,11 @@
         minScale: 1.5
         clear: True
         time: 5
+      - !type:Oxygenate # DeltaV - Harpy sensitive to air quality
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Harpy ]
+        factor: -8
 
 - type: reagent
   id: CarbonDioxide
@@ -185,9 +205,14 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Plant ]
+          type: [ Plant, Harpy ]
           inverted: true
         factor: -4
+      - !type:Oxygenate # DeltaV - Harpy more sensitive to air quality
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Harpy ]
+        factor: -12
     Gas:
       effects:
       - !type:Oxygenate
@@ -210,9 +235,14 @@
       - !type:Oxygenate # carbon dioxide displaces oxygen from the bloodstream, causing asphyxiation
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Plant ]
+          type: [ Plant, Harpy ]
           inverted: true
         factor: -4
+      - !type:Oxygenate # DeltaV - Harpy more sensitive to air quality
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Harpy ]
+        factor: -12
       # We need a metabolism effect on reagent removal
       #- !type:AdjustAlert
       #  alertType: CarbonDioxide
@@ -233,9 +263,10 @@
         damage:
           types:
             Cold: 0.5 # liquid nitrogen is cold
-        conditions:
+        conditions: # Starlight start
           - !type:MetabolizerTypeCondition
             type: [ Cyclorite ]
+            inverted: true # Starlight end
     Gas:
       effects:
       - !type:Oxygenate
@@ -417,3 +448,8 @@
         messages: [ "frezon-euphoric" ]
         probability: 0.1
         minScale: 1
+      - !type:Oxygenate # DeltaV - Harpy sensitive to air quality
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Harpy ]
+        factor: -4

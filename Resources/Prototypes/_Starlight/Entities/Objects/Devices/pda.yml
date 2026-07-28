@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   parent: BasePDA
   id: RoboticistPDA
   name: roboticist PDA
@@ -22,6 +22,7 @@
     damageContainers:
     - Silicon
     - IPC
+    - Hybrid
 
 - type: entity
   parent: BaseMedicalPDA
@@ -61,9 +62,9 @@
        !type:String
        pda-veteranbrigmedic
   - type: PdaBorderColor
-    borderColor: "#A32D26"
-    accentHColor: "#d7d7d0"
-    accentVColor: "#d7d7d0"
+    borderColor: "#20526f"
+    accentHColor: "#ffffff"
+    accentVColor: "#ffffff"
   - type: Icon
     sprite: _Starlight/Objects/Devices/pda.rsi
     state: pda-veteranbrigmedic
@@ -76,6 +77,7 @@
     - WantedListCartridge
     - MedTekCartridge
     - NanoChatCartridge
+    - SOSCartridge # Imp
 
 - type: entity
   parent: BaseMedicalPDA
@@ -93,9 +95,9 @@
        !type:String
        pda-corpsman
   - type: PdaBorderColor
-    borderColor: "#A32D26"
-    accentHColor: "#d7d7d0"
-    accentVColor: "#d7d7d0"
+    borderColor: "#20526f"
+    accentHColor: "#121010"
+    accentVColor: "#121010"
   - type: Icon
     sprite: _Starlight/Objects/Devices/pda.rsi
     state: pda-corpsman
@@ -108,6 +110,7 @@
     - WantedListCartridge
     - MedTekCartridge
     - NanoChatCartridge
+    - SOSCartridge # Imp
 
 - type: entity
   parent: BaseMedicalPDA
@@ -125,9 +128,9 @@
        !type:String
        pda-veterancorpsman
   - type: PdaBorderColor
-    borderColor: "#A32D26"
-    accentHColor: "#d7d7d0"
-    accentVColor: "#d7d7d0"
+    borderColor: "#20526f"
+    accentHColor: "#121010"
+    accentVColor: "#121010"
   - type: Icon
     sprite: _Starlight/Objects/Devices/pda.rsi
     state: pda-veterancorpsman
@@ -140,6 +143,7 @@
     - WantedListCartridge
     - MedTekCartridge
     - NanoChatCartridge
+    - SOSCartridge # Imp
 
 - type: entity
   parent: BaseSecurityPDA
@@ -157,7 +161,8 @@
         !type:String
         pda-dutyofficer
   - type: PdaBorderColor
-    borderColor: "#A32D26"
+    borderColor: "#333333"
+    accentVColor: "#ffffff"
   - type: Icon
     sprite: _Starlight/Objects/Devices/pda.rsi
     state: pda-dutyofficer
@@ -170,6 +175,7 @@
       - NewsReaderCartridge
       - WantedListCartridge
       - NanoChatCartridge
+      - SOSCartridge # Imp
 
 - type: entity
   parent: BasePDA
@@ -200,7 +206,7 @@
 - type: entity
   parent: BasePDA
   id: NanoTrasenRepresentativePDA
-  name: NanoTrasen representative PDA
+  name: Central Command representative PDA
   components:
   - type: Pda
     id: NanoTrasenRepresentativeIDCard
@@ -250,7 +256,7 @@
 - type: entity
   parent: [ BasePDA, BaseBlueShieldContraband ]
   id: BlueShieldPDA
-  name: blue shield PDA
+  name: central command enforcer PDA
   description: Comes with a built-in medtek to assess command staff's wounds after you heroically save them.
   components:
   - type: Sprite
@@ -277,11 +283,12 @@
       - NewsReaderCartridge
       - MedTekCartridge
       - NanoChatCartridge
+      - SOSCartridge # Imp
 
 - type: entity
   parent: BlueShieldPDA
   id: VeteranBlueShieldPDA
-  name: veteran blue shield PDA
+  name: veteran central command enforcer PDA
   description: Comes with a built-in medtek to assess command staff's wounds after you heroically save them.
   components:
   - type: Sprite
@@ -332,6 +339,7 @@
       - NewsReaderCartridge
       - AstroNavCartridge
       - NanoChatCartridge
+      - SOSCartridge # Imp
 
 - type: entity
   parent: SalvageLeadPDA
@@ -408,6 +416,7 @@
     - NewsReaderCartridge
     - AstroNavCartridge
     - NanoChatCartridge
+    - SOSCartridge # Imp
 
 - type: entity
   parent: MiningPDA
@@ -494,6 +503,38 @@
   - type: Icon
     state: pda-internservice
 
+# Pun Pun
+- type: entity
+  parent: BasePDA
+  id: PunPunPDA
+  name: pun pun's PDA
+  description: Smells like bananas.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Devices/pda.rsi
+  - type: Pda
+    id: PunPunIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-punpun
+  - type: PdaBorderColor
+    borderColor: "#333333"
+    accentVColor: "#ffdc54"
+  - type: Icon
+    sprite: _Starlight/Objects/Devices/pda.rsi
+    state: pda-punpun
+
+- type: entity
+  parent: BotanistPDA
+  id: KikiPDA
+  name: kiki's PDA
+  description: Has an earthy scent.
+  components:
+  - type: Pda
+    id: KikiIDCard
+
 - type: entity
   parent: BasePDA
   id: CommanderPDA
@@ -545,6 +586,39 @@
       - LogProbeCartridge
       - AstroNavCartridge
       - NanoChatCartridge
+      - SOSCartridge # Imp
+
+- type: entity
+  parent: BasePDA
+  categories: [ DoNotMap ]
+  id: CentCommGreenShieldPDA
+  name: greenshield PDA
+  description: Comes with all the bells and whistles for all those times you do more than walk slowly next to someone who thinks they are way too important.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Objects/Devices/pda.rsi
+    - type: Pda
+      id: CCGreenShieldIDCard
+    - type: Appearance
+      appearanceDataInit:
+        enum.PdaVisuals.PdaType:
+          !type:String
+          pda-ntnc-cs
+    - type: Icon
+      sprite: _Starlight/Objects/Devices/pda.rsi
+      state: pda-ntnc-cs
+    - type: CartridgeLoader
+      uiKey: enum.PdaUiKey.Key
+      preinstalled:
+        - CrewManifestCartridge
+        - NotekeeperCartridge
+        - NanoTaskCartridge
+        - NewsReaderCartridge
+        - MedTekCartridge
+        - WantedListCartridge
+        - LogProbeCartridge
+        - AstroNavCartridge
+        - NanoChatCartridge
 
 - type: entity
   parent: BasePDA
@@ -575,6 +649,7 @@
       - LogProbeCartridge
       - AstroNavCartridge
       - NanoChatCartridge
+      - SOSCartridge # Imp
 
 - type: entity
   parent: ClearPDA
@@ -619,10 +694,18 @@
 - type: entity
   parent: CentcomPDA
   id: NTSFPDA
-  suffix: NTSF #starlight
+  name: NT PDA
+  description: A stately blue PDA used by top NanoTrasen Officials and Special Forces.
   components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Devices/pda.rsi
   - type: Pda
     id: CentcomIDCardNTSF
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-ntsf
   - type: HealthAnalyzer
     maxScanRange: null
     scanDelay: 0
@@ -630,6 +713,9 @@
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener
+  - type: Icon
+    sprite: _Starlight/Objects/Devices/pda.rsi
+    state: pda-ntsf
   - type: CartridgeLoader
     uiKey: enum.PdaUiKey.Key
     preinstalled:
@@ -642,14 +728,23 @@
       - LogProbeCartridge
       - AstroNavCartridge
       - NanoChatCartridge
+      - SOSCartridge # Imp
 
 - type: entity
   parent: CentcomPDA
   id: DecimusPDA
-  suffix: ERROR #starlight
+  name: jailbroken PDA
+  description: An illegally modified generic NanoTrasen PDA. Please report this to your nearest NanoTrasen Career Trainer for investigation.
   components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Devices/pda.rsi
   - type: Pda
     id: CentcomIDCardDecimus
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-decimus
   - type: HealthAnalyzer
     maxScanRange: null
     scanDelay: 0
@@ -657,6 +752,9 @@
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener
+  - type: Icon
+    sprite: _Starlight/Objects/Devices/pda.rsi
+    state: pda-decimus
   - type: CartridgeLoader
     uiKey: enum.PdaUiKey.Key
     preinstalled:
@@ -669,6 +767,7 @@
       - LogProbeCartridge
       - AstroNavCartridge
       - NanoChatCartridge
+      - SOSCartridge # Imp
 
 - type: entity
   parent: BasePDA
@@ -697,6 +796,7 @@
       - MedTekCartridge
       - AstroNavCartridge
       - NanoChatCartridge
+      - SOSCartridge # Imp
 
 - type: entity
   parent: [BasePDA, BaseTSFContraband]
@@ -727,6 +827,7 @@
       - NewsReaderCartridge
       - AstroNavCartridge
       - NanoChatCartridge
+      - SOSCartridge # Imp
 
 - type: entity
   parent: SolGovPDA
@@ -835,3 +936,30 @@
   components:
   - type: Pda
     id: MedTakDispatcherIDCard
+
+- type: entity
+  parent: ClownPDA
+  id: CluwneBeastPDA
+  name: cluwne PDA
+  suffix: Unremoveable
+  description: Cursed cluwne PDA.
+  components:
+  - type: Pda
+    id: CluwneBeastIDCard
+    penSlot:
+      startingItem: CrayonGreen
+      ejectSound: /Audio/Items/bikehorn.ogg
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-cluwne
+  - type: PdaBorderColor
+    borderColor: "#1c8f4d"
+  - type: Icon
+    state: pda-cluwne
+  - type: Unremoveable

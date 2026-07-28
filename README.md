@@ -1,33 +1,37 @@
 <p align="center">
-  <img alt="Space Station 14" width="600" src="Resources/Textures/Logo/logo.png" />
+  <img alt="Blimpuf Station" width="600" src="Resources/Textures/Logo/logo.png" />
 </p>
 
-<div class="header" align="center">
+<h1 align="center">
+  <a href="https://discord.gg/K36SqPPevv">Discord</a>
+</h1>
 
-[![Discord](https://img.shields.io/discord/1272545509562777621?label=Discord&logo=discord&logoColor=white)](https://discord.gg/ssJTANEa)
-[![Steam](https://img.shields.io/badge/Steam-SS14%20-blue)](https://store.steampowered.com/app/1255460/Space_Station_14/)
-[![Client](https://img.shields.io/badge/Client-Download-blue)](https://spacestation14.io/about/nightlies/)
-[![GitHub](https://img.shields.io/github/stars/ss14Starlight/space-station-14?style=social)]([https://github.com/ss14Starlight/space-station-14])
+<h1 align="center">Blimpuf Station</h1>
 
-# STARLIGHT
-<sub>Space-Station 14</sub>
+<p align="center">
+  <sub>Space-Station 14</sub>
+</p>
 
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/ss14Starlight/space-station-14)
-![GitHub Issues](https://img.shields.io/github/issues/ss14Starlight/space-station-14)
-![GitHub Pull Requests](https://img.shields.io/github/issues-pr-closed/ss14Starlight/space-station-14)
+**Blabl blimpuf** ***blyumph***! Welcome to **Blimpuf Station**, an MRP+ server in the making that is forked from the Starlight codebase. Set during the events of a galactic collision, Nanotrasen has evolved from a humble corporation to a corrupt multi-galactic corporate entity, profiteering off the vast new horizons and resources. The station will feature frequent events, based either on the actions pre-planned by event administrators, or done impromptu based on the roleplay of crewmembers on the station.
 
-</div>
+We are currently in development, and are working on many new and exciting additions to the game. Some of our features are:
 
-STARLIGHT is an open source project aimed at creating unique mechanics and a pleasant game atmosphere in the game Space Station 14,
+💻 __**Syndicate Traitor Objective Overhaul**__  - Just stealing an item is old fashioned, it's a task for thieves. Now, traitors will have the chance to roll a research task, featuring new and exciting unlockable Syndicate Research Uplink items, like a self-detonating explosive RD suit variant, a foldable WT-550 for space saving potential, or a jetpack that lets you fly while under the effects of gravity.
 
-a game about survival on a space station where there are constant confrontations between the crew and antagonists created to prevent the crew from achieving their goals.
+👽 __**Core Species Updates**__  - Alien species should feel unique, instead of just like improved humans! Come enjoy our new species features, like arachnids with grappling hook webs, vox that rot slower, slimes that can turn into their geras ball form, additions to humans, and more!
+
+🕊️ __**Species Additions**__- Harpies, rodentia, dolls, oh my! We have future plans to add in some more custom species, based on community feedback and ideas.
+
+👮‍♀️ __**Blue Security Uniforms**__  - "Who in Space Station history decided that Security and Nukie armor should look basically identical? If I was new to this game, I would have no idea who is who." - Liltenhead
+
+🪐 __**Central Command Presence**__  - As the sponsors of Nanotrasen's ventures into this new galaxy, expect to feel a heavy presence of Central Command on station, with roles like Central Command Enforcement, or the Central Command Representative.
+
+🔭 __**24/7 Uptime & Admin Coverage**__  - After the server's official launch, the server will always be online.
+Player Incited Lore impacts - During high-stakes admemes, players will have their chance to leave their impact on the lasting lore of the server. Will you bring glory to Nanotrasen, or will you be the reason for its fall from grace?
 
 ## Space-Station 14 Documentation/Wiki
 
 Space-Station 14 has [docs site](https://docs.spacestation14.io/) documentation on SS14s content, engine, game design and more. We also have lots of resources for new contributors to the project.
-
-## Project Activity
-![Alt](https://repobeats.axiom.co/api/embed/675a7780b2c40805e5266935fe9329cd0177aba3.svg "Repobeats analytics image")
 
 ---
 

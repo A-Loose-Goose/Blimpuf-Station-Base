@@ -1,0 +1,31 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Starlight, Paradise SS13, modified by ItsMaitake",
+    "size": {
+        "x": 8,
+        "y": 8
+    },
+    "states": [
+        {
+            "name": "NanotrasenCareerTrainer",
+            "copyright": "Shademars, modified by ItsMaitake"
+        },
+        {
+            "name": "Magistrate",
+            "copyright": "Chim, modified by ItsMaitake"
+        },
+        {
+            "name": "IAA",
+            "copyright": "Chim, modified by ItsMaitake"
+        },
+        {
+            "name": "CentralCommandEnforcement",
+            "copyright": "Paradise SS13, modified by ItsMaitake"
+        },
+        {
+           "name": "CentralCommandRepresentative",
+            "copyright": "ItsMaitake"
+        }
+    ]
+}

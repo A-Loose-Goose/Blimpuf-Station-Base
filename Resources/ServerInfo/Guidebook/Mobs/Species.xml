@@ -4,29 +4,26 @@
   NanoTrasen employs a variety of sapient species.
 
   <Box>
-  <GuideEntityEmbed Entity="AppearanceElf" Caption="Aelithii"/>
   <GuideEntityEmbed Entity="AppearanceArachnid" Caption="Arachnid"/>
   <GuideEntityEmbed Entity="AppearanceCyclorite" Caption="Cyclorite"/>
   <GuideEntityEmbed Entity="AppearanceDiona" Caption="Diona"/>
-  <GuideEntityEmbed Entity="AppearanceDwarf" Caption="Dwarf"/>
-  <GuideEntityEmbed Entity="AppearanceHuman" Caption="Human"/>
+  <GuideEntityEmbed Entity="AppearanceHuman" Caption="Doll[PH]"/><!--Doll placeholder-->
+  <GuideEntityEmbed Entity="AppearanceElf" Caption="Elf"/>
   </Box>
   <Box>
+  <GuideEntityEmbed Entity="AppearanceHarpy" Caption="Harpy"/>
+  <GuideEntityEmbed Entity="AppearanceHuman" Caption="Human"/>
   <GuideEntityEmbed Entity="AppearanceMoth" Caption="Moth Person"/>
+  <GuideEntityEmbed Entity="AppearanceProtogen" Caption="Neocyte"/>
   <GuideEntityEmbed Entity="AppearanceReptilian" Caption="Reptilian"/>
-  <GuideEntityEmbed Entity="AppearanceSlimePerson" Caption="Laspi"/>
+  <GuideEntityEmbed Entity="AppearanceResomi" Caption="Resomi"/>
+  </Box>
+  <Box>
+  <GuideEntityEmbed Entity="AppearanceRodentia" Caption="Rodentia"/>
+  <GuideEntityEmbed Entity="AppearanceShadekinGuidebook" Caption="Shadekin"/>
+  <GuideEntityEmbed Entity="AppearanceSlimePerson" Caption="Slime Person"/>
+  <GuideEntityEmbed Entity="AppearanceThaven" Caption="Thaven"/>
   <GuideEntityEmbed Entity="AppearanceVox" Caption="Vox"/>
   <GuideEntityEmbed Entity="AppearanceVulpkanin" Caption="Vulpkanin"/>
-  <GuideEntityEmbed Entity="AppearanceCyclorite" Caption="Cyclorite"/>
   </Box>
-  <Box>
-  <GuideEntityEmbed Entity="AppearanceThaven" Caption="Thaven"/>
-  <GuideEntityEmbed Entity="AppearanceResomi" Caption="Resomi"/>
-  <GuideEntityEmbed Entity="AppearanceFelionoid" Caption="Felionoid"/>
-  <GuideEntityEmbed Entity="AppearanceAvali" Caption="Avali"/>
-  <GuideEntityEmbed Entity="AppearanceShadekin" Caption="Shadekin"/>
-  <GuideEntityEmbed Entity="AppearanceLagomorph" Caption="Lagomorph"/>
-  <GuideEntityEmbed Entity="AppearanceIPC" Caption="IPC"/> <!--FH-->
-  </Box>
-
 </Document>

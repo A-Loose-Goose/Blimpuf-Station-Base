@@ -1,0 +1,222 @@
+# Harpy
+- type: emoteSounds
+  id: SoundsHarpy
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: HarpyScreams
+    Laugh:
+      collection: HarpyLaugh
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    Yawn:
+      collection: HarpyYawns
+    Sigh:
+      collection: HarpySigh
+    Crying:
+      collection: HarpyCry
+    Whistle:
+      collection: Whistles
+    Meow:
+      collection: HarpyMeows
+    Mew:
+      collection: HarpyMews
+    Growl:
+      collection: HarpyGrowls
+    Purr:
+      collection: HarpyPurrs
+    HarpyRing:
+      collection: HarpyRings
+    Honk:
+      collection: HarpyHonks
+    HarpyPew:
+      collection: HarpyPews
+    HarpyBang:
+      collection: HarpyBangs
+    Beep:
+      collection: HarpyBeeps
+    HarpyRev:
+      collection: HarpyRevs
+    Click:
+      collection: HarpyClicks
+    Chitter:
+      collection: HarpyChitter
+    Squeak:
+      collection: HarpySqueak
+    HarpyCaw:
+      collection: HarpyCaws
+    Squish:
+      collection: Squishes
+    Chirp:
+      collection: HarpyChirps
+    Snarl:
+      collection: VulpkaninSnarls
+    Bark:
+      collection: VulpkaninBarks
+    Whine:
+      collection: VulpkaninWhines
+    Howl:
+      collection: VulpkaninHowls
+    Awoo:
+      collection: VulpkaninHowls
+    Weh:
+      collection: Weh
+    Gasp:
+      collection: HarpyGasp
+    HarpyQuack:
+      collection: HarpyQuacks
+    Squawk:
+      collection: HarpySquawks
+    DefaultDeathgasp:
+      collection: DeathGasp
+
+- type: emoteSounds
+  id: SoundsHarpyMale
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: HarpyScreamsMale
+    Laugh:
+      collection: HarpyLaughMale
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    Yawn:
+      collection: MaleYawn
+    Sigh:
+      collection: MaleSigh
+    Crying:
+      collection: HarpyCryMale
+    Whistle:
+      collection: Whistles
+    Meow:
+      collection: HarpyMeows
+    Mew:
+      collection: HarpyMews
+    Growl:
+      collection: HarpyGrowls
+    Purr:
+      collection: HarpyPurrs
+    HarpyRing:
+      collection: HarpyRings
+    Honk:
+      collection: HarpyHonks
+    HarpyPew:
+      collection: HarpyPews
+    HarpyBang:
+      collection: HarpyBangs
+    Beep:
+      collection: HarpyBeeps
+    HarpyRev:
+      collection: HarpyRevs
+    Click:
+      collection: HarpyClicks
+    Chitter:
+      collection: HarpyChitter
+    Squeak:
+      collection: HarpySqueak
+    HarpyCaw:
+      collection: HarpyCaws
+    Squish:
+      collection: Squishes
+    Chirp:
+      collection: HarpyChirps
+    Snarl:
+      collection: VulpkaninSnarls
+    Bark:
+      collection: VulpkaninBarks
+    Whine:
+      collection: VulpkaninWhines
+    Howl:
+      collection: VulpkaninHowls
+    Awoo:
+      collection: VulpkaninHowls
+    Weh:
+      collection: Weh
+    Gasp:
+      collection: MaleGasp
+    HarpyQuack:
+      collection: HarpyQuacks
+    Squawk:
+      collection: HarpySquawks
+    DefaultDeathgasp:
+      collection: DeathGasp
+
+- type: emoteSounds
+  id: SoundsHarpyFemale
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: HarpyScreamsFemale
+    Laugh:
+      collection: HarpyLaughFemale
+    Sneeze:
+      collection: FemaleSneezes
+    Cough:
+      collection: FemaleCoughs
+    Yawn:
+      collection: FemaleYawn
+    Sigh:
+      collection: FemaleSigh
+    Crying:
+      collection: HarpyCryFemale
+    Whistle:
+      collection: Whistles
+    Meow:
+      collection: HarpyMeows
+    Mew:
+      collection: HarpyMews
+    Growl:
+      collection: HarpyGrowls
+    Purr:
+      collection: HarpyPurrs
+    HarpyRing:
+      collection: HarpyRings
+    Honk:
+      collection: HarpyHonks
+    HarpyPew:
+      collection: HarpyPews
+    HarpyBang:
+      collection: HarpyBangs
+    Beep:
+      collection: HarpyBeeps
+    HarpyRev:
+      collection: HarpyRevs
+    Click:
+      collection: HarpyClicks
+    Chitter:
+      collection: HarpyChitter
+    Squeak:
+      collection: HarpySqueak
+    HarpyCaw:
+      collection: HarpyCaws
+    Squish:
+      collection: Squishes
+    Chirp:
+      collection: HarpyChirps
+    Snarl:
+      collection: VulpkaninSnarls
+    Bark:
+      collection: VulpkaninBarks
+    Whine:
+      collection: VulpkaninWhines
+    Howl:
+      collection: VulpkaninHowls
+    Awoo:
+      collection: VulpkaninHowls
+    Weh:
+      collection: Weh
+    Gasp:
+      collection: FemaleGasp
+    HarpyQuack:
+      collection: HarpyQuacks
+    Squawk:
+      collection: HarpySquawks
+    DefaultDeathgasp:
+      collection: DeathGasp

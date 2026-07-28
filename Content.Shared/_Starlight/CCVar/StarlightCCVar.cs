@@ -2,7 +2,7 @@ using Robust.Shared.Configuration;
 using Content.Shared.CCVar.CVarAccess;
 using Content.Shared.Administration;
 
-namespace Content.Shared.Starlight.CCVar;
+namespace Content.Shared._Starlight.CCVar;
 
 [CVarDefs]
 public sealed partial class StarlightCCVars
@@ -14,7 +14,7 @@ public sealed partial class StarlightCCVars
         CVarDef.Create("lobby_changelog.list", "ChangelogStarlight.yml,Changelog.yml", CVar.SERVER | CVar.REPLICATED);
 
     public static readonly CVarDef<string> ServerName =
-        CVarDef.Create("lobby.server_name", "☆ Starlight ☆", CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("lobby.server_name", "Blimpuf Station!", CVar.SERVER | CVar.REPLICATED);
 
     [CVarControl(AdminFlags.Adminchat)]
     public static readonly CVarDef<string> OverrideGamemodeName =

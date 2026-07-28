@@ -3,6 +3,10 @@
   id: BaseMobVox
   abstract: true
   components:
+  # Blimpuf-start
+  - type: RotRateMulitplier
+    rotRateMulitplier: 0.5
+  # Blimpuf-end
   # Starlight-start: Languages
   - type: LanguageKnowledge
     speaks:
@@ -25,7 +29,7 @@
   - type: Speech
     speechVerb: Vox
     speechSounds: Vox
-    allowedEmotes: ['Click', 'Chitter']
+    allowedEmotes: ['Click', 'Chitter', 'Thump', 'Whistle', 'Yawn', 'Coo']
   - type: TypingIndicator
     proto: vox
   - type: Vocal
@@ -33,6 +37,8 @@
       Male: UnisexVox
       Female: UnisexVox
       Unsexed: UnisexVox
+  - type: BodyEmotes
+    soundsId: ReptilianBodyEmotes
   - type: Butcherable
     butcheringType: Spike
     spawned:
@@ -180,3 +186,9 @@
         32:
           sprite: Mobs/Species/Vox/displacement.rsi
           state: hand_r
+  - type: FootstepModifier
+    footstepSoundCollection:
+        collection: FootstepCarpet
+        params:
+          volume: -11
+          variation: 0.09

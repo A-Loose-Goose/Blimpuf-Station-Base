@@ -1,0 +1,15 @@
+- type: department
+  id: Representatives
+  name: department-Representatives
+  description: department-Representatives-description
+  color: "#05255D"
+  roles:
+    - BlueShield
+    - Magistrate
+    - NanoTrasenRepresentative
+    - IAA
+    - Decimus
+    - NanoTrasenSpecialForces
+    - NanotrasenCareerTrainer
+  primary: false
+  weight: 50

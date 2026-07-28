@@ -1,10 +1,12 @@
 using Content.Server._Starlight.Administration.Systems;
 using Content.Server._Starlight.GameTicking.Rules.Components;
+using Content.Server._Blimpuf.Administration.Systems;
 using Content.Server.Antag;
 using Content.Server.Clothing.Systems;
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Rules.Components;
 using Content.Server.Speech.Components; // Starlight
+using Content.Server._Starlight.GameTicking.Rules.Components; // Starlight
 using Content.Server.Zombies;
 using Content.Shared._Starlight.Shadekin;
 using Content.Shared.Administration;
@@ -18,6 +20,11 @@ using Robust.Shared.Audio; // Starlight
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Shared.Roles.Components;
+using Content.Shared._Starlight.Shadekin;
+using Content.Server.Speech.Components; // Starlight
+using Robust.Shared.Audio;
+using Content.Shared._Starlight.Shadekin.Components; // Starlight
 
 namespace Content.Server.Administration.Systems;
 
@@ -28,6 +35,7 @@ public sealed partial class AdminVerbSystem
     [Dependency] private readonly GameTicker _gameTicker = default!;
     [Dependency] private readonly OutfitSystem _outfit = default!;
     [Dependency] private readonly AutoDiscordLogSystem _autolog = default!; //Starlight
+    [Dependency] private readonly CriminalAntagSystem _criminalAntag = default!;
 
     private static readonly EntProtoId DefaultTraitorRule = "Traitor";
     private static readonly EntProtoId DefaultInitialInfectedRule = "Zombie";
@@ -41,6 +49,7 @@ public sealed partial class AdminVerbSystem
     private static readonly ProtoId<StartingGearPrototype> PirateGearId = "PirateGear";
     private static readonly EntProtoId DefaultVampireRule = "Vampire"; //Starlight
     // private static readonly EntProtoId DefaultBrighteyeRule = "Brighteye"; //Starlight
+    private static readonly EntProtoId DefaultDevilRule = "Devil"; // starlight
 	private static readonly EntProtoId DefaultSELFRule = "SiliconLiberation"; //Starlight
 
     // All antag verbs have names so invokeverb works.
@@ -172,6 +181,22 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(thief);
 
+        var criminalName = Loc.GetString("admin-verb-text-make-criminal");
+        Verb criminal = new()
+        {
+            Text = criminalName,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Misc/job_icons.rsi"), "Prisoner"),
+            Act = () =>
+            {
+                _criminalAntag.MakeCriminal(args.Target);
+                _autolog.LogToDiscord(string.Join(": ", criminalName, Loc.GetString("admin-verb-make-criminal")), player.Name);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", criminalName, Loc.GetString("admin-verb-make-criminal")),
+        };
+        args.Verbs.Add(criminal);
+
         var changelingName = Loc.GetString("admin-verb-text-make-changeling-wip"); //SL edit, -wip as we allready have lings
         Verb changeling = new()
         {
@@ -292,6 +317,21 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(selfagent);
 
+        Verb devil = new()
+        {
+            Text = Loc.GetString("admin-verb-text-make-devil"),
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Effects/fire.rsi"), "fire"),
+            Act = () =>
+            {
+                _antag.ForceMakeAntag<DevilRuleComponent>(targetPlayer, DefaultDevilRule);
+                _autolog.LogToDiscord(string.Join(": ", Loc.GetString("admin-verb-text-make-devil"), Loc.GetString("admin-verb-make-devil")), player.Name);
+            },
+            Impact = LogImpact.High,
+            Message = Loc.GetString("admin-verb-make-devil")
+        };
+        args.Verbs.Add(devil);
+
         // if (HasComp<ShadekinComponent>(args.Target))
         // {
         //     Verb brighteye = new()
@@ -340,6 +380,6 @@ public sealed partial class AdminVerbSystem
             Message = string.Join(": ", pirateSLName, Loc.GetString("admin-verb-make-pirate-sl")),
         };
         args.Verbs.Add(pirateSL);
-/// Starlight END
+        // STARLIGHT END
     }
 }

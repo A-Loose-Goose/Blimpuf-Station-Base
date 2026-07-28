@@ -1,0 +1,37 @@
+﻿- type: roleRequirementPrototype
+  id: DirectorReq
+  roles:
+    - 1499230491943895110 # Blimpuf Directors
+  discord: roles-req-discord-blimpuf
+  rolesLoc: roles-req-director
+
+- type: roleRequirementPrototype
+  id: StaffReq
+  roles:
+    - 1500725068937040013 # Blimpuf Staff
+  discord: roles-req-discord-blimpuf
+  rolesLoc: roles-req-staff
+
+- type: roleRequirementPrototype
+  id: MentorReq
+  roles:
+    - 1500725068937040013 # Blimpuf Staff
+    - 1514361823770710057 # Mentor
+  discord: roles-req-discord-blimpuf
+  rolesLoc: roles-req-mentor
+
+- type: roleRequirementPrototype
+  id: MagiReq
+  roles:
+    - 1499230491943895110 # Blimpuf Directors
+    - 1514361719655497912 # Magistrate Whitelist
+  discord: roles-req-discord-blimpuf
+  rolesLoc: roles-req-magi
+
+- type: roleRequirementPrototype
+  id: CCEReq
+  roles:
+    - 1499230491943895110 # Blimpuf Directors
+    - 1514361585647222914 # CCE Whitelist
+  discord: roles-req-discord-blimpuf
+  rolesLoc: roles-req-cce

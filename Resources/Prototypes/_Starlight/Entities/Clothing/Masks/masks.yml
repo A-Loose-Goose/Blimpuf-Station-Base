@@ -154,7 +154,7 @@
 - type: entity
   parent: ClothingMaskBase
   id: ClothingMaskGeneralBorg
-  name: protogen mask
+  name: neocyte mask
   description: You don't understand, we are not cybor- POW POW POW
   components:
   - type: Sprite
@@ -177,7 +177,7 @@
 - type: entity
   parent: ClothingMaskGeneralBorg
   id: ClothingMaskCargoBorg
-  name: protogen salvager mask
+  name: neocyte salvager mask
   description: Now that's a mask that really digs the look.
   components:
   - type: Sprite
@@ -188,7 +188,7 @@
 - type: entity
   parent: ClothingMaskGeneralBorg
   id: ClothingMaskMedicBorg
-  name: protogen medic mask
+  name: neocyte medic mask
   description: Look me in the face while i cut you.
   components:
   - type: Sprite
@@ -199,7 +199,7 @@
 - type: entity
   parent: ClothingMaskGeneralBorg
   id: ClothingMaskEngiBorg
-  name: protogen engineer mask
+  name: neocyte engineer mask
   description: Bolts it all together.
   components:
   - type: Sprite
@@ -210,8 +210,8 @@
 - type: entity
   parent: ClothingMaskGeneralBorg
   id: ClothingMaskJanitorBorg
-  name: protogen janitor mask
-  description: Sweep the floor with protogen style!
+  name: neocyte janitor mask
+  description: Sweep the floor with neocyte style!
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Mask/janitor.rsi
@@ -221,7 +221,7 @@
 - type: entity
   parent: ClothingMaskGeneralBorg
   id: ClothingMaskSecBorg
-  name: protogen security mask
+  name: neocyte security mask
   description: Always on guard, nothing escapes those mechanical eyes.
   components:
   - type: Sprite
@@ -229,3 +229,16 @@
   - type: Clothing
     sprite: _Starlight/Clothing/Mask/sec.rsi
 # Fashion-O-Mat-End
+
+# Greenshield Officer
+- type: entity
+  parent: ClothingMaskGasERT
+  id: ClothingMaskGasGSO
+  categories: [ DoNotMap ]
+  name: greenshield gas mask
+  description: The gas mask of the elite of the elite, even protects the user from the dangers of welding.
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/ert.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/ert.rsi

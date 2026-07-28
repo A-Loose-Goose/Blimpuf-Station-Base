@@ -18,13 +18,13 @@ namespace Content.Shared._Starlight.Medical.Body.Systems;
 /// <summary>
 /// Handles lung breathing with gas tanks for entities.
 /// </summary>
-public abstract class SharedInternalsSystem : EntitySystem
+public abstract partial class SharedInternalsSystem : EntitySystem
 {
-    [Dependency] private readonly AlertsSystem _alerts = default!;
-    [Dependency] private readonly InventorySystem _inventory = default!;
-    [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
-    [Dependency] private readonly SharedGasTankSystem _gasTank = default!;
-    [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
+    [Dependency] private AlertsSystem _alerts = default!;
+    [Dependency] private InventorySystem _inventory = default!;
+    [Dependency] private SharedDoAfterSystem _doAfter = default!;
+    [Dependency] private SharedGasTankSystem _gasTank = default!;
+    [Dependency] private SharedPopupSystem _popupSystem = default!;
 
     public override void Initialize()
     {
@@ -261,9 +261,10 @@ public abstract class SharedInternalsSystem : EntitySystem
         // TODO use _respirator.CanMetabolizeGas() to prioritize metabolizable gasses
         // Lookup order:
         // 1. Back
-        // 2. Exo-slot
-        // 3. In-hand
-        // 4. Pocket/belt
+        // 2. Vox tank slot
+        // 3. Exo-slot
+        // 4. In-hand
+        // 5. Pocket/belt
         // Jetpacks will only be used as a fallback if no other tank is found
 
         // Store the first jetpack seen
@@ -283,8 +284,19 @@ public abstract class SharedInternalsSystem : EntitySystem
             }
         }
 
-        if (_inventory.TryGetSlotEntity(user, "suitstorage", out var entity, user.Comp2, user.Comp3) &&
+        if (_inventory.TryGetSlotEntity(user, "voxtankstorage", out var entity, user.Comp2, user.Comp3) &&
             TryComp<GasTankComponent>(entity, out var gasTank) &&
+            _gasTank.CanConnectToInternals((entity.Value, gasTank)))
+        {
+            found ??= (entity.Value, gasTank);
+            if (!HasComp<JetpackComponent>(entity.Value))
+            {
+                return (entity.Value, gasTank);
+            }
+        }
+
+        if (_inventory.TryGetSlotEntity(user, "suitstorage", out entity, user.Comp2, user.Comp3) &&
+            TryComp<GasTankComponent>(entity, out gasTank) &&
             _gasTank.CanConnectToInternals((entity.Value, gasTank)))
         {
             found ??= (entity.Value, gasTank);

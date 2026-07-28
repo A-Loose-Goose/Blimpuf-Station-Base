@@ -753,7 +753,7 @@
     spawned:
     - id: FoodMeat
       amount: 3
-    - id: Telecrystal5
+    - id: Telecrystal
       amount: 1
   - type: Grammar
     attributes:
@@ -780,6 +780,7 @@
     understands:
     - Mouse
     - GalacticCommon
+    - Squeakish # Rodentia
   # Starlight-end
   - type: Sprite
     drawdepth: SmallMobs
@@ -812,6 +813,8 @@
   - type: Butcherable
     spawned:
     - id: FoodMeat
+      amount: 1
+    - id: Telecrystal5
       amount: 1
   - type: Grammar
     attributes:
@@ -1069,8 +1072,9 @@
 
 - type: entity
   name: Pun Pun
-  parent: MobMonkey
+  parent: MobMonkeyAdvanced # Starlight, he's smarter than the average monkey.
   id: MobMonkeyPunpun
+  suffix: AI
   description: A prominent representative of monkeys with unlimited access to alcohol.
   components:
   # Starlight-start: Languages

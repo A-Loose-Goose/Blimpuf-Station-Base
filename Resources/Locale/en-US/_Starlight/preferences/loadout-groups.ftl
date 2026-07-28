@@ -21,24 +21,24 @@ loadout-group-musician-head = Musician head
 
 # Command
 
-loadout-group-nanotrasenrepresentative-head = NanoTrasen representative head
-loadout-group-nanotrasenrepresentative-outerclothing = NanoTrasen representative outer clothing
-loadout-group-nanotrasenrepresentative-jumpsuit = NanoTrasen representative jumpsuit
-loadout-group-nanotrasenrepresentative-eyewear = NanoTrasen representative eyewear
-loadout-group-nanotrasenrepresentative-shoes = NanoTrasen representative shoes
-loadout-group-nanotrasenrepresentative-neck = NanoTrasen representative neck
+loadout-group-nanotrasenrepresentative-head = Central Command representative head
+loadout-group-nanotrasenrepresentative-outerclothing = Central Command representative outer clothing
+loadout-group-nanotrasenrepresentative-jumpsuit = Central Command representative jumpsuit
+loadout-group-nanotrasenrepresentative-eyewear = Central Command representative eyewear
+loadout-group-nanotrasenrepresentative-shoes = Central Command representative shoes
+loadout-group-nanotrasenrepresentative-neck = Central Command representative neck
 
 loadout-group-captain-shoes = Captain shoes
 loadout-group-hop-shoes = Head of Personnel shoes
 
-loadout-group-blueshield-head = Blueshield head
-loadout-group-blueshield-backpack = Blueshield backpack
-loadout-group-blueshield-jumpsuit = Blueshield jumpsuit
-loadout-group-blueshield-eyewear = Blueshield eyewear
-loadout-group-blueshield-outerclothing = Blueshield Outer Clothing
-loadout-group-blueshield-belt = Blueshield Belt
-loadout-group-blueshield-neck = Blueshield Neck
-loadout-group-blueshield-id = Blueshield ID
+loadout-group-blueshield-head = Central Command Enforcer head
+loadout-group-blueshield-backpack = Central Command Enforcer backpack
+loadout-group-blueshield-jumpsuit = Central Command Enforcer jumpsuit
+loadout-group-blueshield-eyewear = Central Command Enforcer eyewear
+loadout-group-blueshield-outerclothing = Central Command Enforcer outer clothing
+loadout-group-blueshield-belt = Central Command Enforcer belt
+loadout-group-blueshield-neck = Central Command Enforcer neck
+loadout-group-blueshield-id = Central Command Enforcer ID
 
 # Security
 loadout-group-security-tie = Security tie
@@ -67,9 +67,9 @@ loadout-group-magistrate-shoes = Magistrate shoes
 loadout-group-iaa-jumpsuit = Internal Affairs Agent jumpsuit
 loadout-group-iaa-neck = Internal Affairs Agent neck
 loadout-group-iaa-shoes = Internal Affairs Agent shoes
-loadout-group-magistrate-outer = Magistrate Outer Clothing
-loadout-group-magistrate-headwear = Magistrate Head
-loadout-group-magistrate-hands = Magistrate Gloves
+loadout-group-magistrate-outer = Magistrate outer clothing
+loadout-group-magistrate-head = Magistrate head
+loadout-group-magistrate-gloves = Magistrate gloves
 
 # Civilian
 loadout-group-civilian-shoes = Shoes
