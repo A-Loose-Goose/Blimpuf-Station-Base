@@ -4293,5 +4293,14 @@ Entries:
   id: 5901
   time: '2026-07-28T00:39:28.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/59
+- author: LadyLiliana
+  changes:
+  - message: Changed Scrubbers to not be able to get entered for ventcrawling.
+    type: Tweak
+  - message: Fixed Passive Vents acting like cut lines for ventcrawling.
+    type: Fix
+  id: 6001
+  time: '2026-07-28T00:39:41.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/60
 Order: -1
 
