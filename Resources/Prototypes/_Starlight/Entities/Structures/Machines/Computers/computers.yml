@@ -578,7 +578,7 @@
     - type: PointLight
       radius: 2.5
       energy: 1.5
-      color: "#57b8f0"
+      color: "#73c9fa"
 
 # Science
 - type: entity
@@ -645,7 +645,7 @@
     - type: CommunicationsConsole
       title: comms-console-announcement-title-sec
       sound: /Audio/_Starlight/Announcements/announce2.ogg
-      color: "#37789B"
+      color: "#42B9BA"
       settableAlertLevels:
         - green
         - blue
@@ -765,7 +765,7 @@
     - type: CommunicationsConsole
       title: comms-console-announcement-title-law
       sound: /Audio/_Starlight/Announcements/announce2.ogg
-      color: "#007700"
+      color: "#65d665"
       settableAlertLevels: []
       canBroadcast: false
       canShuttle: false
@@ -776,7 +776,7 @@
     - type: PointLight
       radius: 2.5
       energy: 1.5
-      color: "#ff178b"
+      color: "#65d665"
 
 ## Departmental Communications Consoles END
 

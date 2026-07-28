@@ -3,7 +3,7 @@
   name: chat-radio-corporate
   keycode: "p"
   frequency: 1780
-  color: "#007700"
+  color: "#65d665"
   icon:
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: law

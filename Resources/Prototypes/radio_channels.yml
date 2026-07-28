@@ -3,7 +3,7 @@
   name: chat-radio-common
   keycode: ";"
   frequency: 1459
-  color: "#2cdb2c"
+  color: "#dfc8fa"
   headsetTransmittable: false # Moffstation - remove common
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
@@ -45,7 +45,7 @@
   name: chat-radio-medical
   keycode: 'm'
   frequency: 1355
-  color: "#57b8f0"
+  color: "#73c9fa"
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: medical
@@ -65,7 +65,7 @@
   name: chat-radio-security
   keycode: 's'
   frequency: 1359
-  color: "#37789B"
+  color: "#42B9BA"
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: security
