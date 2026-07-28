@@ -205,7 +205,7 @@ entities:
             64: -7,-5
             65: -7,-3
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickLineOverlayW
           decals:
             259: -7,9
@@ -245,7 +245,7 @@ entities:
             33: -10,-10
             34: -11,-10
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: HalfTileOverlayGreyscale
           decals:
             262: -11,12
@@ -268,7 +268,7 @@ entities:
             84: -11,-5
             85: -10,-5
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: HalfTileOverlayGreyscale180
           decals:
             267: -11,9
@@ -286,7 +286,7 @@ entities:
           decals:
             82: -12,-4
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: HalfTileOverlayGreyscale270
           decals:
             264: -12,11
@@ -303,7 +303,7 @@ entities:
             190: -2,17
             191: -2,18
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: HalfTileOverlayGreyscale90
           decals:
             271: -9,11
@@ -396,7 +396,7 @@ entities:
           decals:
             72: -12,-3
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: ThreeQuarterTileOverlayGreyscale
           decals:
             263: -12,12
@@ -417,7 +417,7 @@ entities:
           decals:
             112: -9,-5
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: ThreeQuarterTileOverlayGreyscale180
           decals:
             269: -9,9
@@ -432,7 +432,7 @@ entities:
           decals:
             83: -12,-5
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: ThreeQuarterTileOverlayGreyscale270
           decals:
             266: -12,9
@@ -458,27 +458,27 @@ entities:
           decals:
             32: -9,-10
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: ThreeQuarterTileOverlayGreyscale90
           decals:
             260: -9,12
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: WarnCornerGreyscaleNE
           decals:
             286: -9,14
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: WarnCornerGreyscaleNW
           decals:
             283: -12,14
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: WarnCornerGreyscaleSE
           decals:
             287: -9,13
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: WarnCornerGreyscaleSW
           decals:
             282: -12,13
@@ -493,7 +493,7 @@ entities:
           decals:
             66: -8,-4
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: WarnFullGreyscale
           decals:
             256: -8,10
@@ -516,7 +516,7 @@ entities:
           decals:
             68: -9,-4
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: WarnLineGreyscaleE
           decals:
             270: -9,10
@@ -526,14 +526,14 @@ entities:
           decals:
             11: -3,-18
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: WarnLineGreyscaleN
           decals:
             261: -10,12
             284: -11,14
             285: -10,14
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: WarnLineGreyscaleS
           decals:
             280: -10,13
@@ -549,7 +549,7 @@ entities:
           decals:
             67: -7,-4
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: WarnLineGreyscaleW
           decals:
             257: -7,10
@@ -5919,36 +5919,6 @@ entities:
       parent: 1
     - type: AtmosPipeColor
       color: '#0055CCFF'
-  - uid: 883
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -2.5,13.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 884
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -9.5,10.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 885
-    components:
-    - type: Transform
-      pos: -6.5,19.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 886
-    components:
-    - type: Transform
-      pos: -4.5,19.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
   - uid: 887
     components:
     - type: Transform
@@ -5969,14 +5939,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -13.5,17.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 890
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -9.5,13.5
       parent: 1
     - type: AtmosPipeColor
       color: '#0055CCFF'
@@ -9738,4 +9700,44 @@ entities:
       rot: 3.141592653589793 rad
       pos: -8.5,12.5
       parent: 1
+- proto: SecureGasVentPump
+  entities:
+  - uid: 1414
+    components:
+    - type: Transform
+      pos: -6.5,19.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 1415
+    components:
+    - type: Transform
+      pos: -4.5,19.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 1416
+    components:
+    - type: Transform
+      pos: -9.5,13.5
+      parent: 1
+      rot: 1.5707963267948966 rad
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 1417
+    components:
+    - type: Transform
+      pos: -9.5,10.5
+      parent: 1
+      rot: 1.5707963267948966 rad
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 1418
+    components:
+    - type: Transform
+      pos: -2.5,13.5
+      parent: 1
+      rot: 4.71238898038469 rad
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
 ...

@@ -2638,25 +2638,6 @@ entities:
       connected: True
     - type: AtmosPipeColor
       color: '#0055CCFF'
-  - uid: 297
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 7.5,-13.5
-      parent: 1
-    - type: VentCrawlTube
-      connected: True
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 298
-    components:
-    - type: Transform
-      pos: 8.5,0.5
-      parent: 1
-    - type: VentCrawlTube
-      connected: True
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
   - uid: 299
     components:
     - type: Transform
@@ -4153,4 +4134,21 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 5.5,-11.5
       parent: 1
+- proto: SecureGasVentPump
+  entities:
+  - uid: 592
+    components:
+    - type: Transform
+      pos: 8.5,0.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 593
+    components:
+    - type: Transform
+      pos: 7.5,-13.5
+      parent: 1
+      rot: 1.5707963267948966 rad
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
 ...

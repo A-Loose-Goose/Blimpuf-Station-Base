@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 11/09/2025 11:20:54
-  entityCount: 1332
+  entityCount: 1336
 maps: []
 grids:
 - 1
@@ -6092,34 +6092,11 @@ entities:
       parent: 1
     - type: AtmosPipeColor
       color: '#0055CCFF'
-  - uid: 920
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 4.5,15.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 921
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 6.5,13.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
   - uid: 942
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 3.5,3.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 947
-    components:
-    - type: Transform
-      pos: 5.5,22.5
       parent: 1
     - type: AtmosPipeColor
       color: '#0055CCFF'
@@ -8895,4 +8872,29 @@ entities:
     - type: Transform
       pos: 1.5,-2.5
       parent: 1
+- proto: SecureGasVentPump
+  entities:
+  - uid: 1337
+    components:
+    - type: Transform
+      pos: 5.5,22.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 1338
+    components:
+    - type: Transform
+      pos: 4.5,15.5
+      parent: 1
+      rot: 1.5707963267948966 rad
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 1339
+    components:
+    - type: Transform
+      pos: 6.5,13.5
+      parent: 1
+      rot: 4.71238898038469 rad
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
 ...

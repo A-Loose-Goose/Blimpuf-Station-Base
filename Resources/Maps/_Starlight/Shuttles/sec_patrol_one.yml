@@ -536,7 +536,7 @@ entities:
     - type: Transform
       pos: -0.5,-0.5
       parent: 1
-- proto: GasVentPump
+- proto: SecureGasVentPump
   entities:
   - uid: 51
     components:

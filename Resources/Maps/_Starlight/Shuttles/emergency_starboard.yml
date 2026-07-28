@@ -670,11 +670,11 @@ entities:
       - 25
       - 428
       - 426
-      - 424
       - 427
       - 425
       - 430
       - 429
+      - 938
     - type: Fixtures
       fixtures: {}
 - proto: AirCanister
@@ -3707,14 +3707,6 @@ entities:
       parent: 1
 - proto: GasVentPump
   entities:
-  - uid: 424
-    components:
-    - type: Transform
-      pos: 3.5,10.5
-      parent: 1
-    - type: DeviceNetwork
-      deviceLists:
-      - 2
   - uid: 425
     components:
     - type: Transform
@@ -3773,12 +3765,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 21.5,0.5
-      parent: 1
-  - uid: 432
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 21.5,8.5
       parent: 1
 - proto: GeneratorWallmountAPU
   entities:
@@ -6361,5 +6347,20 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 24.58973,4.5603185
+      parent: 1
+- proto: SecureGasVentPump
+  entities:
+  - uid: 937
+    components:
+    - type: Transform
+      pos: 21.5,8.5
+      parent: 1
+      rot: 4.71238898038469 rad
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 938
+    components:
+    - type: Transform
+      pos: 3.5,10.5
       parent: 1
 ...
