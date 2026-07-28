@@ -1,7 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
 using Content.Shared._Blimpuf.Item.ItemToggle.Components;
-using Content.Shared._Starlight.Weapon.Components;
+using Content.Shared._Starlight.Weapons.Components;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Actions;
 using Content.Shared.Administration.Logs;
