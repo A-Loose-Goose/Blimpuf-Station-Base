@@ -65,7 +65,7 @@
   name: chat-radio-security
   keycode: 's'
   frequency: 1359
-  color: "#42B9BA"
+  color: "#2fbb9f"
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: security

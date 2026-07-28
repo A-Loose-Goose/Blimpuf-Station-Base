@@ -645,7 +645,7 @@
     - type: CommunicationsConsole
       title: comms-console-announcement-title-sec
       sound: /Audio/_Starlight/Announcements/announce2.ogg
-      color: "#42B9BA"
+      color: "#2fbb9f"
       settableAlertLevels:
         - green
         - blue
@@ -659,7 +659,7 @@
     - type: PointLight
       radius: 2.5
       energy: 1.5
-      color: "#ff4242"
+      color: "#2fbb9f"
 
 # Service
 - type: entity
