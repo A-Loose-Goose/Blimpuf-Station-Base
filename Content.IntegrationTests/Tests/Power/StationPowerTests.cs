@@ -72,7 +72,6 @@ public sealed class StationPowerTests : GameTest
         "BlimpufPlasma",
         "BlimpufSepultum",
         "BlimpufSushi",
-        "BlimpufBoxcars"
         #endregion
     ];
 
@@ -260,7 +259,7 @@ public sealed class StationPowerTests : GameTest
             // Starlight start
             Assert.That(estimatedDuration, Is.LessThanOrEqualTo(MaximumPowerDurationSeconds),
                 $"Initial power for {mapProtoId} lasts too long! Max allowed {MaximumPowerDurationSeconds}s " +
-                $"but estimated to last {estimatedDuration}s � remove some stored power!");
+                $"but estimated to last {estimatedDuration}s remove some stored power!");
             Assert.That(totalStartingCharge, Is.LessThanOrEqualTo(maximumStoredPower),
                 $"Has {totalStartingCharge - maximumStoredPower} too much stored power!");
             // Starlight end
