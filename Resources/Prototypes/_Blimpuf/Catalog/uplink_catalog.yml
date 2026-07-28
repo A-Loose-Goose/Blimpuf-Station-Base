@@ -187,29 +187,6 @@
           - SurplusBundle
 
 - type: listing
-  id: UplinkWeaponLaserIncinerator
-  name: uplink-weapon-laser-incinerator-name
-  description: uplink-weapon-laser-incinerator-desc
-  productEntity: WeaponLaserIncinerator
-  discountCategory: veryRareDiscounts
-  discountDownTo:
-    Telecrystal: 70
-  cost:
-    Telecrystal: 85
-  categories:
-    - UplinkResearch
-  conditions:
-    - !type:ResearchCondition
-    - !type:StoreWhitelistCondition
-      blacklist:
-        tags:
-          - NukeOpsUplink
-    - !type:BuyerWhitelistCondition
-      blacklist:
-        components:
-          - SurplusBundle
-
-- type: listing
   id: UplinkWt551Compact
   name: uplink-wt551-compact-name
   description: uplink-wt551-compact-desc
