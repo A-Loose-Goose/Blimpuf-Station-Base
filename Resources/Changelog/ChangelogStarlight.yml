@@ -4309,5 +4309,13 @@ Entries:
   id: 6201
   time: '2026-07-28T03:29:02.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/62
+- author: ItsMaitake
+  changes:
+  - message: Warden Energy Shotgun disabler sprite now fixed, and the shotgun rotation
+      is correct.
+    type: Tweak
+  id: 6301
+  time: '2026-07-28T07:08:25.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/63
 Order: -1
 
