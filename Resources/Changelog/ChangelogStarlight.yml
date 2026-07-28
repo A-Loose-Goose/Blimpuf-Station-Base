@@ -4302,5 +4302,12 @@ Entries:
   id: 6001
   time: '2026-07-28T00:39:41.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/60
+- author: ItsMaitake
+  changes:
+  - message: The USA bedsheet textures are no longer as patriotic.
+    type: Tweak
+  id: 6201
+  time: '2026-07-28T03:29:02.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/62
 Order: -1
 
