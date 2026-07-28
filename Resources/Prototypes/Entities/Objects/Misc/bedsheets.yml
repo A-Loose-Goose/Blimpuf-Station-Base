@@ -463,7 +463,7 @@
   id: BedsheetUSA
   parent: BedsheetBase
   name: usa bedsheet
-  description: Glory to the American Territories! In memory of the United States.  #SL EDIT, description for lore
+  description: Glory to the United Space Alliance! # Blimpuf: Why the hell do we want America anywhere near our stuff? It's now a galaxy colored fabric with stars on it. Bye bye, USA. Lots of lack of love, ItsMaitake
   components:
   - type: Sprite
     state: sheetUSA
