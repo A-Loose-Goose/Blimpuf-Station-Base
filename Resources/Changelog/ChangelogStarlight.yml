@@ -4317,5 +4317,13 @@ Entries:
   id: 6301
   time: '2026-07-28T07:08:25.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/63
+- author: ItsMaitake
+  changes:
+  - message: Changed the Liberation Station to be named the Amm-O-Mat, and changed
+      the texture to be more in line with BlueSec.
+    type: Tweak
+  id: 6401
+  time: '2026-07-28T08:58:18.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/64
 Order: -1
 
