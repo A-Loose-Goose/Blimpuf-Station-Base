@@ -43,9 +43,9 @@ public sealed class UltimaHardsuitSystem : EntitySystem
         if (args.Slot != "outerClothing")
             return;
 
-        _actions.AddAction(args.Equipee, ref ent.Comp.EmpActionEntity, ent.Comp.EmpAction);
-        _actions.AddAction(args.Equipee, ref ent.Comp.FlashbangActionEntity, ent.Comp.FlashbangAction);
-        _actions.AddAction(args.Equipee, ref ent.Comp.BlastActionEntity, ent.Comp.BlastAction);
+        _actions.AddAction(args.EquipTarget, ref ent.Comp.EmpActionEntity, ent.Comp.EmpAction);
+        _actions.AddAction(args.EquipTarget, ref ent.Comp.FlashbangActionEntity, ent.Comp.FlashbangAction);
+        _actions.AddAction(args.EquipTarget, ref ent.Comp.BlastActionEntity, ent.Comp.BlastAction);
     }
 
     private void OnUnequipped(Entity<UltimaHardsuitComponent> ent, ref GotUnequippedEvent args)
@@ -53,7 +53,7 @@ public sealed class UltimaHardsuitSystem : EntitySystem
         if (args.Slot != "outerClothing")
             return;
 
-        var owner = args.Equipee;
+        var owner = args.EquipTarget;
 
         if (ent.Comp.EmpActionEntity is { } emp)
             _actions.RemoveAction(owner, emp);
