@@ -3795,12 +3795,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 0.5,-6.5
       parent: 1
-  - uid: 587
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 0.5,0.5
-      parent: 1
   - uid: 588
     components:
     - type: Transform
@@ -3841,22 +3835,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -11.5,-10.5
-      parent: 1
-  - uid: 595
-    components:
-    - type: Transform
-      pos: -5.5,1.5
-      parent: 1
-  - uid: 596
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -11.5,1.5
-      parent: 1
-  - uid: 597
-    components:
-    - type: Transform
-      pos: -6.5,6.5
       parent: 1
 - proto: GeneratorBasic15kW
   entities:
@@ -5890,4 +5868,28 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -1.5,2.5
       parent: 1
+- proto: SecureGasVentPump
+  entities:
+  - uid: 963
+    components:
+    - type: Transform
+      pos: -6.5,6.5
+      parent: 1
+  - uid: 962
+    components:
+    - type: Transform
+      pos: -5.5,1.5
+      parent: 1
+  - uid: 964
+    components:
+    - type: Transform
+      pos: -11.5,1.5
+      parent: 1
+      rot: 1.5707963267948966 rad
+  - uid: 965
+    components:
+    - type: Transform
+      pos: 0.5,0.5
+      parent: 1
+      rot: 4.71238898038469 rad
 ...

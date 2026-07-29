@@ -107,6 +107,15 @@
     - type: SubFloorHide
       visibleLayers:
       - enum.SubfloorLayers.FirstLayer
+    # Starlight start
+    - type: VentCrawlTube
+    - type: VentCrawlJunction
+      degrees:
+        - 0
+    - type: ContainerContainer
+      containers:
+        VentCrawlTube: !type:Container
+    # Starlight end
     - type: Sprite
       drawdepth: FloorObjects
       sprite: Structures/Piping/Atmospherics/vent.rsi
@@ -149,7 +158,9 @@
       time: 3
     # Starlight start
     - type: VentCrawlTube
-    - type: VentCrawlEntry
+    - type: VentCrawlJunction
+      degrees:
+        - 0
     - type: ContainerContainer
       containers:
         VentCrawlTube: !type:Container

@@ -3003,14 +3003,6 @@ entities:
       parent: 670
     - type: AtmosPipeColor
       color: '#0335FCFF'
-  - uid: 574
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -4.5,-4.5
-      parent: 670
-    - type: AtmosPipeColor
-      color: '#0335FCFF'
   - uid: 575
     components:
     - type: Transform
@@ -3046,13 +3038,6 @@ entities:
     components:
     - type: Transform
       pos: -2.5,7.5
-      parent: 670
-    - type: AtmosPipeColor
-      color: '#0335FCFF'
-  - uid: 602
-    components:
-    - type: Transform
-      pos: 0.5,13.5
       parent: 670
     - type: AtmosPipeColor
       color: '#0335FCFF'
@@ -4645,4 +4630,21 @@ entities:
     - type: Transform
       pos: -2.50018,-9.2833805
       parent: 670
+- proto: SecureGasVentPump
+  entities:
+  - uid: 574
+    components:
+    - type: Transform
+      pos: 0.5,13.5
+      parent: 670
+    - type: AtmosPipeColor
+      color: '#0335FCFF'
+  - uid: 602
+    components:
+    - type: Transform
+      pos: -4.5,-4.5
+      parent: 670
+      rot: 4.71238898038469 rad
+    - type: AtmosPipeColor
+      color: '#0335FCFF'
 ...

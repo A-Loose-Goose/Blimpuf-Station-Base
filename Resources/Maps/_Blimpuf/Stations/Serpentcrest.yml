@@ -8224,6 +8224,7 @@ entities:
       - 17436
       - 13706
       - 794
+      - 1505
     - type: Fixtures
       fixtures: {}
   - uid: 92
@@ -8266,6 +8267,7 @@ entities:
       - 13996
       - 17510
       - 13995
+      - 1506
     - type: Fixtures
       fixtures: {}
   - uid: 95
@@ -8322,6 +8324,7 @@ entities:
       - 13643
       - 17477
       - 769
+      - 17278
     - type: Fixtures
       fixtures: {}
   - uid: 99
@@ -8427,6 +8430,7 @@ entities:
       - 822
       - 13653
       - 13645
+      - 17333
     - type: Fixtures
       fixtures: {}
   - uid: 104
@@ -8523,6 +8527,7 @@ entities:
       - 13653
       - 13645
       - 13733
+      - 17340
     - type: Fixtures
       fixtures: {}
   - uid: 108
@@ -8561,6 +8566,7 @@ entities:
       devices:
       - 17464
       - 13877
+      - 17273
     - type: Fixtures
       fixtures: {}
   - uid: 110
@@ -8630,6 +8636,7 @@ entities:
       - 13873
       - 13876
       - 14007
+      - 17264
     - type: Fixtures
       fixtures: {}
   - uid: 114
@@ -8666,6 +8673,7 @@ entities:
       - 13870
       - 13660
       - 13648
+      - 1507
     - type: Fixtures
       fixtures: {}
   - uid: 116
@@ -8764,6 +8772,7 @@ entities:
       - 13651
       - 17460
       - 13638
+      - 17277
     - type: Fixtures
       fixtures: {}
   - uid: 121
@@ -9930,6 +9939,7 @@ entities:
       - 782
       - 13921
       - 17486
+      - 17280
     - type: Fixtures
       fixtures: {}
   - uid: 177
@@ -10141,6 +10151,7 @@ entities:
       devices:
       - 13986
       - 17506
+      - 17419
     - type: Fixtures
       fixtures: {}
   - uid: 190
@@ -10153,6 +10164,7 @@ entities:
       devices:
       - 14025
       - 17507
+      - 17283
     - type: Fixtures
       fixtures: {}
   - uid: 191
@@ -10173,6 +10185,9 @@ entities:
       - 13856
       - 13857
       - 17580
+      - 17357
+      - 17362
+      - 17358
     - type: Fixtures
       fixtures: {}
   - uid: 192
@@ -10223,6 +10238,7 @@ entities:
       - 13848
       - 13846
       - 803
+      - 8862
     - type: Fixtures
       fixtures: {}
   - uid: 194
@@ -10288,6 +10304,7 @@ entities:
       devices:
       - 13998
       - 17511
+      - 17347
     - type: Fixtures
       fixtures: {}
   - uid: 198
@@ -10301,6 +10318,7 @@ entities:
       - 17514
       - 796
       - 13999
+      - 17344
     - type: Fixtures
       fixtures: {}
   - uid: 199
@@ -10313,6 +10331,7 @@ entities:
       devices:
       - 17544
       - 14001
+      - 17356
     - type: Fixtures
       fixtures: {}
   - uid: 200
@@ -10327,6 +10346,7 @@ entities:
       - 14000
       - 14001
       - 17569
+      - 17355
     - type: Fixtures
       fixtures: {}
   - uid: 201
@@ -10364,6 +10384,7 @@ entities:
       devices:
       - 13995
       - 17520
+      - 17343
     - type: Fixtures
       fixtures: {}
   - uid: 203
@@ -10391,6 +10412,7 @@ entities:
       - 13640
       - 13739
       - 815
+      - 17296
     - type: Fixtures
       fixtures: {}
   - uid: 205
@@ -10404,6 +10426,7 @@ entities:
       - 13630
       - 17531
       - 13611
+      - 17313
     - type: Fixtures
       fixtures: {}
   - uid: 206
@@ -10419,6 +10442,7 @@ entities:
       - 13712
       - 13665
       - 17576
+      - 17328
     - type: Fixtures
       fixtures: {}
   - uid: 207
@@ -10429,13 +10453,13 @@ entities:
     - type: DeviceList
       devices:
       - 13673
-      - 17337
       - 17534
       - 13654
       - 13657
       - 13665
       - 13712
       - 821
+      - 29496
     - type: Fixtures
       fixtures: {}
   - uid: 208
@@ -10462,6 +10486,7 @@ entities:
       - 821
       - 13657
       - 13702
+      - 17332
     - type: Fixtures
       fixtures: {}
   - uid: 210
@@ -10493,6 +10518,7 @@ entities:
       - 13624
       - 13620
       - 822
+      - 13487
     - type: Fixtures
       fixtures: {}
   - uid: 212
@@ -10507,9 +10533,9 @@ entities:
       - 14016
       - 14017
       - 17536
-      - 17338
       - 13655
       - 13733
+      - 29499
     - type: Fixtures
       fixtures: {}
   - uid: 213
@@ -10525,6 +10551,7 @@ entities:
       - 13653
       - 17535
       - 816
+      - 17336
     - type: Fixtures
       fixtures: {}
   - uid: 214
@@ -10540,6 +10567,7 @@ entities:
       - 13676
       - 17539
       - 822
+      - 17341
     - type: Fixtures
       fixtures: {}
   - uid: 215
@@ -10559,6 +10587,7 @@ entities:
       - 13666
       - 13661
       - 13676
+      - 17334
     - type: Fixtures
       fixtures: {}
   - uid: 216
@@ -10592,6 +10621,8 @@ entities:
       - 17530
       - 13711
       - 14030
+      - 17339
+      - 17342
     - type: Fixtures
       fixtures: {}
   - uid: 218
@@ -10954,6 +10985,7 @@ entities:
       devices:
       - 17595
       - 14067
+      - 17421
     - type: Fixtures
       fixtures: {}
   - uid: 239
@@ -115367,27 +115399,6 @@ entities:
       - 208
     - type: AtmosPipeColor
       color: '#0055CCFF'
-  - uid: 17337
-    components:
-    - type: Transform
-      pos: -8.5,14.5
-      parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 207
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 17338
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 4.5,7.5
-      parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 212
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
   - uid: 17345
     components:
     - type: Transform
@@ -151253,6 +151264,17 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
+  - uid: 29496
+    components:
+    - type: Transform
+      pos: -8.5,14.5
+      parent: 2
+  - uid: 29499
+    components:
+    - type: Transform
+      pos: 4.5,7.5
+      parent: 2
+      rot: 4.71238898038469 rad
 - proto: SecurityTechFab
   entities:
   - uid: 23059
@@ -158792,13 +158814,6 @@ entities:
     - type: Transform
       pos: -56.5,9.5
       parent: 2
-- proto: SpawnPointWarden
-  entities:
-  - uid: 24150
-    components:
-    - type: Transform
-      pos: 4.5,7.5
-      parent: 2
 - proto: Spear
   entities:
   - uid: 24151
@@ -160737,17 +160752,6 @@ entities:
       - SurveillanceCameraEngineering
       nameSet: True
       id: engi lockers
-  - uid: 24339
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -52.5,11.5
-      parent: 2
-    - type: SurveillanceCamera
-      setupAvailableNetworks:
-      - SurveillanceCameraEngineering
-      nameSet: True
-      id: grav
   - uid: 24340
     components:
     - type: Transform
@@ -160888,6 +160892,17 @@ entities:
       - SurveillanceCameraEngineering
       nameSet: True
       id: power storage
+  - uid: 29495
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -52.5,11.5
+      parent: 2
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraEngineering
+      nameSet: True
+      id: grav
 - proto: SurveillanceCameraGeneral
   entities:
   - uid: 24353
@@ -187649,5 +187664,12 @@ entities:
     components:
     - type: Transform
       pos: -9.552427,49.802536
+      parent: 2
+- proto: SpawnPointWarden
+  entities:
+  - uid: 29498
+    components:
+    - type: Transform
+      pos: 4.5,8.5
       parent: 2
 ...

@@ -1820,6 +1820,10 @@ entities:
       devices:
       - 1448
       - 77
+      - 2029
+      - 945
+      - 944
+      - 2000
     - type: Fixtures
       fixtures: {}
   - uid: 9
@@ -1900,6 +1904,8 @@ entities:
       - 1477
       - 1478
       - 75
+      - 1998
+      - 2030
     - type: Fixtures
       fixtures: {}
   - uid: 14
@@ -1925,6 +1931,10 @@ entities:
       devices:
       - 1997
       - 76
+      - 2021
+      - 946
+      - 2016
+      - 2031
     - type: Fixtures
       fixtures: {}
   - uid: 16
@@ -1948,6 +1958,11 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+    - type: DeviceList
+      devices:
+      - 68
+      - 2012
+      - 2011
 - proto: AirlockAtmosphericsLocked
   entities:
   - uid: 18

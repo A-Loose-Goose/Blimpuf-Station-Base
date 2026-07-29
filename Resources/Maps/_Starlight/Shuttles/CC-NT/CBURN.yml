@@ -4510,7 +4510,7 @@ entities:
       parent: 1
     - type: AtmosPipeColor
       color: '#FF1212FF'
-- proto: GasVentPump
+- proto: SecureCCGasVentPump
   entities:
   - uid: 483
     components:
