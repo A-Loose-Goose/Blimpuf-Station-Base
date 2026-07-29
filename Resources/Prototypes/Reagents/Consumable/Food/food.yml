@@ -15,12 +15,12 @@
         factor: 0.75
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
       - !type:SatiateHunger
         factor: 1.5
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
           inverted: true
   # Starlight edit end
   plantMetabolism:
@@ -55,12 +55,12 @@
         factor: 0.75
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
       - !type:SatiateHunger
         factor: 1.5
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
           inverted: true
       # Starlight edit end
   # Lets plants benefit too
@@ -94,12 +94,12 @@
         factor: 0.75
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
       - !type:SatiateHunger
         factor: 1.5
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
           inverted: true
       # Starlight edit end
   pricePerUnit: 3
@@ -124,7 +124,7 @@
           reagent: Nutriment
           min: 0.1
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
       - !type:SatiateHunger
         factor: 1
         conditions:
@@ -132,7 +132,7 @@
           reagent: Nutriment
           min: 0.1
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
           inverted: true
       # Starlight edit end
   plantMetabolism:

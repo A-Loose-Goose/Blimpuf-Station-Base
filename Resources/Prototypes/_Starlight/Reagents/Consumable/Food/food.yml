@@ -40,12 +40,12 @@
         factor: 0.75
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
       - !type:SatiateHunger
         factor: 1.5
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
           inverted: true
       # Starlight edit end
   plantMetabolism:
@@ -75,12 +75,12 @@
         factor: 3.0
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
       - !type:SatiateHunger
         factor: 6.0
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
           inverted: true
       # Starlight edit end
   pricePerUnit: 5
@@ -111,12 +111,12 @@
         factor: 0.75
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
       - !type:SatiateHunger
         factor: 1.5
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
           inverted: true
       # Starlight edit end
   pricePerUnit: 3

@@ -6,7 +6,7 @@
   description: Doesn't actually need to beat, simply mimics the movement to provide comfort for the user.
   components:
   - type: Metabolizer
-    metabolizerTypes: [Dwarf, Protogen]
+    metabolizerTypes: [Dipsomania, Protogen]
 
 - type: entity
   id: OrganProtoDwarfLiver
@@ -16,7 +16,7 @@
   description: Pairing suggestion, a side of fermented RAM sticks and a nice CPU.
   components:
   - type: Metabolizer
-    metabolizerTypes: [Dwarf]
+    metabolizerTypes: [Dipsomania]
 
 - type: entity
   id: OrganProtoDwarfStomach
@@ -45,4 +45,4 @@
     isSpecialDigestibleExclusive: false
   - type: Metabolizer
     maxReagents: 5
-    metabolizerTypes: [Dwarf, Animal]
+    metabolizerTypes: [Dipsomania, Animal]

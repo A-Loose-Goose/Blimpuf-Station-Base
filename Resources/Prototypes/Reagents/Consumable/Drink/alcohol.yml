@@ -51,7 +51,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -78,19 +78,19 @@
         factor: 4
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
       - !type:SatiateThirst
         factor: 2
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
           inverted: true
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.06
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
           inverted: true
   # Starlight edit end
 
@@ -120,13 +120,13 @@
         factor: 1.5
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.06
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
           inverted: true
   # Starlight edit end
 
@@ -182,7 +182,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -228,7 +228,7 @@
           reagent: Ethanol
           min: 15
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
           inverted: true
           # Starlight
         - !type:MetabolizerTypeCondition
@@ -257,7 +257,7 @@
           reagent: Ethanol
           min: 15
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           types:
             Poison: 0.02
@@ -268,7 +268,7 @@
       #     reagent: Ethanol
       #     min: 15
       #   - !type:MetabolizerTypeCondition
-      #     type: [ Dwarf ]
+      #     type: [ Dipsomania ]
       #   damage:
       #     groups:
       #       Brute: -0.1
@@ -279,7 +279,7 @@
           reagent: Ethanol
           min: 20
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
       # Starlight edit end
       - !type:Vomit
         probability: 0.04
@@ -289,7 +289,7 @@
           min: 12
         # dwarves immune to vomiting from alcohol
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
           inverted: true
       - !type:Drunk
         boozePower: 2
@@ -328,7 +328,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -434,7 +434,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -488,7 +488,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -519,7 +519,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
   # end starlight
 
 - type: reagent
@@ -549,7 +549,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           types:
             Radiation: -1
@@ -584,7 +584,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -671,7 +671,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           types:
             Cellular: -0.5
@@ -703,7 +703,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         - !type:MobStateCondition
           mobstate: Critical
         damage:
@@ -752,7 +752,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           types:
             Radiation: -3
@@ -788,7 +788,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
   # end starlight
 
 #Antifreeze as a drink is a bright blue color while it is an orangish red otherwise.
@@ -822,7 +822,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -879,7 +879,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -1032,7 +1032,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -1063,7 +1063,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
   # end starlight
 
 - type: reagent
@@ -1138,7 +1138,7 @@
       - !type:GenericStatusEffect
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         key: PressureImmunity
         component: PressureImmunity
   # Starlight edit end
@@ -1193,7 +1193,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           types:
             Shock: -1.5
@@ -1312,7 +1312,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -1356,7 +1356,7 @@
       - !type:GenericStatusEffect
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         key: IgnoreSlowOnDamage
         component: IgnoreSlowOnDamage
         time: 3
@@ -1391,7 +1391,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
   # end starlight
 
 - type: reagent
@@ -1422,7 +1422,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -1524,7 +1524,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
   # end starlight
 
 - type: reagent
@@ -1562,20 +1562,20 @@
       - !type:MovementSpeedModifier
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         walkSpeedModifier: 1.25
         sprintSpeedModifier: 1.25
       - !type:ModifyStatusEffect
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         effectProto: StatusEffectStunned
         time: 1
         type: Remove
       - !type:ModifyKnockdown
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         time: 1
         type: Remove
   # Starlight edit end
@@ -1607,7 +1607,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           types:
             Heat: -1.5
@@ -1643,7 +1643,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -1674,7 +1674,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
      # end starlight
 
 - type: reagent
@@ -1703,7 +1703,7 @@
       - !type:MovementSpeedModifier
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         walkSpeedModifier: 1.1
         sprintSpeedModifier: 1.1
   # Starlight edit end
@@ -1802,7 +1802,7 @@
       - !type:GenericStatusEffect
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         key: NoSlip
         component: NoSlip
         time: 2
@@ -1851,7 +1851,7 @@
       - !type:EvenHealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           Brute: -1.5
   # Starlight edit end
@@ -1897,7 +1897,7 @@
       - !type:GenericStatusEffect
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         key: RadiationProtection
         component: RadiationProtection
         time: 2
@@ -1933,7 +1933,7 @@
         - !type:TotalDamageCondition
           max: 50
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           groups:
             Brute: -1
@@ -2001,7 +2001,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           types:
             Caustic: -1 # a bit lower than Sigynate
@@ -2064,7 +2064,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -2116,12 +2116,12 @@
       - !type:ModifyBloodLevel
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         amount: 6
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           types:
             Asphyxiation: -1
@@ -2185,7 +2185,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         - !type:MobStateCondition
           mobstate: Critical
         damage:
@@ -2356,7 +2356,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
   # end starlight
 
 - type: reagent
@@ -2385,7 +2385,7 @@
       - !type:ModifyBleed
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         amount: -1.5
   # Starlight edit end
 
@@ -2576,7 +2576,7 @@
         - !type:HealthChange
           conditions:
           - !type:MetabolizerTypeCondition
-            type: [ Dwarf ]
+            type: [ Dipsomania ]
           damage:
             types:
               Poison: -1
@@ -2672,7 +2672,7 @@
           time: 3
           conditions:
           - !type:MetabolizerTypeCondition
-            type: [ Dwarf ]
+            type: [ Dipsomania ]
   # end starlight
   fizziness: 0.15
 
@@ -2709,14 +2709,14 @@
         - !type:ModifyStatusEffect
           conditions:
           - !type:MetabolizerTypeCondition
-            type: [ Dwarf ]
+            type: [ Dipsomania ]
           effectProto: StatusEffectStunned
           time: 3.5
           type: Remove
         - !type:ModifyKnockdown
           conditions:
           - !type:MetabolizerTypeCondition
-            type: [ Dwarf ]
+            type: [ Dipsomania ]
           time: 3.5
           type: Remove
         - !type:ModifyStatusEffect
@@ -2724,7 +2724,7 @@
           time: 3
           conditions:
           - !type:MetabolizerTypeCondition
-            type: [ Dwarf ]
+            type: [ Dipsomania ]
   # Starlight edit end
   fizziness: 0.15
 
@@ -2761,7 +2761,7 @@
         - !type:GenericStatusEffect
           conditions:
           - !type:MetabolizerTypeCondition
-            type: [ Dwarf ]
+            type: [ Dipsomania ]
           key: Insulated
           component: Insulated
           time: 2
@@ -2838,20 +2838,20 @@
         - !type:MovementSpeedModifier
           conditions:
           - !type:MetabolizerTypeCondition
-            type: [ Dwarf ]
+            type: [ Dipsomania ]
           walkSpeedModifier: 1.35
           sprintSpeedModifier: 1.35
         - !type:ModifyStatusEffect
           conditions:
             - !type:MetabolizerTypeCondition
-              type: [ Dwarf ]
+              type: [ Dipsomania ]
           effectProto: StatusEffectStunned
           time: 1
           type: Remove
         - !type:ModifyKnockdown
           conditions:
             - !type:MetabolizerTypeCondition
-              type: [ Dwarf ]
+              type: [ Dipsomania ]
           time: 1
           type: Remove
   # Starlight edit end
@@ -2934,7 +2934,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -3047,13 +3047,13 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
       - !type:SpawnAttachedTo
         entity: EffectDwarfCourage
         number: 1
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -3130,7 +3130,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -3159,7 +3159,7 @@
       - !type:GenericStatusEffect
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         key: NightVision
         component: NightVision
         time: 2
@@ -3238,7 +3238,7 @@
       - !type:EvenHealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           Burn: -2
           Toxin: -2
@@ -3256,7 +3256,7 @@
           reagent: BacchusBlessing
           min: 6
         - !type:MetabolizerTypeCondition
-          type: [Dwarf]
+          type: [Dipsomania]
           inverted: true
         damage:
           types:
@@ -3267,7 +3267,7 @@
           reagent: BacchusBlessing
           min: 6
         - !type:MetabolizerTypeCondition
-          type: [Dwarf]
+          type: [Dipsomania]
         damage:
           types:
             Poison: 0.04 # TODO: Might increase this, even though it's just double of ethanol from 0.02 to 0.04
@@ -3278,5 +3278,5 @@
           reagent: BacchusBlessing
           min: 8
         - !type:MetabolizerTypeCondition
-          type: [Dwarf]
+          type: [Dipsomania]
           inverted: true

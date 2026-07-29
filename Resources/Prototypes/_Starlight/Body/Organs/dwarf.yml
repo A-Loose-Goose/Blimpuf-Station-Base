@@ -5,7 +5,7 @@
   suffix: Dwarf
   components:
   - type: Metabolizer
-    metabolizerTypes: [Dwarf, Protogen]
+    metabolizerTypes: [Dipsomania, Protogen]
 
 - type: entity
   id: OrganDwarfLiver
@@ -14,7 +14,7 @@
   suffix: Dwarf
   components:
   - type: Metabolizer
-    metabolizerTypes: [Dwarf]
+    metabolizerTypes: [Dipsomania]
 
 - type: entity
   id: OrganDwarfStomach
@@ -38,4 +38,4 @@
   - type: Metabolizer
     # mm very yummy
     maxReagents: 5
-    metabolizerTypes: [Dwarf, Animal]
+    metabolizerTypes: [Dipsomania, Animal]
