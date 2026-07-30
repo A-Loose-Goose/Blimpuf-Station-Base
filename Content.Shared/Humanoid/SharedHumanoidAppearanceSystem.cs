@@ -118,7 +118,7 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
     }
 
     /// <summary>
-    /// Allows protogen characters from other servers to be imported as neocytes.
+    /// Allows legacy Protogen and Dwarf characters from other servers to be imported as current species.
     /// This is only for manual import compatibility.
     /// </summary>
     private static HumanoidCharacterProfile MigrateImportedNeocyteProfile(HumanoidCharacterProfile profile)
@@ -126,7 +126,7 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
         var changed = false;
         var result = new HumanoidCharacterProfile(profile)
         {
-            Species = MigrateNeocyteIdentifier(profile.Species, ref changed),
+            Species = MigrateImportedSpeciesIdentifier(profile.Species, ref changed),
             ForcedPrototype = MigrateNeocyteIdentifier(profile.ForcedPrototype, ref changed),
         };
 
@@ -158,6 +158,19 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
 
         result.SpeciesLoadout = MigrateNeocyteLoadout(profile.SpeciesLoadout, ref changed);
         return result;
+    }
+
+    private static string MigrateImportedSpeciesIdentifier(string identifier, ref bool changed)
+    {
+        var migrated = identifier switch
+        {
+            "Dwarf" => "Human",
+            "ProtoDwarf" => "NeoHuman",
+            _ => MigrateNeocyteIdentifier(identifier, ref changed),
+        };
+
+        changed |= migrated != identifier;
+        return migrated;
     }
 
     private static RoleLoadout? MigrateNeocyteLoadout(RoleLoadout? loadout, ref bool changed)
