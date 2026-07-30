@@ -318,6 +318,7 @@
       key_slots:
       - EncryptionKeyCommon
       - EncryptionKeyStationMaster
+      - EncryptionKeyCorporate
 
 - type: entity
   id: IntercomFreelance

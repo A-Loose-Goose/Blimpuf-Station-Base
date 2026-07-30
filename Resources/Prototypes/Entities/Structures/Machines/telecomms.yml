@@ -211,6 +211,7 @@
       - EncryptionKeyService
       - EncryptionKeyCommand
       - EncryptionKeyCommand # Starlight
+      - EncryptionKeyCorporate # Blimpuf
 
 - type: entity
   parent: TelecomServer

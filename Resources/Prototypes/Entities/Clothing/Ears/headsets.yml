@@ -126,6 +126,7 @@
     containers:
       key_slots:
       - EncryptionKeyStationMaster
+      - EncryptionKeyCorporate
   - type: Sprite
     sprite: Clothing/Ears/Headsets/command.rsi
   - type: Clothing
