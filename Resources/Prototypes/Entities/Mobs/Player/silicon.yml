@@ -17,6 +17,8 @@
     - Service
     - Supply
     - Corporate
+    defaultChannel: Common
+    allowBlacklistedComms: true
   - type: ActiveRadio
     channels:
     - Binary
