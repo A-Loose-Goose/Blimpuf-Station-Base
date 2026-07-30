@@ -128,7 +128,8 @@
     - Science
     - Service
     - Supply
-    defaultChannel: Common
+    - Corporate
+    defaultChannel: Corporate
   - type: Sprite
     layers:
     - state: crypt_silver

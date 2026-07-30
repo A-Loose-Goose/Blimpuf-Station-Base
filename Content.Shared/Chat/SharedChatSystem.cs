@@ -198,6 +198,11 @@ public abstract partial class SharedChatSystem : EntitySystem
             var ev = new GetDefaultRadioChannelEvent();
             RaiseLocalEvent(source, ev);
 
+            if (TryComp<IntrinsicRadioTransmitterComponent>(source, out var radio)) //If the User is Borgie / Using Internal Headset
+            {
+                ev.Channel = radio.DefaultChannel;
+            }
+
             //Starlight begin
             if (ev.Channel != null)
                 if (!_prototypeManager.TryIndex(ev.Channel, out channel))

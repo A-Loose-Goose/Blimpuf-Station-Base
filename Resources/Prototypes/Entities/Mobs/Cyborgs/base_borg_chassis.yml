@@ -96,6 +96,7 @@
     - Binary
     - Common
     - Science
+    defaultChannel: Common
   - type: ActiveRadio
     channels:
     - Binary
