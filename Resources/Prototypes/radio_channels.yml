@@ -45,7 +45,7 @@
   name: chat-radio-medical
   keycode: 'm'
   frequency: 1355
-  color: "#73c9fa"
+  color: "#8fd6ff"
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: medical
@@ -65,7 +65,7 @@
   name: chat-radio-security
   keycode: 's'
   frequency: 1359
-  color: "#2fbb9f"
+  color: "#02cfe0"
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: security
@@ -75,7 +75,7 @@
   name: chat-radio-service
   keycode: 'v'
   frequency: 1349
-  color: "#539c00"
+  color: "#a6e012"
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: service
