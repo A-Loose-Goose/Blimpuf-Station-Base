@@ -149,6 +149,6 @@
     - !type:SpeciesRequirement
       species:
         - Cyclorite
-        - ProtoCyclorite
+        - NeoCyclorite
         - Resomi
-        - ProtoResomi
+        - NeoResomi

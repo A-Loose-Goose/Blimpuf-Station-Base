@@ -75,23 +75,22 @@
             - Thaven
             - Elf
             - Lagomorph
-            - ProtoArachnid
-            - ProtoDiona
-            - ProtoDwarf
-            - ProtoHuman
-            - ProtoMoth
-            - ProtoReptilian
-            - ProtoResomi
-            - ProtoSlimePerson
-            - ProtoVox
-            - ProtoVulp
-            - ProtoAvali
-            - ProtoCyclorite
-            - ProtoFelionoid
-            - ProtoKin
-            - ProtoThaven
-            - ProtoElf
-            - ProtoLagomorph
+            - NeoArachnid
+            - NeoDiona
+            - NeoHuman
+            - NeoMoth
+            - NeoReptilian
+            - NeoResomi
+            - NeoSlimePerson
+            - NeoVox
+            - NeoVulp
+            - NeoAvali
+            - NeoCyclorite
+            - NeoFelionoid
+            - NeoShadekin
+            - NeoThaven
+            - NeoElf
+            - NeoLagomorph
         # Starlight-Start: Cyclorite Metabolism
         - !type:AdjustReagent
           conditions:

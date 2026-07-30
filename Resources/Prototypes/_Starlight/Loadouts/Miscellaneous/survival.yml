@@ -4,7 +4,7 @@
   - !type:SpeciesLoadoutEffect
     species:
     - Shadekin
-    - ProtoKin
+    - NeoShadekin
 
 - type: loadoutEffectGroup
   id: EffectsSpeciesRodentia
@@ -131,7 +131,7 @@
   - !type:SpeciesLoadoutEffect
     species:
     - Elf
-    - ProtoElf
+    - NeoElf
 
 - type: loadout
   id: EmergencyNonbreatherSecurity
