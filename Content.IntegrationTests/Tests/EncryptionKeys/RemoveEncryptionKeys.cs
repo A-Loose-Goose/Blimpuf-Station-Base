@@ -15,10 +15,10 @@ public sealed class RemoveEncryptionKeys : InteractionTest
 
         Assert.Multiple(() =>
         {
-            Assert.That(comp.KeyContainer.ContainedEntities, Has.Count.EqualTo(1));
-            Assert.That(comp.DefaultChannel, Is.EqualTo("Common"));
-            Assert.That(comp.Channels, Has.Count.EqualTo(1));
-            Assert.That(comp.Channels.First(), Is.EqualTo("Common"));
+            Assert.That(comp.KeyContainer.ContainedEntities, Has.Count.EqualTo(2));
+            Assert.That(comp.DefaultChannel, Is.EqualTo("Service"));
+            Assert.That(comp.Channels, Has.Count.EqualTo(2));
+            Assert.That(comp.Channels.First(), Is.EqualTo("Service"));
         });
 
         // Remove the key
