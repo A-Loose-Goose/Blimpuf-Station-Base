@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 07/15/2026 04:09:45
-  entityCount: 3460
+  entityCount: 3474
 maps:
 - 1
 grids:
@@ -15456,6 +15456,24 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+  - uid: 3467
+    components:
+    - type: Transform
+      pos: -19.5,2.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 3468
+    components:
+    - type: Transform
+      pos: -15.5,2.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 3472
+    components:
+    - type: Transform
+      pos: 9.5,-13.5
+      parent: 2
+      rot: 3.141592653589793 rad
 - proto: IntercomMedical
   entities:
   - uid: 2215
@@ -15466,6 +15484,18 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+  - uid: 3484
+    components:
+    - type: Transform
+      pos: 1.5,2.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 3485
+    components:
+    - type: Transform
+      pos: 13.5,-1.5
+      parent: 2
+      rot: 4.71238898038469 rad
 - proto: IntercomSecurity
   entities:
   - uid: 2216
@@ -15475,6 +15505,18 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+  - uid: 3473
+    components:
+    - type: Transform
+      pos: 18.5,-5.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 3474
+    components:
+    - type: Transform
+      pos: 20.5,5.5
+      parent: 2
+      rot: 4.71238898038469 rad
 - proto: JanitorialTrolley
   entities:
   - uid: 2217
@@ -16251,16 +16293,6 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: PosterLegitNanomichiAd
-  entities:
-  - uid: 2317
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 4.5,8.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
 - proto: PosterLegitNanotrasenLogo
   entities:
   - uid: 2318
@@ -16317,15 +16349,6 @@ entities:
     components:
     - type: Transform
       pos: -1.5,13.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-- proto: PosterLegitSecWatch
-  entities:
-  - uid: 2325
-    components:
-    - type: Transform
-      pos: 20.5,5.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -20168,15 +20191,6 @@ entities:
     - type: Transform
       pos: -16.5,4.5
       parent: 2
-- proto: WallmountMassScanner
-  entities:
-  - uid: 2880
-    components:
-    - type: Transform
-      pos: 5.5,6.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
 - proto: WallReinforcedShuttle
   entities:
   - uid: 2881
@@ -23396,4 +23410,78 @@ entities:
     - type: Transform
       pos: 21.5,5.5
       parent: 2
+- proto: IntercomService
+  entities:
+  - uid: 3469
+    components:
+    - type: Transform
+      pos: -11.5,2.5
+      parent: 2
+  - uid: 3470
+    components:
+    - type: Transform
+      pos: -15.5,-4.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 3471
+    components:
+    - type: Transform
+      pos: -2.5,-8.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+- proto: PosterLegitSecWatch
+  entities:
+  - uid: 3475
+    components:
+    - type: Transform
+      pos: 20.5,6.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+- proto: IntercomAll
+  entities:
+  - uid: 3476
+    components:
+    - type: Transform
+      pos: 21.5,-4.5
+      parent: 2
+      rot: 3.141592653589793 rad
+- proto: IntercomCommon
+  entities:
+  - uid: 3478
+    components:
+    - type: Transform
+      pos: 9.5,15.5
+      parent: 2
+- proto: IntercomSupply
+  entities:
+  - uid: 3479
+    components:
+    - type: Transform
+      pos: 5.5,6.5
+      parent: 2
+  - uid: 3480
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 2
+      rot: 4.71238898038469 rad
+- proto: PosterLegitNanomichiAd
+  entities:
+  - uid: 3481
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 4.5,9.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+- proto: IntercomScience
+  entities:
+  - uid: 3483
+    components:
+    - type: Transform
+      pos: -0.5,11.5
+      parent: 2
+      rot: 4.71238898038469 rad
 ...

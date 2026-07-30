@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 07/15/2026 04:23:05
-  entityCount: 13989
+  entityCount: 14006
 maps:
 - 1
 grids:
@@ -60680,6 +60680,12 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+  - uid: 14014
+    components:
+    - type: Transform
+      pos: -3.5,31.5
+      parent: 2
+      rot: 1.5707963267948966 rad
 - proto: IntercomCommon
   entities:
   - uid: 9423
@@ -60754,6 +60760,45 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+  - uid: 14002
+    components:
+    - type: Transform
+      pos: -53.5,-8.5
+      parent: 2
+  - uid: 14003
+    components:
+    - type: Transform
+      pos: -46.5,-25.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 14004
+    components:
+    - type: Transform
+      pos: -38.5,-15.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 14006
+    components:
+    - type: Transform
+      pos: -18.5,10.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 14007
+    components:
+    - type: Transform
+      pos: -20.5,9.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 14019
+    components:
+    - type: Transform
+      pos: 38.5,-22.5
+      parent: 2
+  - uid: 14022
+    components:
+    - type: Transform
+      pos: -37.5,16.5
+      parent: 2
 - proto: IntercomEngineering
   entities:
   - uid: 9432
@@ -60818,6 +60863,12 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+  - uid: 14017
+    components:
+    - type: Transform
+      pos: 52.5,16.5
+      parent: 2
+      rot: 4.71238898038469 rad
 - proto: IntercomMedical
   entities:
   - uid: 9440
@@ -60885,6 +60936,12 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+  - uid: 14020
+    components:
+    - type: Transform
+      pos: -3.5,-32.5
+      parent: 2
+      rot: 4.71238898038469 rad
 - proto: IntercomSecurity
   entities:
   - uid: 9448
@@ -60901,6 +60958,21 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+  - uid: 14008
+    components:
+    - type: Transform
+      pos: 0.5,9.5
+      parent: 2
+  - uid: 14011
+    components:
+    - type: Transform
+      pos: -3.5,15.5
+      parent: 2
+  - uid: 14021
+    components:
+    - type: Transform
+      pos: -12.5,-37.5
+      parent: 2
 - proto: IntercomService
   entities:
   - uid: 9450
@@ -60951,6 +61023,18 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+  - uid: 14013
+    components:
+    - type: Transform
+      pos: 6.5,16.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 14015
+    components:
+    - type: Transform
+      pos: 23.5,22.5
+      parent: 2
+      rot: 4.71238898038469 rad
 - proto: IntercomSupply
   entities:
   - uid: 9456
@@ -64228,17 +64312,17 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-  - uid: 9925
-    components:
-    - type: Transform
-      pos: 52.5,16.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
   - uid: 9926
     components:
     - type: Transform
       pos: 32.5,19.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+  - uid: 14018
+    components:
+    - type: Transform
+      pos: 55.5,20.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -88650,5 +88734,18 @@ entities:
     components:
     - type: Transform
       pos: 9.615229,30.49403
+      parent: 2
+- proto: IntercomCommand
+  entities:
+  - uid: 14012
+    components:
+    - type: Transform
+      pos: -6.5,21.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 14016
+    components:
+    - type: Transform
+      pos: 28.5,11.5
       parent: 2
 ...

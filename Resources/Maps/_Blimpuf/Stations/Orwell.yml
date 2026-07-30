@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 07/15/2026 01:25:06
-  entityCount: 31728
+  entityCount: 31798
 maps:
 - 1
 grids:
@@ -16630,11 +16630,6 @@ entities:
       parent: 2
 - proto: ATM
   entities:
-  - uid: 1024
-    components:
-    - type: Transform
-      pos: -33.5,17.5
-      parent: 2
   - uid: 1025
     components:
     - type: Transform
@@ -151117,22 +151112,6 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: PosterLegitSafetyMothEpi
-  entities:
-  - uid: 23298
-    components:
-    - type: Transform
-      pos: 32.5,-22.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-  - uid: 23299
-    components:
-    - type: Transform
-      pos: 26.5,-35.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
 - proto: PosterLegitSafetyMothHardhat
   entities:
   - uid: 23300
@@ -151265,14 +151244,6 @@ entities:
     components:
     - type: Transform
       pos: -24.5,-7.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-  - uid: 23317
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -51.5,-6.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -158264,11 +158235,6 @@ entities:
     - type: Transform
       pos: 40.5,42.5
       parent: 2
-  - uid: 24495
-    components:
-    - type: Transform
-      pos: 35.5,42.5
-      parent: 2
   - uid: 24496
     components:
     - type: Transform
@@ -158318,6 +158284,11 @@ entities:
     components:
     - type: Transform
       pos: 40.5,8.5
+      parent: 2
+  - uid: 31922
+    components:
+    - type: Transform
+      pos: 26.5,41.5
       parent: 2
 - proto: RandomSpawner
   entities:
@@ -199603,5 +199574,461 @@ entities:
     components:
     - type: Transform
       pos: 40.5,-2.5
+      parent: 2
+- proto: IntercomCommon
+  entities:
+  - uid: 31887
+    components:
+    - type: Transform
+      pos: -8.5,-59.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 31888
+    components:
+    - type: Transform
+      pos: 9.5,-59.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31889
+    components:
+    - type: Transform
+      pos: -8.5,-43.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 31890
+    components:
+    - type: Transform
+      pos: 9.5,-43.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31892
+    components:
+    - type: Transform
+      pos: -8.5,-26.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 31902
+    components:
+    - type: Transform
+      pos: 13.5,-10.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31903
+    components:
+    - type: Transform
+      pos: 23.5,-14.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31918
+    components:
+    - type: Transform
+      pos: 48.5,10.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31928
+    components:
+    - type: Transform
+      pos: 28.5,10.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31930
+    components:
+    - type: Transform
+      pos: -3.5,28.5
+      parent: 2
+  - uid: 31931
+    components:
+    - type: Transform
+      pos: -10.5,11.5
+      parent: 2
+  - uid: 31932
+    components:
+    - type: Transform
+      pos: -28.5,11.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31947
+    components:
+    - type: Transform
+      pos: -59.5,-10.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31948
+    components:
+    - type: Transform
+      pos: -38.5,-16.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31950
+    components:
+    - type: Transform
+      pos: 32.5,-3.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31967
+    components:
+    - type: Transform
+      pos: 67.5,23.5
+      parent: 2
+- proto: IntercomService
+  entities:
+  - uid: 31891
+    components:
+    - type: Transform
+      pos: 9.5,-26.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31893
+    components:
+    - type: Transform
+      pos: -2.5,-17.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31894
+    components:
+    - type: Transform
+      pos: 2.5,-11.5
+      parent: 2
+  - uid: 31895
+    components:
+    - type: Transform
+      pos: -10.5,-17.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31897
+    components:
+    - type: Transform
+      pos: -21.5,-25.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31898
+    components:
+    - type: Transform
+      pos: -31.5,-25.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31899
+    components:
+    - type: Transform
+      pos: -35.5,-12.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 31900
+    components:
+    - type: Transform
+      pos: -17.5,-11.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 31901
+    components:
+    - type: Transform
+      pos: -5.5,-10.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31949
+    components:
+    - type: Transform
+      pos: -46.5,-16.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+- proto: PosterLegitSafetyMothEpi
+  entities:
+  - uid: 31904
+    components:
+    - type: Transform
+      pos: 37.5,-20.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+  - uid: 31906
+    components:
+    - type: Transform
+      pos: 30.5,-38.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+- proto: IntercomMedical
+  entities:
+  - uid: 31905
+    components:
+    - type: Transform
+      pos: 32.5,-22.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31907
+    components:
+    - type: Transform
+      pos: 26.5,-35.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31908
+    components:
+    - type: Transform
+      pos: 32.5,-27.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 31909
+    components:
+    - type: Transform
+      pos: 43.5,-29.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31915
+    components:
+    - type: Transform
+      pos: 54.5,-26.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31916
+    components:
+    - type: Transform
+      pos: 60.5,-22.5
+      parent: 2
+      rot: 3.141592653589793 rad
+- proto: IntercomCommand
+  entities:
+  - uid: 31910
+    components:
+    - type: Transform
+      pos: 47.5,-33.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31924
+    components:
+    - type: Transform
+      pos: 33.5,32.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31935
+    components:
+    - type: Transform
+      pos: -39.5,32.5
+      parent: 2
+  - uid: 31939
+    components:
+    - type: Transform
+      pos: -46.5,19.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31962
+    components:
+    - type: Transform
+      pos: 59.5,0.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31963
+    components:
+    - type: Transform
+      pos: 73.5,-5.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31964
+    components:
+    - type: Transform
+      pos: 67.5,-8.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31965
+    components:
+    - type: Transform
+      pos: 63.5,7.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31966
+    components:
+    - type: Transform
+      pos: 63.5,10.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+- proto: IntercomScience
+  entities:
+  - uid: 31919
+    components:
+    - type: Transform
+      pos: 41.5,18.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31920
+    components:
+    - type: Transform
+      pos: 41.5,27.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31921
+    components:
+    - type: Transform
+      pos: 35.5,36.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 31923
+    components:
+    - type: Transform
+      pos: 35.5,42.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31926
+    components:
+    - type: Transform
+      pos: 26.5,22.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31927
+    components:
+    - type: Transform
+      pos: 24.5,15.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31969
+    components:
+    - type: Transform
+      pos: 41.5,53.5
+      parent: 2
+      rot: 3.141592653589793 rad
+- proto: IntercomSecurity
+  entities:
+  - uid: 31929
+    components:
+    - type: Transform
+      pos: 16.5,7.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31951
+    components:
+    - type: Transform
+      pos: 23.5,-1.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31952
+    components:
+    - type: Transform
+      pos: 6.5,5.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 31953
+    components:
+    - type: Transform
+      pos: 2.5,6.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31954
+    components:
+    - type: Transform
+      pos: -1.5,-5.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 31955
+    components:
+    - type: Transform
+      pos: -7.5,2.5
+      parent: 2
+  - uid: 31956
+    components:
+    - type: Transform
+      pos: -5.5,-3.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31958
+    components:
+    - type: Transform
+      pos: -16.5,-4.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31959
+    components:
+    - type: Transform
+      pos: -24.5,-1.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31960
+    components:
+    - type: Transform
+      pos: -38.5,2.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 31961
+    components:
+    - type: Transform
+      pos: 6.5,-3.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31968
+    components:
+    - type: Transform
+      pos: 30.5,54.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+- proto: IntercomSupply
+  entities:
+  - uid: 31933
+    components:
+    - type: Transform
+      pos: -33.5,17.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31934
+    components:
+    - type: Transform
+      pos: -37.5,25.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+- proto: IntercomEngineering
+  entities:
+  - uid: 31936
+    components:
+    - type: Transform
+      pos: -47.5,2.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 31937
+    components:
+    - type: Transform
+      pos: -54.5,1.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31938
+    components:
+    - type: Transform
+      pos: -53.5,19.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31940
+    components:
+    - type: Transform
+      pos: -67.5,19.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31941
+    components:
+    - type: Transform
+      pos: -54.5,42.5
+      parent: 2
+  - uid: 31942
+    components:
+    - type: Transform
+      pos: -64.5,44.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 31943
+    components:
+    - type: Transform
+      pos: -73.5,40.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 31944
+    components:
+    - type: Transform
+      pos: -82.5,20.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31945
+    components:
+    - type: Transform
+      pos: -59.5,-4.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 31946
+    components:
+    - type: Transform
+      pos: -51.5,-6.5
       parent: 2
 ...
