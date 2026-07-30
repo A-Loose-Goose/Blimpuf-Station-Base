@@ -7,7 +7,7 @@
   components:
   - type: Stamp
     stampedName: Magistrate
-    stampedColor: "#01a100"
+    stampedColor: "#FF5297"
     stampState: "paper_stamp-magistrate"
   - type: Sprite
     sprite: _Starlight/Objects/Misc/stamps.rsi
@@ -36,7 +36,7 @@
     - type: Stamp
       stampedName: "Internal Affairs Agent"
       stampedColor: "#33CC33"
-      stampState: "paper_stamp-iaa"
+      stampState: "paper_stamp-ok"
     - type: Sprite
       sprite: _Starlight/Objects/Misc/stamps.rsi
       state: stamp-iaa
@@ -184,7 +184,7 @@
   components:
   - type: Stamp
     stampedName: "Central Security Division"
-    stampedColor: "#2c6682"
+    stampedColor: "#cc0000"
     stampState: "paper_stamp-hos"
   - type: Sprite
     state: stamp-hos
