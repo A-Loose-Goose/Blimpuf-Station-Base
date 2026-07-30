@@ -31,7 +31,7 @@ public sealed class RemoveEncryptionKeys : InteractionTest
         });
 
         // Check that the key was ejected and not just deleted or something.
-        await AssertEntityLookup(("EncryptionKeyCommon", 1));
+        await AssertEntityLookup(("EncryptionKeyCommon", 1), ("EncryptionKeyService", 1));
 
         // Re-insert a key.
         await InteractUsing("EncryptionKeyCentCom");
