@@ -53,7 +53,7 @@ public sealed partial class EncryptionKeyHolderComponent : Component, ISupportsC
     //Starlight end
 
     /// <summary>
-    ///     This is the channel that will be used when using the default/department prefix (<see cref="SharedChatSystem.DefaultChannelKey"/>).
+    ///     This is the channel that will be used when using the default/department prefix (<see cref="SharedChatSystem.DefaultChannelPrefix"/>).
     /// </summary>
     [ViewVariables, AutoNetworkedField] // Starlight edit
     public string? DefaultChannel;

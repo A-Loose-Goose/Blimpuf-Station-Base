@@ -1,7 +1,7 @@
 - type: radioChannel
   id: Common
   name: chat-radio-common
-  keycode: ";"
+  #keycode: "#" # Blimpuf Removed Common Comms keycode
   frequency: 1459
   color: "#dfc8fa"
   headsetTransmittable: false # Moffstation - remove common

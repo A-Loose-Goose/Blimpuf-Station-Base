@@ -7,7 +7,7 @@ public sealed class GetDefaultRadioChannelEvent : EntityEventArgs, IInventoryRel
 {
     /// <summary>
     ///     Id of the default <see cref="RadioChannelPrototype"/> that will get addressed when using the
-    ///     department/default channel prefix. See <see cref="SharedChatSystem.DefaultChannelKey"/>.
+    ///     department/default channel prefix. See <see cref="SharedChatSystem.DefaultChannelPrefix"/>.
     /// </summary>
     public string? Channel;
 
