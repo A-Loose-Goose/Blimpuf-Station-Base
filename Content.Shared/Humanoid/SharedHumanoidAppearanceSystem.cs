@@ -1,6 +1,7 @@
 using System.IO;
 using System.Linq;
 using System.Numerics;
+using System.Text.RegularExpressions;
 using Content.Shared.CCVar;
 using Content.Shared.Decals;
 using Content.Shared.Examine;
@@ -9,6 +10,7 @@ using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Inventory;
 using Content.Shared.Preferences;
+using Content.Shared.Preferences.Loadouts;
 using Content.Shared.Roles;
 using Robust.Shared;
 using Robust.Shared.Configuration;
@@ -34,6 +36,8 @@ namespace Content.Shared.Humanoid;
 /// </summary>
 public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
 {
+    private static readonly Regex ProtoKinIdentifier = new(@"Proto[Kk]in(?![a-z])", RegexOptions.Compiled);
+
     [Dependency] private IConfigurationManager _cfgManager = default!;
     [Dependency] private INetManager _netManager = default!;
     [Dependency] private IPrototypeManager _proto = default!;
@@ -104,12 +108,113 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
          * Add custom handling here for forks / version numbers if you care.
          */
 
+        export.Profile = MigrateImportedNeocyteProfile(export.Profile);
         export.Profile.ForcedPrototype = string.Empty;
 
         var profile = export.Profile;
         var collection = IoCManager.Instance;
         profile.EnsureValid(session, collection!);
         return profile;
+    }
+
+    /// <summary>
+    /// Allows protogen characters from other servers to be imported as neocytes.
+    /// This is only for manual import compatibility.
+    /// </summary>
+    private static HumanoidCharacterProfile MigrateImportedNeocyteProfile(HumanoidCharacterProfile profile)
+    {
+        var changed = false;
+        var result = new HumanoidCharacterProfile(profile)
+        {
+            Species = MigrateNeocyteIdentifier(profile.Species, ref changed),
+            ForcedPrototype = MigrateNeocyteIdentifier(profile.ForcedPrototype, ref changed),
+        };
+
+        var cybernetics = new List<string>(profile.Cybernetics.Count);
+        foreach (var cybernetic in profile.Cybernetics)
+            cybernetics.Add(MigrateNeocyteIdentifier(cybernetic, ref changed));
+        result.Cybernetics = cybernetics;
+
+        var appearance = profile.Appearance.Clone();
+        appearance.HairStyleId = MigrateNeocyteIdentifier(appearance.HairStyleId, ref changed);
+        appearance.FacialHairStyleId = MigrateNeocyteIdentifier(appearance.FacialHairStyleId, ref changed);
+        var markings = new List<Marking>(appearance.Markings.Count);
+        foreach (var marking in appearance.Markings)
+        {
+            var id = MigrateNeocyteIdentifier(marking.MarkingId, ref changed);
+            markings.Add(id == marking.MarkingId
+                ? marking
+                : new Marking(id, marking.MarkingColors, marking.IsGlowing)
+                {
+                    Visible = marking.Visible,
+                    Forced = marking.Forced,
+                });
+        }
+        appearance.Markings = markings;
+        result.Appearance = appearance;
+
+        foreach (var loadout in profile.Loadouts.Values)
+            result = result.WithLoadout(MigrateNeocyteLoadout(loadout, ref changed)!);
+
+        result.SpeciesLoadout = MigrateNeocyteLoadout(profile.SpeciesLoadout, ref changed);
+        return result;
+    }
+
+    private static RoleLoadout? MigrateNeocyteLoadout(RoleLoadout? loadout, ref bool changed)
+    {
+        if (loadout == null)
+            return null;
+
+        var migrated = new RoleLoadout(MigrateNeocyteIdentifier(loadout.Role, ref changed))
+        {
+            EntityName = loadout.EntityName,
+        };
+
+        foreach (var (group, selected) in loadout.SelectedLoadouts)
+        {
+            var migratedGroup = MigrateNeocyteIdentifier(group, ref changed);
+            var migratedSelected = new List<Loadout>(selected.Count);
+            foreach (var selectedLoadout in selected)
+            {
+                migratedSelected.Add(new Loadout
+                {
+                    Prototype = MigrateNeocyteIdentifier(selectedLoadout.Prototype, ref changed),
+                });
+            }
+
+            migrated.SelectedLoadouts[migratedGroup] = migratedSelected;
+        }
+
+        return migrated;
+    }
+
+    private static string MigrateNeocyteIdentifier(string identifier, ref bool changed)
+    {
+        var migrated = identifier
+            .Replace("ProtoSlimePerson", "NeoSlimePerson", StringComparison.Ordinal)
+            .Replace("TrueProtogen", "TrueNeocyte", StringComparison.Ordinal)
+            .Replace("ProtogenCybernetics", "NeocyteCybernetics", StringComparison.Ordinal)
+            .Replace("Protogen", "Neocyte", StringComparison.Ordinal)
+            .Replace("ProtoArachnid", "NeoArachnid", StringComparison.Ordinal)
+            .Replace("ProtoAvali", "NeoAvali", StringComparison.Ordinal)
+            .Replace("ProtoCyclorite", "NeoCyclorite", StringComparison.Ordinal)
+            .Replace("ProtoDiona", "NeoDiona", StringComparison.Ordinal)
+            .Replace("ProtoElf", "NeoElf", StringComparison.Ordinal)
+            .Replace("ProtoFelionoid", "NeoFelionoid", StringComparison.Ordinal)
+            .Replace("ProtoHuman", "NeoHuman", StringComparison.Ordinal)
+            .Replace("ProtoLagomorph", "NeoLagomorph", StringComparison.Ordinal)
+            .Replace("ProtoMoth", "NeoMoth", StringComparison.Ordinal)
+            .Replace("ProtoReptilian", "NeoReptilian", StringComparison.Ordinal)
+            .Replace("ProtoResomi", "NeoResomi", StringComparison.Ordinal)
+            .Replace("ProtoSlime", "NeoSlime", StringComparison.Ordinal)
+            .Replace("ProtoThaven", "NeoThaven", StringComparison.Ordinal)
+            .Replace("ProtoVox", "NeoVox", StringComparison.Ordinal)
+            .Replace("ProtoVulp", "NeoVulp", StringComparison.Ordinal);
+
+        migrated = ProtoKinIdentifier.Replace(migrated, "NeoShadekin");
+
+        changed |= migrated != identifier;
+        return migrated;
     }
 
     private void OnInit(EntityUid uid, HumanoidAppearanceComponent humanoid, ComponentInit args)
