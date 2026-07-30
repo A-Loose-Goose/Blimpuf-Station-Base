@@ -86046,7 +86046,6 @@ entities:
           - 14222
           - 14221
           - 14225
-          - 14224
           - 14226
         paper_label: !type:ContainerSlot
           showEnts: False
@@ -154053,15 +154052,6 @@ entities:
 - proto: OrganDionaBrain
   entities:
   - uid: 14223
-    components:
-    - type: Transform
-      parent: 14220
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-- proto: OrganDwarfHeart
-  entities:
-  - uid: 14224
     components:
     - type: Transform
       parent: 14220
