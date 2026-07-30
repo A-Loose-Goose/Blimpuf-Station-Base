@@ -4332,5 +4332,12 @@ Entries:
   id: 6501
   time: '2026-07-30T05:23:12.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/65
+- author: ItsMaitake
+  changes:
+  - message: Intercoms are now present on all of our maps.
+    type: Add
+  id: 6701
+  time: '2026-07-30T06:12:30.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/67
 Order: -1
 
