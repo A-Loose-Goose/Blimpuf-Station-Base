@@ -3049,7 +3049,7 @@
         - !type:MetabolizerTypeCondition
           type: [ Dipsomania ]
       - !type:SpawnAttachedTo
-        entity: EffectDwarfCourage
+        entity: EffectMinersCourage
         number: 1
         conditions:
         - !type:MetabolizerTypeCondition

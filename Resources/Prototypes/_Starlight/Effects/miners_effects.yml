@@ -1,5 +1,5 @@
 - type: entity
-  id: EffectDwarfCourage
+  id: EffectMinersCourage
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
@@ -26,7 +26,7 @@
 
 # unused for now:
 - type: entity
-  id: EffectDwarfFortitude
+  id: EffectMinersFortitude
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn

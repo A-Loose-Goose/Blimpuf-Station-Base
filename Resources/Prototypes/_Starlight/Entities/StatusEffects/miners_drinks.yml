@@ -18,7 +18,7 @@
       - KnockdownImmune
     maximumDuration: 3s
   - type: StatusEffectAlert
-    alert: DwarfCourage
+    alert: MinersCourage
   - type: MobThresholdsStatusEffect
     thresholds:
       0: Alive
@@ -44,7 +44,7 @@
       - KnockdownImmune
     maximumDuration: 3s
   - type: StatusEffectAlert
-    alert: DwarfCourage
+    alert: MinersCourage
   - type: MobThresholdsStatusEffect
     thresholds:
       0: Alive
@@ -53,8 +53,8 @@
 
 - type: entity
   abstract: true
-  id: BonusArmorDwarfGeneric
-  name: <<Dwarf Armor Mod Status Effect>>
+  id: BonusArmorMinerGeneric
+  name: <<Miner Armor Mod Status Effect>>
   components:
   - type: StatusEffect
     whitelist:
@@ -66,13 +66,13 @@
       tags:
       - KnockdownImmune
   - type: StatusEffectAlert
-    alert: DwarfFortitude
+    alert: MinersFortitude
 
 # Fortitude Effects
 
 # Example of BonusArmorStatusEffect and SoundStatusEffect with all parameters set:
 - type: entity
-  parent: BonusArmorDwarfGeneric
+  parent: BonusArmorMinerGeneric
   id: BonusArmorWhiskey
   name: 10% resistance to Blunt damage
   components:
@@ -94,7 +94,7 @@
     endPositional: false
 
 - type: entity
-  parent: BonusArmorDwarfGeneric
+  parent: BonusArmorMinerGeneric
   id: BonusArmorIrishBool
   name: 90% resistance to Stamina damage
   components:
@@ -113,7 +113,7 @@
     startPositional: false
 
 - type: entity
-  parent: BonusArmorDwarfGeneric
+  parent: BonusArmorMinerGeneric
   id: BonusArmorAbsinthe
   name: 10% resistance to Piercing damage
   components:
@@ -126,7 +126,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-generic.ogg
 
 - type: entity
-  parent: BonusArmorDwarfGeneric
+  parent: BonusArmorMinerGeneric
   id: BonusArmorCognac
   name: 10% resistance to Cold damage
   components:
@@ -139,7 +139,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-cognac.ogg
 
 - type: entity
-  parent: BonusArmorDwarfGeneric
+  parent: BonusArmorMinerGeneric
   id: BonusArmorAntifreeze
   name: 50% resistance to Cold damage
   components:
@@ -152,7 +152,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-cognac.ogg
 
 - type: entity
-  parent: BonusArmorDwarfGeneric
+  parent: BonusArmorMinerGeneric
   id: BonusArmorGin
   name: 10% resistance to Caustic damage
   components:
@@ -165,7 +165,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-gin.ogg
 
 - type: entity
-  parent: BonusArmorDwarfGeneric
+  parent: BonusArmorMinerGeneric
   id: BonusArmorRum
   name: 10% resistance to Slash damage
   components:
@@ -178,7 +178,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-rum.ogg
 
 - type: entity
-  parent: BonusArmorDwarfGeneric
+  parent: BonusArmorMinerGeneric
   id: BonusArmorTequila
   name: 10% resistance to Heat damage
   components:
@@ -191,7 +191,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-tequila.ogg
 
 - type: entity
-  parent: BonusArmorDwarfGeneric
+  parent: BonusArmorMinerGeneric
   id: BonusArmorVermouth
   name: 10% resistance to Shock damage
   components:
@@ -204,7 +204,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-vermouth.ogg
 
 - type: entity
-  parent: BonusArmorDwarfGeneric
+  parent: BonusArmorMinerGeneric
   id: BonusArmorAndalusia
   name: 10% resistance to Shock and Piercing damage, +5% vulnerability to Slash and Heat damage
   components:
@@ -220,7 +220,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-rum.ogg
 
 - type: entity
-  parent: BonusArmorDwarfGeneric
+  parent: BonusArmorMinerGeneric
   id: BonusArmorB52
   name: 25% resistance to explosions
   components:
@@ -234,7 +234,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-cognac.ogg
 
 - type: entity
-  parent: BonusArmorDwarfGeneric
+  parent: BonusArmorMinerGeneric
   id: BonusArmorDriestMartini
   name: 15% resistance to Brute damage
   components:
@@ -249,7 +249,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-gin.ogg
 
 - type: entity
-  parent: BonusArmorDwarfGeneric
+  parent: BonusArmorMinerGeneric
   id: BonusArmorPainkiller
   name: immunity to Bloodloss
   components:
@@ -262,7 +262,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-rum.ogg
 
 - type: entity
-  parent: BonusArmorDwarfGeneric
+  parent: BonusArmorMinerGeneric
   id: BonusArmorErikaSurprise
   name: 15% resistance to all Burn damage
   components:
@@ -277,7 +277,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-generic.ogg
 
 - type: entity
-  parent: BonusArmorDwarfGeneric
+  parent: BonusArmorMinerGeneric
   id: BonusArmorGargleBlaster
   name: 10% resistance to Brute damage
   components:
@@ -292,7 +292,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-cognac.ogg
 
 - type: entity
-  parent: BonusArmorDwarfGeneric
+  parent: BonusArmorMinerGeneric
   id: BonusArmorGrog
   name: 10% resistance to Slash and Heat damage, +5% vulnerability to Blunt and Cold damage
   components:
@@ -308,7 +308,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-rum.ogg
 
 - type: entity
-  parent: BonusArmorDwarfGeneric
+  parent: BonusArmorMinerGeneric
   id: BonusArmorMoscowMule
   name: 10% resistance to Poison and Radiation damage
   components:
@@ -322,7 +322,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-moscowmule.ogg
 
 - type: entity
-  parent: BonusArmorDwarfGeneric
+  parent: BonusArmorMinerGeneric
   id: BonusArmorDaiquiri
   name: 10% resistance to Blunt and Cold damage, +5% vulnerability to Piercing and Shock damage
   components:
@@ -341,8 +341,8 @@
 
 - type: entity
   abstract: true
-  id: BonusScalarDwarfGeneric
-  name: <<Dwarf BonusScalar Status Effect>>
+  id: BonusScalarMinerGeneric
+  name: <<Miner BonusScalar Status Effect>>
   components:
   - type: StatusEffect
     whitelist:
@@ -354,10 +354,10 @@
       tags:
       - KnockdownImmune
   - type: StatusEffectAlert
-    alert: DwarfFury
+    alert: MinersFury
 
 - type: entity
-  parent: BonusScalarDwarfGeneric
+  parent: BonusScalarMinerGeneric
   id: BonusScalarIrishCream
   name: 25% increased attack rate when unarmed
   components:
@@ -374,7 +374,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-generic.ogg
 
 - type: entity
-  parent: BonusScalarDwarfGeneric # not actually a BonusScalarStatusEffect, but whatever -- we're using the same icon anyway
+  parent: BonusScalarMinerGeneric # not actually a BonusScalarStatusEffect, but whatever -- we're using the same icon anyway
   id: BonusDamageBraveBull
   name: added Structural damage to unarmed attacks
   components:
@@ -392,7 +392,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-generic.ogg
 
 - type: entity
-  parent: BonusScalarDwarfGeneric
+  parent: BonusScalarMinerGeneric
   id: BonusScalarBronx
   name: 50% increased unarmed damage
   components:
@@ -404,7 +404,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-generic.ogg
 
 - type: entity
-  parent: BonusScalarDwarfGeneric
+  parent: BonusScalarMinerGeneric
   id: BonusScalarXenoBasher
   name: 10% increased attack speed with melee weapons
   components:
@@ -416,7 +416,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-generic.ogg
 
 - type: entity
-  parent: BonusScalarDwarfGeneric
+  parent: BonusScalarMinerGeneric
   id: BonusScalarIrishCarBomb
   name: 20% increased damage with melee weapons
   components:
@@ -428,7 +428,7 @@
       path: /Audio/_Starlight/Magic/dwarf-buff-generic.ogg
 
 - type: entity
-  parent: BonusScalarDwarfGeneric
+  parent: BonusScalarMinerGeneric
   id: BonusScalarSyndicateBomb
   name: 25% reduced interaction time
   components:
