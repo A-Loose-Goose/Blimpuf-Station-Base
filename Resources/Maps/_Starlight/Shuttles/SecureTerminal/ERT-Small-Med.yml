@@ -4213,22 +4213,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: OrganDwarfHeart
-  entities:
-  - uid: 309
-    components:
-    - type: Transform
-      parent: 304
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 310
-    components:
-    - type: Transform
-      parent: 304
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: OrganHumanHeart
   entities:
   - uid: 311

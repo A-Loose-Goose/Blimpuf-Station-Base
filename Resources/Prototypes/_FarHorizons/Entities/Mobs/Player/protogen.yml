@@ -67,12 +67,6 @@
 
 - type: entity
   save: false
-  name: Urist McHandster The Proto-Dwarf # Starlight, to match with our Dwarf naming changes
-  parent: BaseMobProtoDwarf # Starlight, Dawi -> Dwarf
-  id: MobProtoDwarf # Starlight, Dawi -> Dwarf
-
-- type: entity
-  save: false
   name: Urist McPlantster
   parent: BaseMobProtoDiona # Starlight, Dionae -> Diona
   id: MobProtoDiona # Starlight, Dionae -> Diona

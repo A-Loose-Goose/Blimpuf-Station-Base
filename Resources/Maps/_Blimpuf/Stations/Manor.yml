@@ -153898,15 +153898,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: OrganDwarfHeart
-  entities:
-  - uid: 14224
-    components:
-    - type: Transform
-      parent: 14220
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: OrganHumanTongue
   entities:
   - uid: 14225

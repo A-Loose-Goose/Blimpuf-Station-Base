@@ -14,7 +14,6 @@ subspecies-name-protoreptilian = Neo-Reptilian
 subspecies-name-protomoth = Neo-Moth
 subspecies-name-protohuman = Neo-Human
 subspecies-name-protofelionoid = Neo-Felionoid
-subspecies-name-protodwarf = Neo-Dwarf
 subspecies-name-protodiona = Neo-Diona
 subspecies-name-protocyclorite = Neo-Cyclorite
 subspecies-name-protoavali = Neo-Avali

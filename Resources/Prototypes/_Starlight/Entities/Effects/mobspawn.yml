@@ -39,9 +39,6 @@
       - id: OrganDionaEyes
       - id: OrganDionaStomach
       - id: OrganDionaLungs
-      - id: OrganDwarfHeart
-      - id: OrganDwarfLiver
-      - id: OrganDwarfStomach
       - id: OrganMothStomach
       - id: OrganRatLungs
       - id: OrganRatStomach

@@ -45,14 +45,6 @@
 
 - type: entity
   parent: [BaseSpeciesDummy, BaseInventoryFemaleJumpsuit]
-  id: AppearanceDwarf
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: HumanoidAppearance
-    species: Dwarf
-
-- type: entity
-  parent: [BaseSpeciesDummy, BaseInventoryFemaleJumpsuit]
   id: AppearanceElf
   categories: [ HideSpawnMenu ]
   components:
