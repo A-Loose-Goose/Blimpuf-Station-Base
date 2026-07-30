@@ -4325,5 +4325,12 @@ Entries:
   id: 6401
   time: '2026-07-28T08:58:18.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/64
+- author: ItsMaitake
+  changes:
+  - message: G-Oat Plants are now able to be mutated from Oat Plants.
+    type: Add
+  id: 6501
+  time: '2026-07-30T05:23:12.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/65
 Order: -1
 
