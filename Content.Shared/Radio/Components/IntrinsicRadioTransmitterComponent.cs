@@ -18,7 +18,12 @@ public sealed partial class IntrinsicRadioTransmitterComponent : Component, ISup
     /// <summary>
     ///     This is the channel that will be used when using the default/department prefix (<see cref="SharedChatSystem.DefaultChannelPrefix"/>).
     /// </summary>
-    [DataField, AutoNetworkedField] // Blimpuf edit
+    [DataField, AutoNetworkedField]
+    public string? DefaultChannel; // Blimpuf | Added support for DefaultChannels to Internal Comms
+
+    /// <summary>
+    ///     To allow channels that got blacklisted using (<see cref="RadioChannelPrototype.HeadsetTransmittable"/>).
+    /// </summary>
     [DataField, AutoNetworkedField]
     public bool AllowBlacklistedComms = false;
 
