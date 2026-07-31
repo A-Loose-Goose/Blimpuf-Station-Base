@@ -8,7 +8,6 @@
       containers:
         key_slots:
         - EncryptionKeyCommon
-        - EncryptionKeyCorporate
         - EncryptionKeyNCTrainer
     - type: Sprite
       sprite: Clothing/Ears/Headsets/servicesecurity.rsi
@@ -121,7 +120,6 @@
     containers:
       key_slots:
       - EncryptionKeyCommand
-      - EncryptionKeyCorporate
       - EncryptionKeyNCTrainer
   - type: Sprite
     sprite: Clothing/Ears/Headsets/centcom.rsi
