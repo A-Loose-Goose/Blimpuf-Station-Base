@@ -540,7 +540,7 @@ public sealed partial class RCDSystem : EntitySystem
         if (charges == 0)
         {
             if (popMsgs)
-                _popup.PopupClient(Loc.GetString("rcd-component-no-ammo-message"), uid, user);
+                _popup.PopupClient(Loc.GetString("rcd-component-no-ammo-message", ("device", Name(uid))), uid, user); // Starlight-edit: name the actual device (RCD/RPD/RPLD)
 
             return false;
         }
@@ -548,7 +548,7 @@ public sealed partial class RCDSystem : EntitySystem
         if (prototype.Cost > charges)
         {
             if (popMsgs)
-                _popup.PopupClient(Loc.GetString("rcd-component-insufficient-ammo-message"), uid, user);
+                _popup.PopupClient(Loc.GetString("rcd-component-insufficient-ammo-message", ("device", Name(uid))), uid, user); // Starlight-edit: name the actual device (RCD/RPD/RPLD)
 
             return false;
         }
