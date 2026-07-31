@@ -17,8 +17,7 @@
   startingGear: IAAGear
   icon: "JobIconIAA"
   rules: job-rules-corporate-aligned
-  supervisors: job-supervisors-magistrate
-  canBeAntag: false
+  supervisors: job-supervisors-centcom
   displayWeight: 20
   access:
   - IAA

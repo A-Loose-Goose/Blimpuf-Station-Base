@@ -20,7 +20,6 @@
   icon: "JobIconMagistrate"
   rules: job-rules-corporate-aligned
   supervisors: job-supervisors-centcom
-  canBeAntag: false
   displayWeight: 45
   setPreference: true
   access:
