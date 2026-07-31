@@ -32,3 +32,6 @@ uplink-wt551-compact-desc = An incredibly compressed weapon that has a folded an
 
 uplink-advanced-gorlex-hypospray-name = Advanced Gorlex Hypospray
 uplink-advanced-gorlex-hypospray-desc = An upgraded version of the standard NanoTrasen model of hyposprays - it boasts a higher injection yield, but has slightly less total internal capacity.
+
+uplink-jetpack-speedster-name = Speedster Jetpack
+uplink-jetpack-speedster-desc = A one of a kind jetpack, truly. While worn, the user gains an immense speedboost, making them 75% faster than normal. Retains all the basic functions of a Jetpack while providing much more utility. Also provides a lot more style!

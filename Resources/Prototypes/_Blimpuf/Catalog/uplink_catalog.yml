@@ -232,3 +232,23 @@
       blacklist:
         components:
           - SurplusBundle
+
+- type: listing
+  id: UplinkJetpackSpeedster
+  name: uplink-jetpack-speedster-name
+  description: uplink-jetpack-speedster-desc
+  productEntity: JetpackSpeedsterFilled
+  cost:
+    Telecrystal: 25
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
