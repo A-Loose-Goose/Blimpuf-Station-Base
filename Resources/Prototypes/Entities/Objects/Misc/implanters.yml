@@ -94,6 +94,16 @@
   - type: Tag
     tags:
     - Trash
+  - type: Sprite #Blimpuf Station
+    sprite: _Blimpuf/Objects/Specific/Medical/implantextractor.rsi
+    state: implanter0
+    layers:
+      - state: implanter0
+        map: [ "implantOnly" ]
+        visible: true
+      - state: implanter1
+        map: [ "implantFull" ]
+        visible: false
 
 - type: entity
   id: ImplanterAdmeme
