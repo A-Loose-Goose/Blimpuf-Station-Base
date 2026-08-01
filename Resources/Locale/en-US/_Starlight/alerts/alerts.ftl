@@ -9,7 +9,7 @@ alerts-miners-courage-desc = [color=yellow]The courage of your ancestors[/color]
 alerts-miners-fortitude-name = A Kladak Guzed-or!
 alerts-miners-fortitude-desc = [color=lightblue]The fortitude of the Smith God[/color] toughens your hide! They'll not get past you!
 alerts-miners-fury-name = Grimnir's Beard!
-alerts-miners-fury-desc = [color=orange]The fury of the Slayer God[/color] calls you to battle! Show those wazzocks what it means to stand toe to toe with a real Dawi!
+alerts-miners-fury-desc = [color=orange]The fury of the Slayer God[/color] calls you to battle! Show those wazzocks what it means to stand toe to toe with a real warrior!
 alerts-error-failed-to-spawn-ghost-role = Failed to spawn the requested ghost role. Sorry! :(
 alerts-held-breath-name = [color=lightblue]Held breath[/color]
 alerts-held-breath-desc = You are [color=lightblue]holding your breath[/color]! Click the alert to stop holding your breath, preferably before you suffocate.

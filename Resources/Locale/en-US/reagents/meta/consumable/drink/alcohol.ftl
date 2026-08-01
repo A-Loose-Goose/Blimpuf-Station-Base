@@ -208,7 +208,7 @@ reagent-desc-manhattan-project = A scientist's drink of choice, for pondering wa
 
 reagent-name-manly-dorf = Manly Dorf
 # Starlight: localize Dwarf name
-reagent-desc-manly-dorf = Beer and Ale, brought together in a delicious mix. Intended for stout dawi only.
+reagent-desc-manly-dorf = Beer and Ale, brought together in a delicious mix. Intended for stout warrior only.
 
 reagent-name-margarita = margarita
 reagent-desc-margarita = On the rocks with salt on the rim. Arriba~!
