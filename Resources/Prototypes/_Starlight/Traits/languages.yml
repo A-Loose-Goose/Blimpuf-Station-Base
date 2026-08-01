@@ -316,8 +316,8 @@
   requirements:
     - !type:SpeciesRequirement
       species:
-        - Cyclorite
-        - NeoCyclorite
+        - TNebri
+        - NeoTNebri
       inverted: true
     - !type:TraitsRequirement
       traits:

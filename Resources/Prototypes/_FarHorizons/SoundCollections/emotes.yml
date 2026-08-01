@@ -16,7 +16,7 @@
     - /Audio/_FarHorizons/Voice/Proto/Avali/avali_laugh.ogg
 
 - type: soundCollection
-  id: NeoCycloriteLaugh
+  id: NeoTNebriLaugh
   files:
     - /Audio/_FarHorizons/Voice/Proto/Cyclorite/laugh.ogg
 
@@ -265,6 +265,6 @@
     - /Audio/_FarHorizons/Voice/Proto/Resomi/resomi_whistle.ogg
 
 - type: soundCollection
-  id: NeoCycloriteWhistles
+  id: NeoTNebriWhistles
   files:
     - /Audio/_FarHorizons/Voice/Proto/Cyclorite/whistle.ogg

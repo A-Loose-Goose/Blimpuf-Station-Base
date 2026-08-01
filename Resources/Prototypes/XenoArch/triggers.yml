@@ -246,7 +246,7 @@
     - AvaliBlood
     - DarkBlood
     - ResomiBlood
-    - CycloriteBlood # Starlight-end
+    - TNebriBlood # Starlight-end
 
 - type: xenoArchTrigger
   id: TriggerThrow

@@ -15,9 +15,9 @@
   text: "/ServerInfo/_Starlight/Guidebook/Mobs/SubMobs/NeoArachnid.xml"
 
 - type: guideEntry
-  id: NeoCyclorite
-  name: subspecies-name-neocyclorite
-  text: "/ServerInfo/_Starlight/Guidebook/Mobs/SubMobs/NeoCyclorite.xml"
+  id: NeoTNebri
+  name: subspecies-name-neotnebri
+  text: "/ServerInfo/_Starlight/Guidebook/Mobs/SubMobs/NeoTNebri.xml"
 
 - type: guideEntry
   id: NeoDiona

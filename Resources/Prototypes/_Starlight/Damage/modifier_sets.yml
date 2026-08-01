@@ -13,7 +13,7 @@
     Heat: 1.6
 
 - type: damageModifierSet
-  id: Cyclorite
+  id: TNebri
   coefficients:
     Blunt: 0.85 # Have you ever tried to punch a rock?
     Slash: 0.7

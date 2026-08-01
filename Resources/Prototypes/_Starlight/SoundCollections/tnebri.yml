@@ -1,26 +1,26 @@
 - type: soundCollection
-  id: CycloriteScreams
+  id: TNebriScreams
   files:
   - /Audio/_Starlight/Voice/Cyclorite/scream_1.ogg
   - /Audio/_Starlight/Voice/Cyclorite/scream_2.ogg
 
 - type: soundCollection
-  id: CycloriteCough
+  id: TNebriCough
   files:
   - /Audio/_Starlight/Voice/Cyclorite/cough_1.ogg
   - /Audio/_Starlight/Voice/Cyclorite/cough_2.ogg
 
 - type: soundCollection
-  id: CycloriteYawn
+  id: TNebriYawn
   files:
   - /Audio/_Starlight/Voice/Cyclorite/yawn.ogg
 
 - type: soundCollection
-  id: CycloriteLaugh
+  id: TNebriLaugh
   files:
   - /Audio/_Starlight/Voice/Cyclorite/laugh.ogg
 
 - type: soundCollection
-  id: CycloriteWhistle
+  id: TNebriWhistle
   files:
   - /Audio/_Starlight/Voice/Cyclorite/whistle.ogg

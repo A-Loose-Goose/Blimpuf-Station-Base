@@ -1,8 +1,8 @@
 <Document>
-  # Neo-Cyclorite
-<!-- Starlight, renamed back to Cyclorite.-->
+  # Neo-T'Nebri
+<!-- Blimpuf, Cyclorites renamed to T'Nebri.-->
   <Box>
-    <GuideEntityEmbed Entity="AppearanceNeoCyclorite" Caption=""/>
+    <GuideEntityEmbed Entity="AppearanceNeoTNebri" Caption=""/>
   </Box>
 
   ## Resistances

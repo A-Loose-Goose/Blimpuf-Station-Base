@@ -7,37 +7,37 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Client._Starlight.Overlay.Systems;
 
-public sealed partial class CycloriteVisionSystem : EntitySystem
+public sealed partial class TNebriVisionSystem : EntitySystem
 {
     [Dependency] private IPlayerManager _player = default!;
     [Dependency] private IOverlayManager _overlayMan = default!;
     [Dependency] private IPrototypeManager _prototypeManager = default!;
-    private CycloriteVisionOverlay _overlay = default!;
-    private const string CycloriteShaderPrototype = "CycloriteShader";
+    private TNebriVisionOverlay _overlay = default!;
+    private const string TNebriShaderPrototype = "TNebriShader";
 
     public override void Initialize()
     {
         base.Initialize();
 
-        SubscribeLocalEvent<CycloriteVisionComponent, ComponentInit>(OnVisionInit);
-        SubscribeLocalEvent<CycloriteVisionComponent, ComponentShutdown>(OnVisionShutdown);
+        SubscribeLocalEvent<TNebriVisionComponent, ComponentInit>(OnVisionInit);
+        SubscribeLocalEvent<TNebriVisionComponent, ComponentShutdown>(OnVisionShutdown);
 
-        SubscribeLocalEvent<CycloriteVisionComponent, LocalPlayerAttachedEvent>(OnPlayerAttached);
-        SubscribeLocalEvent<CycloriteVisionComponent, LocalPlayerDetachedEvent>(OnPlayerDetached);
+        SubscribeLocalEvent<TNebriVisionComponent, LocalPlayerAttachedEvent>(OnPlayerAttached);
+        SubscribeLocalEvent<TNebriVisionComponent, LocalPlayerDetachedEvent>(OnPlayerDetached);
 
-        _overlay = new(_prototypeManager.Index<ShaderPrototype>(CycloriteShaderPrototype));
+        _overlay = new(_prototypeManager.Index<ShaderPrototype>(TNebriShaderPrototype));
     }
 
-    private void OnPlayerAttached(Entity<CycloriteVisionComponent> ent, ref LocalPlayerAttachedEvent args)
+    private void OnPlayerAttached(Entity<TNebriVisionComponent> ent, ref LocalPlayerAttachedEvent args)
         => AttemptAddVision(ent.Owner);
 
-    private void OnPlayerDetached(Entity<CycloriteVisionComponent> ent, ref LocalPlayerDetachedEvent args)
+    private void OnPlayerDetached(Entity<TNebriVisionComponent> ent, ref LocalPlayerDetachedEvent args)
         => AttemptRemoveVision(ent.Owner, true);
 
-    private void OnVisionInit(Entity<CycloriteVisionComponent> ent, ref ComponentInit args)
+    private void OnVisionInit(Entity<TNebriVisionComponent> ent, ref ComponentInit args)
         => AttemptAddVision(ent.Owner);
 
-    private void OnVisionShutdown(Entity<CycloriteVisionComponent> ent, ref ComponentShutdown args)
+    private void OnVisionShutdown(Entity<TNebriVisionComponent> ent, ref ComponentShutdown args)
         => AttemptRemoveVision(ent.Owner);
 
     private void AttemptAddVision(EntityUid uid)
@@ -46,7 +46,7 @@ public sealed partial class CycloriteVisionSystem : EntitySystem
         if (_player.LocalSession?.AttachedEntity != uid) return;
 
         //only add if its active
-        if (!TryComp<CycloriteVisionComponent>(uid, out var cycloriteVision) || !cycloriteVision.Active) return;
+        if (!TryComp<TNebriVisionComponent>(uid, out var tNebriVision) || !tNebriVision.Active) return;
 
         _overlayMan.AddOverlay(_overlay);
     }

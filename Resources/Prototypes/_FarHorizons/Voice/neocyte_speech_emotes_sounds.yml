@@ -460,41 +460,41 @@
 
 - type: emoteSounds
   parent: NeoHumanMSounds
-  id: NeoCycloriteMSounds
+  id: NeoTNebriMSounds
   sounds:
     Scream:
-      collection: NeoCycloriteScreams
+      collection: NeoTNebriScreams
     Laugh:
-      collection: NeoCycloriteLaugh
+      collection: NeoTNebriLaugh
     Sneeze:
-      collection: NeoCycloriteCoughs
+      collection: NeoTNebriCoughs
     Cough:
-      collection: NeoCycloriteCoughs
+      collection: NeoTNebriCoughs
     Crying:
-      collection: NeoCycloriteScreams
+      collection: NeoTNebriScreams
     Whistle:
-      collection: NeoCycloriteWhistles
+      collection: NeoTNebriWhistles
     Yawn:
-      collection: NeoCycloriteYawn
+      collection: NeoTNebriYawn
 
 - type: emoteSounds
   parent: NeoHumanFSounds
-  id: NeoCycloriteFSounds
+  id: NeoTNebriFSounds
   sounds:
     Scream:
-      collection: NeoCycloriteScreams
+      collection: NeoTNebriScreams
     Laugh:
-      collection: NeoCycloriteLaugh
+      collection: NeoTNebriLaugh
     Sneeze:
-      collection: NeoCycloriteCoughs
+      collection: NeoTNebriCoughs
     Cough:
-      collection: NeoCycloriteCoughs
+      collection: NeoTNebriCoughs
     Crying:
-      collection: NeoCycloriteScreams
+      collection: NeoTNebriScreams
     Whistle:
-      collection: NeoCycloriteWhistles
+      collection: NeoTNebriWhistles
     Yawn:
-      collection: NeoCycloriteYawn
+      collection: NeoTNebriYawn
 
 - type: emoteSounds
   parent: NeoHumanMSounds

@@ -1,7 +1,7 @@
-﻿- type: entity
-  id: PartCyclorite
+- type: entity
+  id: PartTNebri
   parent: [BaseItem, BasePart]
-  name: "cyclorite body part"
+  name: "T'Nebri body part"
   abstract: true
   components:
   - type: Extractable
@@ -13,9 +13,9 @@
         Quantity: 10
 
 - type: entity
-  id: TorsoCyclorite
-  name: "cyclorite torso"
-  parent: [PartCyclorite, BaseTorso]
+  id: TorsoTNebri
+  name: "T'Nebri torso"
+  parent: [PartTNebri, BaseTorso]
   components:
     - type: Sprite
       sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
@@ -32,9 +32,9 @@
           Quantity: 20
 
 - type: entity
-  id: HeadCyclorite
-  name: "cyclorite head"
-  parent: [PartCyclorite, BaseHead]
+  id: HeadTNebri
+  name: "T'Nebri head"
+  parent: [PartTNebri, BaseHead]
   components:
     - type: Sprite
       sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
@@ -51,9 +51,9 @@
           Quantity: 10
 
 - type: entity
-  id: LeftArmCyclorite
-  name: "left cyclorite arm"
-  parent: [PartCyclorite, BaseLeftArm]
+  id: LeftArmTNebri
+  name: "left T'Nebri arm"
+  parent: [PartTNebri, BaseLeftArm]
   components:
     - type: Sprite
       sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
@@ -63,9 +63,9 @@
       state: "l_arm"
 
 - type: entity
-  id: RightArmCyclorite
-  name: "right cyclorite arm"
-  parent: [PartCyclorite, BaseRightArm]
+  id: RightArmTNebri
+  name: "right T'Nebri arm"
+  parent: [PartTNebri, BaseRightArm]
   components:
     - type: Sprite
       sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
@@ -75,9 +75,9 @@
       state: "r_arm"
 
 - type: entity
-  id: LeftHandCyclorite
-  name: "left cyclorite hand"
-  parent: [PartCyclorite, BaseLeftHand]
+  id: LeftHandTNebri
+  name: "left T'Nebri hand"
+  parent: [PartTNebri, BaseLeftHand]
   components:
     - type: Sprite
       sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
@@ -87,9 +87,9 @@
       state: "l_hand"
 
 - type: entity
-  id: RightHandCyclorite
-  name: "right cyclorite hand"
-  parent: [PartCyclorite, BaseRightHand]
+  id: RightHandTNebri
+  name: "right T'Nebri hand"
+  parent: [PartTNebri, BaseRightHand]
   components:
     - type: Sprite
       sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
@@ -99,9 +99,9 @@
       state: "r_hand"
 
 - type: entity
-  id: LeftLegCyclorite
-  name: "left cyclorite leg"
-  parent: [PartCyclorite, BaseLeftLeg]
+  id: LeftLegTNebri
+  name: "left T'Nebri leg"
+  parent: [PartTNebri, BaseLeftLeg]
   components:
     - type: Sprite
       sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
@@ -114,9 +114,9 @@
       maxDensity: 155
 
 - type: entity
-  id: RightLegCyclorite
-  name: "right cyclorite leg"
-  parent: [PartCyclorite, BaseRightLeg]
+  id: RightLegTNebri
+  name: "right T'Nebri leg"
+  parent: [PartTNebri, BaseRightLeg]
   components:
     - type: Sprite
       sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
@@ -129,9 +129,9 @@
       maxDensity: 155
 
 - type: entity
-  id: LeftFootCyclorite
-  name: "left cyclorite foot"
-  parent: [PartCyclorite, BaseLeftFoot]
+  id: LeftFootTNebri
+  name: "left T'Nebri foot"
+  parent: [PartTNebri, BaseLeftFoot]
   components:
     - type: Sprite
       sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
@@ -141,9 +141,9 @@
       state: "l_foot"
 
 - type: entity
-  id: RightFootCyclorite
-  name: "right cyclorite foot"
-  parent: [PartCyclorite, BaseRightFoot]
+  id: RightFootTNebri
+  name: "right T'Nebri foot"
+  parent: [PartTNebri, BaseRightFoot]
   components:
     - type: Sprite
       sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi

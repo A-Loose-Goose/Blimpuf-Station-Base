@@ -1,6 +1,6 @@
 - type: entity
-  parent: [BaseMobSpeciesOrganic, BaseSpeciesPickupableHuge, BaseInventoryCyclorite]
-  id: BaseMobCyclorite
+  parent: [BaseMobSpeciesOrganic, BaseSpeciesPickupableHuge, BaseInventoryTNebri]
+  id: BaseMobTNebri
   abstract: true
   components:
   - type: LanguageKnowledge
@@ -22,12 +22,12 @@
     - id: FoodMeatHuman # TODO: Make Sprite for butchered rock steak
       amount: 10
   - type: HumanoidAppearance
-    species: Cyclorite
+    species: TNebri
     hideLayersOnEquip:
     - Hair
     - Snout
   - type: Body
-    prototype: Cyclorite
+    prototype: TNebri
     requiredLegs: 2
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
@@ -48,7 +48,7 @@
       300: Dead # 100 extra damage required to kill
   - type: Damageable
     damageContainer: Biological
-    damageModifierSet: Cyclorite
+    damageModifierSet: TNebri
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:
@@ -69,7 +69,7 @@
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: CycloriteBlood
+      - ReagentId: TNebriBlood
         Quantity: 300
   - type: MovementSpeedModifierScale
     movementSpeedScale: 0.5
@@ -79,9 +79,9 @@
       120: 0 # 0.5 w/ Speed Modifier Scale, 80% of base health based on BaseMobSpecies
   - type: Vocal
     sounds:
-      Male: MaleCyclorite
-      Female: FemaleCyclorite
-      Unsexed: MaleCyclorite
+      Male: MaleTNebri
+      Female: FemaleTNebri
+      Unsexed: MaleTNebri
   - type: Crawler
     standTime: 4
     knockdownDamageThreshold: 10

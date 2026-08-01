@@ -19,14 +19,14 @@
         damage:
           types:
             Poison: 4
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: Toxin
           min: 0.26
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: Toxin
         amount: 0.25
         # Starlight-End
@@ -58,14 +58,14 @@
         visualType: MediumCaution
         messages: [ "generic-reagent-effect-burning-insides" ]
         probability: 0.33
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: CarpoToxin
           min: 0.26
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: CarpoToxin
         amount: 0.25
         # Starlight-End
@@ -106,14 +106,14 @@
         damage:
           types:
             Poison: 1.5
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: ChloralHydrate
           min: 0.26
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: ChloralHydrate
         amount: 0.25
         # Starlight-End
@@ -140,14 +140,14 @@
             reagent: GastroToxin
             min: 2
           probability: 0.2
-        # Starlight-Start: Cyclorite Metabolism
+        # Starlight-Start: T'Nebri Metabolism
         - !type:AdjustReagent
           conditions:
           - !type:ReagentCondition
             reagent: GastroToxin
             min: 0.26
           - !type:MetabolizerTypeCondition
-            type: [ Cyclorite ]
+            type: [ TNebri ]
           reagent: GastroToxin
           amount: 0.25
           # Starlight-End
@@ -168,14 +168,14 @@
         damage:
           types:
             Poison: 1
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: Mold
           min: 0.26
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: Mold
         amount: 0.25
         # Starlight-End
@@ -226,14 +226,14 @@
       - !type:Emote
         emote: Scream
         probability: 0.3
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: PolytrinicAcid
           min: 1.51
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: PolytrinicAcid
         amount: 1.5
         # Starlight-End
@@ -258,14 +258,14 @@
           types:
             Heat: 2.5
             Caustic: 1
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: FerrochromicAcid
           min: 0.26
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: FerrochromicAcid
         amount: 0.25
         # Starlight-End
@@ -309,14 +309,14 @@
       - !type:Emote
         emote: Scream
         probability: 0.25
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: FluorosulfuricAcid
           min: 1.51
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: FluorosulfuricAcid
         amount: 1.5
         # Starlight-End
@@ -369,14 +369,14 @@
       - !type:Emote
         emote: Scream
         probability: 0.2
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: SulfuricAcid
           min: 1.51
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: SulfuricAcid
         amount: 1.5
         # Starlight-End
@@ -404,14 +404,14 @@
         damage:
           types:
             Radiation: 3
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: UnstableMutagen
           min: 0.26
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: UnstableMutagen
         amount: 0.25
         # Starlight-End
@@ -431,14 +431,14 @@
         damage:
           types:
             Asphyxiation: 5
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: HeartbreakerToxin
           min: 0.26
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: HeartbreakerToxin
         amount: 0.25
         # Starlight-End
@@ -461,14 +461,14 @@
         damage:
           groups:
             Airloss: 10
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: Lexorin
           min: 0.26
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: Lexorin
         amount: 0.25
         # Starlight-End
@@ -492,14 +492,14 @@
         effectProto: StatusEffectSeeingRainbow
         type: Add
         time: 10
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: MindbreakerToxin
           min: 0.26
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: MindbreakerToxin
         amount: 0.25
         # Starlight-End
@@ -545,14 +545,14 @@
         visualType: Medium
         messages: [ "histamine-effect-heavy-itchiness" ]
         probability: 0.2
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: Histamine
           min: 0.26
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: Histamine
         amount: 0.25
         # Starlight-End
@@ -582,14 +582,14 @@
         conditions:
           - !type:MetabolizerTypeCondition
             type: [Animal]
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: Theobromine
           min: 0.026
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: Theobromine
         amount: 0.02 # Rounding down with 2 decimal points
         # Starlight-End
@@ -610,14 +610,14 @@
         damage:
           types:
             Poison: 3
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: Amatoxin
           min: 0.11
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: Amatoxin
         amount: 0.1
         # Starlight-End
@@ -637,14 +637,14 @@
           damage:
             types:
               Poison: 2
-        # Starlight-Start: Cyclorite Metabolism
+        # Starlight-Start: T'Nebri Metabolism
         - !type:AdjustReagent
           conditions:
           - !type:ReagentCondition
             reagent: VentCrud
             min: 0.26
           - !type:MetabolizerTypeCondition
-            type: [ Cyclorite ]
+            type: [ TNebri ]
           reagent: VentCrud
           amount: 0.25
           # Starlight-End
@@ -667,14 +667,14 @@
             - !type:ReagentCondition
               reagent: Romerol
               min: 5
-        # Starlight-Start: Cyclorite Metabolism
+        # Starlight-Start: T'Nebri Metabolism
         - !type:AdjustReagent
           conditions:
           - !type:ReagentCondition
             reagent: Romerol
             min: 0.26
           - !type:MetabolizerTypeCondition
-            type: [ Cyclorite ]
+            type: [ TNebri ]
           reagent: Romerol
           amount: 0.25
           # Starlight-End
@@ -744,14 +744,14 @@
           type: [ Neocyte ] #FH
         reagent: Protein #FH
         amount: 0.5 #FH
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: UncookedAnimalProteins
           min: 0.26
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: UncookedAnimalProteins
         amount: 0.25
         # Starlight-End
@@ -778,14 +778,14 @@
         damage:
           types:
             Poison: 0.06
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: Allicin
           min: 0.026
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: Allicin
         amount: 0.02 # Rounding down with 2 decimal points
         # Starlight-End
@@ -811,14 +811,14 @@
         key: Pacified
         component: Pacified
         time: 4
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: Pax
           min: 0.26
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: Pax
         amount: 0.25
         # Starlight-End
@@ -851,14 +851,14 @@
         damage:
           types:
             Poison: 0.06
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: Honk
           min: 0.026
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: Honk
         amount: 0.02 # Rounding down with 2 decimal points
         # Starlight-End
@@ -880,14 +880,14 @@
         damage:
           types:
             Poison: 0.6 # Makes it 20 damage per unit.
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: Lead
           min: 0.011
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: Lead
         amount: 0.01 # Rounding down with 2 decimal points
         # Starlight-End
@@ -908,14 +908,14 @@
         damage:
           types:
             Poison: 1.8
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: Bungotoxin
           min: 0.11
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: Bungotoxin
         amount: 0.1
         # Starlight-End
@@ -949,14 +949,14 @@
         damage:
           groups:
             Airloss: 2
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: Vestine
           min: 0.26
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: Vestine
         amount: 0.25
         # Starlight-End
@@ -977,14 +977,14 @@
       - !type:Electrocute
         electrocuteTime: 1
         probability: 0.5
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: Tazinide
           min: 0.26
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: Tazinide
         amount: 0.25
         # Starlight-End
@@ -1014,14 +1014,14 @@
             Poison: 2
       - !type:SatiateHunger
         factor: -6
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: Lipolicide
           min: 0.26
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: Lipolicide
         amount: 0.25
         # Starlight-End
@@ -1069,14 +1069,14 @@
           inverted: true
         walkSpeedModifier: 0.4
         sprintSpeedModifier: 0.4
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: Mechanotoxin
           min: 0.11
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: Mechanotoxin
         amount: 0.1
         # Starlight-End
@@ -1096,14 +1096,14 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [Vox]
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: ToxinTrash
           min: 0.26
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: ToxinTrash
         amount: 0.25
         # Starlight-End
@@ -1126,14 +1126,14 @@
         type: Update
       - !type:ModifyBleed
         amount: 0.5
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: Hemorrhinol
           min: 0.26
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri ]
         reagent: Hemorrhinol
         amount: 0.25
         # Starlight-End

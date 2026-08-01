@@ -136,14 +136,14 @@
         - !type:TagCondition
           inverted: true
           tag: Bee
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
           - !type:ReagentCondition
             reagent: BuzzochloricBees
             min: 0.26
           - !type:MetabolizerTypeCondition
-            type: [ Cyclorite ]
+            type: [ TNebri ]
         reagent: BuzzochloricBees
         amount: 0.25
         # Starlight-End
@@ -180,14 +180,14 @@
       - !type:Electrocute
         siemensCoefficient: 0.5
         probability: 0.5
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
           - !type:ReagentCondition
             reagent: Licoxide
             min: 0.26
           - !type:MetabolizerTypeCondition
-            type: [ Cyclorite ]
+            type: [ TNebri ]
         reagent: Licoxide
         amount: 0.25
         # Starlight-End
@@ -231,14 +231,14 @@
       - !type:Emote
         emote: Scream
         probability: 0.3
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
           - !type:ReagentCondition
             reagent: Razorium
             min: 1.51
           - !type:MetabolizerTypeCondition
-            type: [ Cyclorite ]
+            type: [ TNebri ]
         reagent: Razorium
         amount: 1.5
         # Starlight-End
@@ -336,14 +336,14 @@
         visualType: LargeCaution
         messages: [ "fresium-effect-frozen"]
         probability: 0.4
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
           - !type:ReagentCondition
             reagent: Fresium
             min: 0.23
           - !type:MetabolizerTypeCondition
-            type: [ Cyclorite ]
+            type: [ TNebri ]
         reagent: Fresium
         amount: 0.22 # Rounding down with 2 decimal points
         # Starlight-End
@@ -405,14 +405,14 @@
         - !type:ReagentCondition
           reagent: JuiceThatMakesYouWeh
           min: 50
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
           - !type:ReagentCondition
             reagent: JuiceThatMakesYouWeh
             min: 0.11
           - !type:MetabolizerTypeCondition
-            type: [ Cyclorite ]
+            type: [ TNebri ]
         reagent: JuiceThatMakesYouWeh
         amount: 0.1
         # Starlight-End
@@ -451,14 +451,14 @@
         - !type:ReagentCondition
           reagent: JuiceThatMakesYouHew
           min: 50
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
           - !type:ReagentCondition
             reagent: JuiceThatMakesYouHew
             min: 0.11
           - !type:MetabolizerTypeCondition
-            type: [ Cyclorite ]
+            type: [ TNebri ]
         reagent: JuiceThatMakesYouHew
         amount: 0.1
         # Starlight-End
@@ -499,14 +499,14 @@
         - !type:ReagentCondition
           reagent: CorgiJuice
           min: 50
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
           - !type:ReagentCondition
             reagent: CorgiJuice
             min: 0.11
           - !type:MetabolizerTypeCondition
-            type: [ Cyclorite ]
+            type: [ TNebri ]
         reagent: CorgiJuice
         amount: 0.1
         # Starlight-End
@@ -562,14 +562,14 @@
         visualType: Small
         messages: [ "capsaicin-effect-light-burn" ]
         probability: 0.05
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
           - !type:ReagentCondition
             reagent: Felinase
             min: 0.11
           - !type:MetabolizerTypeCondition
-            type: [ Cyclorite ]
+            type: [ TNebri ]
         reagent: Felinase
         amount: 0.1
         # Starlight-End
@@ -625,14 +625,14 @@
         visualType: Small
         messages: [ "capsaicin-effect-light-burn" ]
         probability: 0.05
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: T'Nebri Metabolism
       - !type:AdjustReagent
         conditions:
           - !type:ReagentCondition
             reagent: Caninase
             min: 0.11
           - !type:MetabolizerTypeCondition
-            type: [ Cyclorite ]
+            type: [ TNebri ]
         reagent: Caninase
         amount: 0.1
         # Starlight-End

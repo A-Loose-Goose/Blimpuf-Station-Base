@@ -1,57 +1,57 @@
 - type: body
-  id: Cyclorite
-  name: "cyclorite"
+  id: TNebri
+  name: "T'Nebri"
   root: torso
   slots:
     head:
-      part: HeadCyclorite
+      part: HeadTNebri
       connections:
       - torso
       organs:
-        brain: OrganCycloriteBrain
-        eyes: OrganCycloriteEye
-        tongue: OrganCycloriteTongue
+        brain: OrganTNebriBrain
+        eyes: OrganTNebriEye
+        tongue: OrganTNebriTongue
         eye_implant: null
         brain_implant: null
     torso:
-      part: TorsoCyclorite
+      part: TorsoTNebri
       connections:
       - right arm
       - left arm
       - right leg
       - left leg
       organs:
-        heart: OrganCycloriteHeart
-        lungs: OrganCycloriteLungs
-        stomach: OrganCycloriteStomach
-        liver:  OrganCycloriteLiver
-        kidneys: OrganCycloriteKidneys
+        heart: OrganTNebriHeart
+        lungs: OrganTNebriLungs
+        stomach: OrganTNebriStomach
+        liver:  OrganTNebriLiver
+        kidneys: OrganTNebriKidneys
         cavity: null
     right arm:
-      part: RightArmCyclorite
+      part: RightArmTNebri
       connections:
       - right hand
     left arm:
-      part: LeftArmCyclorite
+      part: LeftArmTNebri
       connections:
       - left hand
     right hand:
-      part: RightHandCyclorite
+      part: RightHandTNebri
       organs:
         hand_implant: null
     left hand:
-      part: LeftHandCyclorite
+      part: LeftHandTNebri
       organs:
         hand_implant: null
     right leg:
-      part: RightLegCyclorite
+      part: RightLegTNebri
       connections:
       - right foot
     left leg:
-      part: LeftLegCyclorite
+      part: LeftLegTNebri
       connections:
       - left foot
     right foot:
-      part: RightFootCyclorite
+      part: RightFootTNebri
     left foot:
-      part: LeftFootCyclorite
+      part: LeftFootTNebri

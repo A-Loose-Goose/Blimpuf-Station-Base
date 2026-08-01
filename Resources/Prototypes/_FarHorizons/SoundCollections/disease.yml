@@ -31,7 +31,7 @@
   - /Audio/_FarHorizons/Voice/Proto/Arachnid/arachnid_cough.ogg
 
 - type: soundCollection
-  id: NeoCycloriteCoughs
+  id: NeoTNebriCoughs
   files:
   - /Audio/_FarHorizons/Voice/Proto/Cyclorite/cough_1.ogg
   - /Audio/_FarHorizons/Voice/Proto/Cyclorite/cough_2.ogg
@@ -62,7 +62,7 @@
   - /Audio/_FarHorizons/Voice/Proto/Arachnid/arachnid_yawn.ogg
 
 - type: soundCollection
-  id: NeoCycloriteYawn
+  id: NeoTNebriYawn
   files:
   - /Audio/_FarHorizons/Voice/Proto/Cyclorite/yawn.ogg
 

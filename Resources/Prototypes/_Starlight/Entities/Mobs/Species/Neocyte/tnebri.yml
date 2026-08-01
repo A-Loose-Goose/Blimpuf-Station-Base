@@ -1,7 +1,7 @@
 - type: entity
   parent: [BaseMobNeocyte, BaseSpeciesPickupableHuge]
-  id: BaseMobNeoCyclorite
-  name: Urist McCyclorister
+  id: BaseMobNeoTNebri
+  name: "Urist McT'Nebrist"
   abstract: true
   components:
   - type: LanguageKnowledge
@@ -22,12 +22,12 @@
     - id: FoodMeatHuman
       amount: 10
   - type: HumanoidAppearance
-    species: NeoCyclorite
+    species: NeoTNebri
     hideLayersOnEquip:
     - Hair
     - Snout
   - type: Body
-    prototype: NeoCyclorite
+    prototype: NeoTNebri
     requiredLegs: 2
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
@@ -48,7 +48,7 @@
       300: Dead # 100 extra damage required to kill
   - type: Damageable
     damageContainer: Hybrid
-    damageModifierSet: NeoCyclorite
+    damageModifierSet: NeoTNebri
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:
@@ -69,7 +69,7 @@
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: CycloriteBlood
+      - ReagentId: TNebriBlood
         Quantity: 300
   - type: MovementSpeedModifierScale
     movementSpeedScale: 0.5
@@ -87,12 +87,12 @@
     disarmFailChance: 0.5 # 50 stamina damage with 50% chance
   - type: Vocal
     sounds:
-      Male: NeoCycloriteMSounds
-      Female: NeoCycloriteFSounds
-      Unsexed: NeoCycloriteMSounds
+      Male: NeoTNebriMSounds
+      Female: NeoTNebriFSounds
+      Unsexed: NeoTNebriMSounds
   - type: Inventory
-    speciesId: cyclorite
-    templateId: neocyclorite
+    speciesId: tnebri
+    templateId: neotnebri
     displacements:
       jumpsuit:
         sizeMaps:
@@ -147,16 +147,16 @@
 
 - type: entity
   parent: [BaseNeocyteAppearance, BaseSpeciesDummy]
-  id: AppearanceNeoCyclorite
+  id: AppearanceNeoTNebri
   categories: [ HideSpawnMenu ]
   components:
   - type: HumanoidAppearance
-    species: NeoCyclorite
+    species: NeoTNebri
   - type: Body
-    prototype: NeoCyclorite
+    prototype: NeoTNebri
   - type: Inventory
-    speciesId: cyclorite
-    templateId: neocyclorite
+    speciesId: tnebri
+    templateId: neotnebri
     displacements:
       jumpsuit:
         sizeMaps:

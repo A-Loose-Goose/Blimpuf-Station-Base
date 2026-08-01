@@ -4,7 +4,6 @@
   text: "/ServerInfo/Guidebook/Mobs/Species.xml"
   children:
   - Arachnid
-  - Cyclorite
   - Diona
   - Elf
   - Harpy
@@ -15,6 +14,7 @@
   - Resomi
   - Rodentia #Starlight
   - SlimePerson
+  - TNebri
   - Thaven
   - Vox
   - Vulpkanin

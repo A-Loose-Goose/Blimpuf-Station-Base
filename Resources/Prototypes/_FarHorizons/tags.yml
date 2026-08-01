@@ -25,7 +25,7 @@
   id: NeoAvali
 
 - type: Tag
-  id: NeoCyclorite # Starlight, Cyclops -> Cyclorite
+  id: NeoTNebri # Blimpuf, Cyclorite -> T'Nebri
 
 - type: Tag
   id: NeoDiona # Starlight, Dionae -> Diona
@@ -40,7 +40,7 @@
   id: NeoMoth
 
 - type: Tag
-  id: NeoReptilian # Starlight, ProtoReptile -> NeoReptilian
+  id: NeoReptilian # Blimpuf, ProtoReptilian -> NeoReptilian
 
 - type: Tag
   id: NeoResomi

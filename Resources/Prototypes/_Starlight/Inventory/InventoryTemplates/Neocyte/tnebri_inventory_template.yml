@@ -1,5 +1,5 @@
 - type: inventoryTemplate
-  id: neocyclorite # Starlight cyclops -> cyclorite
+  id: neotnebri # Blimpuf Cyclorite -> T'Nebri
   slots:
   - name: shoes
     slotTexture: shoes

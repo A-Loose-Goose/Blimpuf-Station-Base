@@ -19,9 +19,9 @@
   text: species-name-thaven
 
 - type: quickPhrase
-  id: SpeciesCycloritePhrase
+  id: SpeciesTNebriPhrase
   parent: BaseCrewSpeciesPhrase
-  text: species-name-cyclorite
+  text: species-name-tnebri
 
 - type: quickPhrase
   id: SpeciesElfPhrase
@@ -116,9 +116,9 @@
   text: subspecies-name-neothaven
 
 - type: quickPhrase
-  id: SpeciesNeocycloritePhrase
+  id: SpeciesNeotnebriPhrase
   parent: SpeciesNeocytePhrase
-  text: subspecies-name-neocyclorite
+  text: subspecies-name-neotnebri
 
 - type: quickPhrase
   id: SpeciesNeoelfPhrase

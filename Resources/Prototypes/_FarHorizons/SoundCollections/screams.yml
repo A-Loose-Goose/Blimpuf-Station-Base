@@ -9,7 +9,7 @@
     - /Audio/_FarHorizons/Voice/Proto/Avali/avali_scream.ogg
 
 - type: soundCollection
-  id: NeoCycloriteScreams
+  id: NeoTNebriScreams
   files:
     - /Audio/_FarHorizons/Voice/Proto/Cyclorite/scream_1.ogg
     - /Audio/_FarHorizons/Voice/Proto/Cyclorite/scream_2.ogg

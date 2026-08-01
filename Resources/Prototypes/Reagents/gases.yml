@@ -265,7 +265,7 @@
             Cold: 0.5 # liquid nitrogen is cold
         conditions: # Starlight start
           - !type:MetabolizerTypeCondition
-            type: [ Cyclorite ]
+            type: [ TNebri ]
             inverted: true # Starlight end
     Gas:
       effects:
@@ -293,7 +293,7 @@
         - !type:ModifyBloodLevel
           conditions:
             - !type:MetabolizerTypeCondition
-              type: [ Cyclorite ]
+              type: [ TNebri ]
           amount: 0.4
 
 - type: reagent

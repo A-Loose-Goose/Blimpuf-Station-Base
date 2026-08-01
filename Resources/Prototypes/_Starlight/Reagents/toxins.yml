@@ -1,4 +1,4 @@
-﻿- type: reagent
+- type: reagent
   id: DevilJuice
   name: reagent-name-devil-juice
   group: Toxins
@@ -22,6 +22,6 @@
               reagent: DevilJuice
               min: 0.26
             - !type:MetabolizerTypeCondition
-              type: [ Cyclorite ]
+              type: [ TNebri ]
           reagent: DevilJuice
           amount: 0.25

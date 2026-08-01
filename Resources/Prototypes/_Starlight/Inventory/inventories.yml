@@ -66,12 +66,12 @@
             state: gloves
 
 - type: entity
-  id: BaseInventoryCyclorite
+  id: BaseInventoryTNebri
   abstract: true
   components:
   - type: Inventory
-    speciesId: cyclorite
-    templateId: cyclorite
+    speciesId: tnebri
+    templateId: tnebri
     displacements:
       jumpsuit:
         sizeMaps:

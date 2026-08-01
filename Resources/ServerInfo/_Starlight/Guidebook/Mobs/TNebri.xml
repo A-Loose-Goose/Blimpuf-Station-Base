@@ -1,8 +1,8 @@
 <Document>
-  # Cyclorite
+  # T'Nebri
 
   <Box>
-    <GuideEntityEmbed Entity="MobCyclorite" Caption=""/>
+    <GuideEntityEmbed Entity="MobTNebri" Caption=""/>
   </Box>
 
 These intelligent inhabitants of the Abyss are emotionally reserved and have a single large eye instead of a face. They are strong but slow.
@@ -20,7 +20,7 @@ These intelligent inhabitants of the Abyss are emotionally reserved and have a s
   - Their eyes are less sensitive to red colors but provide better vision in the dark.
 
   ## Poison and Medicine Changes
-  Cyclorites suffer from metabolism issues that hinder them when injected with either medicines or toxins.
+  T'Nebri suffer from metabolism issues that hinder them when injected with either medicines or toxins.
 
   - Medicine is metabolised at [color=yellow]half strength[/color] meaning making medicines leave the bloodstream twice as fast.
 
@@ -30,7 +30,7 @@ These intelligent inhabitants of the Abyss are emotionally reserved and have a s
   [color=#999999][italic]Poisons that metabolise at [bold]0.5 units[/bold] per tick will instead metabolise [bold]0.25 units[/bold] per tick. Poison damage or effects are not changed.[italic][/color]
 
   ## Resistance to Movement Speed Changes
-  Cyclorites being heavy and strong are [color=yellow]50%[/color] less affected by ailments and clothing that [color=yellow]increase or decrease[/color] their speed. Cyclorites are still slowed [color=yellow]100%[/color] from damage.
+  T'Nebri being heavy and strong are [color=yellow]50%[/color] less affected by ailments and clothing that [color=yellow]increase or decrease[/color] their speed. T'Nebri are still slowed [color=yellow]100%[/color] from damage.
 
   [color=#999999][italic]Speed decreases such as a hardsuit that slows them down by [bold]30%[/bold] only slows them down by [bold]15%[/bold][/color][/italic]
 

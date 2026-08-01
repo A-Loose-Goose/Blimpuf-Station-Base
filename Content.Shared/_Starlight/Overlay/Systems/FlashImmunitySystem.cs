@@ -29,8 +29,8 @@ public sealed partial class FlashImmunitySystem : EntitySystem
         SubscribeLocalEvent<ThermalVisionComponent, ComponentStartup>(OnVisionChanged);
         SubscribeLocalEvent<ThermalVisionComponent, ComponentRemove>(OnVisionChanged); //this should use shutdown, but something else is already using it.....
 
-        SubscribeLocalEvent<CycloriteVisionComponent, ComponentStartup>(OnVisionChanged);
-        SubscribeLocalEvent<CycloriteVisionComponent, ComponentRemove>(OnVisionChanged); //this should use shutdown, but something else is already using it.....
+        SubscribeLocalEvent<TNebriVisionComponent, ComponentStartup>(OnVisionChanged);
+        SubscribeLocalEvent<TNebriVisionComponent, ComponentRemove>(OnVisionChanged); //this should use shutdown, but something else is already using it.....
     }
 
     private void OnPlayerAttached(LocalPlayerAttachedEvent args)

@@ -1,0 +1,5 @@
+- type: localizedDataset
+  id: names_tnebri
+  values:
+    prefix: names-tnebri-dataset-
+    count: 95

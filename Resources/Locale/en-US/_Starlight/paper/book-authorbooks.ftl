@@ -1,4 +1,4 @@
-﻿book-text-conspiracies = [bold] Forward from the author:[/bold] Congratulations on the best decision of your life, reading this book! While the others remain content being silently controlled and manipulated you seek the truth. And within these pages I fully intend to give it to you.
+book-text-conspiracies = [bold] Forward from the author:[/bold] Congratulations on the best decision of your life, reading this book! While the others remain content being silently controlled and manipulated you seek the truth. And within these pages I fully intend to give it to you.
         I am well aware that my reputation proceeds me and thus will skip introductions to get straight to the point. We don't have much time. Neo-conspiracies abound and continue to influence the mass general sheep populace. Our overlords believe that those of us that strike out from the herd are to be sheared and culled. Do not be surprised if you begin losing your hair. Our baldness distinguishes us and will allow us to recognize eachother.
 
         CyberSun invented bureaucracy to sell more pens!
@@ -45,7 +45,7 @@ book-text-clown-mime-war = In the early 2300s the Trans-Solar Federation (TSF) c
         Absolutely nobody except the Clowns were happy with this turn of events. Everyone unanimously hated it.
 
         Over the next 50 years the Cult of the Honkmother would grow in numbers, bolstered dramatically with each new species encountered by the Trans-Solar Federation as knowledge of their shared ancient religion spread.
-        The Arachnids, Slimes, and even Cyclorites were all found to either have an active Clown and Mime population, or to have had one in their pasts.
+        The Arachnids, Slimes, and even T'Nebri were all found to either have an active Clown and Mime population, or to have had one in their pasts.
         But this raised a new question, a question many feared to find the answer to now. What about the Mimes?
         This question grew louder and louder amongst the growing Mime community, though only metaphorically.
         Everywhere that new discoveries were made, it was obvious the Mimes played some role in this strange ancient religion, but there was never any information on them to be found.

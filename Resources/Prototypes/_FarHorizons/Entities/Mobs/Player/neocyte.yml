@@ -73,9 +73,9 @@
 
 - type: entity
   save: false
-  name: Urist McCyclorister # Starlight, Cyclops -> Cyclorite
-  parent: BaseMobNeoCyclorite # Starlight, Cyclops -> Cyclorite
-  id: MobNeoCyclorite # Starlight, Cyclops -> Cyclorite
+  name: "Urist McTrNrbrstr" # Blimpuf, Cyclorite -> T'Nebri
+  parent: BaseMobNeoTNebri # Blimpuf, Cyclorite -> T'Nebri
+  id: MobNeoTNebri # Blimpuf, Cyclorite -> T'Nebri
 
 - type: entity
   save: false

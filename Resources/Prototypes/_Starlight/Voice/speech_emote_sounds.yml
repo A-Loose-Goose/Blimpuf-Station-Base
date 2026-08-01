@@ -87,48 +87,48 @@
       collection: Hew
 
 - type: emoteSounds
-  id: MaleCyclorite
+  id: MaleTNebri
   params:
     variation: 0.125
   sounds:
     Scream:
-      collection: CycloriteScreams
+      collection: TNebriScreams
     Laugh:
-      collection: CycloriteLaugh
+      collection: TNebriLaugh
     Sneeze:
-      collection: CycloriteCough
+      collection: TNebriCough
     Cough:
-      collection: CycloriteCough
+      collection: TNebriCough
     Crying:
-      collection: CycloriteScreams
+      collection: TNebriScreams
     Whistle:
-      collection: CycloriteWhistle
+      collection: TNebriWhistle
     Yawn:
-      collection: CycloriteYawn
+      collection: TNebriYawn
     Weh:
       collection: Weh
     Hew:
       collection: Hew
 
 - type: emoteSounds
-  id: FemaleCyclorite
+  id: FemaleTNebri
   params:
     variation: 0.125
   sounds:
     Scream:
-      collection: CycloriteScreams
+      collection: TNebriScreams
     Laugh:
-      collection: CycloriteLaugh
+      collection: TNebriLaugh
     Sneeze:
-      collection: CycloriteCough
+      collection: TNebriCough
     Cough:
-      collection: CycloriteCough
+      collection: TNebriCough
     Crying:
-      collection: CycloriteScreams
+      collection: TNebriScreams
     Whistle:
-      collection: CycloriteWhistle
+      collection: TNebriWhistle
     Yawn:
-      collection: CycloriteYawn
+      collection: TNebriYawn
     Weh:
       collection: Weh
     Hew:

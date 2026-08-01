@@ -148,7 +148,7 @@
   requirements:
     - !type:SpeciesRequirement
       species:
-        - Cyclorite
-        - NeoCyclorite
+        - TNebri
+        - NeoTNebri
         - Resomi
         - NeoResomi

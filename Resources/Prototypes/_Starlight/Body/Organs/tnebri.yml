@@ -1,5 +1,5 @@
 - type: entity
-  id: BaseCycloriteOrgan
+  id: BaseTNebriOrgan
   parent: BaseItem
   abstract: true
   components:
@@ -28,61 +28,61 @@
       - Meat
 
 - type: entity
-  id: OrganCycloriteBrain
-  parent: [BaseOrganBrain, BaseCycloriteOrgan]
-  name: cyclorite brain
-  suffix: Cyclorite
+  id: OrganTNebriBrain
+  parent: [BaseOrganBrain, BaseTNebriOrgan]
+  name: T'Nebri brain
+  suffix: T'Nebri
   description: "The source of incredible, unending intelligence. Honk."
   components:
   - type: Sprite
     state: brain
 
 - type: entity
-  id: OrganCycloriteEye
-  parent: [BaseCycloriteOrgan, BaseOrganEyes]
-  name: cyclorite eye
-  suffix: Cyclorite
-  description: "Cyclorites see the world slightly differently."
+  id: OrganTNebriEye
+  parent: [BaseTNebriOrgan, BaseOrganEyes]
+  name: T'Nebri eye
+  suffix: T'Nebri
+  description: "T'Nebri see the world slightly differently."
   components:
   - type: Sprite
     layers:
       - state: eyeball
   - type: FunctionalOrgan
     comps:
-    # - type: CycloriteVision
+    # - type: TNebriVision
     - type: NightVision
       disabilityBlockable: true
   - type: OrganVisualization
     layer: Eyes
     prototypes:
-      Default: MobCycloriteEyes
+      Default: MobTNebriEyes
 
 - type: entity
-  id: OrganCycloriteTongue
-  parent: [BaseCycloriteOrgan, BaseOrganTongue]
-  name: cyclorite tongue
-  suffix: Cyclorite
+  id: OrganTNebriTongue
+  parent: [BaseTNebriOrgan, BaseOrganTongue]
+  name: T'Nebri tongue
+  suffix: T'Nebri
   description: "A fleshy muscle mostly used for lying."
   components:
   - type: Sprite
     state: tongue
 
 - type: entity
-  id: OrganCycloriteEars
-  parent: [BaseCycloriteOrgan, BaseOrganEars]
-  name: cyclorite ears
-  suffix: Cyclorite
+  id: OrganTNebriEars
+  parent: [BaseTNebriOrgan, BaseOrganEars]
+  name: T'Nebri ears
+  suffix: T'Nebri
   description: "There are three parts to the ear: inner, middle and outer. Only one of these parts should normally be visible."
   components:
   - type: Sprite
     state: ears
 
 - type: entity
-  id: OrganCycloriteLungs
-  parent: [BaseCycloriteOrgan, BaseOrganLungs]
-  name: cyclorite lungs
-  suffix: Cyclorite
-  description: "Cyclorite lungs filter nitrogen from the atmosphere to breathe."
+  id: OrganTNebriLungs
+  parent: [BaseTNebriOrgan, BaseOrganLungs]
+  name: T'Nebri lungs
+  suffix: T'Nebri
+  description: "T'Nebri lungs filter nitrogen from the atmosphere to breathe."
   components:
   - type: Sprite
     layers:
@@ -114,10 +114,10 @@
           Quantity: 5
 
 - type: entity
-  id: OrganCycloriteHeart
-  parent: [BaseCycloriteOrgan, BaseOrganHeart]
-  name: cyclorite heart
-  suffix: Cyclorite
+  id: OrganTNebriHeart
+  parent: [BaseTNebriOrgan, BaseOrganHeart]
+  name: T'Nebri heart
+  suffix: T'Nebri
   description: "I feel bad for the heartless bastard who lost this."
   components:
   - type: Sprite
@@ -127,17 +127,17 @@
   # You're technically 'immune to poison' without a heart, but.. uhh, you'll have bigger problems on your hands.
   - type: Metabolizer
     maxReagents: 2
-    metabolizerTypes: [ Cyclorite ]
+    metabolizerTypes: [ TNebri ]
     groups:
     - id: Medicine
     - id: Poison
     - id: Narcotic
 
 - type: entity
-  id: OrganCycloriteStomach
-  parent: [BaseCycloriteOrgan, BaseOrganStomach]
-  name: cyclorite stomach
-  suffix: Cyclorite
+  id: OrganTNebriStomach
+  parent: [BaseTNebriOrgan, BaseOrganStomach]
+  name: T'Nebri stomach
+  suffix: T'Nebri
   description: "Gross. This is hard to stomach."
   components:
   - type: Sprite
@@ -164,10 +164,10 @@
     - id: Drink
 
 - type: entity
-  id: OrganCycloriteLiver
-  parent: [BaseCycloriteOrgan, BaseOrganLiver]
-  name: cyclorite liver
-  suffix: Cyclorite
+  id: OrganTNebriLiver
+  parent: [BaseTNebriOrgan, BaseOrganLiver]
+  name: T'Nebri liver
+  suffix: T'Nebri
   description: "Pairing suggestion: chianti and fava beans."
   components:
   - type: Sprite
@@ -179,10 +179,10 @@
     - id: Alcohol
 
 - type: entity
-  id: OrganCycloriteKidneys
-  parent: [BaseCycloriteOrgan, BaseOrganKidneys]
-  name: cyclorite kidneys
-  suffix: Cyclorite
+  id: OrganTNebriKidneys
+  parent: [BaseTNebriOrgan, BaseOrganKidneys]
+  name: T'Nebri kidneys
+  suffix: T'Nebri
   description: "Filters toxins from the bloodstream."
   components:
   - type: Sprite

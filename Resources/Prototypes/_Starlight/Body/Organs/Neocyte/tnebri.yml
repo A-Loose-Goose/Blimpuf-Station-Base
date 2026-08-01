@@ -1,8 +1,8 @@
 - type: entity
-  id: OrganNeoCycloriteLungs
+  id: OrganNeoTNebriLungs
   parent: OrganNeocyteLungs
-  name: cyclorite cybernetic lungs
-  suffix: Neo-Cyclorite
+  name: T'Nebri cybernetic lungs
+  suffix: Neo-T'Nebri
   description: Filters nitrogen from an atmosphere, which is then sent into the bloodstream to be used as an electron carrier. Entirely cybernetic in nature, working in tandem with the visor's filtration system.
   components:
   - type: Lung
@@ -17,11 +17,11 @@
       rateModifier: 100.0
 
 - type: entity
-  id: OrganNeoCycloriteEye
+  id: OrganNeoTNebriEye
   parent: OrganNeocyteEyes
-  name: cyclorite cybernetic eye
-  suffix: Neo-Cyclorite
-  description: "Cyclorites see the world slightly differently."
+  name: T'Nebri cybernetic eye
+  suffix: Neo-T'Nebri
+  description: "T'Nebri see the world slightly differently."
   components:
   - type: Sprite
     sprite: _Starlight/Mobs/Species/Cyclorite/organs.rsi
@@ -29,23 +29,23 @@
       - state: eyeball
   - type: FunctionalOrgan
     comps:
-    # - type: CycloriteVision
+    # - type: TNebriVision
     - type: NightVision
       disabilityBlockable: true
   - type: OrganVisualization
     layer: Eyes
     prototypes:
-      Default: MobCycloriteEyes
+      Default: MobTNebriEyes
 
 - type: entity
-  id: OrganNeoCycloriteHeart
+  id: OrganNeoTNebriHeart
   parent: OrganNeocyteHeart
-  name: cyclorite cybernetic heart
-  suffix: Neo-Cyclorite
+  name: T'Nebri cybernetic heart
+  suffix: Neo-T'Nebri
   components:
   - type: Metabolizer
     maxReagents: 2
-    metabolizerTypes: [Cyclorite, Neocyte]
+    metabolizerTypes: [TNebri, Neocyte]
     groups:
     - id: Medicine
     - id: Poison

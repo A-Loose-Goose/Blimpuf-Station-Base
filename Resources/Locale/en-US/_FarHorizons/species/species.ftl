@@ -2,7 +2,8 @@ species-name-ipc = IPC
 
 species-name-neocyte = Neocyte
 guidebook-armor-neocyte = Neocyte Frames
-# Starlight, Neocyte Frames, True Neocyte, Neo Slime, Human, Felionoid, Dwarf, and Cyclorite renamed
+# Starlight Neo Slime, Human, Felionoid renamed
+# Blimpuf - Neocytes, Elves, T'Nebri renamed
 subspecies-name-trueneocyte = True Neocyte
 subspecies-name-neovulp = Neo-Vulpkanin
 subspecies-name-neovox = Neo-Vox
@@ -15,7 +16,7 @@ subspecies-name-neomoth = Neo-Moth
 subspecies-name-neohuman = Neo-Human
 subspecies-name-neofelionoid = Neo-Felionoid
 subspecies-name-neodiona = Neo-Diona
-subspecies-name-neocyclorite = Neo-Cyclorite
+subspecies-name-neotnebri = Neo-T'Nebri
 subspecies-name-neoavali = Neo-Avali
 subspecies-name-neoarachnid = Neo-Arachnid
 

@@ -158,15 +158,15 @@ marking-NeoDionaVines-vines = Long Diona Vines
 marking-NeoDionaMediumArmor = Standard Neo-Diona Cybernetics
 marking-NeoDionaMediumArmor-medium = Standard Neo-Diona Cybernetics
 
-marking-NeoCycloriteVisor = Cyclorite Visor
-marking-NeoCycloriteVisor-visor = Cyclorite Visor
-marking-NeoCycloriteLEDFace = Default Cyclorite LEDs
-marking-NeoCycloriteLEDFace-face = Default Cyclorite LEDs
-marking-NeoCycloriteLights = Circular LEDs
-marking-NeoCycloriteLights-body = Circular LEDs
+marking-NeoTNebriVisor = T'Nebri Visor
+marking-NeoTNebriVisor-visor = T'Nebri Visor
+marking-NeoTNebriLEDFace = Default T'Nebri LEDs
+marking-NeoTNebriLEDFace-face = Default T'Nebri LEDs
+marking-NeoTNebriLights = Circular LEDs
+marking-NeoTNebriLights-body = Circular LEDs
 
-marking-NeoCycloriteMediumArmor = Standard Neo-Cyclorite Cybernetics
-marking-NeoCycloriteMediumArmor-medium = Standard Neo-Cyclorite Cybernetics
+marking-NeoTNebriMediumArmor = Standard Neo-T'Nebri Cybernetics
+marking-NeoTNebriMediumArmor-medium = Standard Neo-T'Nebri Cybernetics
 
 marking-NeoAvaliVisor = Avali Visor
 marking-NeoAvaliVisor-visor = Avali Visor

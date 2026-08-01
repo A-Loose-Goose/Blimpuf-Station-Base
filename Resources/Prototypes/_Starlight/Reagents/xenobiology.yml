@@ -33,11 +33,11 @@
             Toxin: -2
             Airloss: -2
             Brute: -2
-        # Starlight-Start: Cyclorite Metabolism
+        # Starlight-Start: T'Nebri Metabolism
         - !type:AdjustReagent
           conditions:
           - !type:MetabolizerTypeCondition
-            type: [ Cyclorite ]
+            type: [ TNebri ]
           reagent: RegenerativeJelly
           amount: -0.5
         # Starlight-End
@@ -69,7 +69,7 @@
             - Vulpkanin
             - Abductor
             - Avali
-            - Cyclorite
+            - TNebri
             - Felionoid
             - Shadekin
             - Thaven
@@ -85,17 +85,17 @@
             - NeoVox
             - NeoVulp
             - NeoAvali
-            - NeoCyclorite
+            - NeoTNebri
             - NeoFelionoid
             - NeoShadekin
             - NeoThaven
             - NeoElf
             - NeoLagomorph
-        # Starlight-Start: Cyclorite Metabolism
+        # Starlight-Start: T'Nebri Metabolism
         - !type:AdjustReagent
           conditions:
             - !type:MetabolizerTypeCondition
-              type: [ Cyclorite ]
+              type: [ TNebri ]
           reagent: UnstableMutationToxin
           amount: -0.5
         # Starlight-End
@@ -113,11 +113,11 @@
       effects:
         - !type:ChangeSpecies
           species: SlimePerson
-        # Starlight-Start: Cyclorite Metabolism
+        # Starlight-Start: T'Nebri Metabolism
         - !type:AdjustReagent
           conditions:
             - !type:MetabolizerTypeCondition
-              type: [ Cyclorite ]
+              type: [ TNebri ]
           reagent: ImperfectMutationToxin
           amount: -0.5
         # Starlight-End
@@ -135,11 +135,11 @@
       effects:
         - !type:MutateIntoEntity
           entity: XenobiologySlimeGray
-        # Starlight-Start: Cyclorite Metabolism
+        # Starlight-Start: T'Nebri Metabolism
         - !type:AdjustReagent
           conditions:
             - !type:MetabolizerTypeCondition
-              type: [ Cyclorite ]
+              type: [ TNebri ]
           reagent: AdvancedMutationToxin
           amount: -0.5
         # Starlight-End

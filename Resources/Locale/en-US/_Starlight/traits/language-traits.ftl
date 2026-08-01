@@ -28,7 +28,7 @@ trait-language-sylvan-name = Sylvan
 trait-language-sylvan-desc = You understand Sylvan, spoken by Dionae and plants alike. Most people would probably call you crazy if you said you could talk to plants.
 
 trait-language-terrum-name = Terrum
-trait-language-terrum-desc = You can speak Terrum, the language of the Cyclorites - which sounds strikingly similar to Old Earth Hebrew.
+trait-language-terrum-desc = You can speak Terrum, the language of the T'Nebri - which sounds strikingly similar to Old Earth Hebrew.
 
 trait-language-voxpidgin-name = Vox Pidgin
 trait-language-voxpidgin-desc = You know the language of the Vox, a language mostly made of screeches, clicks, and other assorted bird noises.

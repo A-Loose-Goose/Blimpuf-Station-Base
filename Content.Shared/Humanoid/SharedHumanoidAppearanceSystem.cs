@@ -118,7 +118,7 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
     }
 
     /// <summary>
-    /// Allows legacy Protogen and Dwarf characters from other servers to be imported as current species.
+    /// Allows legacy Protogen, Cyclorite, and Dwarf characters from other servers to be imported as current species.
     /// This is only for manual import compatibility.
     /// </summary>
     private static HumanoidCharacterProfile MigrateImportedNeocyteProfile(HumanoidCharacterProfile profile)
@@ -166,6 +166,7 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
         {
             "Dwarf" => "Human",
             "ProtoDwarf" => "NeoHuman",
+            "Cyclorite" => "TNebri",
             _ => MigrateNeocyteIdentifier(identifier, ref changed),
         };
 
@@ -210,7 +211,7 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
             .Replace("Protogen", "Neocyte", StringComparison.Ordinal)
             .Replace("ProtoArachnid", "NeoArachnid", StringComparison.Ordinal)
             .Replace("ProtoAvali", "NeoAvali", StringComparison.Ordinal)
-            .Replace("ProtoCyclorite", "NeoCyclorite", StringComparison.Ordinal)
+            .Replace("ProtoCyclorite", "NeoTNebri", StringComparison.Ordinal)
             .Replace("ProtoDiona", "NeoDiona", StringComparison.Ordinal)
             .Replace("ProtoElf", "NeoElf", StringComparison.Ordinal)
             .Replace("ProtoFelionoid", "NeoFelionoid", StringComparison.Ordinal)
@@ -222,7 +223,8 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
             .Replace("ProtoSlime", "NeoSlime", StringComparison.Ordinal)
             .Replace("ProtoThaven", "NeoThaven", StringComparison.Ordinal)
             .Replace("ProtoVox", "NeoVox", StringComparison.Ordinal)
-            .Replace("ProtoVulp", "NeoVulp", StringComparison.Ordinal);
+            .Replace("ProtoVulp", "NeoVulp", StringComparison.Ordinal)
+            .Replace("Cyclorite", "TNebri", StringComparison.Ordinal);
 
         migrated = ProtoKinIdentifier.Replace(migrated, "NeoShadekin");
 

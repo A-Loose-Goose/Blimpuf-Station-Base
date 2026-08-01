@@ -4056,7 +4056,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: OrganCycloriteHeart
+- proto: OrganTNebriHeart
   entities:
   - uid: 141
     components:
