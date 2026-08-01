@@ -35,3 +35,6 @@ uplink-advanced-gorlex-hypospray-desc = An upgraded version of the standard Nano
 
 uplink-jetpack-speedster-name = Speedster Jetpack
 uplink-jetpack-speedster-desc = A one of a kind jetpack, truly. While worn, the user gains an immense speedboost, making them 75% faster than normal. Retains all the basic functions of a Jetpack while providing much more utility. Also provides a lot more style!
+
+uplink-persona-hologram-generator-name = Persona Hologram Generator
+uplink-persona-hologram-generator-desc = This is one of the Syndicates newest and proudest inventions for espionage that allows the user to disguise as other organic or mechanical beings. However this will NOT work on Humanoids or Cyborgs due to their complex anatomy.

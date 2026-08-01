@@ -252,3 +252,26 @@
       blacklist:
         components:
           - SurplusBundle
+
+- type: listing
+  id: UplinkPersonaHologramGenerator
+  name: uplink-persona-hologram-generator-name
+  description: uplink-persona-hologram-generator-desc
+  productEntity: PersonaHologramGenerator
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 15
+  cost:
+    Telecrystal: 20
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle

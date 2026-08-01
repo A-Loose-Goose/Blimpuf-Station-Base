@@ -283,6 +283,9 @@
   id: BaseBorgChassis
   components:
   - type: IonStormTarget
+  - type: Tag
+    tags:
+      - PersonaBlacklisted
 
 - type: entity
   abstract: true
@@ -500,6 +503,7 @@
     moduleWhitelist:
       tags:
       - XenoborgModuleGeneric
+      - PersonaBlacklisted
   - type: TypingIndicator
     proto: xenoborg
   - type: Speech
