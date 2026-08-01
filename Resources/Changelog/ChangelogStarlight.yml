@@ -4346,5 +4346,28 @@ Entries:
   id: 6901
   time: '2026-08-01T04:17:13.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/69
+- author: LadyLiliana
+  changes:
+  - message: Added DefaultComms for IntegralRadios.
+    type: Add
+  - message: Changed CommonComms to "#".
+    type: Tweak
+  - message: Changed DefaultComms to ";".
+    type: Tweak
+  - message: Changed Comms Colours.
+    type: Tweak
+  - message: Fixed Command&CommandAlt headsets having different EncryptionKeys.
+    type: Fix
+  - message: Fixed Telecom&Intercom "ALL Channels" variants not having corporate.
+    type: Fix
+  - message: Fixed Intercoms saying "Recieve only" despite being wrong.
+    type: Fix
+  - message: Fixed CommonComms Icons being inconsistent.
+    type: Fix
+  - message: Fixed IntregralRadios ignoring HeadsetTransmittable restrictions.
+    type: Fix
+  id: 6801
+  time: '2026-08-01T09:29:02.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/68
 Order: -1
 
