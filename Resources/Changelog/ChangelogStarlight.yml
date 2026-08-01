@@ -4339,5 +4339,12 @@ Entries:
   id: 6701
   time: '2026-07-30T06:12:30.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/67
+- author: ItsMaitake
+  changes:
+  - message: Implant Extractor sprite.
+    type: Tweak
+  id: 6901
+  time: '2026-08-01T04:17:13.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/69
 Order: -1
 
