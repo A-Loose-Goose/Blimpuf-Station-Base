@@ -49,4 +49,10 @@ public sealed partial class TraitCategoryPrototype : IPrototype
     /// </summary>
     [DataField]
     public bool DefaultExpanded = true;
+
+    /// <summary>
+    /// Whether this category is managed elsewhere and should be omitted from the trait selector.
+    /// </summary>
+    [DataField]
+    public bool Hidden;
 }

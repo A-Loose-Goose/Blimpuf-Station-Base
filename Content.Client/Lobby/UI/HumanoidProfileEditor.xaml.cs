@@ -286,6 +286,14 @@ namespace Content.Client.Lobby.UI
             };
             // Far Horizons end
 
+            // Blimpuf start
+            SpeciesVariantButton.OnItemSelected += args =>
+            {
+                SpeciesVariantButton.SelectId(args.Id);
+                SetSpeciesVariant(_speciesVariants[args.Id]);
+            };
+            // Blimpuf end
+
             //starlight start
             #region Size
             UpdateSizeControls();
@@ -632,9 +640,14 @@ namespace Content.Client.Lobby.UI
             if (Profile is null)
                 return;
 
-            // Remove all existing traits - iterate directly over readonly collection
+            // Keep traits managed outside the trait selector, such as species variants
             foreach (var existingTrait in Profile.TraitPreferences)
             {
+                if (_prototypeManager.TryIndex(existingTrait, out TraitPrototype? trait) &&
+                    _prototypeManager.TryIndex(trait.Category, out TraitCategoryPrototype? category) &&
+                    category.Hidden)
+                    continue;
+
                 Profile = Profile.WithoutTraitPreference(existingTrait, _prototypeManager);
             }
 
@@ -993,6 +1006,7 @@ namespace Content.Client.Lobby.UI
 
             UpdateNameEdit();
             UpdateSubspecies(); // Far Horizons
+            UpdateSpeciesVariant(); // Blimpuf
             UpdateCustomSpecieNameEdit(); // Starlight
             UpdateCharacterInfoEditorText(); //Starlight
             UpdateSexControls();
@@ -1566,8 +1580,9 @@ namespace Content.Client.Lobby.UI
         private void SetSpecies(string newSpecies)
         {
             Profile = Profile?.WithSpecies(newSpecies);
-            Traits.UpdateRequirements(Profile);
             UpdateSubspecies(); // Far Horizons
+            UpdateSpeciesVariant(); // Blimpuf
+            Traits.UpdateRequirements(Profile);
             OnSkinColorOnValueChanged(); // Species may have special color prefs, make sure to update it.
             Markings.SetSpecies(newSpecies); // Repopulate the markings tab as well.
             // In case there's job restrictions for the species

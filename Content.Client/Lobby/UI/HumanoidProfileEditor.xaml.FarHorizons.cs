@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Client.Lobby.UI.Loadouts;
+using Content.Shared._Starlight.Traits;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences.Loadouts;
 using Robust.Client.UserInterface.Controls;
@@ -9,7 +10,12 @@ namespace Content.Client.Lobby.UI;
 
 public sealed partial class HumanoidProfileEditor
 {
+    // Blimpuf start - species variant menu
+    private static readonly ProtoId<TraitPrototype>[] SpeciesVariantTraits = ["HighElf", "WoodElf", "DarkElf", "CaveElf"];
+
     private List<SpeciesPrototype> _subspecies = [];
+    private List<ProtoId<TraitPrototype>> _speciesVariants = [];
+    // Blimpuf end
 
     private void UpdateSubspecies()
     {
@@ -59,6 +65,102 @@ public sealed partial class HumanoidProfileEditor
         SubspeciesButton.SelectId(selected);
         CSubspecies.Visible = true;
     }
+
+    // Blimpuf start
+    private void UpdateSpeciesVariant()
+    {
+        CSpeciesVariant.Visible = false;
+        _speciesVariants = [];
+        SpeciesVariantButton.Clear();
+
+        if (Profile == null)
+            return;
+
+        _speciesVariants = GetSpeciesVariants(Profile.Species);
+        ApplySpeciesVariantSelection(_speciesVariants);
+
+        if (_speciesVariants.Count == 0)
+            return;
+
+        var selectedId = _speciesVariants.FindIndex(Profile.TraitPreferences.Contains);
+        if (selectedId < 0)
+            selectedId = 0;
+
+        for (var i = 0; i < _speciesVariants.Count; i++)
+        {
+            var variant = _prototypeManager.Index(_speciesVariants[i]);
+            SpeciesVariantButton.AddItem(Loc.GetString(variant.Name), i);
+        }
+
+        SpeciesVariantButton.SelectId(selectedId);
+        CSpeciesVariant.Visible = true;
+    }
+
+    private List<ProtoId<TraitPrototype>> GetSpeciesVariants(string speciesId)
+    {
+        if (speciesId != "Elf" && speciesId != "NeoElf")
+            return [];
+
+        return [.. SpeciesVariantTraits.Where(_prototypeManager.HasIndex<TraitPrototype>)];
+    }
+
+    private void ApplySpeciesVariantSelection(List<ProtoId<TraitPrototype>> validVariants)
+    {
+        if (Profile == null)
+            return;
+
+        if (validVariants.Count == 0)
+        {
+            foreach (var traitId in SpeciesVariantTraits.Where(Profile.TraitPreferences.Contains).ToArray())
+            {
+                Profile = Profile.WithoutTraitPreference(traitId, _prototypeManager);
+            }
+
+            return;
+        }
+
+        ProtoId<TraitPrototype>? selectedVariant = null;
+
+        foreach (var traitId in validVariants)
+        {
+            if (!Profile.TraitPreferences.Contains(traitId))
+                continue;
+
+            selectedVariant = traitId;
+            break;
+        }
+
+        selectedVariant ??= validVariants[0];
+
+        foreach (var traitId in SpeciesVariantTraits)
+        {
+            if (!Profile.TraitPreferences.Contains(traitId) || traitId == selectedVariant.Value)
+                continue;
+
+            Profile = Profile.WithoutTraitPreference(traitId, _prototypeManager);
+        }
+
+        if (!Profile.TraitPreferences.Contains(selectedVariant.Value))
+            Profile = Profile.WithTraitPreference(selectedVariant.Value, _prototypeManager);
+    }
+
+    private void SetSpeciesVariant(ProtoId<TraitPrototype> variant)
+    {
+        if (Profile == null)
+            return;
+
+        foreach (var traitId in SpeciesVariantTraits)
+        {
+            if (Profile.TraitPreferences.Contains(traitId) && traitId != variant)
+                Profile = Profile.WithoutTraitPreference(traitId, _prototypeManager);
+        }
+
+        Profile = Profile.WithTraitPreference(variant, _prototypeManager);
+        UpdateSpeciesVariant();
+        Traits.UpdateRequirements(Profile);
+        SetDirty();
+    }
+    // Blimpuf end
 
     private void UpdateSpeciesLoadout()
     {

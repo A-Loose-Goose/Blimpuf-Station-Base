@@ -724,6 +724,7 @@ namespace Content.Shared.Preferences
 
             _traitPreferences.Clear();
             _traitPreferences.UnionWith(GetValidTraits(traits, prototypeManager));
+            NormalizeSpeciesVariantTraits(prototypeManager); // Blimpuf
 
             // Checks prototypes exist for all loadouts and dump / set to default if not.
             var toRemove = new ValueList<string>();
@@ -757,13 +758,7 @@ namespace Content.Shared.Preferences
             {
                 SpeciesLoadout ??= new RoleLoadout(speciesPrototype.Loadout.Value);
                 SpeciesLoadout.Role = speciesPrototype.Loadout.Value;
-
-                var loadout = prototypeManager.Index(SpeciesLoadout.Role);
-                foreach (var (group, _) in SpeciesLoadout.SelectedLoadouts.ShallowClone())
-                    if (!loadout.Groups.Contains(group))
-                        SpeciesLoadout.SelectedLoadouts.Remove(group);
-
-                SpeciesLoadout.SetDefault(this, session, prototypeManager);
+                SpeciesLoadout.EnsureValid(this, session, collection);
             }
             // Far Horizons end
         }

@@ -92,6 +92,9 @@ public sealed partial class TraitsTab : BoxContainer
 
         foreach (var category in categories)
         {
+            if (category.Hidden) // Blimpuf - for traits that should not appear in the trait selection menu
+                continue;
+
             if (!traitsByCategory.TryGetValue(category.ID, out var traits) || traits.Count == 0)
                 continue;
 

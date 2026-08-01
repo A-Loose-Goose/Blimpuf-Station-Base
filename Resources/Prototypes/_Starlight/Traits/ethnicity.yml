@@ -4,7 +4,7 @@
   name: trait-ethnicity-elf-high-name
   description: trait-ethnicity-elf-high-desc
   category: EthnicityTraits
-  cost: 1
+  cost: 0
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -22,7 +22,7 @@
   name: trait-ethnicity-elf-wood-name
   description: trait-ethnicity-elf-wood-desc
   category: EthnicityTraits
-  cost: 1
+  cost: 0
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -40,7 +40,7 @@
   name: trait-ethnicity-elf-dark-name
   description: trait-ethnicity-elf-dark-desc
   category: EthnicityTraits
-  cost: 1
+  cost: 0
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -59,7 +59,7 @@
   name: trait-ethnicity-elf-cave-name
   description: trait-ethnicity-elf-cave-desc
   category: EthnicityTraits
-  cost: 1
+  cost: 0
   effects:
     - !type:LanguageEffect
       languagesSpoken:
