@@ -18,14 +18,8 @@ trait-language-canilunzt-desc = You have the ability to speak Canilunzt, a guttu
 trait-language-draconic-name = Draconic
 trait-language-draconic-desc = You can make the sounds needed to speak Draconic, the lizard-tongue composed entirely of hissing and rattling.
 
-trait-language-marish-name = Marish
-trait-language-marish-desc = Somehow, you can communicate with Shadekin in their native Marish - a language comprised only of one word, with many different meanings.
-
-trait-language-nekomimetic-name = Nekomimetic
-trait-language-nekomimetic-desc = To most normal people, this is just broken Old Earth Japanese. To you - and felionoids - it's somehow intelligible.
-
 trait-language-scratch-name = Scratch
-trait-language-scratch-desc = You know how to speak and understand Avali Scratch, the galactic language shared by both Avali and Resomi.
+trait-language-scratch-desc = You know how to speak and understand Resomi Scratch, the galactic language spoken by Resomi.
 
 trait-language-solcommon-name = Sol Common
 trait-language-solcommon-desc = You picked up knowledge on Sol Common, Old Earth's current primary language developed by the Trans-Solar Federation.
@@ -34,7 +28,7 @@ trait-language-sylvan-name = Sylvan
 trait-language-sylvan-desc = You understand Sylvan, spoken by Dionae and plants alike. Most people would probably call you crazy if you said you could talk to plants.
 
 trait-language-terrum-name = Terrum
-trait-language-terrum-desc = You can speak Terrum, the language of the Cyclorites - which sounds strikingly similar to Old Earth Hebrew.
+trait-language-terrum-desc = You can speak Terrum, the language of the T'Nebri - which sounds strikingly similar to Old Earth Hebrew.
 
 trait-language-voxpidgin-name = Vox Pidgin
 trait-language-voxpidgin-desc = You know the language of the Vox, a language mostly made of screeches, clicks, and other assorted bird noises.
@@ -55,13 +49,10 @@ trait-language-classical-name = Classical
 trait-language-classical-desc = Once upon a time, everyone spoke this language. Not as hard to pick up as you might expect.
 
 trait-language-grumbakul-name = Grumbakul
-trait-language-grumbakul-desc = You have mastered the language of Dwarfkind, or at least that's what your Dwarf friends tell you.
+trait-language-grumbakul-desc = You have mastered the language of ancient subterranian humans, or at least that's what your "friends" tell you.
 
 trait-language-aielic-name = Aielic
 trait-language-aielic-desc = The beautiful language of the queli is ideally suited to poetry, but make one mistake and you'll never live it down.
-
-trait-language-lagomorphian-name = Lagomorphian
-trait-language-lagomorphian-desc = The lynarxical tongue, developed as an integration language for the Lagomorph's differing vocal structure.
 
 trait-language-squeakish-name = Squeakish
 trait-language-squeakish-desc = You can speak Squeakish, the language of the Rodentia, which is made up of a series of chirps and squeaks.

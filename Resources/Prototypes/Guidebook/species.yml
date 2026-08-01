@@ -4,17 +4,17 @@
   text: "/ServerInfo/Guidebook/Mobs/Species.xml"
   children:
   - Arachnid
-  - Cyclorite
   - Diona
   - Elf
   - Harpy
   - Human
   - Moth
-  - Protogen
+  - Neocyte
   - Reptilian
   - Resomi
   - Rodentia #Starlight
   - SlimePerson
+  - TNebri
   - Thaven
   - Vox
   - Vulpkanin

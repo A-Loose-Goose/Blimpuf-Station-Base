@@ -1,0 +1,154 @@
+- type: species
+  id: TNebri
+  name: species-name-tnebri
+  roundStart: true
+  prototype: MobTNebri
+  sprites: MobTNebriSprites
+  markingLimits: MobTNebriMarkingLimits
+  dollPrototype: AppearanceTNebri
+  skinColoration: Hues
+  defaultSkinTone: "#FFFFFF"
+  maleFirstNames: names_tnebri
+  femaleFirstNames: names_tnebri
+  naming: First
+  customName: true
+  minHeight: 0.9
+  defaultHeight: 1
+  maxHeight: 1.2
+  standardSize: 170
+  standardWeight: 100
+  standardDensity: 110
+
+- type: speciesBaseSprites
+  id: MobTNebriSprites
+  sprites:
+    Head: MobTNebriHead
+    Snout: MobHumanoidAnyMarking
+    Hair: MobHumanoidAnyMarking
+    FacialHair: MobHumanoidAnyMarking
+    Chest: MobTNebriTorso
+    Eyes: MobTNebriEyes
+    LArm: MobTNebriLArm
+    RArm: MobTNebriRArm
+    LHand: MobTNebriLHand
+    RHand: MobTNebriRHand
+    LLeg: MobTNebriLLeg
+    RLeg: MobTNebriRLeg
+    LFoot: MobTNebriLFoot
+    RFoot: MobTNebriRFoot
+
+- type: markingPoints
+  id: MobTNebriMarkingLimits
+  onlyWhitelisted: true
+  points:
+    Hair:
+      points: 1
+      required: false
+    FacialHair:
+      points: 1
+      required: false
+    Head:
+      points: 3
+      required: false
+    Snout:
+      points: 1
+      required: false
+    Arms:
+      points: 4
+      required: false
+    Legs:
+      points: 2
+      required: false
+    Chest:
+      points: 2
+      required: false
+
+- type: humanoidBaseSprite
+  id: MobTNebriEyes
+  baseSprite:
+    sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+    state: eyes
+
+- type: humanoidBaseSprite
+  id: MobTNebriHead
+  baseSprite:
+    sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobTNebriHeadMale
+  baseSprite:
+    sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobTNebriHeadFemale
+  baseSprite:
+    sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobTNebriTorso
+  baseSprite:
+    sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobTNebriTorsoMale
+  baseSprite:
+    sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobTNebriTorsoFemale
+  baseSprite:
+    sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobTNebriLLeg
+  baseSprite:
+    sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobTNebriLArm
+  baseSprite:
+    sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobTNebriLHand
+  baseSprite:
+    sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobTNebriLFoot
+  baseSprite:
+    sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobTNebriRLeg
+  baseSprite:
+    sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobTNebriRArm
+  baseSprite:
+    sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobTNebriRHand
+  baseSprite:
+    sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobTNebriRFoot
+  baseSprite:
+    sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+    state: r_foot

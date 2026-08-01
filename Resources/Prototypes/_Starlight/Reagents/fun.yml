@@ -42,7 +42,7 @@
         - !type:AdjustReagent
           conditions:
             - !type:MetabolizerTypeCondition
-              type: [ Cyclorite ]
+              type: [ TNebri ]
           reagent: ConcentratedCorgiJuice
           amount: 0.1
     Medicine:

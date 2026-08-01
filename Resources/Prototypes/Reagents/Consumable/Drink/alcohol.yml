@@ -45,13 +45,13 @@
         - !type:ReagentCondition
           reagent: Absinthe
           min: 10
-    # starlight - dwarf drink effects
+    # starlight - effects for characters with Dipsomania
       - !type:ModifyStatusEffect
         effectProto: BonusArmorAbsinthe # 10% Piercing resist
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -70,7 +70,7 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   fizziness: 0.6
-  # Starlight edit start - Make Ale work as a replacement for water for dwarves
+  # Starlight edit start - Make Ale work as a replacement for water for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -78,19 +78,19 @@
         factor: 4
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
       - !type:SatiateThirst
         factor: 2
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
           inverted: true
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.06
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
           inverted: true
   # Starlight edit end
 
@@ -110,7 +110,7 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: true
   fizziness: 0.6
-  # Starlight edit start - Make Beer work as food replacement for dwarves
+  # Starlight edit start - Make Beer work as food replacement for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -120,13 +120,13 @@
         factor: 1.5
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.06
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
           inverted: true
   # Starlight edit end
 
@@ -176,13 +176,13 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.2
-    # starlight - dwarf drink effects
+    # starlight - effects for characters with Dipsomania
       - !type:ModifyStatusEffect
         effectProto: BonusArmorCognac # 10% cold resist
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -228,7 +228,7 @@
           reagent: Ethanol
           min: 15
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
           inverted: true
           # Starlight
         - !type:MetabolizerTypeCondition
@@ -250,25 +250,25 @@
         damage:
           types:
             Poison: 1.2
-      # dwarves take less toxin damage and heal a marginal amount of brute
+      # characters with Dipsomania take less toxin damage and heal a marginal amount of brute
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
           reagent: Ethanol
           min: 15
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           types:
             Poison: 0.02
-      # Starlight edit start - Make Ethanol not damage brute for dwarves, we have drinks for that now, as well as add a vomit threshold as a counter to that
+      # Starlight edit start - Make Ethanol not damage brute for characters with Dipsomania, we have drinks for that now, as well as add a vomit threshold as a counter to that
       # - !type:HealthChange
       #   conditions:
       #   - !type:ReagentCondition
       #     reagent: Ethanol
       #     min: 15
       #   - !type:MetabolizerTypeCondition
-      #     type: [ Dwarf ]
+      #     type: [ Dipsomania ]
       #   damage:
       #     groups:
       #       Brute: -0.1
@@ -279,7 +279,7 @@
           reagent: Ethanol
           min: 20
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
       # Starlight edit end
       - !type:Vomit
         probability: 0.04
@@ -287,9 +287,9 @@
         - !type:ReagentCondition
           reagent: Ethanol
           min: 12
-        # dwarves immune to vomiting from alcohol
+        # characters with Dipsomania are immune to vomiting from alcohol
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
           inverted: true
       - !type:Drunk
         boozePower: 2
@@ -322,13 +322,13 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.2
-    # starlight - dwarf drink effects
+    # starlight - effects for characters with Dipsomania
       - !type:ModifyStatusEffect
         effectProto: BonusArmorGin # 10% caustic resist
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -428,13 +428,13 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.2
-    # starlight - dwarf drink effects
+    # starlight - effects for characters with Dipsomania
       - !type:ModifyStatusEffect
         effectProto: BonusArmorRum # 10% slash resist
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -482,13 +482,13 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.2
-    # starlight - dwarf drink effects
+    # starlight - effects for characters with Dipsomania
       - !type:ModifyStatusEffect
         effectProto: BonusArmorTequila # 10% heat resist
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -505,7 +505,7 @@
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  # starlight - dwarf drink effects
+  # starlight - effects for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -519,7 +519,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
   # end starlight
 
 - type: reagent
@@ -537,7 +537,7 @@
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  # Starlight edit start - Make Vodka heal radiation like Hyronalin for dwarves
+  # Starlight edit start - Make Vodka heal radiation like Hyronalin for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -549,7 +549,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           types:
             Radiation: -1
@@ -578,13 +578,13 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.2
-    # starlight - dwarf drink effects
+    # starlight - effects for characters with Dipsomania
       - !type:ModifyStatusEffect
         effectProto: BonusArmorWhiskey # 10% blunt resist
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -659,7 +659,7 @@
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  # Starlight edit start - Make AlienBrainHemorrhage heal cellular damage for dwarves
+  # Starlight edit start - Make AlienBrainHemorrhage heal cellular damage for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -671,7 +671,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           types:
             Cellular: -0.5
@@ -691,7 +691,7 @@
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  # Starlight edit start - Make AlliesCocktail heal burn for dwarves while in critical
+  # Starlight edit start - Make AlliesCocktail heal burn for characters with Dipsomania while in critical
   metabolisms:
     Drink:
       effects:
@@ -703,7 +703,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         - !type:MobStateCondition
           mobstate: Critical
         damage:
@@ -740,7 +740,7 @@
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  # Starlight edit start - Make Amasec heal like Arithrazine for dwarves
+  # Starlight edit start - Make Amasec heal like Arithrazine for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -752,7 +752,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           types:
             Radiation: -3
@@ -774,7 +774,7 @@
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  # starlight - dwarf drink effects
+  # starlight - effects for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -788,7 +788,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
   # end starlight
 
 #Antifreeze as a drink is a bright blue color while it is an orangish red otherwise.
@@ -816,13 +816,13 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.15
-    # starlight - dwarf drink effects
+    # starlight - effects for characters with Dipsomania
       - !type:ModifyStatusEffect
         effectProto: BonusArmorAntifreeze # 50% cold resist
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -873,13 +873,13 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.15
-    # starlight - dwarf drink effects
+    # starlight - effects for characters with Dipsomania
       - !type:ModifyStatusEffect
         effectProto: BonusArmorB52 # 25% Explosion Resist
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -1026,13 +1026,13 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.2
-    # starlight - dwarf drink effects
+    # starlight - effects for characters with Dipsomania
       - !type:ModifyStatusEffect
         effectProto: BonusDamageBraveBull # +10 Structural
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -1049,7 +1049,7 @@
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  # starlight - dwarf drink effects
+  # starlight - effects for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -1063,7 +1063,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
   # end starlight
 
 - type: reagent
@@ -1126,7 +1126,7 @@
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  # Starlight edit start - Make CrushDepth work like Barozine (space immunity) for dwarves
+  # Starlight edit start - Make CrushDepth work like Barozine (space immunity) for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -1138,7 +1138,7 @@
       - !type:GenericStatusEffect
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         key: PressureImmunity
         component: PressureImmunity
   # Starlight edit end
@@ -1181,7 +1181,7 @@
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  # Starlight edit start - Make DarkandStormy heal like Insuzine for dwarves
+  # Starlight edit start - Make DarkandStormy heal like Insuzine for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -1193,7 +1193,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           types:
             Shock: -1.5
@@ -1306,13 +1306,13 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.15
-    # starlight - dwarf drink effects
+    # starlight - effects for characters with Dipsomania
       - !type:ModifyStatusEffect
         effectProto: BonusArmorDriestMartini # 25% Brute Damage Resist
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -1344,7 +1344,7 @@
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  # Starlight edit start - Make ElectricShark give dwarves slow immunity
+  # Starlight edit start - Make ElectricShark give characters with Dipsomania slow immunity
   metabolisms:
     Drink:
       effects:
@@ -1356,7 +1356,7 @@
       - !type:GenericStatusEffect
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         key: IgnoreSlowOnDamage
         component: IgnoreSlowOnDamage
         time: 3
@@ -1377,7 +1377,7 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: true
   fizziness: 0.15
-  # starlight - dwarf drink effects
+  # starlight - effects for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -1391,7 +1391,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
   # end starlight
 
 - type: reagent
@@ -1416,13 +1416,13 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.2
-    # starlight - dwarf drink effects
+    # starlight - effects for characters with Dipsomania
       - !type:ModifyStatusEffect
         effectProto: BonusArmorGargleBlaster # 15% Blunt/Slash/Piercing Resist
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -1510,7 +1510,7 @@
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: true
-  # starlight - dwarf drink effects
+  # starlight - effects for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -1524,7 +1524,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
   # end starlight
 
 - type: reagent
@@ -1550,7 +1550,7 @@
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: hooch
   color: "#664e00"
-  # Starlight edit start - Make Hooch work like Ephedrine for dwarves
+  # Starlight edit start - Make Hooch work like Ephedrine for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -1562,20 +1562,20 @@
       - !type:MovementSpeedModifier
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         walkSpeedModifier: 1.25
         sprintSpeedModifier: 1.25
       - !type:ModifyStatusEffect
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         effectProto: StatusEffectStunned
         time: 1
         type: Remove
       - !type:ModifyKnockdown
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         time: 1
         type: Remove
   # Starlight edit end
@@ -1595,7 +1595,7 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   fizziness: 0.6
-  # Starlight edit start - Make IcedBeer heal like Dermaline for dwarves
+  # Starlight edit start - Make IcedBeer heal like Dermaline for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -1607,7 +1607,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           types:
             Heat: -1.5
@@ -1637,13 +1637,13 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.15
-    # starlight - dwarf drink effects
+    # starlight - effects for characters with Dipsomania
       - !type:ModifyStatusEffect
         effectProto: BonusScalarIrishCarBomb # +20% damage with melee weapons
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -1668,13 +1668,13 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.2
-    # starlight - dwarf drink effects
+    # starlight - effects for characters with Dipsomania
       - !type:ModifyStatusEffect
         effectProto: BonusScalarIrishCream # +25% unarmed attack speed
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
      # end starlight
 
 - type: reagent
@@ -1691,7 +1691,7 @@
   metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  # Starlight edit start - Make IrishCoffee increase movement speed for dwarves
+  # Starlight edit start - Make IrishCoffee increase movement speed for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -1703,7 +1703,7 @@
       - !type:MovementSpeedModifier
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         walkSpeedModifier: 1.1
         sprintSpeedModifier: 1.1
   # Starlight edit end
@@ -1790,7 +1790,7 @@
   metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  # Starlight edit start - Make Manhattan give dwarves NoSlip component
+  # Starlight edit start - Make Manhattan give characters with Dipsomania NoSlip component
   metabolisms:
     Drink:
       effects:
@@ -1802,7 +1802,7 @@
       - !type:GenericStatusEffect
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         key: NoSlip
         component: NoSlip
         time: 2
@@ -1839,7 +1839,7 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   fizziness: 0.7
-  # Starlight edit start - Make ManlyDorf heal like Bicaridine for dwarves
+  # Starlight edit start - Make ManlyDorf heal like Bicaridine for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -1851,7 +1851,7 @@
       - !type:EvenHealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           Brute: -1.5
   # Starlight edit end
@@ -1885,7 +1885,7 @@
   metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  # Starlight edit start - Make Martini work like Potassium Iodide for dwarves
+  # Starlight edit start - Make Martini work like Potassium Iodide for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -1897,7 +1897,7 @@
       - !type:GenericStatusEffect
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         key: RadiationProtection
         component: RadiationProtection
         time: 2
@@ -1919,7 +1919,7 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: true
   fizziness: 0.4
-  # Starlight edit start - Make Mead work like Tricordrazine for dwarves
+  # Starlight edit start - Make Mead work like Tricordrazine for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -1933,7 +1933,7 @@
         - !type:TotalDamageCondition
           max: 50
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           groups:
             Brute: -1
@@ -1989,7 +1989,7 @@
   metamorphicMaxFillLevels: 6
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  # Starlight edit start - Make Moonshine heal like Sigynate for dwarves
+  # Starlight edit start - Make Moonshine heal like Sigynate for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -2001,7 +2001,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           types:
             Caustic: -1 # a bit lower than Sigynate
@@ -2058,13 +2058,13 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.2
-    # starlight - dwarf drink effects
+    # starlight - effects for characters with Dipsomania
       - !type:ModifyStatusEffect
         effectProto: BonusArmorPainkiller # 25% Bloodloss Resist
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -2104,7 +2104,7 @@
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  # Starlight edit start - Make RedMead heal like Saline + Dexaline for dwarves
+  # Starlight edit start - Make RedMead heal like Saline + Dexaline for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -2116,12 +2116,12 @@
       - !type:ModifyBloodLevel
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         amount: 6
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           types:
             Asphyxiation: -1
@@ -2173,7 +2173,7 @@
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  # Starlight edit start - Make Radler heal brute for dwarves while in critical
+  # Starlight edit start - Make Radler heal brute for characters with Dipsomania while in critical
   metabolisms:
     Drink:
       effects:
@@ -2185,7 +2185,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         - !type:MobStateCondition
           mobstate: Critical
         damage:
@@ -2342,7 +2342,7 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: true
   fizziness: 0.6
-  # starlight - dwarf drink effects
+  # starlight - effects for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -2356,7 +2356,7 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
   # end starlight
 
 - type: reagent
@@ -2373,7 +2373,7 @@
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  # Starlight edit start - Make TequilaSunrise work like Tranexamic Acid for dwarves
+  # Starlight edit start - Make TequilaSunrise work like Tranexamic Acid for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -2385,7 +2385,7 @@
       - !type:ModifyBleed
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         amount: -1.5
   # Starlight edit end
 
@@ -2564,7 +2564,7 @@
   physicalDesc: reagent-physical-desc-creamy
   flavor: white-gilgamesh
   color: "#e5d27e"
-  # Starlight edit start - Make WhiteGilgamesh heal like Dylovene for dwarves
+  # Starlight edit start - Make WhiteGilgamesh heal like Dylovene for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -2576,7 +2576,7 @@
         - !type:HealthChange
           conditions:
           - !type:MetabolizerTypeCondition
-            type: [ Dwarf ]
+            type: [ Dipsomania ]
           damage:
             types:
               Poison: -1
@@ -2666,13 +2666,13 @@
           effectProto: StatusEffectDrowsiness
           time: 1
           type: Remove
-  # starlight - dwarf drink effects
+  # starlight - effects for characters with Dipsomania
         - !type:ModifyStatusEffect
           effectProto: BonusScalarXenoBasher # +10% attack speed with melee weapons
           time: 3
           conditions:
           - !type:MetabolizerTypeCondition
-            type: [ Dwarf ]
+            type: [ Dipsomania ]
   # end starlight
   fizziness: 0.15
 
@@ -2705,18 +2705,18 @@
           effectProto: StatusEffectDrowsiness
           time: 1
           type: Remove
-  # Starlight edit start - Make IrishBool remove Stun from Dwarves
+  # Starlight edit start - Make IrishBool remove Stun from characters with Dipsomania
         - !type:ModifyStatusEffect
           conditions:
           - !type:MetabolizerTypeCondition
-            type: [ Dwarf ]
+            type: [ Dipsomania ]
           effectProto: StatusEffectStunned
           time: 3.5
           type: Remove
         - !type:ModifyKnockdown
           conditions:
           - !type:MetabolizerTypeCondition
-            type: [ Dwarf ]
+            type: [ Dipsomania ]
           time: 3.5
           type: Remove
         - !type:ModifyStatusEffect
@@ -2724,7 +2724,7 @@
           time: 3
           conditions:
           - !type:MetabolizerTypeCondition
-            type: [ Dwarf ]
+            type: [ Dipsomania ]
   # Starlight edit end
   fizziness: 0.15
 
@@ -2757,11 +2757,11 @@
           effectProto: StatusEffectDrowsiness
           time: 1
           type: Remove
-  # Starlight edit start - Make BudgetInsulsDrink give dwarves Insulated component
+  # Starlight edit start - Make BudgetInsulsDrink give characters with Dipsomania Insulated component
         - !type:GenericStatusEffect
           conditions:
           - !type:MetabolizerTypeCondition
-            type: [ Dwarf ]
+            type: [ Dipsomania ]
           key: Insulated
           component: Insulated
           time: 2
@@ -2819,7 +2819,7 @@
   metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  # Starlight edit start - Make Rubberneck work like Desoxyephedrine (meth) for dwarves
+  # Starlight edit start - Make Rubberneck work like Desoxyephedrine (meth) for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -2838,20 +2838,20 @@
         - !type:MovementSpeedModifier
           conditions:
           - !type:MetabolizerTypeCondition
-            type: [ Dwarf ]
+            type: [ Dipsomania ]
           walkSpeedModifier: 1.35
           sprintSpeedModifier: 1.35
         - !type:ModifyStatusEffect
           conditions:
             - !type:MetabolizerTypeCondition
-              type: [ Dwarf ]
+              type: [ Dipsomania ]
           effectProto: StatusEffectStunned
           time: 1
           type: Remove
         - !type:ModifyKnockdown
           conditions:
             - !type:MetabolizerTypeCondition
-              type: [ Dwarf ]
+              type: [ Dipsomania ]
           time: 1
           type: Remove
   # Starlight edit end
@@ -2928,13 +2928,13 @@
       - !type:AdjustReagent
         reagent: Copper
         amount: 0.05
-    # starlight - dwarf drink effects
+    # starlight - effects for characters with Dipsomania
       - !type:ModifyStatusEffect
         effectProto: BonusArmorMoscowMule # 10% Poison/Radiation Resist
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -3041,19 +3041,19 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.3
-    # starlight - dwarf drink effects
+    # starlight - effects for characters with Dipsomania
       - !type:ModifyStatusEffect
         effectProto: MobThresholdsDeathInTheAfternoon # raise crit to 129, lower death to 130
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
       - !type:SpawnAttachedTo
-        entity: EffectDwarfCourage
+        entity: EffectMinersCourage
         number: 1
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -3124,13 +3124,13 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.1
-    # starlight - dwarf drink effects
+    # starlight - effects for characters with Dipsomania
       - !type:ModifyStatusEffect
         effectProto: BonusArmorDaiquiri # 10% Blunt/Cold Resist & -5% Piercing/Shock Resist
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
     # end starlight
 
 - type: reagent
@@ -3155,11 +3155,11 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.3
-  # Starlight edit start - Make TheSunAlsoRises give dwarves NightVision component
+  # Starlight edit start - Make TheSunAlsoRises give characters with Dipsomania NightVision component
       - !type:GenericStatusEffect
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         key: NightVision
         component: NightVision
         time: 2
@@ -3226,7 +3226,7 @@
   metamorphicMaxFillLevels: 2
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
-  # Starlight edit start - Make BacchusBlessing heal like Omnizine for dwarves
+  # Starlight edit start - Make BacchusBlessing heal like Omnizine for characters with Dipsomania
   metabolisms:
     Drink:
       effects:
@@ -3238,7 +3238,7 @@
       - !type:EvenHealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         damage:
           Burn: -2
           Toxin: -2
@@ -3256,7 +3256,7 @@
           reagent: BacchusBlessing
           min: 6
         - !type:MetabolizerTypeCondition
-          type: [Dwarf]
+          type: [Dipsomania]
           inverted: true
         damage:
           types:
@@ -3267,7 +3267,7 @@
           reagent: BacchusBlessing
           min: 6
         - !type:MetabolizerTypeCondition
-          type: [Dwarf]
+          type: [Dipsomania]
         damage:
           types:
             Poison: 0.04 # TODO: Might increase this, even though it's just double of ethanol from 0.02 to 0.04
@@ -3278,5 +3278,5 @@
           reagent: BacchusBlessing
           min: 8
         - !type:MetabolizerTypeCondition
-          type: [Dwarf]
+          type: [Dipsomania]
           inverted: true

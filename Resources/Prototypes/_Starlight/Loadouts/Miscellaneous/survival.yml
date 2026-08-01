@@ -4,15 +4,7 @@
   - !type:SpeciesLoadoutEffect
     species:
     - Shadekin
-    - ProtoKin
-
-- type: loadoutEffectGroup
-  id: OxygenBreatherDwarf
-  effects:
-  - !type:SpeciesLoadoutEffect
-    species:
-    - Dwarf
-    - ProtoDwarf
+    - NeoShadekin
 
 - type: loadoutEffectGroup
   id: EffectsSpeciesRodentia
@@ -48,15 +40,6 @@
     - BookOfCantrips
 
 - type: loadout
-  id: EmergencyDwarfOxygen
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: OxygenBreatherDwarf
-  storage:
-    back:
-    - BoxSurvivalDwarf
-
-- type: loadout
   id: EmergencyNonBreather
   effects:
   - !type:GroupLoadoutEffect
@@ -86,15 +69,6 @@
 
 
 - type: loadout
-  id: EmergencyDwarfOxygenClown
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: OxygenBreatherDwarf
-  storage:
-    back:
-    - BoxHugDwarf
-
-- type: loadout
   id: EmergencyElfOxygenMime
   effects:
   - !type:GroupLoadoutEffect
@@ -103,15 +77,6 @@
     back:
     - BoxMime
     - BookOfCantrips
-
-- type: loadout
-  id: EmergencyDwarfOxygenMime
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: OxygenBreatherDwarf
-  storage:
-    back:
-    - BoxMimeDwarf
 
 - type: loadout
   id: EmergencyNonBreatherMime
@@ -142,15 +107,6 @@
     - BookOfCantrips
 
 - type: loadout
-  id: EmergencyDwarfOxygenExtended
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: OxygenBreatherDwarf
-  storage:
-    back:
-    - BoxSurvivalEngineeringDwarf
-
-- type: loadout
   id: EmergencyNonBreatherMedical
   effects:
   - !type:GroupLoadoutEffect
@@ -169,22 +125,13 @@
     - BoxSurvivalMedical
     - BookOfCantrips
 
-- type: loadout
-  id: EmergencyDwarfOxygenMedical
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: OxygenBreatherDwarf
-  storage:
-    back:
-    - BoxSurvivalMedicalDwarf
-
 - type: loadoutEffectGroup
   id: ElfOxygenBreather
   effects:
   - !type:SpeciesLoadoutEffect
     species:
     - Elf
-    - ProtoElf
+    - NeoElf
 
 - type: loadout
   id: EmergencyNonbreatherSecurity
@@ -206,15 +153,6 @@
     - BookOfCantrips
 
 - type: loadout
-  id: EmergencyDwarfOxygenSecurity
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: OxygenBreatherDwarf
-  storage:
-    back:
-    - BoxSurvivalSecurityDwarf
-
-- type: loadout
   id: EmergencyNonBreatherSyndicate
   effects:
   - !type:GroupLoadoutEffect
@@ -234,15 +172,6 @@
     - BookOfCantrips
 
 - type: loadout
-  id: EmergencyDwarfOxygenSyndicate
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: OxygenBreatherDwarf
-  storage:
-    back:
-    - BoxSurvivalSyndicate # no dwarf version; doesn't include a drink
-
-- type: loadout
   id: EmergencyElfOxygenMilitaryDouble
   effects:
   - !type:GroupLoadoutEffect
@@ -251,15 +180,6 @@
     back:
     - BoxSurvivalMilitaryDouble
     - BookOfCantrips
-
-- type: loadout
-  id: EmergencyDwarfOxygenMilitaryDouble
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: OxygenBreatherDwarf
-  storage:
-    back:
-    - BoxSurvivalMilitaryDouble # no dwarf version; doesn't include a drink
 
 # Rodentia Cheese Loadouts
 - type: loadout

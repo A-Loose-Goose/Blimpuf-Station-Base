@@ -482,7 +482,7 @@
           reagent: Water
           min: 4
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
         probability: 0.5
       - !type:SatiateHunger
         factor: 2

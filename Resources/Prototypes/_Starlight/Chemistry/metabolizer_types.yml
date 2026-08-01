@@ -7,8 +7,8 @@
   name: metabolizer-type-budget-cyber
 
 - type: metabolizerType
-  id: Cyclorite
-  name: metabolizer-type-cyclorite
+  id: TNebri
+  name: metabolizer-type-tnebri
 
 - type: metabolizerType
   id: Avali

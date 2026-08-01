@@ -97,7 +97,7 @@
       Arachnid: MobArachnidEyes
       Diona: MobDionaEyes
       Vox: MobVoxEyes
-      Cyclorite: MobCycloriteEyes
+      TNebri: MobTNebriEyes
       Abductor: MobAbductorEyes
   - type: HumanoidEMPCompositeElement
     effect:

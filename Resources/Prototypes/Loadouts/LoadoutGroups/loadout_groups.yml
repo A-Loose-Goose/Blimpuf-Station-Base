@@ -151,10 +151,10 @@
   minLimit: 3
   hidden: true
   loadouts:
+  - EmergencyDipsomania # Blimpuf
   - EmergencyNitrogen
   - EmergencyOxygen
   - EmergencyElfOxygen # Starlight
-  - EmergencyDwarfOxygen # Starlight
   - LoadoutSpeciesVoxNitrogen
   - EmergencyNonBreather # 🌟Starlight🌟
   - EmergencyIPC # 🌟Starlight🌟
@@ -734,10 +734,10 @@
   minLimit: 2
   hidden: true
   loadouts:
+  - EmergencyDipsomaniaClown # Blimpuf
   - EmergencyNitrogenClown
   - EmergencyOxygenClown
   - EmergencyElfOxygenClown # Starlight
-  - EmergencyDwarfOxygenClown # Starlight
   - LoadoutSpeciesVoxNitrogen
   - EmergencyNonBreatherClown # 🌟Starlight🌟
   - EmergencyIPC # 🌟Starlight🌟
@@ -805,10 +805,10 @@
   minLimit: 2
   hidden: true
   loadouts:
+  - EmergencyDipsomaniaMime # Blimpuf
   - EmergencyNitrogenMime
   - EmergencyOxygenMime
   - EmergencyElfOxygenMime # Starlight
-  - EmergencyDwarfOxygenMime # Starlight
   - EmergencySpeciesMothMime
   - LoadoutSpeciesVoxNitrogen
   - EmergencyNonBreatherMime # 🌟Starlight🌟
@@ -1212,10 +1212,10 @@
   minLimit: 2
   hidden: true
   loadouts:
+  - EmergencyDipsomaniaExtended # Blimpuf
   - EmergencyNitrogenExtended
   - EmergencyOxygenExtended
   - EmergencyElfOxygenExtended # Starlight
-  - EmergencyDwarfOxygenExtended # Starlight
   - LoadoutSpeciesVoxNitrogen
   - EmergencyNonBreatherExtended # 🌟Starlight🌟
   - EmergencyIPC # 🌟Starlight🌟
@@ -1604,10 +1604,10 @@
   minLimit: 2
   hidden: true
   loadouts:
+  - EmergencyDipsomaniaSecurity # Blimpuf
   - EmergencyNitrogenSecurity
   - EmergencyOxygenSecurity
   - EmergencyElfOxygenSecurity # Starlight
-  - EmergencyDwarfOxygenSecurity # Starlight
   - LoadoutSpeciesVoxNitrogen
   - EmergencyNonbreatherSecurity # 🌟Starlight🌟
   - EmergencyIPC # 🌟Starlight🌟
@@ -1655,10 +1655,10 @@
   minLimit: 2
   hidden: true
   loadouts:
+  - EmergencyDipsomaniaSyndicate # Blimpuf
   - EmergencyNitrogenSyndicate
   - EmergencyOxygenSyndicate
   - EmergencyElfOxygenSyndicate # Starlight
-  - EmergencyDwarfOxygenSyndicate # Starlight
   - LoadoutSpeciesVoxNitrogen
   - EmergencyNonBreatherSyndicate # 🌟Starlight🌟
   - EmergencyIPC # 🌟Starlight🌟
@@ -1670,10 +1670,10 @@
   minLimit: 2
   hidden: true
   loadouts:
+  - EmergencyDipsomaniaMilitaryDouble # Blimpuf
   - EmergencyNitrogenMilitaryDouble
   - EmergencyOxygenMilitaryDouble
   - EmergencyElfOxygenMilitaryDouble # Starlight
-  - EmergencyDwarfOxygenMilitaryDouble # Starlight
   - EmergencyIPC # 🌟Starlight🌟
   - EmergencyCheeseMilitary # Starlight
 

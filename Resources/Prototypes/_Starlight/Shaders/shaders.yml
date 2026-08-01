@@ -1,5 +1,5 @@
 - type: shader
-  id: CycloriteShader
+  id: TNebriShader
   kind: source
   path: "/Textures/_Starlight/Shaders/cyclorite.swsl"
   params:

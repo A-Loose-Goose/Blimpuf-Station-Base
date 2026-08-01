@@ -2134,10 +2134,8 @@ entities:
           - 141
           - 140
           - 139
-          - 135
           - 133
           - 130
-          - 129
           - 127
           - 117
           - 110
@@ -4056,7 +4054,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: OrganCycloriteHeart
+- proto: OrganTNebriHeart
   entities:
   - uid: 141
     components:
@@ -4066,22 +4064,6 @@ entities:
       canCollide: False
     - type: InsideEntityStorage
   - uid: 142
-    components:
-    - type: Transform
-      parent: 119
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-- proto: OrganDwarfHeart
-  entities:
-  - uid: 129
-    components:
-    - type: Transform
-      parent: 119
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 135
     components:
     - type: Transform
       parent: 119

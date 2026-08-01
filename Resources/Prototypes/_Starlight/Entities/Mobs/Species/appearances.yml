@@ -26,14 +26,14 @@
       undergarmentBottom: UndergarmentBottomBoxersAvali
 
 - type: entity
-  parent: [BaseSpeciesDummy, BaseInventoryCyclorite]
-  id: AppearanceCyclorite
+  parent: [BaseSpeciesDummy, BaseInventoryTNebri]
+  id: AppearanceTNebri
   categories: [ HideSpawnMenu ]
   components:
   - type: HumanoidAppearance
-    species: Cyclorite
+    species: TNebri
   - type: Body
-    prototype: Cyclorite
+    prototype: TNebri
 
 - type: entity
   parent: [BaseSpeciesDummy, BaseInventoryDiona]
@@ -42,14 +42,6 @@
   components:
   - type: HumanoidAppearance
     species: Diona
-
-- type: entity
-  parent: [BaseSpeciesDummy, BaseInventoryFemaleJumpsuit]
-  id: AppearanceDwarf
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: HumanoidAppearance
-    species: Dwarf
 
 - type: entity
   parent: [BaseSpeciesDummy, BaseInventoryFemaleJumpsuit]

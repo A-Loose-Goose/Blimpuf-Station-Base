@@ -94,12 +94,12 @@
     Mortucussus: 1 # starlight end
 
 - type: reaction
-  id: CycloriteBloodBreakdown
+  id: TNebriBloodBreakdown
   source: true
   requiredMixerCategories:
     - Centrifuge
   reactants:
-    CycloriteBlood:
+    TNebriBlood:
       amount: 20
   products:
     Nitrogen: 4

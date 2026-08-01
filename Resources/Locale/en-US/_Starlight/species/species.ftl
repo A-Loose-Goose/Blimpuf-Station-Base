@@ -1,6 +1,6 @@
-﻿species-name-abductor = Abductor
+species-name-abductor = Abductor
 species-name-avali = Avali
-species-name-cyclorite = Cyclorite
+species-name-tnebri = T'Nebri
 species-name-elf = Elf
 species-name-felionoid = Felionoid
 species-name-lagomorph = Lagomorph

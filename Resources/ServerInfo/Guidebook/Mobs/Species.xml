@@ -5,22 +5,22 @@
 
   <Box>
   <GuideEntityEmbed Entity="AppearanceArachnid" Caption="Arachnid"/>
-  <GuideEntityEmbed Entity="AppearanceCyclorite" Caption="Cyclorite"/>
   <GuideEntityEmbed Entity="AppearanceDiona" Caption="Diona"/>
   <GuideEntityEmbed Entity="AppearanceHuman" Caption="Doll[PH]"/><!--Doll placeholder-->
   <GuideEntityEmbed Entity="AppearanceElf" Caption="Elf"/>
+  <GuideEntityEmbed Entity="AppearanceHarpy" Caption="Harpy"/>
   </Box>
   <Box>
-  <GuideEntityEmbed Entity="AppearanceHarpy" Caption="Harpy"/>
   <GuideEntityEmbed Entity="AppearanceHuman" Caption="Human"/>
   <GuideEntityEmbed Entity="AppearanceMoth" Caption="Moth Person"/>
-  <GuideEntityEmbed Entity="AppearanceProtogen" Caption="Neocyte"/>
+  <GuideEntityEmbed Entity="AppearanceNeocyte" Caption="Neocyte"/>
   <GuideEntityEmbed Entity="AppearanceReptilian" Caption="Reptilian"/>
   <GuideEntityEmbed Entity="AppearanceResomi" Caption="Resomi"/>
   </Box>
   <Box>
   <GuideEntityEmbed Entity="AppearanceRodentia" Caption="Rodentia"/>
   <GuideEntityEmbed Entity="AppearanceSlimePerson" Caption="Slime Person"/>
+  <GuideEntityEmbed Entity="AppearanceTNebri" Caption="T'Nebri"/>
   <GuideEntityEmbed Entity="AppearanceThaven" Caption="Thaven"/>
   <GuideEntityEmbed Entity="AppearanceVox" Caption="Vox"/>
   <GuideEntityEmbed Entity="AppearanceVulpkanin" Caption="Vulpkanin"/>

@@ -1,0 +1,153 @@
+- type: entity
+  id: PartTNebri
+  parent: [BaseItem, BasePart]
+  name: "T'Nebri body part"
+  abstract: true
+  components:
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 3
+      - ReagentId: CopperBlood
+        Quantity: 10
+
+- type: entity
+  id: TorsoTNebri
+  name: "T'Nebri torso"
+  parent: [PartTNebri, BaseTorso]
+  components:
+    - type: Sprite
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "torso"
+    - type: Icon
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "torso"
+    - type: Extractable
+      juiceSolution:
+        reagents:
+        - ReagentId: Fat
+          Quantity: 10
+        - ReagentId: CopperBlood
+          Quantity: 20
+
+- type: entity
+  id: HeadTNebri
+  name: "T'Nebri head"
+  parent: [PartTNebri, BaseHead]
+  components:
+    - type: Sprite
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "head"
+    - type: Icon
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "head"
+    - type: Extractable
+      juiceSolution:
+        reagents:
+        - ReagentId: Fat
+          Quantity: 5
+        - ReagentId: CopperBlood
+          Quantity: 10
+
+- type: entity
+  id: LeftArmTNebri
+  name: "left T'Nebri arm"
+  parent: [PartTNebri, BaseLeftArm]
+  components:
+    - type: Sprite
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "l_arm"
+    - type: Icon
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "l_arm"
+
+- type: entity
+  id: RightArmTNebri
+  name: "right T'Nebri arm"
+  parent: [PartTNebri, BaseRightArm]
+  components:
+    - type: Sprite
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "r_arm"
+    - type: Icon
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "r_arm"
+
+- type: entity
+  id: LeftHandTNebri
+  name: "left T'Nebri hand"
+  parent: [PartTNebri, BaseLeftHand]
+  components:
+    - type: Sprite
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "l_hand"
+    - type: Icon
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "l_hand"
+
+- type: entity
+  id: RightHandTNebri
+  name: "right T'Nebri hand"
+  parent: [PartTNebri, BaseRightHand]
+  components:
+    - type: Sprite
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "r_hand"
+    - type: Icon
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "r_hand"
+
+- type: entity
+  id: LeftLegTNebri
+  name: "left T'Nebri leg"
+  parent: [PartTNebri, BaseLeftLeg]
+  components:
+    - type: Sprite
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "l_leg"
+    - type: Icon
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "l_leg"
+    - type: MovementBodyPart
+      sprintSpeed : 3.825
+      maxDensity: 155
+
+- type: entity
+  id: RightLegTNebri
+  name: "right T'Nebri leg"
+  parent: [PartTNebri, BaseRightLeg]
+  components:
+    - type: Sprite
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "r_leg"
+    - type: Icon
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "r_leg"
+    - type: MovementBodyPart
+      sprintSpeed : 3.825
+      maxDensity: 155
+
+- type: entity
+  id: LeftFootTNebri
+  name: "left T'Nebri foot"
+  parent: [PartTNebri, BaseLeftFoot]
+  components:
+    - type: Sprite
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "l_foot"
+    - type: Icon
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "l_foot"
+
+- type: entity
+  id: RightFootTNebri
+  name: "right T'Nebri foot"
+  parent: [PartTNebri, BaseRightFoot]
+  components:
+    - type: Sprite
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "r_foot"
+    - type: Icon
+      sprite: _Starlight/Mobs/Species/Cyclorite/parts.rsi
+      state: "r_foot"

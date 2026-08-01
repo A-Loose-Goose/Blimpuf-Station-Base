@@ -435,7 +435,7 @@
 
 - type: entity
   save: false
-  id: BaseSpeciesPickupableHuge # Stuff like Cyclorites/IPCs/Plasmamen/Vulps/Shadekin/Diona. Things that are just *too big**
+  id: BaseSpeciesPickupableHuge # Stuff like T'Nebri/IPCs/Plasmamen/Vulps/Shadekin/Diona. Things that are just *too big**
   abstract: true
   components:
   - type: Item

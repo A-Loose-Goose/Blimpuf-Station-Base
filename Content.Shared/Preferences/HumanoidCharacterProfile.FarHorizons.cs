@@ -1,5 +1,6 @@
 using System.IO;
 using System.Linq;
+using Content.Shared._Starlight.Traits;
 using Content.Shared.Preferences.Loadouts;
 using Content.Shared.Roles;
 using Robust.Shared.Configuration;
@@ -15,6 +16,7 @@ namespace Content.Shared.Preferences;
 public sealed partial class HumanoidCharacterProfile
 {
     public const string SpeciesLoadoutDatabaseKey = "__species_loadout"; // Database will store species loadout as this "job"
+    private static readonly ProtoId<TraitPrototype>[] ElfSpeciesVariantTraits = ["HighElf", "WoodElf", "DarkElf", "CaveElf"];
 
     [DataField]
     public RoleLoadout? SpeciesLoadout = null;
@@ -31,10 +33,14 @@ public sealed partial class HumanoidCharacterProfile
             return SpeciesLoadout;
         }
 
-        if (SpeciesLoadout == null)
+        SpeciesLoadout ??= new RoleLoadout(speciesProto.Loadout.Value);
+        SpeciesLoadout.Role = speciesProto.Loadout.Value;
+
+        var loadoutProto = protoManager.Index(SpeciesLoadout.Role);
+        foreach (var (group, _) in SpeciesLoadout.SelectedLoadouts.ShallowClone())
         {
-            SpeciesLoadout = new RoleLoadout(speciesProto.Loadout.Value);
-            SpeciesLoadout.SetDefault(this, session, protoManager, force: true);
+            if (!loadoutProto.Groups.Contains(group))
+                SpeciesLoadout.SelectedLoadouts.Remove(group);
         }
 
         SpeciesLoadout.SetDefault(this, session, protoManager);
@@ -58,4 +64,54 @@ public sealed partial class HumanoidCharacterProfile
 
         return true;
     }
+
+    // Blimpuf start
+    private void NormalizeSpeciesVariantTraits(IPrototypeManager protoManager)
+    {
+        if (Species != "Elf" && Species != "NeoElf")
+        {
+            foreach (var traitId in ElfSpeciesVariantTraits)
+            {
+                _traitPreferences.Remove(traitId);
+            }
+
+            return;
+        }
+
+        ProtoId<TraitPrototype>? selectedVariant = null;
+        foreach (var traitId in ElfSpeciesVariantTraits)
+        {
+            if (!protoManager.HasIndex(traitId) || !_traitPreferences.Contains(traitId))
+                continue;
+
+            selectedVariant = traitId;
+            break;
+        }
+
+        if (selectedVariant == null)
+        {
+            foreach (var traitId in ElfSpeciesVariantTraits)
+            {
+                if (!protoManager.HasIndex(traitId))
+                    continue;
+
+                selectedVariant = traitId;
+                break;
+            }
+        }
+
+        if (selectedVariant == null)
+            return;
+
+        foreach (var traitId in ElfSpeciesVariantTraits)
+        {
+            if (traitId == selectedVariant.Value)
+                continue;
+
+            _traitPreferences.Remove(traitId);
+        }
+
+        _traitPreferences.Add(selectedVariant.Value);
+    }
+    // Blimpuf end
 }

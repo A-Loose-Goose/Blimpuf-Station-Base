@@ -1,0 +1,136 @@
+## head
+
+- type: marking
+  id: CyHeadBeholder
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [TNebri]
+  sprites:
+    - sprite: _Blimpuf/Mobs/Customization/Cyclorite/head.rsi
+      state: beholder
+
+- type: marking
+  id: CyHeadBlind
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [TNebri]
+  sprites:
+    - sprite: _Blimpuf/Mobs/Customization/Cyclorite/head.rsi
+      state: blind
+
+- type: marking
+  id: CyHeadCone
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [TNebri]
+  sprites:
+    - sprite: _Blimpuf/Mobs/Customization/Cyclorite/head.rsi
+      state: cone
+
+- type: marking
+  id: CyHeadCross
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [TNebri]
+  sprites:
+    - sprite: _Blimpuf/Mobs/Customization/Cyclorite/head.rsi
+      state: cross
+
+- type: marking
+  id: CyHeadElf
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [TNebri]
+  sprites:
+    - sprite: _Blimpuf/Mobs/Customization/Cyclorite/head.rsi
+      state: elf
+
+- type: marking
+  id: CyHeadSideEyes
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [TNebri]
+  sprites:
+    - sprite: _Blimpuf/Mobs/Customization/Cyclorite/head.rsi
+      state: side
+
+- type: marking
+  id: CyHeadPeepers
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [TNebri]
+  sprites:
+    - sprite: _Blimpuf/Mobs/Customization/Cyclorite/head.rsi
+      state: peepers
+
+- type: marking
+  id: CyHeadStalks
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [TNebri]
+  sprites:
+    - sprite: _Blimpuf/Mobs/Customization/Cyclorite/head.rsi
+      state: stalks
+
+- type: marking
+  id: CyHeadStriped
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [TNebri]
+  sprites:
+    - sprite: _Blimpuf/Mobs/Customization/Cyclorite/head.rsi
+      state: striped
+
+- type: marking
+  id: CyHeadTendrils
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [TNebri]
+  sprites:
+    - sprite: _Blimpuf/Mobs/Customization/Cyclorite/head.rsi
+      state: tendrils
+
+- type: marking
+  id: CyHeadTentacles
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [TNebri]
+  sprites:
+    - sprite: _Blimpuf/Mobs/Customization/Cyclorite/head.rsi
+      state: tentacles
+
+- type: marking
+  id: CyArmTendrils
+  bodyPart: Chest
+  markingCategory: Arms
+  speciesRestriction: [TNebri]
+  sprites:
+    - sprite: _Blimpuf/Mobs/Customization/Cyclorite/arms.rsi
+      state: tendrils
+
+- type: marking
+  id: CyArmTentacles
+  bodyPart: Chest
+  markingCategory: Arms
+  speciesRestriction: [TNebri]
+  sprites:
+    - sprite: _Blimpuf/Mobs/Customization/Cyclorite/arms.rsi
+      state: tentacles
+
+- type: marking
+  id: CyLegTendrils
+  bodyPart: Chest
+  markingCategory: Legs
+  speciesRestriction: [TNebri]
+  sprites:
+    - sprite: _Blimpuf/Mobs/Customization/Cyclorite/legs.rsi
+      state: tendrils
+
+- type: marking
+  id: CyLegTentacles
+  bodyPart: Chest
+  markingCategory: Legs
+  speciesRestriction: [TNebri]
+  sprites:
+    - sprite: _Blimpuf/Mobs/Customization/Cyclorite/legs.rsi
+      state: tentacles

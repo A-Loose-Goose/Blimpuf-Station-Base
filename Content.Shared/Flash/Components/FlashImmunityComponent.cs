@@ -24,7 +24,7 @@ public sealed partial class FlashImmunityComponent : Component
 
     //starlight
     /// <summary>
-    /// If true, will affect night vision, thermal vision, and cyclorite vision.
+    /// If true, will affect night vision, thermal vision, and T'Nebri vision.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]

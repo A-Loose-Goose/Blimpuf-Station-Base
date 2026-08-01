@@ -4,7 +4,7 @@
   name: trait-ethnicity-elf-high-name
   description: trait-ethnicity-elf-high-desc
   category: EthnicityTraits
-  cost: 1
+  cost: 0
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -15,14 +15,14 @@
     - !type:SpeciesRequirement
       species:
         - Elf
-        - ProtoElf
+        - NeoElf
 
 - type: trait
   id: WoodElf
   name: trait-ethnicity-elf-wood-name
   description: trait-ethnicity-elf-wood-desc
   category: EthnicityTraits
-  cost: 1
+  cost: 0
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -33,14 +33,14 @@
     - !type:SpeciesRequirement
       species:
         - Elf
-        - ProtoElf
+        - NeoElf
 
 - type: trait
   id: DarkElf
   name: trait-ethnicity-elf-dark-name
   description: trait-ethnicity-elf-dark-desc
   category: EthnicityTraits
-  cost: 1
+  cost: 0
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -52,14 +52,14 @@
     - !type:SpeciesRequirement
       species:
         - Elf
-        - ProtoElf
+        - NeoElf
 
 - type: trait
   id: CaveElf
   name: trait-ethnicity-elf-cave-name
   description: trait-ethnicity-elf-cave-desc
   category: EthnicityTraits
-  cost: 1
+  cost: 0
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -71,4 +71,4 @@
     - !type:SpeciesRequirement
       species:
         - Elf
-        - ProtoElf
+        - NeoElf

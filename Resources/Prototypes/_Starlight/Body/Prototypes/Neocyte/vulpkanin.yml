@@ -1,0 +1,57 @@
+- type: body
+  id: NeoVulp
+  name: neo-vulp # Starlight, quotation marks removed
+  root: torso
+  slots:
+    head:
+      part: HeadNeoVulp
+      connections:
+      - torso
+      organs:
+        brain: OrganNeocyteBrain
+        eyes: OrganNeocyteEyes
+        tongue: OrganNeocyteTongue
+        eye_implant: null
+        brain_implant: null
+    torso:
+      part: TorsoNeoVulp
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      organs:
+        heart: OrganNeocyteHeart
+        lungs: OrganNeocyteLungs
+        stomach: OrganNeocyteStomach # Dear god.. they can eat CHOCOLATE.
+        liver: OrganNeocyteLiver
+        kidneys: OrganNeocyteKidneys
+        cavity: null
+    right arm:
+      part: RightArmNeoVulp
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmNeoVulp
+      connections:
+      - left hand
+    right hand:
+      part: RightHandNeoVulp
+      organs:
+        hand_implant: null
+    left hand:
+      part: LeftHandNeoVulp
+      organs:
+        hand_implant: null
+    right leg:
+      part: RightLegVulpkanin
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegVulpkanin
+      connections:
+      - left foot
+    right foot:
+      part: RightFootVulpkanin
+    left foot:
+      part: LeftFootVulpkanin

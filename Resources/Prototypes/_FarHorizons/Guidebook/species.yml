@@ -1,20 +1,20 @@
 - type: guideEntry
-  id: Protogen
-  name: species-name-protogen
-  text: "/ServerInfo/_FarHorizons/Guidebook/Mobs/Protogen.xml" # Moved to _Starlight due to the number of changes we have to make to them, so we'll maintain them on our own. (We'd pretty much have to <! -- --> comment every single line.)
+  id: Neocyte
+  name: species-name-neocyte
+  text: "/ServerInfo/_FarHorizons/Guidebook/Mobs/Neocyte.xml" # Moved to _Starlight due to the number of changes we have to make to them, so we'll maintain them on our own. (We'd pretty much have to <! -- --> comment every single line.)
   children:
-  - ProtogenFrames # Starlight
-  - TrueProtogen # Starlight, true Protogen
-  - ProtoArachnid
-  - ProtoCyclorite # Starlight
-  - ProtoDiona # Starlight
-  - ProtoElf # Starlight
-  - ProtoHuman # Starlight
-  - ProtoKin # Starlight, moved alphabetically
-  - ProtoMoth
-  - ProtoReptilian # Starlight
-  - ProtoResomi
-  - ProtoSlimePerson
-  - ProtoThaven # Starlight, moved alphabetically
-  - ProtoVox
-  - ProtoVulp
+  - NeocyteFrames # Starlight
+  - TrueNeocyte # Starlight, true Neocyte
+  - NeoArachnid
+  - NeoTNebri # Blimpuf
+  - NeoDiona # Starlight
+  - NeoElf # Starlight
+  - NeoHuman # Starlight
+  - NeoShadekin # Starlight, moved alphabetically
+  - NeoMoth
+  - NeoReptilian # Starlight
+  - NeoResomi
+  - NeoSlimePerson
+  - NeoThaven # Starlight, moved alphabetically
+  - NeoVox
+  - NeoVulp

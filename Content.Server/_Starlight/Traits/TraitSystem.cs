@@ -98,15 +98,17 @@ public sealed partial class TraitSystem : EntitySystem
                 continue;
             }
 
+            var isManagedTrait = _prototype.TryIndex(trait.Category, out var category) && category.Hidden;
+
             // Check global trait count limit
-            if (traitCount >= _maxTraitCount)
+            if (!isManagedTrait && traitCount >= _maxTraitCount)
             {
                 Log.Warning($"Trait {traitId} rejected: global trait count limit ({_maxTraitCount}) exceeded");
                 continue;
             }
 
             // Check global points limit
-            if (totalPoints + trait.Cost > _maxTraitPoints)
+            if (!isManagedTrait && totalPoints + trait.Cost > _maxTraitPoints)
             {
                 Log.Warning(
                     $"Trait {traitId} rejected: global points limit ({_maxTraitPoints}) would be exceeded");
@@ -154,10 +156,13 @@ public sealed partial class TraitSystem : EntitySystem
 
             // Trait is valid, add it
             validTraits.Add(traitId);
-            totalPoints += trait.Cost;
-            traitCount++;
+            if (!isManagedTrait) // Blimpuf - if the trait is managed outside the trait menu
+            {
+                totalPoints += trait.Cost;
+                traitCount++;
+            }
 
-            // Update category tracking
+            // Blimpuf - category limits apply even when a trait is assigned in another menu
             categoryTraitCounts.TryGetValue(trait.Category, out var catCount);
             categoryTraitCounts[trait.Category] = catCount + 1;
 

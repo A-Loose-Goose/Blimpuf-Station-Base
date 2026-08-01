@@ -2227,10 +2227,8 @@ entities:
           - 307
           - 326
           - 325
-          - 310
           - 330
           - 329
-          - 309
           - 311
           - 314
           - 323
@@ -4197,7 +4195,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: OrganCycloriteHeart
+- proto: OrganTNebriHeart
   entities:
   - uid: 307
     components:
@@ -4207,22 +4205,6 @@ entities:
       canCollide: False
     - type: InsideEntityStorage
   - uid: 308
-    components:
-    - type: Transform
-      parent: 304
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-- proto: OrganDwarfHeart
-  entities:
-  - uid: 309
-    components:
-    - type: Transform
-      parent: 304
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 310
     components:
     - type: Transform
       parent: 304

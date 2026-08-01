@@ -231,9 +231,6 @@
   id: DurandTargetingControlModule
 
 - type: Tag
-  id: Dwarf
-
-- type: Tag
   id: ElderArena
 
 - type: Tag
@@ -545,10 +542,10 @@
   id: PrototypeJawsOfLife
 
 - type: Tag
-  id: ProtoElf
+  id: NeoElf
 
 - type: Tag
-  id: ProtoLagomorph
+  id: NeoLagomorph
 
 - type: Tag
   id: PrototypeVibroblade

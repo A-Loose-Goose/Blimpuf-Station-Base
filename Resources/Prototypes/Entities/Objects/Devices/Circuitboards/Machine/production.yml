@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: AutolatheMachineCircuitboard
   parent: BaseMachineCircuitboard
   name: autolathe machine board
@@ -1057,7 +1057,7 @@
     - type: Tag
       tags:
       - MicrowaveMachineBoard
-      - RamChip #Protogen joke, makes them able to eat them. - FH
+      - RamChip #Neocyte joke, makes them able to eat them. - FH
 
 - type: entity
   id: SyndicateMicrowaveMachineCircuitboard

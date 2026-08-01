@@ -1,1 +1,1 @@
-loadout-group-protogen-cybernetics = Neocyte Frames
+loadout-group-neocyte-cybernetics = Neocyte Frames
