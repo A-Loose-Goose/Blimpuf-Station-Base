@@ -96,6 +96,8 @@
     - Binary
     - Common
     - Science
+    defaultChannel: Common
+    allowBlacklistedComms: true
   - type: ActiveRadio
     channels:
     - Binary
@@ -379,6 +381,7 @@
     channels:
     - Binary
     - Syndicate
+    defaultChannel: Syndicate
   - type: ActiveRadio
     channels:
     - Binary
@@ -485,6 +488,7 @@
   - type: IntrinsicRadioTransmitter # can only use binary and xenoborg channel
     channels:
     - Xenoborg
+    defaultChannel: Xenoborg
     # - Binary # Starlight edit: We can't have nice things
   - type: ActiveRadio # but can hear the mothership channel
     channels:

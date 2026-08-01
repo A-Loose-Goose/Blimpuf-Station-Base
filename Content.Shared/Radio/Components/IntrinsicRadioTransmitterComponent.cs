@@ -15,5 +15,17 @@ public sealed partial class IntrinsicRadioTransmitterComponent : Component, ISup
     [DataField, AutoNetworkedField] // Starlight-edit
     public HashSet<ProtoId<RadioChannelPrototype>> Channels = new() { SharedChatSystem.CommonChannel };
 
+    /// <summary>
+    ///     This is the channel that will be used when using the default/department prefix (<see cref="SharedChatSystem.DefaultChannelPrefix"/>).
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public string? DefaultChannel; // Blimpuf | Added support for DefaultChannels to Internal Comms
+
+    /// <summary>
+    ///     To allow channels that got blacklisted using (<see cref="RadioChannelPrototype.HeadsetTransmittable"/>).
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool AllowBlacklistedComms = false;
+
     [DataField, AutoNetworkedField] public HashSet<CustomRadioChannelData> CustomChannels { get; set; } = []; //Starlight
 }

@@ -2,7 +2,7 @@
   parent: TelecomServer
   id: TelecomServerFilledLaw
   categories: [ ShouldMapStation ]
-  suffix: Law
+  suffix: Corporate
   components:
   - type: ContainerFill
     containers:

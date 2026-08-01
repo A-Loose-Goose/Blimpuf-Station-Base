@@ -539,6 +539,9 @@
   id: EncryptionService # ItemMapper: TelecomServer
 
 - type: Tag
+  id: EncryptionCorporate # ItemMapper: TelecomServer
+
+- type: Tag
   id: Enzyme # Storage whitelist: ClothingBeltChef. ItemMapper: ClothingBeltChef
 
 - type: Tag

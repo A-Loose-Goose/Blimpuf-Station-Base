@@ -73,7 +73,7 @@ public sealed partial class RadioSystem : EntitySystem
 
     private void OnIntrinsicSpeak(EntityUid uid, IntrinsicRadioTransmitterComponent component, EntitySpokeEvent args)
     {
-        if (args.Channel != null && component.Channels.Contains(args.Channel.ID))
+        if (args.Channel != null && component.Channels.Contains(args.Channel.ID) && (args.Channel.HeadsetTransmittable || component.AllowBlacklistedComms)) // Remove common from Internal Radio's
         {
             SendRadioMessage(uid, args.Message, args.Channel, uid, args.Language); // Starlight
             args.Channel = null; // prevent duplicate messages from other listeners.

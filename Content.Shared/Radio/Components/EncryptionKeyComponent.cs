@@ -20,7 +20,7 @@ public sealed partial class EncryptionKeyComponent : Component, ISupportsCustomC
     public HashSet<ProtoId<RadioChannelPrototype>> MutedChannels = new();
 
     /// <summary>
-    ///     This is the channel that will be used when using the default/department prefix (<see cref="SharedChatSystem.DefaultChannelKey"/>).
+    ///     This is the channel that will be used when using the default/department prefix (<see cref="SharedChatSystem.DefaultChannelPrefix"/>).
     /// </summary>
     [DataField, AutoNetworkedField] // Starlight edit
     public string? DefaultChannel; // Starlight edit | Use string to support custom channels

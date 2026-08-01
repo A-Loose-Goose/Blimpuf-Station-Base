@@ -30,7 +30,7 @@ namespace Content.Shared.Chat;
 
 public abstract partial class SharedChatSystem : EntitySystem
 {
-    public const char RadioCommonPrefix = ';';
+    public const char RadioCommonPrefix = '#';  // Blimpuf: Changed to # to not clash
     public const char RadioChannelPrefix = ':';
     public const char RadioChannelAltPrefix = '.';
     public const char LocalPrefix = '>';
@@ -43,7 +43,8 @@ public abstract partial class SharedChatSystem : EntitySystem
     public const char AdminPrefix = ']';
     public const char WhisperPrefix = ',';
 
-    public const char DefaultChannelKey = 'h';
+    public const char DefaultChannelPrefix = ';'; // Blimpuf: Default changed to ; to be more accessible
+    public const char DefaultChannelAltKey = 'h'; // Blimpuf
 
     public const int VoiceRange = 10; // how far voice goes in world units
     public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
@@ -55,7 +56,6 @@ public abstract partial class SharedChatSystem : EntitySystem
 
     public static readonly ProtoId<RadioChannelPrototype> CommonChannel = "Common";
 
-    public static readonly string DefaultChannelPrefix = $"{RadioChannelPrefix}{DefaultChannelKey}";
     public static readonly ProtoId<SpeechVerbPrototype> DefaultSpeechVerb = "Default";
 
     [Dependency] private IPrototypeManager _prototypeManager = default!;
@@ -188,6 +188,33 @@ public abstract partial class SharedChatSystem : EntitySystem
             return true;
         }
 
+        if (input.StartsWith(DefaultChannelPrefix) || (input.Length >= 2 && input[1] == DefaultChannelAltKey))
+        {
+            if (input.StartsWith(DefaultChannelPrefix))
+                output = SanitizeMessageCapital(input[1..].TrimStart()); //Added to trim the ";"
+            else
+                output = SanitizeMessageCapital(input[2..].TrimStart()); //To trim the :h
+
+            var ev = new GetDefaultRadioChannelEvent();
+            RaiseLocalEvent(source, ev);
+
+            //Blimpuf begin
+            if (ev.Channel == null && TryComp<IntrinsicRadioTransmitterComponent>(source, out var radio)) //If the User is Borgie / Using InternalRadio with DefaultChannel set
+            {
+                ev.Channel = radio.DefaultChannel;
+            }
+            //Blimpuf end
+
+            //Starlight begin
+            if (ev.Channel != null)
+                if (!_prototypeManager.TryIndex(ev.Channel, out channel))
+                {
+                    TryGetCustomChannel(source, ev.Channel, out customChannel);
+                }
+            //Starlight end
+            return true;
+        }
+
         if (!(input.StartsWith(RadioChannelPrefix) || input.StartsWith(RadioChannelAltPrefix)))
             return false;
 
@@ -202,21 +229,6 @@ public abstract partial class SharedChatSystem : EntitySystem
         var channelKey = input[1];
         channelKey = char.ToLower(channelKey);
         output = SanitizeMessageCapital(input[2..].TrimStart());
-
-        if (channelKey == DefaultChannelKey)
-        {
-            var ev = new GetDefaultRadioChannelEvent();
-            RaiseLocalEvent(source, ev);
-
-            //Starlight begin
-            if (ev.Channel != null)
-                if (!_prototypeManager.TryIndex(ev.Channel, out channel))
-                {
-                    TryGetCustomChannel(source, ev.Channel, out customChannel);
-                }
-            //Starlight end
-            return true;
-        }
 
         // Starlight begin
         var protoResult = TryGetChannelsFromKeyCode(source, channelKey, out var channelMatches);
