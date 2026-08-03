@@ -1,10 +1,10 @@
-[head=1][color=#135285]────────────────────[/color][/head]
-[color=#1b67a5]█▄░░█ ▀▀█▀▀[/color] [head=3] [color=#135285]NanoTrasen[/color][/head]
-[color=#1b67a5]█▀█▄█ ░░█░░[/color] [head=3] [color=#135285]Representative[/color][/head]
-[color=#1b67a5]█░░▀█ ░░█░░[/color]  [color=#aaaaaa][italic]OFFICIAL CORPORATE DOCUMENT[/italic][/color]
-[head=1][color=#135285]────────────────────[/color][/head]
-[head=2][color=#135285][bold]Classified Corporate Document[/bold][/color][/head]
-[head=1][color=#135285]────────────────────[/color][/head]
+[head=1][color=#ffd700 ]────────────────────[/color][/head]
+[color=#189450]█▀▀▀▀ █▀▀▀▀[/color] [head=3] [color=#189450]Central Command[/color][/head]
+[color=#189450]█░░░░ █░░░░[/color] [head=3] [color=#189450]Representative[/color][/head]
+[color=#189450]▀▀▀▀▀ ▀▀▀▀▀[/color]  [color=#aaaaaa][italic]OFFICIAL CORPORATE DOCUMENT[/italic][/color]
+[head=1][color=#ffd700 ]────────────────────[/color][/head]
+[head=2][color=#189450][bold]Classified Corporate Document[/bold][/color][/head]
+[head=1][color=#ffd700 ]────────────────────[/color][/head]
 [mono]
 [bold]Subject:[/bold] Nuclear Operatives
 [bold]Association:[/bold] Spinward Syndicate, Syndicate High Command, the Gorlex Marauders
@@ -20,4 +20,4 @@ The exact source of the Nuclear Warheads these Operatives utilize is currently u
 [/mono]
 
 
-[head=1][color=#135285]────────────────────[/color][/head]
+[head=1][color=#ffd700]────────────────────[/color][/head]

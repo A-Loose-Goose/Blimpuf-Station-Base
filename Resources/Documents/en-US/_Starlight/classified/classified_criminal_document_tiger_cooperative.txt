@@ -1,8 +1,8 @@
-[head=1][color=#ad0101]────────────────────[/color][/head]
-[color=#C70667]█░░ █▀▀█ █░░░█[/color] [head=3]  [color=#ad0101]INTERNAL AFFAIRS BUREAU[/color][/head]
-[color=#C70667]█░░ █▄▄█ █▄█▄█[/color][bolditalic]  [color=#ad0101] No one is above the law[/color][/bolditalic]
-[color=#C70667]▀▀▀ ▀░░▀ ░▀░▀░[/color]   [color=#aaaaaa][italic]OFFICIAL LAW OFFICE DOCUMENT[/italic][/color]
-[head=1][color=#ad0101]────────────────────
+[head=1][color=#189450]────────────────────[/color][/head]
+[color=#189450]█░░ █▀▀█ █░░░█[/color] [head=3]  [color=#189450]INTERNAL AFFAIRS BUREAU[/color][/head]
+[color=#189450]█░░ █▄▄█ █▄█▄█[/color][bolditalic]  [color=#189450] No one is above the law[/color][/bolditalic]
+[color=#189450]▀▀▀ ▀░░▀ ░▀░▀░[/color]   [color=#aaaaaa][italic]OFFICIAL LAW OFFICE DOCUMENT[/italic][/color]
+[head=1][color=#189450]────────────────────
 Classified Criminal Report
 ────────────────────[/color][/head]
 [mono]
@@ -21,5 +21,5 @@ The cult rapidly morphed their beliefs into Changeling worship, believing them t
 Martinson himself is believed to still be alive within the compound, his life either prolonged with drugs or from being assimilated by a Changeling.
 [/mono]
 
-[head=1][color=#ad0101]────────────────────[/color][/head]
+[head=1][color=#189450]────────────────────[/color][/head]
 

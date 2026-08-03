@@ -511,3 +511,25 @@
   applyMaterialDiscount: false
   materials:
     SheetPrinter: 100
+
+# Blimpuf Additions
+
+- type: latheRecipe
+  id: PrintedDocumentChemicalContrabandRecipe
+  result: PrintedDocumentChemicalContraband
+  categories:
+    - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+
+- type: latheRecipe
+  id: PrintedDocumentCargoShuttleDepartureRecipe
+  result: PrintedDocumentCargoShuttleDeparture
+  categories:
+    - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100

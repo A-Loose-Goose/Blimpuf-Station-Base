@@ -19,6 +19,7 @@
     - id: SalvageShuttleConsoleCircuitboard #starlight
     - id: MiningShuttleConsoleCircuitboard #starlight
     - id: EncryptionKeySalvage #starlight
+    - id: PrintedDocumentCargoShuttleDeparture #Blimpuf
     - id: PrintedDocumentGreenshiftAlert #SL
       conditions: #SL
       - !type:GamemodeCondition #SL
@@ -322,6 +323,7 @@
     - id: CMOLicense
     - id: BottleCaseMedicalFilled
     - id: PenPackMedicalFilled
+    - id: PrintedDocumentChemicalContraband # Blimpuf
     - id: EncryptionKeyMedicalScience # Steal target
       prob: 0.5
     - id: PrintedDocumentGreenshiftAlert

@@ -495,3 +495,25 @@
   components:
     - type: Paper
       content: doc-text-printer-station-location
+
+#Blimpuf Additions
+
+# Chemical Contraband Form
+
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentChemicalContraband
+  name: Chemical Contraband Form
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-chemical-contraband-form
+
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentCargoShuttleDeparture
+  name: Cargo Shuttle Departure Form
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-cargo-shuttle-depature-form
