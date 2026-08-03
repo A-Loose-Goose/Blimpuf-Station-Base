@@ -1,8 +1,8 @@
-[head=1][color=#ad0101]────────────────────[/color][/head]
-[color=#C70667]█░░ █▀▀█ █░░░█[/color] [head=3]  [color=#ad0101]INTERNAL AFFAIRS BUREAU[/color][/head]
-[color=#C70667]█░░ █▄▄█ █▄█▄█[/color][bolditalic]  [color=#ad0101] No one is above the law[/color][/bolditalic]
-[color=#C70667]▀▀▀ ▀░░▀ ░▀░▀░[/color]   [color=#aaaaaa][italic]OFFICIAL LAW OFFICE DOCUMENT[/italic][/color]
-[head=1][color=#ad0101]────────────────────
+[head=1][color=#189450]────────────────────[/color][/head]
+[color=#189450]█░░ █▀▀█ █░░░█[/color] [head=3]  [color=#189450]INTERNAL AFFAIRS BUREAU[/color][/head]
+[color=#189450]█░░ █▄▄█ █▄█▄█[/color][bolditalic]  [color=#189450] No one is above the law[/color][/bolditalic]
+[color=#189450]▀▀▀ ▀░░▀ ░▀░▀░[/color]   [color=#aaaaaa][italic]OFFICIAL LAW OFFICE DOCUMENT[/italic][/color]
+[head=1][color=#189450]────────────────────
 Classified Criminal Report
 ────────────────────[/color][/head]
 [mono]
@@ -19,5 +19,5 @@ Comitas Systems' CEO was captured and killed, however his daughter ████�
 Comitas Systems software and hardware is heavily integrated into nearly every system in the Starlight Sector due to their assets being seized by NanoTrasen following their dismantling by the Trans-Solar Federation. This poses a significant potential security risk, but the cost of removing and replacing these systems exceeds corporate budget at this time, and has only been completed in some key systems.
 [/mono]
 
-[head=1][color=#ad0101]────────────────────[/color][/head]
+[head=1][color=#189450]────────────────────[/color][/head]
 

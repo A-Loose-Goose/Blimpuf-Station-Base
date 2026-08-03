@@ -111,6 +111,7 @@
       amount: 2
     # Starlight end
     - id: ClothingEyesGlassesChemical
+    - id: PrintedDocumentChemicalContraband # Blimpuf
     - id: ChemBag
     - id: Dropper
     - id: HandLabeler
