@@ -4384,5 +4384,16 @@ Entries:
   id: 7001
   time: '2026-08-01T20:57:04.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/70
+- author: ItsMaitake
+  changes:
+  - message: Chemical Contraband Form.
+    type: Add
+  - message: Cargo Shuttle Departure Form.
+    type: Add
+  - message: Coloration of headers for Secure Briefing Documents.
+    type: Tweak
+  id: 7201
+  time: '2026-08-03T23:10:38.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/72
 Order: -1
 
