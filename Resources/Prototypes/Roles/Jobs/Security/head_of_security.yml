@@ -19,6 +19,7 @@
     - !type:TraitsRequirement # Starlight
       traits:
         - Iterator
+        - Blindness
       inverted: true
   weight: 10
   startingGear: HoSGear
