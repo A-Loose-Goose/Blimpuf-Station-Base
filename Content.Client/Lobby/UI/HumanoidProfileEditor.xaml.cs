@@ -127,7 +127,6 @@ namespace Content.Client.Lobby.UI
         public event Action<List<ProtoId<GuideEntryPrototype>>>? OnOpenGuidebook;
 
         private readonly ISawmill _sawmill;
-        
 
 
         // Cosmatic Drift Record System-start
