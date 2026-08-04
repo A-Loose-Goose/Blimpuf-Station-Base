@@ -4423,5 +4423,15 @@ Entries:
   id: 7501
   time: '2026-08-04T18:59:23.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/75
+- author: ItsMaitake
+  changes:
+  - message: Changed the name of the "Liberation Station Circuitboard" to the "Amm-O-Mat
+      Circuitboard".
+    type: Tweak
+  - message: Mini Security Jetpacks are now blue.
+    type: Tweak
+  id: 7601
+  time: '2026-08-04T23:43:27.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/76
 Order: -1
 
