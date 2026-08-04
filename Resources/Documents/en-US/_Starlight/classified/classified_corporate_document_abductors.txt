@@ -1,10 +1,10 @@
-[head=1][color=#ffd700 ]────────────────────[/color][/head]
-[color=#189450]█▀▀▀▀ █▀▀▀▀[/color] [head=3] [color=#189450]Central Command[/color][/head]
-[color=#189450]█░░░░ █░░░░[/color] [head=3] [color=#189450]Representative[/color][/head]
-[color=#189450]▀▀▀▀▀ ▀▀▀▀▀[/color]  [color=#aaaaaa][italic]OFFICIAL CORPORATE DOCUMENT[/italic][/color]
-[head=1][color=#ffd700 ]────────────────────[/color][/head]
-[head=2][color=#189450][bold]Classified Corporate Document[/bold][/color][/head]
-[head=1][color=#ffd700 ]────────────────────[/color][/head]
+[head=1][color=#FFC000]────────────────────[/color][/head]
+[color=#13723e]█▀▀▀▀ █▀▀▀▀[/color] [head=3] [color=#13723e]Central Command[/color][/head]
+[color=#13723e]█░░░░ █░░░░[/color] [head=3] [color=#13723e]Representative[/color][/head]
+[color=#13723e]▀▀▀▀▀ ▀▀▀▀▀[/color]  [color=#aaaaaa][italic]OFFICIAL CORPORATE DOCUMENT[/italic][/color]
+[head=1][color=#FFC000]────────────────────[/color][/head]
+[head=1][color=#13723e]Classified Corporate Report[/bold][/color][/head]
+[head=1][color=#FFC000]────────────────────[/color][/head]
 [mono]
 [bold]Subject:[/bold] Abductors
 [bold]Association:[/bold] Unknown
@@ -20,4 +20,4 @@ The end goal of these abductions is unknown.
 [/mono]
 
 
-[head=1][color=#ffd700 ]────────────────────[/color][/head]
+[head=1][color=#FFC000 ]────────────────────[/color][/head]
