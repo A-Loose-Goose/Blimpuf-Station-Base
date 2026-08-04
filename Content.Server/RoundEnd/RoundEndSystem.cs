@@ -464,33 +464,6 @@ namespace Content.Server.RoundEnd
         public bool IsRestartTimerActive() =>
             _gameTicker.RunLevel == GameRunLevel.PostRound && _countdownTokenSource is not null;
 
-        private void StartCallVote()
-        {
-            var options = new VoteOptions() { DisplayVotes = false, Duration = TimeSpan.FromSeconds(30), VoterEligibility = VoteManager.VoterEligibility.NonAntag, Title = Loc.GetString("round-end-system-shuttle-auto-called-call-vote")};
-            options.SetInitiatorOrServer(null);
-            options.Options.Add(("Yes", 0));
-            options.Options.Add(("No", 1));
-
-            var vote = _voteManager.CreateVote(options);
-            vote.OnFinished += (_, args) =>
-            {
-                if (args.Winner == null)
-                {
-                    RequestRoundEnd(null, false, "round-end-system-shuttle-auto-called-announcement");
-                    return;
-                }
-
-                if ((int)args.Winner == 0)
-                {
-                    RequestRoundEnd(null, false, "round-end-system-shuttle-auto-called-announcement");
-                }
-                else
-                {
-                    _chatManager.DispatchServerAnnouncement(Loc.GetString("round-end-system-shuttle-auto-vote-result-no", ("minutes",_cfg.GetCVar(CCVars.EmergencyShuttleAutoCallExtensionTime))));
-                }
-            };
-        }
-
         #endregion
     }
 
