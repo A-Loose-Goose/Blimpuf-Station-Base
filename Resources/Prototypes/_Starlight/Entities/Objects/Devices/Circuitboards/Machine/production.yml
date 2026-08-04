@@ -127,8 +127,8 @@
 - type: entity
   id: VendingMachineAmmoCircuitboard
   parent: BaseMachineCircuitboard
-  name: liberation station circuitboard
-  description: A machine printed circuit board for a liberation station machine
+  name: Amm-O-Mat circuitboard
+  description: A machine printed circuit board for an Amm-O-Mat machine
   components:
     - type: Sprite
       state: security
