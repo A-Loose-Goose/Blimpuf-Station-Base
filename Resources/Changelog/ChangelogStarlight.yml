@@ -4412,5 +4412,16 @@ Entries:
   id: 7401
   time: '2026-08-04T08:22:24.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/74
+- author: LadyLiliana
+  changes:
+  - message: Unique Stamps for Magistrate, IAA and CSOP.
+    type: Add
+  - message: IAA Paperwork Headers.
+    type: Fix
+  - message: Several Stamps having the wrong colours.
+    type: Fix
+  id: 7501
+  time: '2026-08-04T18:59:23.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/75
 Order: -1
 
