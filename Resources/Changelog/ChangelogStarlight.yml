@@ -4402,5 +4402,15 @@ Entries:
   id: 7301
   time: '2026-08-04T05:13:01.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/73
+- author: ItsMaitake
+  changes:
+  - message: CC Officials now spawn with CC Clipboards, not NT Clipboards.
+    type: Tweak
+  - message: CCR locker now features a golden CC emblem on its door, instead of a
+      golden N.
+    type: Tweak
+  id: 7401
+  time: '2026-08-04T08:22:24.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/74
 Order: -1
 
