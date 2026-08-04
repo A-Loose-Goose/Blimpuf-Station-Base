@@ -160,6 +160,7 @@ namespace Content.IntegrationTests.Tests
         ///     all components on every entity.
         /// </summary>
         [Test]
+        [NonParallelizable]
         public async Task SpawnAndDirtyAllEntities()
         {
             var pair = Pair;
