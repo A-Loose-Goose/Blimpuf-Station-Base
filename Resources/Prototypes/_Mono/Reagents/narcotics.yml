@@ -39,7 +39,7 @@
           reagent: Phenylpiperidine
           max: 4.99
         - !type:MetabolizerTypeCondition
-          type: [ Tnebri ]
+          type: [ TNebri ]
         reagent: Phenylpiperidine
         amount: -0.1
         # Starlight-End
