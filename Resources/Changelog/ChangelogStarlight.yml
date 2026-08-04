@@ -4395,5 +4395,12 @@ Entries:
   id: 7201
   time: '2026-08-03T23:10:38.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/72
+- author: ItsMaitake
+  changes:
+  - message: Cargo Shuttle Departure form acronym corrected.
+    type: Tweak
+  id: 7301
+  time: '2026-08-04T05:13:01.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/73
 Order: -1
 
