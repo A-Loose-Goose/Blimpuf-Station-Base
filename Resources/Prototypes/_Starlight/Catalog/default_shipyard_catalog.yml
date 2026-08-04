@@ -26,15 +26,6 @@
   shuttlePath: /Maps/_Starlight/Shuttles/prospector.yml
 
 - type: vessel
-  id: Ingeniator
-  name: NTS 'Jumpstart' Mini-Ingeniator
-  description: A large engineering vessel designed to "Jumpstart" a station without a working Engineering Department.
-  price: 85000
-  category: Large
-  group: Civilian
-  shuttlePath: /Maps/_Starlight/Shuttles/Mini_Ingeniator.yml
-
-- type: vessel
   id: Comet
   name: EXP-Comet
   description: A large salvage vessel designed to hold entire salvaging teams for operations.
@@ -87,15 +78,6 @@
   category: Small
   group: Civilian
   shuttlePath: /Maps/_Starlight/Shuttles/Honeybee.yml
-
-- type: vessel
-  id: Reach
-  name: SS-Reach III
-  description: A large station vessel made for skeleton crews that we decided to allow stations to buy.
-  price: 700500
-  category: Humongous
-  group: Command
-  shuttlePath: /Maps/_Starlight/Shuttles/ReachButShipyard.yml
 
 - type: vessel
   id: Apotherkerin
