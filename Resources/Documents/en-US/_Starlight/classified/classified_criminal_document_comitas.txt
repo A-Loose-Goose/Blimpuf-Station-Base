@@ -2,9 +2,9 @@
 [color=#13723e]▀█▀ █▀▀█ █▀▀█[/color] [head=3]  [color=#13723e]INTERNAL AFFAIRS BUREAU[/color][/head]
 [color=#13723e]░█░ █▄▄█ █▄▄█[/color][bolditalic]  [color=#13723e] No one is above the law[/color][/bolditalic]
 [color=#13723e]▀▀▀ ▀░░▀ ▀░░▀[/color]   [color=#aaaaaa][italic]OFFICIAL IAA OFFICE DOCUMENT[/italic][/color]
-[head=1][color=#189450]────────────────────[/color]
-[color=#13723e]Classified Criminal Report[/color]
-[color=#189450]────────────────────[/color][/head]
+[head=1][color=#189450]────────────────────[/color][/head]
+[head=1][color=#13723e]Classified Criminal Report[/color][/head]
+[head=1][color=#189450]────────────────────[/color][/head]
 [mono]
 [bold]Subject:[/bold] Comitas Systems
 [bold]Association:[/bold] The Syndicate, the Spinward Syndicate
