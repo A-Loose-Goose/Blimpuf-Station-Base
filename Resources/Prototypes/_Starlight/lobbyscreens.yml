@@ -23,22 +23,10 @@
   artist: lobby-state-background-triestent-artist
 
 - type: lobbyBackground
-  id: LingKiller
-  background: /Textures/_Starlight/LobbyScreens/thelingkiller.webp
-  title: lobby-state-background-lingkiller-title
-  artist: lobby-state-background-lingkiller-artist
-
-- type: lobbyBackground
   id: NTOsprey
   background: /Textures/_Starlight/LobbyScreens/ntosprey.webp
   title: lobby-state-background-ntosprey-title
   artist: lobby-state-background-ntosprey-artist
-
-- type: lobbyBackground
-  id: FriendsForever
-  background: /Textures/_Starlight/LobbyScreens/friendsforever.webp
-  title: lobby-state-background-friendsforever-title
-  artist: lobby-state-background-friendsforever-artist
 
 - type: lobbyBackground
   id: AgainstTheXeno
@@ -148,15 +136,34 @@
   title: lobby-state-background-katievssyndie-title
   artist: lobby-state-background-katievssyndie-artist
 
-- type: lobbyBackground
-  id: NoGalCom
-  background: /Textures/_Starlight/LobbyScreens/NoGalCom.webp
-  title: lobby-state-background-nogalcom-title
-  artist: lobby-state-background-nogalcom-artist
+# Blimpuf
 
 - type: lobbyBackground
-  id: AiderThief
-  background: /Textures/_Starlight/LobbyScreens/AiderThief.webp
-  title: lobby-state-background-aiderthief-title
-  artist: lobby-state-background-aiderthief-artist
+  id: SlimesInSpace
+  background: /Textures/_Starlight/LobbyScreens/SlimesInSpace.webp
+  title: lobby-state-background-slimesinspace-title
+  artist: lobby-state-background-slimesinspace-artist
 
+- type: lobbyBackground
+  id: LocalBotanistsMissing
+  background: /Textures/_Starlight/LobbyScreens/LocalBotanistsMissing.webp
+  title: lobby-state-background-localbotanistsmissing-title
+  artist: lobby-state-background-localbotanistsmissing-artist
+
+- type: lobbyBackground
+  id: TheCaptainVersusNarsie
+  background: /Textures/_Starlight/LobbyScreens/TheCaptainVersusNar'sie.webp
+  title: lobby-state-background-thecaptainversusnarsie-title
+  artist: lobby-state-background-thecaptainversusnarsie-artist
+
+- type: lobbyBackground
+  id: FearIsHonk
+  background: /Textures/_Starlight/LobbyScreens/TheOnlyThingTheyFearIsHonk.webp
+  title: lobby-state-background-fearishonk-title
+  artist: lobby-state-background-fearishonk-artist
+
+- type: lobbyBackground
+  id: StationVisitor
+  background: /Textures/_Starlight/LobbyScreens/StationVisitor.webp
+  title: lobby-state-background-stationvisitor-title
+  artist: lobby-state-background-stationvisitor-artist
