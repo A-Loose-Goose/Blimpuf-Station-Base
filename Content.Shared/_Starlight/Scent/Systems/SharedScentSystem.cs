@@ -3,7 +3,6 @@ using Content.Shared.Actions;
 using Content.Shared.Actions.Components;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
-using Content.Shared.Mobs;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Popups;
 using Robust.Shared.Audio.Systems;
@@ -13,10 +12,10 @@ namespace Content.Shared._Starlight.Scent.Systems;
 // See ClientScentSystem for the concrete client-side subclass.
 public abstract class SharedScentSystem : EntitySystem
 {
-    [Dependency] protected readonly SharedActionsSystem Actions = default!;
-    [Dependency] protected readonly SharedAudioSystem Audio = default!;
-    [Dependency] protected readonly SharedPopupSystem Popup = default!;
-    [Dependency] protected readonly MobStateSystem MobState = default!;
+    [Dependency] protected SharedActionsSystem Actions = default!;
+    [Dependency] protected SharedAudioSystem Audio = default!;
+    [Dependency] protected SharedPopupSystem Popup = default!;
+    [Dependency] protected MobStateSystem MobState = default!;
     [Dependency] private ISharedAdminLogManager _adminLogger = default!;
 
     public override void Initialize()
@@ -27,13 +26,6 @@ public abstract class SharedScentSystem : EntitySystem
         SubscribeLocalEvent<SmellerComponent, ComponentShutdown>(OnSmellerShutdown);
         SubscribeLocalEvent<SmellerComponent, ToggleSniffActionEvent>(OnToggleSniff);
         SubscribeLocalEvent<SmellerComponent, SneezeActionEvent>(OnSneeze);
-        SubscribeLocalEvent<SmellerComponent, MobStateChangedEvent>(OnMobStateChanged);
-    }
-
-    private void OnMobStateChanged(Entity<SmellerComponent> ent, ref MobStateChangedEvent args)
-    {
-        if (args.NewMobState == Content.Shared.Mobs.MobState.Dead)
-            ClearTrackedScent(ent);
     }
 
     private void OnSmellerMapInit(Entity<SmellerComponent> ent, ref MapInitEvent args)
