@@ -100035,7 +100035,7 @@ entities:
     - type: Transform
       pos: -23.5,-60.5
       parent: 2
-- proto: FaxMachineNTBlueshield
+- proto: FaxMachineCCEnforcer
   entities:
   - uid: 15810
     components:
@@ -100049,21 +100049,21 @@ entities:
     - type: Transform
       pos: 19.5,37.5
       parent: 2
-- proto: FaxMachineNTInternalAffairs
+- proto: FaxMachineCCInternalAffairs
   entities:
   - uid: 15812
     components:
     - type: Transform
       pos: -25.5,0.5
       parent: 2
-- proto: FaxMachineNTMagi
+- proto: FaxMachineCCMagi
   entities:
   - uid: 15813
     components:
     - type: Transform
       pos: -28.5,23.5
       parent: 2
-- proto: FaxMachineNTRep
+- proto: FaxMachineCCRep
   entities:
   - uid: 15814
     components:

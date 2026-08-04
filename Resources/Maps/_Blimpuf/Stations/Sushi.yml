@@ -73940,140 +73940,19 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: FaxMachineBase
-  entities:
-  - uid: 11398
-    components:
-    - type: Transform
-      pos: 115.5,72.5
-      parent: 2
-    - type: FaxMachine
-      name: Science
-  - uid: 11399
-    components:
-    - type: Transform
-      pos: 93.5,104.5
-      parent: 2
-    - type: FaxMachine
-      name: Security
-  - uid: 11400
-    components:
-    - type: Transform
-      pos: 110.5,47.5
-      parent: 2
-    - type: FaxMachine
-      name: Psychology
-  - uid: 11401
-    components:
-    - type: Transform
-      pos: 38.5,85.5
-      parent: 2
-    - type: FaxMachine
-      name: Chaplain
-  - uid: 11402
-    components:
-    - type: Transform
-      pos: 45.5,99.5
-      parent: 2
-    - type: FaxMachine
-      name: Library
-  - uid: 11403
-    components:
-    - type: Transform
-      pos: 80.5,24.5
-      parent: 2
-    - type: FaxMachine
-      name: QM's Office
-  - uid: 11404
-    components:
-    - type: Transform
-      pos: 67.5,38.5
-      parent: 2
-    - type: FaxMachine
-      name: Cargo
-  - uid: 11405
-    components:
-    - type: Transform
-      pos: 117.5,56.5
-      parent: 2
-    - type: FaxMachine
-      name: Medical
-  - uid: 11406
-    components:
-    - type: Transform
-      pos: 130.5,62.5
-      parent: 2
-    - type: FaxMachine
-      name: CMO
-  - uid: 11407
-    components:
-    - type: Transform
-      pos: 72.5,97.5
-      parent: 2
-    - type: FaxMachine
-      name: HoP
-  - uid: 11408
-    components:
-    - type: Transform
-      pos: 99.5,110.5
-      parent: 2
-    - type: FaxMachine
-      name: HoS
-  - uid: 11409
-    components:
-    - type: Transform
-      pos: 99.5,89.5
-      parent: 2
-    - type: FaxMachine
-      name: Lawyer
-  - uid: 11410
-    components:
-    - type: Transform
-      pos: 127.5,92.5
-      parent: 2
-    - type: FaxMachine
-      name: Detective
-  - uid: 11411
-    components:
-    - type: Transform
-      pos: 79.5,61.5
-      parent: 2
-    - type: FaxMachine
-      name: Bridge
-  - uid: 11412
-    components:
-    - type: Transform
-      pos: 42.5,33.5
-      parent: 2
-    - type: FaxMachine
-      name: CE's Office
-  - uid: 11413
-    components:
-    - type: Transform
-      pos: 48.5,34.5
-      parent: 2
-    - type: FaxMachine
-      name: Engineering
-  - uid: 11414
-    components:
-    - type: Transform
-      pos: 123.5,39.5
-      parent: 2
-    - type: FaxMachine
-      name: AI
-  - uid: 11415
-    components:
-    - type: Transform
-      pos: 119.5,81.5
-      parent: 2
-    - type: FaxMachine
-      name: RD's Office
 - proto: FaxMachineCaptain
   entities:
   - uid: 11416
     components:
     - type: Transform
       pos: 71.5,70.5
+      parent: 2
+- proto: FaxMachineCargo
+  entities:
+  - uid: 11404
+    components:
+    - type: Transform
+      pos: 67.5,38.5
       parent: 2
 - proto: FaxMachineCargoMining
   entities:
@@ -74082,7 +73961,63 @@ entities:
     - type: Transform
       pos: 99.5,40.5
       parent: 2
-- proto: FaxMachineNTBlueshield
+- proto: FaxMachineCargoQM
+  entities:
+  - uid: 11403
+    components:
+    - type: Transform
+      pos: 80.5,24.5
+      parent: 2
+- proto: FaxMachineCommandAICore
+  entities:
+  - uid: 11414
+    components:
+    - type: Transform
+      pos: 123.5,39.5
+      parent: 2
+- proto: FaxMachineCommandBridge
+  entities:
+  - uid: 11411
+    components:
+    - type: Transform
+      pos: 79.5,61.5
+      parent: 2
+- proto: FaxMachineEngineering
+  entities:
+  - uid: 11413
+    components:
+    - type: Transform
+      pos: 48.5,34.5
+      parent: 2
+- proto: FaxMachineEngineeringCE
+  entities:
+  - uid: 11412
+    components:
+    - type: Transform
+      pos: 42.5,33.5
+      parent: 2
+- proto: FaxMachineMedical
+  entities:
+  - uid: 11405
+    components:
+    - type: Transform
+      pos: 117.5,56.5
+      parent: 2
+- proto: FaxMachineMedicalCMO
+  entities:
+  - uid: 11406
+    components:
+    - type: Transform
+      pos: 130.5,62.5
+      parent: 2
+- proto: FaxMachineMedicalPsychology
+  entities:
+  - uid: 11400
+    components:
+    - type: Transform
+      pos: 110.5,47.5
+      parent: 2
+- proto: FaxMachineCCEnforcer
   entities:
   - uid: 24883
     components:
@@ -74096,26 +74031,89 @@ entities:
     - type: Transform
       pos: 30.5,71.5
       parent: 2
-- proto: FaxMachineNTInternalAffairs
+- proto: FaxMachineCCInternalAffairs
   entities:
   - uid: 15133
     components:
     - type: Transform
       pos: 148.5,94.5
       parent: 2
-- proto: FaxMachineNTMagi
+- proto: FaxMachineCCMagi
   entities:
   - uid: 24949
     components:
     - type: Transform
       pos: 132.5,105.5
       parent: 2
-- proto: FaxMachineNTRep
+- proto: FaxMachineCCRep
   entities:
   - uid: 12311
     components:
     - type: Transform
       pos: 148.5,96.5
+      parent: 2
+- proto: FaxMachineScience
+  entities:
+  - uid: 11398
+    components:
+    - type: Transform
+      pos: 115.5,72.5
+      parent: 2
+- proto: FaxMachineScienceRD
+  entities:
+  - uid: 11415
+    components:
+    - type: Transform
+      pos: 119.5,81.5
+      parent: 2
+- proto: FaxMachineSecurity
+  entities:
+  - uid: 11399
+    components:
+    - type: Transform
+      pos: 93.5,104.5
+      parent: 2
+- proto: FaxMachineSecurityDetective
+  entities:
+  - uid: 11410
+    components:
+    - type: Transform
+      pos: 127.5,92.5
+      parent: 2
+- proto: FaxMachineSecurityHoS
+  entities:
+  - uid: 11408
+    components:
+    - type: Transform
+      pos: 99.5,110.5
+      parent: 2
+- proto: FaxMachineServiceChaplain
+  entities:
+  - uid: 11401
+    components:
+    - type: Transform
+      pos: 38.5,85.5
+      parent: 2
+- proto: FaxMachineServiceHoP
+  entities:
+  - uid: 11407
+    components:
+    - type: Transform
+      pos: 72.5,97.5
+      parent: 2
+- proto: FaxMachineServiceLawyer
+  entities:
+  - uid: 11409
+    components:
+    - type: Transform
+      pos: 99.5,89.5
+      parent: 2
+- proto: FaxMachineServiceLibrary
+  entities:
+  - uid: 11402
+    components:
+    - type: Transform
+      pos: 45.5,99.5
       parent: 2
 - proto: FenceMetalGate
   entities:

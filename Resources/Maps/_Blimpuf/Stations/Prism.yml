@@ -72892,248 +72892,232 @@ entities:
       fixtures: {}
 - proto: FaxMachineBase
   entities:
-  - uid: 11128
-    components:
-    - type: Transform
-      pos: 21.5,46.5
-      parent: 2
-    - type: FaxMachine
-      name: Kitchen
-  - uid: 11129
-    components:
-    - type: Transform
-      pos: 78.5,42.5
-      parent: 2
-    - type: FaxMachine
-      name: Virology
-  - uid: 11130
-    components:
-    - type: Transform
-      pos: 53.5,71.5
-      parent: 2
-    - type: FaxMachine
-      name: Quartermaster
-  - uid: 11131
-    components:
-    - type: Transform
-      pos: 35.5,54.5
-      parent: 2
-    - type: FaxMachine
-      name: Detective
-  - uid: 11132
-    components:
-    - type: Transform
-      pos: 55.5,69.5
-      parent: 2
-    - type: FaxMachine
-      name: Mail Room
-  - uid: 11133
-    components:
-    - type: Transform
-      pos: -9.5,5.5
-      parent: 2
-    - type: FaxMachine
-      name: Engineering
-  - uid: 11134
-    components:
-    - type: Transform
-      pos: -2.5,-1.5
-      parent: 2
-    - type: FaxMachine
-      name: Chief Engineer
-  - uid: 11135
-    components:
-    - type: Transform
-      pos: 27.5,10.5
-      parent: 2
-    - type: FaxMachine
-      name: Research & Development
-  - uid: 11136
-    components:
-    - type: Transform
-      pos: 14.5,12.5
-      parent: 2
-    - type: FaxMachine
-      name: Research Director
-  - uid: 11137
-    components:
-    - type: Transform
-      pos: 69.5,20.5
-      parent: 2
-    - type: FaxMachine
-      name: Chief Medical Officer
   - uid: 11138
     components:
     - type: Transform
       pos: 71.5,25.5
       parent: 2
-  - uid: 11139
-    components:
-    - type: Transform
-      pos: 42.5,53.5
-      parent: 2
-    - type: FaxMachine
-      name: Head of Security
-  - uid: 11140
-    components:
-    - type: Transform
-      pos: 43.5,33.5
-      parent: 2
-    - type: FaxMachine
-      name: Warden
-  - uid: 11141
-    components:
-    - type: Transform
-      pos: 37.5,32.5
-      parent: 2
-    - type: FaxMachine
-      name: Security
-  - uid: 11142
-    components:
-    - type: Transform
-      pos: 65.5,70.5
-      parent: 2
-    - type: FaxMachine
-      name: Cargo Bay
-  - uid: 11143
-    components:
-    - type: Transform
-      pos: 25.5,55.5
-      parent: 2
-    - type: FaxMachine
-      name: Library
-  - uid: 11144
-    components:
-    - type: Transform
-      pos: 49.5,13.5
-      parent: 2
-    - type: FaxMachine
-      name: Head of Personnel
-  - uid: 11145
-    components:
-    - type: Transform
-      pos: 46.5,4.5
-      parent: 2
-    - type: FaxMachine
-      name: Nanotrasen Representative
-  - uid: 11146
-    components:
-    - type: Transform
-      pos: 48.5,1.5
-      parent: 2
-    - type: FaxMachine
-      name: Psychologist
-  - uid: 11147
-    components:
-    - type: Transform
-      pos: 64.5,-1.5
-      parent: 2
-    - type: FaxMachine
-      name: Bridge
-  - uid: 11148
-    components:
-    - type: Transform
-      pos: 36.5,-25.5
-      parent: 2
-    - type: FaxMachine
-      name: Chaplain
-  - uid: 11149
-    components:
-    - type: Transform
-      pos: 66.5,31.5
-      parent: 2
-    - type: FaxMachine
-      name: Medical Bay
-  - uid: 11150
-    components:
-    - type: Transform
-      pos: 4.5,24.5
-      parent: 2
-    - type: FaxMachine
-      name: Atmospherics
-  - uid: 11151
-    components:
-    - type: Transform
-      pos: 43.5,21.5
-      parent: 2
-    - type: FaxMachine
-      name: Reporter
-  - uid: 11152
-    components:
-    - type: Transform
-      pos: 17.5,24.5
-      parent: 2
-    - type: FaxMachine
-      name: Janitor
-  - uid: 11153
-    components:
-    - type: Transform
-      pos: 17.5,54.5
-      parent: 2
-    - type: FaxMachine
-      name: Bar
-  - uid: 11154
-    components:
-    - type: Transform
-      pos: 19.5,37.5
-      parent: 2
-    - type: FaxMachine
-      name: Hydroponics
-  - uid: 11155
-    components:
-    - type: Transform
-      pos: 62.5,38.5
-      parent: 2
-    - type: FaxMachine
-      name: Chemistry
-  - uid: 11156
-    components:
-    - type: Transform
-      pos: 8.5,51.5
-      parent: 2
-    - type: FaxMachine
-      name: Clown / Mime
-  - uid: 11157
-    components:
-    - type: Transform
-      pos: -8.5,49.5
-      parent: 2
-    - type: FaxMachine
-      name: Atmospherics Distribution
-  - uid: 11158
-    components:
-    - type: Transform
-      pos: -56.5,7.5
-      parent: 2
-    - type: FaxMachine
-      name: Containment
-  - uid: 11159
-    components:
-    - type: Transform
-      pos: 0.5,-12.5
-      parent: 2
-    - type: FaxMachine
-      name: Dorms
-  - uid: 11160
-    components:
-    - type: Transform
-      pos: 37.5,10.5
-      parent: 2
-    - type: FaxMachine
-      name: Robotics
-  - uid: 11161
-    components:
-    - type: Transform
-      pos: 47.5,-23.5
-      parent: 2
-    - type: FaxMachine
-      name: Lawyer
 - proto: FaxMachineCaptain
   entities:
   - uid: 11162
     components:
     - type: Transform
       pos: 71.5,8.5
+      parent: 2
+- proto: FaxMachineCargo
+  entities:
+  - uid: 11142
+    components:
+    - type: Transform
+      pos: 65.5,70.5
+      parent: 2
+- proto: FaxMachineCargoMail
+  entities:
+  - uid: 11132
+    components:
+    - type: Transform
+      pos: 55.5,69.5
+      parent: 2
+- proto: FaxMachineCargoQM
+  entities:
+  - uid: 11130
+    components:
+    - type: Transform
+      pos: 53.5,71.5
+      parent: 2
+- proto: FaxMachineCommandBridge
+  entities:
+  - uid: 11147
+    components:
+    - type: Transform
+      pos: 64.5,-1.5
+      parent: 2
+- proto: FaxMachineEngineering
+  entities:
+  - uid: 11133
+    components:
+    - type: Transform
+      pos: -9.5,5.5
+      parent: 2
+- proto: FaxMachineEngineeringAtmos
+  entities:
+  - uid: 11150
+    components:
+    - type: Transform
+      pos: 4.5,24.5
+      parent: 2
+  - uid: 11157
+    components:
+    - type: Transform
+      pos: -8.5,49.5
+      parent: 2
+- proto: FaxMachineEngineeringCE
+  entities:
+  - uid: 11134
+    components:
+    - type: Transform
+      pos: -2.5,-1.5
+      parent: 2
+- proto: FaxMachineMedical
+  entities:
+  - uid: 11129
+    components:
+    - type: Transform
+      pos: 78.5,42.5
+      parent: 2
+  - uid: 11149
+    components:
+    - type: Transform
+      pos: 66.5,31.5
+      parent: 2
+- proto: FaxMachineMedicalChemistry
+  entities:
+  - uid: 11155
+    components:
+    - type: Transform
+      pos: 62.5,38.5
+      parent: 2
+- proto: FaxMachineMedicalCMO
+  entities:
+  - uid: 11137
+    components:
+    - type: Transform
+      pos: 69.5,20.5
+      parent: 2
+- proto: FaxMachineMedicalPsychology
+  entities:
+  - uid: 11146
+    components:
+    - type: Transform
+      pos: 48.5,1.5
+      parent: 2
+- proto: FaxMachineCCRep
+  entities:
+  - uid: 11145
+    components:
+    - type: Transform
+      pos: 46.5,4.5
+      parent: 2
+- proto: FaxMachineScience
+  entities:
+  - uid: 11135
+    components:
+    - type: Transform
+      pos: 27.5,10.5
+      parent: 2
+  - uid: 11158
+    components:
+    - type: Transform
+      pos: -56.5,7.5
+      parent: 2
+  - uid: 11160
+    components:
+    - type: Transform
+      pos: 37.5,10.5
+      parent: 2
+- proto: FaxMachineScienceRD
+  entities:
+  - uid: 11136
+    components:
+    - type: Transform
+      pos: 14.5,12.5
+      parent: 2
+- proto: FaxMachineSecurity
+  entities:
+  - uid: 11141
+    components:
+    - type: Transform
+      pos: 37.5,32.5
+      parent: 2
+- proto: FaxMachineSecurityDetective
+  entities:
+  - uid: 11131
+    components:
+    - type: Transform
+      pos: 35.5,54.5
+      parent: 2
+- proto: FaxMachineSecurityHoS
+  entities:
+  - uid: 11139
+    components:
+    - type: Transform
+      pos: 42.5,53.5
+      parent: 2
+- proto: FaxMachineSecurityWarden
+  entities:
+  - uid: 11140
+    components:
+    - type: Transform
+      pos: 43.5,33.5
+      parent: 2
+- proto: FaxMachineService
+  entities:
+  - uid: 11128
+    components:
+    - type: Transform
+      pos: 21.5,46.5
+      parent: 2
+  - uid: 11152
+    components:
+    - type: Transform
+      pos: 17.5,24.5
+      parent: 2
+  - uid: 11154
+    components:
+    - type: Transform
+      pos: 19.5,37.5
+      parent: 2
+  - uid: 11156
+    components:
+    - type: Transform
+      pos: 8.5,51.5
+      parent: 2
+  - uid: 11159
+    components:
+    - type: Transform
+      pos: 0.5,-12.5
+      parent: 2
+- proto: FaxMachineServiceBar
+  entities:
+  - uid: 11153
+    components:
+    - type: Transform
+      pos: 17.5,54.5
+      parent: 2
+- proto: FaxMachineServiceChaplain
+  entities:
+  - uid: 11148
+    components:
+    - type: Transform
+      pos: 36.5,-25.5
+      parent: 2
+- proto: FaxMachineServiceHoP
+  entities:
+  - uid: 11144
+    components:
+    - type: Transform
+      pos: 49.5,13.5
+      parent: 2
+- proto: FaxMachineServiceLawyer
+  entities:
+  - uid: 11161
+    components:
+    - type: Transform
+      pos: 47.5,-23.5
+      parent: 2
+- proto: FaxMachineServiceLibrary
+  entities:
+  - uid: 11143
+    components:
+    - type: Transform
+      pos: 25.5,55.5
+      parent: 2
+- proto: FaxMachineServiceReporter
+  entities:
+  - uid: 11151
+    components:
+    - type: Transform
+      pos: 43.5,21.5
       parent: 2
 - proto: FenceMetalCorner
   entities:

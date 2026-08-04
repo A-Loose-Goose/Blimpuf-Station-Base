@@ -49107,98 +49107,96 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: FaxMachineBase
-  entities:
-  - uid: 6722
-    components:
-    - type: Transform
-      pos: -0.5,-3.5
-      parent: 2
-    - type: FaxMachine
-      name: Science
-  - uid: 6723
-    components:
-    - type: Transform
-      pos: -1.5,1.5
-      parent: 2
-    - type: FaxMachine
-      name: RD Office
-  - uid: 6724
-    components:
-    - type: Transform
-      pos: 10.5,25.5
-      parent: 2
-    - type: FaxMachine
-      name: Medical
-  - uid: 6725
-    components:
-    - type: Transform
-      pos: -46.5,2.5
-      parent: 2
-    - type: FaxMachine
-      name: Cargo
-  - uid: 6726
-    components:
-    - type: Transform
-      pos: -28.5,13.5
-      parent: 2
-    - type: FaxMachine
-      name: Library
-  - uid: 6727
-    components:
-    - type: Transform
-      pos: -19.5,48.5
-      parent: 2
-    - type: FaxMachine
-      name: HoP Office
-  - uid: 6728
-    components:
-    - type: Transform
-      pos: -55.5,58.5
-      parent: 2
-    - type: FaxMachine
-      name: Security
-  - uid: 6729
-    components:
-    - type: Transform
-      pos: -36.5,37.5
-      parent: 2
-    - type: FaxMachine
-      name: Bar
-  - uid: 6730
-    components:
-    - type: Transform
-      pos: -10.5,55.5
-      parent: 2
-    - type: FaxMachine
-      name: Bridge
-  - uid: 6731
-    components:
-    - type: Transform
-      pos: -64.5,25.5
-      parent: 2
-    - type: FaxMachine
-      name: Engineering
-  - uid: 6732
-    components:
-    - type: Transform
-      pos: -63.5,42.5
-      parent: 2
-    - type: FaxMachine
-      name: NCT Office
-  - uid: 6733
-    components:
-    - type: Transform
-      pos: -2.5,10.5
-      parent: 2
-    - type: FaxMachine
-      name: Law Office
 - proto: FaxMachineCaptain
   entities:
   - uid: 6734
     components:
     - type: Transform
       pos: -6.5,61.5
+      parent: 2
+- proto: FaxMachineCargo
+  entities:
+  - uid: 6725
+    components:
+    - type: Transform
+      pos: -46.5,2.5
+      parent: 2
+- proto: FaxMachineCommandBridge
+  entities:
+  - uid: 6730
+    components:
+    - type: Transform
+      pos: -10.5,55.5
+      parent: 2
+- proto: FaxMachineEngineering
+  entities:
+  - uid: 6731
+    components:
+    - type: Transform
+      pos: -64.5,25.5
+      parent: 2
+- proto: FaxMachineMedical
+  entities:
+  - uid: 6724
+    components:
+    - type: Transform
+      pos: 10.5,25.5
+      parent: 2
+- proto: FaxMachineNTCareerTrainer
+  entities:
+  - uid: 6732
+    components:
+    - type: Transform
+      pos: -63.5,42.5
+      parent: 2
+- proto: FaxMachineScience
+  entities:
+  - uid: 6722
+    components:
+    - type: Transform
+      pos: -0.5,-3.5
+      parent: 2
+- proto: FaxMachineScienceRD
+  entities:
+  - uid: 6723
+    components:
+    - type: Transform
+      pos: -1.5,1.5
+      parent: 2
+- proto: FaxMachineSecurity
+  entities:
+  - uid: 6728
+    components:
+    - type: Transform
+      pos: -55.5,58.5
+      parent: 2
+- proto: FaxMachineServiceBar
+  entities:
+  - uid: 6729
+    components:
+    - type: Transform
+      pos: -36.5,37.5
+      parent: 2
+- proto: FaxMachineServiceHoP
+  entities:
+  - uid: 6727
+    components:
+    - type: Transform
+      pos: -19.5,48.5
+      parent: 2
+- proto: FaxMachineServiceLawyer
+  entities:
+  - uid: 6733
+    components:
+    - type: Transform
+      pos: -2.5,10.5
+      parent: 2
+- proto: FaxMachineServiceLibrary
+  entities:
+  - uid: 6726
+    components:
+    - type: Transform
+      pos: -28.5,13.5
       parent: 2
 - proto: filingCabinetDrawer
   entities:

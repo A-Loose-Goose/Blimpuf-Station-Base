@@ -136830,62 +136830,6 @@ entities:
       fixtures: {}
 - proto: FaxMachineBase
   entities:
-  - uid: 19975
-    components:
-    - type: Transform
-      pos: -32.5,38.5
-      parent: 2
-    - type: FaxMachine
-      name: Cargo Front Desk
-  - uid: 19976
-    components:
-    - type: Transform
-      pos: 56.5,-35.5
-      parent: 2
-    - type: FaxMachine
-      name: Engineering Break Area
-  - uid: 19977
-    components:
-    - type: Transform
-      pos: 18.5,14.5
-      parent: 2
-    - type: FaxMachine
-      name: Lawyer
-  - uid: 19978
-    components:
-    - type: Transform
-      pos: 3.5,6.5
-      parent: 2
-    - type: FaxMachine
-      name: HoS's Office
-  - uid: 19979
-    components:
-    - type: Transform
-      pos: 5.5,-4.5
-      parent: 2
-    - type: FaxMachine
-      name: Warden's Office
-  - uid: 19980
-    components:
-    - type: Transform
-      pos: 26.5,6.5
-      parent: 2
-    - type: FaxMachine
-      name: Detective's Office
-  - uid: 19981
-    components:
-    - type: Transform
-      pos: 20.5,2.5
-      parent: 2
-    - type: FaxMachine
-      name: Security Breakroom
-  - uid: 19982
-    components:
-    - type: Transform
-      pos: -33.5,7.5
-      parent: 2
-    - type: FaxMachine
-      name: Chaplain's Office
   - uid: 19983
     components:
     - type: Transform
@@ -136893,97 +136837,153 @@ entities:
       parent: 2
     - type: FaxMachine
       name: Spare Office West
-  - uid: 19984
+- proto: FaxMachineCaptain
+  entities:
+  - uid: 20001
     components:
     - type: Transform
-      pos: -37.5,-19.5
+      pos: 5.5,-53.5
       parent: 2
-    - type: FaxMachine
-      name: Libararian's Room
-  - uid: 19985
+- proto: FaxMachineCargo
+  entities:
+  - uid: 19975
     components:
     - type: Transform
-      pos: 18.5,-45.5
+      pos: -32.5,38.5
       parent: 2
-    - type: FaxMachine
-      name: Magistrate's Office
-  - uid: 19986
-    components:
-    - type: Transform
-      pos: 18.5,-40.5
-      parent: 2
-    - type: FaxMachine
-      name: NTR's Office
-  - uid: 19987
-    components:
-    - type: Transform
-      pos: 4.5,-61.5
-      parent: 2
-    - type: FaxMachine
-      name: Bridge
-  - uid: 19988
-    components:
-    - type: Transform
-      pos: 39.5,-44.5
-      parent: 2
-    - type: FaxMachine
-      name: CE's Office
-  - uid: 19989
-    components:
-    - type: Transform
-      pos: -41.5,-28.5
-      parent: 2
-    - type: FaxMachine
-      name: Medical Front Desk
-  - uid: 19990
-    components:
-    - type: Transform
-      pos: -52.5,-16.5
-      parent: 2
-    - type: FaxMachine
-      name: Psychologist's Office
-  - uid: 19991
-    components:
-    - type: Transform
-      pos: -9.5,14.5
-      parent: 2
-    - type: FaxMachine
-      name: Internal Affairs
-  - uid: 19992
-    components:
-    - type: Transform
-      pos: -57.5,-41.5
-      parent: 2
-    - type: FaxMachine
-      name: CMO's Office
+- proto: FaxMachineCargoQM
+  entities:
   - uid: 19993
     components:
     - type: Transform
       pos: -30.5,65.5
       parent: 2
-    - type: FaxMachine
-      name: QM's Office
+- proto: FaxMachineCommandBridge
+  entities:
+  - uid: 19987
+    components:
+    - type: Transform
+      pos: 4.5,-61.5
+      parent: 2
+- proto: FaxMachineEngineering
+  entities:
+  - uid: 19976
+    components:
+    - type: Transform
+      pos: 56.5,-35.5
+      parent: 2
+- proto: FaxMachineEngineeringCE
+  entities:
+  - uid: 19988
+    components:
+    - type: Transform
+      pos: 39.5,-44.5
+      parent: 2
+- proto: FaxMachineMedical
+  entities:
+  - uid: 19989
+    components:
+    - type: Transform
+      pos: -41.5,-28.5
+      parent: 2
+- proto: FaxMachineMedicalCMO
+  entities:
+  - uid: 19992
+    components:
+    - type: Transform
+      pos: -57.5,-41.5
+      parent: 2
+- proto: FaxMachineMedicalPsychology
+  entities:
+  - uid: 19990
+    components:
+    - type: Transform
+      pos: -52.5,-16.5
+      parent: 2
+- proto: FaxMachineCCInternalAffairs
+  entities:
+  - uid: 19991
+    components:
+    - type: Transform
+      pos: -9.5,14.5
+      parent: 2
+- proto: FaxMachineCCMagi
+  entities:
+  - uid: 19985
+    components:
+    - type: Transform
+      pos: 18.5,-45.5
+      parent: 2
+- proto: FaxMachineCCRep
+  entities:
+  - uid: 19986
+    components:
+    - type: Transform
+      pos: 18.5,-40.5
+      parent: 2
+- proto: FaxMachineScience
+  entities:
   - uid: 19994
     components:
     - type: Transform
       pos: 43.5,36.5
       parent: 2
-    - type: FaxMachine
-      name: Science Front Desk
   - uid: 19995
     components:
     - type: Transform
       pos: 56.5,45.5
       parent: 2
-    - type: FaxMachine
-      name: Robotics Lab
+- proto: FaxMachineScienceRD
+  entities:
   - uid: 19996
     components:
     - type: Transform
       pos: 75.5,41.5
       parent: 2
-    - type: FaxMachine
-      name: Research Director's Office
+- proto: FaxMachineSecurity
+  entities:
+  - uid: 19981
+    components:
+    - type: Transform
+      pos: 20.5,2.5
+      parent: 2
+- proto: FaxMachineSecurityDetective
+  entities:
+  - uid: 19980
+    components:
+    - type: Transform
+      pos: 26.5,6.5
+      parent: 2
+- proto: FaxMachineSecurityHoS
+  entities:
+  - uid: 19978
+    components:
+    - type: Transform
+      pos: 3.5,6.5
+      parent: 2
+- proto: FaxMachineSecurityPrison
+  entities:
+  - uid: 19999
+    components:
+    - type: Transform
+      pos: 2.5,-10.5
+      parent: 2
+- proto: FaxMachineSecurityWarden
+  entities:
+  - uid: 19979
+    components:
+    - type: Transform
+      pos: 5.5,-4.5
+      parent: 2
+- proto: FaxMachineServiceChaplain
+  entities:
+  - uid: 19982
+    components:
+    - type: Transform
+      pos: -33.5,7.5
+      parent: 2
+- proto: FaxMachineServiceHoP
+  entities:
   - uid: 19997
     components:
     - type: MetaData
@@ -136991,35 +136991,31 @@ entities:
     - type: Transform
       pos: 16.5,-27.5
       parent: 2
-    - type: FaxMachine
-      name: HoP's Office
-  - uid: 19998
+- proto: FaxMachineServiceLawyer
+  entities:
+  - uid: 19977
     components:
     - type: Transform
-      pos: 41.5,-6.5
+      pos: 18.5,14.5
       parent: 2
-    - type: FaxMachine
-      name: News Office
-  - uid: 19999
+- proto: FaxMachineServiceLibrary
+  entities:
+  - uid: 19984
     components:
     - type: Transform
-      pos: 2.5,-10.5
+      pos: -37.5,-19.5
       parent: 2
-    - type: FaxMachine
-      name: Prison Rec Area
   - uid: 20000
     components:
     - type: Transform
       pos: -27.5,-14.5
       parent: 2
-    - type: FaxMachine
-      name: Library
-- proto: FaxMachineCaptain
+- proto: FaxMachineServiceReporter
   entities:
-  - uid: 20001
+  - uid: 19998
     components:
     - type: Transform
-      pos: 5.5,-53.5
+      pos: 41.5,-6.5
       parent: 2
 - proto: FenceMetalBroken
   entities:

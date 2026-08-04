@@ -124246,21 +124246,21 @@ entities:
     - type: Transform
       pos: 1.5,-68.5
       parent: 2
-- proto: FaxMachineNTInternalAffairs
+- proto: FaxMachineCCInternalAffairs
   entities:
   - uid: 20461
     components:
     - type: Transform
       pos: -28.5,15.5
       parent: 2
-- proto: FaxMachineNTMagi
+- proto: FaxMachineCCMagi
   entities:
   - uid: 20462
     components:
     - type: Transform
       pos: -24.5,23.5
       parent: 2
-- proto: FaxMachineNTMagiInternalAffairs
+- proto: FaxMachineCCMagiInternalAffairs
   entities:
   - uid: 20463
     components:
@@ -124269,7 +124269,7 @@ entities:
       parent: 2
     - type: FaxMachine
       name: Courtroom
-- proto: FaxMachineNTRepBSO
+- proto: FaxMachineCCRepCCE
   entities:
   - uid: 20464
     components:

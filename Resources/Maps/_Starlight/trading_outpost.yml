@@ -8768,22 +8768,20 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 37.541958,2.241528
       parent: 1
-- proto: FaxMachineBase
+- proto: FaxMachineITGSalvage
+  entities:
+  - uid: 1334
+    components:
+    - type: Transform
+      pos: 20.5,3.5
+      parent: 1
+- proto: FaxMachineITGSalvageLead
   entities:
   - uid: 1333
     components:
     - type: Transform
       pos: 37.5,0.5
       parent: 1
-    - type: FaxMachine
-      name: Salvage Lead ATS
-  - uid: 1334
-    components:
-    - type: Transform
-      pos: 20.5,3.5
-      parent: 1
-    - type: FaxMachine
-      name: Salvage ATS
 - proto: FenceMetalStraight
   entities:
   - uid: 1335

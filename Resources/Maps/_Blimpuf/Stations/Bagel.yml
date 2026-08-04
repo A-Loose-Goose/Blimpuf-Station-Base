@@ -73366,15 +73366,6 @@ entities:
     - type: Transform
       pos: -63.5,-8.5
       parent: 2
-- proto: FaxMachineBase
-  entities:
-  - uid: 11520
-    components:
-    - type: Transform
-      pos: -50.5,-21.5
-      parent: 2
-    - type: FaxMachine
-      name: Lawyer
 - proto: FaxMachineCaptain
   entities:
   - uid: 17892
@@ -73459,14 +73450,14 @@ entities:
     - type: Transform
       pos: -13.5,-28.5
       parent: 2
-- proto: FaxMachineNTMagiInternalAffairs
+- proto: FaxMachineCCMagiInternalAffairs
   entities:
   - uid: 11357
     components:
     - type: Transform
       pos: -48.5,-17.5
       parent: 2
-- proto: FaxMachineNTRepBSO
+- proto: FaxMachineCCRepCCE
   entities:
   - uid: 11514
     components:
@@ -73535,6 +73526,13 @@ entities:
     components:
     - type: Transform
       pos: 5.5,-27.5
+      parent: 2
+- proto: FaxMachineServiceLawyer
+  entities:
+  - uid: 11520
+    components:
+    - type: Transform
+      pos: -50.5,-21.5
       parent: 2
 - proto: FaxMachineServiceLibrary
   entities:
