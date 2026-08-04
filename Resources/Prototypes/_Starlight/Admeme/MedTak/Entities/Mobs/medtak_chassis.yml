@@ -6,7 +6,6 @@
   description: A multirole heavy silicon chassis designed to support MedTak units.
   abstract: true
   components:
-    - type: TextToSpeech
     - type: Sprite
       sprite: _Starlight/Admeme/MedTak/Mobs/Silicon/Chassis/medtak.rsi
       layers:

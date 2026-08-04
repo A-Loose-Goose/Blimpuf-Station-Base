@@ -48,10 +48,6 @@ public partial class ChatBox : UIWidget
         ChatInput.ChannelSelector.OnChannelSelect += OnChannelSelect;
         ChatInput.FilterButton.Popup.OnChannelFilter += OnChannelFilter;
         ChatInput.FilterButton.Popup.OnNewHighlights += OnNewHighlights;
-        // Starlight start
-        ChatInput.FilterButton.Popup.OnClearTTSQueue += OnClearTTSQueue;
-        ChatInput.FilterButton.Popup.OnTTSMuteStateChanged += OnTTSMuteStateChanged;
-        // Starlight end
         _controller = UserInterfaceManager.GetUIController<ChatUIController>();
         _controller.MessageAdded += OnMessageAdded;
         _controller.HighlightsUpdated += OnHighlightsUpdated;
@@ -257,27 +253,5 @@ public partial class ChatBox : UIWidget
         ChatInput.Input.OnKeyBindDown -= OnInputKeyBindDown;
         ChatInput.Input.OnTextChanged -= OnTextChanged;
         ChatInput.ChannelSelector.OnChannelSelect -= OnChannelSelect;
-        // Starlight start
-        ChatInput.FilterButton.Popup.OnClearTTSQueue -= OnClearTTSQueue;
-        ChatInput.FilterButton.Popup.OnTTSMuteStateChanged -= OnTTSMuteStateChanged;
-        // Starlight end
     }
-
-    // Starlight start
-    /// <summary>
-    ///     Event handler triggered when the clear TTS queue button is pressed.
-    /// </summary>
-    private void OnClearTTSQueue()
-    {
-        _controller.ClearTTSQueue();
-    }
-
-    /// <summary>
-    ///     Event handler triggered when a TTS channel's mute state is toggled.
-    /// </summary>
-    private void OnTTSMuteStateChanged(Robust.Shared.Prototypes.ProtoId<Content.Shared.Radio.RadioChannelPrototype> channelId, bool muted)
-    {
-        _controller.SetTTSChannelMuted(channelId, muted);
-    }
-    // Starlight end
 }
