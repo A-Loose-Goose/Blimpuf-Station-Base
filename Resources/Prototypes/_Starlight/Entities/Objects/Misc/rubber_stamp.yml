@@ -170,11 +170,11 @@
   components:
   - type: Stamp
     stampedName: "Central Special Operations Division"
-    stampedColor: "#741B47"
-    stampState: "paper_stamp-magistrate"
+    stampedColor: "#ad2a6b"
+    stampState: "paper_stamp-csop"
   - type: Sprite
     sprite: _Starlight/Objects/Misc/stamps.rsi
-    state: stamp-magistrate
+    state: stamp-csop
 
 - type: entity
   name: central security division rubber stamp
