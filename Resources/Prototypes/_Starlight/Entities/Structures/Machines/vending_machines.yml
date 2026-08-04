@@ -184,7 +184,6 @@
     name: vendor-mime-dispenser
     categories:
     - SLMime
-    - SLSecret
   - type: Sprite
     sprite: _Starlight/Structures/Machines/VendingMachines/vend-of-silence.rsi
 

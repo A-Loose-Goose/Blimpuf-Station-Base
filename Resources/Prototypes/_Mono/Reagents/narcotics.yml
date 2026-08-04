@@ -32,14 +32,14 @@
             Brute: -3 # 25 blunt, slash, and pierce per 5u, its a painkiller
           types:
             Poison: -0.5 # 12.5 poison per 5u
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: Tnebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: Phenylpiperidine
           max: 4.99
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ Tnebri ]
         reagent: Phenylpiperidine
         amount: -0.1
         # Starlight-End
@@ -113,14 +113,14 @@
         visualType: Medium
         messages: [ "generic-reagent-effect-nauseous" ]
         probability: 0.5
-      # Starlight-Start: Cyclorite Metabolism
+      # Starlight-Start: TNebri Metabolism
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
           reagent: Phenylpiperidine
           min: 5.01
         - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
+          type: [ TNebri]
         reagent: Phenylpiperidine
         amount: 0.1
         # Starlight-End

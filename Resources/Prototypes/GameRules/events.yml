@@ -69,7 +69,7 @@
     #- id: SubXenoborgs
     #- id: BrighteyeSpawn
     #- id: TerrorSpidersSpawn
-    - id: RailroadingTerminator
+    #- id: RailroadingTerminator
     - id: ColossusSpawn # Starlight end
     - id: EeepEvent # imp
     - !type:NestedSelector
