@@ -34,7 +34,7 @@
     id: IAAPDA
     eyes: ClothingEyesGlassesSunglasses
     ears: ClothingHeadsetIAA
-    belt: BoxFolderNanoTrasenClipboard
+    belt: BoxFolderCentComClipboard
   inhand:
     - BriefcaseIAAFilled
 

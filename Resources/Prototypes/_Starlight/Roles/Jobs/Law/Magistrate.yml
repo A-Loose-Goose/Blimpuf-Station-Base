@@ -48,7 +48,7 @@
     id: MagistratePDA
     ears: ClothingHeadsetMagistrate
     #head: ClothingHeadHatPwig
-    belt: BoxFolderNanoTrasenClipboard
+    belt: BoxFolderCentComClipboard
   storage:
     back:
     - RubberStampMagistrate
