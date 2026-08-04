@@ -26,7 +26,7 @@
   parent: JobIcon
   id: JobIconNTNCBlueShield
   icon:
-    sprite: *starlight-job-icon-rsi
+    sprite: &starlight-job-icon-rsi /Textures/_Starlight/Interface/Misc/job_icons.rsi
     state: NTNCBlueShield
   jobName: job-name-ntncblueshield
 

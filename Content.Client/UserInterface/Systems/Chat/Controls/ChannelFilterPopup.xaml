@@ -24,6 +24,10 @@
                     <!-- Starlight end -->
                 </PanelContainer>
                 <Button Name="HighlightButton" Text="{Loc 'hud-chatbox-highlights-button'}" ToolTip="{Loc 'hud-chatbox-highlights-tooltip'}"/>
+                <CheckBox Name="AutoFillCheckBox" Text="{Loc 'hud-chatbox-auto-fill-toggle'}" Margin="0 4 0 0"/>
+                <ScrollContainer VerticalExpand="True" HScrollEnabled="False">
+                    <RichTextLabel Name="AutoHighlightsLabel" Visible="False" Margin="2 0" VerticalAlignment="Top"/>
+                </ScrollContainer>
             </BoxContainer>
         </BoxContainer>
     </PanelContainer>

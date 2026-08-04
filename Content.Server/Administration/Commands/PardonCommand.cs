@@ -72,7 +72,7 @@ namespace Content.Server.Administration.Commands
                 return;
             }
 
-            await _banManager.CreateServerUnban(banId, player?.UserId, DateTimeOffset.Now, ban.ProjectName, ban.ServerName); // NullLink-edit: move to general method at Manager
+            await _banManager.CreateServerUnban(banId, player?.UserId, DateTimeOffset.Now);
 
             shell.WriteLine(Loc.GetString($"cmd-pardon-success", ("id", banId)));
         }

@@ -42,3 +42,6 @@ hud-chatbox-highlights-tooltip = The words need to be separated by a newline,
 hud-chatbox-highlights-placeholder = @McHands
                                      "Judge"
                                      Medical
+hud-chatbox-auto-fill-toggle = Name & Job
+hud-chatbox-auto-highlights-bullet = • {$item}
+hud-chatbox-auto-highlights-wrapper = [color=#8a8a8a][i]{$bullets}[/i][/color]
