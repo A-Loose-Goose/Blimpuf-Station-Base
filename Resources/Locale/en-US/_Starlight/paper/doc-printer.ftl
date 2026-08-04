@@ -1303,7 +1303,7 @@ doc-text-printer-cargo-shuttle-depature-form =
      ────────────────────────────────────────
     ⠀⠀                 [bold]CARGO SHUTTLE DEPARTURE FORM[/bold]
      ──────────────────────────────────────
-    Due to recent changes in logistics, ownership of the Atmospheric Trading Station (ATS) is now under Central Command operation. All flights to the ATS must be logged before departure.
+    Due to recent changes in logistics, ownership of the Automated Trade Station (ATS) is now under Central Command operation. All flights to the ATS must be logged before departure.
 
     - [signature] [datetime]
     - [signature] [datetime]
