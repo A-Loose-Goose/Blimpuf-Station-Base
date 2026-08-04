@@ -4384,5 +4384,44 @@ Entries:
   id: 7001
   time: '2026-08-01T20:57:04.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/70
+- author: ItsMaitake
+  changes:
+  - message: Chemical Contraband Form.
+    type: Add
+  - message: Cargo Shuttle Departure Form.
+    type: Add
+  - message: Coloration of headers for Secure Briefing Documents.
+    type: Tweak
+  id: 7201
+  time: '2026-08-03T23:10:38.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/72
+- author: ItsMaitake
+  changes:
+  - message: Cargo Shuttle Departure form acronym corrected.
+    type: Tweak
+  id: 7301
+  time: '2026-08-04T05:13:01.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/73
+- author: ItsMaitake
+  changes:
+  - message: CC Officials now spawn with CC Clipboards, not NT Clipboards.
+    type: Tweak
+  - message: CCR locker now features a golden CC emblem on its door, instead of a
+      golden N.
+    type: Tweak
+  id: 7401
+  time: '2026-08-04T08:22:24.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/74
+- author: LadyLiliana
+  changes:
+  - message: Unique Stamps for Magistrate, IAA and CSOP.
+    type: Add
+  - message: IAA Paperwork Headers.
+    type: Fix
+  - message: Several Stamps having the wrong colours.
+    type: Fix
+  id: 7501
+  time: '2026-08-04T18:59:23.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/75
 Order: -1
 

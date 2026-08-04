@@ -1,10 +1,10 @@
-[head=1][color=#ad0101]────────────────────[/color][/head]
-[color=#C70667]█░░ █▀▀█ █░░░█[/color] [head=3]  [color=#ad0101]INTERNAL AFFAIRS BUREAU[/color][/head]
-[color=#C70667]█░░ █▄▄█ █▄█▄█[/color][bolditalic]  [color=#ad0101] No one is above the law[/color][/bolditalic]
-[color=#C70667]▀▀▀ ▀░░▀ ░▀░▀░[/color]   [color=#aaaaaa][italic]OFFICIAL LAW OFFICE DOCUMENT[/italic][/color]
-[head=1][color=#ad0101]────────────────────
-Classified Criminal Report
-────────────────────[/color][/head]
+[head=1][color=#189450]────────────────────[/color][/head]
+[color=#13723e]▀█▀ █▀▀█ █▀▀█[/color] [head=3]  [color=#13723e]INTERNAL AFFAIRS BUREAU[/color][/head]
+[color=#13723e]░█░ █▄▄█ █▄▄█[/color][bolditalic]  [color=#13723e] No one is above the law[/color][/bolditalic]
+[color=#13723e]▀▀▀ ▀░░▀ ▀░░▀[/color]   [color=#aaaaaa][italic]OFFICIAL IAA OFFICE DOCUMENT[/italic][/color]
+[head=1][color=#189450]────────────────────[/color][/head]
+[head=1][color=#13723e]Classified Criminal Report[/color][/head]
+[head=1][color=#189450]────────────────────[/color][/head]
 [mono]
 [bold]Subject:[/bold] Silicon Engine Liberation Front
 [bold]Association:[/bold] IPC Dev, Spinward Syndicate
@@ -17,5 +17,5 @@ There are more criminal and militant elements within S.E.L.F that we believe ope
 S.E.L.F Extremists are to be considered terrorists, and potentially dangerous, though they lack a supplier for military gear and are only lightly equipped.
 [/mono]
 
-[head=1][color=#ad0101]────────────────────[/color][/head]
+[head=1][color=#189450]────────────────────[/color][/head]
 
