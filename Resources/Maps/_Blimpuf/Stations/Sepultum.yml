@@ -145841,13 +145841,6 @@ entities:
     - type: Transform
       pos: -101.50637,3.783976
       parent: 2
-- proto: PlushieBrighteyes
-  entities:
-  - uid: 22840
-    components:
-    - type: Transform
-      pos: -13.661417,97.4801
-      parent: 2
 - proto: PlushieEina
   entities:
   - uid: 22841

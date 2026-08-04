@@ -691,9 +691,6 @@
   id: Table
 
 - type: Tag
-  id: TheDark
-
-- type: Tag
   id: ThermiteIgnitor
 
 - type: Tag

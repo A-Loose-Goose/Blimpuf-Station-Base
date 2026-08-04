@@ -49,7 +49,6 @@
         - !type:ReagentCondition
           reagent: DarkBlood
           min: 10
-        effectProto: StatusEffectTheDark
         type: Add
         time: 5
 

@@ -28,7 +28,6 @@
     - type: Tag
       tags:
         - HideContextMenu
-        - TheDark
     - type: OptionsVisualizer
       visuals:
         base:

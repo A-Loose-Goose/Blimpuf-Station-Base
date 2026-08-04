@@ -149,7 +149,6 @@
           - !type:PlayerCountCondition
             min: 40
           - !type:MaxRuleOccurenceCondition
-        #- id: SubBrighteye
         #  prob: 0.05
         #  conditions:
         #  - !type:HasBudgetCondition
@@ -259,7 +258,6 @@
           - !type:PlayerCountCondition
             min: 40
           - !type:MaxRuleOccurenceCondition
-        #- id: SubBrighteye
         #  weight: 5
         #  prob: 0.50
         #  conditions:
@@ -343,7 +341,6 @@
             min: 10
           - !type:RoundDurationCondition
             min: 1200 # 20 minutes
-        #- id: BrighteyeSpawn
         #  weight: 1
         #  conditions:
         #  - !type:HasBudgetCondition
@@ -522,7 +519,6 @@
             - Zombie # Wizards don't lose their abilities in Zombie games, so they can't be allowed together
           - !type:PlayerCountCondition
             min: 40
-        #- id: SubBrighteye
         #  prob: 0.05
         #  conditions:
         #  - !type:HasBudgetCondition
@@ -629,7 +625,6 @@
             - Zombie # Wizards don't lose their abilities in Zombie games, so they can't be allowed together
           - !type:PlayerCountCondition
             min: 40
-        #- id: SubBrighteye
         #  weight: 5
         #  prob: 0.50
         #  conditions:
@@ -713,7 +708,6 @@
             min: 10
           - !type:RoundDurationCondition
             min: 1200 # 20 minutes
-        #- id: BrighteyeSpawn
         #  weight: 1
         #  conditions:
         #  - !type:HasBudgetCondition

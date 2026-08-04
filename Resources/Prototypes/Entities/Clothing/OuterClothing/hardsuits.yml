@@ -563,7 +563,6 @@
     price: 750
   - type: StealTarget
     stealGroup: ClothingOuterHardsuitRd
-  - type: TheDarkImmune # Starlight
 
 #Head of Security's Hardsuit
 - type: entity
@@ -935,7 +934,6 @@
     - CorgiWearable
     - Hardsuit
     - WhitelistChameleon
-  - type: TheDarkImmune # SL
 
 #Ling Space Suit
 - type: entity

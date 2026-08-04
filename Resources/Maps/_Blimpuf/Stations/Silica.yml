@@ -139299,15 +139299,6 @@ entities:
     - type: Transform
       pos: -25.7482,-5.636765
       parent: 2
-- proto: PlushieBrighteyes
-  entities:
-  - uid: 20080
-    components:
-    - type: Transform
-      parent: 20079
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: PlushieCarp
   entities:
   - uid: 20145

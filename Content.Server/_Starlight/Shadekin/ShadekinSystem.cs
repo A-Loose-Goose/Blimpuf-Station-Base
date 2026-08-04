@@ -67,7 +67,6 @@ public sealed partial class ShadekinSystem : EntitySystem
     [Dependency] private ExamineSystem _examine = default!;
     [Dependency] private LanguageSystem _language = default!;
 
-    private static readonly ProtoId<TagPrototype> _theDarkTag = "TheDark";
     private static readonly ProtoId<TagPrototype> _coreTag = "ShadekinCore";
     private static readonly ProtoId<TagPrototype> _damagedCoreTag = "DamagedShadekinCore";
     private TimeSpan _nextUpdate = TimeSpan.Zero;
@@ -98,14 +97,11 @@ public sealed partial class ShadekinSystem : EntitySystem
         SubscribeLocalEvent<OrganShadekinCoreComponent, ExaminedEvent>(OnExamined);
         SubscribeLocalEvent<OrganShadekinCoreComponent, OrganAddedToBodyEvent>(CoreOrganInit);
 
-        SubscribeLocalEvent<ShadekinComponent, ComponentShutdown>((uid, _, _) => RemComp<BrighteyeComponent>(uid));
         SubscribeLocalEvent<ShadekinComponent, EyeColorInitEvent>(OnEyeColorChange);
         SubscribeLocalEvent<ShadekinComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiers);
         SubscribeLocalEvent<ShadekinComponent, NullSpaceShuntEvent>(NullSpaceShunt);
         SubscribeLocalEvent<ShadekinComponent, BeforeDamageChangedEvent>((uid, _, args) => args.Damage.DamageDict["Asphyxiation"] = 0);
 
-        InitializeBrighteye();
-        InitializeAbilities();
     }
 
     private void CoreOrganInit(EntityUid uid, OrganShadekinCoreComponent component, OrganAddedToBodyEvent args)
@@ -182,7 +178,7 @@ public sealed partial class ShadekinSystem : EntitySystem
 
         foreach (var light in lightQuery)
         {
-            if (HasComp<DarkLightComponent>(light.Owner) || HasComp<ShadegenAffectedComponent>(light.Owner))
+            if (HasComp<ShadegenAffectedComponent>(light.Owner))
                 continue;
 
             if (!light.Comp.Enabled
@@ -326,37 +322,6 @@ public sealed partial class ShadekinSystem : EntitySystem
         }
     }
 
-    /// <summary>
-    /// Makes a simple check to see if the ent is in the dark.
-    /// </summary>
-    /// <param name="uid"></param>
-    /// <returns></returns>
-    public bool AreWeInTheDark(EntityUid uid)
-    {
-        var mapUid = Transform(uid).MapUid;
-        if (mapUid is not null && _tag.HasTag(mapUid.Value, _theDarkTag))
-            return true;
-
-        return false;
-    }
-
-    /// <summary>
-    /// Spawn "The Dark"
-    /// </summary>
-    public void SpawnTheDark()
-    {
-        var query = EntityQueryEnumerator<MapComponent>();
-        while (query.MoveNext(out var mapuid, out var mapcomp))
-        {
-            if (mapcomp.MapPaused)
-                continue;
-
-            if (_tag.HasTag(mapuid, _theDarkTag))
-                return;
-        }
-        _gameTicker.StartGameRule("TheDarkMap");
-    }
-
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
@@ -371,7 +336,7 @@ public sealed partial class ShadekinSystem : EntitySystem
 
             var lightExposure = 0f;
 
-            if (HasComp<NullSpaceComponent>(uid) || AreWeInTheDark(uid)) // Were in NullSpace, NullSpace is dark... and "The Dark" is dark too!
+            if (HasComp<NullSpaceComponent>(uid))
             {
                 // I had a brain moment, apprently if one is false its does not check for the other?
             }
@@ -387,36 +352,6 @@ public sealed partial class ShadekinSystem : EntitySystem
             if (component.CurrentState == ShadekinState.Extreme)
                 ApplyLightDamage(uid, 1);
 
-            if (TryComp<BrighteyeComponent>(uid, out var brighteye))
-                UpdateEnergy(uid, component, brighteye);
-        }
-
-        // The Dark Effects - This only applies for Ents that are IN THE DARK.
-        if (_timing.CurTime > _nextUpdate)
-        {
-            _nextUpdate = _timing.CurTime + _updateCooldown;
-
-            var thedarkmobquery = EntityQueryEnumerator<MobStateComponent>();
-            while (thedarkmobquery.MoveNext(out var uid, out var _))
-            {
-                var remove = false;
-
-                if (_status.HasStatusEffect(uid, "StatusEffectTheDarkMap"))
-                {
-                    if (HasComp<ShadekinComponent>(uid) || HasComp<TheDarkImmuneComponent>(uid))
-                        remove = true;
-
-                    if (!remove)
-                        foreach (var entity in _lookup.GetEntitiesIntersecting(Transform(uid).Coordinates))
-                            if (TryComp<TheDarkImmuneComponent>(entity, out var blocker) && blocker.Ranged)
-                                remove = true;
-                }
-
-                if (AreWeInTheDark(uid) && !remove)
-                    _status.TrySetStatusEffectDuration(uid, "StatusEffectTheDarkMap");
-                else
-                    _status.TryRemoveStatusEffect(uid, "StatusEffectTheDarkMap");
-            }
         }
     }
 }

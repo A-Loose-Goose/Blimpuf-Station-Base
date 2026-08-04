@@ -46,9 +46,6 @@ public sealed partial class ShadegenSystem : EntitySystem
             var lightQuery = _lookup.GetEntitiesInRange<PointLightComponent>(Transform(uid).Coordinates, component.Range);
             foreach (var light in lightQuery)
             {
-                if (HasComp<DarkLightComponent>(light.Owner))
-                    continue;
-
                 EnsureComp<ShadegenAffectedComponent>(light.Owner);
                 _updateQueue.Add(light.Owner);
 
@@ -56,8 +53,7 @@ public sealed partial class ShadegenSystem : EntitySystem
                     _handheldLight.TurnOff((light.Owner, handheldcomp), makeNoise: false);
 
                 if (component.DestroyLights && TryComp<PoweredLightComponent>(light.Owner, out var poweredcomp) && poweredcomp.On)
-                    if (_light.TryDestroyBulb(light.Owner, poweredcomp))
-                        RaiseLocalEvent(Transform(uid).ParentUid, new OnLightBreakEvent(light.Owner));
+                    _light.TryDestroyBulb(light.Owner, poweredcomp);
             }
         }
     }

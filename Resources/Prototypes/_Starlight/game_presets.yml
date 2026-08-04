@@ -152,7 +152,6 @@
     - ShitStationEventScheduler
     - Vampire
     - SiliconLiberation
-    #- SubBrighteye
     - ThiefGamerule
     - CosmicCult
 
@@ -189,7 +188,6 @@
     - SLChangeling
     - Vampire
     - SiliconLiberation
-    #- SubBrighteye
     - ThiefGamerule
     - LoneOpsSpawn
    # - RailroadingTerminator

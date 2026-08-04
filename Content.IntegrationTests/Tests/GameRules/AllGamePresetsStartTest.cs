@@ -93,7 +93,7 @@ public sealed class AllGamePresetsStartTest : AntagTest
                 foreach (var selector in antag.Antags)
                 {
                     // Throw on invalid prototypes, skip roundstart ghost roles.
-                    if (!SProtoMan.Resolve(selector.Proto, out var definition) || definition.PrefRoles.Count == 0 || !definition.PickPlayer || IgnoredAntagSpecifiers.Contains(definition.ID)) // Starlight, Brighteyes need their own test, so we exclude them
+                    if (!SProtoMan.Resolve(selector.Proto, out var definition) || definition.PrefRoles.Count == 0 || !definition.PickPlayer || IgnoredAntagSpecifiers.Contains(definition.ID))
                         continue;
 
                     var count = AntagSys.GetTargetAntagCount(selector, min, ref runningCount);

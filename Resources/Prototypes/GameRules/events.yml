@@ -67,7 +67,6 @@
     - id: WizardSpawn
     - id: AbductorsSpawn # Starlight start
     #- id: SubXenoborgs
-    #- id: BrighteyeSpawn
     #- id: TerrorSpidersSpawn
     #- id: RailroadingTerminator
     - id: ColossusSpawn # Starlight end

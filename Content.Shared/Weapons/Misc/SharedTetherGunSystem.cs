@@ -193,10 +193,6 @@ public abstract partial class SharedTetherGunSystem : EntitySystem
         if (TryComp<StrapComponent>(target, out var strap) && strap.BuckledEntities.Count > 0)
             return false;
 
-        // Starlight
-        if (HasComp<DarkPortalComponent>(target))
-            return false;
-
         return true;
     }
 

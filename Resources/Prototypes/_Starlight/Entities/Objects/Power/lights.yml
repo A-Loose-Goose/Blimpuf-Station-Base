@@ -12,7 +12,6 @@
     BurningTemperature: 700
     PowerUse: 25
     dimmable: false
-  - type: DarkLight
 
 - type: entity
   parent: BaseLightTube

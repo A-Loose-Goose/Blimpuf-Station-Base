@@ -79,8 +79,6 @@ public sealed partial class AntagGhostRoleTest : AntagTest
         "SubWizard",
         "WizardSpawn",
         "TerrorSpidersSpawn",
-        "BrighteyeSpawn",
-        "SubBrighteye"
     ];
     private static readonly string[] AntagGameRules = GameDataScrounger.EntitiesWithComponent("AntagSelection").Where(ruleId => !IgnoredAntagGameRules.Contains(ruleId)).ToArray(); // Exclude duplicate rules, they're really not needed and just time out tests.
     #endregion

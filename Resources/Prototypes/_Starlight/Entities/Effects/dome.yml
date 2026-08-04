@@ -170,8 +170,6 @@
     lastVisibility: 0.8
   - type: NullSpaceBlocker
     bypassPVS: true
-  - type: TheDarkImmune
-    ranged: true
 
 - type: entity
   id: EnergyDomeProtectorNullspace

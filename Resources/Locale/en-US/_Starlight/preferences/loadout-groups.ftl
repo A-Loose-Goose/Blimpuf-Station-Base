@@ -125,11 +125,6 @@ loadout-group-scarves = Scarf
 loadout-group-pins = Pins
 loadout-group-pens = Pen
 
-# Brighteye
-loadout-group-brighteye-jumpsuit = Brighteye jumpsuit
-Loadout-group-brighteye-neck = Brighteye neck
-loadout-group-brighteye-gloves = Brighteye gloves
-
 # NCT
 loadout-group-NanotrasenCareerTrainer-jumpsuit = NanoTrasen Career Trainer jumpsuit
 loadout-group-NanotrasenCareerTrainer-hat = NanoTrasen Career Trainer hat

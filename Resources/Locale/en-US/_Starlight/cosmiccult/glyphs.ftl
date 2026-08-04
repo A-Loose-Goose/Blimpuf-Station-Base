@@ -4,7 +4,6 @@ cult-glyph-conditions-not-met = No suitable targets within range of glyph!
 cult-glyph-too-many-targets = Too many targets present on glyph!
 cult-glyph-target-mindshield = Mental shielding prevents the glyph's influence from taking hold!
 cult-glyph-target-chaplain = A spark of divine power prevents the glyph's influence from taking hold!
-cult-glyph-target-brighteye = Nullspace energy prevents the glyph's influence from taking hold!
 cult-glyph-target-wizard = Mental insanity prevents the glyph's influence from taking hold!
 cult-glyph-target-otherantag = The target's mind is too twisted for the glyph's effects to take hold.
 cult-glyph-target-devil = Cold banality prevents the glyph's influence from taking hold!

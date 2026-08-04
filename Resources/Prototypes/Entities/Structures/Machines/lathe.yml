@@ -213,7 +213,6 @@
     unlitIdleState: unlit
     unlitRunningState: unlit-building
     staticPacks:
-    - NullSpaceDrainer # Starlight
     - ScienceBlueSpaceStatic # Starlight
     - ChemistryStatic
     dynamicPacks:
@@ -310,7 +309,6 @@
     - StarlightCircuitImprinterLootable
     - ReactorCircuitboards # FH edit
     - OublietteCircuitBoard # Starlight
-    - ScienceDarkBreacher # Starlight
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - StarlightSecurityBoards
@@ -448,7 +446,6 @@
     runningState: icon
     staticPacks:
     - SecurityEquipmentStatic # Starlight start
-    - NullSpaceDrainer
     - SecurityPracticeStatic
     - StarlightSecurityAmmoStatic
     - SecurityWeaponsStatic

@@ -78,7 +78,6 @@
         "!type:BoundaryWallDunGen mapping",
         "!type:BreakVowAlertEvent mapping",
         "!type:Breathing mapping",
-        "!type:BrighteyePortalActionEvent mapping",
         "!type:BuckledPrecondition mapping",
         "!type:BuildMech mapping",
         "!type:BurnBodyBehavior mapping",

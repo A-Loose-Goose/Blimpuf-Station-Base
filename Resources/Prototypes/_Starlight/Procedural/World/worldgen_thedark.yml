@@ -1,8 +1,0 @@
-- type: worldgenConfig
-  id: TheDark
-  components:
-    - type: WorldController
-    - type: BiomeSelection
-      biomes:
-        - Failsafe
-        - TheDarkStandard

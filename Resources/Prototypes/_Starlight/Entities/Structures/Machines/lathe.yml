@@ -262,7 +262,6 @@
     - MaterialsStatic
     - StarlightContainersStatic
     - PowerCellsStatic
-    - NullSpaceDrainer
     - ScienceBlueSpaceStatic
     - ChemistryStatic
     dynamicPacks:
@@ -397,10 +396,8 @@
     - ElectronicsStatic
     - CassetteTape
     - TapeRecorder
-    - NullSpaceDrainer
     - ScienceBlueSpaceStatic
     - SecurityEquipmentStatic
-    - NullSpaceDrainer
     - SecurityPracticeStatic
     - StarlightSecurityAmmoStatic
     - SecurityWeaponsStatic
@@ -531,10 +528,8 @@
     - ElectronicsStatic
     - CassetteTape
     - TapeRecorder
-    - NullSpaceDrainer
     - ScienceBlueSpaceStatic
     - SecurityEquipmentStatic
-    - NullSpaceDrainer
     - SecurityPracticeStatic
     - StarlightSecurityAmmoStatic
     - SecurityWeaponsStatic

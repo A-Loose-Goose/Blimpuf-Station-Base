@@ -118,7 +118,6 @@
     radius: 2.5
     energy: 2
     color: "#452e59"
-  - type: DarkLight
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 0.90 # Not too slow, and you get some niche resistances.
