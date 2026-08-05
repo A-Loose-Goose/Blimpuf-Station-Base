@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 07/13/2026 04:34:53
-  entityCount: 16114
+  entityCount: 16138
 maps:
 - 1
 grids:
@@ -366,15 +366,15 @@ entities:
             8393: -57,54
             8394: -57,49
         - node:
-            zIndex: 2
             angle: 1.5707963267948966 rad
+            zIndex: 2
             color: '#FFFFFFFF'
             id: Arrows
           decals:
             8395: -57,52
         - node:
-            zIndex: 2
             angle: 4.71238898038469 rad
+            zIndex: 2
             color: '#FFFFFFFF'
             id: Arrows
           decals:
@@ -8604,12 +8604,16 @@ entities:
           decals:
             2350: -13.834983,36.936462
         - node:
-            color: '#37789B96'
+            color: '#00B95C96'
             id: HalfTileOverlayGreyscale
           decals:
             3293: -2,10
             3294: -1,10
             3295: 0,10
+        - node:
+            color: '#37789B96'
+            id: HalfTileOverlayGreyscale
+          decals:
             3350: -62,61
             3351: -61,61
             3352: -60,61
@@ -8681,12 +8685,16 @@ entities:
             8131: -5,68
             8132: -4,68
         - node:
-            color: '#37789B96'
+            color: '#00B95C96'
             id: HalfTileOverlayGreyscale180
           decals:
             3290: -2,8
             3291: -1,8
             3292: 0,8
+        - node:
+            color: '#37789B96'
+            id: HalfTileOverlayGreyscale180
+          decals:
             3365: -62,60
             3366: -61,60
             3367: -60,60
@@ -8751,10 +8759,14 @@ entities:
             8065: -19,56
             8133: -7,72
         - node:
-            color: '#37789B96'
+            color: '#00B95C96'
             id: HalfTileOverlayGreyscale270
           decals:
             3301: -3,9
+        - node:
+            color: '#37789B96'
+            id: HalfTileOverlayGreyscale270
+          decals:
             3383: -53,62
             3384: -53,63
             3385: -53,64
@@ -8830,10 +8842,14 @@ entities:
             8059: -15,56
             8060: -15,57
         - node:
-            color: '#37789B96'
+            color: '#00B95C96'
             id: HalfTileOverlayGreyscale90
           decals:
             3296: 1,9
+        - node:
+            color: '#37789B96'
+            id: HalfTileOverlayGreyscale90
+          decals:
             3380: -51,61
             3381: -51,62
             3382: -51,63
@@ -9399,10 +9415,14 @@ entities:
           decals:
             2607: -3.964231,22.551708
         - node:
-            color: '#37789B96'
+            color: '#00B95C96'
             id: ThreeQuarterTileOverlayGreyscale
           decals:
             3297: -3,10
+        - node:
+            color: '#37789B96'
+            id: ThreeQuarterTileOverlayGreyscale
+          decals:
             3388: -53,65
             3478: -66,55
         - node:
@@ -9427,10 +9447,14 @@ entities:
             4189: -75,35
             4401: -62,33
         - node:
-            color: '#37789B96'
+            color: '#00B95C96'
             id: ThreeQuarterTileOverlayGreyscale180
           decals:
             3298: 1,8
+        - node:
+            color: '#37789B96'
+            id: ThreeQuarterTileOverlayGreyscale180
+          decals:
             3389: -51,60
             3479: -60,50
         - node:
@@ -9451,10 +9475,14 @@ entities:
             4235: -80,22
             4402: -60,31
         - node:
-            color: '#37789B96'
+            color: '#00B95C96'
             id: ThreeQuarterTileOverlayGreyscale270
           decals:
             3300: -3,8
+        - node:
+            color: '#37789B96'
+            id: ThreeQuarterTileOverlayGreyscale270
+          decals:
             3481: -66,52
             3482: -64,50
         - node:
@@ -9473,10 +9501,14 @@ entities:
             4236: -83,22
             4403: -62,31
         - node:
-            color: '#37789B96'
+            color: '#00B95C96'
             id: ThreeQuarterTileOverlayGreyscale90
           decals:
             3299: 1,10
+        - node:
+            color: '#37789B96'
+            id: ThreeQuarterTileOverlayGreyscale90
+          decals:
             3480: -60,55
         - node:
             color: '#52B4E996'
@@ -15380,15 +15412,15 @@ entities:
       parent: 2
 - proto: Autolathe
   entities:
-  - uid: 581
-    components:
-    - type: Transform
-      pos: -5.5,-0.5
-      parent: 2
   - uid: 582
     components:
     - type: Transform
       pos: -38.5,-1.5
+      parent: 2
+  - uid: 16147
+    components:
+    - type: Transform
+      pos: -26.5,27.5
       parent: 2
 - proto: BananaPhoneInstrument
   entities:
@@ -42933,14 +42965,6 @@ entities:
     - type: Transform
       pos: -53.5,58.5
       parent: 2
-- proto: ComputerCargoOrdersService
-  entities:
-  - uid: 5746
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -30.5,38.5
-      parent: 2
 - proto: ComputerComms
   entities:
   - uid: 5747
@@ -43511,10 +43535,10 @@ entities:
         moles:
           Oxygen: 3.3523011
           Nitrogen: 12.611038
-  - uid: 5831
+  - uid: 16134
     components:
     - type: Transform
-      pos: -63.5,26.5
+      pos: -67.5,26.5
       parent: 2
     - type: EntityStorage
       air:
@@ -44006,26 +44030,12 @@ entities:
     - type: Transform
       pos: -42.5,37.5
       parent: 2
-- proto: DefaultStationBeaconAME
-  entities:
-  - uid: 5909
-    components:
-    - type: Transform
-      pos: -64.5,20.5
-      parent: 2
 - proto: DefaultStationBeaconAnomalyGenerator
   entities:
   - uid: 5910
     components:
     - type: Transform
       pos: -14.5,-12.5
-      parent: 2
-- proto: DefaultStationBeaconArmory
-  entities:
-  - uid: 5911
-    components:
-    - type: Transform
-      pos: -42.5,62.5
       parent: 2
 - proto: DefaultStationBeaconArrivals
   entities:
@@ -44048,13 +44058,6 @@ entities:
     - type: Transform
       pos: -81.5,35.5
       parent: 2
-- proto: DefaultStationBeaconBar
-  entities:
-  - uid: 5915
-    components:
-    - type: Transform
-      pos: -35.5,37.5
-      parent: 2
 - proto: DefaultStationBeaconBotany
   entities:
   - uid: 5916
@@ -44068,13 +44071,6 @@ entities:
     components:
     - type: Transform
       pos: -16.5,61.5
-      parent: 2
-- proto: DefaultStationBeaconBrig
-  entities:
-  - uid: 5918
-    components:
-    - type: Transform
-      pos: -54.5,54.5
       parent: 2
 - proto: DefaultStationBeaconCaptainsQuarters
   entities:
@@ -44103,13 +44099,6 @@ entities:
     components:
     - type: Transform
       pos: -72.5,16.5
-      parent: 2
-- proto: DefaultStationBeaconChapel
-  entities:
-  - uid: 5923
-    components:
-    - type: Transform
-      pos: 14.5,-2.5
       parent: 2
 - proto: DefaultStationBeaconChemistry
   entities:
@@ -44160,13 +44149,6 @@ entities:
     - type: Transform
       pos: -21.5,38.5
       parent: 2
-- proto: DefaultStationBeaconHOSRoom
-  entities:
-  - uid: 5931
-    components:
-    - type: Transform
-      pos: -59.5,63.5
-      parent: 2
 - proto: DefaultStationBeaconJanitorsCloset
   entities:
   - uid: 5932
@@ -44180,13 +44162,6 @@ entities:
     components:
     - type: Transform
       pos: -34.5,43.5
-      parent: 2
-- proto: DefaultStationBeaconLawOffice
-  entities:
-  - uid: 5934
-    components:
-    - type: Transform
-      pos: -0.5,9.5
       parent: 2
 - proto: DefaultStationBeaconLibrary
   entities:
@@ -44202,13 +44177,6 @@ entities:
     - type: Transform
       pos: -2.5,32.5
       parent: 2
-- proto: DefaultStationBeaconMorgue
-  entities:
-  - uid: 5937
-    components:
-    - type: Transform
-      pos: 0.5,15.5
-      parent: 2
 - proto: DefaultStationBeaconNCT
   entities:
   - uid: 5938
@@ -44222,13 +44190,6 @@ entities:
     components:
     - type: Transform
       pos: -51.5,86.5
-      parent: 2
-- proto: DefaultStationBeaconPowerBank
-  entities:
-  - uid: 5940
-    components:
-    - type: Transform
-      pos: -69.5,31.5
       parent: 2
 - proto: DefaultStationBeaconQMRoom
   entities:
@@ -75928,6 +75889,11 @@ entities:
     - type: Transform
       pos: -12.5,-14.5
       parent: 2
+  - uid: 16138
+    components:
+    - type: Transform
+      pos: -5.5,1.5
+      parent: 2
 - proto: MachineFrameDestroyed
   entities:
   - uid: 12564
@@ -81123,13 +81089,6 @@ entities:
       - Experimental
       - CivilianServices
       - Biochemical
-- proto: Protolathe
-  entities:
-  - uid: 11326
-    components:
-    - type: Transform
-      pos: -5.5,1.5
-      parent: 2
 - proto: PuddleVomit
   entities:
   - uid: 11327
@@ -89278,10 +89237,10 @@ entities:
     - type: Transform
       pos: -41.5,25.5
       parent: 2
-  - uid: 12662
+  - uid: 16149
     components:
     - type: Transform
-      pos: -42.5,25.5
+      pos: -42.5,27.5
       parent: 2
 - proto: SpawnPointQuartermaster
   entities:
@@ -92829,6 +92788,11 @@ entities:
     components:
     - type: Transform
       pos: 17.5,52.5
+      parent: 2
+  - uid: 16144
+    components:
+    - type: Transform
+      pos: -30.5,38.5
       parent: 2
 - proto: TelecomServerFilledCargo
   entities:
@@ -108649,6 +108613,18 @@ entities:
     - type: Transform
       pos: -25.5,54.5
       parent: 2
+  - uid: 16142
+    components:
+    - type: Transform
+      pos: -44.5,39.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 16143
+    components:
+    - type: Transform
+      pos: -41.5,39.5
+      parent: 2
+      rot: 4.71238898038469 rad
 - proto: Wrench
   entities:
   - uid: 16102
@@ -108665,5 +108641,219 @@ entities:
     components:
     - type: Transform
       pos: -24.486898,29.543127
+      parent: 2
+- proto: CommandTechFab
+  entities:
+  - uid: 16133
+    components:
+    - type: Transform
+      pos: -18.5,62.5
+      parent: 2
+- proto: ComputerShipyard
+  entities:
+  - uid: 16132
+    components:
+    - type: Transform
+      pos: -14.5,62.5
+      parent: 2
+      rot: 3.141592653589793 rad
+- proto: EngineeringTechFab
+  entities:
+  - uid: 16135
+    components:
+    - type: Transform
+      pos: -63.5,26.5
+      parent: 2
+- proto: CargoTechFab
+  entities:
+  - uid: 16136
+    components:
+    - type: Transform
+      pos: -36.5,-3.5
+      parent: 2
+- proto: ScienceTechFab
+  entities:
+  - uid: 16137
+    components:
+    - type: Transform
+      pos: -5.5,-0.5
+      parent: 2
+- proto: ServiceTechFab
+  entities:
+  - uid: 16139
+    components:
+    - type: Transform
+      pos: -42.5,39.5
+      parent: 2
+- proto: ComputerCargoOrdersService
+  entities:
+  - uid: 16141
+    components:
+    - type: Transform
+      pos: -43.5,39.5
+      parent: 2
+- proto: WindoorSecureServiceLocked
+  entities:
+  - uid: 16145
+    components:
+    - type: Transform
+      pos: -43.5,38.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 16146
+    components:
+    - type: Transform
+      pos: -42.5,38.5
+      parent: 2
+      rot: 3.141592653589793 rad
+- proto: IceCreamMaker
+  entities:
+  - uid: 16148
+    components:
+    - type: Transform
+      pos: -35.5,44.5
+      parent: 2
+- proto: VendingMachineMime
+  entities:
+  - uid: 16150
+    components:
+    - type: Transform
+      pos: -42.5,25.5
+      parent: 2
+- proto: SpawnMobKoboldKiki
+  entities:
+  - uid: 16151
+    components:
+    - type: Transform
+      pos: -41.5,46.5
+      parent: 2
+- proto: SpawnMobMonkeyStirStir
+  entities:
+  - uid: 16152
+    components:
+    - type: Transform
+      pos: -52.5,50.5
+      parent: 2
+- proto: SpawnMobPenguinFlippers
+  entities:
+  - uid: 16153
+    components:
+    - type: Transform
+      pos: 1.5,9.5
+      parent: 2
+- proto: DefaultStationBeaconIAA
+  entities:
+  - uid: 16154
+    components:
+    - type: Transform
+      pos: -0.5,9.5
+      parent: 2
+- proto: DefaultStationBeaconBrig
+  entities:
+  - uid: 16155
+    components:
+    - type: Transform
+      pos: -54.5,51.5
+      parent: 2
+- proto: DefaultStationBeaconAME
+  entities:
+  - uid: 16160
+    components:
+    - type: Transform
+      pos: -67.5,21.5
+      parent: 2
+- proto: DefaultStationBeaconPowerBank
+  entities:
+  - uid: 16161
+    components:
+    - type: Transform
+      pos: -70.5,30.5
+      parent: 2
+- proto: DefaultStationBeaconEngineering
+  entities:
+  - uid: 16162
+    components:
+    - type: Transform
+      pos: -65.5,26.5
+      parent: 2
+- proto: DefaultStationBeaconEvac
+  entities:
+  - uid: 16163
+    components:
+    - type: Transform
+      pos: 26.5,13.5
+      parent: 2
+- proto: DefaultStationBeaconSurgery
+  entities:
+  - uid: 16164
+    components:
+    - type: Transform
+      pos: 1.5,38.5
+      parent: 2
+- proto: CarpetGreen
+  entities:
+  - uid: 16165
+    components:
+    - type: Transform
+      pos: -1.5,9.5
+      parent: 2
+  - uid: 16166
+    components:
+    - type: Transform
+      pos: -0.5,9.5
+      parent: 2
+  - uid: 16167
+    components:
+    - type: Transform
+      pos: 0.5,9.5
+      parent: 2
+- proto: DefaultStationBeaconArmory
+  entities:
+  - uid: 16168
+    components:
+    - type: Transform
+      pos: -42.5,64.5
+      parent: 2
+- proto: DefaultStationBeaconHOSRoom
+  entities:
+  - uid: 16169
+    components:
+    - type: Transform
+      pos: -59.5,65.5
+      parent: 2
+- proto: DefaultStationBeaconBrigMed
+  entities:
+  - uid: 16170
+    components:
+    - type: Transform
+      pos: -65.5,62.5
+      parent: 2
+- proto: DefaultStationBeaconSecurity
+  entities:
+  - uid: 16171
+    components:
+    - type: Transform
+      pos: -54.5,56.5
+      parent: 2
+- proto: DefaultStationBeaconMorgue
+  entities:
+  - uid: 16172
+    components:
+    - type: Transform
+      pos: 1.5,15.5
+      parent: 2
+- proto: DefaultStationBeaconBar
+  entities:
+  - uid: 16173
+    components:
+    - type: Transform
+      pos: -37.5,37.5
+      parent: 2
+- proto: DefaultStationBeaconChapel
+  entities:
+  - uid: 16174
+    components:
+    - type: Transform
+      pos: 15.5,0.5
       parent: 2
 ...
