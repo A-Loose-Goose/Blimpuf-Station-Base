@@ -48,7 +48,7 @@
 
 - type: playTimeTracker
   id: AntagVampire
-  name: roles-antag-vamire-name
+  name: roles-antag-vampire-name
 
 - type: playTimeTracker
   id: AntagSurvivor
@@ -102,10 +102,10 @@
   id: AntagTerminator
   name: roles-antag-terminator-name
 
-#- type: playTimeTracker
-#  id: AntagBrighteye
-#  name: roles-antag-brighteye-name
-
 - type: playTimeTracker
   id: AntagTerrorPrincess
   name: roles-antag-terror-princess-name
+
+- type: playTimeTracker
+  id: AntagDevil
+  name: roles-antag-devil-name

@@ -1,5 +1,5 @@
 - type: entity
-  parent: [BaseMobNeocyte, BaseSpeciesPickupableHuge]
+  parent: [BaseSpeciesPickupableHuge, BaseMobNeocyte]
   id: BaseMobNeoTNebri
   name: "Urist McT'Nebrist"
   abstract: true

@@ -99756,144 +99756,11 @@ entities:
       parent: 2
 - proto: FaxMachineBase
   entities:
-  - uid: 16450
-    components:
-    - type: Transform
-      pos: -41.5,28.5
-      parent: 2
-    - type: FaxMachine
-      name: Medical Breakroom
-  - uid: 16451
-    components:
-    - type: Transform
-      pos: -28.5,25.5
-      parent: 2
-    - type: FaxMachine
-      name: CMO's Office
   - uid: 16452
     components:
     - type: Transform
       pos: -19.5,18.5
       parent: 2
-  - uid: 16453
-    components:
-    - type: Transform
-      pos: -19.5,28.5
-      parent: 2
-    - type: FaxMachine
-      name: NCT's Office
-  - uid: 16454
-    components:
-    - type: Transform
-      pos: -21.5,-19.5
-      parent: 2
-    - type: FaxMachine
-      name: Cargo Front Desk
-  - uid: 16455
-    components:
-    - type: Transform
-      pos: -6.5,-21.5
-      parent: 2
-    - type: FaxMachine
-      name: QM's Office
-  - uid: 16456
-    components:
-    - type: Transform
-      pos: -65.5,-22.5
-      parent: 2
-    - type: FaxMachine
-      name: Service Breakroom
-  - uid: 16457
-    components:
-    - type: Transform
-      pos: -49.5,24.5
-      parent: 2
-    - type: FaxMachine
-      name: Library Public
-  - uid: 16458
-    components:
-    - type: Transform
-      pos: -66.5,29.5
-      parent: 2
-    - type: FaxMachine
-      name: Science Front Desk
-  - uid: 16459
-    components:
-    - type: Transform
-      pos: -65.5,36.5
-      parent: 2
-    - type: FaxMachine
-      name: RD's Office
-  - uid: 16460
-    components:
-    - type: Transform
-      pos: -49.5,65.5
-      parent: 2
-    - type: FaxMachine
-      name: Perma
-  - uid: 16461
-    components:
-    - type: Transform
-      pos: -66.5,41.5
-      parent: 2
-    - type: FaxMachine
-      name: Security Front Desk
-  - uid: 16462
-    components:
-    - type: Transform
-      pos: -68.5,42.5
-      parent: 2
-    - type: FaxMachine
-      name: HOS's Office
-  - uid: 16463
-    components:
-    - type: Transform
-      pos: -72.5,56.5
-      parent: 2
-    - type: FaxMachine
-      name: Warden's Office
-  - uid: 16464
-    components:
-    - type: Transform
-      pos: -85.5,57.5
-      parent: 2
-    - type: FaxMachine
-      name: Detective's Office
-  - uid: 16465
-    components:
-    - type: Transform
-      pos: 9.5,47.5
-      parent: 2
-    - type: FaxMachine
-      name: Bridge
-  - uid: 16466
-    components:
-    - type: Transform
-      pos: 5.5,32.5
-      parent: 2
-    - type: FaxMachine
-      name: NTR's Office
-  - uid: 16467
-    components:
-    - type: Transform
-      pos: -10.5,28.5
-      parent: 2
-    - type: FaxMachine
-      name: HOP's Office
-  - uid: 16468
-    components:
-    - type: Transform
-      pos: -17.5,73.5
-      parent: 2
-    - type: FaxMachine
-      name: CE's Office
-  - uid: 16469
-    components:
-    - type: Transform
-      pos: -37.5,55.5
-      parent: 2
-    - type: FaxMachine
-      name: Law Office
   - uid: 16470
     components:
     - type: Transform
@@ -99905,6 +99772,139 @@ entities:
     components:
     - type: Transform
       pos: -17.5,41.5
+      parent: 2
+- proto: FaxMachineCargo
+  entities:
+  - uid: 16454
+    components:
+    - type: Transform
+      pos: -21.5,-19.5
+      parent: 2
+- proto: FaxMachineCargoQM
+  entities:
+  - uid: 16455
+    components:
+    - type: Transform
+      pos: -6.5,-21.5
+      parent: 2
+- proto: FaxMachineCommandBridge
+  entities:
+  - uid: 16465
+    components:
+    - type: Transform
+      pos: 9.5,47.5
+      parent: 2
+- proto: FaxMachineEngineeringCE
+  entities:
+  - uid: 16468
+    components:
+    - type: Transform
+      pos: -17.5,73.5
+      parent: 2
+- proto: FaxMachineMedical
+  entities:
+  - uid: 16450
+    components:
+    - type: Transform
+      pos: -41.5,28.5
+      parent: 2
+- proto: FaxMachineMedicalCMO
+  entities:
+  - uid: 16451
+    components:
+    - type: Transform
+      pos: -28.5,25.5
+      parent: 2
+- proto: FaxMachineNTCareerTrainer
+  entities:
+  - uid: 16453
+    components:
+    - type: Transform
+      pos: -19.5,28.5
+      parent: 2
+- proto: FaxMachineCCRep
+  entities:
+  - uid: 16466
+    components:
+    - type: Transform
+      pos: 5.5,32.5
+      parent: 2
+- proto: FaxMachineScience
+  entities:
+  - uid: 16458
+    components:
+    - type: Transform
+      pos: -66.5,29.5
+      parent: 2
+- proto: FaxMachineScienceRD
+  entities:
+  - uid: 16459
+    components:
+    - type: Transform
+      pos: -65.5,36.5
+      parent: 2
+- proto: FaxMachineSecurity
+  entities:
+  - uid: 16461
+    components:
+    - type: Transform
+      pos: -66.5,41.5
+      parent: 2
+- proto: FaxMachineSecurityDetective
+  entities:
+  - uid: 16464
+    components:
+    - type: Transform
+      pos: -85.5,57.5
+      parent: 2
+- proto: FaxMachineSecurityHoS
+  entities:
+  - uid: 16462
+    components:
+    - type: Transform
+      pos: -68.5,42.5
+      parent: 2
+- proto: FaxMachineSecurityPrison
+  entities:
+  - uid: 16460
+    components:
+    - type: Transform
+      pos: -49.5,65.5
+      parent: 2
+- proto: FaxMachineSecurityWarden
+  entities:
+  - uid: 16463
+    components:
+    - type: Transform
+      pos: -72.5,56.5
+      parent: 2
+- proto: FaxMachineService
+  entities:
+  - uid: 16456
+    components:
+    - type: Transform
+      pos: -65.5,-22.5
+      parent: 2
+- proto: FaxMachineServiceHoP
+  entities:
+  - uid: 16467
+    components:
+    - type: Transform
+      pos: -10.5,28.5
+      parent: 2
+- proto: FaxMachineServiceLawyer
+  entities:
+  - uid: 16469
+    components:
+    - type: Transform
+      pos: -37.5,55.5
+      parent: 2
+- proto: FaxMachineServiceLibrary
+  entities:
+  - uid: 16457
+    components:
+    - type: Transform
+      pos: -49.5,24.5
       parent: 2
 - proto: filingCabinetDrawerRandom
   entities:
@@ -145840,13 +145840,6 @@ entities:
     components:
     - type: Transform
       pos: -101.50637,3.783976
-      parent: 2
-- proto: PlushieBrighteyes
-  entities:
-  - uid: 22840
-    components:
-    - type: Transform
-      pos: -13.661417,97.4801
       parent: 2
 - proto: PlushieEina
   entities:

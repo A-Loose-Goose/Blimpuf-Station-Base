@@ -1,5 +1,5 @@
 - type: entity
-  parent: [BaseMobNeocyte, BaseSpeciesPickupableLarge]
+  parent: BaseMobNeocyte
   id: BaseMobNeoElf
   name: Urist McElgister
   abstract: true
@@ -11,9 +11,6 @@
     understands:
     - GalacticCommon
     - Machine
-  - type: Absorbable
-  - type: Hunger
-  - type: Thirst
   - type: Icon
     sprite: _FarHorizons/Mobs/Species/Proto-Humie/parts.rsi
     state: full

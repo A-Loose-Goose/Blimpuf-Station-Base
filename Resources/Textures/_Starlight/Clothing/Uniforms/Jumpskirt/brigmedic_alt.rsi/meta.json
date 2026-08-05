@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-4.0",
+  "copyright": "State based copyright, made blue by ItsMaitake on Blimpuf Station",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon",
+      "copyright": "Hanz5579(discord)"
+    },
+    {
+      "name": "equipped-INNERCLOTHING",
+      "copyright": "Hanz5579(discord)",
+      "directions": 4
+    },
+    {
+      "name": "inhand-left",
+      "copyright": "Hanz5579(discord)",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "copyright": "Hanz5579(discord)",
+      "directions": 4
+    }
+  ]
+}

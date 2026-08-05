@@ -1,6 +1,6 @@
 - type: entity
   name: Urist McRapster
-  parent: [BaseMobNeocyte, BaseColdBird, BaseSpeciesPickupable]
+  parent: [BaseSpeciesPickupable, BaseMobNeocyte, BaseColdBird]
   id: BaseMobNeoResomi
   abstract: true
   components:
@@ -13,7 +13,6 @@
     - GalacticCommon
     - Machine
     - Scratch
-  - type: Absorbable
   - type: Jump
     action: JumpResomi
   - type: DamageVisuals

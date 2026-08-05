@@ -8,7 +8,7 @@ reagent-name-resomi-blood = diluted ammonia blood
 reagent-desc-resomi-blood = Smells like piss.
 
 reagent-name-dark-blood = dark blood
-reagent-desc-dark-blood = The blood from a creature of The Dark.
+reagent-desc-dark-blood = The blood of a Shadekin.
 
 reagent-name-tnebri-blood = diluted nitric acid blood
 reagent-desc-tnebri-blood = Feels slightly acidic.

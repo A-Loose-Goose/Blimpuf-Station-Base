@@ -250,7 +250,6 @@
   components:
     - type: Transform
       anchored: false
-    - type: DarkLight
     - type: Shadegen
       range: 4
     - type: PointLight

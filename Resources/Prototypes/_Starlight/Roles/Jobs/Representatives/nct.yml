@@ -17,7 +17,6 @@
   supervisors: job-supervisors-captain
   weight: -1
   overrideConsoleVisibility: false
-  canBeAntag: false
   joinNotifyCrew: true
   access:
     - Lawyer

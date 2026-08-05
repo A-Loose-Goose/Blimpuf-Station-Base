@@ -1,5 +1,5 @@
 - type: entity
-  parent: [BaseMobNeocyte, BaseSpeciesPickupableLarge]
+  parent: BaseMobNeocyte
   id: BaseMobNeoVox
   name: Urist McVoxster
   abstract: true
@@ -13,7 +13,6 @@
     - GalacticCommon
     - Machine
     - VoxPidgin
-  - type: Absorbable
   - type: Icon
     sprite: _FarHorizons/Mobs/Species/Proto-Vox/parts.rsi
     state: full
@@ -224,7 +223,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: HumanoidAppearance
-    species: NeoVox #to be replaced with proto[species] when new sprites are made
+    species: NeoVox
     markingsDisplacement:
       Hair:
         sizeMaps:

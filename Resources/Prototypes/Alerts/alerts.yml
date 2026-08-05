@@ -31,6 +31,7 @@
     - alertType: Pacified
     - alertType: Stealthy
     - alertType: MinersCourage # Blimpuf renamed
+    - alertType: GPSAlert # Starlight
     - alertType: Offer # Starlight
 
 - type: entity

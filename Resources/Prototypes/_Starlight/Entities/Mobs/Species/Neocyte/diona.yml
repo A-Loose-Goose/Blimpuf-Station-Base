@@ -19,7 +19,6 @@
       Male: NeoDionaMSounds
       Female: NeoDionaFSounds
       Unsexed: NeoDionaMSounds
-  - type: Absorbable
   - type: Tag
     tags:
     - CanPilot

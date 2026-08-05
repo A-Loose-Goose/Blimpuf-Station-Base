@@ -85662,162 +85662,6 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: FaxMachineBase
-  entities:
-  - uid: 13556
-    components:
-    - type: Transform
-      pos: -9.5,-4.5
-      parent: 2
-    - type: FaxMachine
-      name: Cybersun Legal Dept.
-  - uid: 13557
-    components:
-    - type: Transform
-      pos: -6.5,-19.5
-      parent: 2
-    - type: FaxMachine
-      name: Chaplain
-  - uid: 13558
-    components:
-    - type: Transform
-      pos: -33.5,-26.5
-      parent: 2
-    - type: FaxMachine
-      name: News room
-  - uid: 13559
-    components:
-    - type: Transform
-      pos: -13.5,-48.5
-      parent: 2
-    - type: FaxMachine
-      name: Interdyne front
-  - uid: 13560
-    components:
-    - type: Transform
-      pos: 59.5,-28.5
-      parent: 2
-    - type: FaxMachine
-      name: Donk co. Qm's office
-  - uid: 13561
-    components:
-    - type: Transform
-      pos: -14.5,11.5
-      parent: 2
-    - type: FaxMachine
-      name: Gorlex command
-  - uid: 13562
-    components:
-    - type: Transform
-      pos: -10.5,6.5
-      parent: 2
-    - type: FaxMachine
-      name: Gorlex office
-  - uid: 13563
-    components:
-    - type: Transform
-      pos: 57.5,16.5
-      parent: 2
-    - type: FaxMachine
-      name: RD's office
-  - uid: 13564
-    components:
-    - type: Transform
-      pos: 13.5,-56.5
-      parent: 2
-    - type: FaxMachine
-      name: Interdyne CMO
-  - uid: 13565
-    components:
-    - type: Transform
-      pos: 50.5,8.5
-      parent: 2
-    - type: FaxMachine
-      name: Cybersun R&D
-  - uid: 13566
-    components:
-    - type: Transform
-      pos: -61.5,27.5
-      parent: 2
-    - type: FaxMachine
-      name: CE's office
-  - uid: 13567
-    components:
-    - type: Transform
-      pos: -54.5,4.5
-      parent: 2
-    - type: FaxMachine
-      name: Engineering
-  - uid: 13568
-    components:
-    - type: Transform
-      pos: 5.5,50.5
-      parent: 2
-    - type: FaxMachine
-      name: NTR/BSO office
-  - uid: 13569
-    components:
-    - type: Transform
-      pos: 25.5,47.5
-      parent: 2
-    - type: FaxMachine
-      name: HOP's office
-  - uid: 13570
-    components:
-    - type: Transform
-      pos: -21.5,46.5
-      parent: 2
-    - type: FaxMachine
-      name: Bridge
-  - uid: 13571
-    components:
-    - type: Transform
-      pos: 48.5,-17.5
-      parent: 2
-    - type: FaxMachine
-      name: Donk co. shipping
-  - uid: 13572
-    components:
-    - type: Transform
-      pos: -0.5,48.5
-      parent: 2
-    - type: FaxMachine
-      name: Command Conference
-  - uid: 13573
-    components:
-    - type: Transform
-      pos: 5.5,9.5
-      parent: 2
-    - type: FaxMachine
-      name: Warden's office
-  - uid: 13574
-    components:
-    - type: Transform
-      pos: 3.5,-24.5
-      parent: 2
-    - type: FaxMachine
-      name: NCT office
-  - uid: 13575
-    components:
-    - type: Transform
-      pos: -5.5,-27.5
-      parent: 2
-    - type: FaxMachine
-      name: Lawyer
-  - uid: 13576
-    components:
-    - type: Transform
-      pos: -20.5,-6.5
-      parent: 2
-    - type: FaxMachine
-      name: Courtroom
-  - uid: 13577
-    components:
-    - type: Transform
-      pos: -16.5,-10.5
-      parent: 2
-    - type: FaxMachine
-      name: Library
 - proto: FaxMachineCaptain
   entities:
   - uid: 13578
@@ -85827,6 +85671,158 @@ entities:
       parent: 2
     - type: FaxMachine
       name: Captain's office
+- proto: FaxMachineCargo
+  entities:
+  - uid: 13571
+    components:
+    - type: Transform
+      pos: 48.5,-17.5
+      parent: 2
+- proto: FaxMachineCargoQM
+  entities:
+  - uid: 13560
+    components:
+    - type: Transform
+      pos: 59.5,-28.5
+      parent: 2
+- proto: FaxMachineCommandBridge
+  entities:
+  - uid: 13570
+    components:
+    - type: Transform
+      pos: -21.5,46.5
+      parent: 2
+- proto: FaxMachineCommandConference
+  entities:
+  - uid: 13572
+    components:
+    - type: Transform
+      pos: -0.5,48.5
+      parent: 2
+- proto: FaxMachineEngineering
+  entities:
+  - uid: 13567
+    components:
+    - type: Transform
+      pos: -54.5,4.5
+      parent: 2
+- proto: FaxMachineEngineeringCE
+  entities:
+  - uid: 13566
+    components:
+    - type: Transform
+      pos: -61.5,27.5
+      parent: 2
+- proto: FaxMachineMedical
+  entities:
+  - uid: 13559
+    components:
+    - type: Transform
+      pos: -13.5,-48.5
+      parent: 2
+- proto: FaxMachineMedicalCMO
+  entities:
+  - uid: 13564
+    components:
+    - type: Transform
+      pos: 13.5,-56.5
+      parent: 2
+- proto: FaxMachineNTCareerTrainer
+  entities:
+  - uid: 13574
+    components:
+    - type: Transform
+      pos: 3.5,-24.5
+      parent: 2
+- proto: FaxMachineCCInternalAffairs
+  entities:
+  - uid: 13556
+    components:
+    - type: Transform
+      pos: -9.5,-4.5
+      parent: 2
+- proto: FaxMachineCCRepCCE
+  entities:
+  - uid: 13568
+    components:
+    - type: Transform
+      pos: 5.5,50.5
+      parent: 2
+- proto: FaxMachineScience
+  entities:
+  - uid: 13565
+    components:
+    - type: Transform
+      pos: 50.5,8.5
+      parent: 2
+- proto: FaxMachineScienceRD
+  entities:
+  - uid: 13563
+    components:
+    - type: Transform
+      pos: 57.5,16.5
+      parent: 2
+- proto: FaxMachineSecurity
+  entities:
+  - uid: 13562
+    components:
+    - type: Transform
+      pos: -10.5,6.5
+      parent: 2
+- proto: FaxMachineSecurityHoS
+  entities:
+  - uid: 13561
+    components:
+    - type: Transform
+      pos: -14.5,11.5
+      parent: 2
+- proto: FaxMachineSecurityWarden
+  entities:
+  - uid: 13573
+    components:
+    - type: Transform
+      pos: 5.5,9.5
+      parent: 2
+- proto: FaxMachineServiceChaplain
+  entities:
+  - uid: 13557
+    components:
+    - type: Transform
+      pos: -6.5,-19.5
+      parent: 2
+- proto: FaxMachineServiceHoP
+  entities:
+  - uid: 13569
+    components:
+    - type: Transform
+      pos: 25.5,47.5
+      parent: 2
+- proto: FaxMachineServiceLawyer
+  entities:
+  - uid: 13575
+    components:
+    - type: Transform
+      pos: -5.5,-27.5
+      parent: 2
+  - uid: 13576
+    components:
+    - type: Transform
+      pos: -20.5,-6.5
+      parent: 2
+- proto: FaxMachineServiceLibrary
+  entities:
+  - uid: 13577
+    components:
+    - type: Transform
+      pos: -16.5,-10.5
+      parent: 2
+- proto: FaxMachineServiceReporter
+  entities:
+  - uid: 13558
+    components:
+    - type: Transform
+      pos: -33.5,-26.5
+      parent: 2
 - proto: filingCabinetDrawerRandom
   entities:
   - uid: 13579

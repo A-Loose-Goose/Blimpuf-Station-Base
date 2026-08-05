@@ -14555,7 +14555,7 @@ entities:
       parent: 2
     - type: GridFill
       addComponents: []
-      path: /Maps/_Starlight/Shuttles/KillerTamashi-SecShuttle.yml
+      path: /Maps/_Starlight/Shuttles/Security/pursuit.yml
 - proto: AirlockExternalLocked
   entities:
   - uid: 281
@@ -89503,113 +89503,15 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: FaxMachineBase
+- proto: FaxMachineCaptain
   entities:
-  - uid: 14158
+  - uid: 14182
     components:
     - type: Transform
-      pos: 45.5,13.5
+      pos: -2.5,-31.5
       parent: 2
-    - type: FaxMachine
-      name: GenPop
-  - uid: 14159
-    components:
-    - type: Transform
-      pos: -24.5,-1.5
-      parent: 2
-    - type: FaxMachine
-      name: Medical Breakroom
-  - uid: 14160
-    components:
-    - type: Transform
-      pos: -21.5,-4.5
-      parent: 2
-    - type: FaxMachine
-      name: CMO
-  - uid: 14161
-    components:
-    - type: Transform
-      pos: 12.5,-2.5
-      parent: 2
-    - type: FaxMachine
-      name: Reporter
-  - uid: 14162
-    components:
-    - type: Transform
-      pos: 19.5,-1.5
-      parent: 2
-    - type: FaxMachine
-      name: Lawyer
-  - uid: 14163
-    components:
-    - type: Transform
-      pos: 14.5,4.5
-      parent: 2
-    - type: FaxMachine
-      name: Warden
-  - uid: 14164
-    components:
-    - type: Transform
-      pos: 24.5,11.5
-      parent: 2
-    - type: FaxMachine
-      name: Security
-  - uid: 14165
-    components:
-    - type: Transform
-      pos: 27.5,-1.5
-      parent: 2
-    - type: FaxMachine
-      name: HOS
-  - uid: 14166
-    components:
-    - type: Transform
-      pos: 39.5,-1.5
-      parent: 2
-    - type: FaxMachine
-      name: Detective
-  - uid: 14167
-    components:
-    - type: Transform
-      pos: -9.5,-21.5
-      parent: 2
-    - type: FaxMachine
-      name: Bridge
-  - uid: 14168
-    components:
-    - type: Transform
-      pos: -11.5,-28.5
-      parent: 2
-    - type: FaxMachine
-      name: NTR's Office
-  - uid: 14169
-    components:
-    - type: Transform
-      pos: -22.5,-18.5
-      parent: 2
-    - type: FaxMachine
-      name: Conference Room
-  - uid: 14170
-    components:
-    - type: Transform
-      pos: 12.5,-40.5
-      parent: 2
-    - type: FaxMachine
-      name: Library
-  - uid: 14171
-    components:
-    - type: Transform
-      pos: 25.5,-43.5
-      parent: 2
-    - type: FaxMachine
-      name: Chaplain
-  - uid: 14172
-    components:
-    - type: Transform
-      pos: 0.5,26.5
-      parent: 2
-    - type: FaxMachine
-      name: Science
+- proto: FaxMachineCargo
+  entities:
   - uid: 14173
     components:
     - type: Transform
@@ -89617,71 +89519,167 @@ entities:
       parent: 2
     - type: Pullable
       prevFixedRotation: True
-    - type: FaxMachine
-      name: Cargo Bay
     - type: Conveyed
+- proto: FaxMachineCargoQM
+  entities:
   - uid: 14174
     components:
     - type: Transform
       pos: -9.5,31.5
       parent: 2
-    - type: FaxMachine
-      name: QM
+- proto: FaxMachineCommandBridge
+  entities:
+  - uid: 14167
+    components:
+    - type: Transform
+      pos: -9.5,-21.5
+      parent: 2
+- proto: FaxMachineCommandConference
+  entities:
+  - uid: 14169
+    components:
+    - type: Transform
+      pos: -22.5,-18.5
+      parent: 2
+- proto: FaxMachineEngineering
+  entities:
   - uid: 14175
     components:
     - type: Transform
       pos: 39.5,43.5
       parent: 2
-    - type: FaxMachine
-      name: Engineering
+- proto: FaxMachineEngineeringCE
+  entities:
   - uid: 14176
     components:
     - type: Transform
       pos: 21.5,40.5
       parent: 2
-    - type: FaxMachine
-      name: CE
+- proto: FaxMachineMedical
+  entities:
+  - uid: 14159
+    components:
+    - type: Transform
+      pos: -24.5,-1.5
+      parent: 2
+- proto: FaxMachineMedicalCMO
+  entities:
+  - uid: 14160
+    components:
+    - type: Transform
+      pos: -21.5,-4.5
+      parent: 2
+- proto: FaxMachineMedicalPsychology
+  entities:
   - uid: 14177
     components:
     - type: Transform
       pos: -21.5,15.5
       parent: 2
-    - type: FaxMachine
-      name: Psychologist
+- proto: FaxMachineNTCareerTrainer
+  entities:
   - uid: 14178
     components:
     - type: Transform
       pos: 6.5,-57.5
       parent: 2
-    - type: FaxMachine
-      name: NCT
-  - uid: 14179
-    components:
-    - type: Transform
-      pos: 1.5,-18.5
-      parent: 2
-    - type: FaxMachine
-      name: HOP Office
-  - uid: 14180
-    components:
-    - type: Transform
-      pos: 2.5,41.5
-      parent: 2
-    - type: FaxMachine
-      name: RD
+- proto: FaxMachineCCInternalAffairs
+  entities:
   - uid: 14181
     components:
     - type: Transform
       pos: 55.5,10.5
       parent: 2
-    - type: FaxMachine
-      name: Internal Affairs
-- proto: FaxMachineCaptain
+- proto: FaxMachineCCRep
   entities:
-  - uid: 14182
+  - uid: 14168
     components:
     - type: Transform
-      pos: -2.5,-31.5
+      pos: -11.5,-28.5
+      parent: 2
+- proto: FaxMachineScience
+  entities:
+  - uid: 14172
+    components:
+    - type: Transform
+      pos: 0.5,26.5
+      parent: 2
+- proto: FaxMachineScienceRD
+  entities:
+  - uid: 14180
+    components:
+    - type: Transform
+      pos: 2.5,41.5
+      parent: 2
+- proto: FaxMachineSecurity
+  entities:
+  - uid: 14164
+    components:
+    - type: Transform
+      pos: 24.5,11.5
+      parent: 2
+- proto: FaxMachineSecurityDetective
+  entities:
+  - uid: 14166
+    components:
+    - type: Transform
+      pos: 39.5,-1.5
+      parent: 2
+- proto: FaxMachineSecurityHoS
+  entities:
+  - uid: 14165
+    components:
+    - type: Transform
+      pos: 27.5,-1.5
+      parent: 2
+- proto: FaxMachineSecurityPrison
+  entities:
+  - uid: 14158
+    components:
+    - type: Transform
+      pos: 45.5,13.5
+      parent: 2
+- proto: FaxMachineSecurityWarden
+  entities:
+  - uid: 14163
+    components:
+    - type: Transform
+      pos: 14.5,4.5
+      parent: 2
+- proto: FaxMachineServiceChaplain
+  entities:
+  - uid: 14171
+    components:
+    - type: Transform
+      pos: 25.5,-43.5
+      parent: 2
+- proto: FaxMachineServiceHoP
+  entities:
+  - uid: 14179
+    components:
+    - type: Transform
+      pos: 1.5,-18.5
+      parent: 2
+- proto: FaxMachineServiceLawyer
+  entities:
+  - uid: 14162
+    components:
+    - type: Transform
+      pos: 19.5,-1.5
+      parent: 2
+- proto: FaxMachineServiceLibrary
+  entities:
+  - uid: 14170
+    components:
+    - type: Transform
+      pos: 12.5,-40.5
+      parent: 2
+- proto: FaxMachineServiceReporter
+  entities:
+  - uid: 14161
+    components:
+    - type: Transform
+      pos: 12.5,-2.5
       parent: 2
 - proto: FenceMetalCorner
   entities:
@@ -134403,8 +134401,7 @@ entities:
         entity_storage: !type:Container
           showEnts: False
           occludes: True
-          ents:
-          - 20080
+          ents: []
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -139299,15 +139296,6 @@ entities:
     - type: Transform
       pos: -25.7482,-5.636765
       parent: 2
-- proto: PlushieBrighteyes
-  entities:
-  - uid: 20080
-    components:
-    - type: Transform
-      parent: 20079
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: PlushieCarp
   entities:
   - uid: 20145

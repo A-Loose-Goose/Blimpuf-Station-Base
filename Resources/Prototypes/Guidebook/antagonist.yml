@@ -19,7 +19,6 @@
   - Devil
   - Vampires
   - TerrorSpiders
-#  - Brighteye
   - SELFAgent
   # Starlight-end
   - Eeeps # imp
@@ -77,4 +76,3 @@
   id: Xenoborgs
   name: guide-entry-xenoborgs
   text: "/ServerInfo/Guidebook/Antagonist/Xenoborgs.xml"
-

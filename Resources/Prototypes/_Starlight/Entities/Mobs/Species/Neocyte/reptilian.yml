@@ -1,7 +1,7 @@
 - type: entity
   save: false
   name: Urisst' Mztosster
-  parent: [BaseMobNeocyte, BaseSpeciesPickupableLarge]
+  parent: BaseMobNeocyte
   id: BaseMobNeoReptilian
   abstract: true
   components:
@@ -14,7 +14,6 @@
     - GalacticCommon
     - Machine
     - Draconic
-  - type: Absorbable
   - type: HumanoidAppearance
     species: NeoReptilian
     hideLayersOnEquip:

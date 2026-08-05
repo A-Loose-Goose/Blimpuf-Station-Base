@@ -160,6 +160,7 @@ namespace Content.IntegrationTests.Tests
         ///     all components on every entity.
         /// </summary>
         [Test]
+        [NonParallelizable]
         public async Task SpawnAndDirtyAllEntities()
         {
             var pair = Pair;
@@ -277,6 +278,7 @@ namespace Content.IntegrationTests.Tests
                 "AnnounceOnSpawn",
 
                 // Starlight start
+                "ReplaceOnInit",
                 // Most of the filled xenobiology slime cores intentionally spawn an entity
                 "FilledSlimeExtract",
                 "Loadout",

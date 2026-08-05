@@ -115150,29 +115150,6 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: FaxMachineBase
-  entities:
-  - uid: 18151
-    components:
-    - type: Transform
-      pos: 91.5,36.5
-      parent: 2
-    - type: FaxMachine
-      name: Telecomms
-  - uid: 18152
-    components:
-    - type: Transform
-      pos: 43.5,41.5
-      parent: 2
-    - type: FaxMachine
-      name: ERR?LAW
-  - uid: 18153
-    components:
-    - type: Transform
-      pos: 46.5,5.5
-      parent: 2
-    - type: FaxMachine
-      name: Duty Officers
 - proto: FaxMachineCaptain
   entities:
   - uid: 18154
@@ -115229,6 +115206,11 @@ entities:
     - type: Transform
       pos: 73.5,-16.5
       parent: 2
+  - uid: 18151
+    components:
+    - type: Transform
+      pos: 91.5,36.5
+      parent: 2
 - proto: FaxMachineEngineeringAtmos
   entities:
   - uid: 18162
@@ -115271,14 +115253,14 @@ entities:
     - type: Transform
       pos: 41.5,38.5
       parent: 2
-- proto: FaxMachineNTInternalAffairs
+- proto: FaxMachineCCInternalAffairs
   entities:
   - uid: 18168
     components:
     - type: Transform
       pos: 70.5,31.5
       parent: 2
-- proto: FaxMachineNTMagi
+- proto: FaxMachineCCMagi
   entities:
   - uid: 18169
     components:
@@ -115305,6 +115287,11 @@ entities:
     components:
     - type: Transform
       pos: 33.5,20.5
+      parent: 2
+  - uid: 18153
+    components:
+    - type: Transform
+      pos: 46.5,5.5
       parent: 2
 - proto: FaxMachineSecurityDetective
   entities:
@@ -115368,6 +115355,11 @@ entities:
     components:
     - type: Transform
       pos: 69.5,27.5
+      parent: 2
+  - uid: 18152
+    components:
+    - type: Transform
+      pos: 43.5,41.5
       parent: 2
 - proto: FaxMachineServiceLibrary
   entities:

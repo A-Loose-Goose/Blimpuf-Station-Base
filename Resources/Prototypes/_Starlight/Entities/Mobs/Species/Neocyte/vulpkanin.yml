@@ -1,5 +1,5 @@
 - type: entity
-  parent: [BaseMobNeocyte, BaseSpeciesPickupableLarge]
+  parent: BaseMobNeocyte
   id: BaseMobNeoVulp
   name: Urist McVulpster
   abstract: true

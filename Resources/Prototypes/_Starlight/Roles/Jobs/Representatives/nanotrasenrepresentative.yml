@@ -11,11 +11,14 @@
     - !type:RoleTimeRequirement
       role: JobIAA
       time: 8h
+    - !type:TraitsRequirement
+      traits:
+        - Iterator
+      inverted: true
   startingGear: CentralCommandRepresentativeGear
   icon: JobIconNanoTrasenRepresentative
   rules: job-rules-corporate-aligned
   supervisors: job-supervisors-centcom
-  canBeAntag: false
   displayWeight: 50
   access:
     - Cryogenics

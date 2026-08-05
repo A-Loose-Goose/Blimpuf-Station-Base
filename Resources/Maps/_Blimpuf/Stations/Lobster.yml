@@ -78484,185 +78484,181 @@ entities:
       parent: 2
 - proto: FaxMachineBase
   entities:
-  - uid: 12946
-    components:
-    - type: Transform
-      pos: -24.5,20.5
-      parent: 2
-    - type: FaxMachine
-      name: NCT
-  - uid: 12947
-    components:
-    - type: Transform
-      pos: -11.5,38.5
-      parent: 2
-    - type: FaxMachine
-      name: NTR
-  - uid: 12948
-    components:
-    - type: Transform
-      pos: -29.5,50.5
-      parent: 2
-    - type: FaxMachine
-      name: BSO
-  - uid: 12949
-    components:
-    - type: Transform
-      pos: -3.5,33.5
-      parent: 2
-    - type: FaxMachine
-      name: HoP
-  - uid: 12950
-    components:
-    - type: Transform
-      pos: -7.5,50.5
-      parent: 2
-    - type: FaxMachine
-      name: Bridge
-  - uid: 12951
-    components:
-    - type: Transform
-      pos: -17.5,10.5
-      parent: 2
-    - type: FaxMachine
-      name: IAA Office
-  - uid: 12952
-    components:
-    - type: Transform
-      pos: -18.5,-5.5
-      parent: 2
-    - type: FaxMachine
-      name: Detective's Office
-  - uid: 12953
-    components:
-    - type: Transform
-      pos: 0.5,10.5
-      parent: 2
-    - type: FaxMachine
-      name: Warden
-  - uid: 12954
-    components:
-    - type: Transform
-      pos: -21.5,5.5
-      parent: 2
-    - type: FaxMachine
-      name: Magistrate
-  - uid: 12955
-    components:
-    - type: Transform
-      pos: -1.5,-16.5
-      parent: 2
-    - type: FaxMachine
-      name: HoS
-  - uid: 12956
-    components:
-    - type: Transform
-      pos: -54.5,-1.5
-      parent: 2
-    - type: FaxMachine
-      name: Medical
-  - uid: 12957
-    components:
-    - type: Transform
-      pos: -51.5,-2.5
-      parent: 2
-    - type: FaxMachine
-      name: CMO
-  - uid: 12958
-    components:
-    - type: Transform
-      pos: -67.5,14.5
-      parent: 2
-    - type: FaxMachine
-      name: Chaplain
-  - uid: 12959
-    components:
-    - type: Transform
-      pos: -38.5,27.5
-      parent: 2
-    - type: FaxMachine
-      name: RD
-  - uid: 12960
-    components:
-    - type: Transform
-      pos: -43.5,26.5
-      parent: 2
-    - type: FaxMachine
-      name: Science
-  - uid: 12961
-    components:
-    - type: Transform
-      pos: 22.5,19.5
-      parent: 2
-    - type: FaxMachine
-      name: QM
-  - uid: 12962
-    components:
-    - type: Transform
-      pos: 16.5,22.5
-      parent: 2
-    - type: FaxMachine
-      name: Cargo Front
-  - uid: 12963
-    components:
-    - type: Transform
-      pos: 36.5,27.5
-      parent: 2
-    - type: FaxMachine
-      name: Engineering
-  - uid: 12964
-    components:
-    - type: Transform
-      pos: 41.5,31.5
-      parent: 2
-    - type: FaxMachine
-      name: CE
-  - uid: 12965
-    components:
-    - type: Transform
-      pos: 2.5,-32.5
-      parent: 2
-    - type: FaxMachine
-      name: Toolroom
-  - uid: 12966
-    components:
-    - type: Transform
-      pos: 16.5,34.5
-      parent: 2
-    - type: FaxMachine
-      name: Cargo Bay
-  - uid: 12967
-    components:
-    - type: Transform
-      pos: 60.5,3.5
-      parent: 2
-    - type: FaxMachine
-      name: Botany
-  - uid: 12968
-    components:
-    - type: Transform
-      pos: 6.5,-14.5
-      parent: 2
-    - type: FaxMachine
-      name: Library
   - uid: 12969
     components:
     - type: Transform
       pos: 3.5,-9.5
       parent: 2
-  - uid: 12970
-    components:
-    - type: Transform
-      pos: 6.5,1.5
-      parent: 2
-    - type: FaxMachine
-      name: Security
 - proto: FaxMachineCaptain
   entities:
   - uid: 12971
     components:
     - type: Transform
       pos: -1.5,48.5
+      parent: 2
+- proto: FaxMachineCargo
+  entities:
+  - uid: 12962
+    components:
+    - type: Transform
+      pos: 16.5,22.5
+      parent: 2
+  - uid: 12966
+    components:
+    - type: Transform
+      pos: 16.5,34.5
+      parent: 2
+- proto: FaxMachineCargoQM
+  entities:
+  - uid: 12961
+    components:
+    - type: Transform
+      pos: 22.5,19.5
+      parent: 2
+- proto: FaxMachineCommandBridge
+  entities:
+  - uid: 12950
+    components:
+    - type: Transform
+      pos: -7.5,50.5
+      parent: 2
+- proto: FaxMachineEngineering
+  entities:
+  - uid: 12963
+    components:
+    - type: Transform
+      pos: 36.5,27.5
+      parent: 2
+  - uid: 12965
+    components:
+    - type: Transform
+      pos: 2.5,-32.5
+      parent: 2
+- proto: FaxMachineEngineeringCE
+  entities:
+  - uid: 12964
+    components:
+    - type: Transform
+      pos: 41.5,31.5
+      parent: 2
+- proto: FaxMachineMedical
+  entities:
+  - uid: 12956
+    components:
+    - type: Transform
+      pos: -54.5,-1.5
+      parent: 2
+- proto: FaxMachineMedicalCMO
+  entities:
+  - uid: 12957
+    components:
+    - type: Transform
+      pos: -51.5,-2.5
+      parent: 2
+- proto: FaxMachineCCEnforcer
+  entities:
+  - uid: 12948
+    components:
+    - type: Transform
+      pos: -29.5,50.5
+      parent: 2
+- proto: FaxMachineNTCareerTrainer
+  entities:
+  - uid: 12946
+    components:
+    - type: Transform
+      pos: -24.5,20.5
+      parent: 2
+- proto: FaxMachineCCInternalAffairs
+  entities:
+  - uid: 12951
+    components:
+    - type: Transform
+      pos: -17.5,10.5
+      parent: 2
+- proto: FaxMachineCCMagi
+  entities:
+  - uid: 12954
+    components:
+    - type: Transform
+      pos: -21.5,5.5
+      parent: 2
+- proto: FaxMachineCCRep
+  entities:
+  - uid: 12947
+    components:
+    - type: Transform
+      pos: -11.5,38.5
+      parent: 2
+- proto: FaxMachineScience
+  entities:
+  - uid: 12960
+    components:
+    - type: Transform
+      pos: -43.5,26.5
+      parent: 2
+- proto: FaxMachineScienceRD
+  entities:
+  - uid: 12959
+    components:
+    - type: Transform
+      pos: -38.5,27.5
+      parent: 2
+- proto: FaxMachineSecurity
+  entities:
+  - uid: 12970
+    components:
+    - type: Transform
+      pos: 6.5,1.5
+      parent: 2
+- proto: FaxMachineSecurityDetective
+  entities:
+  - uid: 12952
+    components:
+    - type: Transform
+      pos: -18.5,-5.5
+      parent: 2
+- proto: FaxMachineSecurityHoS
+  entities:
+  - uid: 12955
+    components:
+    - type: Transform
+      pos: -1.5,-16.5
+      parent: 2
+- proto: FaxMachineSecurityWarden
+  entities:
+  - uid: 12953
+    components:
+    - type: Transform
+      pos: 0.5,10.5
+      parent: 2
+- proto: FaxMachineService
+  entities:
+  - uid: 12967
+    components:
+    - type: Transform
+      pos: 60.5,3.5
+      parent: 2
+- proto: FaxMachineServiceChaplain
+  entities:
+  - uid: 12958
+    components:
+    - type: Transform
+      pos: -67.5,14.5
+      parent: 2
+- proto: FaxMachineServiceHoP
+  entities:
+  - uid: 12949
+    components:
+    - type: Transform
+      pos: -3.5,33.5
+      parent: 2
+- proto: FaxMachineServiceLibrary
+  entities:
+  - uid: 12968
+    components:
+    - type: Transform
+      pos: 6.5,-14.5
       parent: 2
 - proto: FenceMetalBroken
   entities:

@@ -1,5 +1,5 @@
 - type: entity
-  parent: [BaseMobNeocyte, BaseSpeciesPickupableLarge]
+  parent: BaseMobNeocyte
   id: BaseMobNeoLagomorph
   name: Urist McLagomorphster
   abstract: true

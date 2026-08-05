@@ -89407,15 +89407,6 @@ entities:
     - type: Transform
       pos: -20.5,7.5
       parent: 2
-- proto: FaxMachineBase
-  entities:
-  - uid: 13879
-    components:
-    - type: Transform
-      pos: 37.5,-19.5
-      parent: 2
-    - type: FaxMachine
-      name: Morgue
 - proto: FaxMachineCaptain
   entities:
   - uid: 13880
@@ -89500,6 +89491,11 @@ entities:
     - type: Transform
       pos: 33.5,-20.5
       parent: 2
+  - uid: 13879
+    components:
+    - type: Transform
+      pos: 37.5,-19.5
+      parent: 2
 - proto: FaxMachineMedicalCMO
   entities:
   - uid: 13892
@@ -89521,14 +89517,14 @@ entities:
     - type: Transform
       pos: -55.5,-7.5
       parent: 2
-- proto: FaxMachineNTInternalAffairs
+- proto: FaxMachineCCInternalAffairs
   entities:
   - uid: 13895
     components:
     - type: Transform
       pos: 2.5,27.5
       parent: 2
-- proto: FaxMachineNTMagi
+- proto: FaxMachineCCMagi
   entities:
   - uid: 13896
     components:

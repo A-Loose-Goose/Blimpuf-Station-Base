@@ -9960,15 +9960,13 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: FaxMachineBase
+- proto: FaxMachineCommandBridge
   entities:
   - uid: 1447
     components:
     - type: Transform
       pos: 24.5,2.5
       parent: 2
-    - type: FaxMachine
-      name: Bridge
 - proto: FirelockEdge
   entities:
   - uid: 1448

@@ -117,6 +117,9 @@ public sealed partial class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRule
     private readonly SoundSpecifier _tier2Sound = new SoundPathSpecifier("/Audio/_Starlight/CosmicCult/tier2.ogg");
     private readonly SoundSpecifier _monumentAlert = new SoundPathSpecifier("/Audio/_Starlight/CosmicCult/tier_up.ogg");
 
+    private readonly SoundSpecifier _victoryMusic =
+        new SoundPathSpecifier("/Audio/_Starlight/CosmicCult/caustic_shift.ogg");
+
     private readonly ProtoId<LanguagePrototype> _cultLanguage = "Cosmic";
 
     /// <summary>
@@ -371,6 +374,8 @@ public sealed partial class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRule
 
     private void OnGodSpawn(Entity<CosmicGodComponent> uid, ref ComponentInit args)
     {
+        if (!uid.Comp.TriggerRoundEnd) return;
+        _sound.DispatchStationEventMusic(uid, _victoryMusic, StationEventMusicType.CosmicCult );
         var query = QueryActiveRules();
         while (query.MoveNext(out var ruleUid, out _, out var cultRule, out _))
         {
@@ -810,19 +815,6 @@ public sealed partial class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRule
 
         RemComp<BibleUserComponent>(uid);
 
-        // Bright-eye Nerf - Yeah im not gona let them be immortal!
-        if (TryComp<BrighteyeComponent>(uid, out var brighteye))
-        {
-            if (brighteye.Portal is not null)
-            {
-                SpawnAtPosition(brighteye.ShadekinShadow, Transform(brighteye.Portal.Value).Coordinates);
-                QueueDel(brighteye.Portal.Value);
-            }
-
-            _actions.RemoveAction(uid, brighteye.PortalAction);
-            _actions.RemoveAction(uid, brighteye.ShadeSkipAction);
-        }
-
         cult.Comp.TotalCult++;
         cult.Comp.Cultists.Add(uid);
 
@@ -974,13 +966,6 @@ public sealed partial class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRule
         UpdateCultData(cosmicGamerule.MonumentInGame);
         _movementSpeed.RefreshMovementSpeedModifiers(uid);
 
-        // Brighteye - Yeah, Lets give their portal back!
-        if (TryComp<BrighteyeComponent>(uid, out var brighteye) && !brighteye.LesserKin)
-        {
-            _actions.AddAction(uid, ref brighteye.PortalAction, brighteye.BrighteyePortalAction, uid);
-            _actions.AddAction(uid, ref brighteye.ShadeSkipAction, brighteye.BrighteyeShadeSkipAction, uid);
-            _actions.SetCooldown(brighteye.PortalAction, TimeSpan.FromSeconds(300));
-        }
     }
     #endregion
 }

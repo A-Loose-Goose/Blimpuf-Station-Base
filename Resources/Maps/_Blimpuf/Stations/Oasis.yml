@@ -17725,7 +17725,7 @@ entities:
       parent: 2
     - type: GridFill
       addComponents: []
-      path: /Maps/_Starlight/Shuttles/oasis_briggle.yml
+      path: /Maps/_Starlight/Shuttles/Security/oasis_briggle.yml
   - uid: 396
     components:
     - type: Transform
@@ -110741,29 +110741,6 @@ entities:
       parent: 29399
     - type: Fixtures
       fixtures: {}
-- proto: FaxMachineBase
-  entities:
-  - uid: 12929
-    components:
-    - type: Transform
-      pos: -38.5,-52.5
-      parent: 2
-    - type: FaxMachine
-      name: Private Eye
-  - uid: 12930
-    components:
-    - type: Transform
-      pos: -5.5,61.5
-      parent: 2
-    - type: FaxMachine
-      name: Drugstore
-  - uid: 34114
-    components:
-    - type: Transform
-      pos: 19.5,12.5
-      parent: 29399
-    - type: FaxMachine
-      name: Perma island security
 - proto: FaxMachineCaptain
   entities:
   - uid: 12931
@@ -110834,6 +110811,13 @@ entities:
     - type: Transform
       pos: -7.5,-34.5
       parent: 2
+- proto: FaxMachineMedicalChemistry
+  entities:
+  - uid: 12930
+    components:
+    - type: Transform
+      pos: -5.5,61.5
+      parent: 2
 - proto: FaxMachineMedicalPsychology
   entities:
   - uid: 12941
@@ -110841,21 +110825,21 @@ entities:
     - type: Transform
       pos: -29.5,-40.5
       parent: 2
-- proto: FaxMachineNTInternalAffairs
+- proto: FaxMachineCCInternalAffairs
   entities:
   - uid: 12943
     components:
     - type: Transform
       pos: 41.5,3.5
       parent: 2
-- proto: FaxMachineNTMagi
+- proto: FaxMachineCCMagi
   entities:
   - uid: 12944
     components:
     - type: Transform
       pos: 38.5,14.5
       parent: 2
-- proto: FaxMachineNTRep
+- proto: FaxMachineCCRep
   entities:
   - uid: 12945
     components:
@@ -110883,6 +110867,11 @@ entities:
     - type: Transform
       pos: 60.5,-15.5
       parent: 2
+  - uid: 12929
+    components:
+    - type: Transform
+      pos: -38.5,-52.5
+      parent: 2
 - proto: FaxMachineSecurityHoS
   entities:
   - uid: 12949
@@ -110890,6 +110879,13 @@ entities:
     - type: Transform
       pos: 43.5,-38.5
       parent: 2
+- proto: FaxMachineSecurityPrison
+  entities:
+  - uid: 34114
+    components:
+    - type: Transform
+      pos: 19.5,12.5
+      parent: 29399
 - proto: FaxMachineServiceChaplain
   entities:
   - uid: 12950
