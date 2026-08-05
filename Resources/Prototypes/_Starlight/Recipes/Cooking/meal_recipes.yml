@@ -810,20 +810,20 @@
     IceCream: 10
     Omnizine: 7
 
-- type: microwaveMealRecipe
-  id: RecipeMeanGirlIceCream
-  name: mean girl ice cream
-  result: FoodMeanGirlIceCream
-  deviceType: IceCreamMaker
-  time: 5
-  group: IceCream
-  solids:
-    DrinkGlass: 1
-    FoodBerries: 1
-    CrayonWhite: 1
-  reagents:
-    IceCream: 15
-    Cream: 5
+#- type: microwaveMealRecipe
+#  id: RecipeMeanGirlIceCream
+#  name: mean girl ice cream
+#  result: FoodMeanGirlIceCream
+#  deviceType: IceCreamMaker
+#  time: 5
+#  group: IceCream
+#  solids:
+#    DrinkGlass: 1
+#    FoodBerries: 1
+#    CrayonWhite: 1
+#  reagents:
+#    IceCream: 15
+#    Cream: 5
 
 - type: microwaveMealRecipe
   id: RecipeHewIceCream
@@ -838,33 +838,33 @@
     IceCream: 10
     JuiceThatMakesYouHew: 10
 
-- type: microwaveMealRecipe
-  id: RecipeFluffyBoyIceCream
-  name: fluffy boy ice cream
-  result: FoodFluffyBoyIceCream
-  deviceType: IceCreamMaker
-  time: 5
-  group: IceCream
-  solids:
-    DrinkGlass: 1
-    FoodLime: 1
-    CrayonGreen: 1
-  reagents:
-    IceCream: 15
+#- type: microwaveMealRecipe
+#  id: RecipeFluffyBoyIceCream
+#  name: fluffy boy ice cream
+#  result: FoodFluffyBoyIceCream
+#  deviceType: IceCreamMaker
+#  time: 5
+#  group: IceCream
+#  solids:
+#    DrinkGlass: 1
+#    FoodLime: 1
+#    CrayonGreen: 1
+#  reagents:
+#    IceCream: 15
 
-- type: microwaveMealRecipe
-  id: RecipeLeaderIceCream
-  name: leader ice cream
-  result: FoodLeaderIceCream
-  deviceType: IceCreamMaker
-  time: 5
-  group: IceCream
-  solids:
-    DrinkGlass: 1
-    FoodBerries: 1
-    CrayonBlue: 1
-  reagents:
-    IceCream: 15
+#- type: microwaveMealRecipe
+#  id: RecipeLeaderIceCream
+#  name: leader ice cream
+#  result: FoodLeaderIceCream
+#  deviceType: IceCreamMaker
+#  time: 5
+#  group: IceCream
+#  solids:
+#    DrinkGlass: 1
+#    FoodBerries: 1
+#    CrayonBlue: 1
+#  reagents:
+#    IceCream: 15
 
 - type: microwaveMealRecipe
   id: RecipeTeslaIceCream
