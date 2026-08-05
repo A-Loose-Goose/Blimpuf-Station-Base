@@ -1055,6 +1055,7 @@
   - type: Damageable
     damageModifierSet: SlimePet
   - type: Bloodstream
+    bloodReagentColor: "#ffffff" # Blimpuf - white until rainbow slime is made
     bloodlossHealDamage:
       types:
         Bloodloss:
