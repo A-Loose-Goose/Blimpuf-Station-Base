@@ -1,7 +1,8 @@
-﻿using Content.Shared.FixedPoint;
+using Content.Shared.Chemistry.Reagent;
+using Content.Shared.FixedPoint;
 using Robust.Shared.Serialization;
 
-namespace Content.Shared.Chemistry.Reagent;
+namespace Content.Shared._Blimpuf.Chemistry.Reagent;
 
 [ImplicitDataDefinitionForInheritors, Serializable, NetSerializable]
 public sealed partial class ReagentColorData : ReagentData
