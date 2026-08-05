@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 07/13/2026 05:52:45
-  entityCount: 10636
+  entityCount: 10650
 maps:
 - 1
 grids:
@@ -9351,12 +9351,6 @@ entities:
       - - Research
 - proto: AnomalyFloraBulb
   entities:
-  - uid: 252
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 17.5,-18.5
-      parent: 2
   - uid: 253
     components:
     - type: Transform
@@ -9901,30 +9895,6 @@ entities:
     - type: Transform
       pos: -12.5,0.5
       parent: 2
-  - uid: 331
-    components:
-    - type: Transform
-      pos: 13.5,-6.5
-      parent: 2
-    - type: TechnologyDatabase
-      supportedDisciplines:
-      - Industrial
-      - Arsenal
-      - Experimental
-      - CivilianServices
-      - Biochemical
-  - uid: 332
-    components:
-    - type: Transform
-      pos: 17.5,4.5
-      parent: 2
-    - type: TechnologyDatabase
-      supportedDisciplines:
-      - Industrial
-      - Arsenal
-      - Experimental
-      - CivilianServices
-      - Biochemical
   - uid: 333
     components:
     - type: Transform
@@ -9937,6 +9907,11 @@ entities:
       - Experimental
       - CivilianServices
       - Biochemical
+  - uid: 10704
+    components:
+    - type: Transform
+      pos: -15.5,2.5
+      parent: 2
 - proto: BalloonNT
   entities:
   - uid: 334
@@ -30662,12 +30637,6 @@ entities:
       parent: 8834
 - proto: CryogenicSleepUnit
   entities:
-  - uid: 3734
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -0.5,-0.5
-      parent: 2
   - uid: 3735
     components:
     - type: Transform
@@ -51126,6 +51095,11 @@ entities:
     - type: Transform
       pos: 13.5,6.5
       parent: 8834
+  - uid: 10702
+    components:
+    - type: Transform
+      pos: 14.5,-6.5
+      parent: 2
 - proto: MachineMaterialSilo
   entities:
   - uid: 6247
@@ -53969,32 +53943,6 @@ entities:
       - Experimental
       - CivilianServices
       - Biochemical
-- proto: Protolathe
-  entities:
-  - uid: 6607
-    components:
-    - type: Transform
-      pos: 14.5,-6.5
-      parent: 2
-    - type: TechnologyDatabase
-      supportedDisciplines:
-      - Industrial
-      - Arsenal
-      - Experimental
-      - CivilianServices
-      - Biochemical
-  - uid: 6608
-    components:
-    - type: Transform
-      pos: 17.5,3.5
-      parent: 2
-    - type: TechnologyDatabase
-      supportedDisciplines:
-      - Industrial
-      - Arsenal
-      - Experimental
-      - CivilianServices
-      - Biochemical
 - proto: PsychBed
   entities:
   - uid: 6609
@@ -55707,6 +55655,32 @@ entities:
     - type: Transform
       pos: 0.5,14.5
       parent: 10280
+  - uid: 10709
+    components:
+    - type: Transform
+      pos: 16.5,-19.5
+      parent: 2
+  - uid: 10710
+    components:
+    - type: Transform
+      pos: 16.5,-19.5
+      parent: 2
+  - uid: 10711
+    components:
+    - type: Transform
+      pos: 15.5,-19.5
+      parent: 2
+  - uid: 10712
+    components:
+    - type: Transform
+      pos: 15.5,-19.5
+      parent: 2
+  - uid: 10713
+    components:
+    - type: Transform
+      pos: 17.5,-18.5
+      parent: 2
+      rot: 1.5707963267948966 rad
 - proto: RailingCorner
   entities:
   - uid: 6856
@@ -55831,6 +55805,11 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -16.5,-1.5
       parent: 8834
+  - uid: 10708
+    components:
+    - type: Transform
+      pos: 17.5,-19.5
+      parent: 2
 - proto: RailingCornerSmall
   entities:
   - uid: 6875
@@ -73987,5 +73966,90 @@ entities:
     components:
     - type: Transform
       pos: 7.5,-4.5
+      parent: 2
+- proto: ComputerShipyard
+  entities:
+  - uid: 10698
+    components:
+    - type: Transform
+      pos: 4.5,-0.5
+      parent: 2
+      rot: 3.141592653589793 rad
+- proto: CommandTechFab
+  entities:
+  - uid: 10699
+    components:
+    - type: Transform
+      pos: -0.5,-0.5
+      parent: 2
+- proto: EngineeringTechFab
+  entities:
+  - uid: 10700
+    components:
+    - type: Transform
+      pos: 17.5,3.5
+      parent: 2
+- proto: ScienceTechFab
+  entities:
+  - uid: 10701
+    components:
+    - type: Transform
+      pos: 13.5,-6.5
+      parent: 2
+- proto: CargoTechFab
+  entities:
+  - uid: 10703
+    components:
+    - type: Transform
+      pos: 18.5,9.5
+      parent: 2
+- proto: IceCreamMaker
+  entities:
+  - uid: 10705
+    components:
+    - type: Transform
+      pos: 11.5,-10.5
+      parent: 2
+- proto: VendingMachineClown
+  entities:
+  - uid: 10706
+    components:
+    - type: Transform
+      pos: 15.5,-18.5
+      parent: 2
+- proto: VendingMachineMime
+  entities:
+  - uid: 10707
+    components:
+    - type: Transform
+      pos: 16.5,-18.5
+      parent: 2
+- proto: SpawnMobKoboldKiki
+  entities:
+  - uid: 10714
+    components:
+    - type: Transform
+      pos: 11.5,-13.5
+      parent: 2
+- proto: MobMonkeyStirStir
+  entities:
+  - uid: 10715
+    components:
+    - type: Transform
+      pos: -0.5,21.5
+      parent: 2
+- proto: SpawnMobPenguinFlippers
+  entities:
+  - uid: 10716
+    components:
+    - type: Transform
+      pos: -12.5,7.5
+      parent: 2
+- proto: ServiceTechFab
+  entities:
+  - uid: 10717
+    components:
+    - type: Transform
+      pos: 7.5,-12.5
       parent: 2
 ...
