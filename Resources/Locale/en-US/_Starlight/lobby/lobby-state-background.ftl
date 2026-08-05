@@ -10,14 +10,8 @@ lobby-state-background-reflection-artist = Conflee
 lobby-state-background-triestent-title = Trieste NT
 lobby-state-background-triestent-artist = Conflee
 
-lobby-state-background-lingkiller-title = The Ling Killer
-lobby-state-background-lingkiller-artist = voy0099
-
 lobby-state-background-ntosprey-title = NT Osprey
 lobby-state-background-ntosprey-artist = ItsAbby11
-
-lobby-state-background-friendsforever-title = Friends Forever
-lobby-state-background-friendsforever-artist = ItsAbby11
 
 lobby-state-background-againstthexeno-title = Against The Xeno
 lobby-state-background-againstthexeno-artist = Ramblinger
@@ -73,8 +67,17 @@ lobby-state-background-janitorialhell-artist = wintergem18
 lobby-state-background-katievssyndie-title = Katie vs Syndie
 lobby-state-background-katievssyndie-artist = ramblinger
 
-lobby-state-background-nogalcom-title = When the brigmedic's starting chems run out
-lobby-state-background-nogalcom-artist = deltaVelocity
+lobby-state-background-slimesinspace-title = Slimes In Space!
+lobby-state-background-slimesinspace-artist = ItsMaitake
 
-lobby-state-background-aiderthief-title = Maints Discovery
-lobby-state-background-aiderthief-artist = silkielol
+lobby-state-background-localbotanistsmissing-title = Local Botanists... Missing?
+lobby-state-background-localbotanistsmissing-artist = ItsMaitake
+
+lobby-state-background-thecaptainversusnarsie-title = The Captain Versus Nar'sie
+lobby-state-background-thecaptainversusnarsie-artist = ItsMaitake
+
+lobby-state-background-fearishonk-title = The Only Thing They Fear Is Honk
+lobby-state-background-fearishonk-artist = IllegalXeno
+
+lobby-state-background-stationvisitor-title = Station Visitor
+lobby-state-background-stationvisitor-artist = The Prismatic Collective
