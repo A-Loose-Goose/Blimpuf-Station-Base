@@ -41,16 +41,6 @@
   color: "#1c1624"
   recognizable: true
   physicalDesc: reagent-physical-desc-unidentifiable
-  metabolisms:
-    Poison:
-      effects:
-      - !type:ModifyStatusEffect
-        conditions:
-        - !type:ReagentCondition
-          reagent: DarkBlood
-          min: 10
-        type: Add
-        time: 5
 
 - type: reagent
   parent: Blood

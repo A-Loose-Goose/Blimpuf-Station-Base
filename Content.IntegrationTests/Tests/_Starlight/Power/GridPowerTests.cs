@@ -78,7 +78,7 @@ public sealed class GridPowerTests : GameTest
         new("/Maps/_Starlight/Shuttles/pts.yml"),
         new("/Maps/_Starlight/Shuttles/barge.yml"),
         new("/Maps/_Starlight/Shuttles/Munchies.yml"),
-        new("/Maps/_Starlight/Shuttles/ingeniator.yml "),
+        new("/Maps/_Starlight/Shuttles/ingeniator.yml"),
         new("/Maps/_Starlight/Shuttles/Bumblebee.yml"),
         new("/Maps/_Starlight/Shuttles/Comet.yml"),
         new("/Maps/_Starlight/Shuttles/JSS_MED_Apotherkerin.yml"),
