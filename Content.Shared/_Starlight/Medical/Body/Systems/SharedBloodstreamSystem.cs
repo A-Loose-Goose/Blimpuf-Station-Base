@@ -31,7 +31,7 @@ namespace Content.Shared._Starlight.Medical.Body.Systems;
 public abstract partial class SharedBloodstreamSystem : EntitySystem
 {
     public static readonly EntProtoId Bloodloss = "StatusEffectBloodloss";
-    private const string SlimeReagent = "Slime";
+    private static readonly ProtoId<ReagentPrototype> SlimeReagent = "Slime";
 
     [Dependency] protected IPrototypeManager PrototypeManager = default!;
     [Dependency] protected SharedSolutionContainerSystem SolutionContainer = default!;
