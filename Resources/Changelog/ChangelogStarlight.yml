@@ -4433,5 +4433,14 @@ Entries:
   id: 7601
   time: '2026-08-04T23:43:27.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/76
+- author: ItsMaitake
+  changes:
+  - message: 5 new Blimpuf lobby arts.
+    type: Add
+  - message: 4 Starlight specific lobby arts.
+    type: Remove
+  id: 7801
+  time: '2026-08-05T00:36:24.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/78
 Order: -1
 
