@@ -729,29 +729,29 @@
         - ReagentId: Cream
           Quantity: 8
 
-- type: entity
-  name: mean girl ice cream
-  parent: FoodIceCreamBase
-  id: FoodMeanGirlIceCream
-  description: The power of mean girls shines in this ice cream.
-  components:
-  - type: FlavorProfile
-    flavors:
-    - meanGirlIceCream
-  - type: Sprite
-    sprite: _Starlight/Objects/Consumable/IceCream/mean_girl_bowl.rsi
-  - type: Icon
-    sprite: _Starlight/Objects/Consumable/IceCream/mean_girl_bowl.rsi
-    state: icon
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 20
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 5
-        - ReagentId: Cream
-          Quantity: 15
+#- type: entity
+#  name: mean girl ice cream
+#  parent: FoodIceCreamBase
+#  id: FoodMeanGirlIceCream
+#  description: The power of mean girls shines in this ice cream.
+#  components:
+#  - type: FlavorProfile
+#    flavors:
+#    - meanGirlIceCream
+#  - type: Sprite
+#    sprite: _Starlight/Objects/Consumable/IceCream/mean_girl_bowl.rsi
+#  - type: Icon
+#    sprite: _Starlight/Objects/Consumable/IceCream/mean_girl_bowl.rsi
+#    state: icon
+#  - type: SolutionContainerManager
+#    solutions:
+#      food:
+#        maxVol: 20
+#        reagents:
+#        - ReagentId: Nutriment
+#          Quantity: 5
+#        - ReagentId: Cream
+#          Quantity: 15
 
 - type: entity
   name: hew ice cream
@@ -779,53 +779,53 @@
         - ReagentId: Cream
           Quantity: 5
 
-- type: entity
-  name: fluffy boy ice cream
-  parent: FoodIceCreamBase
-  id: FoodFluffyBoyIceCream
-  description: The power of fluffy boys shines in this ice cream.
-  components:
-  - type: FlavorProfile
-    flavors:
-    - fluffyBoyIceCream
-  - type: Sprite
-    sprite: _Starlight/Objects/Consumable/IceCream/fluffy_boy_bowl.rsi
-  - type: Icon
-    sprite: _Starlight/Objects/Consumable/IceCream/fluffy_boy_bowl.rsi
-    state: icon
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 20
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 5
-        - ReagentId: Cream
-          Quantity: 15
+#- type: entity
+#  name: fluffy boy ice cream
+#  parent: FoodIceCreamBase
+#  id: FoodFluffyBoyIceCream
+#  description: The power of fluffy boys shines in this ice cream.
+#  components:
+#  - type: FlavorProfile
+#    flavors:
+#    - fluffyBoyIceCream
+#  - type: Sprite
+#    sprite: _Starlight/Objects/Consumable/IceCream/fluffy_boy_bowl.rsi
+#  - type: Icon
+#    sprite: _Starlight/Objects/Consumable/IceCream/fluffy_boy_bowl.rsi
+#    state: icon
+#  - type: SolutionContainerManager
+#    solutions:
+#      food:
+#        maxVol: 20
+#        reagents:
+#        - ReagentId: Nutriment
+#          Quantity: 5
+#        - ReagentId: Cream
+#          Quantity: 15
 
-- type: entity
-  name: leader ice cream
-  parent: FoodIceCreamBase
-  id: FoodLeaderIceCream
-  description: The power of this ice cream shines with you.
-  components:
-  - type: FlavorProfile
-    flavors:
-    - leaderIceCream
-  - type: Sprite
-    sprite: _Starlight/Objects/Consumable/IceCream/leader_bowl.rsi
-  - type: Icon
-    sprite: _Starlight/Objects/Consumable/IceCream/leader_bowl.rsi
-    state: icon
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 20
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 5
-        - ReagentId: Cream
-          Quantity: 15
+#- type: entity
+#  name: leader ice cream
+#  parent: FoodIceCreamBase
+#  id: FoodLeaderIceCream
+#  description: The power of this ice cream shines with you.
+#  components:
+#  - type: FlavorProfile
+#    flavors:
+#    - leaderIceCream
+#  - type: Sprite
+#    sprite: _Starlight/Objects/Consumable/IceCream/leader_bowl.rsi
+#  - type: Icon
+#    sprite: _Starlight/Objects/Consumable/IceCream/leader_bowl.rsi
+#    state: icon
+#  - type: SolutionContainerManager
+#    solutions:
+#      food:
+#        maxVol: 20
+#        reagents:
+#        - ReagentId: Nutriment
+#          Quantity: 5
+#        - ReagentId: Cream
+#          Quantity: 15
 
 - type: entity
   name: tesla ice cream

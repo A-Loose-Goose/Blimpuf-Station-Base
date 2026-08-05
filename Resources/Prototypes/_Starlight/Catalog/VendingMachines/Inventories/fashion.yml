@@ -538,17 +538,17 @@
     - !type:ListingLimitedStockCondition
       stock: 1
 
-- type: listing
-  id: BoxCourierPAI
-  icon: { sprite: _Starlight/Interface/fashion.rsi, state: courier }
-  productEntity: BoxCourierPAI
-  cost:
-    NTCredit: 1500
-  categories:
-    - SLFashionOther
-  conditions:
-    - !type:ListingLimitedStockCondition
-      stock: 1
+#- type: listing
+#  id: BoxCourierPAI
+#  icon: { sprite: _Starlight/Interface/fashion.rsi, state: courier }
+#  productEntity: BoxCourierPAI
+#  cost:
+#    NTCredit: 1500
+#  categories:
+#    - SLFashionOther
+#  conditions:
+#    - !type:ListingLimitedStockCondition
+#      stock: 1
 
 - type: listing
   id: ClothingOuterBrimstoneDT4
@@ -693,16 +693,16 @@
     - !type:ListingLimitedStockCondition
       stock: 1
 
-- type: listing
-  id: ClothingBackpackBunnyGangBundle
-  productEntity: ClothingBackpackBunnyGangBundle
-  cost:
-    NTCredit: 500
-  categories:
-    - SLFashionOther
-  conditions:
-    - !type:ListingLimitedStockCondition
-      stock: 2
+#- type: listing
+#  id: ClothingBackpackBunnyGangBundle
+#  productEntity: ClothingBackpackBunnyGangBundle
+#  cost:
+#    NTCredit: 500
+#  categories:
+#    - SLFashionOther
+#  conditions:
+#    - !type:ListingLimitedStockCondition
+#      stock: 2
 
 - type: listing
   id: ClothingHeadHatBunny
