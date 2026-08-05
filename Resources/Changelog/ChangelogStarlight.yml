@@ -4442,5 +4442,15 @@ Entries:
   id: 7801
   time: '2026-08-05T00:36:24.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/78
+- author: ItsMaitake
+  changes:
+  - message: Deltarune-themed Icecreams.
+    type: Remove
+  - message: Project Moon-referencing space courier and bunny gang outfits from the
+      Fashion Vend.
+    type: Remove
+  id: 7901
+  time: '2026-08-05T04:50:18.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/79
 Order: -1
 
