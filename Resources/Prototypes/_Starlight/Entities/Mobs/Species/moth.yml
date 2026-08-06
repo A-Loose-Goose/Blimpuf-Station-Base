@@ -17,10 +17,6 @@
   # Starlight-end
   - type: Jump
     action: JumpMoth
-  - type: Flight # EE - Flight
-    isLayerAnimated: true
-    layer: "/Textures/_EE/Mobs/Customization/Harpy/harpy_wings.rsi"
-    animationKey: "Flap"
   - type: Absorbable
   - type: HumanoidAppearance
     species: Moth
@@ -144,16 +140,3 @@
         sprite: "Effects/creampie.rsi"
         state: "creampie_moth"
         visible: false
-
-- type: entity
-  id: ActionToggleMothFlight
-  name: Fly
-  description: Make use of your wings to fly.
-  components:
-    - type: Action
-      itemIconStyle: BigAction
-      icon: { sprite: _Blimpuf/Interface/Actions/flight.rsi, state: flight_off }
-      iconOn: { sprite : _Blimpuf/Interface/Actions/flight.rsi, state: flight_on }
-      checkCanInteract: false
-    - type: InstantAction
-      event: !type:ToggleFlightEvent
