@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 19:59:09
-  entityCount: 17007
+  entityCount: 17013
 maps:
 - 1
 grids:
@@ -6338,7 +6338,7 @@ entities:
             6921: 4,35
             7371: 6,30
         - node:
-            color: '#203144FF'
+            color: '#1C5326FF'
             id: WarnCornerSmallGreyscaleSW
           decals:
             7030: 19,45
@@ -6675,7 +6675,7 @@ entities:
             7357: 6,35
             7370: 7,30
         - node:
-            color: '#203144FF'
+            color: '#1C5326FF'
             id: WarnLineGreyscaleW
           decals:
             7029: 19,44
@@ -45327,11 +45327,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -1.5,-19.5
       parent: 2
-  - uid: 6825
-    components:
-    - type: Transform
-      pos: 15.5,45.5
-      parent: 2
   - uid: 16937
     components:
     - type: Transform
@@ -45377,6 +45372,11 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 17.5,31.5
+      parent: 2
+  - uid: 17083
+    components:
+    - type: Transform
+      pos: 15.5,45.5
       parent: 2
 - proto: ComfyChairRed
   entities:
@@ -95114,11 +95114,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 51.5,50.5
       parent: 2
-  - uid: 13964
-    components:
-    - type: Transform
-      pos: 31.5,-7.5
-      parent: 2
   - uid: 13965
     components:
     - type: Transform
@@ -95478,6 +95473,11 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 53.5,-46.5
+      parent: 2
+  - uid: 17076
+    components:
+    - type: Transform
+      pos: 32.5,-2.5
       parent: 2
 - proto: TableCounterMetal
   entities:
@@ -97034,15 +97034,15 @@ entities:
     - type: Transform
       pos: 63.5,16.5
       parent: 2
-  - uid: 14294
-    components:
-    - type: Transform
-      pos: 32.5,-2.5
-      parent: 2
   - uid: 14295
     components:
     - type: Transform
       pos: -21.5,-14.5
+      parent: 2
+  - uid: 17082
+    components:
+    - type: Transform
+      pos: 40.5,-18.5
       parent: 2
 - proto: VendingMachineClothing
   entities:
@@ -97095,13 +97095,6 @@ entities:
       name: Hot drinks machine
     - type: Transform
       pos: 107.5,-12.5
-      parent: 2
-- proto: VendingMachineCondiments
-  entities:
-  - uid: 14304
-    components:
-    - type: Transform
-      pos: 31.5,-7.5
       parent: 2
 - proto: VendingMachineCuraDrobe
   entities:
@@ -111008,6 +111001,18 @@ entities:
       rot: 3.141592653589793 rad
       pos: 68.5,-46.5
       parent: 2
+  - uid: 17078
+    components:
+    - type: Transform
+      pos: 31.5,-7.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 17079
+    components:
+    - type: Transform
+      pos: 32.5,-7.5
+      parent: 2
+      rot: 1.5707963267948966 rad
 - proto: Wirecutter
   entities:
   - uid: 6690
@@ -111068,5 +111073,40 @@ entities:
     components:
     - type: Transform
       pos: 71.78979,31.37478
+      parent: 2
+- proto: VendingMachineCondiments
+  entities:
+  - uid: 17074
+    components:
+    - type: Transform
+      pos: 32.5,-2.5
+      parent: 2
+- proto: ServiceTechFab
+  entities:
+  - uid: 17077
+    components:
+    - type: Transform
+      pos: 31.5,-7.5
+      parent: 2
+- proto: WindoorSecureServiceLocked
+  entities:
+  - uid: 17080
+    components:
+    - type: Transform
+      pos: 31.5,-7.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 17081
+    components:
+    - type: Transform
+      pos: 32.5,-7.5
+      parent: 2
+      rot: 3.141592653589793 rad
+- proto: SignNTR
+  entities:
+  - uid: 17084
+    components:
+    - type: Transform
+      pos: 18.5,45.5
       parent: 2
 ...
