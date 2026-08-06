@@ -3,6 +3,8 @@ using Content.Server.Polymorph.Systems;
 using Content.Server.Popups;
 using Content.Shared._Blimpuf.Geras;
 using Content.Shared._Blimpuf.Geras.Components;
+using Content.Shared._Starlight.Medical.Body.Systems;
+using Content.Shared.Body.Components;
 using Content.Shared.DoAfter;
 using Content.Shared.Humanoid;
 using Content.Shared.MagicMirror;
@@ -28,6 +30,7 @@ public sealed partial class GerasSystem : SharedGerasSystem
     [Dependency] private PopupSystem _popup = default!;
     [Dependency] private readonly SharedStorageSystem _storageSystem = default!;
     [Dependency] private readonly SharedContainerSystem _containerSystem = default!;
+    [Dependency] private readonly SharedBloodstreamSystem _bloodstream = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -120,6 +123,11 @@ public sealed partial class GerasSystem : SharedGerasSystem
         var gerasColorComponent = _entityManager.EnsureComponent<GerasColorComponent>(ent.Value);
         gerasColorComponent.Color = appearance.SkinColor;
         Dirty(ent.Value, gerasColorComponent);
+
+        if (_entityManager.TryGetComponent<BloodstreamComponent>(ent.Value, out var bloodstream))
+        {
+            _bloodstream.SetBloodReagentColor((ent.Value, bloodstream), appearance.SkinColor);
+        }
 
         _popup.PopupEntity(Loc.GetString("geras-popup-morph-message-others", ("entity", ent.Value)), ent.Value, Filter.PvsExcept(ent.Value), true);
         _popup.PopupEntity(Loc.GetString("geras-popup-morph-message-user"), ent.Value, ent.Value);
