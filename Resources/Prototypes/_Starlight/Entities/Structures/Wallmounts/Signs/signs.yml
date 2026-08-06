@@ -352,8 +352,8 @@
 - type: entity
   parent: BaseSign
   id: SignNTR
-  name: NTR sign
-  description: A sign indicating the physical presence of NanoTrasen aboard the station.
+  name: CCR sign
+  description: A sign indicating the physical presence of CentralCommand aboard the station.
   components:
   - type: Sprite
     sprite: _Starlight/Structures/Wallmounts/signs.rsi
