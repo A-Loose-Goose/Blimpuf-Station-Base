@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 20:54:29
-  entityCount: 29929
+  entityCount: 29934
 maps:
 - 1
 grids:
@@ -3409,12 +3409,16 @@ entities:
             3353: -26,-45
             3359: -25,-45
         - node:
-            color: '#334E6DC8'
+            color: '#439909C8'
             id: HalfTileOverlayGreyscale270
           decals:
             92: -10,0
             93: -10,1
             94: -10,2
+        - node:
+            color: '#334E6DC8'
+            id: HalfTileOverlayGreyscale270
+          decals:
             221: -6,-10
             222: -6,-9
             1622: 21,5
@@ -17895,6 +17899,11 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 8.549407,-32.34788
+      parent: 2
+  - uid: 30076
+    components:
+    - type: Transform
+      pos: -9.6,6.5
       parent: 2
 - proto: BoxFolderGreenThreePapers
   entities:
@@ -132811,6 +132820,11 @@ entities:
     - type: Transform
       pos: 7.3953404,-32.161106
       parent: 2
+  - uid: 30078
+    components:
+    - type: Transform
+      pos: -8.4,6.6
+      parent: 2
 - proto: LandMineExplosive
   entities:
   - uid: 20696
@@ -136130,15 +136144,6 @@ entities:
     components:
     - type: Transform
       pos: -39.5,26.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-- proto: PosterLegitNanotrasenLogo
-  entities:
-  - uid: 21220
-    components:
-    - type: Transform
-      pos: -5.5,6.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -152662,13 +152667,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -4.5,-62.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-  - uid: 23978
-    components:
-    - type: Transform
-      pos: -9.5,9.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -185290,5 +185288,38 @@ entities:
     components:
     - type: Transform
       pos: -26.5,25.5
+      parent: 2
+- proto: SpawnMobKoboldKiki
+  entities:
+  - uid: 30070
+    components:
+    - type: Transform
+      pos: -39.5,6.5
+      parent: 2
+- proto: SignNTR
+  entities:
+  - uid: 30072
+    components:
+    - type: Transform
+      pos: -9.5,9.5
+      parent: 2
+  - uid: 30073
+    components:
+    - type: Transform
+      pos: -5.5,6.5
+      parent: 2
+- proto: CentCommFlag
+  entities:
+  - uid: 30075
+    components:
+    - type: Transform
+      pos: -11.5,5.5
+      parent: 2
+- proto: PenNTR
+  entities:
+  - uid: 30077
+    components:
+    - type: Transform
+      pos: -9.14,6.6
       parent: 2
 ...
