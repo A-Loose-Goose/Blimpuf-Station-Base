@@ -4459,5 +4459,19 @@ Entries:
   id: 8001
   time: '2026-08-06T00:04:08.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/80
+- author: ItsMaitake
+  changes:
+  - message: Vendor of Silence added to each map.
+    type: Add
+  - message: Kiki the Botanist Kobold, Stir Stir the Genpop Monkey, and Right Honorable
+      Flippers the Magistrate pet to their departments.
+    type: Add
+  - message: Department specific techfabs to each map.
+    type: Add
+  - message: Protolathes and autolathes from most departments (cargo kept their autolathe.
+    type: Remove
+  id: 8101
+  time: '2026-08-06T09:54:49.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/81
 Order: -1
 
