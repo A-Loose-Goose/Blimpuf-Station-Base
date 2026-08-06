@@ -10564,9 +10564,6 @@ entities:
     - type: Transform
       pos: -63.5,-31.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -207702.44
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -10589,9 +10586,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -58.5,-45.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -206099.94
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -10662,9 +10656,6 @@ entities:
     - type: Transform
       pos: 1.5,-1.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -21246.117
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -10746,9 +10737,6 @@ entities:
     - type: Transform
       pos: -32.5,-52.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -213354.97
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -11209,9 +11197,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -71.5,-38.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -208212.77
-      state: Opening
     - type: DeviceLinkSink
       invokeCounter: 1
     - type: DeviceLinkSource
@@ -11404,9 +11389,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -83.5,-42.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -32774.04
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -11416,9 +11398,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -83.5,-46.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -32774.64
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -11428,9 +11407,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -83.5,-50.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -32775.406
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -11440,9 +11416,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -83.5,-32.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -32772.64
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -11452,9 +11425,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -83.5,-28.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -32772.074
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -11464,9 +11434,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -83.5,-24.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -32771.574
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -11476,9 +11443,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 47.5,53.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -32796.875
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -11488,9 +11452,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 47.5,57.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -32796.24
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -11502,9 +11463,6 @@ entities:
     - type: GridFill
       addComponents: []
       path: /Maps/_Starlight/Shuttles/Security/pursuit.yml
-    - type: Door
-      secondsUntilStateChange: -88584.15
-      state: Opening
 - proto: AirlockExternalGlassShuttleLocked
   entities:
   - uid: 216
@@ -12841,9 +12799,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 34.5,43.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -286560.5
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True

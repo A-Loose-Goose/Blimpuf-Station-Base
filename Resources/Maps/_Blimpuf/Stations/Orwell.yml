@@ -11032,9 +11032,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -57.5,40.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -125462.08
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -11515,9 +11512,6 @@ entities:
       parent: 2
     - type: DeviceLinkSink
       invokeCounter: 1
-    - type: Door
-      secondsUntilStateChange: -262301.3
-      state: Opening
     - type: DeviceLinkSource
       linkedPorts:
         276:
@@ -13342,9 +13336,6 @@ entities:
     - type: Transform
       pos: 18.5,-1.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -151258.44
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -13353,9 +13344,6 @@ entities:
     - type: Transform
       pos: 17.5,-1.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -151253.38
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True

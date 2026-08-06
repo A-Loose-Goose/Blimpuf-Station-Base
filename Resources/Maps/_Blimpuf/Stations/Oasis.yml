@@ -16341,9 +16341,6 @@ entities:
     - type: Transform
       pos: 33.5,-28.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -196253.47
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -16383,9 +16380,6 @@ entities:
     - type: Transform
       pos: 37.5,18.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -251932.02
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -16430,9 +16424,6 @@ entities:
     - type: Transform
       pos: -18.5,-39.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -248084
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -16563,9 +16554,6 @@ entities:
       parent: 2
     - type: AccessReader
       accessListsOriginal: []
-    - type: Door
-      secondsUntilStateChange: -251879.45
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -16619,9 +16607,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 22.5,-12.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -333347.53
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -18241,9 +18226,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 52.5,-0.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -249310.89
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -18566,9 +18548,6 @@ entities:
     - type: Transform
       pos: 40.5,2.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -246777.56
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -18595,9 +18574,6 @@ entities:
     - type: Transform
       pos: -22.5,26.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -562543.44
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -19271,9 +19247,6 @@ entities:
     - type: Transform
       pos: -13.5,-45.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -248082.6
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -19498,9 +19471,6 @@ entities:
     - type: Transform
       pos: 29.5,-42.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -263045.1
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -19638,9 +19608,6 @@ entities:
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
-    - type: Door
-      secondsUntilStateChange: -661372.25
-      state: Opening
   - uid: 652
     components:
     - type: Transform
@@ -19650,9 +19617,6 @@ entities:
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
-    - type: Door
-      secondsUntilStateChange: -661374.9
-      state: Opening
   - uid: 653
     components:
     - type: Transform
@@ -19662,9 +19626,6 @@ entities:
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
-    - type: Door
-      secondsUntilStateChange: -661373.75
-      state: Opening
   - uid: 654
     components:
     - type: Transform
@@ -19673,9 +19634,6 @@ entities:
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
-    - type: Door
-      secondsUntilStateChange: -661372.94
-      state: Opening
   - uid: 655
     components:
     - type: Transform
@@ -176863,9 +176821,6 @@ entities:
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
-    - type: Door
-      secondsUntilStateChange: -225776.84
-      state: Opening
     - type: Airlock
       autoClose: False
     - type: AccessReader

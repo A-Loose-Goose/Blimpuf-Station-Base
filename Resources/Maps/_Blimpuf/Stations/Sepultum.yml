@@ -13110,9 +13110,6 @@ entities:
       parent: 2
     - type: DeviceLinkSink
       invokeCounter: 1
-    - type: Door
-      secondsUntilStateChange: -237466.58
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -13405,9 +13402,6 @@ entities:
     - type: Transform
       pos: -7.5,67.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -191428.55
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -13665,9 +13659,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 7.5,4.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -245697.1
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -13727,9 +13718,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 16.5,93.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -130624.83
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -13739,9 +13727,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 16.5,89.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -130624.23
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -13750,9 +13735,6 @@ entities:
     - type: Transform
       pos: -60.5,-47.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -130874.59
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -13761,9 +13743,6 @@ entities:
     - type: Transform
       pos: -56.5,-47.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -130875.02
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -13772,9 +13751,6 @@ entities:
     - type: Transform
       pos: -52.5,-47.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -130875.56
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -13783,9 +13759,6 @@ entities:
     - type: Transform
       pos: -48.5,-47.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -130876.3
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -13846,9 +13819,6 @@ entities:
     - type: Transform
       pos: -60.5,77.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -18894.072
-      state: Opening
     - type: DeviceLinkSink
       invokeCounter: 1
     - type: DeviceLinkSource
@@ -14226,9 +14196,6 @@ entities:
     - type: Transform
       pos: -43.5,-15.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -22983.182
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -14656,9 +14623,6 @@ entities:
     - type: Transform
       pos: -2.5,-1.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -8575.437
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -89862,9 +89826,6 @@ entities:
     - type: Transform
       pos: -24.5,66.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -40451.367
-      state: Closing
 - proto: CurtainsPurple
   entities:
   - uid: 14759
@@ -89877,9 +89838,6 @@ entities:
     - type: Transform
       pos: -122.5,47.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -142815.27
-      state: Opening
   - uid: 14761
     components:
     - type: Transform

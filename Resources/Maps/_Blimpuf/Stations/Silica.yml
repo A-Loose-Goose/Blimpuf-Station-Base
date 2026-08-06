@@ -14449,9 +14449,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -29.5,-12.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -240193.84
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -14461,9 +14458,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 30.5,-28.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -240200.34
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -14473,9 +14467,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 30.5,-24.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -240201.03
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -14487,9 +14478,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 55.5,-24.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -27649.299
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -15607,9 +15595,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -6.5,-29.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -725.3994
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -15782,9 +15767,6 @@ entities:
     - type: Transform
       pos: 36.5,0.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -331897.12
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True

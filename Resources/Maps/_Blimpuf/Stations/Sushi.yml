@@ -11711,9 +11711,6 @@ entities:
     - type: Transform
       pos: 85.5,65.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -6137.7534
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -163155,9 +163152,6 @@ entities:
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
-    - type: Door
-      secondsUntilStateChange: -7414.6855
-      state: Opening
     - type: Airlock
       autoClose: False
   - uid: 24458

@@ -7751,9 +7751,6 @@ entities:
     - type: Transform
       pos: 8.5,6.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -129055.26
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -9549,9 +9546,6 @@ entities:
     - type: Transform
       pos: 2.5,-7.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -91179.33
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -9715,9 +9709,6 @@ entities:
     - type: Transform
       pos: -38.5,10.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -143230.73
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -9731,9 +9722,6 @@ entities:
     - type: Transform
       pos: -36.5,-10.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -143129.8
-      state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
