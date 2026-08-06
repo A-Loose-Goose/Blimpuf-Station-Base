@@ -20358,19 +20358,6 @@ entities:
     - type: Transform
       pos: 50.139168,-17.388416
       parent: 2
-- proto: BoxFolderWhite
-  entities:
-  - uid: 1308
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 49.55977,2.4457562
-      parent: 2
-    - type: UserInterface
-      actors:
-        enum.StorageUiKey.Key:
-        - invalid
-    - type: ActiveUserInterface
 - proto: BoxFolderYellow
   entities:
   - uid: 1309
@@ -168859,4 +168846,12 @@ entities:
     - type: Transform
       pos: 5.4821196,-25.41238
       parent: 2
+- proto: BoxFolderWhiteEmpty
+  entities:
+  - uid: 25243
+    components:
+    - type: Transform
+      pos: 49.5,2.5
+      parent: 2
+      rot: 4.71238898038469 rad
 ...
