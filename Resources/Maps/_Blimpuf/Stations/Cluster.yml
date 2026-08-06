@@ -97872,17 +97872,11 @@ entities:
     - type: Transform
       pos: -38.5,9.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -103108.59
-      state: Opening
   - uid: 15007
     components:
     - type: Transform
       pos: -35.5,10.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -103109.09
-      state: Opening
 - proto: Wrench
   entities:
   - uid: 15008

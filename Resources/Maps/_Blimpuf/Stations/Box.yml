@@ -188980,9 +188980,6 @@ entities:
     - type: Transform
       pos: 73.5,-3.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -25485.814
-      state: Opening
   - uid: 29568
     components:
     - type: Transform
