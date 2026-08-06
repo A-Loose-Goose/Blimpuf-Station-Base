@@ -83635,15 +83635,15 @@ entities:
       parent: 2
 - proto: CrayonBox
   entities:
-  - uid: 13212
-    components:
-    - type: Transform
-      pos: 5.4349837,-28.709238
-      parent: 2
   - uid: 30043
     components:
     - type: Transform
       pos: 1.5125437,1.5110011
+      parent: 2
+  - uid: 31314
+    components:
+    - type: Transform
+      pos: 5.4349837,-27.709238
       parent: 2
 - proto: Crematorium
   entities:
@@ -84779,22 +84779,12 @@ entities:
     - type: Transform
       pos: 56.5,2.5
       parent: 2
-  - uid: 13392
-    components:
-    - type: Transform
-      pos: 50.5,1.5
-      parent: 2
 - proto: DefaultStationBeaconMedical
   entities:
   - uid: 13393
     components:
     - type: Transform
       pos: 39.5,9.5
-      parent: 2
-  - uid: 13394
-    components:
-    - type: Transform
-      pos: 37.5,8.5
       parent: 2
 - proto: DefaultStationBeaconMorgue
   entities:
@@ -161595,13 +161585,6 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-  - uid: 23872
-    components:
-    - type: Transform
-      pos: 5.5,19.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
   - uid: 23873
     components:
     - type: Transform
@@ -174260,15 +174243,6 @@ entities:
     - type: Transform
       pos: 24.5,-25.5
       parent: 2
-- proto: VendingMachineClown
-  entities:
-  - uid: 25758
-    components:
-    - type: Transform
-      pos: 3.5,-27.5
-      parent: 2
-    - type: StockLimitedProcessing
-      processingListings: {}
 - proto: VendingMachineCoffee
   entities:
   - uid: 113
@@ -197549,5 +197523,35 @@ entities:
     components:
     - type: Transform
       pos: 49.27476,63.34703
+      parent: 2
+- proto: VendingMachineMime
+  entities:
+  - uid: 31315
+    components:
+    - type: Transform
+      pos: 5.5,-28.5
+      parent: 2
+- proto: VendingMachineClown
+  entities:
+  - uid: 31316
+    components:
+    - type: Transform
+      pos: 3.5,-31.5
+      parent: 2
+    - type: StockLimitedProcessing
+      processingListings: {}
+- proto: SignNTR
+  entities:
+  - uid: 31317
+    components:
+    - type: Transform
+      pos: 5.5,19.5
+      parent: 2
+- proto: DefaultStationBeaconBar
+  entities:
+  - uid: 31318
+    components:
+    - type: Transform
+      pos: 18.5,-18.5
       parent: 2
 ...
