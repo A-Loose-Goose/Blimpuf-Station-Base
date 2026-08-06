@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 07/13/2026 04:55:48
-  entityCount: 29619
+  entityCount: 29617
 maps:
 - 1
 grids:
@@ -75755,14 +75755,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 5.5,47.5
-      parent: 2
-- proto: ComputerCargoOrdersServiceDesktop
-  entities:
-  - uid: 11666
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 31.5,-10.5
       parent: 2
 - proto: ComputerComms
   entities:
@@ -165004,11 +164996,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -57.5,-7.5
       parent: 2
-  - uid: 25052
-    components:
-    - type: Transform
-      pos: 31.5,-10.5
-      parent: 2
   - uid: 25053
     components:
     - type: Transform
@@ -188955,12 +188942,12 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -9.5,-27.5
       parent: 2
-  - uid: 29684
+  - uid: 29698
     components:
     - type: Transform
-      pos: 29.5,-10.5
+      pos: 30.5,-10.5
       parent: 2
-      rot: 1.5707963267948966 rad
+      rot: 4.71238898038469 rad
 - proto: Wirecutter
   entities:
   - uid: 29565
@@ -189105,23 +189092,6 @@ entities:
     - type: Transform
       pos: 30.5,-10.5
       parent: 2
-  - uid: 29683
-    components:
-    - type: Transform
-      pos: 30.5,-10.5
-      parent: 2
-- proto: WindoorSecureServiceLocked
-  entities:
-  - uid: 29685
-    components:
-    - type: Transform
-      pos: 30.5,-9.5
-      parent: 2
-  - uid: 29686
-    components:
-    - type: Transform
-      pos: 31.5,-9.5
-      parent: 2
 - proto: IceCreamMaker
   entities:
   - uid: 29689
@@ -189164,4 +189134,26 @@ entities:
     - type: Transform
       pos: 4.5,25.5
       parent: 2
+- proto: WindoorSecureServiceLocked
+  entities:
+  - uid: 29696
+    components:
+    - type: Transform
+      pos: 30.5,-10.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 29697
+    components:
+    - type: Transform
+      pos: 31.5,-10.5
+      parent: 2
+      rot: 3.141592653589793 rad
+- proto: ComputerCargoOrdersService
+  entities:
+  - uid: 29699
+    components:
+    - type: Transform
+      pos: 31.5,-10.5
+      parent: 2
+      rot: 3.141592653589793 rad
 ...

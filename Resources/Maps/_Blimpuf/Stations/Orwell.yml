@@ -80243,14 +80243,6 @@ entities:
     - type: Transform
       pos: 59.5,-26.5
       parent: 2
-- proto: DefaultStationBeaconNTR
-  entities:
-  - uid: 1024
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 67.5,13.5
-      parent: 2
 - proto: DefaultStationBeaconPermaBrig
   entities:
   - uid: 13355
@@ -200312,5 +200304,13 @@ entities:
     components:
     - type: Transform
       pos: 66.5,6.5
+      parent: 2
+- proto: DefaultStationBeaconNTR
+  entities:
+  - uid: 31972
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 65.5,9.5
       parent: 2
 ...

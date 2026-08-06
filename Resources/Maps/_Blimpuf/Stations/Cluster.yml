@@ -97852,6 +97852,12 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -10.5,-14.5
       parent: 2
+  - uid: 15118
+    components:
+    - type: Transform
+      pos: -3.5,10.5
+      parent: 2
+      rot: 3.141592653589793 rad
 - proto: Wirecutter
   entities:
   - uid: 5570
@@ -97966,19 +97972,6 @@ entities:
     - type: Transform
       pos: -3.5,10.5
       parent: 2
-- proto: WindoorSecureServiceLocked
-  entities:
-  - uid: 15090
-    components:
-    - type: Transform
-      pos: -3.5,11.5
-      parent: 2
-  - uid: 15092
-    components:
-    - type: Transform
-      pos: -4.5,10.5
-      parent: 2
-      rot: 1.5707963267948966 rad
 - proto: IceCreamMaker
   entities:
   - uid: 15095
@@ -98056,4 +98049,12 @@ entities:
     - type: Transform
       pos: -11.5,-3.5
       parent: 2
+- proto: WindoorSecureServiceLocked
+  entities:
+  - uid: 15117
+    components:
+    - type: Transform
+      pos: -3.5,10.5
+      parent: 2
+      rot: 4.71238898038469 rad
 ...

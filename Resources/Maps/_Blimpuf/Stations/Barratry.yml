@@ -108613,18 +108613,18 @@ entities:
     - type: Transform
       pos: -25.5,54.5
       parent: 2
-  - uid: 16142
+  - uid: 16177
     components:
     - type: Transform
-      pos: -44.5,39.5
-      parent: 2
-      rot: 1.5707963267948966 rad
-  - uid: 16143
-    components:
-    - type: Transform
-      pos: -41.5,39.5
+      pos: -43.5,39.5
       parent: 2
       rot: 4.71238898038469 rad
+  - uid: 16178
+    components:
+    - type: Transform
+      pos: -42.5,39.5
+      parent: 2
+      rot: 1.5707963267948966 rad
 - proto: Wrench
   entities:
   - uid: 16102
@@ -108692,20 +108692,6 @@ entities:
     - type: Transform
       pos: -43.5,39.5
       parent: 2
-- proto: WindoorSecureServiceLocked
-  entities:
-  - uid: 16145
-    components:
-    - type: Transform
-      pos: -43.5,38.5
-      parent: 2
-      rot: 3.141592653589793 rad
-  - uid: 16146
-    components:
-    - type: Transform
-      pos: -42.5,38.5
-      parent: 2
-      rot: 3.141592653589793 rad
 - proto: IceCreamMaker
   entities:
   - uid: 16148
@@ -108855,5 +108841,17 @@ entities:
     components:
     - type: Transform
       pos: 15.5,0.5
+      parent: 2
+- proto: WindoorSecureServiceLocked
+  entities:
+  - uid: 16175
+    components:
+    - type: Transform
+      pos: -43.5,39.5
+      parent: 2
+  - uid: 16176
+    components:
+    - type: Transform
+      pos: -42.5,39.5
       parent: 2
 ...
