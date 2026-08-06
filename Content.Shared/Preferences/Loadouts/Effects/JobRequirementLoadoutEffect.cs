@@ -22,14 +22,15 @@ public sealed partial class JobRequirementLoadoutEffect : LoadoutEffect
         var configurationManager = collection.Resolve<IConfigurationManager>();
         var timersDisabled = !configurationManager.GetCVar(CCVars.GameRoleLoadoutTimers);
 
-        if (session == null || timersDisabled)
+        if ((session == null || timersDisabled) && Requirement is not TraitsRequirement)
         {
             reason = FormattedMessage.Empty;
             return true;
         }
 
-        var manager = collection.Resolve<ISharedPlaytimeManager>();
-        var playtimes = manager.GetPlayTimes(session);
+        var playtimes = session == null
+            ? null
+            : collection.Resolve<ISharedPlaytimeManager>().GetPlayTimes(session);
         return Requirement.Check(collection.Resolve<IEntityManager>(),
             session,
             collection.Resolve<IPrototypeManager>(),
