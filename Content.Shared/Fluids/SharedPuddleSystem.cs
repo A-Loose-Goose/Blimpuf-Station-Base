@@ -213,8 +213,9 @@ public abstract partial class SharedPuddleSystem : EntitySystem
                     continue;
 
                 var interpolateValue = quantity.Float() / solution.Volume.Float();
+                var standoutColor = solution.GetColorWithOnly(_prototypeManager, standout);
                 color = Color.InterpolateBetween(color,
-                    _prototypeManager.Index<ReagentPrototype>(standout).SubstanceColor,
+                    standoutColor,
                     interpolateValue);
             }
         }
