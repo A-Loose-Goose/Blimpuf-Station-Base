@@ -37,3 +37,22 @@
     - type: Tag
       tags:
         - HideContextMenu
+
+- type: entity
+  id: CargoWhistleExclamation
+  name: exclamation
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      sprite: Structures/Storage/closet.rsi
+      state: cargo_whistle_exclamation
+      drawdepth: Effects
+      offset: 0, 1
+      noRot: true
+    - type: Transform
+      noRot: true
+    - type: TimedDespawn
+      lifetime: 0.8
+    - type: Tag
+      tags:
+        - HideContextMenu

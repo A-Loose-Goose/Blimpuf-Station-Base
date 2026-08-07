@@ -23,6 +23,13 @@
       "name": "sec"
     },
     {
+      "name": "cargo-equipped-NECK",
+      "directions": 4
+    },
+    {
+      "name": "cargo"
+    },
+    {
       "name": "trench-equipped-NECK",
       "directions": 4
     },

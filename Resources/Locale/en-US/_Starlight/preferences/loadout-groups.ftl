@@ -78,6 +78,7 @@ loadout-group-mime-shoes = Mime shoes
 # Cargo
 loadout-group-cargo-technician-appraisal-tool = Cargo Technician appraisal tool
 loadout-group-mail-technician-head = Mail Technician head
+loadout-group-mail-technician-neck = Mail Technician neck
 loadout-group-mail-technician-jumpsuit = Mail Technician jumpsuit
 loadout-group-mail-technician-backpack = Mail Technician backpack
 loadout-group-mail-technician-outerclothing = Mail Technician outer clothing

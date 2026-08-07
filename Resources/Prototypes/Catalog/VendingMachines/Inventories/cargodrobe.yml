@@ -26,6 +26,7 @@
     ClothingShoesBootsMail: 1 # Starlight
     MailBag: 2
     MailTrolleyFlatpack: 2
+    CargoWhistle: 2
     WeaponMeleeBoxcutter: 2
   contrabandInventory:
     ToyFigurineCargoTech: 1
