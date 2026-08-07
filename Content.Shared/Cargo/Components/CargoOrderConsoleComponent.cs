@@ -99,9 +99,10 @@ public sealed partial class CargoOrderConsoleComponent : Component
     public ProtoId<RadioChannelPrototype> AnnouncementChannel = "Supply";
 
     /// <summary>
-    /// Secondary radio channel which always receives order announcements.
+    /// Secondary radio channel which always receives order announcements. - Blimpuf Edit; Removed Readonly, this can now be edited
     /// </summary>
-    public static readonly ProtoId<RadioChannelPrototype> BaseAnnouncementChannel = "Supply";
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public ProtoId<RadioChannelPrototype> BaseAnnouncementChannel = "Supply";
 
     /// <summary>
     /// The behaviour of the cargo console regarding orders

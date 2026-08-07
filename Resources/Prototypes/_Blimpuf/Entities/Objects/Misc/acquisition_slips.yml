@@ -1,0 +1,20 @@
+- type: entity
+  parent: PaperAcquisitionSlip
+  id: PaperAcquisitionSlipSyndicate
+  suffix: Syndicate
+  components:
+    - type: Sprite
+      layers:
+        - state: acquisition_form
+          color: "#680f15"
+        - state: acquisition_form_words
+          map: ["enum.PaperVisualLayers.Writing"]
+          visible: false
+        - state: acquisition_form_header
+          color: "#000000"
+        - state: paper_stamp-generic
+          map: ["enum.PaperVisualLayers.Stamp"]
+          visible: false
+    - type: PaperVisuals
+      headerImagePath: "/Textures/Interface/Paper/paper_heading_syndicate_logo.svg.96dpi.png"
+      backgroundImagePath: "/Textures/Interface/Paper/paper_background_blood_red.svg.96dpi.png"

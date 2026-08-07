@@ -1,0 +1,13 @@
+- type: cargoAccount
+  id: Syndicate
+  name: cargo-account-syndicate-name
+  code: cargo-account-syndicate-code
+  color: "#b48b57"
+  radioChannel: Syndicate
+  acquisitionSlip: PaperAcquisitionSlipSyndicate
+  # Starlight BEGIN
+  tamperSealName: tamper-seal-account-name-syndicate
+  tamperSealColor: "#680f15"
+  tamperSealAccesses:
+    - allOf: [ "SyndicateAgent" ] # Regular crew
+  # Starlight END

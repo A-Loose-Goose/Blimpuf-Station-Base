@@ -263,8 +263,14 @@ namespace Content.Server.Cargo.Systems
                     ("approver", order.Approver ?? string.Empty),
                     ("cost", cost));
                 _radio.SendRadioMessage(uid, message, account.RadioChannel, uid, escapeMarkup: false);
-                if (CargoOrderConsoleComponent.BaseAnnouncementChannel != account.RadioChannel)
-                    _radio.SendRadioMessage(uid, message, CargoOrderConsoleComponent.BaseAnnouncementChannel, uid, escapeMarkup: false);
+
+                if (TryComp<CargoOrderConsoleComponent>(uid, out var console))
+                {
+                    if (console.BaseAnnouncementChannel != account.RadioChannel) // Blimpuf edit - required as BaseAnnouncementChannel at CargoOrderConsoleComponent is no longer static
+                    {
+                        _radio.SendRadioMessage(uid, message, console.BaseAnnouncementChannel, uid, escapeMarkup: false);
+                    }
+                }
             }
 
             ConsolePopup(args.Actor, Loc.GetString("cargo-console-trade-station", ("destination", MetaData(ev.FulfillmentEntity.Value).EntityName)));
