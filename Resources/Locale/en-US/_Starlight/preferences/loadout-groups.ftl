@@ -93,6 +93,7 @@ loadout-group-salvagelead-id = Salvage Lead ID
 loadout-group-mining-id = Mining Specialist ID
 loadout-group-salvage-id = Salvage Specialist ID
 loadout-group-salvage-lead-mantle = Salvage Lead mantle
+loadout-group-cargo-technician-eyewear = Cargo Technician eyewear
 
 # Silicons
 loadout-group-borg-brain-type = Cyborg Brain Type

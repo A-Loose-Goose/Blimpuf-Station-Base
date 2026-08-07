@@ -302,8 +302,8 @@
 - type: entity
   parent: ClothingHeadBase # Hat, not an actual helmet
   id: ClothingHeadHelmetSilverMusician
-  name: legendary silver helm
-  description: The old silver helm of the famous musician duo. One more time?
+  name: chrome music helmet
+  description: A shiny, chrome helmet packed with electronics, like a built in speaker and chromatic lights.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Head/Hats/daft_punk_silver.rsi

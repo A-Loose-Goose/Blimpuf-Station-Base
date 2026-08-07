@@ -65,7 +65,7 @@
   id: BoxCourier
   name: space courier trunk
   suffix: Bundle
-  description: A stylish green costume bundle themed after a legendary space courier. Ranked 9/13 on popular review websites!
+  description: A stylish yellow costume bundle themed after a legendary space courier.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -82,7 +82,7 @@
   id: BoxCourierPAI
   name: space courier trunk
   suffix: Bundle, Ghost Role
-  description: A stylish green costume bundle themed after a legendary space courier. Ranked 9/13 on popular review websites!
+  description: A stylish yellow costume bundle themed after a legendary space courier.
   components:
   - type: EntityTableContainerFill
     containers:

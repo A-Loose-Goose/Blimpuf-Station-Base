@@ -538,28 +538,28 @@
     - !type:ListingLimitedStockCondition
       stock: 1
 
-#- type: listing
-#  id: BoxCourierPAI
-#  icon: { sprite: _Starlight/Interface/fashion.rsi, state: courier }
-#  productEntity: BoxCourierPAI
-#  cost:
-#    NTCredit: 1500
-#  categories:
-#    - SLFashionOther
-#  conditions:
-#    - !type:ListingLimitedStockCondition
-#      stock: 1
-
 - type: listing
-  id: ClothingOuterBrimstoneDT4
-  productEntity: ClothingOuterBrimstoneDT4
+  id: BoxCourierPAI
+  icon: { sprite: _Starlight/Interface/fashion.rsi, state: courier }
+  productEntity: BoxCourierPAI
   cost:
-    NTCredit: 2000
+    NTCredit: 1500
   categories:
     - SLFashionOther
   conditions:
     - !type:ListingLimitedStockCondition
       stock: 1
+
+#- type: listing
+#  id: ClothingOuterBrimstoneDT4
+#  productEntity: ClothingOuterBrimstoneDT4
+#  cost:
+#    NTCredit: 2000
+#  categories:
+#    - SLFashionOther
+#  conditions:
+#    - !type:ListingLimitedStockCondition
+#      stock: 1
 
 - type: listing
   id: ClothingEyesTechnology
