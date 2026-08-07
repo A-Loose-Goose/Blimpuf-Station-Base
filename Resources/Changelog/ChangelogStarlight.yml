@@ -4473,5 +4473,12 @@ Entries:
   id: 8101
   time: '2026-08-06T09:54:49.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/81
+- author: Limerent-Sun
+  changes:
+  - message: Bubblish sounds more like vanilla SS14 slimes.
+    type: Tweak
+  id: 8301
+  time: '2026-08-07T08:12:50.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/83
 Order: -1
 
