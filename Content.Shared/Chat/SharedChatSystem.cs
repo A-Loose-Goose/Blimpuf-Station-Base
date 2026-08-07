@@ -188,7 +188,9 @@ public abstract partial class SharedChatSystem : EntitySystem
             return true;
         }
 
-        if (input.StartsWith(DefaultChannelPrefix) || (input.Length >= 2 && input[1] == DefaultChannelAltKey))
+        if (input.StartsWith(DefaultChannelPrefix)
+            || input.StartsWith($"{RadioChannelPrefix}{DefaultChannelAltKey}", StringComparison.CurrentCultureIgnoreCase)
+            || input.StartsWith($"{RadioChannelAltPrefix}{DefaultChannelAltKey}", StringComparison.CurrentCultureIgnoreCase))
         {
             if (input.StartsWith(DefaultChannelPrefix))
                 output = SanitizeMessageCapital(input[1..].TrimStart()); //Added to trim the ";"
