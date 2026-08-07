@@ -4495,5 +4495,14 @@ Entries:
   id: 8801
   time: '2026-08-07T21:48:50.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/88
+- author: ItsMaitake & IllegalXeno
+  changes:
+  - message: Space Courier outfit color.
+    type: Tweak
+  - message: Space Courier outfit is now a 75 hour unlock for Cargo Technicians.
+    type: Add
+  id: 8901
+  time: '2026-08-07T23:52:35.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/89
 Order: -1
 
