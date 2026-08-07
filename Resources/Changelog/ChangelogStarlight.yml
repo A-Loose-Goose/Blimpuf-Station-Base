@@ -4487,5 +4487,13 @@ Entries:
   id: 8401
   time: '2026-08-07T08:13:06.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/84
+- author: ItsMaitake
+  changes:
+  - message: The Cargo Whistle to Mail Technician loadouts, Cargo Techfabs, and the
+      Cargodrobe.
+    type: Add
+  id: 8801
+  time: '2026-08-07T21:48:50.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/88
 Order: -1
 
