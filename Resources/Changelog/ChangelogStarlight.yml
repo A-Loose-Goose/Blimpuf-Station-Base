@@ -4480,5 +4480,12 @@ Entries:
   id: 8301
   time: '2026-08-07T08:12:50.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/83
+- author: LadyLiliana
+  changes:
+  - message: Fixed DefaultChannelPrefix triggering when it shouldn't.
+    type: Fix
+  id: 8401
+  time: '2026-08-07T08:13:06.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/84
 Order: -1
 
