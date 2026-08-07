@@ -946,6 +946,12 @@
   - CargoTechnicianBeretFormal # Starlight
 
 - type: loadoutGroup
+  id: CargoTechnicianEyewear
+  name: loadout-group-cargo-technician-eyewear
+  loadouts:
+    - CargoTechnicianCourierGoggles
+
+- type: loadoutGroup
   id: CargoTechnicianJumpsuit
   name: loadout-group-cargo-technician-jumpsuit
   loadouts:
@@ -956,6 +962,7 @@
   - CargoTechnicianJumpskirtFormal # afterlight end
   - CargoTechnicianOveralls # Starlight
   - CargoTechnicianJumpsuitInformal # DeltaV
+  - CargoTechnicianJumpsuitCourier # Blimpuf
 
 - type: loadoutGroup
   id: CargoTechnicianBackpack
@@ -968,6 +975,7 @@
   - SeniorCourierSatchel
   - SeniorCourierDuffel
   - LeatherSatchel # starlight end
+  - CargoTechnicianAICourierTrunk # Blimpuf
 
 - type: loadoutGroup
   id: CargoTechnicianOuterClothing
@@ -977,6 +985,7 @@
   - CargoTechnicianWintercoat
   - SeniorCourierWintercoat # Starlight
   - WindbreakerCargo #Starlight
+  - CargoTechnicianCourierCoat # Blimpuf
 
 - type: loadoutGroup
   id: CargoTechnicianShoes
@@ -991,6 +1000,7 @@
   - LeatherShoes
   - WorkBoots
   - Heels # Starlight end
+  - CargoTechnicianCourierBoots # Blimpuf
 
 - type: loadoutGroup
   id: CargoTechnicianID

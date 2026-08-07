@@ -302,6 +302,7 @@
   groups:
   - GroupTankHarness
   - CargoTechnicianHead
+  - CargoTechnicianEyewear # Blimpuf
   - CargoTechnicianJumpsuit
   - CargoTechnicianBackpack
   - CargoTechnicianOuterClothing
