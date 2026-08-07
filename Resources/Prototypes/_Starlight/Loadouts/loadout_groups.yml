@@ -576,6 +576,13 @@
   - CargoTechnicianBeretFormal
 
 - type: loadoutGroup
+  id: MailTechnicianNeck
+  name: loadout-group-mail-technician-neck
+  minLimit: 0
+  loadouts:
+    - MailTechnicianCargoWhistle
+
+- type: loadoutGroup
   id: MailTechnicianJumpsuit
   name: loadout-group-mail-technician-jumpsuit
   loadouts:

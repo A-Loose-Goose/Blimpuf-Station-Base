@@ -18,6 +18,12 @@
       role: JobMailTech
       time: 360000 # 100 hrs
 
+# Neck
+- type: loadout
+  id: MailTechnicianCargoWhistle
+  equipment:
+    neck: CargoWhistle
+
 # Jumpsuits
 - type: loadout
   id: MailTechnicianJumpsuit

@@ -13,6 +13,7 @@
   - CargoBelt
   - ClothingOuterVestTank
   - HandheldStationMap
+  - CargoWhistle
 
 - type: latheRecipePack
   id: StarlightCargoDynamic

@@ -127,6 +127,7 @@
   groups:
   - GroupTankHarness
   - MailTechnicianHead
+  - MailTechnicianNeck
   - MailTechnicianJumpsuit
   - MailTechnicianBackpack
   - MailTechnicianOuterClothing

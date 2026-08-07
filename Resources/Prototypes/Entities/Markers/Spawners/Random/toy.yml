@@ -362,6 +362,7 @@
       children:
       - id: Whistle
         weight: 5
+      - id: CargoWhistle
       - id: SecurityWhistle
       - id: CommanderWhistle # Starlight - Syndicate -> Commander
         weight: 0.5 # 1 in 143
