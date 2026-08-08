@@ -18,6 +18,7 @@
         Science: [ ]
         Security: [ ]
         Service: [ ]
+        Syndicate: [ ]
     - type: StationCargoBountyDatabase
 
 - type: entity
