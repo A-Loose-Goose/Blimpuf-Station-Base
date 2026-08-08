@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 09:26:53
-  entityCount: 42509
+  entityCount: 42508
 maps:
 - 1
 grids:
@@ -23187,11 +23187,6 @@ entities:
       parent: 2
 - proto: Autolathe
   entities:
-  - uid: 1360
-    components:
-    - type: Transform
-      pos: 46.5,-2.5
-      parent: 2
   - uid: 1361
     components:
     - type: Transform
@@ -26043,6 +26038,12 @@ entities:
     - type: Transform
       pos: 7.595067,32.53147
       parent: 2
+  - uid: 42717
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -75.879654,-17.377373
+      parent: 2
 - proto: BoxFolderBlueThreePapers
   entities:
   - uid: 1836
@@ -26087,6 +26088,12 @@ entities:
     components:
     - type: Transform
       pos: -7.5,17.5
+      parent: 2
+  - uid: 42718
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -75.45778,-20.408623
       parent: 2
 - proto: BoxFolderClipboardThreePapers
   entities:
@@ -26158,18 +26165,6 @@ entities:
       parent: 2
 - proto: BoxFolderRedThreePapers
   entities:
-  - uid: 1855
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -75.45778,-20.408623
-      parent: 2
-  - uid: 1856
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -75.879654,-17.377373
-      parent: 2
   - uid: 42535
     components:
     - type: Transform
@@ -105684,6 +105679,18 @@ entities:
       rot: 3.141592653589793 rad
       pos: 82.5,11.5
       parent: 2
+  - uid: 42713
+    components:
+    - type: Transform
+      pos: -9.5,42.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 42714
+    components:
+    - type: Transform
+      pos: -9.5,40.5
+      parent: 2
+      rot: 4.71238898038469 rad
 - proto: ComfyChairBlue
   entities:
   - uid: 17284
@@ -105709,12 +105716,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 13.5,-49.5
-      parent: 2
-  - uid: 17289
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -11.5,41.5
       parent: 2
   - uid: 17290
     components:
@@ -105945,16 +105946,17 @@ entities:
     - type: Transform
       pos: -8.5,20.5
       parent: 2
-  - uid: 42615
-    components:
-    - type: Transform
-      pos: -9.5,41.5
-      parent: 2
   - uid: 42616
     components:
     - type: Transform
       pos: -14.5,40.5
       parent: 2
+  - uid: 42711
+    components:
+    - type: Transform
+      pos: -11.5,41.5
+      parent: 2
+      rot: 1.5707963267948966 rad
 - proto: ComfyChairRed
   entities:
   - uid: 17331
@@ -106913,12 +106915,6 @@ entities:
       parent: 2
 - proto: ComputerShipyard
   entities:
-  - uid: 14561
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -23.5,38.5
-      parent: 2
   - uid: 17468
     components:
     - type: Transform
@@ -110849,18 +110845,6 @@ entities:
     - type: Transform
       pos: -8.5,15.5
       parent: 2
-- proto: DefaultStationBeaconCryonics
-  entities:
-  - uid: 18170
-    components:
-    - type: Transform
-      pos: -53.5,-9.5
-      parent: 2
-  - uid: 18171
-    components:
-    - type: Transform
-      pos: -53.5,-7.5
-      parent: 2
 - proto: DefaultStationBeaconCryosleep
   entities:
   - uid: 18172
@@ -111348,11 +111332,6 @@ entities:
       currentLabel: Salvage
     - type: NameModifier
       baseName: station beacon
-  - uid: 18228
-    components:
-    - type: Transform
-      pos: -60.5,5.5
-      parent: 2
   - uid: 18229
     components:
     - type: MetaData
@@ -111368,6 +111347,11 @@ entities:
       currentLabel: Mining
     - type: NameModifier
       baseName: station beacon
+  - uid: 42721
+    components:
+    - type: Transform
+      pos: -60.5,4.5
+      parent: 2
 - proto: DefaultStationBeaconSurgery
   entities:
   - uid: 18230
@@ -191413,12 +191397,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 12.898574,39.62452
       parent: 2
-  - uid: 29576
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -10.640225,41.16385
-      parent: 2
   - uid: 29577
     components:
     - type: Transform
@@ -224631,11 +224609,6 @@ entities:
     - type: Transform
       pos: -15.5,-32.5
       parent: 2
-  - uid: 34927
-    components:
-    - type: Transform
-      pos: -16.5,-31.5
-      parent: 2
 - proto: SpawnMobMcGriff
   entities:
   - uid: 34928
@@ -233030,6 +233003,11 @@ entities:
     components:
     - type: Transform
       pos: -26.5,40.5
+      parent: 2
+  - uid: 42720
+    components:
+    - type: Transform
+      pos: -23.5,38.5
       parent: 2
 - proto: TableFancyGreen
   entities:
@@ -268113,5 +268091,27 @@ entities:
     components:
     - type: Transform
       pos: -24.419197,54.682674
+      parent: 2
+- proto: PenNTR
+  entities:
+  - uid: 42715
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -10.640225,41.16385
+      parent: 2
+- proto: DefaultStationBeaconCryonics
+  entities:
+  - uid: 42716
+    components:
+    - type: Transform
+      pos: -53.5,-8.5
+      parent: 2
+- proto: MachineFrame
+  entities:
+  - uid: 42719
+    components:
+    - type: Transform
+      pos: 46.5,-2.5
       parent: 2
 ...
