@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 19:05:10
-  entityCount: 14013
+  entityCount: 14014
 maps:
 - 1
 grids:
@@ -6166,11 +6166,6 @@ entities:
     - type: Transform
       pos: 23.5,-24.5
       parent: 2
-  - uid: 212
-    components:
-    - type: Transform
-      pos: -14.5,-9.5
-      parent: 2
   - uid: 213
     components:
     - type: Transform
@@ -7873,11 +7868,6 @@ entities:
       - Wood
       - Glass
       - Cloth
-  - uid: 467
-    components:
-    - type: Transform
-      pos: 47.5,5.5
-      parent: 2
   - uid: 10284
     components:
     - type: Transform
@@ -33637,14 +33627,6 @@ entities:
     - type: AccessReader
       accessListsOriginal:
       - - Security
-- proto: ComputerCargoOrdersService
-  entities:
-  - uid: 5393
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 0.5,-3.5
-      parent: 2
 - proto: ComputerComms
   entities:
   - uid: 5394
@@ -35053,13 +35035,6 @@ entities:
     - type: Transform
       pos: 27.5,9.5
       parent: 2
-- proto: DefaultStationBeaconRDRoom
-  entities:
-  - uid: 5603
-    components:
-    - type: Transform
-      pos: -4.5,-21.5
-      parent: 2
 - proto: DefaultStationBeaconReporter
   entities:
   - uid: 5604
@@ -35101,13 +35076,6 @@ entities:
     components:
     - type: Transform
       pos: -7.5,14.5
-      parent: 2
-- proto: DefaultStationBeaconServerRoom
-  entities:
-  - uid: 5610
-    components:
-    - type: Transform
-      pos: -1.5,-21.5
       parent: 2
 - proto: DefaultStationBeaconSingularity
   entities:
@@ -73734,16 +73702,16 @@ entities:
       parent: 2
 - proto: SpawnMobKoboldKiki
   entities:
-  - uid: 5324
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -18.5,-2.5
-      parent: 2
   - uid: 8158
     components:
     - type: Transform
       pos: -16.5,10.5
+      parent: 2
+  - uid: 14023
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -20.5,-1.5
       parent: 2
 - proto: SpawnMobMcGriff
   entities:
@@ -73904,10 +73872,10 @@ entities:
     - type: Transform
       pos: -16.5,-0.5
       parent: 2
-  - uid: 11357
+  - uid: 14027
     components:
     - type: Transform
-      pos: -20.5,-0.5
+      pos: -18.5,0.5
       parent: 2
 - proto: SpawnPointBrigmedic
   entities:
@@ -78203,16 +78171,6 @@ entities:
     - type: Transform
       pos: -9.5,-4.5
       parent: 2
-- proto: VendingMachineHydrobe
-  entities:
-  - uid: 11981
-    components:
-    - type: Transform
-      pos: -14.5,-6.5
-      parent: 2
-    - type: AccessReader
-      accessListsOriginal:
-      - - Hydroponics
 - proto: VendingMachineJaniDrobe
   entities:
   - uid: 11982
@@ -78279,16 +78237,6 @@ entities:
     - type: Transform
       pos: -18.5,-8.5
       parent: 2
-- proto: VendingMachineNutri
-  entities:
-  - uid: 11991
-    components:
-    - type: Transform
-      pos: -15.5,-8.5
-      parent: 2
-    - type: AccessReader
-      accessListsOriginal:
-      - - Hydroponics
 - proto: VendingMachinePride
   entities:
   - uid: 11992
@@ -88857,5 +88805,68 @@ entities:
     components:
     - type: Transform
       pos: 9.615229,30.49403
+      parent: 2
+- proto: VendingMachineNutri
+  entities:
+  - uid: 14024
+    components:
+    - type: Transform
+      pos: -18.5,-2.5
+      parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Hydroponics
+- proto: VendingMachineHydrobe
+  entities:
+  - uid: 14026
+    components:
+    - type: Transform
+      pos: -20.5,-0.5
+      parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Hydroponics
+- proto: ComputerCargoOrdersService
+  entities:
+  - uid: 14028
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -14.5,-7.5
+      parent: 2
+- proto: ServiceTechFab
+  entities:
+  - uid: 14030
+    components:
+    - type: Transform
+      pos: -14.5,-6.5
+      parent: 2
+- proto: AirlockMaintServiceLocked
+  entities:
+  - uid: 14031
+    components:
+    - type: Transform
+      pos: -14.5,-9.5
+      parent: 2
+- proto: MachineFrame
+  entities:
+  - uid: 14032
+    components:
+    - type: Transform
+      pos: 47.5,5.5
+      parent: 2
+- proto: DefaultStationBeaconRDRoom
+  entities:
+  - uid: 14033
+    components:
+    - type: Transform
+      pos: -4.5,-20.5
+      parent: 2
+- proto: DefaultStationBeaconServerRoom
+  entities:
+  - uid: 14034
+    components:
+    - type: Transform
+      pos: -1.5,-22.5
       parent: 2
 ...

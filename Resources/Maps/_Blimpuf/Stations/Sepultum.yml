@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 09:42:02
-  entityCount: 43150
+  entityCount: 43148
 maps:
 - 1
 grids:
@@ -5748,13 +5748,6 @@ entities:
             3573: -48,67
             3574: -47,67
             3575: -46,67
-            4660: -35,52
-            4661: -35,53
-            4662: -35,54
-            4663: -35,55
-            4664: -36,55
-            4665: -37,55
-            4666: -38,55
             4970: -54,39
             4971: -54,38
             5036: -43,46
@@ -5763,6 +5756,17 @@ entities:
             5039: -43,43
             5040: -43,42
             5041: -43,41
+        - node:
+            color: '#00B95C96'
+            id: QuarterTileOverlayGreyscale90
+          decals:
+            4660: -35,52
+            4661: -35,53
+            4662: -35,54
+            4663: -35,55
+            4664: -36,55
+            4665: -37,55
+            4666: -38,55
         - node:
             color: '#43990996'
             id: QuarterTileOverlayGreyscale90
@@ -146607,13 +146611,6 @@ entities:
     - type: Transform
       pos: -4.4629784,27.528343
       parent: 2
-- proto: PlushieLizardJobLawyer
-  entities:
-  - uid: 22852
-    components:
-    - type: Transform
-      pos: -32.5329,54.477055
-      parent: 2
 - proto: PlushieLizardJobScientist
   entities:
   - uid: 22853
@@ -253325,11 +253322,6 @@ entities:
       parent: 2
 - proto: WindoorSecureServiceLocked
   entities:
-  - uid: 20484
-    components:
-    - type: Transform
-      pos: -66.5,-22.5
-      parent: 2
   - uid: 42651
     components:
     - type: Transform
@@ -254586,18 +254578,6 @@ entities:
       parent: 2
 - proto: WindowReinforcedDirectional
   entities:
-  - uid: 20485
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -66.5,-22.5
-      parent: 2
-  - uid: 20492
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -65.5,-22.5
-      parent: 2
   - uid: 42882
     components:
     - type: Transform
@@ -255451,5 +255431,19 @@ entities:
     components:
     - type: Transform
       pos: -78.66753,23.581196
+      parent: 2
+- proto: SpawnMobPenguinFlippers
+  entities:
+  - uid: 43265
+    components:
+    - type: Transform
+      pos: -32.5,54.5
+      parent: 2
+- proto: PlushieLizardJobLawyer
+  entities:
+  - uid: 43266
+    components:
+    - type: Transform
+      pos: -32.5329,59.477055
       parent: 2
 ...

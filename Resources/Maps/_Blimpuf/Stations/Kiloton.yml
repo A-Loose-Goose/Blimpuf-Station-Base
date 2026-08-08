@@ -26191,16 +26191,6 @@ entities:
     - type: Transform
       pos: 17.5,-50.5
       parent: 2
-  - uid: 1484
-    components:
-    - type: Transform
-      pos: -15.5,-42.5
-      parent: 2
-  - uid: 1485
-    components:
-    - type: Transform
-      pos: -22.5,-42.5
-      parent: 2
   - uid: 20569
     components:
     - type: Transform
@@ -28268,12 +28258,6 @@ entities:
       parent: 2
 - proto: BoxFolderBlue
   entities:
-  - uid: 1823
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 9.498834,-22.322107
-      parent: 2
   - uid: 1824
     components:
     - type: Transform
@@ -28360,6 +28344,12 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -49.59138,6.809799
+      parent: 2
+  - uid: 41379
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 9.498834,-22.322107
       parent: 2
 - proto: BoxFolderRed
   entities:
@@ -155537,12 +155527,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -1.0643308,-12.379486
       parent: 2
-  - uid: 22894
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 9.655084,-21.462732
-      parent: 2
   - uid: 22895
     components:
     - type: Transform
@@ -155721,6 +155705,16 @@ entities:
     components:
     - type: Transform
       pos: -70.5,35.5
+      parent: 2
+  - uid: 41373
+    components:
+    - type: Transform
+      pos: -21.5,-42.5
+      parent: 2
+  - uid: 41375
+    components:
+    - type: Transform
+      pos: -15.5,-42.5
       parent: 2
 - proto: MachineFrameDestroyed
   entities:
@@ -160545,20 +160539,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -26.5,-27.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-  - uid: 23693
-    components:
-    - type: Transform
-      pos: 6.5,-20.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-  - uid: 23694
-    components:
-    - type: Transform
-      pos: -4.5,-17.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -166359,13 +166339,6 @@ entities:
     components:
     - type: Transform
       pos: -4.371259,2.7089252
-      parent: 2
-- proto: Protolathe
-  entities:
-  - uid: 24688
-    components:
-    - type: Transform
-      pos: -21.5,-42.5
       parent: 2
 - proto: PrototypeJawsOfLife
   entities:
@@ -256415,5 +256388,34 @@ entities:
     components:
     - type: Transform
       pos: 73.5,4.5
+      parent: 2
+- proto: ScienceTechFab
+  entities:
+  - uid: 41372
+    components:
+    - type: Transform
+      pos: -22.5,-42.5
+      parent: 2
+- proto: CentCommFlag
+  entities:
+  - uid: 41376
+    components:
+    - type: Transform
+      pos: -4.5,-17.5
+      parent: 2
+- proto: SignNTR
+  entities:
+  - uid: 41377
+    components:
+    - type: Transform
+      pos: 6.5,-20.5
+      parent: 2
+- proto: PenNTR
+  entities:
+  - uid: 41378
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 9.655084,-21.462732
       parent: 2
 ...

@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 09:02:01
-  entityCount: 28350
+  entityCount: 28353
 maps:
 - 1
 grids:
@@ -29159,11 +29159,6 @@ entities:
     - type: Transform
       pos: 16.521755,-4.5077543
       parent: 2
-  - uid: 2858
-    components:
-    - type: Transform
-      pos: -9.667083,-29.409449
-      parent: 2
 - proto: BoxFolderBlueEmpty
   entities:
   - uid: 2859
@@ -29223,12 +29218,10 @@ entities:
     - type: Transform
       pos: 12.925114,-0.4339602
       parent: 2
-- proto: BoxFolderNanoTrasenClipboard
-  entities:
-  - uid: 2868
+  - uid: 28460
     components:
     - type: Transform
-      pos: -9.418737,-29.131165
+      pos: -9.667083,-29.409449
       parent: 2
 - proto: BoxFolderPlasticClipboardEmpty
   entities:
@@ -73663,6 +73656,11 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+  - uid: 28462
+    components:
+    - type: Transform
+      pos: -11.5,-27.5
+      parent: 2
 - proto: Chair
   entities:
   - uid: 11555
@@ -77818,14 +77816,6 @@ entities:
     - type: Transform
       pos: 22.5,6.5
       parent: 2
-- proto: ComputerCargoOrdersService
-  entities:
-  - uid: 12201
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 4.5,-4.5
-      parent: 2
 - proto: ComputerComms
   entities:
   - uid: 12202
@@ -79978,26 +79968,6 @@ entities:
     - type: NavMapBeacon
       color: '#A46106FF'
       text: Cargo Washrooms
-  - uid: 12539
-    components:
-    - type: Transform
-      pos: -9.5,-26.5
-      parent: 2
-    - type: WarpPoint
-      location: CCO
-    - type: NavMapBeacon
-      color: '#FFFF00FF'
-      text: CCO
-  - uid: 12540
-    components:
-    - type: Transform
-      pos: -9.5,-29.5
-      parent: 2
-    - type: WarpPoint
-      location: CCR
-    - type: NavMapBeacon
-      color: '#FFFF00FF'
-      text: CCR
   - uid: 12541
     components:
     - type: Transform
@@ -81870,6 +81840,17 @@ entities:
       rot: 3.141592653589793 rad
       pos: 48.5,7.5
       parent: 2
+  - uid: 28479
+    components:
+    - type: Transform
+      pos: 4.5,-2.5
+      parent: 2
+  - uid: 28480
+    components:
+    - type: Transform
+      pos: 4.5,-3.5
+      parent: 2
+      rot: 1.5707963267948966 rad
 - proto: DisposalPipe
   entities:
   - uid: 12835
@@ -83642,11 +83623,6 @@ entities:
     components:
     - type: Transform
       pos: 4.5,-1.5
-      parent: 2
-  - uid: 13143
-    components:
-    - type: Transform
-      pos: 4.5,-2.5
       parent: 2
   - uid: 13144
     components:
@@ -86180,12 +86156,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 4.5,13.5
       parent: 2
-  - uid: 13575
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 4.5,-4.5
-      parent: 2
   - uid: 13576
     components:
     - type: Transform
@@ -86290,6 +86260,12 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -10.5,-56.5
+      parent: 2
+  - uid: 28468
+    components:
+    - type: Transform
+      rot: 4.71238898038469 rad
+      pos: 5.5,-2.5
       parent: 2
 - proto: DisposalTrunk
   entities:
@@ -86456,12 +86432,6 @@ entities:
     components:
     - type: Transform
       pos: -5.5,1.5
-      parent: 2
-  - uid: 13622
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 4.5,-5.5
       parent: 2
   - uid: 13623
     components:
@@ -86709,6 +86679,12 @@ entities:
     - type: Transform
       pos: 47.5,9.5
       parent: 2
+  - uid: 28467
+    components:
+    - type: Transform
+      pos: 6.5,-2.5
+      parent: 2
+      rot: 4.71238898038469 rad
 - proto: DisposalUnit
   entities:
   - uid: 13666
@@ -86850,11 +86826,6 @@ entities:
     components:
     - type: Transform
       pos: -21.5,8.5
-      parent: 2
-  - uid: 13694
-    components:
-    - type: Transform
-      pos: 4.5,-5.5
       parent: 2
   - uid: 13695
     components:
@@ -87016,6 +86987,11 @@ entities:
     - type: Transform
       pos: 47.5,9.5
       parent: 2
+  - uid: 28466
+    components:
+    - type: Transform
+      pos: 6.5,-2.5
+      parent: 2
 - proto: DisposalXJunction
   entities:
   - uid: 13727
@@ -87029,12 +87005,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-3.5
-      parent: 2
-  - uid: 13729
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 4.5,-3.5
       parent: 2
   - uid: 13730
     components:
@@ -139896,13 +139866,6 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-  - uid: 20776
-    components:
-    - type: Transform
-      pos: -11.5,-27.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
   - uid: 20778
     components:
     - type: Transform
@@ -164423,12 +164386,6 @@ entities:
     - type: Transform
       pos: -19.5,-20.5
       parent: 2
-  - uid: 24558
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -7.5,-30.5
-      parent: 2
 - proto: TableFancyGreen
   entities:
   - uid: 24563
@@ -164472,6 +164429,11 @@ entities:
     components:
     - type: Transform
       pos: 54.5,6.5
+      parent: 2
+  - uid: 28461
+    components:
+    - type: Transform
+      pos: -7.5,-30.5
       parent: 2
 - proto: TableFancyPink
   entities:
@@ -184472,4 +184434,54 @@ entities:
     - type: Transform
       pos: -9.363627,-26.423508
       parent: 2
+- proto: BoxFolderCentComClipboardThreePapers
+  entities:
+  - uid: 28459
+    components:
+    - type: Transform
+      pos: -9.418737,-29.131165
+      parent: 2
+- proto: DefaultStationBeaconNTR
+  entities:
+  - uid: 28463
+    components:
+    - type: Transform
+      pos: -9.5,-29.5
+      parent: 2
+- proto: DefaultStationBeaconBSO
+  entities:
+  - uid: 28464
+    components:
+    - type: Transform
+      pos: -9.5,-26.5
+      parent: 2
+- proto: ComputerCargoOrdersService
+  entities:
+  - uid: 28472
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 4.5,-4.5
+      parent: 2
+- proto: ServiceTechFab
+  entities:
+  - uid: 28473
+    components:
+    - type: Transform
+      pos: 4.5,-5.5
+      parent: 2
+- proto: WindoorSecureServiceLocked
+  entities:
+  - uid: 28474
+    components:
+    - type: Transform
+      pos: 4.5,-5.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+  - uid: 28475
+    components:
+    - type: Transform
+      pos: 4.5,-4.5
+      parent: 2
+      rot: 1.5707963267948966 rad
 ...

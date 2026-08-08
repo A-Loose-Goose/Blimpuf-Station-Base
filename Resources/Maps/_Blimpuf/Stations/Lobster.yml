@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 21:25:33
-  entityCount: 25129
+  entityCount: 25138
 maps:
 - 1
 grids:
@@ -15476,6 +15476,12 @@ entities:
     - type: Transform
       pos: -9.5,4.5
       parent: 2
+  - uid: 25219
+    components:
+    - type: Transform
+      pos: -10.4,37.5
+      parent: 2
+      rot: 4.71238898038469 rad
 - proto: BoxFolderRed
   entities:
   - uid: 1032
@@ -51772,6 +51778,36 @@ entities:
     - type: Transform
       pos: -22.5,3.5
       parent: 2
+  - uid: 25208
+    components:
+    - type: Transform
+      pos: -10.5,36.5
+      parent: 2
+  - uid: 25209
+    components:
+    - type: Transform
+      pos: -9.5,36.5
+      parent: 2
+  - uid: 25210
+    components:
+    - type: Transform
+      pos: -9.5,37.5
+      parent: 2
+  - uid: 25211
+    components:
+    - type: Transform
+      pos: -10.5,37.5
+      parent: 2
+  - uid: 25212
+    components:
+    - type: Transform
+      pos: -11.5,37.5
+      parent: 2
+  - uid: 25213
+    components:
+    - type: Transform
+      pos: -11.5,36.5
+      parent: 2
 - proto: CarpetOrange
   entities:
   - uid: 8252
@@ -65745,12 +65781,6 @@ entities:
       parent: 2
 - proto: ChairOfficeLight
   entities:
-  - uid: 10862
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -11.5,37.5
-      parent: 2
   - uid: 10864
     components:
     - type: Transform
@@ -68771,6 +68801,12 @@ entities:
       rot: 3.141592653589793 rad
       pos: -9.5,3.5
       parent: 2
+  - uid: 25214
+    components:
+    - type: Transform
+      pos: -11.5,37.5
+      parent: 2
+      rot: 1.5707963267948966 rad
 - proto: ComfyChairRed
   entities:
   - uid: 11323
@@ -78307,6 +78343,11 @@ entities:
     - type: Transform
       pos: -15.35674,45.630074
       parent: 2
+  - uid: 25220
+    components:
+    - type: Transform
+      pos: -10.88,38.5
+      parent: 2
 - proto: DrinkMugMoebius
   entities:
   - uid: 12909
@@ -82755,13 +82796,6 @@ entities:
     components:
     - type: Transform
       pos: 68.27163,-9.7027
-      parent: 2
-- proto: FoamCutlass
-  entities:
-  - uid: 13518
-    components:
-    - type: Transform
-      pos: -10.451334,37.674076
       parent: 2
 - proto: FolderSpawner
   entities:
@@ -121801,11 +121835,6 @@ entities:
     - type: Transform
       pos: -60.5,13.5
       parent: 2
-  - uid: 19391
-    components:
-    - type: Transform
-      pos: -7.5,36.5
-      parent: 2
   - uid: 25165
     components:
     - type: Transform
@@ -134903,11 +134932,6 @@ entities:
     components:
     - type: Transform
       pos: -16.5,55.5
-      parent: 2
-  - uid: 21360
-    components:
-    - type: Transform
-      pos: -19.5,54.5
       parent: 2
   - uid: 21361
     components:
@@ -154312,6 +154336,12 @@ entities:
       rot: 3.141592653589793 rad
       pos: 37.5,37.5
       parent: 2
+  - uid: 25215
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -9.5,38.5
+      parent: 2
 - proto: Wirecutter
   entities:
   - uid: 11094
@@ -154497,4 +154527,27 @@ entities:
     - type: Transform
       pos: -27.48703,28.622438
       parent: 2
+- proto: WindoorSecureCommandLocked
+  entities:
+  - uid: 25216
+    components:
+    - type: Transform
+      pos: -8.5,38.5
+      parent: 2
+      rot: 3.141592653589793 rad
+- proto: CentCommFlag
+  entities:
+  - uid: 25217
+    components:
+    - type: Transform
+      pos: -7.5,36.5
+      parent: 2
+- proto: PenNTR
+  entities:
+  - uid: 25218
+    components:
+    - type: Transform
+      pos: -10.45,37.9
+      parent: 2
+      rot: 4.71238898038469 rad
 ...

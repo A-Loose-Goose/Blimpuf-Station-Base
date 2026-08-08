@@ -1,5 +1,5 @@
 station-beacon-internal-affairs = IAA
-station-beacon-nanotrasen-representative = NTR
+station-beacon-nanotrasen-representative = CCR
 station-beacon-blueshield-officer = CCE
 station-beacon-nanotrasen-career-trainer = NCT Office
 station-beacon-mail-room = Mail Room

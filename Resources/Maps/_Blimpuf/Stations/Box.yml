@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 07/13/2026 04:55:48
-  entityCount: 29609
+  entityCount: 29617
 maps:
 - 1
 grids:
@@ -22262,18 +22262,6 @@ entities:
       parent: 2
 - proto: Autolathe
   entities:
-  - uid: 1473
-    components:
-    - type: Transform
-      pos: 69.5,-19.5
-      parent: 2
-    - type: MaterialStorage
-      materialWhiteList:
-      - Steel
-      - Plastic
-      - Wood
-      - Glass
-      - Cloth
   - uid: 1474
     components:
     - type: Transform
@@ -22286,18 +22274,11 @@ entities:
       - Wood
       - Glass
       - Cloth
-  - uid: 1475
+  - uid: 29687
     components:
     - type: Transform
-      pos: 2.5,-53.5
+      pos: -46.5,4.5
       parent: 2
-    - type: TechnologyDatabase
-      supportedDisciplines:
-      - Industrial
-      - Arsenal
-      - Experimental
-      - CivilianServices
-      - Biochemical
 - proto: BackgammonBoard
   entities:
   - uid: 1476
@@ -22323,13 +22304,6 @@ entities:
     components:
     - type: Transform
       pos: -9.43947,33.548515
-      parent: 2
-- proto: BannerCargo
-  entities:
-  - uid: 1480
-    components:
-    - type: Transform
-      pos: -32.5,-22.5
       parent: 2
 - proto: BannerNanotrasen
   entities:
@@ -71065,12 +71039,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -8.537256,26.597515
       parent: 2
-  - uid: 11088
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 30.622805,-10.374188
-      parent: 2
   - uid: 11089
     components:
     - type: Transform
@@ -75788,14 +75756,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 5.5,47.5
       parent: 2
-- proto: ComputerCargoOrdersServiceDesktop
-  entities:
-  - uid: 11666
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 31.5,-10.5
-      parent: 2
 - proto: ComputerComms
   entities:
   - uid: 11667
@@ -77968,13 +77928,6 @@ entities:
     components:
     - type: Transform
       pos: 35.5,-5.5
-      parent: 2
-- proto: DefaultStationBeaconLawOffice
-  entities:
-  - uid: 11988
-    components:
-    - type: Transform
-      pos: 4.5,26.5
       parent: 2
 - proto: DefaultStationBeaconLibrary
   entities:
@@ -87560,11 +87513,6 @@ entities:
     components:
     - type: Transform
       pos: 4.5,5.5
-      parent: 2
-  - uid: 13641
-    components:
-    - type: Transform
-      pos: 20.5,4.5
       parent: 2
 - proto: DresserCaptainFilled
   entities:
@@ -135567,6 +135515,11 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -42.5,-12.5
       parent: 2
+  - uid: 29681
+    components:
+    - type: Transform
+      pos: 71.5,-19.5
+      parent: 2
 - proto: MachineFrameDestroyed
   entities:
   - uid: 20429
@@ -144404,20 +144357,6 @@ entities:
       - Experimental
       - CivilianServices
       - Biochemical
-- proto: Protolathe
-  entities:
-  - uid: 21743
-    components:
-    - type: Transform
-      pos: 71.5,-19.5
-      parent: 2
-    - type: MaterialStorage
-      materialWhiteList:
-      - Steel
-      - Glass
-      - Plastic
-      - Wood
-      - Gold
 - proto: PsychBed
   entities:
   - uid: 21744
@@ -145757,11 +145696,6 @@ entities:
       parent: 2
 - proto: RandomFoodSingle
   entities:
-  - uid: 21998
-    components:
-    - type: Transform
-      pos: 37.5,-6.5
-      parent: 2
   - uid: 21999
     components:
     - type: Transform
@@ -145781,6 +145715,11 @@ entities:
     components:
     - type: Transform
       pos: 37.5,-10.5
+      parent: 2
+  - uid: 29688
+    components:
+    - type: Transform
+      pos: 38.5,-6.5
       parent: 2
 - proto: RandomInstruments
   entities:
@@ -165057,11 +164996,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -57.5,-7.5
       parent: 2
-  - uid: 25052
-    components:
-    - type: Transform
-      pos: 31.5,-10.5
-      parent: 2
   - uid: 25053
     components:
     - type: Transform
@@ -167014,13 +166948,6 @@ entities:
     components:
     - type: Transform
       pos: -38.5,-4.5
-      parent: 2
-- proto: VendingMachineClown
-  entities:
-  - uid: 25354
-    components:
-    - type: Transform
-      pos: 22.5,6.5
       parent: 2
 - proto: VendingMachineCoffee
   entities:
@@ -189015,6 +188942,12 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -9.5,-27.5
       parent: 2
+  - uid: 29698
+    components:
+    - type: Transform
+      pos: 30.5,-10.5
+      parent: 2
+      rot: 4.71238898038469 rad
 - proto: Wirecutter
   entities:
   - uid: 29565
@@ -189034,9 +188967,6 @@ entities:
     - type: Transform
       pos: 73.5,-3.5
       parent: 2
-    - type: Door
-      secondsUntilStateChange: -25485.814
-      state: Opening
   - uid: 29568
     components:
     - type: Transform
@@ -189120,4 +189050,110 @@ entities:
     - type: Transform
       pos: -51.5,7.5
       parent: 2
+- proto: CommandTechFab
+  entities:
+  - uid: 29675
+    components:
+    - type: Transform
+      pos: -1.5,-6.5
+      parent: 2
+- proto: EngineeringTechFab
+  entities:
+  - uid: 29676
+    components:
+    - type: Transform
+      pos: 2.5,-53.5
+      parent: 2
+- proto: BannerCargo
+  entities:
+  - uid: 29678
+    components:
+    - type: Transform
+      pos: -28.5,-22.5
+      parent: 2
+- proto: CargoTechFab
+  entities:
+  - uid: 29679
+    components:
+    - type: Transform
+      pos: -32.5,-22.5
+      parent: 2
+- proto: ScienceTechFab
+  entities:
+  - uid: 29680
+    components:
+    - type: Transform
+      pos: 69.5,-19.5
+      parent: 2
+- proto: ServiceTechFab
+  entities:
+  - uid: 29682
+    components:
+    - type: Transform
+      pos: 30.5,-10.5
+      parent: 2
+- proto: IceCreamMaker
+  entities:
+  - uid: 29689
+    components:
+    - type: Transform
+      pos: 37.5,-6.5
+      parent: 2
+- proto: VendingMachineClown
+  entities:
+  - uid: 29691
+    components:
+    - type: Transform
+      pos: 20.5,4.5
+      parent: 2
+- proto: VendingMachineMime
+  entities:
+  - uid: 29692
+    components:
+    - type: Transform
+      pos: 22.5,6.5
+      parent: 2
+- proto: SpawnMobMonkeyStirStir
+  entities:
+  - uid: 29693
+    components:
+    - type: Transform
+      pos: -28.5,36.5
+      parent: 2
+- proto: SpawnMobPenguinFlippers
+  entities:
+  - uid: 29694
+    components:
+    - type: Transform
+      pos: -7.5,23.5
+      parent: 2
+- proto: DefaultStationBeaconIAA
+  entities:
+  - uid: 29695
+    components:
+    - type: Transform
+      pos: 4.5,25.5
+      parent: 2
+- proto: WindoorSecureServiceLocked
+  entities:
+  - uid: 29696
+    components:
+    - type: Transform
+      pos: 30.5,-10.5
+      parent: 2
+      rot: 3.141592653589793 rad
+  - uid: 29697
+    components:
+    - type: Transform
+      pos: 31.5,-10.5
+      parent: 2
+      rot: 3.141592653589793 rad
+- proto: ComputerCargoOrdersService
+  entities:
+  - uid: 29699
+    components:
+    - type: Transform
+      pos: 31.5,-10.5
+      parent: 2
+      rot: 3.141592653589793 rad
 ...
