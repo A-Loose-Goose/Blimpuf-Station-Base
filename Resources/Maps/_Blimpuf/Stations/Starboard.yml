@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 09:30:23
-  entityCount: 42418
+  entityCount: 42417
 maps:
 - 1
 grids:
@@ -122315,13 +122315,6 @@ entities:
     - type: NavMapBeacon
       color: '#FFFF00FF'
       text: Bridge Recreation Area
-  - uid: 17538
-    components:
-    - type: Transform
-      pos: 72.5,-46.5
-      parent: 2
-    - type: NavMapBeacon
-      text: Singularity Engine
   - uid: 17539
     components:
     - type: Transform
@@ -122471,15 +122464,15 @@ entities:
       parent: 2
 - proto: DefaultStationBeaconCargoBay
   entities:
-  - uid: 17560
-    components:
-    - type: Transform
-      pos: -22.5,61.5
-      parent: 2
   - uid: 17561
     components:
     - type: Transform
       pos: -38.5,37.5
+      parent: 2
+  - uid: 42588
+    components:
+    - type: Transform
+      pos: -23.5,60.5
       parent: 2
 - proto: DefaultStationBeaconCargoReception
   entities:
@@ -122488,18 +122481,18 @@ entities:
     - type: Transform
       pos: -30.5,37.5
       parent: 2
-  - uid: 17563
+  - uid: 42581
     components:
     - type: Transform
-      pos: -30.5,41.5
-      parent: 2
-  - uid: 42459
-    components:
-    - type: Transform
-      pos: -24.5,38.5
+      pos: -24.5,39.5
       parent: 2
     - type: NavMapBeacon
       text: Mail Room
+  - uid: 42586
+    components:
+    - type: Transform
+      pos: -27.5,52.5
+      parent: 2
 - proto: DefaultStationBeaconCERoom
   entities:
   - uid: 17564
@@ -122535,26 +122528,12 @@ entities:
     - type: Transform
       pos: -37.5,-45.5
       parent: 2
-- proto: DefaultStationBeaconCryosleep
-  entities:
-  - uid: 17569
-    components:
-    - type: Transform
-      pos: -29.5,19.5
-      parent: 2
 - proto: DefaultStationBeaconDetectiveRoom
   entities:
   - uid: 17570
     components:
     - type: Transform
       pos: 26.5,3.5
-      parent: 2
-- proto: DefaultStationBeaconDisposals
-  entities:
-  - uid: 17571
-    components:
-    - type: Transform
-      pos: -43.5,36.5
       parent: 2
 - proto: DefaultStationBeaconDockingArm
   entities:
@@ -287601,5 +287580,19 @@ entities:
     components:
     - type: Transform
       pos: -7.695012,71.730644
+      parent: 2
+- proto: DefaultStationBeaconDisposals
+  entities:
+  - uid: 42583
+    components:
+    - type: Transform
+      pos: -44.5,34.5
+      parent: 2
+- proto: DefaultStationBeaconCryosleep
+  entities:
+  - uid: 42589
+    components:
+    - type: Transform
+      pos: -29.5,18.5
       parent: 2
 ...
