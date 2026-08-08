@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 19:28:02
-  entityCount: 25152
+  entityCount: 25157
 maps:
 - 1
 grids:
@@ -18868,18 +18868,6 @@ entities:
     - type: Transform
       pos: 5.5,2.5
       parent: 2
-  - uid: 1045
-    components:
-    - type: Transform
-      pos: 37.5,15.5
-      parent: 2
-    - type: TechnologyDatabase
-      supportedDisciplines:
-      - Industrial
-      - Arsenal
-      - Experimental
-      - CivilianServices
-      - Biochemical
   - uid: 1046
     components:
     - type: Transform
@@ -51540,6 +51528,36 @@ entities:
     - type: Transform
       pos: 48.5,-22.5
       parent: 2
+  - uid: 25248
+    components:
+    - type: Transform
+      pos: 45.5,5.5
+      parent: 2
+  - uid: 25249
+    components:
+    - type: Transform
+      pos: 45.5,4.5
+      parent: 2
+  - uid: 25250
+    components:
+    - type: Transform
+      pos: 46.5,4.5
+      parent: 2
+  - uid: 25251
+    components:
+    - type: Transform
+      pos: 46.5,5.5
+      parent: 2
+  - uid: 25252
+    components:
+    - type: Transform
+      pos: 46.5,6.5
+      parent: 2
+  - uid: 25253
+    components:
+    - type: Transform
+      pos: 45.5,6.5
+      parent: 2
 - proto: CarpetSBlue
   entities:
   - uid: 7498
@@ -57124,15 +57142,6 @@ entities:
     - type: Transform
       pos: 45.5,43.5
       parent: 2
-- proto: CentCommFlag
-  entities:
-  - uid: 25125
-    components:
-    - type: Transform
-      pos: 50.5,6.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
 - proto: Chair
   entities:
   - uid: 8544
@@ -60526,12 +60535,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -1.5,-2.5
       parent: 2
-  - uid: 9093
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 45.5,5.5
-      parent: 2
   - uid: 9094
     components:
     - type: Transform
@@ -60623,6 +60626,12 @@ entities:
       rot: 3.141592653589793 rad
       pos: 50.5,-23.5
       parent: 2
+  - uid: 25254
+    components:
+    - type: Transform
+      pos: 45.5,5.5
+      parent: 2
+      rot: 1.5707963267948966 rad
 - proto: CommandTechFab
   entities:
   - uid: 9381
@@ -63073,158 +63082,6 @@ entities:
     - type: Transform
       pos: 24.001968,55.799213
       parent: 2
-- proto: DefaultStationBeacon
-  entities:
-  - uid: 9470
-    components:
-    - type: Transform
-      pos: 7.5,51.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#9FED5893'
-      text: Clown / Mime
-    - type: WarpPoint
-      location: Clown / Mime
-  - uid: 9472
-    components:
-    - type: Transform
-      pos: -10.5,9.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#EFB34193'
-      text: Storage
-    - type: WarpPoint
-      location: Storage
-  - uid: 9473
-    components:
-    - type: Transform
-      pos: -11.5,5.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#EFB34193'
-      text: Monitoring
-    - type: WarpPoint
-      location: Monitoring
-  - uid: 9474
-    components:
-    - type: Transform
-      pos: -5.5,13.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#EFB34193'
-      text: Lockers
-    - type: WarpPoint
-      location: Lockers
-  - uid: 9475
-    components:
-    - type: Transform
-      pos: 3.5,14.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#EFB34193'
-      text: Break
-    - type: WarpPoint
-      location: Break
-  - uid: 9476
-    components:
-    - type: Transform
-      pos: -0.5,5.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#EFB34193'
-      text: Materials
-    - type: WarpPoint
-      location: Materials
-  - uid: 9477
-    components:
-    - type: Transform
-      pos: 1.5,23.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#EFB34193'
-      text: Atmos Lockers
-    - type: WarpPoint
-      location: Atmos Lockers
-  - uid: 9478
-    components:
-    - type: Transform
-      pos: 17.5,19.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#D381C993'
-      text: Lockers
-    - type: WarpPoint
-      location: Lockers
-  - uid: 9479
-    components:
-    - type: Transform
-      pos: 22.5,7.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#D381C993'
-      text: Break
-    - type: WarpPoint
-      location: Break
-  - uid: 9483
-    components:
-    - type: Transform
-      pos: 63.5,45.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#52B4E993'
-      text: Lockers
-    - type: WarpPoint
-      location: Lockers
-  - uid: 9484
-    components:
-    - type: Transform
-      pos: 53.5,23.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#52B4E993'
-      text: Paramedic
-    - type: WarpPoint
-      location: Paramedic
-  - uid: 9485
-    components:
-    - type: Transform
-      pos: 59.5,22.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#52B4DF93'
-      text: Break
-    - type: WarpPoint
-      location: Break
-  - uid: 9486
-    components:
-    - type: Transform
-      pos: 53.5,67.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#A4610693'
-      text: Mail
-    - type: WarpPoint
-      location: Mail
-  - uid: 9487
-    components:
-    - type: Transform
-      pos: 61.5,68.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#A4610693'
-      text: Locker
-    - type: WarpPoint
-      location: Locker
-  - uid: 9488
-    components:
-    - type: Transform
-      pos: 61.5,75.5
-      parent: 2
-    - type: NavMapBeacon
-      color: '#A4610693'
-      text: Break
-    - type: WarpPoint
-      location: Break
 - proto: DefaultStationBeaconAI
   entities:
   - uid: 9489
@@ -63446,6 +63303,51 @@ entities:
     - type: Transform
       pos: 7.5,11.5
       parent: 2
+  - uid: 25255
+    components:
+    - type: Transform
+      pos: -11.5,5.5
+      parent: 2
+    - type: NavMapBeacon
+      text: Monitoring
+    - type: WarpPoint
+      location: Monitoring
+  - uid: 25256
+    components:
+    - type: Transform
+      pos: -0.5,5.5
+      parent: 2
+    - type: NavMapBeacon
+      text: Materials
+    - type: WarpPoint
+      location: Materials
+  - uid: 25258
+    components:
+    - type: Transform
+      pos: -10.5,9.5
+      parent: 2
+    - type: NavMapBeacon
+      text: Storage
+    - type: WarpPoint
+      location: Storage
+  - uid: 25260
+    components:
+    - type: Transform
+      pos: 1.5,23.5
+      parent: 2
+    - type: NavMapBeacon
+      text: Atmos Lockers
+    - type: WarpPoint
+      location: Atmos Lockers
+  - uid: 25259
+    components:
+    - type: Transform
+      pos: -5.5,13.5
+      parent: 2
+    - type: NavMapBeacon
+      text: Engi Lockers
+    - type: WarpPoint
+      location: Engi Lockers
 - proto: DefaultStationBeaconEscapePod
   entities:
   - uid: 9519
@@ -63530,6 +63432,15 @@ entities:
     - type: Transform
       pos: 57.5,28.5
       parent: 2
+  - uid: 25271
+    components:
+    - type: Transform
+      pos: 63.5,45.5
+      parent: 2
+    - type: NavMapBeacon
+      text: Med Lockers
+    - type: WarpPoint
+      location: Med Lockers
 - proto: DefaultStationBeaconMorgue
   entities:
   - uid: 9531
@@ -63607,6 +63518,15 @@ entities:
     - type: Transform
       pos: 32.5,20.5
       parent: 2
+  - uid: 25263
+    components:
+    - type: Transform
+      pos: 17.5,19.5
+      parent: 2
+    - type: NavMapBeacon
+      text: Sci Lockers
+    - type: WarpPoints
+      location: Sci Lockers
 - proto: DefaultStationBeaconSecurity
   entities:
   - uid: 9541
@@ -63634,7 +63554,7 @@ entities:
       pos: 35.5,45.5
       parent: 2
     - type: NavMapBeacon
-      text: Break
+      text: Sec Break
     - type: WarpPoint
       location: Sec Break
   - uid: 25150
@@ -63643,7 +63563,7 @@ entities:
       pos: 35.5,38.5
       parent: 2
     - type: NavMapBeacon
-      text: Lockers
+      text: Sec Lockers
     - type: WarpPoint
       location: Sec Lockers
 - proto: DefaultStationBeaconServerRoom
@@ -121221,14 +121141,6 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-  - uid: 25238
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 45.5,8.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
   - uid: 25239
     components:
     - type: Transform
@@ -121249,6 +121161,14 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 43.5,-12.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+  - uid: 25246
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 49.5,8.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -123278,6 +123198,11 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 29.5,9.5
+      parent: 2
+  - uid: 25280
+    components:
+    - type: Transform
+      pos: 37.5,15.5
       parent: 2
 - proto: MachineFrameDestroyed
   entities:
@@ -127005,24 +126930,6 @@ entities:
     components:
     - type: Transform
       pos: 4.5,50.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-- proto: PosterLegitNanotrasenLogo
-  entities:
-  - uid: 18219
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 49.5,8.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-  - uid: 18220
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 50.5,7.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -168801,4 +168708,98 @@ entities:
       pos: 49.5,2.5
       parent: 2
       rot: 4.71238898038469 rad
+- proto: CentCommFlag
+  entities:
+  - uid: 25245
+    components:
+    - type: Transform
+      pos: 50.5,7.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+- proto: SignNTR
+  entities:
+  - uid: 25247
+    components:
+    - type: Transform
+      pos: 45.5,8.5
+      parent: 2
+- proto: DefaultStationBeaconBreakroomEngi
+  entities:
+  - uid: 25262
+    components:
+    - type: Transform
+      pos: 3.5,16.5
+      parent: 2
+    - type: NavMapBeacon
+      text: Engi Break
+    - type: WarpPoint
+      location: Engi Break
+- proto: DefaultStationBeaconBreakroomScience
+  entities:
+  - uid: 25269
+    components:
+    - type: Transform
+      pos: 21.5,7.5
+      parent: 2
+    - type: NavMapBeacon
+      text: Sci Break
+    - type: WarpPoint
+      location: Sci Break
+- proto: DefaultStationBeaconService
+  entities:
+  - uid: 25272
+    components:
+    - type: Transform
+      pos: 7.5,51.5
+      parent: 2
+    - type: NavMapBeacon
+      text: Clown / Mime
+    - type: WarpPoint
+      location: Clown / Mime
+- proto: DefaultStationBeaconParamedic
+  entities:
+  - uid: 25273
+    components:
+    - type: Transform
+      pos: 53.5,24.5
+      parent: 2
+- proto: DefaultStationBeaconBreakroomMedical
+  entities:
+  - uid: 25274
+    components:
+    - type: Transform
+      pos: 59.5,21.5
+      parent: 2
+    - type: NavMapBeacon
+      text: Med Break
+    - type: WarpPoint
+      location: Med Break
+- proto: DefaultStationBeaconMailRoom
+  entities:
+  - uid: 25275
+    components:
+    - type: Transform
+      pos: 52.5,67.5
+      parent: 2
+- proto: DefaultStationBeaconSupply
+  entities:
+  - uid: 25277
+    components:
+    - type: Transform
+      pos: 61.5,69.5
+      parent: 2
+    - type: NavMapBeacon
+      text: Cargo Lockers
+    - type: WarpPoint
+      location: Cargo Lockers
+  - uid: 25279
+    components:
+    - type: Transform
+      pos: 61.5,75.5
+      parent: 2
+    - type: NavMapBeacon
+      text: Cargo Break
+    - type: WarpPoint
+      location: Cargo Break
 ...
