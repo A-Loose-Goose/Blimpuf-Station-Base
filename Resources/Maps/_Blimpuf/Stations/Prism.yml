@@ -63525,7 +63525,7 @@ entities:
       parent: 2
     - type: NavMapBeacon
       text: Sci Lockers
-    - type: WarpPoints
+    - type: WarpPoint
       location: Sci Lockers
 - proto: DefaultStationBeaconSecurity
   entities:
