@@ -4504,5 +4504,19 @@ Entries:
   id: 8901
   time: '2026-08-07T23:52:35.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/89
+- author: Lady Liliana
+  changes:
+  - message: Added the new Techfabs, Station Pets, etc. to maps that were missing
+      them.
+    type: Add
+  - message: Modified some CCR and Courtrooms for consistency between maps.
+    type: Tweak
+  - message: Fixed Beacons Clipping on some maps.
+    type: Fix
+  - message: Fixed CCR Sign&Beacon displaying the wrong Text.
+    type: Fix
+  id: 9001
+  time: '2026-08-08T19:38:46.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/90
 Order: -1
 
