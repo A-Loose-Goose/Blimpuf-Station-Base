@@ -15,7 +15,6 @@ public sealed class StartEndGameRulesTest : GameTest
     {
         Dirty = true,
         DummyTicker = false,
-        Connected = true,
         Map = PoolManager.TestStation
     };
 
