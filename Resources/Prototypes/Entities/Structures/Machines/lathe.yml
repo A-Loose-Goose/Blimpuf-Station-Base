@@ -146,7 +146,6 @@
     - PowerCellsStatic
     - ElectronicsStatic
     # Starlight Start
-    - CassetteTape
     - TapeRecorder
     dynamicPacks:
     - StarlightAutolatheLootable

@@ -210,7 +210,6 @@
     - ServiceStatic
     - StarlightContainersStatic
     - PowerCellsStatic
-    - CassetteTape
     - TapeRecorder
     dynamicPacks:
     - StarlightAutolatheLootable
@@ -332,7 +331,6 @@
     staticPacks:
     - PaperworkStatic
     - TowelsStatic
-    - CassetteTape
     - TapeRecorder
     - TopicalsStatic
     - AACTabletStatic
@@ -394,7 +392,6 @@
     - StarlightContainersStatic
     - PowerCellsStatic
     - ElectronicsStatic
-    - CassetteTape
     - TapeRecorder
     - ScienceBlueSpaceStatic
     - SecurityEquipmentStatic
@@ -526,7 +523,6 @@
     - StarlightContainersStatic
     - PowerCellsStatic
     - ElectronicsStatic
-    - CassetteTape
     - TapeRecorder
     - ScienceBlueSpaceStatic
     - SecurityEquipmentStatic
