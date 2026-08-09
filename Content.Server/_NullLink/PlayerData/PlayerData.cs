@@ -4,12 +4,14 @@ using System.Linq;
 using Robust.Shared.Player;
 using Starlight.NullLink;
 using Starlight.NullLink.Event;
+using Color = Robust.Shared.Maths.Color;
 
 namespace Content.Server._NullLink.PlayerData;
 
 public sealed class PlayerData
 {
     public string? Title { get; set; }
+    public Color? AdminOocColor { get; set; }
     public required ICommonSession Session { get; init; }
     public ImmutableHashSet<ulong> Roles { get; set; } = [];
     public bool RolesLoaded { get; set; }
