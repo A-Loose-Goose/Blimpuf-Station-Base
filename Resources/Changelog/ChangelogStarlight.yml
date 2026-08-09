@@ -4518,5 +4518,17 @@ Entries:
   id: 9001
   time: '2026-08-08T19:38:46.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/90
+- author: ItsMaitake & Lady Liliana
+  changes:
+  - message: Techfabs have been added to CentComm.
+    type: Add
+  - message: CentComm Chef, Bartender, Janitor, and Service worker have been added
+      to CentComm End of Round spawns.
+    type: Add
+  - message: Pursuit shuttle is now blue, and has standard thrusters.
+    type: Tweak
+  id: 9401
+  time: '2026-08-09T17:26:55.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/94
 Order: -1
 
