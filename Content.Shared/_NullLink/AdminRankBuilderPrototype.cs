@@ -1,3 +1,4 @@
+using Robust.Shared.Maths;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared._NullLink;
@@ -25,4 +26,7 @@ public sealed partial class AdminRankMapping
 
     [DataField(required: true)]
     public string[] Flags = [];
+
+    [DataField]
+    public Color? OocColor;
 }
