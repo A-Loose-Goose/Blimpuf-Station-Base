@@ -775,12 +775,14 @@ entities:
             386: 45,59
             387: 46,59
             388: 47,59
+            407: 42,57
         - node:
             color: '#9FED5896'
             id: MarkupSquare
           decals:
             393: 46,61
             394: 47,61
+            410: 42,53
         - node:
             color: '#A4610696'
             id: MarkupSquare
@@ -791,6 +793,7 @@ entities:
             378: 49,55
             379: 50,55
             402: 45,55
+            404: 41,55
         - node:
             color: '#D381C996'
             id: MarkupSquare
@@ -798,6 +801,7 @@ entities:
             389: 48,59
             390: 49,59
             391: 50,59
+            409: 40,57
         - node:
             color: '#37789B96'
             id: MarkupSquare
@@ -805,6 +809,7 @@ entities:
             383: 48,57
             384: 49,57
             385: 50,57
+            408: 41,57
         - node:
             color: '#EFB34196'
             id: MarkupSquare
@@ -813,6 +818,7 @@ entities:
             372: 48,53
             373: 49,53
             374: 50,53
+            403: 42,55
         - node:
             color: '#43999E93'
             id: MiniTileDiagonalCheckerAOverlay
@@ -991,6 +997,11 @@ entities:
             id: uboa
           decals:
             368: 39.592293,65.77571
+        - node:
+            color: '#00B95C96'
+            id: MarkupSquare
+          decals:
+            411: 41,53
     - type: OccluderTree
     - type: Shuttle
       dampingModifier: 0.25
@@ -20717,47 +20728,12 @@ entities:
     - type: Transform
       pos: 35.5,17.5
       parent: 1
-- proto: ComputerCommsScience
-  entities:
-  - uid: 3181
-    components:
-    - type: Transform
-      pos: 42.5,57.5
-      parent: 1
-- proto: ComputerCommsService
-  entities:
-  - uid: 3186
-    components:
-    - type: Transform
-      pos: 42.5,59.5
-      parent: 1
-- proto: ComputerCommsLaw
-  entities:
-  - uid: 3187
-    components:
-    - type: Transform
-      pos: 41.5,59.5
-      parent: 1
-- proto: CentcommComputerComms
-  entities:
-  - uid: 3188
-    components:
-    - type: Transform
-      pos: 40.5,59.5
-      parent: 1
 - proto: ComputerCommsEngineering
   entities:
   - uid: 3189
     components:
     - type: Transform
       pos: 42.5,55.5
-      parent: 1
-- proto: ComputerCommsMedical
-  entities:
-  - uid: 3190
-    components:
-    - type: Transform
-      pos: 41.5,57.5
       parent: 1
 - proto: ComputerCommsCargo
   entities:
@@ -20766,13 +20742,6 @@ entities:
     - type: Transform
       pos: 41.5,55.5
       parent: 1
-- proto: ComputerCommsSecurity
-  entities:
-  - uid: 3192
-    components:
-    - type: Transform
-      pos: 40.5,57.5
-      parent: 1
 - proto: VendingMachineSalvage
   entities:
   - uid: 3195
@@ -20780,25 +20749,67 @@ entities:
     - type: Transform
       pos: 45.5,55.5
       parent: 1
-- proto: SolgovComputerComms
-  entities:
-  - uid: 3196
-    components:
-    - type: Transform
-      pos: 42.5,53.5
-      parent: 1
-- proto: WizardComputerComms
-  entities:
-  - uid: 3198
-    components:
-    - type: Transform
-      pos: 41.5,53.5
-      parent: 1
 - proto: SecurityTechFab
   entities:
   - uid: 3199
     components:
     - type: Transform
       pos: 70.5,36.5
+      parent: 1
+- proto: ComputerCommsService
+  entities:
+  - uid: 3204
+    components:
+    - type: Transform
+      pos: 42.5,53.5
+      parent: 1
+- proto: ComputerCommsLaw
+  entities:
+  - uid: 3205
+    components:
+    - type: Transform
+      pos: 41.5,53.5
+      parent: 1
+- proto: ComputerCommsMedical
+  entities:
+  - uid: 3207
+    components:
+    - type: Transform
+      pos: 42.5,57.5
+      parent: 1
+- proto: ComputerCommsSecurity
+  entities:
+  - uid: 3208
+    components:
+    - type: Transform
+      pos: 41.5,57.5
+      parent: 1
+- proto: ComputerCommsScience
+  entities:
+  - uid: 3209
+    components:
+    - type: Transform
+      pos: 40.5,57.5
+      parent: 1
+- proto: WizardComputerComms
+  entities:
+  - uid: 3211
+    components:
+    - type: Transform
+      pos: 40.5,59.5
+      parent: 1
+- proto: SolgovComputerComms
+  entities:
+  - uid: 3212
+    components:
+    - type: Transform
+      pos: 41.5,59.5
+      parent: 1
+- proto: CentcommComputerComms
+  entities:
+  - uid: 3213
+    components:
+    - type: Transform
+      pos: 42.5,59.5
       parent: 1
 ...
