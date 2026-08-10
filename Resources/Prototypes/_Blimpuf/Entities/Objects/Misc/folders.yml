@@ -43,10 +43,12 @@
           tags:
           - Write
   - type: CargoOrderConsole
-    removeLimitAccess: [ "Quartermaster" ]
+    removeLimitAccess: [ "SyndicateAgent" ]
     announcementChannel: Syndicate
     baseAnnouncementChannel: Syndicate
     account: Syndicate
+    mode: InstantApprove
+    skipATS: True
   - type: ActivatableUI
     verbText: qm-clipboard-computer-verb-text
     key: enum.CargoConsoleUiKey.Orders

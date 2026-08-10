@@ -233,20 +233,39 @@ namespace Content.Server.Cargo.Systems
             }
 
             var ev = new FulfillCargoOrderEvent((station.Value, stationData), order, (uid, component));
-            RaiseLocalEvent(ref ev);
-            ev.FulfillmentEntity ??= station.Value;
-
-            if (!ev.Handled)
+            // Blimpuf Start
+            if (component.DirectDelivery)
             {
-                ev.FulfillmentEntity = TryFulfillOrder((station.Value, stationData), order.Account, order, orderDatabase);
+                var spawnCoordinates = Transform(player).Coordinates;
 
-                if (ev.FulfillmentEntity == null)
+                if (!FulfillOrder(order, order.Account, spawnCoordinates, orderDatabase.PrinterOutput))
                 {
                     ConsolePopup(args.Actor, Loc.GetString("cargo-console-unfulfilled"));
                     PlayDenySound(uid, component);
                     return;
                 }
+
+                ev.Handled = true;
+                ev.FulfillmentEntity = uid;
             }
+            else
+            {
+                RaiseLocalEvent(ref ev);
+                ev.FulfillmentEntity ??= station.Value;
+
+                if (!ev.Handled)
+                {
+                    ev.FulfillmentEntity = TryFulfillOrder((station.Value, stationData), order.Account, order, orderDatabase);
+
+                    if (ev.FulfillmentEntity == null)
+                    {
+                        ConsolePopup(args.Actor, Loc.GetString("cargo-console-unfulfilled"));
+                        PlayDenySound(uid, component);
+                        return;
+                    }
+                }
+            }
+            // Blimpuf End
 
             order.Approved = true;
             _audio.PlayPvs(ApproveSound, uid);
@@ -410,9 +429,21 @@ namespace Content.Server.Cargo.Systems
                 return;
             }
 
-            var targetAccount = component.Mode == CargoOrderConsoleMode.SendToPrimary ? bank.PrimaryAccount : component.Account;
+            var targetAccount = component.Mode == CargoOrderConsoleMode.SendToPrimary
+                ? bank.PrimaryAccount
+                : component.Account;
 
-            var data = new CargoOrderData(GenerateOrderId(orderDatabase), product.Product, product.Name, product.Cost, args.Amount, args.Requester, args.Reason, component.Account, GetNetEntity(stationUid.Value)); // Starlight: +stationUid
+            var data = new CargoOrderData(GenerateOrderId(orderDatabase), product.Product, product.Name, product.Cost, args.Amount, args.Requester, args.Reason, component.Account, GetNetEntity(stationUid.Value));
+
+            if (component.Mode == CargoOrderConsoleMode.InstantApprove)
+            {
+                if (!TryApproveOrder(uid, component, stationUid.Value, targetAccount, data, orderDatabase, player))
+                {
+                    PlayDenySound(uid, component);
+                    return;
+                }
+                return;
+            }
 
             if (!TryAddOrder(stationUid.Value, targetAccount, data, orderDatabase))
             {
@@ -426,6 +457,90 @@ namespace Content.Server.Cargo.Systems
                 $"{ToPrettyString(player):user} added order [orderId:{data.OrderId}, quantity:{data.OrderQuantity}, product:{data.ProductId}, requester:{data.Requester}, reason:{data.Reason}]");
 
         }
+        // Blimpuf Start
+        private bool TryApproveOrder(EntityUid uid, CargoOrderConsoleComponent component, EntityUid stationUid, ProtoId<CargoAccountPrototype> accountId, CargoOrderData order, StationCargoOrderDatabaseComponent orderDatabase, EntityUid player)
+        {
+            if (!TryComp(stationUid, out StationBankAccountComponent? bank) || !TryComp(stationUid, out StationDataComponent? stationData))
+            {
+                return false;
+            }
+
+            var amount = GetOutstandingOrderCount((stationUid, orderDatabase), accountId);
+
+            var capacity = orderDatabase.Capacity;
+
+            if (amount >= capacity)
+                return false;
+
+            var cappedAmount = Math.Min(capacity - amount, order.OrderQuantity);
+
+            if (cappedAmount != order.OrderQuantity)
+                order.OrderQuantity = cappedAmount;
+
+            var cost = order.Price * order.OrderQuantity;
+
+            var accountBalance = GetBalanceFromAccount((stationUid, bank), accountId);
+
+            if (cost > accountBalance)
+                return false;
+
+            var ev = new FulfillCargoOrderEvent((stationUid, stationData), order, (uid, component));
+
+            if (component.DirectDelivery)
+            {
+                //
+                var spawnCoordinates = Transform(player).Coordinates;
+
+                if (!FulfillOrder(order, order.Account, spawnCoordinates, orderDatabase.PrinterOutput))
+                    return false;
+
+                ev.Handled = true;
+                ev.FulfillmentEntity = uid;
+            }
+            else
+            {
+                RaiseLocalEvent(ref ev);
+
+                ev.FulfillmentEntity ??= stationUid;
+
+                if (!ev.Handled)
+                {
+                    ev.FulfillmentEntity = TryFulfillOrder((stationUid, stationData), accountId, order, orderDatabase);
+
+                    if (ev.FulfillmentEntity == null)
+                        return false;
+                }
+            }
+
+            order.Approved = true;
+
+            if (!_emag.CheckFlag(uid, EmagType.Interaction))
+            {
+                var account = _protoMan.Index(accountId);
+
+                var tryGetIdentityShortInfoEvent = new TryGetIdentityShortInfoEvent(uid, player);
+                RaiseLocalEvent(tryGetIdentityShortInfoEvent);
+                order.SetApproverData(tryGetIdentityShortInfoEvent.Title);
+
+                var message = Loc.GetString("cargo-console-unlock-approved-order-broadcast", ("productName", Loc.GetString(order.ProductName)), ("orderAmount", order.OrderQuantity), ("approver", order.Approver ?? string.Empty), ("cost", cost));
+
+                _radio.SendRadioMessage(uid, message, account.RadioChannel, uid, escapeMarkup: false);
+
+                if (component.BaseAnnouncementChannel != account.RadioChannel)
+                {
+                    _radio.SendRadioMessage(uid, message, component.BaseAnnouncementChannel, uid, escapeMarkup: false);
+                }
+            }
+
+            _audio.PlayPvs(ApproveSound, uid);
+
+            UpdateBankAccount((stationUid, bank), -cost, accountId);
+
+            UpdateOrders(stationUid);
+
+            return true;
+        }
+        //Blimpuf End
 
         private void OnOrderUIOpened(EntityUid uid, CargoOrderConsoleComponent component, BoundUIOpenedEvent args)
         {
