@@ -9,10 +9,10 @@
     layers:
     - state: syndie_clipboard
     - state: syndie_clipboard_paper
-      map: ["qm_clipboard_paper"]
+      map: ["syndie_clipboard_paper"]
       visible: false
     - state: syndie_clipboard_pen
-      map: ["qm_clipboard_pen"]
+      map: ["syndie_clipboard_pen"]
       visible: false
     - state: syndie_clipboard_over
   - type: ItemSlots
@@ -24,10 +24,10 @@
           - Write
         insertOnInteract: true
   - type: Item
-    sprite: Objects/Misc/qm_clipboard.rsi
+    sprite: _Blimpuf/Objects/Misc/syndie_clipboard.rsi
     size: Normal
   - type: Clothing
-    sprite: Objects/Misc/qm_clipboard.rsi
+    sprite: _Blimpuf/Objects/Misc/syndie_clipboard.rsi
   - type: Storage
     grid:
     - 0,0,4,3
@@ -48,7 +48,7 @@
     baseAnnouncementChannel: Syndicate
     account: Syndicate
     mode: InstantApprove
-    skipATS: True
+    DirectDelivery: True
   - type: ActivatableUI
     verbText: qm-clipboard-computer-verb-text
     key: enum.CargoConsoleUiKey.Orders

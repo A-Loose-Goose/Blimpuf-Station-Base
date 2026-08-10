@@ -38,3 +38,6 @@ uplink-jetpack-speedster-desc = A one of a kind jetpack, truly. While worn, the 
 
 uplink-persona-hologram-generator-name = Persona Hologram Generator
 uplink-persona-hologram-generator-desc = This is one of the Syndicates newest and proudest inventions for espionage that allows the user to disguise as other organic or mechanical beings. However this will NOT work on Humanoids or Cyborgs due to their complex anatomy.
+
+uplink-syndie-clipboard-name = Black Market Digi-Board
+uplink-syndie-clipboard-desc = Connects the user to the Syndicate's shared bank account for purchasing orders from Cargo covertly. All orders requested are sent to the user directly. Make sure to buy a Syndicate ID to open the tamper seals.

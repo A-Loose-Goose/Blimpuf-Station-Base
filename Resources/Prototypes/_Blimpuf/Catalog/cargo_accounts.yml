@@ -10,5 +10,5 @@
   tamperSealColor: "#680f15"
   tamperSealAccesses:
     - allOf: [ "SyndicateAgent" ] # Regular crew
-  invisible: true
+  invisible: true # Blimpuf - Makes the account invisible on consoles that would normally view it
   # Starlight END
