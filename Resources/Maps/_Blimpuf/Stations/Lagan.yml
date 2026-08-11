@@ -141674,18 +141674,6 @@ entities:
       parent: 2
     - type: Physics
       bodyType: Static
-- proto: LivvyPlush
-  entities:
-  - uid: 20914
-    components:
-    - type: Transform
-      pos: 76.69841,34.67223
-      parent: 2
-  - uid: 20915
-    components:
-    - type: Transform
-      pos: 18.443872,-48.46706
-      parent: 2
 - proto: LockableButtonArmory
   entities:
   - uid: 20916
@@ -146137,13 +146125,6 @@ entities:
     components:
     - type: Transform
       pos: -60.549763,54.65221
-      parent: 2
-- proto: PlushieFixes
-  entities:
-  - uid: 21496
-    components:
-    - type: Transform
-      pos: -18.508867,49.884815
       parent: 2
 - proto: PlushieLizardMirrored
   entities:
@@ -160422,13 +160403,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 56.5,0.5
-      parent: 2
-- proto: SiffyPlush
-  entities:
-  - uid: 23772
-    components:
-    - type: Transform
-      pos: 3.6691608,70.91274
       parent: 2
 - proto: SignAi
   entities:

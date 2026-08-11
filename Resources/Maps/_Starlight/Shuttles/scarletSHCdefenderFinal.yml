@@ -3663,13 +3663,6 @@ entities:
       currentLabel: SHC-Defender
     - type: NameModifier
       baseName: bluespace holopad
-- proto: IgnisPlush
-  entities:
-  - uid: 564
-    components:
-    - type: Transform
-      pos: 0.5195174,1.5274844
-      parent: 1
 - proto: JetpackBlackFilled
   entities:
   - uid: 3

@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 21:06:11
-  entityCount: 32632
+  entityCount: 32624
 maps:
 - 1
 grids:
@@ -150833,13 +150833,6 @@ entities:
     - type: Transform
       pos: -41.5,54.5
       parent: 2
-- proto: IgnisPlush
-  entities:
-  - uid: 23535
-    components:
-    - type: Transform
-      pos: -12.521899,76.67973
-      parent: 2
 - proto: IncompleteBaseBallBat
   entities:
   - uid: 23536
@@ -151497,25 +151490,6 @@ entities:
       parent: 3
     - type: Physics
       canCollide: False
-- proto: JessPlush
-  entities:
-  - uid: 23555
-    components:
-    - type: Transform
-      parent: 23554
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 23556
-    components:
-    - type: Transform
-      pos: -32.521717,98.49508
-      parent: 2
-  - uid: 23557
-    components:
-    - type: Transform
-      pos: -15.49332,71.50237
-      parent: 2
 - proto: JetInjector
   entities:
   - uid: 23558
@@ -152904,32 +152878,6 @@ entities:
     - type: Transform
       pos: -26.5,-9.5
       parent: 2
-- proto: LockerRepresentativeFilled
-  entities:
-  - uid: 23554
-    components:
-    - type: Transform
-      pos: -13.5,83.5
-      parent: 2
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.14676
-        moles:
-          Oxygen: 1.7450964
-          Nitrogen: 6.564886
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 23555
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
 - proto: LockerResearchDirector
   entities:
   - uid: 23705
@@ -155594,7 +155542,7 @@ entities:
     - type: Transform
       pos: 70.39687,44.76047
       parent: 2
-- proto: PlushieGlados
+- proto: PlushieEngiborg
   entities:
   - uid: 24093
     components:
@@ -155648,14 +155596,6 @@ entities:
     - type: Transform
       pos: 43.553154,15.004568
       parent: 2
-- proto: PlushieMorganaRound
-  entities:
-  - uid: 24101
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 87.79016,31.330708
-      parent: 2
 - proto: PlushieMoth
   entities:
   - uid: 24102
@@ -155669,13 +155609,6 @@ entities:
     components:
     - type: Transform
       pos: 35.454933,86.44833
-      parent: 2
-- proto: PlushieRomero
-  entities:
-  - uid: 24104
-    components:
-    - type: Transform
-      pos: 87.18569,31.747665
       parent: 2
 - proto: PlushieShadekin
   entities:
@@ -168889,13 +168822,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -26.5,41.5
       parent: 2
-- proto: SiffyPlush
-  entities:
-  - uid: 26311
-    components:
-    - type: Transform
-      pos: -35.554344,34.604313
-      parent: 2
 - proto: SignAi
   entities:
   - uid: 26312
@@ -173295,13 +173221,6 @@ entities:
     components:
     - type: Transform
       pos: 43.5,51.5
-      parent: 2
-- proto: StalksPlush
-  entities:
-  - uid: 26941
-    components:
-    - type: Transform
-      pos: 10.478544,-6.4520006
       parent: 2
 - proto: StasisBed
   entities:
@@ -203759,5 +203678,12 @@ entities:
     components:
     - type: Transform
       pos: -2.5174084,78.74515
+      parent: 2
+- proto: LockerRepresentativeFilled
+  entities:
+  - uid: 32801
+    components:
+    - type: Transform
+      pos: -13.5,83.5
       parent: 2
 ...

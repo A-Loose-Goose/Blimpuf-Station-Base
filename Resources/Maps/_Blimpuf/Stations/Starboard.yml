@@ -197664,13 +197664,6 @@ entities:
     - type: Transform
       pos: 24.5,-25.5
       parent: 2
-- proto: IgnisPlush
-  entities:
-  - uid: 28096
-    components:
-    - type: Transform
-      pos: -3.683743,-28.60925
-      parent: 2
 - proto: Igniter
   entities:
   - uid: 28097
@@ -205151,13 +205144,6 @@ entities:
     - type: Transform
       pos: -68.41472,-18.610004
       parent: 2
-- proto: MinaPlush
-  entities:
-  - uid: 28987
-    components:
-    - type: Transform
-      pos: 17.487122,-27.529217
-      parent: 2
 - proto: MindShieldImplanter
   entities:
   - uid: 28988
@@ -205456,13 +205442,6 @@ entities:
     components:
     - type: Transform
       pos: 55.5,28.5
-      parent: 2
-- proto: MozanPlush
-  entities:
-  - uid: 29036
-    components:
-    - type: Transform
-      pos: -25.772247,-25.180136
       parent: 2
 - proto: Multitool
   entities:
@@ -234195,13 +234174,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 114.5,-27.5
       parent: 2
-- proto: SiffyPlush
-  entities:
-  - uid: 33705
-    components:
-    - type: Transform
-      pos: 81.575226,-9.486071
-      parent: 2
 - proto: SignAi
   entities:
   - uid: 33706
@@ -241836,13 +241808,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -43.5,43.5
       parent: 2
-- proto: StalksPlush
-  entities:
-  - uid: 34860
-    components:
-    - type: Transform
-      pos: 36.542953,44.443943
-      parent: 2
 - proto: StandingMicrophone
   entities:
   - uid: 34861
@@ -242163,13 +242128,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -71.5,27.5
-      parent: 2
-- proto: StinkyPlush
-  entities:
-  - uid: 34905
-    components:
-    - type: Transform
-      pos: -7.370734,-32.908997
       parent: 2
 - proto: Stool
   entities:

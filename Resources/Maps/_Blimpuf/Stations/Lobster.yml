@@ -111688,13 +111688,6 @@ entities:
       canCollide: False
     - type: InsideEntityStorage
       storage: 11111
-- proto: MinaPlush
-  entities:
-  - uid: 17688
-    components:
-    - type: Transform
-      pos: -10.448357,41.547855
-      parent: 2
 - proto: MinimoogInstrument
   entities:
   - uid: 17689
@@ -131455,14 +131448,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 75.5,-26.5
-      parent: 2
-- proto: StinkyPlush
-  entities:
-  - uid: 20885
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 0.53297806,-16.630922
       parent: 2
 - proto: Stool
   entities:
