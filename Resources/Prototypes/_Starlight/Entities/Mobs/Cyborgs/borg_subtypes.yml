@@ -744,15 +744,15 @@
 
 - type: entity
   parent: BorgPurrfusSubtypeBase
-  id: BorgPurrfusSubtypeOrange
-  name: Orange Purrfus
+  id: BorgPurrfusSubtypeRed
+  name: Red Purrfus
   components:
     - type: BorgSubtypeDefinition
       spritePath: _Starlight/Mobs/Silicon/Chassis/purrfus.rsi
-      spriteBodyState: orange
-      spriteHasMindState: orange_e
-      spriteNoMindState: orange_e_r
-      spriteToggleLightState: orange_l
+      spriteBodyState: red
+      spriteHasMindState: red_e
+      spriteNoMindState: red_e_r
+      spriteToggleLightState: red_l
       inventoryTemplateId: borgTall
 
 - type: entity
@@ -766,4 +766,17 @@
       spriteHasMindState: pink_e
       spriteNoMindState: pink_e_r
       spriteToggleLightState: pink_l
+      inventoryTemplateId: borgTall
+
+- type: entity
+  parent: BorgPurrfusSubtypeBase
+  id: BorgPurrfusSubtypeYellow
+  name: Yellow Purrfus
+  components:
+    - type: BorgSubtypeDefinition
+      spritePath: _Starlight/Mobs/Silicon/Chassis/purrfus.rsi
+      spriteBodyState: yellow
+      spriteHasMindState: yellow_e
+      spriteNoMindState: yellow_e_r
+      spriteToggleLightState: yellow_l
       inventoryTemplateId: borgTall

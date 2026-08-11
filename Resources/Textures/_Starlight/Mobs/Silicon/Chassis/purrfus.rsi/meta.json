@@ -4,8 +4,8 @@
         "x": 32,
         "y": 32
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Created by Conflee (GitHub), green/pink variants faces changed by ItsMaitake.",
+    "license": "CC-BY-SA-4.0",
+    "copyright": "Created by Th1rd",
     "states": [
         {
             "name": "borg",
@@ -39,20 +39,36 @@
             "name": "green_l",
             "directions": 4
         },
+        {
+          "name": "yellow",
+          "directions": 4
+        },
+        {
+          "name": "yellow_e",
+          "directions": 4
+        },
+        {
+          "name": "yellow_e_r",
+          "directions": 4
+        },
+        {
+          "name": "yellow_l",
+          "directions": 4
+        },
 		{
-            "name": "orange",
+            "name": "red",
             "directions": 4
         },
         {
-            "name": "orange_e",
+            "name": "red_e",
             "directions": 4
         },
         {
-            "name": "orange_e_r",
+            "name": "red_e_r",
             "directions": 4
         },
         {
-            "name": "orange_l",
+            "name": "red_l",
             "directions": 4
         },
 		{
