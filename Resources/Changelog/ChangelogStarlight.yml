@@ -4511,5 +4511,38 @@ Entries:
   id: 9001
   time: '2026-08-08T19:38:46.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/90
+- author: ItsMaitake & Lady Liliana
+  changes:
+  - message: Techfabs have been added to CentComm.
+    type: Add
+  - message: CentComm Chef, Bartender, Janitor, and Service worker have been added
+      to CentComm End of Round spawns.
+    type: Add
+  - message: Pursuit shuttle is now blue, and has standard thrusters.
+    type: Tweak
+  id: 9401
+  time: '2026-08-09T17:26:55.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/94
+- author: LadyLiliana
+  changes:
+  - message: Added Welding Masks to CargoTechfab.
+    type: Add
+  - message: Added Techfabs and Communication Consoles to DEV map.
+    type: Add
+  - message: Changed RecipePacks to make sure any Techfab that can produce Tape Recorders
+      can also produce Cassette Tapes.
+    type: Tweak
+  id: 9501
+  time: '2026-08-09T19:55:40.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/95
+- author: ItsMaitake & Th1rd
+  changes:
+  - message: New Purrfus sprites, including a new yellow variant.
+    type: Add
+  - message: Tallborgs, Dinoborgs, and Nobleborgs from borg chassis selection.
+    type: Remove
+  id: 9801
+  time: '2026-08-11T07:42:46.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/98
 Order: -1
 

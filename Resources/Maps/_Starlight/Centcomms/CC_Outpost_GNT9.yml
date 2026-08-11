@@ -4,8 +4,8 @@ meta:
   engineVersion: 277.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/28/2026 07:28:54
-  entityCount: 8690
+  time: 08/08/2026 22:41:22
+  entityCount: 8701
 maps: []
 grids:
 - 1
@@ -403,6 +403,15 @@ entities:
           decals:
             2110: 6,53
         - node:
+            color: '#37789BFF'
+            id: MiniTileDarkLineE
+          decals:
+            2245: -16,48
+            2246: -16,49
+            2247: -16,50
+            2248: -16,51
+            2249: -16,52
+        - node:
             color: '#52B4E9FF'
             id: MiniTileDarkLineE
           decals:
@@ -420,15 +429,6 @@ entities:
           decals:
             2109: 6,53
             2132: 14,52
-        - node:
-            color: '#37789BFF'
-            id: MiniTileDarkLineE
-          decals:
-            2245: -16,48
-            2246: -16,49
-            2247: -16,50
-            2248: -16,51
-            2249: -16,52
         - node:
             color: '#52B4E9FF'
             id: MiniTileDarkLineN
@@ -462,11 +462,6 @@ entities:
             2112: 4,49
             2113: 5,49
         - node:
-            color: '#D381C9FF'
-            id: MiniTileDarkLineW
-          decals:
-            2133: 14,52
-        - node:
             color: '#37789BFF'
             id: MiniTileDarkLineW
           decals:
@@ -475,6 +470,11 @@ entities:
             2252: -19,50
             2253: -19,51
             2254: -19,52
+        - node:
+            color: '#D381C9FF'
+            id: MiniTileDarkLineW
+          decals:
+            2133: 14,52
         - node:
             color: '#334E6DFF'
             id: MiniTileSteelBox
@@ -509,6 +509,16 @@ entities:
             2609: 8,96
             2610: 9,93
         - node:
+            color: '#37789BFF'
+            id: MiniTileSteelCornerNe
+          decals:
+            1293: -9,37
+            1294: -10,38
+            2159: -12,38
+            2193: -14,44
+            2205: -7,55
+            2221: -3,52
+        - node:
             color: '#439909FF'
             id: MiniTileSteelCornerNe
           decals:
@@ -529,16 +539,6 @@ entities:
             id: MiniTileSteelCornerNe
           decals:
             1240: 6,44
-        - node:
-            color: '#37789BFF'
-            id: MiniTileSteelCornerNe
-          decals:
-            1293: -9,37
-            1294: -10,38
-            2159: -12,38
-            2193: -14,44
-            2205: -7,55
-            2221: -3,52
         - node:
             color: '#EFB341FF'
             id: MiniTileSteelCornerNe
@@ -564,6 +564,15 @@ entities:
             2591: -4,102
             2592: -3,103
             2641: 4,82
+        - node:
+            color: '#37789BFF'
+            id: MiniTileSteelCornerNw
+          decals:
+            2158: -18,38
+            2167: -18,38
+            2206: -9,55
+            2207: -10,54
+            2208: -14,53
         - node:
             color: '#439909FF'
             id: MiniTileSteelCornerNw
@@ -593,15 +602,6 @@ entities:
           decals:
             1241: 2,44
         - node:
-            color: '#37789BFF'
-            id: MiniTileSteelCornerNw
-          decals:
-            2158: -18,38
-            2167: -18,38
-            2206: -9,55
-            2207: -10,54
-            2208: -14,53
-        - node:
             color: '#EFB341FF'
             id: MiniTileSteelCornerNw
           decals:
@@ -620,6 +620,14 @@ entities:
             2574: -7,90
             2611: 9,90
             2643: 5,77
+        - node:
+            color: '#37789BFF'
+            id: MiniTileSteelCornerSe
+          decals:
+            1292: -9,35
+            2160: -12,34
+            2223: -3,50
+            2812: -11,46
         - node:
             color: '#439909FF'
             id: MiniTileSteelCornerSe
@@ -645,14 +653,6 @@ entities:
           decals:
             1242: 6,43
         - node:
-            color: '#37789BFF'
-            id: MiniTileSteelCornerSe
-          decals:
-            1292: -9,35
-            2160: -12,34
-            2223: -3,50
-            2812: -11,46
-        - node:
             color: '#EFB341FF'
             id: MiniTileSteelCornerSe
           decals:
@@ -673,6 +673,12 @@ entities:
             2575: -9,90
             2612: 7,90
             2642: 4,77
+        - node:
+            color: '#37789BFF'
+            id: MiniTileSteelCornerSw
+          decals:
+            2161: -18,34
+            2238: -14,46
         - node:
             color: '#439909FF'
             id: MiniTileSteelCornerSw
@@ -701,12 +707,6 @@ entities:
             id: MiniTileSteelCornerSw
           decals:
             1243: 2,43
-        - node:
-            color: '#37789BFF'
-            id: MiniTileSteelCornerSw
-          decals:
-            2161: -18,34
-            2238: -14,46
         - node:
             color: '#EFB341FF'
             id: MiniTileSteelCornerSw
@@ -741,15 +741,15 @@ entities:
             2434: 0,69
             2457: 0,75
         - node:
-            color: '#504650FF'
-            id: MiniTileSteelEndS
-          decals:
-            1762: -8,3
-        - node:
             color: '#37789BFF'
             id: MiniTileSteelEndS
           decals:
             2204: -14,40
+        - node:
+            color: '#504650FF'
+            id: MiniTileSteelEndS
+          decals:
+            1762: -8,3
         - node:
             color: '#0E7F1BFF'
             id: MiniTileSteelEndW
@@ -796,17 +796,17 @@ entities:
             2658: 5,78
             2659: 5,80
         - node:
-            color: '#A46106FF'
-            id: MiniTileSteelInnerNe
-          decals:
-            2047: -31,45
-            2736: -31,44
-        - node:
             color: '#37789BFF'
             id: MiniTileSteelInnerNe
           decals:
             1325: -21,34
             2217: -7,52
+        - node:
+            color: '#A46106FF'
+            id: MiniTileSteelInnerNe
+          decals:
+            2047: -31,45
+            2736: -31,44
         - node:
             color: '#EFB341FF'
             id: MiniTileSteelInnerNe
@@ -834,6 +834,13 @@ entities:
             2596: -3,102
             2635: 0,94
         - node:
+            color: '#37789BFF'
+            id: MiniTileSteelInnerNw
+          decals:
+            1305: -9,34
+            2212: -10,53
+            2213: -9,54
+        - node:
             color: '#52B4E9FF'
             id: MiniTileSteelInnerNw
           decals:
@@ -845,13 +852,6 @@ entities:
             2042: -33,44
             2717: -29,45
             2738: -29,44
-        - node:
-            color: '#37789BFF'
-            id: MiniTileSteelInnerNw
-          decals:
-            1305: -9,34
-            2212: -10,53
-            2213: -9,54
         - node:
             color: '#0E7F1BFF'
             id: MiniTileSteelInnerSe
@@ -874,6 +874,12 @@ entities:
             2656: 5,80
             2657: 5,78
         - node:
+            color: '#37789BFF'
+            id: MiniTileSteelInnerSe
+          decals:
+            1326: -21,38
+            2231: -11,50
+        - node:
             color: '#439909FF'
             id: MiniTileSteelInnerSe
           decals:
@@ -889,12 +895,6 @@ entities:
           decals:
             2037: -35,40
             2078: -31,44
-        - node:
-            color: '#37789BFF'
-            id: MiniTileSteelInnerSe
-          decals:
-            1326: -21,38
-            2231: -11,50
         - node:
             color: '#EFB341FF'
             id: MiniTileSteelInnerSe
@@ -919,6 +919,12 @@ entities:
             2554: 4,98
             2617: 7,92
         - node:
+            color: '#37789BFF'
+            id: MiniTileSteelInnerSw
+          decals:
+            1306: -9,38
+            2188: -14,44
+        - node:
             color: '#504650FF'
             id: MiniTileSteelInnerSw
           decals:
@@ -934,12 +940,6 @@ entities:
             id: MiniTileSteelInnerSw
           decals:
             2734: -29,44
-        - node:
-            color: '#37789BFF'
-            id: MiniTileSteelInnerSw
-          decals:
-            1306: -9,38
-            2188: -14,44
         - node:
             color: '#334E6DFF'
             id: MiniTileSteelLineE
@@ -987,6 +987,27 @@ entities:
             2660: 5,81
             2661: 5,79
         - node:
+            color: '#37789BFF'
+            id: MiniTileSteelLineE
+          decals:
+            1290: -10,34
+            1295: -9,36
+            2153: -12,34
+            2154: -12,35
+            2155: -12,36
+            2156: -12,37
+            2157: -12,38
+            2194: -14,43
+            2195: -14,42
+            2196: -14,41
+            2197: -14,40
+            2215: -7,54
+            2216: -7,53
+            2222: -3,51
+            2807: -11,49
+            2808: -11,48
+            2809: -11,47
+        - node:
             color: '#504650FF'
             id: MiniTileSteelLineE
           decals:
@@ -1019,27 +1040,6 @@ entities:
             2727: -25,45
             2728: -25,44
             2735: -31,45
-        - node:
-            color: '#37789BFF'
-            id: MiniTileSteelLineE
-          decals:
-            1290: -10,34
-            1295: -9,36
-            2153: -12,34
-            2154: -12,35
-            2155: -12,36
-            2156: -12,37
-            2157: -12,38
-            2194: -14,43
-            2195: -14,42
-            2196: -14,41
-            2197: -14,40
-            2215: -7,54
-            2216: -7,53
-            2222: -3,51
-            2807: -11,49
-            2808: -11,48
-            2809: -11,47
         - node:
             color: '#EFB341FF'
             id: MiniTileSteelLineE
@@ -1106,6 +1106,35 @@ entities:
             2697: -1,100
             2698: -2,100
         - node:
+            color: '#37789BFF'
+            id: MiniTileSteelLineN
+          decals:
+            1309: -21,37
+            2143: -16,34
+            2144: -15,34
+            2145: -14,34
+            2168: -17,38
+            2169: -16,38
+            2170: -15,38
+            2171: -14,38
+            2174: -13,38
+            2176: -19,42
+            2177: -18,42
+            2178: -17,42
+            2179: -16,42
+            2198: -15,44
+            2199: -16,44
+            2200: -17,44
+            2201: -18,44
+            2202: -18,44
+            2209: -13,53
+            2210: -12,53
+            2211: -11,53
+            2214: -8,55
+            2218: -6,52
+            2219: -5,52
+            2220: -4,52
+        - node:
             color: '#439909FF'
             id: MiniTileSteelLineN
           decals:
@@ -1165,35 +1194,6 @@ entities:
             1234: 3,44
             1235: 4,44
             1236: 5,44
-        - node:
-            color: '#37789BFF'
-            id: MiniTileSteelLineN
-          decals:
-            1309: -21,37
-            2143: -16,34
-            2144: -15,34
-            2145: -14,34
-            2168: -17,38
-            2169: -16,38
-            2170: -15,38
-            2171: -14,38
-            2174: -13,38
-            2176: -19,42
-            2177: -18,42
-            2178: -17,42
-            2179: -16,42
-            2198: -15,44
-            2199: -16,44
-            2200: -17,44
-            2201: -18,44
-            2202: -18,44
-            2209: -13,53
-            2210: -12,53
-            2211: -11,53
-            2214: -8,55
-            2218: -6,52
-            2219: -5,52
-            2220: -4,52
         - node:
             color: '#EFB341FF'
             id: MiniTileSteelLineN
@@ -1268,6 +1268,37 @@ entities:
             2702: 1,100
             2703: 2,100
         - node:
+            color: '#37789BFF'
+            id: MiniTileSteelLineS
+          decals:
+            1307: -10,34
+            1308: -21,35
+            2140: -16,38
+            2141: -15,38
+            2142: -14,38
+            2162: -17,34
+            2163: -15,34
+            2164: -13,34
+            2165: -14,34
+            2166: -16,34
+            2180: -19,40
+            2181: -18,40
+            2182: -17,40
+            2183: -16,40
+            2189: -15,44
+            2190: -16,44
+            2191: -17,44
+            2192: -18,44
+            2224: -4,50
+            2225: -5,50
+            2226: -6,50
+            2227: -7,50
+            2228: -8,50
+            2229: -9,50
+            2230: -10,50
+            2236: -12,46
+            2237: -13,46
+        - node:
             color: '#439909FF'
             id: MiniTileSteelLineS
           decals:
@@ -1313,37 +1344,6 @@ entities:
             1237: 3,43
             1238: 4,43
             1239: 5,43
-        - node:
-            color: '#37789BFF'
-            id: MiniTileSteelLineS
-          decals:
-            1307: -10,34
-            1308: -21,35
-            2140: -16,38
-            2141: -15,38
-            2142: -14,38
-            2162: -17,34
-            2163: -15,34
-            2164: -13,34
-            2165: -14,34
-            2166: -16,34
-            2180: -19,40
-            2181: -18,40
-            2182: -17,40
-            2183: -16,40
-            2189: -15,44
-            2190: -16,44
-            2191: -17,44
-            2192: -18,44
-            2224: -4,50
-            2225: -5,50
-            2226: -6,50
-            2227: -7,50
-            2228: -8,50
-            2229: -9,50
-            2230: -10,50
-            2236: -12,46
-            2237: -13,46
         - node:
             color: '#EFB341FF'
             id: MiniTileSteelLineS
@@ -1406,6 +1406,30 @@ entities:
             2646: 4,80
             2647: 4,81
         - node:
+            color: '#37789BFF'
+            id: MiniTileSteelLineW
+          decals:
+            1310: -21,37
+            1311: -21,36
+            1312: -21,35
+            1315: -20,34
+            1316: -20,38
+            2148: -18,34
+            2149: -18,35
+            2150: -18,36
+            2151: -18,37
+            2152: -18,38
+            2184: -14,40
+            2185: -14,41
+            2186: -14,42
+            2187: -14,43
+            2239: -14,47
+            2240: -14,48
+            2241: -14,49
+            2242: -14,50
+            2243: -14,51
+            2244: -14,52
+        - node:
             color: '#439909FF'
             id: MiniTileSteelLineW
           decals:
@@ -1434,30 +1458,6 @@ entities:
             2718: -29,46
             2719: -29,47
             2739: -29,45
-        - node:
-            color: '#37789BFF'
-            id: MiniTileSteelLineW
-          decals:
-            1310: -21,37
-            1311: -21,36
-            1312: -21,35
-            1315: -20,34
-            1316: -20,38
-            2148: -18,34
-            2149: -18,35
-            2150: -18,36
-            2151: -18,37
-            2152: -18,38
-            2184: -14,40
-            2185: -14,41
-            2186: -14,42
-            2187: -14,43
-            2239: -14,47
-            2240: -14,48
-            2241: -14,49
-            2242: -14,50
-            2243: -14,51
-            2244: -14,52
         - node:
             color: '#EFB341FF'
             id: MiniTileSteelLineW
@@ -2439,10 +2439,11 @@ entities:
           decals:
             1502: -15,12
         - node:
-            color: '#76427CFF'
+            angle: 1.5707963267948966 rad
+            color: '#37789BFF'
             id: StencilLetterC
           decals:
-            1245: 3.9757318,43.516006
+            1301: -10,37
         - node:
             angle: 4.71238898038469 rad
             color: '#37789BFF'
@@ -2450,11 +2451,10 @@ entities:
           decals:
             1330: -20,35
         - node:
-            angle: 1.5707963267948966 rad
-            color: '#37789BFF'
+            color: '#76427CFF'
             id: StencilLetterC
           decals:
-            1301: -10,37
+            1245: 3.9757318,43.516006
         - node:
             color: '#A05212FF'
             id: StencilLetterC
@@ -2471,17 +2471,17 @@ entities:
           decals:
             1499: -18,12
         - node:
-            angle: 4.71238898038469 rad
-            color: '#37789BFF'
-            id: StencilLetterE
-          decals:
-            1327: -20,36
-        - node:
             angle: 1.5707963267948966 rad
             color: '#37789BFF'
             id: StencilLetterE
           decals:
             1300: -10,36
+        - node:
+            angle: 4.71238898038469 rad
+            color: '#37789BFF'
+            id: StencilLetterE
+          decals:
+            1327: -20,36
         - node:
             angle: 4.71238898038469 rad
             color: '#EFB341FF'
@@ -2557,10 +2557,11 @@ entities:
           decals:
             1174: -29,38
         - node:
-            color: '#76427CFF'
+            angle: 1.5707963267948966 rad
+            color: '#37789BFF'
             id: StencilLetterS
           decals:
-            1244: 2.9720316,43.516006
+            1302: -10,35
         - node:
             angle: 4.71238898038469 rad
             color: '#37789BFF'
@@ -2568,11 +2569,10 @@ entities:
           decals:
             1328: -20,37
         - node:
-            angle: 1.5707963267948966 rad
-            color: '#37789BFF'
+            color: '#76427CFF'
             id: StencilLetterS
           decals:
-            1302: -10,35
+            1244: 2.9720316,43.516006
         - node:
             color: '#EFD825FF'
             id: StencilLetterZ
@@ -6390,11 +6390,6 @@ entities:
       parent: 1
 - proto: Autolathe
   entities:
-  - uid: 430
-    components:
-    - type: Transform
-      pos: 26.5,33.5
-      parent: 1
   - uid: 431
     components:
     - type: Transform
@@ -6643,6 +6638,23 @@ entities:
     - type: Transform
       pos: -11.5,31.5
       parent: 1
+- proto: BedsheetBlue
+  entities:
+  - uid: 8691
+    components:
+    - type: Transform
+      pos: -11.5,31.5
+      parent: 1
+  - uid: 8692
+    components:
+    - type: Transform
+      pos: -12.5,28.5
+      parent: 1
+  - uid: 8693
+    components:
+    - type: Transform
+      pos: -17.5,31.5
+      parent: 1
 - proto: BedsheetMedical
   entities:
   - uid: 536
@@ -6664,6 +6676,22 @@ entities:
     components:
     - type: Transform
       pos: -14.5,16.5
+      parent: 1
+- proto: BenchBlueComfyEndLeft
+  entities:
+  - uid: 8699
+    components:
+    - type: Transform
+      rot: 4.71238898038469 rad
+      pos: -2.5,51.5
+      parent: 1
+- proto: BenchBlueComfyEndRight
+  entities:
+  - uid: 8700
+    components:
+    - type: Transform
+      rot: 4.71238898038469 rad
+      pos: -2.5,50.5
       parent: 1
 - proto: BenchGrayComfyEndLeft
   entities:
@@ -18591,6 +18619,20 @@ entities:
     - type: Transform
       pos: -30.5,46.5
       parent: 1
+- proto: CargoTechFab
+  entities:
+  - uid: 3627
+    components:
+    - type: Transform
+      pos: -40.5,40.5
+      parent: 1
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
+      - Biochemical
 - proto: CarpetGreen
   entities:
   - uid: 2943
@@ -20334,6 +20376,34 @@ entities:
     - type: Transform
       pos: 25.5,9.5
       parent: 1
+- proto: CCBartenderSpawnerPostRound
+  entities:
+  - uid: 3741
+    components:
+    - type: Transform
+      pos: -29.5,25.5
+      parent: 1
+- proto: CCChefSpawnerPostRound
+  entities:
+  - uid: 6335
+    components:
+    - type: Transform
+      pos: -29.5,27.5
+      parent: 1
+- proto: CCJanitorSpawnerPostRound
+  entities:
+  - uid: 7432
+    components:
+    - type: Transform
+      pos: 8.5,9.5
+      parent: 1
+- proto: CCServiceWorkerSpawnerPostRound
+  entities:
+  - uid: 7399
+    components:
+    - type: Transform
+      pos: -38.5,27.5
+      parent: 1
 - proto: CentcommComputerComms
   entities:
   - uid: 3246
@@ -20360,6 +20430,20 @@ entities:
     - type: Transform
       pos: -1.4608223,36.608627
       parent: 1
+- proto: CentralCommandTechFab
+  entities:
+  - uid: 542
+    components:
+    - type: Transform
+      pos: 0.5,35.5
+      parent: 1
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
+      - Biochemical
 - proto: Chainsaw
   entities:
   - uid: 3250
@@ -21604,8 +21688,29 @@ entities:
   - uid: 3427
     components:
     - type: Transform
-      pos: -40.48857,40.60347
+      pos: -39.005142,40.717754
       parent: 1
+    - type: GroupExamine
+      group:
+      - hoverMessage: ""
+        contextText: verb-examine-group-other
+        icon: /Textures/Interface/examine-star.png
+        components:
+        - Armor
+        - ClothingSpeedModifier
+        entries:
+        - message: >-
+            It provides the following protection:
+
+            - [color=blue]Stamina[/color] damage reduced by [color=lightblue]0%[/color].
+
+            - [color=orange]Explosion[/color] damage [color=white]to contents[/color] reduced by [color=lightblue]10%[/color].
+          priority: 0
+          component: Armor
+        - message: This decreases your running speed by [color=yellow]10%[/color].
+          priority: 0
+          component: ClothingSpeedModifier
+        title: null
 - proto: ClothingBackpackDuffelCBURN
   entities:
   - uid: 3429
@@ -23336,6 +23441,13 @@ entities:
       user: 3596
     - type: Physics
       canCollide: False
+- proto: ClothingUniformJumpsuitHawaiBlue
+  entities:
+  - uid: 8701
+    components:
+    - type: Transform
+      pos: -10.386609,53.169304
+      parent: 1
 - proto: ClothingUniformNTNCFatigues
   entities:
   - uid: 3604
@@ -24118,6 +24230,33 @@ entities:
     components:
     - type: Transform
       pos: -43.5,36.5
+      parent: 1
+- proto: CurtainsBlue
+  entities:
+  - uid: 8694
+    components:
+    - type: Transform
+      pos: -19.5,32.5
+      parent: 1
+  - uid: 8695
+    components:
+    - type: Transform
+      pos: -19.5,31.5
+      parent: 1
+  - uid: 8696
+    components:
+    - type: Transform
+      pos: -19.5,30.5
+      parent: 1
+  - uid: 8697
+    components:
+    - type: Transform
+      pos: -19.5,28.5
+      parent: 1
+  - uid: 8698
+    components:
+    - type: Transform
+      pos: -18.5,27.5
       parent: 1
 - proto: CybersunFlippo
   entities:
@@ -26663,6 +26802,20 @@ entities:
     - type: Transform
       pos: -7.067464,82.74694
       parent: 1
+- proto: EngineeringTechFab
+  entities:
+  - uid: 540
+    components:
+    - type: Transform
+      pos: 26.5,33.5
+      parent: 1
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
+      - Biochemical
 - proto: ExGrenade
   entities:
   - uid: 4167
@@ -29769,6 +29922,13 @@ entities:
     components:
     - type: Transform
       pos: 2.2699041,4.2145424
+      parent: 1
+- proto: FoodVanillaIceCream
+  entities:
+  - uid: 3739
+    components:
+    - type: Transform
+      pos: -38.66146,28.685686
       parent: 1
 - proto: FoodWatermelon
   entities:
@@ -36589,429 +36749,6 @@ entities:
       parent: 1
     - type: AtmosPipeColor
       color: '#990000FF'
-- proto: SecureCCGasVentPump
-  entities:
-  - uid: 5437
-    components:
-    - type: Transform
-      pos: 0.5,101.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5438
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 1.5,94.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5439
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 3.5,89.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5440
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -2.5,89.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5441
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 9.5,87.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5442
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 13.5,88.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5443
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -8.5,87.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5444
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -12.5,88.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5445
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 0.5,71.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5446
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 0.5,65.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5447
-    components:
-    - type: Transform
-      pos: -5.5,81.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5448
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -3.5,77.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5449
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 4.5,79.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-- proto: SecureCCGasVentPumpAlt1
-  entities:
-  - uid: 5450
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 18.5,43.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5451
-    components:
-    - type: Transform
-      pos: 22.5,33.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5452
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 23.5,26.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5453
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 21.5,15.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5454
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 11.5,47.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5455
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 7.5,43.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5456
-    components:
-    - type: Transform
-      pos: 4.5,36.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5457
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 8.5,19.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5458
-    components:
-    - type: Transform
-      pos: 1.5,24.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5459
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 16.5,16.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5460
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 6.5,7.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5461
-    components:
-    - type: Transform
-      pos: 1.5,0.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5462
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -0.5,3.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5463
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 5.5,49.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5464
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 6.5,52.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5465
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 13.5,51.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5466
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 1.5,55.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5467
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -6.5,51.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5468
-    components:
-    - type: Transform
-      pos: -16.5,50.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5469
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -11.5,42.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5470
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -12.5,41.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5471
-    components:
-    - type: Transform
-      pos: -15.5,41.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5472
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -11.5,36.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5473
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -11.5,32.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5474
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -14.5,29.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5475
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -17.5,32.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5476
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -3.5,47.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5477
-    components:
-    - type: Transform
-      pos: -7.5,43.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5478
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -8.5,30.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5479
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -21.5,33.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5480
-    components:
-    - type: Transform
-      pos: -18.5,26.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5481
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -12.5,17.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5482
-    components:
-    - type: Transform
-      pos: -6.5,12.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5483
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -12.5,8.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5484
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -9.5,6.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5485
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -25.5,11.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5486
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -29.5,44.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5487
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -30.5,31.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5488
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -42.5,28.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5489
-    components:
-    - type: Transform
-      pos: -41.5,37.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 5490
-    components:
-    - type: Transform
-      pos: -0.5,24.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
 - proto: GasVentScrubber
   entities:
   - uid: 5491
@@ -38960,6 +38697,8 @@ entities:
       rot: 3.141592653589793 rad
       pos: 0.5,31.5
       parent: 1
+    - type: AccessReader
+      accessListsOriginal: []
   - uid: 5767
     components:
     - type: Transform
@@ -39365,6 +39104,13 @@ entities:
     components:
     - type: Transform
       pos: -15.5,29.5
+      parent: 1
+- proto: IceCreamMaker
+  entities:
+  - uid: 3738
+    components:
+    - type: Transform
+      pos: -39.5,28.5
       parent: 1
 - proto: InflatableDoor
   entities:
@@ -44817,20 +44563,6 @@ entities:
       - Experimental
       - CivilianServices
       - Biochemical
-- proto: Protolathe
-  entities:
-  - uid: 6335
-    components:
-    - type: Transform
-      pos: 3.5,53.5
-      parent: 1
-    - type: TechnologyDatabase
-      supportedDisciplines:
-      - Industrial
-      - Arsenal
-      - Experimental
-      - CivilianServices
-      - Biochemical
 - proto: Rack
   entities:
   - uid: 6336
@@ -48178,6 +47910,20 @@ entities:
     - type: Transform
       pos: -17.5,38.5
       parent: 1
+- proto: ScienceTechFab
+  entities:
+  - uid: 541
+    components:
+    - type: Transform
+      pos: 3.5,53.5
+      parent: 1
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
+      - Biochemical
 - proto: Screen
   entities:
   - uid: 6929
@@ -48271,8 +48017,443 @@ entities:
     - type: Transform
       pos: -12.077188,57.79744
       parent: 1
+- proto: SecureCCGasVentPump
+  entities:
+  - uid: 5437
+    components:
+    - type: Transform
+      pos: 0.5,101.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5438
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 1.5,94.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5439
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 3.5,89.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5440
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -2.5,89.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5441
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 9.5,87.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5442
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 13.5,88.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5443
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -8.5,87.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5444
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -12.5,88.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5445
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 0.5,71.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5446
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 0.5,65.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5447
+    components:
+    - type: Transform
+      pos: -5.5,81.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5448
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -3.5,77.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5449
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 4.5,79.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+- proto: SecureCCGasVentPumpAlt1
+  entities:
+  - uid: 5450
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 18.5,43.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5451
+    components:
+    - type: Transform
+      pos: 22.5,33.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5452
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 23.5,26.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5453
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 21.5,15.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5454
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 11.5,47.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5455
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 7.5,43.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5456
+    components:
+    - type: Transform
+      pos: 4.5,36.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5457
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 8.5,19.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5458
+    components:
+    - type: Transform
+      pos: 1.5,24.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5459
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 16.5,16.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5460
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 6.5,7.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5461
+    components:
+    - type: Transform
+      pos: 1.5,0.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5462
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -0.5,3.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5463
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 5.5,49.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5464
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 6.5,52.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5465
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 13.5,51.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5466
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 1.5,55.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5467
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -6.5,51.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5468
+    components:
+    - type: Transform
+      pos: -16.5,50.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5469
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -11.5,42.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5470
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -12.5,41.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5471
+    components:
+    - type: Transform
+      pos: -15.5,41.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5472
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -11.5,36.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5473
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -11.5,32.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5474
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -14.5,29.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5475
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -17.5,32.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5476
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -3.5,47.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5477
+    components:
+    - type: Transform
+      pos: -7.5,43.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5478
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -8.5,30.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5479
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -21.5,33.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5480
+    components:
+    - type: Transform
+      pos: -18.5,26.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5481
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -12.5,17.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5482
+    components:
+    - type: Transform
+      pos: -6.5,12.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5483
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -12.5,8.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5484
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -9.5,6.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5485
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -25.5,11.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5486
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -29.5,44.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5487
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -30.5,31.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5488
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -42.5,28.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5489
+    components:
+    - type: Transform
+      pos: -41.5,37.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 5490
+    components:
+    - type: Transform
+      pos: -0.5,24.5
+      parent: 1
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
 - proto: SecurityTechFab
   entities:
+  - uid: 3740
+    components:
+    - type: Transform
+      pos: -15.5,46.5
+      parent: 1
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
+      - Biochemical
   - uid: 6942
     components:
     - type: Transform
@@ -48292,6 +48473,20 @@ entities:
     - type: Transform
       pos: -12.603308,49.619083
       parent: 1
+- proto: ServiceTechFab
+  entities:
+  - uid: 620
+    components:
+    - type: Transform
+      pos: -26.5,26.5
+      parent: 1
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
+      - Biochemical
 - proto: ShardGlassUranium
   entities:
   - uid: 6944
@@ -51174,6 +51369,16 @@ entities:
       parent: 1
 - proto: TableCounterWood
   entities:
+  - uid: 619
+    components:
+    - type: Transform
+      pos: -39.5,28.5
+      parent: 1
+  - uid: 3737
+    components:
+    - type: Transform
+      pos: -38.5,28.5
+      parent: 1
   - uid: 7312
     components:
     - type: Transform
@@ -51669,11 +51874,6 @@ entities:
     - type: Transform
       pos: -2.5,37.5
       parent: 1
-  - uid: 7399
-    components:
-    - type: Transform
-      pos: 0.5,35.5
-      parent: 1
   - uid: 7400
     components:
     - type: Transform
@@ -51845,12 +52045,6 @@ entities:
     components:
     - type: Transform
       pos: -39.5,40.5
-      parent: 1
-  - uid: 7432
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -40.5,40.5
       parent: 1
   - uid: 7433
     components:
@@ -52878,7 +53072,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -106471.484
+      secondsUntilStateChange: -106897.47
       state: Opening
     - type: Airlock
       autoClose: False
@@ -52893,7 +53087,7 @@ entities:
     - type: AccessReader
       accessListsOriginal: []
     - type: Door
-      secondsUntilStateChange: -106469.62
+      secondsUntilStateChange: -106895.6
       state: Opening
     - type: Airlock
       autoClose: False
@@ -52912,7 +53106,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -14633.471
+      secondsUntilStateChange: -15059.451
       state: Opening
     - type: Airlock
       autoClose: False
@@ -52925,7 +53119,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -14634.67
+      secondsUntilStateChange: -15060.65
       state: Opening
     - type: Airlock
       autoClose: False
@@ -59328,72 +59522,5 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -3.1204293,46.660095
-      parent: 1
-- proto: BedsheetBlue
-  entities:
-  - uid: 8691
-    components:
-    - type: Transform
-      pos: -11.5,31.5
-      parent: 1
-  - uid: 8692
-    components:
-    - type: Transform
-      pos: -12.5,28.5
-      parent: 1
-  - uid: 8693
-    components:
-    - type: Transform
-      pos: -17.5,31.5
-      parent: 1
-- proto: CurtainsBlue
-  entities:
-  - uid: 8694
-    components:
-    - type: Transform
-      pos: -19.5,32.5
-      parent: 1
-  - uid: 8695
-    components:
-    - type: Transform
-      pos: -19.5,31.5
-      parent: 1
-  - uid: 8696
-    components:
-    - type: Transform
-      pos: -19.5,30.5
-      parent: 1
-  - uid: 8697
-    components:
-    - type: Transform
-      pos: -19.5,28.5
-      parent: 1
-  - uid: 8698
-    components:
-    - type: Transform
-      pos: -18.5,27.5
-      parent: 1
-- proto: BenchBlueComfyEndLeft
-  entities:
-  - uid: 8699
-    components:
-    - type: Transform
-      pos: -2.5,51.5
-      parent: 1
-      rot: 4.71238898038469 rad
-- proto: BenchBlueComfyEndRight
-  entities:
-  - uid: 8700
-    components:
-    - type: Transform
-      pos: -2.5,50.5
-      parent: 1
-      rot: 4.71238898038469 rad
-- proto: ClothingUniformJumpsuitHawaiBlue
-  entities:
-  - uid: 8701
-    components:
-    - type: Transform
-      pos: -10.386609,53.169304
       parent: 1
 ...
