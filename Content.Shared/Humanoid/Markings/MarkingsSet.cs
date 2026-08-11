@@ -290,9 +290,9 @@ public sealed partial class MarkingSet
             }
 
             var index = 0;
-            while (points.Points > 0 && index < points.DefaultMarkings.Count)
+            while (points.Points > 0 || index < points.DefaultMarkings.Count)
             {
-                if (markingManager.Markings.TryGetValue(points.DefaultMarkings[index], out var prototype)) //starlight: add index sanity check to avoid problems when removing markings
+                if (index < points.DefaultMarkings.Count && markingManager.Markings.TryGetValue(points.DefaultMarkings[index], out var prototype)) //starlight: add index sanity check to avoid problems when removing markings
                 {
                     var colors = MarkingColoring.GetMarkingLayerColors(
                             prototype,
