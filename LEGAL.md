@@ -40,9 +40,3 @@ Creative Commons licenses are irrevocable. Submitting any work under a Creative 
 ## Copyright
 
 All authors retain copyright to their submitted works. Blimpuf Station does not retain any ownership or copyright over any submitted works.
-
-## AGPLv3 Disclaimer
-
-Small pieces of code currently pending removal remains licensed under AGPLv3. These all exist within the _DV and _EE namespaces, and are code inherited from the following AGPLv3 licensed PRs: [refactor harpy singing visuals into InstrumentVisuals](https://github.com/DeltaV-Station/Delta-v/pull/2564), [the great namespace refactor](https://github.com/DeltaV-Station/Delta-v/pull/2574), [Harpies Flightless No More!](https://github.com/DeltaV-Station/Delta-v/pull/4888), [Harpy Flight System](https://github.com/Simple-Station/Einstein-Engines/pull/919).
-
-The full text of their AGPLv3 license can be found [here](https://opensource.org/license/agpl-3-0).

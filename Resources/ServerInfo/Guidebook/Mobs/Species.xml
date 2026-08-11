@@ -8,9 +8,9 @@
   <GuideEntityEmbed Entity="AppearanceDiona" Caption="Diona"/>
   <GuideEntityEmbed Entity="AppearanceHuman" Caption="Doll[PH]"/><!--Doll placeholder-->
   <GuideEntityEmbed Entity="AppearanceElf" Caption="Elf"/>
-  <GuideEntityEmbed Entity="AppearanceHarpy" Caption="Harpy"/>
   </Box>
   <Box>
+  <GuideEntityEmbed Entity="AppearanceHuman" Caption="Harpy[PH]"/><!--Harpy placeholder-->
   <GuideEntityEmbed Entity="AppearanceHuman" Caption="Human"/>
   <GuideEntityEmbed Entity="AppearanceMoth" Caption="Moth Person"/>
   <GuideEntityEmbed Entity="AppearanceNeocyte" Caption="Neocyte"/>
