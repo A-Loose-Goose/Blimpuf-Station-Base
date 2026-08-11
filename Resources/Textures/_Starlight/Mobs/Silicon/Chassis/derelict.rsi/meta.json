@@ -4,27 +4,27 @@
         "x": 32,
         "y": 32
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "State based copyright",
+    "license": "CC-BY-SA-4.0",
+    "copyright": "Original Purrfus created by Th1rd, derelict modifications by ItsMaitake",
     "states": [
         {
             "name": "borg",
-			"copyright": "Created by Conflee (GitHub).",
+			"copyright": "Created by ItsMaitake.",
             "directions": 4
         },
         {
             "name": "borg_e",
-			"copyright": "Created by Conflee (GitHub).",
+			"copyright": "Created by ItsMaitake.",
             "directions": 4
         },
         {
             "name": "borg_e_r",
-			"copyright": "Created by Conflee (GitHub).",
+			"copyright": "Created by ItsMaitake.",
             "directions": 4
         },
         {
             "name": "borg_l",
-			"copyright": "Created by Conflee (GitHub).",
+			"copyright": "Created by ItsMaitake.",
             "directions": 4
         }
     ]
