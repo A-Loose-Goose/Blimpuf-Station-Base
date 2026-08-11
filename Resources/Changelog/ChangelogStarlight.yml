@@ -4542,5 +4542,14 @@ Entries:
   id: 9501
   time: '2026-08-09T19:55:40.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/95
+- author: ItsMaitake & Th1rd
+  changes:
+  - message: New Purrfus sprites, including a new yellow variant.
+    type: Add
+  - message: Tallborgs, Dinoborgs, and Nobleborgs from borg chassis selection.
+    type: Remove
+  id: 9801
+  time: '2026-08-11T07:42:46.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/98
 Order: -1
 
