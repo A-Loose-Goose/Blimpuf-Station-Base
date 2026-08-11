@@ -24,7 +24,7 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 50
+        maxVol: 60
   - type: MixableSolution
     solution: beaker
   - type: FitsInDispenser
@@ -124,7 +124,7 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 50
+        maxVol: 60
   - type: MixableSolution
     solution: beaker
   - type: FitsInDispenser
@@ -193,10 +193,10 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 50
+        maxVol: 60
         reagents:
         - ReagentId: Cryoxadone
-          Quantity: 50
+          Quantity: 60
 
 - type: entity
   parent: Beaker
@@ -208,10 +208,10 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 50
+        maxVol: 60
         reagents:
         - ReagentId: Arithrazine
-          Quantity: 50
+          Quantity: 60
 
 - type: entity
   parent: Beaker
@@ -223,10 +223,10 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 50
+        maxVol: 60
         reagents:
         - ReagentId: Sigynate
-          Quantity: 50
+          Quantity: 60
 
 - type: entity
   parent: Beaker
@@ -238,10 +238,10 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 50
+        maxVol: 60
         reagents:
         - ReagentId: Phalanximine
-          Quantity: 50
+          Quantity: 60
 
 - type: entity
   parent: Beaker
@@ -253,10 +253,10 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 50
+        maxVol: 60
         reagents:
         - ReagentId: Diphenhydramine
-          Quantity: 50
+          Quantity: 60
 
 - type: entity
   parent: Beaker
@@ -268,10 +268,10 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 50
+        maxVol: 60
         reagents:
         - ReagentId: Bruizine
-          Quantity: 50
+          Quantity: 60
 
 - type: entity
   parent: Beaker
@@ -283,10 +283,10 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 50
+        maxVol: 60
         reagents:
         - ReagentId: Lacerinol
-          Quantity: 50
+          Quantity: 60
 
 - type: entity
   name: large beaker
@@ -309,7 +309,7 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 100
+        maxVol: 90
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 6
@@ -359,7 +359,7 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 1000
+        maxVol: 900
 
 - type: entity
   name: dropper

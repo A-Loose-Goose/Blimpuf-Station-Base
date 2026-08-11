@@ -46,7 +46,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 400
+        maxVol: 360
 
 - type: entity
   name: silver jug
@@ -64,7 +64,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 300
+        maxVol: 270
 
 - type: entity
   id: VialCase
