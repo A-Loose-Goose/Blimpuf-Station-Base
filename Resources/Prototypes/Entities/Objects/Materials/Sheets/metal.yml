@@ -236,3 +236,67 @@
   - type: Stack
     stackType: Plasteel
     count: 1
+
+# Blimpuf
+- type: entity
+  parent: SheetMetalBase
+  id: SheetPlabrass
+  name: plabrass
+  suffix: Full
+  components:
+    - type: Material
+    - type: PhysicalComposition
+      materialComposition:
+        Plabrass: 100
+    - type: Stack
+      stackType: Plabrass
+      baseLayer: base
+      layerStates:
+        - plabrass
+        - plabrass_2
+        - plabrass_3
+    - type: Sprite
+      state: plabrass_3
+      layers:
+        - state: plabrass_3
+          map: ["base"]
+    - type: Item
+      heldPrefix: plabrass
+    - type: Appearance
+    - type: Extractable
+      grindableSolutionName: plabrass
+    - type: SolutionContainerManager
+      solutions:
+        plabrass:
+          reagents:
+            - ReagentId: Plasma
+              Quantity: 10
+            - ReagentId: Copper
+              Quantity: 7
+            - ReagentId: Zinc
+              Quantity: 3
+          canReact: false
+
+- type: entity
+  parent: SheetPlabrass
+  id: SheetPlabrass10
+  name: plabrass
+  suffix: 10
+  components:
+    - type: Sprite
+      state: plabrass
+    - type: Stack
+      stackType: Plabrass
+      count: 10
+
+- type: entity
+  parent: SheetPlabrass
+  id: SheetPlabrass1
+  name: plabrass
+  suffix: Single
+  components:
+    - type: Sprite
+      state: plabrass
+    - type: Stack
+      stackType: Plabrass
+      count: 1

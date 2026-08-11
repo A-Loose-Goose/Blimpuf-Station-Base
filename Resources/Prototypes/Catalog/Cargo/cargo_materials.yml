@@ -49,6 +49,16 @@
   group: market
 
 - type: cargoProduct
+  id: MaterialPlabrass
+  icon:
+    sprite: Objects/Materials/Sheets/metal.rsi
+    state: plabrass_3
+  product: CrateMaterialPlabrass
+  cost: 1600
+  category: cargoproduct-category-name-materials
+  group: market
+
+- type: cargoProduct
   id: MaterialGold
   icon:
     sprite: Objects/Materials/ingots.rsi

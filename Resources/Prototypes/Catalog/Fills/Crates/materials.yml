@@ -82,6 +82,17 @@
       entity_storage:
         id: SheetPlasteel
 
+- type: entity # Blimpuf
+  parent: CrateGenericSteel
+  id: CrateMaterialPlabrass
+  name: plabrass crate
+  description: 30 sheets of plabrass.
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        entity_storage:
+          id: SheetPlabrass
+
 - type: entity
   parent: CratePlasma
   id: CrateMaterialPlasma

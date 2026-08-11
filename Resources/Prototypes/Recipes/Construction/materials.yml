@@ -6,6 +6,14 @@
   category: construction-category-materials
   objectType: Item
 
+- type: construction # Blimpuf
+  id: BrassRod
+  graph: BrassRod
+  startNode: start
+  targetNode: BrassRod
+  category: construction-category-materials
+  objectType: Item
+
 - type: construction
   id: SheetRGlass
   graph: Glass

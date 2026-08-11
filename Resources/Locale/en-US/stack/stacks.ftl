@@ -3,6 +3,7 @@ stack-bananium = bananium
 stack-glass = glass
 stack-plasteel = plasteel
 stack-brass = brass
+stack-plabrass = plabrass
 stack-plastic = plastic
 stack-silver = silver
 stack-gold = gold

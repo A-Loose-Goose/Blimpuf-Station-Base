@@ -18,3 +18,10 @@
   name: stack-brass
   icon: { sprite: /Textures/Objects/Materials/Sheets/metal.rsi, state: brass }
   spawn: SheetBrass1
+
+- type: stack # Blimpuf
+  parent: BaseSheetStack
+  id: Plabrass
+  name: stack-plabrass
+  icon: { sprite: /Textures/Objects/Materials/Sheets/metal.rsi, state: plabrass }
+  spawn: SheetPlabrass1
