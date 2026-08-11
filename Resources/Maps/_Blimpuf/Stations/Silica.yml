@@ -137654,18 +137654,6 @@ entities:
     - type: Transform
       pos: 18.5,-41.5
       parent: 2
-- proto: MozanPlush
-  entities:
-  - uid: 20458
-    components:
-    - type: Transform
-      pos: 42.42841,15.704402
-      parent: 2
-  - uid: 20459
-    components:
-    - type: Transform
-      pos: 2.4527283,-5.042697
-      parent: 2
 - proto: Multitool
   entities:
   - uid: 11788

@@ -123826,23 +123826,6 @@ entities:
       pos: 24.361137,47.018524
       parent: 2
     - type: StepTriggerActive
-- proto: MozanPlush
-  entities:
-  - uid: 17812
-    components:
-    - type: Transform
-      pos: 54.493183,16.627106
-      parent: 2
-  - uid: 17813
-    components:
-    - type: Transform
-      pos: -1.3058679,-7.2027082
-      parent: 2
-  - uid: 17814
-    components:
-    - type: Transform
-      pos: 49.413128,45.457497
-      parent: 2
 - proto: Multitool
   entities:
   - uid: 17815
@@ -126155,13 +126138,6 @@ entities:
           showEnts: False
           occludes: True
           ent: 18117
-- proto: PlushieMatthew
-  entities:
-  - uid: 18118
-    components:
-    - type: Transform
-      pos: -1.2592541,-8.015773
-      parent: 2
 - proto: PlushieMoth
   entities:
   - uid: 18119

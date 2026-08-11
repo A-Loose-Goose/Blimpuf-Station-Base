@@ -177262,7 +177262,7 @@ entities:
     - type: Transform
       pos: -18.5,35.5
       parent: 2
-- proto: PlushieWEH
+- proto: PlushieEngiborg
   entities:
   - uid: 20666
     components:

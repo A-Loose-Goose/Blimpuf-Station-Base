@@ -87613,13 +87613,6 @@ entities:
     - type: Transform
       pos: 3.5,-36.5
       parent: 2
-- proto: MozanPlush
-  entities:
-  - uid: 12585
-    components:
-    - type: Transform
-      pos: -21.359722,-38.257683
-      parent: 2
 - proto: Multitool
   entities:
   - uid: 6514

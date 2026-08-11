@@ -146943,13 +146943,6 @@ entities:
       parent: 12844
     - type: Physics
       canCollide: False
-- proto: JessPlush
-  entities:
-  - uid: 22662
-    components:
-    - type: Transform
-      pos: 66.51195,9.667839
-      parent: 2
 - proto: Joint
   entities:
   - uid: 22663
