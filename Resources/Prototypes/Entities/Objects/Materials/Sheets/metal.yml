@@ -243,6 +243,7 @@
   id: SheetPlabrass
   name: plabrass
   suffix: Full
+  unit: materials-unit-sheet
   components:
     - type: Material
     - type: PhysicalComposition

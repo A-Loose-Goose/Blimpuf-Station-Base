@@ -53,6 +53,10 @@ stack-rods = {$amount ->
     [1] rod
     *[other] rods
 }
+stack-brass-rods = {$amount ->
+    [1] brass rod
+    *[other] brass rods
+}
 stack-meat-sheet = {$amount ->
     [1] meat sheet
     *[other] meat sheets
