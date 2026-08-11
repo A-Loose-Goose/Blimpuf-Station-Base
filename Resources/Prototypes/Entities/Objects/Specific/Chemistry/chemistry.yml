@@ -193,7 +193,6 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 60
         reagents:
         - ReagentId: Cryoxadone
           Quantity: 60
@@ -208,7 +207,6 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 60
         reagents:
         - ReagentId: Arithrazine
           Quantity: 60
@@ -223,7 +221,6 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 60
         reagents:
         - ReagentId: Sigynate
           Quantity: 60
@@ -238,7 +235,6 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 60
         reagents:
         - ReagentId: Phalanximine
           Quantity: 60
@@ -253,7 +249,6 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 60
         reagents:
         - ReagentId: Diphenhydramine
           Quantity: 60
@@ -268,7 +263,6 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 60
         reagents:
         - ReagentId: Bruizine
           Quantity: 60
@@ -283,7 +277,6 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 60
         reagents:
         - ReagentId: Lacerinol
           Quantity: 60

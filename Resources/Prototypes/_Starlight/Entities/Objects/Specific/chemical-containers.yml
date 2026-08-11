@@ -278,7 +278,6 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 90
         reagents:
         - ReagentId: Cryoxadone
           Quantity: 90
@@ -293,7 +292,6 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 90
         reagents:
         - ReagentId: Doxarubixadone
           Quantity: 90
@@ -308,7 +306,6 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 90
         reagents:
         - ReagentId: Arcryox
           Quantity: 90
@@ -323,7 +320,6 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 90
         reagents:
         - ReagentId: Necrosol
           Quantity: 90
@@ -338,7 +334,6 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 90
         reagents:
         - ReagentId: Chronexaline
           Quantity: 90
@@ -353,7 +348,6 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 90
         reagents:
         - ReagentId: Aloxadone
           Quantity: 90
@@ -368,7 +362,6 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 90
         reagents:
         - ReagentId: Opporozidone
           Quantity: 90
