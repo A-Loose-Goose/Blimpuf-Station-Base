@@ -15,7 +15,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 100
+        maxVol: 90
   - type: Sprite
     sprite: Objects/Consumable/Drinks/generic_jug.rsi # fallback to generic plastic jug
   - type: TrashOnSolutionEmpty
@@ -51,7 +51,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 150
+        maxVol: 120
 
 # Small Plastic Bottles
 
@@ -85,7 +85,7 @@
       drink:
         reagents:
         - ReagentId: Cola
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-cola
   - type: Sprite
@@ -102,7 +102,7 @@
       drink:
         reagents:
         - ReagentId: SpaceMountainWind
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-space-mountain-wind
   - type: Sprite
@@ -119,7 +119,7 @@
       drink:
         reagents:
         - ReagentId: SpaceUp
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-space-up
   - type: Sprite
@@ -134,10 +134,9 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 100
         reagents:
         - ReagentId: SodaWater
-          Quantity: 100
+          Quantity: 90
   - type: Sprite
     sprite: Objects/Consumable/Drinks/sodawater-bottle.rsi
   - type: Label
@@ -152,10 +151,9 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 100
         reagents:
         - ReagentId: TonicWater
-          Quantity: 100
+          Quantity: 90
   - type: Sprite
     sprite: Objects/Consumable/Drinks/tonic-bottle.rsi
   - type: Label
@@ -170,10 +168,9 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 100
         reagents:
         - ReagentId: EnergyDrink
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-energy-drink
   # TODO new sprite
@@ -191,10 +188,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 300
+        maxVol: 240
         reagents:
         - ReagentId: Sugar
-          Quantity: 300
+          Quantity: 240
   - type: Label
     currentLabel: reagent-name-sugar
   # TODO new sprite
@@ -208,10 +205,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 300
+        maxVol: 240
         reagents:
         - ReagentId: LemonLime
-          Quantity: 300
+          Quantity: 240
   - type: Label
     currentLabel: reagent-name-lemon-lime
   # TODO new sprite
@@ -225,10 +222,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 150
+        maxVol: 120
         reagents:
         - ReagentId: Mead
-          Quantity: 150
+          Quantity: 120
   - type: Label
     currentLabel: reagent-name-mead
   # TODO new sprite
@@ -242,10 +239,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 300
+        maxVol: 240
         reagents:
         - ReagentId: Ice
-          Quantity: 300
+          Quantity: 240
   - type: Label
     currentLabel: reagent-name-ice
   # TODO new sprite
@@ -259,10 +256,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 300
+        maxVol: 240
         reagents:
         - ReagentId: CoconutWater
-          Quantity: 300
+          Quantity: 240
   - type: Label
     currentLabel: reagent-name-coconut-water
   # TODO new sprite
@@ -276,10 +273,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 300
+        maxVol: 240
         reagents:
         - ReagentId: Coffee
-          Quantity: 300
+          Quantity: 240
   - type: Label
     currentLabel: reagent-name-coffee
   # TODO new sprite
@@ -293,10 +290,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 300
+        maxVol: 240
         reagents:
         - ReagentId: Tea
-          Quantity: 300
+          Quantity: 240
   - type: Label
     currentLabel: reagent-name-tea
   # TODO new sprite
@@ -310,10 +307,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 300
+        maxVol: 240
         reagents:
         - ReagentId: GreenTea
-          Quantity: 300
+          Quantity: 240
   - type: Label
     currentLabel: reagent-name-green-tea
   # TODO new sprite
@@ -327,10 +324,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 300
+        maxVol: 240
         reagents:
         - ReagentId: IcedTea
-          Quantity: 300
+          Quantity: 240
   - type: Label
     currentLabel: reagent-name-iced-tea
   # TODO new sprite
@@ -344,10 +341,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 300
+        maxVol: 240
         reagents:
         - ReagentId: DrGibb
-          Quantity: 300
+          Quantity: 240
   - type: Label
     currentLabel: reagent-name-dr-gibb
   # TODO new sprite
@@ -361,10 +358,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 300
+        maxVol: 240
         reagents:
         - ReagentId: RootBeer
-          Quantity: 300
+          Quantity: 240
   - type: Label
     currentLabel: reagent-name-root-beer
   # TODO new sprite
@@ -378,10 +375,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 300
+        maxVol: 240
         reagents:
         - ReagentId: JuiceWatermelon
-          Quantity: 300
+          Quantity: 240
   - type: Label
     currentLabel: reagent-name-juice-watermelon
   # TODO new sprite

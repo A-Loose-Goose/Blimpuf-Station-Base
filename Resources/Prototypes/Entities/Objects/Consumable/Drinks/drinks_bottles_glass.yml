@@ -17,7 +17,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 100
+        maxVol: 90
   - type: Sprite
     sprite: Objects/Consumable/Drinks/alco-bottle.rsi # fallback
   - type: Tool
@@ -62,7 +62,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 50
+        maxVol: 60
   - type: Item
     size: Small
   - type: Sprite
@@ -83,7 +83,7 @@
       drink:
         reagents:
         - ReagentId: Absinthe
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-absinthe
   - type: Sprite
@@ -100,7 +100,7 @@
       drink:
         reagents:
         - ReagentId: BlueCuracao
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-blue-curacao
   - type: Sprite
@@ -124,7 +124,7 @@
       drink:
         reagents:
         - ReagentId: Nothing
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-nothing
   - type: Sprite
@@ -141,7 +141,7 @@
       drink:
         reagents:
         - ReagentId: Champagne
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-champagne
   - type: Sprite
@@ -162,7 +162,7 @@
       drink:
         reagents:
         - ReagentId: Cognac
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-cognac
   - type: Sprite
@@ -179,7 +179,7 @@
       drink:
         reagents:
         - ReagentId: Grenadine
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-grenadine
   - type: Sprite
@@ -203,7 +203,7 @@
       drink:
         reagents:
         - ReagentId: Gin
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-gin
   - type: Sprite
@@ -220,7 +220,7 @@
       drink:
         reagents:
         - ReagentId: Gildlager
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-gildlager
   - type: Sprite
@@ -237,7 +237,7 @@
       drink:
         reagents:
         - ReagentId: CoffeeLiqueur
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-coffeeliqueur
   - type: Sprite
@@ -254,7 +254,7 @@
       drink:
         reagents:
         - ReagentId: MelonLiquor
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-melon-liquor
   - type: Sprite
@@ -278,7 +278,7 @@
       drink:
         reagents:
         - ReagentId: Patron
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-patron
   - type: Sprite
@@ -295,7 +295,7 @@
       drink:
         reagents:
         - ReagentId: PoisonWine
-          Quantity: 100
+          Quantity: 90
   - type: Sprite
     sprite: Objects/Consumable/Drinks/pwinebottle.rsi
   - type: Tag
@@ -314,7 +314,7 @@
       drink:
         reagents:
         - ReagentId: Rum
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-rum
   - type: Sprite
@@ -331,7 +331,7 @@
       drink:
         reagents:
         - ReagentId: Tequila
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-tequila
   - type: Sprite
@@ -348,7 +348,7 @@
       drink:
         reagents:
         - ReagentId: Vermouth
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-vermouth
   - type: Sprite
@@ -365,7 +365,7 @@
       drink:
         reagents:
         - ReagentId: Vodka
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-vodka
   - type: Sprite
@@ -382,7 +382,7 @@
       drink:
         reagents:
         - ReagentId: Whiskey
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-whiskey
   - type: Sprite
@@ -399,7 +399,7 @@
       drink:
         reagents:
         - ReagentId: Wine
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-wine
   - type: Sprite
@@ -420,10 +420,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 150
+        maxVol: 120
         reagents:
         - ReagentId: Beer
-          Quantity: 150
+          Quantity: 120
   - type: Label
     currentLabel: reagent-name-beer
   - type: Sprite
@@ -446,10 +446,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 150
+        maxVol: 120
         reagents:
         - ReagentId: Ale
-          Quantity: 150
+          Quantity: 120
   - type: Label
     currentLabel: reagent-name-ale
   - type: Sprite
@@ -473,7 +473,7 @@
       drink:
         reagents:
         - ReagentId: Beer
-          Quantity: 50
+          Quantity: 60
   - type: Label
     currentLabel: reagent-name-beer
   - type: Sprite
@@ -497,7 +497,7 @@
       drink:
         reagents:
         - ReagentId: Ale
-          Quantity: 50
+          Quantity: 60
   - type: Label
     currentLabel: reagent-name-ale
   - type: Sprite
@@ -518,7 +518,7 @@
       drink:
         reagents:
         - ReagentId: Sake
-          Quantity: 50
+          Quantity: 60
   - type: Label
     currentLabel: reagent-name-sake
   - type: Sprite
