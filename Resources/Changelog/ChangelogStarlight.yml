@@ -4567,5 +4567,15 @@ Entries:
   id: 10201
   time: '2026-08-12T02:28:22.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/102
+- author: LadyLiliana
+  changes:
+  - message: Fixed sprite layer Errors when placing construction ghosts.
+    type: Fix
+  - message: Fixed construction ghosts for the AI core being able to rotate when they
+      should not.
+    type: Fix
+  id: 10401
+  time: '2026-08-12T18:51:10.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/104
 Order: -1
 
