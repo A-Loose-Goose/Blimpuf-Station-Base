@@ -76,8 +76,10 @@ namespace Content.Client.Construction
             // Fix per-layer/sprite Offset being lost by manually applying it to the ghost layers directly.
             if (proto.TryGetComponent<SpriteComponent>(out var sprite, _entityManager.ComponentFactory)
                 && manager.CurrentPlacementOverlayEntity is { } overlay
-                && _entityManager.TryGetComponent<SpriteComponent>(overlay, out var overlaySprite))
+                && _entityManager.TryGetComponent<SpriteComponent>(overlay, out var overlaySprite)
+                && overlaySprite.AllLayers.Count() == sprite.AllLayers.Count())
             {
+                //if (overlaySprite.AllLayers.Count() == sprite.AllLayers.Count()) // Fix to stop Errors in the Log, by verifiying that the layers match
                 var i = 0;
 
                 foreach (var layer in sprite.AllLayers)
