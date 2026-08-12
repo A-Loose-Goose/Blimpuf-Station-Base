@@ -95,7 +95,7 @@
       state: rgeneric
     - type: Construction
       graph: BrassGirder
-      node: brassreinforcedWall
+      node: reinforcedbrassWall
     - type: Damageable
       damageContainer: StructuralInorganic
       damageModifierSet: StructuralMetallicStrong
