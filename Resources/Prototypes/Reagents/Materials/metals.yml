@@ -70,3 +70,17 @@
     hard: 3
     density: 7
     chemical: 6
+
+- type: material # Blimpuf, pulls from plasteel stats
+  id: Plabrass
+  stackEntity: SheetPlabrass1
+  name: materials-plabrass
+  icon: { sprite: Objects/Materials/Sheets/metal.rsi, state: plabrass }
+  color: "#a17220"
+  price: 0.5
+  properties:
+    electrical: 5
+    thermal: 6
+    hard: 3
+    density: 7
+    chemical: 6
