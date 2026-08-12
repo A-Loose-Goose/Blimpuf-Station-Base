@@ -24,6 +24,16 @@
               amount: 2
               doAfter: 1
 
+        - to: brassGrilleDiagonal
+          completed:
+            - !type:AdminLog
+              message: "Construction"
+              impact: High
+          steps:
+            - material: BrassRod
+              amount: 2
+              doAfter: 1
+
     - node: grilleDiagonal
       entity: GrilleDiagonal
       edges:
