@@ -53,3 +53,18 @@
           steps:
             - tool: Cutting
               doAfter: 0.25
+
+    - node: brassGrilleDiagonal
+      entity: BrassGrilleDiagonal
+      edges:
+        - to: start
+          completed:
+            - !type:AdminLog
+              message: "A grille was cut"
+            - !type:SpawnPrototype
+              prototype: PartRodBrass1
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Cutting
+              doAfter: 0.25

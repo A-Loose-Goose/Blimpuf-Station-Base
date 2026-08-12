@@ -246,6 +246,19 @@
   placementMode: SnapgridCenter
   canRotate: false
 
+- type: construction # Blimpuf
+  id: BrassGrille
+  graph: BrassGrille
+  startNode: start
+  targetNode: brassGrille
+  category: construction-category-structures
+  conditions:
+    - !type:TileNotBlocked
+      failIfSpace: false
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+
 - type: construction
   id: GrilleDiagonal
   graph: GrilleDiagonal
@@ -263,6 +276,18 @@
   graph: GrilleDiagonal
   startNode: start
   targetNode: clockworkGrilleDiagonal
+  category: construction-category-structures
+  conditions:
+    - !type:TileNotBlocked
+      failIfSpace: false
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction # Blimpuf
+  id: BrassGrilleDiagonal
+  graph: GrilleDiagonal
+  startNode: start
+  targetNode: brassGrilleDiagonal
   category: construction-category-structures
   conditions:
     - !type:TileNotBlocked
@@ -1382,7 +1407,7 @@
   conditions:
   - !type:TileNotBlocked
 
-    # Blimpuf
+# Blimpuf
 
 - type: construction
   id: BrassGirder
