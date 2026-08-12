@@ -76,23 +76,24 @@ namespace Content.Client.Construction
             // Fix per-layer/sprite Offset being lost by manually applying it to the ghost layers directly.
             if (proto.TryGetComponent<SpriteComponent>(out var sprite, _entityManager.ComponentFactory)
                 && manager.CurrentPlacementOverlayEntity is { } overlay
-                && _entityManager.TryGetComponent<SpriteComponent>(overlay, out var overlaySprite)
-                && overlaySprite.AllLayers.Count() == sprite.AllLayers.Count())
+                && _entityManager.TryGetComponent<SpriteComponent>(overlay, out var overlaySprite))
             {
-                //if (overlaySprite.AllLayers.Count() == sprite.AllLayers.Count()) // Fix to stop Errors in the Log, by verifiying that the layers match
-                var i = 0;
-
-                foreach (var layer in sprite.AllLayers)
+                if (overlaySprite.AllLayers.Count() == sprite.AllLayers.Count()) // Fix to stop Errors in the Log, by verifiying that the layers match
                 {
-                    if (layer.ActualRsi?.Path == null || layer.RsiState.Name == null)
-                        continue;
+                    var i = 0;
 
-                    _spriteSystem.LayerSetOffset((overlay, overlaySprite), i, sprite.Offset + ((SpriteComponent.Layer)layer).Offset);
-                    i++;
+
+                    foreach (var layer in sprite.AllLayers)
+                    {
+                        if (layer.ActualRsi?.Path == null || layer.RsiState.Name == null)
+                            continue;
+
+                        _spriteSystem.LayerSetOffset((overlay, overlaySprite), i, sprite.Offset + ((SpriteComponent.Layer)layer).Offset);
+                        i++;
+                    }
                 }
-
                 // Fix NoRotation also being ignored.
-                overlaySprite.NoRotation = sprite.NoRotation;
+                sprite.NoRotation = overlaySprite.NoRotation;
             }
             // Starlight END
         }
