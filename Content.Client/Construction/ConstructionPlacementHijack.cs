@@ -91,8 +91,10 @@ namespace Content.Client.Construction
                         _spriteSystem.LayerSetOffset((overlay, overlaySprite), i, sprite.Offset + ((SpriteComponent.Layer)layer).Offset);
                         i++;
                     }
+                    // Fix NoRotation also being ignored (For TallTanks).
+                    overlaySprite.NoRotation = sprite.NoRotation;
                 }
-                // Fix NoRotation also being ignored.
+                // Fix NoRotation also being ignored (for AI).
                 sprite.NoRotation = overlaySprite.NoRotation;
             }
             // Starlight END
