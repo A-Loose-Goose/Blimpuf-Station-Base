@@ -84,14 +84,14 @@
 
 - type: entity # Blimpuf
   parent: CrateGenericSteel
-  id: CrateMaterialPlabrass
-  name: plabrass crate
-  description: 30 sheets of plabrass.
+  id: CrateMaterialBrassma
+  name: brassma crate
+  description: 30 sheets of brassma.
   components:
     - type: EntityTableContainerFill
       containers:
         entity_storage:
-          id: SheetPlabrass
+          id: SheetBrassma
 
 - type: entity
   parent: CratePlasma

@@ -152,7 +152,7 @@
     - type: StaticPrice
       price: 0
     - type: StackPrice
-      price: 7.5
+      price: 15
     - type: Extractable
       grindableSolutionName: brassrod
     - type: SolutionContainerManager

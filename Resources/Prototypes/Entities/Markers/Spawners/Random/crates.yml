@@ -61,7 +61,7 @@
     - id: CrateMaterialPlastic
     - id: CrateMaterialWood
     - id: CrateMaterialPlasteel
-    - id: CrateMaterialPlabrass # Blimpuf
+    - id: CrateMaterialBrassma # Blimpuf
     - id: CrateMaterialBasicResource
     - id: CrateMaterialRandom
       weight: 4

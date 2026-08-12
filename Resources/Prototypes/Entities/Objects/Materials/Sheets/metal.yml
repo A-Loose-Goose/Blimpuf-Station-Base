@@ -240,34 +240,34 @@
 # Blimpuf
 - type: entity
   parent: SheetMetalBase
-  id: SheetPlabrass
-  name: plabrass
+  id: SheetBrassma
+  name: brassma
   suffix: Full
   components:
     - type: Material
     - type: PhysicalComposition
       materialComposition:
-        Plabrass: 100
+        Brassma: 100
     - type: Stack
-      stackType: Plabrass
+      stackType: Brassma
       baseLayer: base
       layerStates:
-        - plabrass
-        - plabrass_2
-        - plabrass_3
+        - brassma
+        - brassma_2
+        - brassma_3
     - type: Sprite
-      state: plabrass_3
+      state: brassma_3
       layers:
-        - state: plabrass_3
+        - state: brassma_3
           map: ["base"]
     - type: Item
-      heldPrefix: plabrass
+      heldPrefix: brassma
     - type: Appearance
     - type: Extractable
-      grindableSolutionName: plabrass
+      grindableSolutionName: brassma
     - type: SolutionContainerManager
       solutions:
-        plabrass:
+        brassma:
           reagents:
             - ReagentId: Plasma
               Quantity: 10
@@ -278,25 +278,25 @@
           canReact: false
 
 - type: entity
-  parent: SheetPlabrass
-  id: SheetPlabrass10
-  name: plabrass
+  parent: SheetBrassma
+  id: SheetBrassma10
+  name: brassma
   suffix: 10
   components:
     - type: Sprite
-      state: plabrass
+      state: brassma
     - type: Stack
-      stackType: Plabrass
+      stackType: Brassma
       count: 10
 
 - type: entity
-  parent: SheetPlabrass
-  id: SheetPlabrass1
-  name: plabrass
+  parent: SheetBrassma
+  id: SheetBrassma1
+  name: brassma
   suffix: Single
   components:
     - type: Sprite
-      state: plabrass
+      state: brassma
     - type: Stack
-      stackType: Plabrass
+      stackType: Brassma
       count: 1

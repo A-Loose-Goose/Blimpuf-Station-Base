@@ -11,7 +11,7 @@ materials-steel = steel
 materials-gold = gold
 materials-silver = silver
 materials-plasteel = plasteel
-materials-plabrass = plabrass
+materials-brassma = brassma
 
 # Other
 materials-biomass = biomass

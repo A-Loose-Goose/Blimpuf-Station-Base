@@ -48,7 +48,7 @@
           conditions:
             - !type:EntityAnchored { }
           steps:
-            - material: Plabrass
+            - material: Brassma
               amount: 2
               doAfter: 1
 
@@ -62,7 +62,7 @@
           conditions:
             - !type:EntityAnchored { }
           steps:
-            - material: Plabrass
+            - material: Brassma
               amount: 2
               doAfter: 1
 
@@ -95,7 +95,7 @@
         - to: reinforcedbrassgirder
           completed:
             - !type:SpawnPrototype
-              prototype: SheetPlabrass1
+              prototype: SheetBrassma1
               amount: 2
           steps:
             - tool: Cutting
