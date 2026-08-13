@@ -1187,6 +1187,30 @@
   conditions:
     - !type:TileNotBlocked
 
+- type: construction # Blimpuf
+  id: BrassWindoor
+  graph: Windoor
+  startNode: start
+  targetNode: windoorBrass
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction # Blimpuf
+  id: SecureBrassWindoor
+  graph: Windoor
+  startNode: start
+  targetNode: windoorBrassSecure
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
 #lighting
 - type: construction
   id: LightTubeFixture
