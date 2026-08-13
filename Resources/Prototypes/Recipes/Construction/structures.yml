@@ -337,12 +337,40 @@
   placementMode: SnapgridCenter
   canRotate: false
 
+- type: construction # Blimpuf
+  id: ReinforcedBrassWindow
+  graph: Window
+  startNode: start
+  targetNode: reinforcedBrassWindow
+  category: construction-category-structures
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+
 - type: construction
   id: ReinforcedWindowDiagonal
   name: construction-recipe-reinforced-window-diagonal
   graph: WindowDiagonal
   startNode: start
   targetNode: reinforcedWindowDiagonal
+  category: construction-category-structures
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction # Blimpuf
+  id: ReinforcedBrassWindowDiagonal
+  name: construction-recipe-reinforced-brass-window-diagonal
+  graph: WindowDiagonal
+  startNode: start
+  targetNode: reinforcedBrassWindowDiagonal
   category: construction-category-structures
   canBuildInImpassable: true
   conditions:
@@ -379,12 +407,40 @@
   placementMode: SnapgridCenter
   canRotate: false
 
+- type: construction # Blimpuf
+  id: BrassWindow
+  graph: Window
+  startNode: start
+  targetNode: brassWindow
+  category: construction-category-structures
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+
 - type: construction
   id: ClockworkWindowDiagonal
   name: construction-recipe-clockwork-window-diagonal
   graph: WindowDiagonal
   startNode: start
   targetNode: clockworkWindowDiagonal
+  category: construction-category-structures
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction # Blimpuf
+  id: BrassWindowDiagonal
+  name: construction-recipe-brass-window-diagonal
+  graph: WindowDiagonal
+  startNode: start
+  targetNode: brassWindowDiagonal
   category: construction-category-structures
   canBuildInImpassable: true
   conditions:
@@ -494,6 +550,32 @@
   graph: WindowDirectional
   startNode: start
   targetNode: windowClockworkDirectional
+  category: construction-category-structures
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction # Blimpuf
+  id: WindowBrassDirectional
+  graph: WindowDirectional
+  startNode: start
+  targetNode: windowBrassDirectional
+  category: construction-category-structures
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction # Blimpuf
+  id: WindowReinforcedDirectionalBrass
+  graph: WindowDirectional
+  startNode: start
+  targetNode: windowReinforcedBrassDirectional
   category: construction-category-structures
   canBuildInImpassable: true
   conditions:

@@ -157,7 +157,7 @@
       grindableSolutionName: brassrod
     - type: SolutionContainerManager
       solutions:
-        rod:
+        brassrod:
           reagents:
             - ReagentId: Copper
               Quantity: 4.5

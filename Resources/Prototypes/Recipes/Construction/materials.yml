@@ -30,6 +30,14 @@
   category: construction-category-materials
   objectType: Item
 
+- type: construction # Blimpuf
+  id: SheetReinforcedClockworkGlass
+  graph: Glass
+  startNode: start
+  targetNode: SheetReinforcedClockworkGlass
+  category: construction-category-materials
+  objectType: Item
+
 - type: construction
   id: SheetPGlass
   graph: Glass

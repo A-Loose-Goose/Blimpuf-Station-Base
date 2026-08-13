@@ -12,6 +12,7 @@ stack-plasma-glass = plasma glass
 stack-uranium = uranium
 stack-uranium-glass = uranium glass
 stack-clockwork-glass = clockwork glass
+stack-reinforced-clockwork-glass = reinforced clockwork glass
 stack-reinforced-plasma-glass = reinforced plasma glass
 stack-reinforced-uranium-glass = reinforced uranium glass
 stack-gunpowder = gunpowder
