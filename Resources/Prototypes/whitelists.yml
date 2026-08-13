@@ -14,8 +14,6 @@
     - !type:ConditionManualWhitelistMembership
       action: Allow
     - !type:BlimpufDiscordRolesCondition
-      roles:
-        - 1526329038573011315
       action: Allow
     - !type:ConditionAlwaysMatch
       action: Deny

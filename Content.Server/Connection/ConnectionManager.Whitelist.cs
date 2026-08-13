@@ -4,6 +4,7 @@ using Content.Server._Blimpuf.Discord;
 using Content.Server.Connection.Whitelist;
 using Content.Server.Connection.Whitelist.Conditions;
 using Content.Server.Database;
+using Content.Shared._Blimpuf.CCVar;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
 using Content.Shared.Players.PlayTimeTracking;
@@ -19,10 +20,29 @@ public sealed partial class ConnectionManager
     [Dependency] private IBlimpufDiscordRoleProvider _blimpufDiscordRoles = default!;
 
     private PlayerConnectionWhitelistPrototype[]? _whitelists;
+    private HashSet<ulong> _blimpufDiscordWhitelistRoles = [];
 
     private void InitializeWhitelist()
     {
         _cfg.OnValueChanged(CCVars.WhitelistPrototypeList, UpdateWhitelists, true);
+        _cfg.OnValueChanged(BlimpufCCVars.DiscordWhitelistRoles, UpdateBlimpufDiscordWhitelistRoles, true);
+    }
+
+    private void UpdateBlimpufDiscordWhitelistRoles(string roleIds)
+    {
+        var roles = new HashSet<ulong>();
+        foreach (var roleId in roleIds.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries))
+        {
+            if (ulong.TryParse(roleId, out var role))
+            {
+                roles.Add(role);
+                continue;
+            }
+
+            _sawmill.Warning("Ignoring invalid Discord whitelist role ID '{RoleId}'", roleId);
+        }
+
+        _blimpufDiscordWhitelistRoles = roles;
     }
 
     private void UpdateWhitelists(string s)
@@ -172,7 +192,10 @@ public sealed partial class ConnectionManager
         try
         {
             var snapshot = await _blimpufDiscordRoles.GetRolesAsync(userId);
-            return snapshot?.Roles.Any(condition.Roles.Contains) == true;
+                    if (condition.Roles.Count > 0)
+                return snapshot?.Roles.Any(condition.Roles.Contains) == true;
+
+            return snapshot?.Roles.Any(_blimpufDiscordWhitelistRoles.Contains) == true;
         }
         catch (Exception ex)
         {
