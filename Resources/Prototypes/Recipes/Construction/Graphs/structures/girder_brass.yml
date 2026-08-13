@@ -55,6 +55,17 @@
     - node: reinforcedbrassgirder
       entity: ReinforcedBrassGirder
       edges:
+        - to: brassgirder
+          completed:
+            - !type:SpawnPrototype
+                prototype: SheetBrassma1
+                amount: 2
+          conditions:
+            - !type:EntityAnchored { }
+          steps:
+            - tool: Cutting
+              doAfter: 2
+
         - to: reinforcedbrassWall
           completed:
             - !type:SnapToGrid
