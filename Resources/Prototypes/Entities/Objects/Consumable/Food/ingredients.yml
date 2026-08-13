@@ -15,7 +15,7 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 50
+        maxVol: 60
   - type: SolutionTransfer
     # This is potentially badly-handled due to 'drink opening',
     #  but it lets the flour be tampered with, refilled, etc.
@@ -35,6 +35,7 @@
     solution: food
   - type: TrashOnSolutionEmpty
     solution: food
+
 - type: entity
   abstract: true
   parent: ReagentContainerBase
@@ -104,10 +105,9 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 50
         reagents:
         - ReagentId: Flour
-          Quantity: 50
+          Quantity: 60
 
 - type: entity
   parent: [ReagentPacketBase, ItemHeftyBase]
@@ -120,10 +120,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 20
+        maxVol: 30
         reagents:
         - ReagentId: Flour
-          Quantity: 20
+          Quantity: 30
 
 - type: entity
   parent: ReagentPacketBase
@@ -147,7 +147,7 @@
       food:
         reagents:
         - ReagentId: Cornmeal
-          Quantity: 50
+          Quantity: 60
 
 - type: entity
   parent: ReagentPacketBase
@@ -160,10 +160,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 20
+        maxVol: 30
         reagents:
         - ReagentId: Cornmeal
-          Quantity: 20
+          Quantity: 30
 
 - type: entity
   parent: ReagentPacketBase
@@ -187,7 +187,7 @@
       food:
         reagents:
         - ReagentId: Rice
-          Quantity: 50
+          Quantity: 60
 
 - type: entity
   parent: ReagentPacketBase
@@ -200,10 +200,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 20
+        maxVol: 30
         reagents:
         - ReagentId: Rice
-          Quantity: 20
+          Quantity: 30
 
 - type: entity
   parent: ReagentPacketBase
@@ -227,7 +227,7 @@
       food:
         reagents:
         - ReagentId: Sugar
-          Quantity: 50
+          Quantity: 60
 
 - type: entity
   parent: ReagentPacketBase
@@ -240,10 +240,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 20
+        maxVol: 30
         reagents:
         - ReagentId: Sugar
-          Quantity: 20
+          Quantity: 30
 
 # Misc
 
@@ -267,10 +267,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 20
+        maxVol: 30
         reagents:
         - ReagentId: OilOlive
-          Quantity: 20
+          Quantity: 30
   - type: Edible
     edible: Drink # slurping sounds!
   #Starlight start
@@ -303,10 +303,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 50 # you always need more mayo
+        maxVol: 30
         reagents:
         - ReagentId: Mayo
-          Quantity: 50
+          Quantity: 30
   - type: Tag
     tags:
       - Mayo

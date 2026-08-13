@@ -64,7 +64,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 270
+        maxVol: 180
 
 - type: entity
   id: VialCase
@@ -155,7 +155,7 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 150
+        maxVol: 120
 
 - type: entity
   name: light beaker
