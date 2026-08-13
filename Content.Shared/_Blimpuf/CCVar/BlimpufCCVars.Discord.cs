@@ -13,4 +13,7 @@ public sealed partial class BlimpufCCVars
 
     public static readonly CVarDef<int> DiscordRolesApiTimeout =
         CVarDef.Create("blimpuf.discord_roles.api_timeout", 5, CVar.SERVERONLY);
+
+    public static readonly CVarDef<string> DiscordWhitelistRoles =
+        CVarDef.Create("blimpuf.discord_roles.whitelist_roles", string.Empty, CVar.SERVERONLY);
 }
