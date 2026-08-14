@@ -197,7 +197,7 @@
               sound:
                 collection: MetalBreak
     - type: StaticPrice
-      price: 120
+      price: 60
 
 - type: entity
   id: ReinforcedBrassGirder
