@@ -30,6 +30,24 @@
         amount: 4
         doAfter: 2
 
+    - to: assemblyBrass # Blimpuf
+      completed:
+        - !type:SetAnchor
+          value: false
+      steps:
+        - material: Brass
+          amount: 4
+          doAfter: 2
+
+    - to: assemblyBrassSecure # Blimpuf
+      completed:
+        - !type:SetAnchor
+          value: false
+      steps:
+        - material: Brassma
+          amount: 4
+          doAfter: 2
+
   - node: assembly
     entity: WindoorAssembly
     actions:
@@ -299,6 +317,36 @@
       - tool: Anchoring
         doAfter: 1
 
+  #Secure brass windoor nodes - Blimpuf
+  - node: assemblyBrassSecure
+    entity: BrassWindoorAssemblySecure
+    actions:
+      - !type:SnapToGrid { }
+      - !type:SetAnchor { }
+    edges:
+      #to secure
+      - to: glassBrassSecure
+        conditions:
+          - !type:EntityAnchored { }
+        steps:
+          - material: ReinforcedClockworkGlass
+            amount: 5
+            doAfter: 1
+
+      #back to start
+      - to: start
+        conditions:
+          - !type:EntityAnchored
+            anchored: false
+        completed:
+          - !type:SpawnPrototype
+            prototype: SheetBrassma1
+            amount: 4
+          - !type:DeleteEntity { }
+        steps:
+          - tool: Welding
+            doAfter: 10
+
   #secure windoor nodes
   - node: assemblySecure
     entity: WindoorAssemblySecure
@@ -532,6 +580,192 @@
       steps:
       - tool: Anchoring
         doAfter: 4
+
+#Brass - Blimpuf
+  - node: assemblyBrass
+    entity: BrassWindoorAssembly
+    actions:
+      - !type:SnapToGrid { }
+      - !type:SetAnchor { }
+    edges:
+      - to: glassBrass
+        conditions:
+          - !type:EntityAnchored { }
+        steps:
+          - material: ClockworkGlass
+            amount: 5
+            doAfter: 1
+      - to: start
+        conditions:
+          - !type:EntityAnchored
+            anchored: false
+        completed:
+          - !type:SpawnPrototype
+            prototype: SheetBrass1
+            amount: 4
+          - !type:DeleteEntity { }
+        steps:
+          - tool: Welding
+            doAfter: 10
+
+  - node: glassBrass
+    entity: BrassWindoorAssembly
+    edges:
+      - to: wiredBrass
+        conditions:
+          - !type:EntityAnchored { }
+        steps:
+          - material: Cable
+            amount: 5
+            doAfter: 1
+      - to: assemblyBrass
+        conditions:
+          - !type:EntityAnchored
+            anchored: false
+        completed:
+          - !type:SpawnPrototype
+            prototype: SheetClockworkGlass1
+            amount: 5
+        steps:
+          - tool: Screwing
+            doAfter: 4
+
+  - node: wiredBrass
+    entity: BrassWindoorAssembly
+    edges:
+      - to: electronicsBrass
+        conditions:
+          - !type:EntityAnchored { }
+        steps:
+          - tag: DoorElectronics
+            store: board
+            name: construction-graph-tag-door-electronics-circuit-board
+            icon:
+              sprite: "Objects/Misc/module.rsi"
+              state: "door_electronics"
+            doAfter: 1
+      - to: glassBrass
+        completed:
+          - !type:SpawnPrototype
+            prototype: CableApcStack1
+            amount: 5
+        steps:
+          - tool: Cutting
+            doAfter: 3
+
+  - node: electronicsBrass
+    entity: BrassWindoorAssembly
+    edges:
+      - to: windoorBrass
+        conditions:
+          - !type:EntityAnchored { }
+        steps:
+          - tool: Screwing
+            doAfter: 4
+
+  - node: windoorBrass
+    entity: WindoorBrass
+    edges:
+      - to: wiredClockwork
+        conditions:
+          - !type:EntityAnchored {}
+          - !type:DoorBolted
+            value: false
+          - !type:WirePanel {}
+          - !type:AllWiresCut
+        completed:
+          - !type:EmptyAllContainers
+            pickup: true
+            emptyAtUser: true
+        steps:
+          - tool: Anchoring
+            doAfter: 4
+
+    #secure brass node - Blimpuf
+  - node: glassBrassSecure
+    entity: BrassWindoorAssemblySecure
+    edges:
+      - to: wiredBrassSecure
+        conditions:
+          - !type:EntityAnchored { }
+        steps:
+          - material: Cable
+            amount: 5
+            doAfter: 1
+      - to: assemblyBrassSecure
+        conditions:
+          - !type:EntityAnchored
+            anchored: false
+        completed:
+          - !type:SpawnPrototype
+            prototype: SheetReinforcedClockworkGlass1
+            amount: 5
+        steps:
+          - tool: Screwing
+            doAfter: 4
+
+  - node: wiredBrassSecure
+    entity: BrassWindoorAssemblySecure
+    edges:
+      - to: electronicsBrassSecure
+        conditions:
+          - !type:EntityAnchored { }
+        steps:
+          - component: DoorElectronics
+            store: board
+            name: construction-graph-component-door-electronics-circuit-board
+            icon:
+              sprite: "Objects/Misc/module.rsi"
+              state: "door_electronics"
+            doAfter: 1
+      - to: glassBrassSecure
+        completed:
+          - !type:SpawnPrototype
+            prototype: CableApcStack1
+            amount: 5
+        steps:
+          - tool: Cutting
+            doAfter: 3
+
+  - node: electronicsBrassSecure
+    entity: BrassWindoorAssemblySecure
+    edges:
+      - to: windoorBrassSecure
+        conditions:
+          - !type:EntityAnchored { }
+        steps:
+          - tool: Screwing
+            doAfter: 4
+
+  - node: windoorBrassSecure
+    entity: WindoorSecureBrass
+    doNotReplaceInheritingEntities: true
+    actions:
+      - !type:SetWiresPanelSecurity
+        wiresAccessible: true
+    edges:
+      - to: wiredBrassSecure
+        conditions:
+          - !type:EntityAnchored {}
+          - !type:DoorBolted
+            value: false
+          - !type:WirePanel {}
+          - !type:AllWiresCut
+        completed:
+          - !type:EmptyAllContainers
+            pickup: true
+            emptyAtUser: true
+        steps:
+          - tool: Anchoring
+            doAfter: 4
+
+      - to: medSecurityUnfinished
+        conditions:
+          - !type:WirePanel {}
+        steps:
+          - material: Brass
+            amount: 2
+            doAfter: 2
 
   #secure plasma node
   - node: pglassSecure

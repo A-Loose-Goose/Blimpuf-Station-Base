@@ -8,6 +8,11 @@
     - Railings
 
 - type: quickConstructionCategory
+  id: BrassRod
+  constructionEntries:
+    - Grille
+
+- type: quickConstructionCategory
   id: Railings
   name: quickconstruction-category-railing
   icon: {sprite: Structures/Walls/railing.rsi, state: side}

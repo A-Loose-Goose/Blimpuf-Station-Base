@@ -60,6 +60,18 @@
               amount: 2
               doAfter: 3
 
+        - to: brassWindow # Blimpuf
+          steps:
+            - material: ClockworkGlass
+              amount: 2
+              doAfter: 3
+
+        - to: reinforcedBrassWindow # Blimpuf
+          steps:
+            - material: ReinforcedClockworkGlass
+              amount: 2
+              doAfter: 4
+
     - node: window
       entity: Window
       edges:
@@ -388,6 +400,52 @@
               prototype: SheetClockworkGlass1
               amount: 2
             - !type:DeleteEntity {}
+          steps:
+            - tool: Welding
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 2
+            - tool: Prying
+              doAfter: 3
+            - tool: Welding
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 2
+            - tool: Anchoring
+              doAfter: 3
+
+    - node: brassWindow
+      entity: BrassWindow
+      edges:
+        - to: start
+          completed:
+            - !type:GivePrototype
+              prototype: SheetClockworkGlass1
+              amount: 2
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Welding
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 2
+            - tool: Prying
+              doAfter: 3
+            - tool: Welding
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 2
+            - tool: Anchoring
+              doAfter: 3
+
+    - node: reinforcedBrassWindow
+      entity: ReinforcedBrassWindow
+      edges:
+        - to: start
+          completed:
+            - !type:GivePrototype
+              prototype: SheetReinforcedClockworkGlass1
+              amount: 2
+            - !type:DeleteEntity { }
           steps:
             - tool: Welding
               doAfter: 5

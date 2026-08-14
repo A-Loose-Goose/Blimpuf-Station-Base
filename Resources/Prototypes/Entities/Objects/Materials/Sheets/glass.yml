@@ -546,7 +546,7 @@
   parent: [SheetGlassBase, BaseQuickConstructionMaterial] # DEN add quick construction parent
   id: SheetClockworkGlass
   name: clockwork glass
-  description: A sheet of brass-hardened glass, primarily used by clockwork enthusiasts and remnants of Ratvarian cults.
+  description: A sheet of brass-hardened glass.
   suffix: Full
   components:
     - type: PhysicalComposition
@@ -620,4 +620,79 @@
       state: cglass
     - type: Stack
       stackType: ClockworkGlass
+      count: 1
+
+- type: entity # Blimpuf
+  parent: [SheetGlassBase, BaseQuickConstructionMaterial] # DEN add quick construction parent
+  id: SheetReinforcedClockworkGlass
+  name: reinforced clockwork glass
+  description: A sheet of brass-hardened glass reinforced with brass rods.
+  suffix: Full
+  components:
+    - type: PhysicalComposition
+      materialComposition:
+        ReinforcedClockworkGlass: 100
+    - type: Stack
+      stackType: ReinforcedClockworkGlass
+      baseLayer: base
+      layerStates:
+        - rcglass
+        - rcglass_2
+        - rcglass_3
+    - type: Sprite
+      state: rcglass_3
+      layers:
+        - state: rcglass_3
+          map: ["base"]
+    - type: Item
+      heldPrefix: rcglass
+    - type: Construction
+      graph: Glass
+      node: SheetReinforcedClockworkGlass
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+        - trigger: !type:DamageTrigger
+            damage: 50
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: GlassBreak
+                params:
+                  volume: -4
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ShardGlassClockwork:
+                  min: 1
+                  max: 1
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: Extractable
+      grindableSolutionName: reinforcedclockworkglass
+    - type: SolutionContainerManager
+      solutions:
+        rcglass:
+          reagents:
+            - ReagentId: Silicon
+              Quantity: 10
+            - ReagentId: Zinc
+              Quantity: 3.3
+            - ReagentId: Copper
+              Quantity: 6.7
+          canReact: false
+
+- type: entity # Blimpuf
+  parent: SheetReinforcedClockworkGlass
+  id: SheetReinforcedClockworkGlass1
+  name: reinforced clockwork glass
+  suffix: Single
+  components:
+    - type: Sprite
+      state: rcglass
+    - type: Stack
+      stackType: ReinforcedClockworkGlass
       count: 1
