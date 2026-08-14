@@ -4577,5 +4577,23 @@ Entries:
   id: 10401
   time: '2026-08-12T18:51:10.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/104
+- author: ItsMaitake
+  changes:
+  - message: Brass girders, reinforced brass girders, brass grilles, brass windoors,
+      and secure brass windoors have been added.
+    type: Add
+  - message: Construction recipes for all brass entities have been added.
+    type: Add
+  - message: A new material purchasable from cargo called Brassma, which is as strong
+      as Plasteel, used in the construction of reinforced brass walls.
+    type: Add
+  - message: A new material called Reinforced Clockwork Glass has been added, which
+      is crafted from Clockwork Glass and Brass Rods.
+    type: Add
+  - message: Clockwork glass now falls in line with other glass textures.
+    type: Tweak
+  id: 10301
+  time: '2026-08-14T01:11:35.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/103
 Order: -1
 
