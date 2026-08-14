@@ -4603,5 +4603,13 @@ Entries:
   id: 10601
   time: '2026-08-14T02:21:53.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/106
+- author: ItsMaitake
+  changes:
+  - message: Available jobs on station have been balanced around 90 player maximum
+      population.
+    type: Tweak
+  id: 10701
+  time: '2026-08-14T19:25:45.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/107
 Order: -1
 
