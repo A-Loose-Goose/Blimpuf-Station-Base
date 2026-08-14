@@ -37,31 +37,31 @@
             Performer: [ 2, 2 ]
             #Engineering
             AtmosphericTechnician: [ 3, 3 ]
-            StationEngineer: [ 4, 4 ]
-            TechnicalAssistant: [ 4, 4 ]
+            StationEngineer: [ 4, 5 ]
+            TechnicalAssistant: [ 2, 3 ]
             #Medical
             Chemist: [ 2, 2 ]
-            MedicalDoctor: [ 4, 4 ]
+            MedicalDoctor: [ 5, 5 ]
             Paramedic: [ 1, 1 ]
-            MedicalIntern: [ 4, 4 ]
+            MedicalIntern: [ 2, 3 ]
             Psychologist: [ 1, 1 ]
             Surgeon: [ 1, 1 ]
             #Science
             Scientist: [ 4, 4 ]
-            Roboticist: [ 1, 1 ]
-            ResearchAssistant: [ 4, 4 ]
+            Roboticist: [ 1, 2 ]
+            ResearchAssistant: [ 2, 3 ]
             #Security
             Warden: [ 1, 1 ]
             DutyOfficer: [ 1, 1 ]
-            SecurityOfficer: [ 5, 5 ]
+            SecurityOfficer: [ 5, 6 ]
             Detective: [ 1, 1 ]
-            SecurityCadet: [ 4, 4 ] #intern, exclude from dept count
+            SecurityCadet: [ 2, 3 ] #intern, exclude from dept count
             Lawyer: [ 2, 2 ]
             Brigmedic: [ 1, 1 ]
             #Supply
             SalvageLead: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
-            MiningSpecialist: [ 3, 3 ]
+            MiningSpecialist: [ 2, 3 ]
             MailTech: [ 1, 2 ]
             CargoTechnician: [ 3, 3 ]
             #Civilian
