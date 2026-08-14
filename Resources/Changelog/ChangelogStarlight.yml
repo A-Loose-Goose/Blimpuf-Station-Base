@@ -4611,5 +4611,12 @@ Entries:
   id: 10701
   time: '2026-08-14T19:25:45.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/107
+- author: ItsMaitake
+  changes:
+  - message: Remaining SEC red guns are now blue.
+    type: Tweak
+  id: 10801
+  time: '2026-08-14T20:20:25.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/108
 Order: -1
 
