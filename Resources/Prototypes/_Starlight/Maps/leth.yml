@@ -27,24 +27,23 @@
             Reporter: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             Lawyer: [ 1, 1 ]
-            #Boxer: [ 1, 2 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 1, 2 ]
             StationEngineer: [ 2, 4 ]
-            TechnicalAssistant: [ 0, 6 ]
+            TechnicalAssistant: [ 1, 2 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 1, 2 ]
             MedicalDoctor: [ 3, 6 ]
-            MedicalIntern: [ 0, 3 ]
+            MedicalIntern: [ 1, 2 ]
             Paramedic: [ 1, 2 ]
             Surgeon: [ 1, 1 ]
             Psychologist: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
-            Scientist: [ 2, 6 ]
-            ResearchAssistant: [ 0, 3 ]
+            Scientist: [ 2, 4 ]
+            ResearchAssistant: [ 1, 2 ]
             Roboticist: [ 1, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
@@ -58,8 +57,8 @@
             Quartermaster: [ 1, 1 ]
             SalvageLead: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
-            MiningSpecialist: [ 3, 3 ]
-            CargoTechnician: [ 3, 6 ]
+            MiningSpecialist: [ 2, 2 ]
+            CargoTechnician: [ 3, 5 ]
             MailTech: [ 1, 2 ]
             #civilian
             Assistant: [ -1, -1 ]
@@ -70,7 +69,7 @@
             Boxer: [ 2, 2 ]
             #silicon
             StationAi: [ 1, 1 ]
-            Borg: [ 3, 6 ]
+            Borg: [ 3, 5 ]
             #law
             Magistrate: [ 1, 1 ]
             IAA: [ 1, 2 ]
