@@ -575,7 +575,7 @@
   - type: SolutionContainerManager
     solutions:
       injector:
-        maxVol: 100
+        maxVol: 90
   - type: Injector
     activeModeProtoId: BluespaceSyringeDrawMode
     allowedModes:

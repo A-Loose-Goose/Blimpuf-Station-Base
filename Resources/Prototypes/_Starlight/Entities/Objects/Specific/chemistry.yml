@@ -51,7 +51,7 @@
 - type: entity
   name: silver jug
   parent: Jug
-  description: Used to contain a ginormous amount of chemicals or solutions.
+  description: Used to contain a ginormous amount of chemicals or solutions. Features a wider spout for enhanced transfer speeds.
   id: SilverJug
   components:
   - type: Sprite
@@ -64,7 +64,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 180
+        maxVol: 240
+  - type: SolutionTransfer
+    maxTransferAmount: 120
+    canChangeTransferAmount: true
 
 - type: entity
   id: VialCase
@@ -128,7 +131,7 @@
 - type: entity
   name: silver beaker
   parent: BaseBeaker
-  description: Used to contain a huge amount of chemicals and solutions.
+  description: Used to contain a huge amount of chemicals and solutions. Features a wider spout for enhanced transfer speeds.
   id: SilverBeaker
   components:
   - type: Sprite
@@ -156,6 +159,9 @@
     solutions:
       beaker:
         maxVol: 120
+  - type: SolutionTransfer
+    maxTransferAmount: 120
+    canChangeTransferAmount: true
 
 - type: entity
   name: light beaker

@@ -52,7 +52,7 @@
   - type: SolutionTransfer
     transferAmount: 10
     minTransferAmount: 1
-    maxTransferAmount: 25
+    maxTransferAmount: 30
     canReceive: false
     canChangeTransferAmount: true
   - type: DrainableSolution
