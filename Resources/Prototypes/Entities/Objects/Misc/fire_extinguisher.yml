@@ -15,17 +15,17 @@
   - type: SolutionContainerManager
     solutions:
       spray:
-        maxVol: 100
+        maxVol: 90
         reagents:
         - ReagentId: Water
-          Quantity: 100
+          Quantity: 90
   - type: RefillableSolution
     solution: spray
   - type: DrainableSolution
     solution: spray
   - type: SolutionTransfer
-    maxTransferAmount: 100
-    transferAmount: 100
+    maxTransferAmount: 90
+    transferAmount: 90
   - type: UseDelay
   - type: Spray
     transferAmount: 10
@@ -84,10 +84,10 @@
   - type: SolutionContainerManager
     solutions:
       spray:
-        maxVol: 200
+        maxVol: 180
         reagents:
         - ReagentId: Water
-          Quantity: 200
+          Quantity: 180
 
 - type: entity
   name: extinguisher spray

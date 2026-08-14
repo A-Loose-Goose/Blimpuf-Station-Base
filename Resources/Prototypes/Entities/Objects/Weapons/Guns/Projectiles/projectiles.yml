@@ -1097,7 +1097,7 @@
   - type: SolutionContainerManager
     solutions:
       vapor:
-        maxVol: 50
+        maxVol: 60
   - type: Fixtures
     fixtures:
       projectile:

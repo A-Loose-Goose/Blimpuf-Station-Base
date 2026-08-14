@@ -23,7 +23,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 100
+        maxVol: 90
   - type: UseDelay
   - type: Spray
     solution: drink
@@ -72,7 +72,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 250
+        maxVol: 240
   - type: Spray
     transferAmount: 15
     sprayedPrototype: BigVapor
@@ -93,10 +93,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 100
+        maxVol: 90
         reagents:
         - ReagentId: Water
-          Quantity: 100
+          Quantity: 90
 
 - type: entity
   parent: SprayBottle
@@ -107,10 +107,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 100
+        maxVol: 90
         reagents:
         - ReagentId: SpaceCleaner
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-space-cleaner # Starlight
   - type: Tag
@@ -126,10 +126,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 250
+        maxVol: 240
         reagents:
         - ReagentId: SpaceCleaner
-          Quantity: 250
+          Quantity: 240
   - type: Label
     currentLabel: reagent-name-space-cleaner # Starlight
 
@@ -143,10 +143,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 200
+        maxVol: 180
         reagents:
         - ReagentId: SpaceCleaner
-          Quantity: 200
+          Quantity: 180
 
 - type: entity
   parent: MegaSprayBottle
@@ -158,10 +158,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 250
+        maxVol: 240
         reagents:
         - ReagentId: SpaceCleaner
-          Quantity: 250
+          Quantity: 240
   - type: SolutionTransfer
     canSend: false # No giving away infinite space cleaner!
   - type: SolutionRegeneration
@@ -180,7 +180,7 @@
   - type: SolutionContainerManager
     solutions:
       vapor:
-        maxVol: 50
+        maxVol: 60
   - type: Vapor
     active: true
     transferAmountPercentage: 0.5

@@ -75,7 +75,7 @@
   - type: SolutionContainerManager
     solutions:
       lube:
-        maxVol: 250
+        maxVol: 240
   - type: Spillable
     solution: lube
   - type: RefillableSolution

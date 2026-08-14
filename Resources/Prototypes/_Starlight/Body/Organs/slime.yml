@@ -21,7 +21,7 @@
     - type: SolutionContainerManager
       solutions:
         stomach:
-          maxVol: 50.0
+          maxVol: 60.0
         organ:
           reagents:
           - ReagentId: Slime

@@ -109,7 +109,7 @@
   - type: SolutionContainerManager
     solutions:
       injectionBuffer:
-        maxVol: 50
+        maxVol: 60
   - type: CryoPod
   - type: CryoPodAir
   - type: Climbable # so that ejected bodies don't get stuck

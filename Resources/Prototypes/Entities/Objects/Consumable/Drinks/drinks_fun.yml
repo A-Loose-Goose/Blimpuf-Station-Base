@@ -104,14 +104,14 @@
 - type: weightedRandomFillSolution
   id: RandomFillMopwata
   fills:
-  - quantity: 10
+  - quantity: 15
     weight: 5
     reagents:
     - Blood
     - CopperBlood
     - Slime
     - Vomit
-  - quantity: 10
+  - quantity: 15
     weight: 4
     reagents:
     - Coffee
@@ -126,7 +126,7 @@
     - LemonLime
     - LemonLimeCranberry
     - PwrGame
-  - quantity: 10
+  - quantity: 15
     weight: 3
     reagents:
     - Whiskey
@@ -136,7 +136,7 @@
     - Rum
     - Tequila
     - Absinthe
-  - quantity: 10
+  - quantity: 15
     weight: 1
     reagents:
     - SpaceDrugs
@@ -156,10 +156,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 50
+        maxVol: 60
         reagents:
         - ReagentId: Mopwata
-          Quantity: 40
+          Quantity: 45
   - type: RandomFillSolution
     solution: drink
     weightedRandomId: RandomFillMopwata
