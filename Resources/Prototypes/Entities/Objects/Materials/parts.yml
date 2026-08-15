@@ -134,11 +134,13 @@
         - brassrods_4
         - brassrods_5
     - type: Sprite
+      sprite: _Blimpuf/Objects/Materials/parts/brass_rods.rsi
       state: brassrods_5
       layers:
         - state: brassrods_5
           map: ["base"]
     - type: Item
+      sprite: _Blimpuf/Objects/Materials/parts/brass_rods.rsi
       size: Normal
       heldPrefix: brassrods
     - type: Construction

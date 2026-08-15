@@ -19,5 +19,5 @@
   parent: BaseSheetStack # Not a sheet, but spiritually similar
   id: BrassRod
   name: stack-brass-rods
-  icon: { sprite: /Textures/Objects/Materials/parts.rsi, state: brassrods }
+  icon: { sprite: /Textures/_Blimpuf/Objects/Materials/parts/brass_rods.rsi, state: brassrods }
   spawn: PartRodBrass1

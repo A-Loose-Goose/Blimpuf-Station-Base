@@ -8,27 +8,27 @@
   },
   "states": [
     {
-      "name": "rods"
+      "name": "brassrods"
     },
     {
-      "name": "rods-inhand-left",
+      "name": "brassrods-inhand-left",
       "directions": 4
     },
     {
-      "name": "rods-inhand-right",
+      "name": "brassrods-inhand-right",
       "directions": 4
     },
     {
-      "name": "rods_2"
+      "name": "brassrods_2"
     },
     {
-      "name": "rods_3"
+      "name": "brassrods_3"
     },
     {
-      "name": "rods_4"
+      "name": "brassrods_4"
     },
     {
-      "name": "rods_5"
+      "name": "brassrods_5"
     }
   ]
 }

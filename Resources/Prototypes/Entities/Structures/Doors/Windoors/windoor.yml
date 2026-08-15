@@ -16,18 +16,6 @@
   name: clockwork windoor
   description: It's a sturdy window and a sliding door. Wow!
 
-- type: entity # Blimpuf
-  id: WindoorBrass
-  parent: BaseBrassWindoor
-  name: brass windoor
-  description: It's a sturdy window and a sliding door. Wow!
-
-- type: entity # Blimpuf
-  id: WindoorSecureBrass
-  parent: BaseSecureBrassWindoor
-  name: secure brass windoor
-  description: It's a sturdy window and a sliding door. Wow!
-
 - type: entity
   id: WindoorPlasma
   parent: BasePlasmaWindoor

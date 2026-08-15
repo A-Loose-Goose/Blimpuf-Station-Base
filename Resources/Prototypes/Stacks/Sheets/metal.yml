@@ -16,12 +16,12 @@
   parent: BaseSheetStack
   id: Brass
   name: stack-brass
-  icon: { sprite: /Textures/Objects/Materials/Sheets/metal.rsi, state: brass }
+  icon: { sprite: /Textures/_Blimpuf/Objects/Materials/Sheets/brass.rsi, state: brass }
   spawn: SheetBrass1
 
 - type: stack # Blimpuf
   parent: BaseSheetStack
   id: Brassma
   name: stack-brassma
-  icon: { sprite: /Textures/Objects/Materials/Sheets/metal.rsi, state: brassma }
+  icon: { sprite: /Textures/_Blimpuf/Objects/Materials/Sheets/brass.rsi, state: brassma }
   spawn: SheetBrassma1

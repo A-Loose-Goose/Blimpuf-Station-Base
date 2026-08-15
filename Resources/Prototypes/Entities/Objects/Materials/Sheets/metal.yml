@@ -125,11 +125,13 @@
     - brass_2
     - brass_3
   - type: Sprite
+    sprite: _Blimpuf/Objects/Materials/Sheets/brass.rsi
     state: brass_3
     layers:
     - state: brass_3
       map: ["base"]
   - type: Item
+    sprite: _Blimpuf/Objects/Materials/Sheets/brass.rsi
     heldPrefix: brass
   - type: Appearance
   - type: FloorTile
@@ -256,11 +258,13 @@
         - brassma_2
         - brassma_3
     - type: Sprite
+      sprite: _Blimpuf/Objects/Materials/Sheets/brass.rsi
       state: brassma_3
       layers:
         - state: brassma_3
           map: ["base"]
     - type: Item
+      sprite: _Blimpuf/Objects/Materials/Sheets/brass.rsi
       heldPrefix: brassma
     - type: Appearance
     - type: Extractable

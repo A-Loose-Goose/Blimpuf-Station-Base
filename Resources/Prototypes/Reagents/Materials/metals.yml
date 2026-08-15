@@ -47,7 +47,7 @@
   id: Brass
   stackEntity: SheetBrass1
   name: materials-brass
-  icon: { sprite: Objects/Materials/Sheets/metal.rsi, state: brass }
+  icon: { sprite: _Blimpuf/Objects/Materials/Sheets/brass.rsi, state: brass }
   color: "#b18b25"
   price: 0.30 # $30 for 1 unit
   properties: # FH edit
@@ -75,7 +75,7 @@
   id: Brassma
   stackEntity: SheetBrassma1
   name: materials-brassma
-  icon: { sprite: Objects/Materials/Sheets/metal.rsi, state: brassma }
+  icon: { sprite: _Blimpuf/Objects/Materials/Sheets/brass.rsi, state: brassma }
   color: "#a17220"
   price: 0.5
   properties:
