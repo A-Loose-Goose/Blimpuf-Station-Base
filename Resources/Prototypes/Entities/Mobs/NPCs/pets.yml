@@ -1009,6 +1009,28 @@
     - GalacticCommon
     - Bubblish
   # Starlight-end
+  # Blimpuf - We experimented on Smile so now they're less endangered by water. Go Smile!
+  - type: Reactive
+    groups:
+      Flammable: [ Touch ]
+      Extinguish: [ Touch ]
+    reactions:
+      - reagents: [ Water, SpaceCleaner ]
+        methods: [ Touch ]
+        effects:
+          - !type:WashCreamPie
+      - reagents: [ Water ]
+        methods: [ Touch ]
+        effects:
+          - !type:HealthChange
+            damage:
+              types:
+                Heat: 0.025
+          - !type:PopupMessage
+            type: Local
+            visualType: Large
+            messages: [ "slime-hurt-by-water-popup" ]
+            probability: 0.25
   - type: Sprite
     layers:
     - map: [ "enum.DamageStateVisualLayers.Base" ]
