@@ -4632,5 +4632,12 @@ Entries:
   id: 10901
   time: '2026-08-15T02:59:45.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/109
+- author: ItsMaitake
+  changes:
+  - message: The NCT oufit is no longer green, it is white.
+    type: Tweak
+  id: 11001
+  time: '2026-08-15T07:56:48.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/110
 Order: -1
 
