@@ -615,12 +615,12 @@
 - type: entity
   parent: ClothingHeadHatBeretNCTBlack
   id: ClothingHeadHatBeretNCTGreen
-  description: A beret worn by the mentors and trainers of the Career Training Team. This one is green!
+  description: A beret worn by the mentors and trainers of the Career Training Team. This one is blue!
   components:
     - type: Sprite
-      sprite: _Starlight/Clothing/Head/Hats/beret_nct_green.rsi
+      sprite: _Starlight/Clothing/Head/Hats/beret_nct_blue.rsi
     - type: Clothing
-      sprite: _Starlight/Clothing/Head/Hats/beret_nct_green.rsi
+      sprite: _Starlight/Clothing/Head/Hats/beret_nct_blue.rsi
 
 - type: entity
   parent: [ClothingHeadBase, BaseCommandContraband]
