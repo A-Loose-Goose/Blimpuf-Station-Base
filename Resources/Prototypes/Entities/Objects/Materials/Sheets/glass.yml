@@ -546,7 +546,7 @@
   parent: [SheetGlassBase, BaseQuickConstructionMaterial] # DEN add quick construction parent
   id: SheetClockworkGlass
   name: clockwork glass
-  description: A sheet of brass-hardened glass.
+  description: A sheet of brass-hardened glass. # Blimpuf
   suffix: Full
   components:
     - type: PhysicalComposition

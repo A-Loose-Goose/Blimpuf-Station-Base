@@ -24,7 +24,7 @@
               amount: 2
               doAfter: 1
 
-        - to: brassGrilleDiagonal
+        - to: brassGrilleDiagonal # Blimpuf
           completed:
             - !type:AdminLog
               message: "Construction"
@@ -64,7 +64,7 @@
             - tool: Cutting
               doAfter: 0.25
 
-    - node: brassGrilleDiagonal
+    - node: brassGrilleDiagonal # Blimpuf
       entity: BrassGrilleDiagonal
       edges:
         - to: start

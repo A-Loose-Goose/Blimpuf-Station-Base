@@ -64,7 +64,7 @@
   color: "#9b6f07"
   price: 0.225 # average of glass and brass.
   # Interpolated properties
-  properties:
+  properties: # Blimpuf
     electrical: 3
     thermal: 3
     hard: 3
