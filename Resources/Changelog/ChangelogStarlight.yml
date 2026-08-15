@@ -4618,5 +4618,19 @@ Entries:
   id: 10801
   time: '2026-08-14T20:20:25.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/108
+- author: ItsMaitake
+  changes:
+  - message: Slime mobs, like reagent slimes and geras, now take the same amount of
+      heat damage as the playable slime species from water effects.
+    type: Tweak
+  - message: Smile, the science pet, takes reduced damage to water in comparison to
+      lesser slimes.
+    type: Tweak
+  - message: Slime characters no longer get built in beer goggles - they retain the
+      chemical goggles effect, though.
+    type: Tweak
+  id: 10901
+  time: '2026-08-15T02:59:45.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/109
 Order: -1
 
