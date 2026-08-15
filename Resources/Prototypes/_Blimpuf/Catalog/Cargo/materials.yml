@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: MaterialBrassma
+  icon:
+    sprite: _Blimpuf/Objects/Materials/Sheets/brassma.rsi
+    state: brassma_3
+  product: CrateMaterialBrassma
+  cost: 1600
+  category: cargoproduct-category-name-materials
+  group: market

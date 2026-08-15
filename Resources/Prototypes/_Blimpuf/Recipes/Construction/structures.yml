@@ -1,0 +1,182 @@
+- type: construction
+  id: BrassGrille
+  graph: BrassGrille
+  startNode: start
+  targetNode: brassGrille
+  category: construction-category-structures
+  conditions:
+    - !type:TileNotBlocked
+      failIfSpace: false
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+
+- type: construction
+  id: BrassGrilleDiagonal
+  graph: GrilleDiagonal
+  startNode: start
+  targetNode: brassGrilleDiagonal
+  category: construction-category-structures
+  conditions:
+    - !type:TileNotBlocked
+      failIfSpace: false
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction
+  id: ReinforcedBrassWindow
+  graph: Window
+  startNode: start
+  targetNode: reinforcedBrassWindow
+  category: construction-category-structures
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+
+- type: construction
+  id: ReinforcedBrassWindowDiagonal
+  name: construction-recipe-reinforced-brass-window-diagonal
+  graph: WindowDiagonal
+  startNode: start
+  targetNode: reinforcedBrassWindowDiagonal
+  category: construction-category-structures
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction
+  id: BrassWindow
+  graph: Window
+  startNode: start
+  targetNode: brassWindow
+  category: construction-category-structures
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+
+- type: construction
+  id: BrassWindowDiagonal
+  name: construction-recipe-brass-window-diagonal
+  graph: WindowDiagonal
+  startNode: start
+  targetNode: brassWindowDiagonal
+  category: construction-category-structures
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction
+  id: WindowBrassDirectional
+  graph: WindowDirectional
+  startNode: start
+  targetNode: windowBrassDirectional
+  category: construction-category-structures
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction
+  id: WindowReinforcedDirectionalBrass
+  graph: WindowDirectional
+  startNode: start
+  targetNode: windowReinforcedBrassDirectional
+  category: construction-category-structures
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction
+  id: BrassWindoor
+  graph: Windoor
+  startNode: start
+  targetNode: windoorBrass
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: SecureBrassWindoor
+  graph: Windoor
+  startNode: start
+  targetNode: windoorBrassSecure
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: BrassGirder
+  graph: BrassGirder
+  startNode: start
+  targetNode: brassgirder
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: ReinforcedBrassGirder
+  graph: BrassGirder
+  startNode: start
+  targetNode: reinforcedbrassgirder
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: BrassWall
+  graph: BrassGirder
+  startNode: start
+  targetNode: brassWall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: ReinforcedBrassWall
+  graph: BrassGirder
+  startNode: start
+  targetNode: reinforcedbrassWall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
