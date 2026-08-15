@@ -71,6 +71,8 @@
     examinableWhileClosed: false
     heldOnly: true
   #Starlight end
+  - type: SolutionItemStatus
+    solution: food
 
 - type: entity
   abstract: true

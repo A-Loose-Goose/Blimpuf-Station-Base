@@ -59,6 +59,8 @@
     animation: WeaponArcThrust
   - type: AltFireMelee
     # starlight end
+  - type: SolutionItemStatus
+    solution: chamber
 
 - type: entity
   id: WeaponWaterPistol
