@@ -4647,5 +4647,13 @@ Entries:
   id: 11101
   time: '2026-08-16T10:05:26.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/111
+- author: ItsMaitake
+  changes:
+  - message: Gold and silver jugs textures have been changed to show their relative
+      size differences.
+    type: Tweak
+  id: 11201
+  time: '2026-08-16T11:39:37.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/112
 Order: -1
 
