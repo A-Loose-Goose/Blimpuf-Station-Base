@@ -16,5 +16,5 @@
   parent: BaseSheetStack
   id: Brass
   name: stack-brass
-  icon: { sprite: /Textures/_Blimpuf/Objects/Materials/Sheets/brass.rsi, state: brass }
+  icon: { sprite: /Textures/Objects/Materials/Sheets/metal.rsi, state: brass }
   spawn: SheetBrass1

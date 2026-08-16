@@ -47,7 +47,7 @@
   id: Brass
   stackEntity: SheetBrass1
   name: materials-brass
-  icon: { sprite: _Blimpuf/Objects/Materials/Sheets/brass.rsi, state: brass }
+  icon: { sprite: Objects/Materials/Sheets/metal.rsi, state: brass }
   color: "#b18b25"
   price: 0.30 # $30 for 1 unit
   properties: # FH edit
@@ -65,20 +65,6 @@
   color: "#696969" #Okay, this is epic
   price: 0.5 # 1-1 mix of plasma and steel.
   properties: # FH edit
-    electrical: 5
-    thermal: 6
-    hard: 3
-    density: 7
-    chemical: 6
-
-- type: material # Blimpuf, pulls from plasteel stats
-  id: Brassma
-  stackEntity: SheetBrassma1
-  name: materials-brassma
-  icon: { sprite: _Blimpuf/Objects/Materials/Sheets/brass.rsi, state: brassma }
-  color: "#a17220"
-  price: 0.5
-  properties:
     electrical: 5
     thermal: 6
     hard: 3

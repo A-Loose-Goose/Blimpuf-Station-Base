@@ -17,7 +17,6 @@
         - brass_2
         - brass_3
     - type: Sprite
-      sprite: _Blimpuf/Objects/Materials/Sheets/brass.rsi
       state: brass_3
       layers:
         - state: brass_3

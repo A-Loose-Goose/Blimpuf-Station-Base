@@ -31,7 +31,7 @@
 - type: cargoProduct
   id: MaterialBrass
   icon:
-    sprite: _Blimpuf/Objects/Materials/Sheets/brass.rsi
+    sprite: Objects/Materials/Sheets/metal.rsi
     state: brass_3
   product: CrateMaterialBrass
   cost: 3000
@@ -44,16 +44,6 @@
     sprite: Objects/Materials/Sheets/metal.rsi
     state: plasteel_3
   product: CrateMaterialPlasteel
-  cost: 1600
-  category: cargoproduct-category-name-materials
-  group: market
-
-- type: cargoProduct
-  id: MaterialBrassma
-  icon:
-    sprite: _Blimpuf/Objects/Materials/Sheets/brass.rsi
-    state: brassma_3
-  product: CrateMaterialBrassma
   cost: 1600
   category: cargoproduct-category-name-materials
   group: market
