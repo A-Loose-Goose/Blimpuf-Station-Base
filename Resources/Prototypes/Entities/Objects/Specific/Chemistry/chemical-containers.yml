@@ -8,6 +8,8 @@
     sprite: Objects/Specific/Chemistry/jug.rsi
   - type: Item
     size: Normal
+    shape:
+    - 0,0,1,2
     sprite: Objects/Specific/Chemistry/jug.rsi
   - type: SolutionContainerManager
     solutions:

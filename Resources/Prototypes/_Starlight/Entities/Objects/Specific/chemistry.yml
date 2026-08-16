@@ -13,6 +13,9 @@
         visible: false
   - type: Item
     sprite: _Starlight/Objects/Specific/Chemistry/beaker.rsi
+    size: Normal
+    shape:
+    - 0,0,1,2
   - type: Spillable
     solution: beaker
   - type: StaticPrice
@@ -40,6 +43,9 @@
     sprite: _Starlight/Objects/Specific/Chemistry/goldenjug.rsi
   - type: Item
     sprite: _Starlight/Objects/Specific/Chemistry/goldenjug.rsi
+    size: Normal
+    shape:
+    - 0,0,1,3
   - type: PhysicalComposition
     materialComposition:
       Gold: 13
@@ -58,6 +64,9 @@
     sprite: _Starlight/Objects/Specific/Chemistry/silverjug.rsi
   - type: Item
     sprite: _Starlight/Objects/Specific/Chemistry/silverjug.rsi
+    size: Normal
+    shape:
+    - 0,0,1,2
   - type: PhysicalComposition
     materialComposition:
       Silver: 13
@@ -143,6 +152,7 @@
         visible: false
   - type: Item
     sprite: _Starlight/Objects/Specific/Chemistry/silverbeaker.rsi
+    size: Normal
   - type: Spillable
     solution: beaker
   - type: StaticPrice
@@ -178,6 +188,9 @@
         visible: false
   - type: Item
     sprite: _Starlight/Objects/Specific/Chemistry/lightbeaker.rsi
+    size: Small
+    shape:
+    - 0,0,1,1
   - type: Spillable
     solution: beaker
   - type: StaticPrice
@@ -228,6 +241,9 @@
         visible: false
   - type: Item
     sprite: _Starlight/Objects/Specific/Chemistry/darkbeaker.rsi
+    size: Small
+    shape:
+    - 0,0,1,1
   - type: Spillable
     solution: beaker
   - type: StaticPrice

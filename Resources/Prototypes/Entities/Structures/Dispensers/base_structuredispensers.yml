@@ -66,7 +66,7 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 0,0,19,5
+    - 0,0,20,7
   - type: ReagentDispenser
     beakerSlot:
       whitelistFailPopup: reagent-dispenser-component-cannot-put-entity-message

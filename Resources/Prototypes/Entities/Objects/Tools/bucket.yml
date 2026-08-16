@@ -9,7 +9,9 @@
   - type: Sprite
     sprite: Objects/Tools/bucket.rsi
   - type: Item
-    size: Normal
+    size: Large
+    shape:
+    - 0,0,2,2
   - type: Clothing
     sprite: Objects/Tools/bucket.rsi
     slots:

@@ -443,17 +443,17 @@
   name: mead jug
   description: It has strong notes of honey, fruit, and flowers. The handles are reminiscent of a bee's wings.
   components:
-    - type: SolutionContainerManager
-      solutions:
-        drink:
-          maxVol: 150
-          reagents:
-            - ReagentId: Mead
-              Quantity: 150
-    - type: Sprite
-      sprite: _Blimpuf/Objects/Consumable/Drinks/largemeadbottle.rsi # Blimpuf
-    - type: Label
-      currentLabel: reagent-name-mead
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 120
+        reagents:
+          - ReagentId: Mead
+            Quantity: 120
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Consumable/Drinks/largemeadbottle.rsi # Blimpuf
+  - type: Label
+    currentLabel: reagent-name-mead
 
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBaseFull]

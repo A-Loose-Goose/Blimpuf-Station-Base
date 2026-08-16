@@ -40,10 +40,27 @@
   - type: FitsInDispenser
     solution: drink
 
+- type: entity
+  abstract: true
+  parent: DrinkBottlePlasticBaseFull
+  id: DrinkBottlePlasticJugBaseFull
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,2,2
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 240
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/generic_jug.rsi # fallback to generic plastic jug
+
+
 # Empty
 
 - type: entity
-  parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
+  parent: [DrinkVisualsOpenable, DrinkBottlePlasticJugBaseFull]
   id: CustomDrinkJug
   name: beverage jug
   description: A jug for storing custom made drinks.
@@ -51,7 +68,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 120
+        maxVol: 240
 
 # Small Plastic Bottles
 
@@ -180,7 +197,7 @@
 # TODO these have too much volume
 
 - type: entity
-  parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
+  parent: [DrinkVisualsOpenable, DrinkBottlePlasticJugBaseFull]
   id: DrinkSugarJug
   name: sugar jug
   suffix: For Drinks, Full
@@ -189,7 +206,6 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 240
         reagents:
         - ReagentId: Sugar
           Quantity: 240
@@ -198,7 +214,7 @@
   # TODO new sprite
 
 - type: entity
-  parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
+  parent: [DrinkVisualsOpenable, DrinkBottlePlasticJugBaseFull]
   id: DrinkLemonLimeJug
   name: Smite jug
   description: A dual citrus sensation.
@@ -206,7 +222,6 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 240
         reagents:
         - ReagentId: LemonLime
           Quantity: 240
@@ -215,7 +230,7 @@
   # TODO new sprite
 
 - type: entity
-  parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
+  parent: [DrinkVisualsOpenable, DrinkBottlePlasticJugBaseFull]
   id: DrinkIceJug
   name: ice jug
   description: Stubborn water. Pretty cool.
@@ -223,7 +238,6 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 240
         reagents:
         - ReagentId: Ice
           Quantity: 240
@@ -232,7 +246,7 @@
   # TODO new sprite
 
 - type: entity
-  parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
+  parent: [DrinkVisualsOpenable, DrinkBottlePlasticJugBaseFull]
   id: DrinkCoconutWaterJug
   name: coconut water jug
   description: It's on the inside of the coconut that counts.
@@ -240,7 +254,6 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 240
         reagents:
         - ReagentId: CoconutWater
           Quantity: 240
@@ -249,7 +262,7 @@
   # TODO new sprite
 
 - type: entity
-  parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
+  parent: [DrinkVisualsOpenable, DrinkBottlePlasticJugBaseFull]
   id: DrinkCoffeeJug
   name: coffee jug
   description: Wake up juice, of the heated kind.
@@ -257,7 +270,6 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 240
         reagents:
         - ReagentId: Coffee
           Quantity: 240
@@ -266,7 +278,7 @@
   # TODO new sprite
 
 - type: entity
-  parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
+  parent: [DrinkVisualsOpenable, DrinkBottlePlasticJugBaseFull]
   id: DrinkTeaJug
   name: tea jug
   description: The drink of choice for the Bri'ish and hipsters.
@@ -274,7 +286,6 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 240
         reagents:
         - ReagentId: Tea
           Quantity: 240
@@ -283,7 +294,7 @@
   # TODO new sprite
 
 - type: entity
-  parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
+  parent: [DrinkVisualsOpenable, DrinkBottlePlasticJugBaseFull]
   id: DrinkGreenTeaJug
   name: green tea jug
   description: It's like tea... but green! great for settling the stomach.
@@ -291,7 +302,6 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 240
         reagents:
         - ReagentId: GreenTea
           Quantity: 240
@@ -300,7 +310,7 @@
   # TODO new sprite
 
 - type: entity
-  parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
+  parent: [DrinkVisualsOpenable, DrinkBottlePlasticJugBaseFull]
   id: DrinkIcedTeaJug
   name: iced tea jug
   description: For when the regular tea is too hot for you. Boohoo.
@@ -308,7 +318,6 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 240
         reagents:
         - ReagentId: IcedTea
           Quantity: 240
@@ -317,7 +326,7 @@
   # TODO new sprite
 
 - type: entity
-  parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
+  parent: [DrinkVisualsOpenable, DrinkBottlePlasticJugBaseFull]
   id: DrinkDrGibbJug
   name: Dr. Gibb jug
   description: 42 different flavours... in a jug!
@@ -325,7 +334,6 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 240
         reagents:
         - ReagentId: DrGibb
           Quantity: 240
@@ -334,7 +342,7 @@
   # TODO new sprite
 
 - type: entity
-  parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
+  parent: [DrinkVisualsOpenable, DrinkBottlePlasticJugBaseFull]
   id: DrinkRootBeerJug
   name: root beer jug
   description: This drink makes Australians giggle.
@@ -342,7 +350,6 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 240
         reagents:
         - ReagentId: RootBeer
           Quantity: 240
@@ -351,7 +358,7 @@
   # TODO new sprite
 
 - type: entity
-  parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
+  parent: [DrinkVisualsOpenable, DrinkBottlePlasticJugBaseFull]
   id: DrinkWaterMelonJuiceJug
   name: watermelon juice jug
   description: May include leftover seeds.
@@ -359,7 +366,6 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 240
         reagents:
         - ReagentId: JuiceWatermelon
           Quantity: 240
