@@ -78,19 +78,24 @@ namespace Content.Client.Construction
                 && manager.CurrentPlacementOverlayEntity is { } overlay
                 && _entityManager.TryGetComponent<SpriteComponent>(overlay, out var overlaySprite))
             {
-                var i = 0;
-
-                foreach (var layer in sprite.AllLayers)
+                if (overlaySprite.AllLayers.Count() == sprite.AllLayers.Count()) // Fix to stop Errors in the Log, by verifiying that the layers match
                 {
-                    if (layer.ActualRsi?.Path == null || layer.RsiState.Name == null)
-                        continue;
+                    var i = 0;
 
-                    _spriteSystem.LayerSetOffset((overlay, overlaySprite), i, sprite.Offset + ((SpriteComponent.Layer)layer).Offset);
-                    i++;
+
+                    foreach (var layer in sprite.AllLayers)
+                    {
+                        if (layer.ActualRsi?.Path == null || layer.RsiState.Name == null)
+                            continue;
+
+                        _spriteSystem.LayerSetOffset((overlay, overlaySprite), i, sprite.Offset + ((SpriteComponent.Layer)layer).Offset);
+                        i++;
+                    }
+                    // Fix NoRotation also being ignored (For TallTanks).
+                    overlaySprite.NoRotation = sprite.NoRotation;
                 }
-
-                // Fix NoRotation also being ignored.
-                overlaySprite.NoRotation = sprite.NoRotation;
+                // Fix NoRotation also being ignored (for AI).
+                sprite.NoRotation = overlaySprite.NoRotation;
             }
             // Starlight END
         }

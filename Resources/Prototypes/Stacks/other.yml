@@ -13,3 +13,11 @@
   name: stack-gunpowder
   icon: { sprite: /Textures/Objects/Misc/reagent_fillings.rsi, state: powderpile }
   spawn: MaterialGunpowder
+
+# Blimpuf
+- type: stack
+  parent: BaseSheetStack # Not a sheet, but spiritually similar
+  id: BrassRod
+  name: stack-brass-rods
+  icon: { sprite: /Textures/Objects/Materials/parts.rsi, state: brassrods }
+  spawn: PartRodBrass1

@@ -427,7 +427,7 @@
   - type: Label
     currentLabel: reagent-name-beer
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/beer.rsi
+    sprite: _Blimpuf/Objects/Consumable/Drinks/largebeerbottle.rsi # Blimpuf
   - type: Openable
     closeable: false # sprite is just a beer bottle, but this should be removed when there's a more appropriate sprite
   - type: Sealable
@@ -436,6 +436,24 @@
     tags:
     - Beer
     - DrinkBottle
+
+- type: entity
+  parent: [DrinkVisualsOpenable, DrinkBottleGlassBaseFull]
+  id: DrinkMeadJug
+  name: mead jug
+  description: It has strong notes of honey, fruit, and flowers. The handles are reminiscent of a bee's wings.
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          maxVol: 150
+          reagents:
+            - ReagentId: Mead
+              Quantity: 150
+    - type: Sprite
+      sprite: _Blimpuf/Objects/Consumable/Drinks/largemeadbottle.rsi # Blimpuf
+    - type: Label
+      currentLabel: reagent-name-mead
 
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBaseFull]
@@ -453,7 +471,7 @@
   - type: Label
     currentLabel: reagent-name-ale
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/alebottle.rsi
+    sprite: _Blimpuf/Objects/Consumable/Drinks/largealebottle.rsi # Blimpuf
   - type: Openable
     closeable: false # sprite is just a beer bottle, but this should be removed when there's a more appropriate sprite
   - type: Sealable
@@ -506,6 +524,24 @@
     closeable: false # can't put the cap back on
   - type: Sealable
     examineTextUnsealed: "sealable-component-on-examine-is-unsealed-crown-cap" # tell the player why it can't close
+
+- type: entity
+  parent: [DrinkVisualsOpenable, DrinkBottleGlassSmallBaseFull]
+  id: DrinkMeadBottleFull
+  name: mead bottle
+  description: It has strong notes of honey, fruit, and flowers.
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          maxVol: 60
+          reagents:
+            - ReagentId: Mead
+              Quantity: 60
+    - type: Sprite
+      sprite: _Blimpuf/Objects/Consumable/Drinks/meadbottle.rsi # Blimpuf
+    - type: Label
+      currentLabel: reagent-name-mead
 
 - type: entity
   parent: [DrinkVisualsOpenable, DrinkBottleGlassSmallBaseFull]

@@ -49,6 +49,16 @@
   group: market
 
 - type: cargoProduct
+  id: MaterialBrassma
+  icon:
+    sprite: Objects/Materials/Sheets/metal.rsi
+    state: brassma_3
+  product: CrateMaterialBrassma
+  cost: 1600
+  category: cargoproduct-category-name-materials
+  group: market
+
+- type: cargoProduct
   id: MaterialGold
   icon:
     sprite: Objects/Materials/ingots.rsi

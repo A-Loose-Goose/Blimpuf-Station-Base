@@ -7,10 +7,6 @@
   name: store-category-plushie-species
 
 - type: storeCategory
-  id: SLCrew
-  name: Crew
-
-- type: storeCategory
   id: SLChemistry
   name: store-category-medical-chemistry
 

@@ -142254,13 +142254,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -44.5,20.5
       parent: 2
-- proto: JessPlush
-  entities:
-  - uid: 22157
-    components:
-    - type: Transform
-      pos: -108.56887,3.752726
-      parent: 2
 - proto: JetpackBlackFilled
   entities:
   - uid: 22158
@@ -146535,33 +146528,12 @@ entities:
     - type: Transform
       pos: -70.5,14.5
       parent: 2
-- proto: PlushieAsh
-  entities:
-  - uid: 22839
-    components:
-    - type: Transform
-      pos: -101.50637,3.783976
-      parent: 2
-- proto: PlushieEina
-  entities:
-  - uid: 22841
-    components:
-    - type: Transform
-      pos: -13.0754795,97.550415
-      parent: 2
-- proto: PlushieGlados
+- proto: PlushieEngiborg
   entities:
   - uid: 22843
     components:
     - type: Transform
       pos: 10.412724,67.09054
-      parent: 2
-- proto: PlushieLance
-  entities:
-  - uid: 22844
-    components:
-    - type: Transform
-      pos: -62.488213,-31.246914
       parent: 2
 - proto: PlushieLizard
   entities:
@@ -167726,14 +167698,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -116.5,54.5
-      parent: 2
-- proto: StinkyPlush
-  entities:
-  - uid: 26267
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -79.41795,-11.628791
       parent: 2
 - proto: Stool
   entities:

@@ -11,6 +11,12 @@
       "name": "full"
     },
     {
+      "name": "brass_wall_girder"
+    },
+    {
+      "name": "reinforced_brass_wall_girder"
+    },
+    {
       "name": "solid0",
       "directions": 4
     },

@@ -223,7 +223,7 @@
   - type: Label
     currentLabel: reagent-name-juice-lime
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/limejuice.rsi
+    sprite: _Blimpuf/Objects/Consumable/Drinks/largelimebottle.rsi # Blimpuf
 
 - type: entity
   parent: DrinkCartonBaseXtraLargeFull
@@ -241,7 +241,7 @@
   - type: Label
     currentLabel: reagent-name-juice-orange
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/orangejuice.rsi
+    sprite: _Blimpuf/Objects/Consumable/Drinks/largeorangejuicebottle.rsi # Blimpuf
 
 - type: entity
   parent: DrinkCartonBaseXtraLargeFull
@@ -259,4 +259,4 @@
   - type: Label
     currentLabel: reagent-name-cream
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/cream.rsi
+    sprite: _Blimpuf/Objects/Consumable/Drinks/largecreambottle.rsi # Blimpuf

@@ -37,7 +37,6 @@
     - Thaven # Starlight
     - NeoThaven # Far Horizons
     - Lagomorph # Starlight
-    - Harpy # Blimpuf
     - NeoLagomorph # Starlight
     - Neocyte # Far Horizons
 
@@ -100,7 +99,6 @@
     - Human
     - Reptilian
     - Vulpkanin
-    - Harpy # Blimpuf
 
 - type: loadoutEffectGroup
   id: OxygenBreatherMimeMoth
