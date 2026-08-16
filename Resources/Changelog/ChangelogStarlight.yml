@@ -4639,5 +4639,13 @@ Entries:
   id: 11001
   time: '2026-08-15T07:56:48.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/110
+- author: ItsMaitake
+  changes:
+  - message: New XL drink container sprites for Magm-Ale, Mead, Beer, Orange Juice,
+      Lime Juice, Cream, and Red Bool.
+    type: Add
+  id: 11101
+  time: '2026-08-16T10:05:26.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/111
 Order: -1
 
