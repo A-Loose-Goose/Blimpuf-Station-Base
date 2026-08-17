@@ -4655,5 +4655,12 @@ Entries:
   id: 11201
   time: '2026-08-16T11:39:37.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/112
+- author: ItsMaitake
+  changes:
+  - message: Saltern and Barratry now have courtrooms, and Magistrates have a bedroom.
+    type: Tweak
+  id: 11401
+  time: '2026-08-17T00:28:27.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/114
 Order: -1
 
