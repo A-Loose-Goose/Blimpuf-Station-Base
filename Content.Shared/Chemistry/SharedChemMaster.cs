@@ -143,10 +143,10 @@ namespace Content.Shared.Chemistry
         U10 = 10,
         U15 = 15,
         U20 = 20,
-        U25 = 25,
         U30 = 30,
-        U50 = 50,
-        U100 = 100,
+        U45 = 45,
+        U60 = 60,
+        U90 = 90,
         All,
     }
 
