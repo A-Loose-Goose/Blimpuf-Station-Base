@@ -166,19 +166,3 @@
       content: paper-ionstorm-borgs
     - type: ActionsOnSign
       actions: IonStormInfinite
-
-- type: entity
-  parent: BaseStarlightAdmemePaper
-  id: PaperEndGreenshift
-  name: restart the clock.
-  description: A paper that seems to "start the clock" again? the countdown causes it to be too big to fix into a fax.
-  components:
-    - type: Paper
-      content: paper-end-greenshift-vote
-      editingDisabled: true
-    - type: ActionsOnSign
-      actions: AddSecretRule
-      instant: false
-    - type: ChargesExamine
-    - type: AdjustChargesPopBased
-      percent: 0.65 # 65% of pop has to sign.
