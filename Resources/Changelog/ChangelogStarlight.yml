@@ -4662,5 +4662,13 @@ Entries:
   id: 11401
   time: '2026-08-17T00:28:27.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/114
+- author: Limerent-Sun
+  changes:
+  - message: Abilities can no longer be used in vents that would be blocked while
+      restrained.
+    type: Fix
+  id: 11801
+  time: '2026-08-18T22:34:51.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/118
 Order: -1
 
