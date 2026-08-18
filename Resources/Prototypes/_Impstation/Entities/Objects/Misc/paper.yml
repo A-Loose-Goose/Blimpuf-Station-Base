@@ -7,10 +7,10 @@
   - type: Sprite
     layers:
     - state: paper
-      color: "#f07575"
+      color: "#75c5f0"
     - state: paper_words
       map: ["enum.PaperVisualLayers.Writing"]
-      color: "#f07575"
+      color: "#75c5f0"
       visible: false
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
@@ -24,8 +24,8 @@
   - type: PaperVisuals
     backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
     contentImagePath: "/Textures/Interface/Paper/paper_content_lined.svg.96dpi.png"
-    backgroundModulate: "#f07575"
-    contentImageModulate: "#f07575"
+    backgroundModulate: "#75c5f0"
+    contentImageModulate: "#75c5f0"
     backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
     contentMargin: 16.0, 16.0, 16.0, 16.0
     headerImagePath: "/Textures/_Starlight/Interface/Paper/paper_heading_fine.svg.96dpi.png"
