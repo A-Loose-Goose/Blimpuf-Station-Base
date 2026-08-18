@@ -146,6 +146,8 @@
   - type: RadioChime
     sound:
       path: /Audio/_Starlight/Effects/Radio/bso.ogg
+  - type: StealTarget # Blimpuf
+    stealGroup: ClothingHeadsetAltCommand # Blimpuf
 
 - type: entity
   parent: [ClothingHeadsetAlt, BaseSyndicateContraband]
