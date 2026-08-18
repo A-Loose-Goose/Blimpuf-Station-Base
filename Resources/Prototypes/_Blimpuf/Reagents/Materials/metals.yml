@@ -1,0 +1,13 @@
+- type: material
+  id: Brassma
+  stackEntity: SheetBrassma1
+  name: materials-brassma
+  icon: { sprite: _Blimpuf/Objects/Materials/Sheets/brassma.rsi, state: brassma }
+  color: "#a17220"
+  price: 0.5
+  properties:
+    electrical: 5
+    thermal: 6
+    hard: 3
+    density: 7
+    chemical: 6

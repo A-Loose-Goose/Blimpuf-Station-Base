@@ -46,10 +46,3 @@
   name: stack-clockwork-glass
   icon: { sprite: /Textures/Objects/Materials/Sheets/glass.rsi, state: cglass }
   spawn: SheetClockworkGlass1
-
-- type: stack # Blimpuf
-  parent: BaseSheetStack
-  id: ReinforcedClockworkGlass
-  name: stack-reinforced-clockwork-glass
-  icon: { sprite: /Textures/Objects/Materials/Sheets/glass.rsi, state: rcglass }
-  spawn: SheetReinforcedClockworkGlass1

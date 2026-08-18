@@ -1,0 +1,10 @@
+- type: entity
+  parent: CrateGenericSteel
+  id: CrateMaterialBrassma
+  name: brassma crate
+  description: 30 sheets of brassma.
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        entity_storage:
+          id: SheetBrassma

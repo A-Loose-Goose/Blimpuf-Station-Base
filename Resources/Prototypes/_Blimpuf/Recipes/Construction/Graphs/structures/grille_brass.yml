@@ -1,4 +1,4 @@
-- type: constructionGraph # Blimpuf
+- type: constructionGraph
   id: BrassGrille
   start: start
   graph:

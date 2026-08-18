@@ -70,17 +70,3 @@
     hard: 3
     density: 7
     chemical: 6
-
-- type: material # Blimpuf, pulls from plasteel stats
-  id: Brassma
-  stackEntity: SheetBrassma1
-  name: materials-brassma
-  icon: { sprite: Objects/Materials/Sheets/metal.rsi, state: brassma }
-  color: "#a17220"
-  price: 0.5
-  properties:
-    electrical: 5
-    thermal: 6
-    hard: 3
-    density: 7
-    chemical: 6

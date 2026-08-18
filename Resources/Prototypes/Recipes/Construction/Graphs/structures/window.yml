@@ -414,7 +414,7 @@
             - tool: Anchoring
               doAfter: 3
 
-    - node: brassWindow
+    - node: brassWindow # Blimpuf
       entity: BrassWindow
       edges:
         - to: start
@@ -437,7 +437,7 @@
             - tool: Anchoring
               doAfter: 3
 
-    - node: reinforcedBrassWindow
+    - node: reinforcedBrassWindow # Blimpuf
       entity: ReinforcedBrassWindow
       edges:
         - to: start

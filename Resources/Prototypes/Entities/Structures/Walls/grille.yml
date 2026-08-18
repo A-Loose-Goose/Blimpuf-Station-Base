@@ -106,26 +106,6 @@
     node: clockGrille
     deconstructionTarget: start
 
-- type: entity # Blimpuf
-  id: BrassGrille
-  parent: Grille
-  name: brass grille
-  description: A flimsy framework of brass rods.
-  components:
-    - type: Sprite
-      drawdepth: Walls
-      sprite: Structures/Walls/brass_grille.rsi
-      state: brassgrille
-      layers:
-        - state: brassgrille
-    - type: Icon
-      sprite: Structures/Walls/brass_grille.rsi
-      state: brassgrille
-    - type: Construction
-      graph: BrassGrille
-      node: brassGrille
-      deconstructionTarget: start
-
 - type: entity
   id: GrilleBroken
   parent: BaseStructure
@@ -184,23 +164,6 @@
   - type: Construction
     graph: ClockGrille
     node: clockGrilleBroken
-
-- type: entity # Blimpuf
-  id: BrassGrilleBroken
-  parent: GrilleBroken
-  name: brass grille
-  description: A flimsy framework of brass rods. It has seen better days.
-  components:
-    - type: Sprite
-      drawdepth: Walls
-      sprite: Structures/Walls/brass_grille.rsi
-      state: brassgrille_broken
-    - type: Icon
-      sprite: Structures/Walls/brass_grille.rsi
-      state: brassgrille_broken
-    - type: Construction
-      graph: BrassGrille
-      node: brassGrilleBroken
 
 - type: entity
   id: GrilleDiagonal
@@ -277,41 +240,3 @@
   - type: Construction
     graph: GrilleDiagonal
     node: clockworkGrilleDiagonal
-
-- type: entity
-  id: BrassGrilleDiagonal
-  parent: BrassGrille
-  name: diagonal brass grille
-  components:
-    - type: Sprite
-      drawdepth: Walls
-      sprite: Structures/Walls/brass_grille.rsi
-      layers:
-        - state: brassgrille_diagonal
-        - state: electrified_diagonal
-          sprite: Effects/electricity.rsi
-          map: ["enum.ElectrifiedLayers.Sparks"]
-          shader: unshaded
-          visible: false
-    - type: Icon
-      sprite: Structures/Walls/brass_grille.rsi
-      state: brassgrille_diagonal
-    - type: Tag
-      tags:
-        - Diagonal
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape:
-            !type:PolygonShape
-            vertices:
-              - "-0.5,-0.5"
-              - "0.5,0.5"
-              - "0.5,-0.5"
-          mask:
-            - FullTileMask
-          layer:
-            - GlassLayer
-    - type: Construction
-      graph: GrilleDiagonal
-      node: brassGrilleDiagonal

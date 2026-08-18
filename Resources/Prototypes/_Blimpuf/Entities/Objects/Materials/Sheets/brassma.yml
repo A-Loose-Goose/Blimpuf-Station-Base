@@ -1,0 +1,64 @@
+- type: entity
+  parent: SheetMetalBase
+  id: SheetBrassma
+  name: brassma
+  suffix: Full
+  components:
+    - type: Material
+    - type: PhysicalComposition
+      materialComposition:
+        Brassma: 100
+    - type: Stack
+      stackType: Brassma
+      baseLayer: base
+      layerStates:
+        - brassma
+        - brassma_2
+        - brassma_3
+    - type: Sprite
+      sprite: _Blimpuf/Objects/Materials/Sheets/brassma.rsi
+      state: brassma_3
+      layers:
+        - state: brassma_3
+          map: ["base"]
+    - type: Item
+      sprite: _Blimpuf/Objects/Materials/Sheets/brassma.rsi
+      heldPrefix: brassma
+    - type: Appearance
+    - type: Extractable
+      grindableSolutionName: brassma
+    - type: SolutionContainerManager
+      solutions:
+        brassma:
+          reagents:
+            - ReagentId: Plasma
+              Quantity: 10
+            - ReagentId: Copper
+              Quantity: 7
+            - ReagentId: Zinc
+              Quantity: 3
+          canReact: false
+
+- type: entity
+  parent: SheetBrassma
+  id: SheetBrassma10
+  name: brassma
+  suffix: 10
+  components:
+    - type: Sprite
+      state: brassma
+    - type: Stack
+      stackType: Brassma
+      count: 10
+
+- type: entity
+  parent: SheetBrassma
+  id: SheetBrassma1
+  name: brassma
+  suffix: Single
+  components:
+    - type: Sprite
+      state: brassma
+    - type: Stack
+      stackType: Brassma
+      count: 1
