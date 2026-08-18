@@ -4,6 +4,8 @@ using Content.Server.Popups;
 using Content.Shared._Blimpuf.Geras;
 using Content.Shared._Blimpuf.Geras.Components;
 using Content.Shared._Starlight.Medical.Body.Systems;
+using Content.Shared._Starlight.VentCrawl;
+using Content.Shared._Starlight.VentCrawl.Components;
 using Content.Shared.Body.Components;
 using Content.Shared.DoAfter;
 using Content.Shared.Humanoid;
@@ -111,6 +113,13 @@ public sealed partial class GerasSystem : SharedGerasSystem
         // Check if the event was cancelled or interrupted (e.g., moved while casting)
         if (args.Cancelled || args.Handled)
             return;
+
+        // Validate if morphing is allowed when the doafter finishes
+        if (HasComp<BeingVentCrawlComponent>(uid) ||
+            (TryComp<VentCrawlerComponent>(uid, out var ventCrawler) && ventCrawler.InTube))
+        {
+            return;
+        }
 
         var ent = _polymorphSystem.PolymorphEntity(uid, component.GerasPolymorphId);
 
