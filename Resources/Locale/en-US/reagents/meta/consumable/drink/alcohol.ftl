@@ -41,13 +41,13 @@ reagent-name-sake = sake
 reagent-desc-sake = Alcoholic beverage made by fermenting rice that has been polished.
 
 reagent-name-tequila = tequila
-reagent-desc-tequila = A strong and mildly flavoured, mexican produced spirit.
+reagent-desc-tequila = A strong and mildly flavoured spirit made from the bluest agave.
 
 reagent-name-vermouth = vermouth
 reagent-desc-vermouth = Aromatized, fortified white wine flavored with various botanicals.
 
 reagent-name-vodka = vodka
-reagent-desc-vodka = Clear distilled alcoholic beverage that originates from Poland and Russia.
+reagent-desc-vodka = Clear distilled alcoholic beverage, this appears to have been made with potatoes.
 
 reagent-name-whiskey = whiskey
 reagent-desc-whiskey = A type of distilled alcoholic beverage made from fermented grain mash.
@@ -56,7 +56,7 @@ reagent-name-wine = wine
 reagent-desc-wine = A premium alcoholic beverage made from distilled grape juice.
 
 reagent-name-champagne = champagne
-reagent-desc-champagne = A premium sparkling wine
+reagent-desc-champagne = A premium sparkling wine.
 
 reagent-name-acid-spit = acidspit
 reagent-desc-acid-spit = A drink for the daring, can be deadly if incorrectly prepared!
@@ -83,7 +83,7 @@ reagent-name-atomic-bomb = Atomic Bomb
 reagent-desc-atomic-bomb = Nuclear proliferation never tasted so good.
 
 reagent-name-b52 = B-52
-reagent-desc-b52 = Coffee, irish cream, and cognac. You will get bombed.
+reagent-desc-b52 = Coffee, cream, and cognac. An explosion of flavor.
 
 reagent-name-blue-hawaiian = Blue Hawaiian
 reagent-desc-blue-hawaiian = Aloha! Does that mean hello or goodbye?
@@ -220,7 +220,7 @@ reagent-name-martini = classic martini
 reagent-desc-martini = Vermouth with Gin. Not quite how 007 enjoyed it, but still delicious.
 
 reagent-name-mead = mead
-reagent-desc-mead = A Viking's drink, though a cheap one.
+reagent-desc-mead = An old fashioned drink that smells vaguely like honey.
 
 reagent-name-mojito = Mojito
 reagent-desc-mojito = If it's good enough for Spesscuba, it's good enough for you.
@@ -244,10 +244,10 @@ reagent-name-pina-colada = Piña Colada
 reagent-desc-pina-colada = For getting lost in the rain.
 
 reagent-name-radler = radler
-reagent-desc-radler = A simple but staple classic, straight out of Space-Germany.
+reagent-desc-radler = A simple but staple classic.
 
 reagent-name-red-mead = red mead
-reagent-desc-red-mead = The true Viking's drink! Even though it has a strange red color.
+reagent-desc-red-mead = It has a strange red color. Is it made from red bees?
 
 reagent-name-rewriter = Rewriter
 reagent-desc-rewriter = The secret of the sanctuary of the Librarian...
@@ -277,7 +277,7 @@ reagent-name-syndicate-bomb = syndicate bomb
 reagent-desc-syndicate-bomb = Somebody set us up the bomb!
 
 reagent-name-tequila-sunrise = tequila sunrise
-reagent-desc-tequila-sunrise = Tequila and orange juice. Much like a Screwdriver, only Mexican.
+reagent-desc-tequila-sunrise = Tequila and orange juice. Much like a Screwdriver, but with more culture.
 
 reagent-name-three-mile-island = Three Mile Island iced tea
 reagent-desc-three-mile-island = "Made for a woman, strong enough for a man."
@@ -286,7 +286,7 @@ reagent-name-toxins-special = toxins special
 reagent-desc-toxins-special = This thing is ON FIRE! CALL THE DAMN SHUTTLE!
 
 reagent-name-vampiro = vampiro
-reagent-desc-vampiro = Popular in Mexico and Transylvania. Not quite a vampire favorite though.
+reagent-desc-vampiro = Saturated red, savory and spicy. Not quite a vampires favorite, though.
 
 reagent-name-vodka-martini = vodka martini
 reagent-desc-vodka-martini = Vodka instead of Gin. Not quite how 007 enjoyed it, but still delicious.
@@ -313,7 +313,7 @@ reagent-name-xeno-basher = Xeno Basher
 reagent-desc-xeno-basher = The perfect drink before an expedition.
 
 reagent-name-irish-bool = Irish bool
-reagent-desc-irish-bool = Like a bool in a Ireland shop.
+reagent-desc-irish-bool = Like a bool, whatever a bool is.
 
 reagent-name-budget-insuls = budget insuls
 reagent-desc-budget-insuls = A tider's preferred drink.
@@ -325,7 +325,7 @@ reagent-name-rubberneck = rubberneck
 reagent-desc-rubberneck = A popular drink amongst those adhering to an all synthetic diet.
 
 reagent-name-caipirinha = caipirinha
-reagent-desc-caipirinha = The São Paulo special, straight from old Brazil.
+reagent-desc-caipirinha = Fruit, sugar, lime, ice. What's not to love? Best enjoyed in tropical climates.
 
 reagent-name-daiquiri = daiquiri
 reagent-desc-daiquiri = A classic rum cocktail which remains popular even in the cold reaches of space.

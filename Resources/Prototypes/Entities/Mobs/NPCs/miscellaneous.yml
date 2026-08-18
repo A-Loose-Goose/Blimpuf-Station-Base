@@ -2,7 +2,7 @@
   name: laser raptor
   id: MobLaserRaptor
   parent: SimpleMobBase
-  description: From the Viking age.
+  description: An ill-tempered ancient reptilian with a frickin' laser beams attached to its head. # I had to add in a Dr. Evil reference. I'm a boomer, sorry. Love, Maitake.
   components:
     - type: NpcFactionMember
       factions:

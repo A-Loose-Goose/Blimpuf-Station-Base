@@ -140,7 +140,7 @@
   name: teriyaki-pocket
   parent: FoodDonkpocketBase
   id: FoodDonkpocketTeriyaki
-  description: An East Asian take on the classic stationside snack.
+  description: A new take on the classic stationside snack, featuring soy sauce, mirin, and sugar.
   components:
   - type: FlavorProfile
     flavors:
@@ -154,7 +154,7 @@
   name: warm teriyaki-pocket
   parent: FoodDonkpocketTeriyaki
   id: FoodDonkpocketTeriyakiWarm
-  description: An East Asian take on the classic stationside snack, now steamy and warm.
+  description: A now steamy and warm take on the classic stationside snack, featuring soy sauce, mirin, and sugar.
   components:
   - type: FlavorProfile
     flavors:

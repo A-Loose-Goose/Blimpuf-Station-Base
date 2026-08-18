@@ -267,7 +267,7 @@ rr-martini = Martini
 rr-martini-desc = Cool elegance served in a triangular glass.
 
 rr-mead = Mead
-rr-mead-desc = Ancient honey wine — because vikings knew how to have fun.
+rr-mead-desc = Ancient honey wine — because they still knew how to have fun back then.
 
 rr-mojito = Mojito
 rr-mojito-desc = Minty, fresh, and perfect for pretending you’re on vacation.
@@ -297,7 +297,7 @@ rr-radler = Radler
 rr-radler-desc = Beer that decided to take a lemonade break.
 
 rr-sbiten = Sbiten
-rr-sbiten-desc = Old Russian warmth in a cup — fight the cold, not your friends.
+rr-sbiten-desc = Warmth in a cup — fight the cold, not your friends.
 
 rr-screwdrivercocktail = Screwdriver Cocktail
 rr-screwdrivercocktail-desc = Orange juice and vodka walk into a bar...
@@ -372,7 +372,7 @@ rr-bluehawaiian = Blue Hawaiian
 rr-bluehawaiian-desc = Beach vacation in a glass — umbrella optional.
 
 rr-caipirinha = Caipirinha
-rr-caipirinha-desc = Lime, sugar, and a Brazilian sense of adventure.
+rr-caipirinha-desc = Lime, sugar, and a sense of adventure.
 
 rr-moscowmule = Moscow Mule
 rr-moscowmule-desc = A moss-covered cow — mule? What? These cocktail names are wild. I’ve gotta try one of those.

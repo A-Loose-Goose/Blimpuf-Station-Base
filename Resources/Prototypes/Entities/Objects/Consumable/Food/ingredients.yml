@@ -881,7 +881,7 @@
   parent: FoodBakingBase
   id: FoodChevreSlice
   name: chèvre disk
-  description: A small disk of creamy Chèvre. An ideal adornment for French side dishes.
+  description: A small disk of creamy Chèvre. If you put your ear close to it, you can almost hear it bleat.
   components:
   - type: Item
     size: Tiny

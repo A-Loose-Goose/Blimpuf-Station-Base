@@ -73,7 +73,7 @@
   parent: [ ClothingUniformBase, BaseCommandContraband ]
   id: ClothingUniformJumpsuitNtrepNoble
   name: cc representative's noble jumpsuit
-  description: A more classical and elegant style of clothing, designed to emulate the fashion of old earth nobility.
+  description: A more classical and elegant style of clothing, designed to emulate the fashion of old terran nobility.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Uniforms/Jumpsuit/ntrepnoble.rsi
@@ -613,7 +613,7 @@
   parent: [ ClothingUniformBase, BaseCommandContraband ]
   id: ClothingUniformJumpsuitCaptainNoble
   name: captain's noble jumpsuit
-  description: A more classical and elegant style of clothing, designed to emulate the fashion of old earth nobility.
+  description: A more classical and elegant style of clothing, designed to emulate the fashion of old Terran nobility.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Uniforms/Jumpsuit/captainnoble.rsi

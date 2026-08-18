@@ -423,7 +423,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitKimono
   name: kimono
-  description: Traditional chinese clothing.
+  description: A type of traditional clothing popular in some regions of Terra.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/kimono.rsi

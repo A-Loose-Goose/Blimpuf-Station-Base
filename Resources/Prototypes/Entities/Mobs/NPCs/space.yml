@@ -409,7 +409,7 @@
   # - BaseMobAnimal # Starlight Edit: Revert NuBody
   id: MobSnail
   name: snail
-  description: Revolting unless you're french.
+  description: It looks equal parts squishy and crunchy.
   components:
   # Starlight - start
   - type: Body

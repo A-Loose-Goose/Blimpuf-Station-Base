@@ -340,7 +340,7 @@
   parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
   id: DrinkRootBeerJug
   name: root beer jug
-  description: This drink makes Australians giggle.
+  description: What root is this made of? Carrots? Potatoes? Trees?
   components:
   - type: SolutionContainerManager
     solutions:

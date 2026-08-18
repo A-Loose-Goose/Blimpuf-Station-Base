@@ -182,7 +182,7 @@
   parent: ClothingShoesBase
   id: ClothingShoesBootsMoon
   name: moon boots
-  description: Special anti-gravity boots developed with a speciality blend of lunar rock gel. Shipped from the Netherlands.
+  description: Special anti-gravity boots developed with a speciality blend of lunar rock gel.
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Boots/moonboots.rsi

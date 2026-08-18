@@ -45,7 +45,7 @@
   parent: FoodMealBase
   id: FoodMealFries
   name: space fries
-  description: AKA, French Fries, Freedom Fries, etc.
+  description: Crispy, salty, potatoey. Delicious.
   components:
   - type: Item
     storedOffset: 0,-3
@@ -104,7 +104,7 @@
   parent: FoodMealBase
   id: FoodMealNachos
   name: nachos
-  description: Chips from Space Mexico.
+  description: What do you mean four tortilla chips are one whole tortilla?
   components:
   - type: Item
     storedOffset: 0,-2
@@ -291,7 +291,7 @@
   parent: FoodMealBase
   id: FoodMealCornedbeef
   name: corned beef and cabbage
-  description: Now you can feel like a real tourist vacationing in Ireland.
+  description: Now you can feel like a real tourist vacationing along the towering cliffs and quiet coves of Terra.
   components:
   - type: Item
     storedOffset: 0,-1
@@ -606,7 +606,7 @@
   parent: FoodMealBase
   id: FoodMealEnchiladas
   name: enchiladas
-  description: Viva La Mexico!
+  description: Meat, cheese, but most importantly, beans!
   components:
     - type: Item
       storedOffset: -1,0

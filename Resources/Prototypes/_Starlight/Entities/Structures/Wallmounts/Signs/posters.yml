@@ -529,9 +529,9 @@
 
 - type: entity
   parent: PosterBase
-  id: PosterLegitEarth
-  name: "Earth"
-  description: "A poster depicting the clean, Frutiger Aero Earth of the 2500s. Only the richest of the rich live there now, less than 1 billion."
+  id: PosterLegitTerra
+  name: "Terra"
+  description: "A poster depicting the clean, Frutiger Aero Terra of the 2500s. Only the richest of the rich live there now, less than 1 billion."
   components:
   - type: Sprite
     sprite: _Starlight/Structures/Wallmounts/posters/earth.rsi
@@ -561,7 +561,7 @@
   parent: PosterBase
   id: PosterLegitLuna
   name: "Luna"
-  description: "Luna, the luxury city built on Earth's moon. Covered in embassies and estates used by the TSF's diplomats."
+  description: "Luna, the luxury city built on Terra's moon. Covered in embassies and estates used by the TSF's diplomats."
   components:
   - type: Sprite
     sprite: _Starlight/Structures/Wallmounts/posters/luna.rsi
@@ -721,7 +721,7 @@
   parent: PosterBase
   id: PosterLegitPizzaImperator
   name: "Pizza Imperator"
-  description: "Authentic Italian pizza, like the Romans used to eat."
+  description: "Authentic pizza, we promise, capiche?"
   components:
   - type: Sprite
     sprite: _Starlight/Structures/Wallmounts/posters/pizza_imperator.rsi

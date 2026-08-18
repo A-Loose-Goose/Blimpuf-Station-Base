@@ -23,7 +23,7 @@
   parent: BaseItem
   id: TreasureHardDiskDrive
   name: hard disk drive
-  description: A disk drive designed for old Earth technology, circa 1980. There's probably some kind of collector who might want to get their paws on this.
+  description: A disk drive designed for old Terran technology. There's probably some kind of collector who might want to get their paws on this.
   components:
   - type: Sprite
     sprite: Objects/Misc/module.rsi
