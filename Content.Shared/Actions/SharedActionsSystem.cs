@@ -15,6 +15,8 @@ using Content.Shared.Mind;
 using Content.Shared.Rejuvenate;
 using Content.Shared.Silicons.StationAi;
 using Content.Shared._Starlight.Antags.Abductor;
+using Content.Shared._Starlight.VentCrawl; // Blimpuf
+using Content.Shared._Starlight.VentCrawl.Components; // Blimpuf
 using Content.Shared.Whitelist;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.GameStates;
@@ -333,6 +335,15 @@ public abstract partial class SharedActionsSystem : EntitySystem
         var curTime = GameTiming.CurTime;
         if (IsCooldownActive(action, curTime))
             return false;
+
+        // Blimpuf start - vent crawling should block actions that are blocked from incapacitation
+        if ((action.Comp.CheckCanInteract || action.Comp.CheckConsciousness) &&
+            (HasComp<BeingVentCrawlComponent>(user) ||
+             (TryComp<VentCrawlerComponent>(user, out var ventCrawler) && ventCrawler.InTube)))
+        {
+            return false;
+        }
+        // Blimpuf end
 
         // check for action use prevention
         var attemptEv = new ActionAttemptEvent(user);
