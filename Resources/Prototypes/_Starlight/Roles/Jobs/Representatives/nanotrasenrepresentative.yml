@@ -66,7 +66,7 @@
     #shoes: ClothingShoesBootsLaceup
     #head: ClothingHeadHatCapNtrep
     id: NanoTrasenRepresentativePDA
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltBSO
     outerClothing: ClothingOuterCoatNtrep
     belt: BoxFolderCentComClipboard
   storage:

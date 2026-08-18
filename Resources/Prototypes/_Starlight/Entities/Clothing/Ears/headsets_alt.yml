@@ -130,9 +130,9 @@
     sprite: Clothing/Ears/Headsets/command.rsi
 
 - type: entity
-  parent: [ClothingHeadsetAlt, BaseBlueShieldContraband]
+  parent: [ClothingHeadsetAlt, BaseCommandContraband]
   id: ClothingHeadsetAltBSO
-  name: central command enforcer over-ear headset
+  name: central command representative over-ear headset
   components:
   - type: ContainerFill
     containers:
@@ -140,9 +140,9 @@
       - EncryptionKeyCorporate
       - EncryptionKeyStationMaster
   - type: Sprite
-    sprite: Clothing/Ears/Headsets/command.rsi
+    sprite: Clothing/Ears/Headsets/centcom.rsi
   - type: Clothing
-    sprite: Clothing/Ears/Headsets/command.rsi
+    sprite: Clothing/Ears/Headsets/centcom.rsi
   - type: RadioChime
     sound:
       path: /Audio/_Starlight/Effects/Radio/bso.ogg
