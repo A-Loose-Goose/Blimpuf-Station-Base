@@ -395,7 +395,7 @@
   parent: FoodSnackBase
   id: FoodSnackDanDanNoodles
   name: dan dan noodles
-  description: A spicy Sichuan noodle snack. The chili oil slick pools on top.
+  description: A spicy noodle snack. The chili oil slick pools on top.
   components:
   - type: FlavorProfile
     flavors:

@@ -25529,7 +25529,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 22.323019,33.5329
       parent: 2
-- proto: BookIanAntarctica
+- proto: BookIanFrozenWastes
   entities:
   - uid: 1748
     components:
@@ -189751,7 +189751,7 @@ entities:
   - uid: 29312
     components:
     - type: MetaData
-      desc: Forged with ancient Japanese techniques and soaked in the virgin blood of 100 otakus. It might shatter if you drop it.
+      desc: Forged with ancient smithing techniques and soaked in the virgin blood of 100 otakus. It might shatter if you drop it.
       name: mall katana
     - type: Transform
       pos: 33.504204,42.599857

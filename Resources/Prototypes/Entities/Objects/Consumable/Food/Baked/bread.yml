@@ -394,7 +394,7 @@
   name: bread
   parent: FoodBreadBase
   id: FoodBreadPlain
-  description: Some plain old earthen bread.
+  description: Some plain old glutinous bread.
   components:
   - type: Sprite
     layers:

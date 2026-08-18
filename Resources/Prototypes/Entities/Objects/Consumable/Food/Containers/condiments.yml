@@ -224,7 +224,7 @@
   parent: BaseFoodCondimentPacketDrink
   id: FoodCondimentPacketKetchup
   name: ketchup
-  description: You feel more American already.
+  description: The top 3 ingredients in this are Red 39, Red 40, and Red 41. Is this safe to eat?
   components:
   - type: SolutionContainerManager
     solutions:
@@ -511,7 +511,7 @@
   parent: BaseFoodCondimentBottle
   id: FoodCondimentBottleKetchup
   name: ketchup bottle
-  description: You feel more American already.
+  description: The top 3 ingredients in this are Red 39, Red 40, and Red 41. Is this safe to eat?
   components:
   - type: SolutionContainerManager
     solutions:

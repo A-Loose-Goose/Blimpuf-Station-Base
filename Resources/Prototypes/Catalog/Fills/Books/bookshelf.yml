@@ -34,9 +34,9 @@
     children:
     - id: BookAurora
     - id: BookCafe
-    - id: BookEarth
+    - id: BookTerra
     - id: BookFeather
-    - id: BookIanAntarctica
+    - id: BookIanFrozenWastes
     - id: BookIanArctic
     - id: BookIanCity
     - id: BookIanDesert

@@ -749,7 +749,7 @@
   parent: PosterBase
   id: PosterLegitUeNo
   name: "Ue No."
-  description: "This thing is all in Japanese."
+  description: "This thing is written in a language you haven't ever seen."
   components:
   - type: Sprite
     state: poster14_legit

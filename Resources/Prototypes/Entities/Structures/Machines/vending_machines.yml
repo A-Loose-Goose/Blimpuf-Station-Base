@@ -1487,7 +1487,7 @@
   parent: VendingMachine
   id: VendingMachineChang
   name: Mr. Chang
-  description: A self-serving Chinese food machine, for all your Chinese food needs.
+  description: A self-serving food vendor, for all your MSG and noodle needs.
   components:
   - type: VendingMachine
     pack: ChangInventory
@@ -2076,7 +2076,7 @@
   id: VendingMachineSciDrobe
   categories: [ ShouldMapStation ] # Starlight
   name: SciDrobe
-  description: A simple vending machine suitable to dispense well tailored science clothing. Endorsed by Space Cubans.
+  description: A simple vending machine suitable to dispense well tailored science clothing.
   components:
   - type: VendingMachine
     pack: SciDrobeInventory

@@ -219,7 +219,7 @@
   parent: ClothingNeckBase
   id: ClothingNeckCloakTrans
   name: vampire cloak
-  description: Worn by high ranking vampires of the transylvanian society of vampires.
+  description: Worn by the highest ranking members of Vampire society, originally from one of the vanias on Terra.
   components:
   - type: Sprite
     sprite: Clothing/Neck/Cloaks/trans.rsi

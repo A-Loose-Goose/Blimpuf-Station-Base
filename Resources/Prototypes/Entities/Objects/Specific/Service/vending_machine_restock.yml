@@ -64,7 +64,7 @@
   parent: BaseVendingMachineRestock
   id: VendingMachineRestockChang
   name: Mr. Chang's restock box
-  description: A box covered in white labels with bold red Chinese characters, ready to be loaded into the nearest Mr. Chang's vending machine.
+  description: A box covered in white labels with bold red lettering, ready to be loaded into the nearest Mr. Chang's vending machine.
   components:
   - type: VendingMachineRestock
     canRestock:
@@ -385,7 +385,7 @@
   parent: BaseVendingMachineRestock
   id: VendingMachineRestockSalvageEquipment
   name: Salvage Vendor restock box
-  description: Strike the earth ere the space carp nip your behind! Slam into a salvage vendor to begin.
+  description: Strike the ground ere the space carp nip your behind! Slam into a salvage vendor to begin.
   components:
   - type: VendingMachineRestock
     canRestock:

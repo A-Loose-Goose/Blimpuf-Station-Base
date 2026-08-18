@@ -358,7 +358,7 @@
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBaseFull]
   id: DrinkVodkaBottleFull
   name: vodka bottle
-  description: Aah, vodka. Prime choice of drink AND fuel by Russians worldwide.
+  description: Aah, vodka. The prime choice of drink and fuel by members of labor groups across the galaxies.
   components:
   - type: SolutionContainerManager
     solutions:

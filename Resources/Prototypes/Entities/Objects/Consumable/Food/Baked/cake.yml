@@ -509,7 +509,7 @@
   name: lemoon cake
   parent: FoodCakeBase
   id: FoodCakeLemoon
-  description: A cake that represents the moon of earth.
+  description: A cake that represents a lunar body.
   components:
   - type: Sprite
     state: lemoon
