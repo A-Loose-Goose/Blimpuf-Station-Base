@@ -4670,5 +4670,12 @@ Entries:
   id: 11801
   time: '2026-08-18T22:34:51.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/118
+- author: Limerent-Sun
+  changes:
+  - message: Removed Greenshift alert document.
+    type: Remove
+  id: 11901
+  time: '2026-08-18T22:35:08.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/119
 Order: -1
 
