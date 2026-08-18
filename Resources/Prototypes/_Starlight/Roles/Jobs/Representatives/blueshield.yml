@@ -66,7 +66,7 @@
   equipment:
     # head: ClothingHeadHatBeretBlueShield
     # id: BlueShieldPDA
-    ears: ClothingHeadsetAltBSO # Starlight
+    ears: ClothingHeadsetAltCCRep
     # belt: ClothingBeltBlueShieldWebbingFilled
     pocket1: WeaponPistolBlueguard
     pocket2: HandheldBSOCrewMonitor

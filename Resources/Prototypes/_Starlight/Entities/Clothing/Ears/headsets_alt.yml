@@ -131,7 +131,7 @@
 
 - type: entity
   parent: [ClothingHeadsetAlt, BaseCommandContraband]
-  id: ClothingHeadsetAltBSO
+  id: ClothingHeadsetAltCCRep
   name: central command representative over-ear headset
   components:
   - type: ContainerFill
