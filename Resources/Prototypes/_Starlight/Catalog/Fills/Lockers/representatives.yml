@@ -16,7 +16,7 @@
         - id: ClothingUniformJumpsuitNtrep
         - id: ClothingOuterCoatNtrep
         - id: ClothingShoesBootsLaceup
-        - id: ClothingHeadsetAltCommand
+        - id: ClothingHeadsetAltCCRep
         - id: WeaponDisabler
         - id: LuxuryPen
         - id: BoxFolderClipboardFilled
@@ -54,7 +54,7 @@
         - id: MagistrateUniformSkirt
         - id: ClothingOuterRobesMagistrate
         - id: ClothingShoesBootsLaceup
-        - id: ClothingHeadsetMagistrate
+        - id: ClothingHeadsetAltCCRep
         - id: WeaponDisabler
         - id: BookSpaceLaw
         - id: LuxuryPen
