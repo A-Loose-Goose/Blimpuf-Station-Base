@@ -4684,5 +4684,16 @@ Entries:
   id: 12001
   time: '2026-08-18T23:43:55.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/120
+- author: LadyLiliana
+  changes:
+  - message: Added Lawyer Spawns to Barratry.
+    type: Add
+  - message: Fixed minor discrepancies on Saltern and Barratry.
+    type: Fix
+  - message: Changed wardens red carpet being now blue on Sushi.
+    type: Tweak
+  id: 12201
+  time: '2026-08-19T19:08:29.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/122
 Order: -1
 
