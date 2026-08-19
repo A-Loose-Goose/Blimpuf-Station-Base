@@ -67,6 +67,11 @@
     tags:
     - Trash
     - Dinnerware #Starlight
+  - type: ExaminableSolution
+    solution: food
+    heldOnly: true
+  - type: SolutionItemStatus
+    solution: food
 
 - type: entity
   parent: BaseItem

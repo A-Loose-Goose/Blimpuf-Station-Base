@@ -35,6 +35,8 @@
     state: icon
   - type: Item # Starlight
     size: Normal # Starlight
+    shape:
+    - 0,0,1,2
   - type: PhysicalComposition
     materialComposition:
       Steel: 75
