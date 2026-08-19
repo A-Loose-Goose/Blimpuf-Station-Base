@@ -40,16 +40,12 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: AutoMenderBruteFilled
-        - id: AutoMenderBurnFilled
-        - id: JugGoldenBicaridine
-        - id: JugGoldenDermaline
         - id: MedicatedSuture
-          amount: 2
+          amount: 4
         - id: RegenerativeMesh
-          amount: 2
+          amount: 4
         - id: Bloodpack
-          amount: 2
+          amount: 4
 
 - type: entity
   id: ShelfMedTakSecureFilledCryo
