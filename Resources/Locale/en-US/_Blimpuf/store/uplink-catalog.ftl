@@ -41,3 +41,6 @@ uplink-persona-hologram-generator-desc = This is one of the Syndicates newest an
 
 uplink-syndie-clipboard-name = Black Market Digi-Board
 uplink-syndie-clipboard-desc = Connects the user to the Syndicate's shared bank account for purchasing orders from Cargo covertly. All orders requested are sent to the user directly. Make sure to buy a Syndicate ID to open the tamper seals.
+
+uplink-syndie-energy-shotgun-name = Ultra-Versatile Energy Shotgun
+uplink-syndie-energy-shotgun-desc = This energy shotgun is capable of firing all of Nanotrasen's more advanced ammunition types in laser form. The more complicated fire modes consume more power, so use carefully.

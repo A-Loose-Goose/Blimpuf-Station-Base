@@ -281,9 +281,31 @@
   name: uplink-syndie-clipboard-name
   description: uplink-syndie-clipboard-desc
   productEntity: BoxFolderSyndieClipboard
-  discountCategory: rareDiscounts
   cost:
     Telecrystal: 100
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
+
+- type: listing
+  id: UplinkSyndieEnergyShotgun
+  name: uplink-syndie-energy-shotgun-name
+  description: uplink-syndie-energy-shotgun-desc
+  productEntity: WeaponSyndieEnergyShotgun
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 60
+  cost:
+    Telecrystal: 70
   categories:
     - UplinkResearch
   conditions:

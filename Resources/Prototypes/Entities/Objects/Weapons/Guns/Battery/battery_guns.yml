@@ -1009,6 +1009,67 @@
   - type: Battery
     maxCharge: 480
     startingCharge: 480
+  - type: SyndicateResearchTarget
+    researchProtoIds:
+      - displayName: power cell
+        validPrototypes:
+          - PowerCellSmall
+          - PowerCellMedium
+          - PowerCellHigh
+          - PowerCellHyper
+          - PowerCellMicroreactor
+          - PowerCellSmallNuclear
+          - PowerCellAntiqueProto
+          - PowerCellSmallPrinted
+          - PowerCellMediumPrinted
+          - PowerCellHighPrinted
+          - PowerCellHyperPrinted
+          - PowerCellMicroreactorPrinted
+      - displayName: 12 gauge shotgun shell
+        validPrototypes:
+          - ShellShotgunBeanbag
+          - ShellShotgunSlug
+          - ShellShotgunFlare
+          - ShellShotgun
+          - ShellShotgunIncendiary
+          - ShellShotgunPractice
+          - ShellShotgunImprovised
+          - ShellShotgunUranium
+          - ShellShotgunBirdshot
+          - ShellShotgunBreaching
+      - displayName: welding torch
+        validPrototypes:
+          - Welder
+          - WelderCyber
+          - WelderExperimental
+          - WelderMini
+          - WelderIndustrial
+          - WelderIndustrialAdvanced
+      - displayName: uranium
+        validPrototypes:
+          - SheetUranium
+          - SheetUranium1
+          - SheetUranium30
+      - displayName: defibrillator
+        validPrototypes:
+          - BaseDefibrillator
+          - Defibrillator
+          - DefibrillatorEmpty
+          - DefibrillatorOneHandedUnpowered
+          - DefibrillatorCompact
+          - DefibrillatorSyndicate
+      - displayName: rifle stock
+        validPrototypes:
+          - RifleStock
+      - displayName: signal trigger
+        validPrototypes:
+          - SignalTrigger
+      - displayName: flash
+        validPrototypes:
+          - Flash
+          - SciFlash
+    researchUnlockId: UplinkSyndieEnergyShotgun
+    researchAnnouncementString: research-announcement-syndie-energy-shotgun
 
 - type: entity
   name: energy magnum

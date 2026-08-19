@@ -201,3 +201,53 @@
           - FiringPinAdvancedLaser
     - type: FiringPinHolder
       supportedPins: [ AdvancedLaser ]
+
+- type: entity
+  name: ultra-versatile laser shotgun
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseSyndicateContraband]
+  id: WeaponSyndieEnergyShotgun
+  description: How many bullets can an energy shotgun shoot since an energy shotgun can shoot bullets? This is exactly the question Scientists over at the Syndicate decided to ask themselves! Answer; a lot.
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Objects/Weapons/Guns/Battery/syndicate-energy-shotgun.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-unshaded-4
+          map: ["enum.GunVisualLayers.MagUnshaded"]
+          shader: unshaded
+    - type: MagazineVisuals
+      magState: mag
+      steps: 5
+      zeroVisible: false
+    - type: Appearance
+    - type: Clothing
+      sprite: _Blimpuf/Objects/Weapons/Guns/Battery/Energy_Shotgun.rsi
+    - type: Gun
+      fireRate: 1
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+    - type: BatteryAmmoProvider
+      proto: BulletSyndieEnergyShotgunBuckshotSpread
+      fireCost: 60 #Starlight
+    - type: BatteryWeaponFireModes
+      fireModes:
+        - proto: BulletSyndieEnergyShotgunBuckshotSpread
+          fireCost: 60 #Starlight
+          magState: energy #Starlight
+        - proto: BulletSyndieEnergyShotgunBeanbag
+          fireCost: 45 #Starlight
+        - proto: BulletSyndieEnergyShotgunSlug
+          fireCost: 60
+        - proto: BulletSyndieEnergyShotgunBuckshotIncendiarySpread
+          fireCost: 90
+        - proto: BulletSyndieEnergyShotgunBuckshotUraniumSpread
+          fireCost: 90
+    - type: Item
+      size: Large
+      sprite:  _Starlight/Objects/Weapons/Guns/Battery/Energy_Shotgun_inhands-x64.rsi # Starlight, sprite changed (Objects\Weapons\Guns\Battery\inhands_64x.rsi)
+      heldPrefix: empty #starlight
+    - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
+    - type: Battery
+      maxCharge: 540
+      startingCharge: 540

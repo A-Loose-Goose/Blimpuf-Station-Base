@@ -68,3 +68,241 @@
       damage: 4
     - type: CyberneticDisruptionOnCollide
       disableChance: 0.02
+
+- type: entity
+  name: energy buckshot single
+  id: BulletSyndieEnergyShotgunBuckshot
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Reflective
+      reflective:
+        - Energy
+    - type: FlyBySound
+      sound:
+        collection: EnergyMiss
+        params:
+          volume: 5
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+      layers:
+        - state: heavylaser
+          shader: unshaded
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        projectile:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.15,-0.3,0.15,0.3"
+          hard: false
+          mask:
+            - Opaque
+            - Impassable
+            - BulletImpassable
+        fly-by: &flybyfixture
+          shape: !type:PhysShapeCircle
+            radius: 1.5
+    - type: Ammo
+    - type: Projectile
+      impactEffect: BulletImpactEffectOrangeDisabler
+      damage:
+        types:
+          Heat: 5
+          Structural: 5
+
+- type: entity
+  name: energy beanbag slug
+  id: BulletSyndieEnergyShotgunBeanbag
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Reflective
+      reflective:
+        - Energy
+    - type: FlyBySound
+      sound:
+        collection: EnergyMiss
+        params:
+          volume: 5
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+      layers:
+        - state: omnilaser
+          shader: unshaded
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        projectile:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.15,-0.3,0.15,0.3"
+          hard: false
+          mask:
+            - Opaque
+            - Impassable
+            - BulletImpassable
+        fly-by: *flybyfixture
+    - type: Ammo
+    - type: Projectile
+      impactEffect: BulletImpactEffectDisabler
+      damage:
+        types:
+          Blunt: 10
+    - type: StaminaDamageOnCollide
+      damage: 40
+
+- type: entity
+  name: energy slug
+  id: BulletSyndieEnergyShotgunSlug
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Reflective
+      reflective:
+        - Energy
+    - type: FlyBySound
+      sound:
+        collection: EnergyMiss
+        params:
+          volume: 5
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+      layers:
+        - state: heavylaser
+          shader: unshaded
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        projectile:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.15,-0.3,0.15,0.3"
+          hard: false
+          mask:
+            - Opaque
+            - Impassable
+            - BulletImpassable
+        fly-by: *flybyfixture
+    - type: Ammo
+    - type: Projectile
+      impactEffect: BulletImpactEffectOrangeDisabler
+      damage:
+        types:
+          Heat: 40
+          Structural: 15
+
+- type: entity
+  name: energy buckshot incendiary single
+  id: BulletSyndieEnergyShotgunBuckshotIncendiary
+  parent: BaseBulletIncendiary
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Reflective
+      reflective:
+        - Energy
+    - type: FlyBySound
+      sound:
+        collection: EnergyMiss
+        params:
+          volume: 5
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+      layers:
+        - state: omnilaser_greyscale
+          shader: unshaded
+          color: orange
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        projectile:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.15,-0.3,0.15,0.3"
+          hard: false
+          mask:
+            - Opaque
+            - Impassable
+            - BulletImpassable
+        fly-by: *flybyfixture
+    - type: Ammo
+    - type: Projectile
+      impactEffect: BulletImpactEffectTrueOrangeDisabler
+      damage:
+        types:
+          Blunt: 2
+          Heat: 3
+
+- type: entity
+  name: energy buckshot uranium single
+  id: BulletSyndieEnergyShotgunBuckshotUranium
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Reflective
+      reflective:
+        - Energy
+    - type: FlyBySound
+      sound:
+        collection: EnergyMiss
+        params:
+          volume: 5
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+      layers:
+        - state: omnilaser_greyscale
+          shader: unshaded
+          color: lightgreen
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        projectile:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.15,-0.3,0.15,0.3"
+          hard: false
+          mask:
+            - Opaque
+            - Impassable
+            - BulletImpassable
+        fly-by: *flybyfixture
+    - type: Ammo
+    - type: Projectile
+      impactEffect: BulletImpactEffectGreenDisabler
+      damage:
+        types:
+          Radiation: 2
+          Heat: 3
+
+- type: entity
+  name: energy buckshot
+  id: BulletSyndieEnergyShotgunBuckshotSpread
+  categories: [ HideSpawnMenu ]
+  parent: BulletSyndieEnergyShotgunBuckshot
+  components:
+    - type: ProjectileSpread
+      proto: BulletSyndieEnergyShotgunBuckshot
+      count: 12
+      spread: 15
+
+- type: entity
+  name: energy buckshot incendiary
+  id: BulletSyndieEnergyShotgunBuckshotIncendiarySpread
+  categories: [ HideSpawnMenu ]
+  parent: BulletSyndieEnergyShotgunBuckshotIncendiary
+  components:
+    - type: ProjectileSpread
+      proto: BulletSyndieEnergyShotgunBuckshotIncendiary
+      count: 12
+      spread: 15
+
+- type: entity
+  name: energy buckshot uranium
+  id: BulletSyndieEnergyShotgunBuckshotUraniumSpread
+  categories: [ HideSpawnMenu ]
+  parent: BulletSyndieEnergyShotgunBuckshotUranium
+  components:
+    - type: ProjectileSpread
+      proto: BulletSyndieEnergyShotgunBuckshotUranium
+      count: 12
+      spread: 15
