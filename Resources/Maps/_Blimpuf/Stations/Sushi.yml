@@ -48064,36 +48064,6 @@ entities:
     - type: Transform
       pos: 84.5,86.5
       parent: 2
-  - uid: 6980
-    components:
-    - type: Transform
-      pos: 101.5,97.5
-      parent: 2
-  - uid: 6999
-    components:
-    - type: Transform
-      pos: 100.5,97.5
-      parent: 2
-  - uid: 7000
-    components:
-    - type: Transform
-      pos: 102.5,96.5
-      parent: 2
-  - uid: 7001
-    components:
-    - type: Transform
-      pos: 102.5,97.5
-      parent: 2
-  - uid: 7002
-    components:
-    - type: Transform
-      pos: 100.5,98.5
-      parent: 2
-  - uid: 7003
-    components:
-    - type: Transform
-      pos: 101.5,96.5
-      parent: 2
   - uid: 7004
     components:
     - type: Transform
@@ -48108,16 +48078,6 @@ entities:
     components:
     - type: Transform
       pos: 67.5,103.5
-      parent: 2
-  - uid: 7012
-    components:
-    - type: Transform
-      pos: 100.5,96.5
-      parent: 2
-  - uid: 7013
-    components:
-    - type: Transform
-      pos: 101.5,98.5
       parent: 2
   - uid: 25429
     components:
@@ -48572,6 +48532,46 @@ entities:
     components:
     - type: Transform
       pos: 138.5,98.5
+      parent: 2
+  - uid: 25504
+    components:
+    - type: Transform
+      pos: 100.5,96.5
+      parent: 2
+  - uid: 25505
+    components:
+    - type: Transform
+      pos: 101.5,96.5
+      parent: 2
+  - uid: 25506
+    components:
+    - type: Transform
+      pos: 101.5,97.5
+      parent: 2
+  - uid: 25508
+    components:
+    - type: Transform
+      pos: 102.5,96.5
+      parent: 2
+  - uid: 25509
+    components:
+    - type: Transform
+      pos: 102.5,97.5
+      parent: 2
+  - uid: 25510
+    components:
+    - type: Transform
+      pos: 100.5,97.5
+      parent: 2
+  - uid: 25511
+    components:
+    - type: Transform
+      pos: 100.5,98.5
+      parent: 2
+  - uid: 25512
+    components:
+    - type: Transform
+      pos: 101.5,98.5
       parent: 2
 - proto: CarpetCard
   entities:
