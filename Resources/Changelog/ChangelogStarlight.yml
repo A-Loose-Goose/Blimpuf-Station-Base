@@ -4695,5 +4695,17 @@ Entries:
   id: 12201
   time: '2026-08-19T19:08:29.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/122
+- author: LadyLiliana
+  changes:
+  - message: Changed most fluid container sizes.
+    type: Tweak
+  - message: Changed silver beakers and jugs to have an increased transfer size.
+    type: Tweak
+  - message: Changed container sizes to be more consistent, such as all beverage jugs
+      being the same size.
+    type: Tweak
+  id: 12101
+  time: '2026-08-20T13:56:45.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/121
 Order: -1
 
