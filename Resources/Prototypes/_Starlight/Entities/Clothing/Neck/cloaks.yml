@@ -31,29 +31,6 @@
     color: "#BAF9FF"
   - type: StaticPrice
     price: 2000
-  - type: PowerCellSlot
-    cellSlotId: cell_slot
-  - type: ItemSlots
-    slots:
-      cell_slot:
-        name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellSmall
-        whitelist:
-          tags:
-            - PowerCell
-            - PowerCellSmall
-  - type: ContainerContainer
-    containers:
-      cell_slot: !type:ContainerSlot
-  - type: EnergyDomeGenerator
-    damageEnergyDraw: 8
-    domePrototype: EnergyDomeSmallCap
-  - type: PowerCellDraw
-    enabled: false
-    drawRate: 2
-    useCharge: 0
-  - type: UseDelay
-    delay: 12.0
 
 - type: entity
   parent: [ ClothingNeckBase, BaseCommandContraband ]
