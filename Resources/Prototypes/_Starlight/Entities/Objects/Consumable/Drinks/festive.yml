@@ -9,10 +9,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 50
+        maxVol: 60
         reagents:
         - ReagentId: Gravy
-          Quantity: 50
+          Quantity: 60
   - type: Sprite
     sprite: _Starlight/Objects/Consumable/Drinks/gravyboat.rsi
   - type: FitsInDispenser

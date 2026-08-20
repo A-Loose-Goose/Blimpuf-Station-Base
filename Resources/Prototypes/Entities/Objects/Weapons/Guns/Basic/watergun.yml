@@ -23,13 +23,13 @@
   - type: SolutionContainerManager
     solutions:
       chamber:
-        maxVol: 50 #10 shots
+        maxVol: 60 #12 shots
   - type: SolutionAmmoProvider
     solutionId: chamber
     proto: BulletWaterShot
   - type: SolutionTransfer
     transferAmount: 5
-    maxTransferAmount: 50
+    maxTransferAmount: 60
     minTransferAmount: 5
     canChangeTransferAmount: true
   - type: UserInterface
@@ -59,6 +59,8 @@
     animation: WeaponArcThrust
   - type: AltFireMelee
     # starlight end
+  - type: SolutionItemStatus
+    solution: chamber
 
 - type: entity
   id: WeaponWaterPistol
@@ -99,7 +101,7 @@
   - type: SolutionContainerManager
     solutions:
       chamber:
-        maxVol: 100 #20 shots
+        maxVol: 120 #24 shots
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/soaker.rsi
     layers:

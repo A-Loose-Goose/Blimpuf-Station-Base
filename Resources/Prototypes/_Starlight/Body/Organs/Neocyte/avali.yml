@@ -12,7 +12,7 @@
   - type: SolutionContainerManager
     solutions:
       stomach:
-        maxVol: 50
+        maxVol: 60
       food:
         maxVol: 5
         reagents:

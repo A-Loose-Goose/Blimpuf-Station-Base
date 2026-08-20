@@ -13,6 +13,9 @@
         visible: false
   - type: Item
     sprite: _Starlight/Objects/Specific/Chemistry/beaker.rsi
+    size: Normal
+    shape:
+    - 0,0,1,2
   - type: Spillable
     solution: beaker
   - type: StaticPrice
@@ -28,7 +31,7 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 200
+        maxVol: 180
 
 - type: entity
   name: golden jug
@@ -40,31 +43,40 @@
     sprite: _Starlight/Objects/Specific/Chemistry/goldenjug.rsi
   - type: Item
     sprite: _Starlight/Objects/Specific/Chemistry/goldenjug.rsi
+    size: Normal
+    shape:
+    - 0,0,1,3
   - type: PhysicalComposition
     materialComposition:
       Gold: 13
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 400
+        maxVol: 360
 
 - type: entity
   name: silver jug
   parent: Jug
-  description: Used to contain a ginormous amount of chemicals or solutions.
+  description: Used to contain a ginormous amount of chemicals or solutions. Features a wider spout for enhanced transfer speeds.
   id: SilverJug
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Specific/Chemistry/silverjug.rsi
   - type: Item
     sprite: _Starlight/Objects/Specific/Chemistry/silverjug.rsi
+    size: Normal
+    shape:
+    - 0,0,1,2
   - type: PhysicalComposition
     materialComposition:
       Silver: 13
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 300
+        maxVol: 240
+  - type: SolutionTransfer
+    maxTransferAmount: 120
+    canChangeTransferAmount: true
 
 - type: entity
   id: VialCase
@@ -128,7 +140,7 @@
 - type: entity
   name: silver beaker
   parent: BaseBeaker
-  description: Used to contain a huge amount of chemicals and solutions.
+  description: Used to contain a huge amount of chemicals and solutions. Features a wider spout for enhanced transfer speeds.
   id: SilverBeaker
   components:
   - type: Sprite
@@ -140,6 +152,7 @@
         visible: false
   - type: Item
     sprite: _Starlight/Objects/Specific/Chemistry/silverbeaker.rsi
+    size: Normal
   - type: Spillable
     solution: beaker
   - type: StaticPrice
@@ -155,7 +168,10 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 150
+        maxVol: 120
+  - type: SolutionTransfer
+    maxTransferAmount: 120
+    canChangeTransferAmount: true
 
 - type: entity
   name: light beaker
@@ -172,6 +188,9 @@
         visible: false
   - type: Item
     sprite: _Starlight/Objects/Specific/Chemistry/lightbeaker.rsi
+    size: Small
+    shape:
+    - 0,0,1,1
   - type: Spillable
     solution: beaker
   - type: StaticPrice
@@ -205,7 +224,7 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 100
+        maxVol: 90
 
 - type: entity
   name: dark beaker
@@ -222,6 +241,9 @@
         visible: false
   - type: Item
     sprite: _Starlight/Objects/Specific/Chemistry/darkbeaker.rsi
+    size: Small
+    shape:
+    - 0,0,1,1
   - type: Spillable
     solution: beaker
   - type: StaticPrice
@@ -255,7 +277,7 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 100
+        maxVol: 90
 
 - type: entity
   parent: ChemBag

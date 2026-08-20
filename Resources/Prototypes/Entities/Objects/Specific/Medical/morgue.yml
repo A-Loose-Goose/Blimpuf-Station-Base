@@ -117,7 +117,7 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 50
+        maxVol: 60
         reagents:
         - ReagentId: Ash
           Quantity: 10
@@ -145,12 +145,12 @@
     - type: SolutionContainerManager
       solutions:
         food:
-          maxVol: 50
+          maxVol: 60
           reagents:
             - ReagentId: Ash
-              Quantity: 25
+              Quantity: 30
             - ReagentId: Necrosol
-              Quantity: 25
+              Quantity: 30
     - type: GuideHelp
       guides:
       - MinorAntagonists

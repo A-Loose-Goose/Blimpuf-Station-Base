@@ -9,7 +9,9 @@
   - type: Sprite
     sprite: Objects/Tools/bucket.rsi
   - type: Item
-    size: Normal
+    size: Large
+    shape:
+    - 0,0,2,2
   - type: Clothing
     sprite: Objects/Tools/bucket.rsi
     slots:
@@ -18,10 +20,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 250
+        maxVol: 270
   - type: SolutionTransfer
-    transferAmount: 100
-    maxTransferAmount: 100
+    transferAmount: 90
+    maxTransferAmount: 90
     minTransferAmount: 10
   - type: SpillWhenWorn
     solution: drink

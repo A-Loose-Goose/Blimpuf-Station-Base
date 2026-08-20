@@ -29,7 +29,7 @@ public sealed partial class SolutionTransferSystem : EntitySystem
     /// <summary>
     ///     Default transfer amounts for the set-transfer verb.
     /// </summary>
-    public static readonly FixedPoint2[] DefaultTransferAmounts = new FixedPoint2[] { 1, 5, 10, 25, 50, 100, 250, 500, 1000 };
+    public static readonly FixedPoint2[] DefaultTransferAmounts = new FixedPoint2[] { 1, 5, 10, 30, 45, 60, 90, 120, 180, 240, 500, 1000 };
 
     public override void Initialize()
     {

@@ -52,7 +52,7 @@
   - type: SolutionContainerManager
     solutions:
       absorbed:
-        maxVol: 50
+        maxVol: 60
       food:
         reagents:
         - ReagentId: Slime

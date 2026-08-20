@@ -50,21 +50,21 @@
   name: jug box
   parent: BoxCardboard
   id: BoxJug
-  description: A box containing four chemical storage jugs.
+  description: A box containing five chemical storage jugs.
   components:
   - type: Storage
     grid:
-    - 0,0,3,3
+    - 0,0,5,4
     maxItemSize: Normal
   - type: Item
     shape:
-    - 0,0,3,3
+    - 0,0,5,4
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
         - id: Jug
-          amount: 4
+          amount: 5
   - type: Sprite
     layers:
       - state: box

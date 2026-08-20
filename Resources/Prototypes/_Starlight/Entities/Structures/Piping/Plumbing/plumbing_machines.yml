@@ -123,7 +123,7 @@
   parent: PlumbingTank
   id: PlumbingBuffer
   name: plumbing buffer
-  description: Stores up to 200u of reagents. Useful for supplying separate duct networks with its unconnected outlets.
+  description: Stores up to 180u of reagents. Useful for supplying separate duct networks with its unconnected outlets.
   components:
   - type: CollideOnAnchor
     enable: false
@@ -145,7 +145,7 @@
   - type: SolutionContainerManager
     solutions:
       tank:
-        maxVol: 200
+        maxVol: 180
         canReact: false
 
 # =============================================================================
@@ -179,7 +179,7 @@
   - type: SolutionContainerManager
     solutions:
       input:
-        maxVol: 100
+        maxVol: 90
         canReact: false
   - type: ExaminableSolution
     solution: input
@@ -253,10 +253,10 @@
   - type: SolutionContainerManager
     solutions:
       output:
-        maxVol: 100
+        maxVol: 90
         canReact: false
       drain:
-        maxVol: 100
+        maxVol: 90
         canReact: false
   - type: ExaminableSolution
     solution: output
@@ -325,7 +325,7 @@
   - type: SolutionContainerManager
     solutions:
       output:
-        maxVol: 100
+        maxVol: 90
         canReact: false
   - type: ExaminableSolution
     solution: output
@@ -400,10 +400,10 @@
   - type: SolutionContainerManager
     solutions:
       buffer:
-        maxVol: 100
+        maxVol: 90
         canReact: false  # Reactions triggered manually when targets met
       output:
-        maxVol: 100
+        maxVol: 90
         canReact: false
   - type: ExaminableSolution
     solution: output
@@ -845,7 +845,7 @@
   parent: PlumbingMachineBase
   id: PlumbingDisposal
   name: plumbing disposal
-  description: Pulls reagents from a south inlet into an internal 200u buffer and destroys them.
+  description: Pulls reagents from a south inlet into an internal 180u buffer and destroys them.
   components:
   - type: Sprite
     drawdepth: FloorObjects
@@ -876,7 +876,7 @@
   - type: SolutionContainerManager
     solutions:
       drainBuffer:
-        maxVol: 200
+        maxVol: 180
         canReact: false
   - type: ExaminableSolution
     solution: drainBuffer

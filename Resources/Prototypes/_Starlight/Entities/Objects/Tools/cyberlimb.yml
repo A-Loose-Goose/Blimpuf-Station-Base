@@ -239,8 +239,8 @@
       Welder:
         reagents:
         - ReagentId: WeldingFuel
-          Quantity: 100
-        maxVol: 100
+          Quantity: 90
+        maxVol: 90
   - type: Tool
     speedModifier: 1.75
     useSound:

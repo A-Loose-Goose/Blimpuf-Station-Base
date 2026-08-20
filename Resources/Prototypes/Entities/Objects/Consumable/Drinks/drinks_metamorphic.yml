@@ -34,7 +34,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 50
+        maxVol: 60
   - type: SolutionContainerVisuals
     metamorphicDefaultSprite:
       sprite: Objects/Consumable/Drinks/jar.rsi

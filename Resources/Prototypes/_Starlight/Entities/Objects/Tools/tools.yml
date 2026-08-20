@@ -452,8 +452,8 @@
       Welder:
         reagents:
         - ReagentId: WeldingFuel
-          Quantity: 50
-        maxVol: 50
+          Quantity: 60
+        maxVol: 60
   - type: Welder
   - type: GenericVisualizer
     visuals:
@@ -707,8 +707,8 @@
       Welder:
         reagents:
         - ReagentId: WeldingFuel
-          Quantity: 50
-        maxVol: 100
+          Quantity: 45
+        maxVol: 90
   - type: Welder
   - type: GenericVisualizer
     visuals:

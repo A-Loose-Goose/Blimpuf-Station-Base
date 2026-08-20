@@ -11,7 +11,7 @@
       drink:
         reagents:
         - ReagentId: Uranium
-          Quantity: 200
+          Quantity: 180
 
 - type: entity
   parent: Jug
@@ -25,7 +25,7 @@
       drink:
         reagents:
         - ReagentId: Cornoil
-          Quantity: 200
+          Quantity: 180
 
 # Medicine Jugs for Chemist Locker
 - type: entity
@@ -41,7 +41,7 @@
       drink:
         reagents:
         - ReagentId: Arithrazine
-          Quantity: 200
+          Quantity: 180
 
 - type: entity
   parent: Jug
@@ -56,7 +56,7 @@
       drink:
         reagents:
         - ReagentId: Diphenhydramine
-          Quantity: 200
+          Quantity: 180
 
 - type: entity
   parent: Jug
@@ -71,7 +71,7 @@
       drink:
         reagents:
         - ReagentId: Cryoxadone
-          Quantity: 200
+          Quantity: 180
 
 - type: entity
   parent: Jug
@@ -86,7 +86,7 @@
       drink:
         reagents:
         - ReagentId: Doxarubixadone
-          Quantity: 200
+          Quantity: 180
 
 - type: entity
   parent: Jug
@@ -101,7 +101,7 @@
       drink:
         reagents:
         - ReagentId: Aloxadone
-          Quantity: 200
+          Quantity: 180
 
 - type: entity
   parent: Jug
@@ -116,7 +116,7 @@
       drink:
         reagents:
         - ReagentId: Sigynate
-          Quantity: 200
+          Quantity: 180
 
 - type: entity
   parent: Jug
@@ -131,7 +131,7 @@
       drink:
         reagents:
         - ReagentId: Leporazine
-          Quantity: 200
+          Quantity: 180
 
 - type: entity
   parent: Jug
@@ -146,7 +146,7 @@
       drink:
         reagents:
         - ReagentId: Bruizine
-          Quantity: 200
+          Quantity: 180
 
 - type: entity
   parent: Jug
@@ -161,7 +161,7 @@
       drink:
         reagents:
         - ReagentId: Lacerinol
-          Quantity: 200
+          Quantity: 180
 
 - type: entity
   parent: Jug
@@ -176,7 +176,7 @@
       drink:
         reagents:
         - ReagentId: Pyrazine
-          Quantity: 200
+          Quantity: 180
 
 - type: entity
   parent: Jug
@@ -191,7 +191,7 @@
       drink:
         reagents:
         - ReagentId: Insuzine
-          Quantity: 200
+          Quantity: 180
 
 - type: entity
   parent: Jug
@@ -206,7 +206,7 @@
       drink:
         reagents:
         - ReagentId: Ambuzol
-          Quantity: 200
+          Quantity: 180
 
 - type: entity
   parent: Jug
@@ -221,7 +221,7 @@
       drink:
         reagents:
         - ReagentId: AmbuzolPlus
-          Quantity: 200
+          Quantity: 180
 
 - type: entity
   parent: Jug
@@ -236,7 +236,7 @@
       drink:
         reagents:
         - ReagentId: Amoxla
-          Quantity: 200
+          Quantity: 180
 
 # Golden jugs
 - type: entity
@@ -251,7 +251,7 @@
       drink:
         reagents:
         - ReagentId: Bicaridine
-          Quantity: 400
+          Quantity: 360
 
 - type: entity
   parent: GoldenJug
@@ -265,7 +265,7 @@
       drink:
         reagents:
         - ReagentId: Dermaline
-          Quantity: 400
+          Quantity: 360
 
 # Large cryo chemical beakers
 - type: entity
@@ -278,10 +278,9 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 100
         reagents:
         - ReagentId: Cryoxadone
-          Quantity: 100
+          Quantity: 90
 
 - type: entity
   suffix: doxarubixadone
@@ -293,10 +292,9 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 100
         reagents:
         - ReagentId: Doxarubixadone
-          Quantity: 100
+          Quantity: 90
 
 - type: entity
   suffix: arcryox
@@ -308,10 +306,9 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 100
         reagents:
         - ReagentId: Arcryox
-          Quantity: 100
+          Quantity: 90
 
 - type: entity
   suffix: necrosol
@@ -323,10 +320,9 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 100
         reagents:
         - ReagentId: Necrosol
-          Quantity: 100
+          Quantity: 90
 
 - type: entity
   suffix: chronexaline
@@ -338,10 +334,9 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 100
         reagents:
         - ReagentId: Chronexaline
-          Quantity: 100
+          Quantity: 90
 
 - type: entity
   suffix: aloxadone
@@ -353,10 +348,9 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 100
         reagents:
         - ReagentId: Aloxadone
-          Quantity: 100
+          Quantity: 90
 
 - type: entity
   suffix: opporozidone
@@ -368,10 +362,9 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 100
         reagents:
         - ReagentId: Opporozidone
-          Quantity: 100
+          Quantity: 90
 
 - type: entity
   parent: Jug
@@ -385,4 +378,4 @@
       drink:
         reagents:
         - ReagentId: Lacerinol
-          Quantity: 200
+          Quantity: 180

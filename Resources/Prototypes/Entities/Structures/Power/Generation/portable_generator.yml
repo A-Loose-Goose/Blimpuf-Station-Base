@@ -306,7 +306,7 @@
     - type: SolutionContainerManager
       solutions:
         tank:
-          maxVol: 50
+          maxVol: 60
     - type: RefillableSolution
       solution: tank
     - type: PortableGenerator
