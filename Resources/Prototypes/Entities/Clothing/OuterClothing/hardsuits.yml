@@ -635,7 +635,7 @@
             - PowerCellSmall
   - type: EnergyDomeGenerator
     damageEnergyDraw: 5
-    domePrototype: EnergyDomeSmallPink
+    domePrototype: EnergyDomeSmallBlue
   - type: PowerCellDraw
     enabled: false
     drawRate: 6
