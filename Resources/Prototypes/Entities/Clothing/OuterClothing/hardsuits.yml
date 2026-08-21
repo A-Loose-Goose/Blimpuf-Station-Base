@@ -429,6 +429,26 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitCap
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellSmall
+        whitelist:
+          tags:
+            - PowerCell
+            - PowerCellSmall
+  - type: EnergyDomeGenerator
+    damageEnergyDraw: 8
+    domePrototype: EnergyDomeSmallCap
+  - type: PowerCellDraw
+    enabled: false
+    drawRate: 2
+    useCharge: 0
+  - type: UseDelay
+    delay: 12.0
   - type: Tag
     tags:
     - CorgiWearable
@@ -615,7 +635,7 @@
             - PowerCellSmall
   - type: EnergyDomeGenerator
     damageEnergyDraw: 5
-    domePrototype: EnergyDomeSmallPink
+    domePrototype: EnergyDomeSmallBlue
   - type: PowerCellDraw
     enabled: false
     drawRate: 6
