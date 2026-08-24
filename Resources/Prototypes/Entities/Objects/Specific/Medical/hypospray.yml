@@ -82,9 +82,9 @@
       - displayName: chemmaster 4000 machine board
         validPrototypes:
           - ChemMasterMachineCircuitboard
-      - displayName: jug
+      - displayName: dropper
         validPrototypes:
-          - Jug
+          - Dropper
     researchUnlockId: UplinkAdvancedGorlexHypospray
     researchAnnouncementString: research-announcement-advanced-gorlex-hypospray
 

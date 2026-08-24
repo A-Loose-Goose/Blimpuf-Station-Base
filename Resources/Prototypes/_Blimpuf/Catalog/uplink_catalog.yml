@@ -318,3 +318,26 @@
       blacklist:
         components:
           - SurplusBundle
+
+- type: listing
+  id: UplinkGlovesKnuckleDustersStimulant
+  name: uplink-gloves-knuckle-dusters-stimulant-name
+  description: uplink-gloves-knuckle-dusters-stimulant-desc
+  productEntity: ClothingHandsKnuckleDustersStimulant
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 35
+  cost:
+    Telecrystal: 50
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle

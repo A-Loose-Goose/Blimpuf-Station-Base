@@ -44,3 +44,6 @@ uplink-syndie-clipboard-desc = Connects the user to the Syndicate's shared bank 
 
 uplink-syndie-energy-shotgun-name = Ultra-Versatile Energy Shotgun
 uplink-syndie-energy-shotgun-desc = This energy shotgun is capable of firing all of Nanotrasen's more advanced ammunition types in laser form. The more complicated fire modes consume more power, so use carefully.
+
+uplink-gloves-knuckle-dusters-stimulant-name = Syndicate Stimulant Knuckle Dusters
+uplink-gloves-knuckle-dusters-stimulant-desc = This pair of knuckle dusters injects the user with a mix of Desoxyephedrine and Ethylredoxrazine to provide a constant speed boost while worn. Not recommended for prolonged wear.

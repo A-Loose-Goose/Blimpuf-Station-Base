@@ -561,6 +561,40 @@
     - Kangaroo
   - type: StealTarget
     stealGroup: ClothingHandsKnuckleDustersQM
+  - type: SyndicateResearchTarget
+    researchProtoIds:
+      - displayName: jet injector
+        validPrototypes:
+          - JetInjector
+          - AdvancedJetInjector
+          - TacticalJetInjector
+      - displayName: dropper
+        validPrototypes:
+          - Dropper
+      - displayName: bruise pack
+        validPrototypes:
+          - Brutepack
+          - Brutepack1
+          - SyndicateBrutePack
+          - SyndicateBrutePack1
+      - displayName: chemical analysis goggles
+        validPrototypes:
+          - ClothingEyesGlassesChemical
+      - displayName: brute automender
+        validPrototypes:
+          - AutoMenderBrute
+          - AutoMenderBruteFilled
+      - displayName: appraisal tool
+        validPrototypes:
+          - AppraisalTool
+      - displayName: butcher's cleaver
+        validPrototypes:
+          - ButchCleaver
+      - displayName: health analyzer
+        validPrototypes:
+          - HandheldHealthAnalyzer
+    researchUnlockId: UplinkGlovesKnuckleDustersStimulant
+    researchAnnouncementString: research-announcement-gloves-knuckle-dusters-stimulant
 
 - type: entity
   parent: [ClothingHandsBase, BaseSyndicateContraband]
