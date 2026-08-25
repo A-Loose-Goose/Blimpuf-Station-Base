@@ -583,7 +583,6 @@
     price: 750
   - type: StealTarget
     stealGroup: ClothingOuterHardsuitRd
-  - type: TheDarkImmune # Starlight
   - type: SyndicateResearchTarget
     researchProtoIds:
       - displayName: uranium
