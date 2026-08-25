@@ -38,20 +38,7 @@
     - type: UltimaHardsuit
     - type: EmpResistance
       strengthMultiplier: 0
-    - type: PowerCellSlot
-      cellSlotId: cell_slot
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
     - type: Tag
       tags:
         - CorgiWearable
         - WhitelistChameleon
-    - type: ItemSlots
-      slots:
-        cell_slot:
-          name: power-cell-slot-component-slot-name-default
-          startingItem: PowerCellSmall
-          whitelist:
-            tags:
-              - PowerCell
