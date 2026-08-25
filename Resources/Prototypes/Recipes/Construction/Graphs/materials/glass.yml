@@ -82,6 +82,16 @@
             - material: Brass
               amount: 1
 
+        - to: SheetReinforcedClockworkGlass # Blimpuf
+          completed:
+            - !type:SetStackCount
+              amount: 1
+          steps:
+            - material: ClockworkGlass
+              amount: 1
+            - material: BrassRod
+              amount: 1
+
         - to: SheetRUGlass0
           completed:
             - !type:SetStackCount
@@ -128,6 +138,9 @@
 
     - node: SheetClockworkGlass
       entity: SheetClockworkGlass
+
+    - node: SheetReinforcedClockworkGlass # Blimpuf
+      entity: SheetReinforcedClockworkGlass
 
     - node: SheetRUGlass0
       entity: SheetRUGlass

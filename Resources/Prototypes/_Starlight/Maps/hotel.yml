@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightHotel
+  id: BlimpufHotel
   mapName: 'Hotel'
-  mapPath: /Maps/_Starlight/Stations/Hotel.yml
+  mapPath: /Maps/_Blimpuf/Stations/Hotel.yml
   minPlayers: 7
-  maxPlayers: 55
+  maxPlayers: 65
   stations:
-    StarlightHotel:
+    BlimpufHotel:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
@@ -30,20 +30,20 @@
             #engineering
             ChiefEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 2, 2 ]
-            StationEngineer: [ 4, 6 ]
-            TechnicalAssistant: [ 3, 5 ]
+            StationEngineer: [ 4, 5 ]
+            TechnicalAssistant: [ 2, 3 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 2, 2 ]
-            MedicalDoctor: [ 4, 6 ]
-            MedicalIntern: [ 3, 6 ]
+            MedicalDoctor: [ 4, 5 ]
+            MedicalIntern: [ 2, 3 ]
             Paramedic: [ 2, 2 ]
-            Surgeon: [ 2, 2 ]
+            Surgeon: [ 1, 2 ]
             #science
             ResearchDirector: [ 1, 1 ]
-            Scientist: [ 3, 6 ]
-            ResearchAssistant: [ 3, 5 ]
-            Roboticist: [ 2, 2 ]
+            Scientist: [ 4, 4 ]
+            ResearchAssistant: [ 2, 3 ]
+            Roboticist: [ 1, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
@@ -56,19 +56,19 @@
             Quartermaster: [ 1, 1 ]
             SalvageLead: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
-            MiningSpecialist: [ 3, 3 ]
-            CargoTechnician: [ 6, 8 ]
+            MiningSpecialist: [ 2, 2 ]
+            CargoTechnician: [ 4, 5 ]
             MailTech: [ 1, 2 ]
             #civilian
             Assistant: [ -1, -1 ]
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 2, 2 ]
-            Performer: [ 2, 2 ]
+            Performer: [ 1, 2 ]
             Reporter: [ 1, 2 ]
             #silicon
             StationAi: [ 1, 1 ]
-            Borg: [ 3, 6 ]
+            Borg: [ 3, 5 ]
             #law
             Magistrate: [ 1, 1 ]
             IAA: [ 1, 1 ]

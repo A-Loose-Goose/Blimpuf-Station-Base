@@ -3946,7 +3946,7 @@ entities:
       parent: 2
     - type: Physics
       bodyType: Dynamic
-- proto: GasVentPump
+- proto: SecureCCGasVentPump
   entities:
   - uid: 607
     components:

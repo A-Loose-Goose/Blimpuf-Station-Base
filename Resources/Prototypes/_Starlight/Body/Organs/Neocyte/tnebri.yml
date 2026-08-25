@@ -1,0 +1,52 @@
+- type: entity
+  id: OrganNeoTNebriLungs
+  parent: OrganNeocyteLungs
+  name: T'Nebri cybernetic lungs
+  suffix: Neo-T'Nebri
+  description: Filters nitrogen from an atmosphere, which is then sent into the bloodstream to be used as an electron carrier. Entirely cybernetic in nature, working in tandem with the visor's filtration system.
+  components:
+  - type: Lung
+    alert: LowNitrogen
+  - type: Metabolizer
+    removeEmpty: true
+    solutionOnBody: false
+    solution: Lung
+    metabolizerTypes: [ Slime ]
+    groups:
+    - id: Gas
+      rateModifier: 100.0
+
+- type: entity
+  id: OrganNeoTNebriEye
+  parent: OrganNeocyteEyes
+  name: T'Nebri cybernetic eye
+  suffix: Neo-T'Nebri
+  description: "T'Nebri see the world slightly differently."
+  components:
+  - type: Sprite
+    sprite: _Starlight/Mobs/Species/Cyclorite/organs.rsi
+    layers:
+      - state: eyeball
+  - type: FunctionalOrgan
+    comps:
+    # - type: TNebriVision
+    - type: NightVision
+      disabilityBlockable: true
+  - type: OrganVisualization
+    layer: Eyes
+    prototypes:
+      Default: MobTNebriEyes
+
+- type: entity
+  id: OrganNeoTNebriHeart
+  parent: OrganNeocyteHeart
+  name: T'Nebri cybernetic heart
+  suffix: Neo-T'Nebri
+  components:
+  - type: Metabolizer
+    maxReagents: 2
+    metabolizerTypes: [TNebri, Neocyte]
+    groups:
+    - id: Medicine
+    - id: Poison
+    - id: Narcotic

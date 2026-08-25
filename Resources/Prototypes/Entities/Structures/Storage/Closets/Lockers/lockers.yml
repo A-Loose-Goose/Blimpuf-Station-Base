@@ -371,7 +371,7 @@
   - type: Appearance
   - type: EntityStorageVisuals
     stateBaseClosed: brigmedic
-    stateDoorOpen: sec_open
+    stateDoorOpen: nanotrasen-black_open
     stateDoorClosed: brigmedic_door
   - type: AccessReader
     access: [["Brigmedic"]]
@@ -630,8 +630,8 @@
   - type: AccessReader
     access: [["Ntrep"]] # Starlight
   - type: EntityStorageVisuals
-    stateBaseClosed: hop
-    stateDoorOpen: hop_open
-    stateDoorClosed: representative_door
+    stateBaseClosed: ntr
+    stateDoorOpen: nanotrasen-black_open
+    stateDoorClosed: ntr_door
   - type: WiresPanelSecurity # Starlight: Maintenance panel
     securityLevel: medSecurity

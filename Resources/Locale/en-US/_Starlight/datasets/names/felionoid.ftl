@@ -69,7 +69,6 @@ names-felionoid-dataset-68 = Lightwhisk
 names-felionoid-dataset-69 = Thunderpad
 names-felionoid-dataset-70 = Whiskara
 names-felionoid-dataset-71 = Nettlefur
-names-felionoid-dataset-72 = Brighteyes
 names-felionoid-dataset-73 = Breezeflick
 names-felionoid-dataset-74 = Fernshade
 names-felionoid-dataset-75 = Leafglimmer

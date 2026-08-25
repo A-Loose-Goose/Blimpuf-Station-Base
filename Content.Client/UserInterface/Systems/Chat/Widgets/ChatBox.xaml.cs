@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using Content.Client.UserInterface.Systems.Chat.Controls;
 using Content.Shared.Chat;
@@ -20,6 +21,8 @@ namespace Content.Client.UserInterface.Systems.Chat.Widgets;
 [Virtual]
 public partial class ChatBox : UIWidget
 {
+    private const int FormattedMessageDefaultCapacity = 3; // Starlight
+
     [Dependency] private IEntityManager _entManager = default!;
     [Dependency] private ILogManager _log = default!;
 
@@ -27,6 +30,7 @@ public partial class ChatBox : UIWidget
     private readonly ChatUIController _controller;
 
     public bool Main { get; set; }
+    public ChatSelectChannel? MainChannel { get; set; } // Starlight
 
     public ChatSelectChannel SelectedChannel => ChatInput.ChannelSelector.SelectedChannel;
     public RichTextLabel SelectedLanguage => LanguageNotifier; // Starlight
@@ -47,7 +51,9 @@ public partial class ChatBox : UIWidget
         _controller = UserInterfaceManager.GetUIController<ChatUIController>();
         _controller.MessageAdded += OnMessageAdded;
         _controller.HighlightsUpdated += OnHighlightsUpdated;
+        _controller.AutoHighlightsUpdated += OnAutoHighlightsUpdated; // Starlight
         _controller.RegisterChat(this);
+        ChatInput.FilterButton.Popup.UpdateAutoHighlights(_controller.AutoHighlights); // Starlight
     }
 
     private void OnTextEntered(LineEditEventArgs args)
@@ -77,6 +83,16 @@ public partial class ChatBox : UIWidget
     {
         ChatInput.FilterButton.Popup.UpdateHighlights(highlights);
     }
+
+    // Starlight start
+    /// <summary>
+    ///     Event handler triggered when the auto-fill highlights list is updated in the controller.
+    /// </summary>
+    private void OnAutoHighlightsUpdated(string autoHighlights)
+    {
+        ChatInput.FilterButton.Popup.UpdateAutoHighlights(autoHighlights);
+    }
+    // Starlight end
 
     private void OnChannelSelect(ChatSelectChannel channel)
     {
@@ -131,7 +147,7 @@ public partial class ChatBox : UIWidget
 
     public void AddLine(string message, Color color)
     {
-        var formatted = new FormattedMessage(3);
+        var formatted = new FormattedMessage(FormattedMessageDefaultCapacity);
         formatted.PushColor(color);
         formatted.AddMarkupPermissive(message);
         formatted.Pop();
@@ -228,6 +244,11 @@ public partial class ChatBox : UIWidget
 
         if (!disposing) return;
         _controller.UnregisterChat(this);
+        // Starlight start
+        _controller.MessageAdded -= OnMessageAdded;
+        _controller.HighlightsUpdated -= OnHighlightsUpdated;
+        _controller.AutoHighlightsUpdated -= OnAutoHighlightsUpdated;
+        // Starlight end
         ChatInput.Input.OnTextEntered -= OnTextEntered;
         ChatInput.Input.OnKeyBindDown -= OnInputKeyBindDown;
         ChatInput.Input.OnTextChanged -= OnTextChanged;

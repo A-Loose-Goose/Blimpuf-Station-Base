@@ -1,0 +1,6 @@
+- type: stack
+  parent: BaseSheetStack
+  id: Brassma
+  name: stack-brassma
+  icon: { sprite: /Textures/_Blimpuf/Objects/Materials/Sheets/brassma.rsi, state: brassma }
+  spawn: SheetBrassma1

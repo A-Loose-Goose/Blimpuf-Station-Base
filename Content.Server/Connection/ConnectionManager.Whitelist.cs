@@ -1,9 +1,10 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
-using Content.Server._NullLink;
+using Content.Server._Blimpuf.Discord;
 using Content.Server.Connection.Whitelist;
 using Content.Server.Connection.Whitelist.Conditions;
 using Content.Server.Database;
+using Content.Shared._Blimpuf.CCVar;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
 using Content.Shared.Players.PlayTimeTracking;
@@ -16,11 +17,32 @@ namespace Content.Server.Connection;
 /// </summary>
 public sealed partial class ConnectionManager
 {
+    [Dependency] private IBlimpufDiscordRoleProvider _blimpufDiscordRoles = default!;
+
     private PlayerConnectionWhitelistPrototype[]? _whitelists;
+    private HashSet<ulong> _blimpufDiscordWhitelistRoles = [];
 
     private void InitializeWhitelist()
     {
         _cfg.OnValueChanged(CCVars.WhitelistPrototypeList, UpdateWhitelists, true);
+        _cfg.OnValueChanged(BlimpufCCVars.DiscordWhitelistRoles, UpdateBlimpufDiscordWhitelistRoles, true);
+    }
+
+    private void UpdateBlimpufDiscordWhitelistRoles(string roleIds)
+    {
+        var roles = new HashSet<ulong>();
+        foreach (var roleId in roleIds.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries))
+        {
+            if (ulong.TryParse(roleId, out var role))
+            {
+                roles.Add(role);
+                continue;
+            }
+
+            _sawmill.Warning("Ignoring invalid Discord whitelist role ID '{RoleId}'", roleId);
+        }
+
+        _blimpufDiscordWhitelistRoles = roles;
     }
 
     private void UpdateWhitelists(string s)
@@ -87,12 +109,12 @@ public sealed partial class ConnectionManager
                     matched = CheckConditionNotesPlaytimeRange(conditionNotesPlaytimeRange, cacheRemarks, cachePlaytime);
                     denyMessage = Loc.GetString("whitelist-notes");
                     break;
-                // NullLink Whitelist start
-                case NullLinkRolesCondition nullLinkRolesCondition:
-                    matched = await CheckNullLinkRolesCondition(nullLinkRolesCondition, data.UserId);
+				// Blimpuf start
+                case BlimpufDiscordRolesCondition blimpufDiscordRolesCondition:
+                    matched = await CheckBlimpufDiscordRolesCondition(blimpufDiscordRolesCondition, data.UserId);
                     denyMessage = Loc.GetString("whitelist-roles");
                     break;
-                // NullLink Whitelist end
+				// Blimpuf end
                 default:
                     throw new NotImplementedException($"Whitelist condition {condition.GetType().Name} not implemented");
             }
@@ -165,21 +187,22 @@ public sealed partial class ConnectionManager
         return tracker.TimeSpent.TotalMinutes >= conditionPlaytime.MinimumPlaytime;
     }
 
-    // NullLink Whitelist start
-    private async Task<bool> CheckNullLinkRolesCondition(NullLinkRolesCondition condition, NetUserId userId)
+    private async Task<bool> CheckBlimpufDiscordRolesCondition(BlimpufDiscordRolesCondition condition, NetUserId userId)
     {
         try
         {
-            return _actors.TryGetServerGrain(out var server)
-                && await server.HasPlayerAnyRole(userId, [.. condition.Roles]);
-        }
-        catch (Exception)
-        {
-        }
-        return false;
-    }
+            var snapshot = await _blimpufDiscordRoles.GetRolesAsync(userId);
+                    if (condition.Roles.Count > 0)
+                return snapshot?.Roles.Any(condition.Roles.Contains) == true;
 
-    // NullLink Whitelist end
+            return snapshot?.Roles.Any(_blimpufDiscordWhitelistRoles.Contains) == true;
+        }
+        catch (Exception ex)
+        {
+            _sawmill.Warning("Blimpuf Discord whitelist role lookup failed for {UserId}: {Error}", userId, ex.Message);
+            return false;
+        }
+    }
 
     private bool CheckConditionNotesPlaytimeRange(
         ConditionNotesPlaytimeRange conditionNotesPlaytimeRange,

@@ -405,7 +405,6 @@
     color: "#363636"
     lightEnergy: 1
     lightRadius: 8
-  - type: DarkLight # Starlight
   - type: Construction
     graph: BlackLight
     node: icon
@@ -546,7 +545,6 @@
     color: "#363636"
     lightEnergy: 1
     lightRadius: 8
-  - type: DarkLight # Starlight
   - type: Construction
     graph: BlackLightBulb
     node: icon

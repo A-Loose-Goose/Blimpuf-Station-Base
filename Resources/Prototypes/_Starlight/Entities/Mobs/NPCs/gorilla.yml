@@ -2,7 +2,7 @@
   name: gorilla
   parent: [SimpleMobBase, MobCombat]
   id: BaseMobGorilla
-  description: A ground-dwelling, predominantly herbivorous ape that inhabits the forests of central Africa on Earth.
+  description: A ground-dwelling, predominantly herbivorous ape that inhabits some forests on Terra.
   abstract: true
   components:
     - type: Sprite

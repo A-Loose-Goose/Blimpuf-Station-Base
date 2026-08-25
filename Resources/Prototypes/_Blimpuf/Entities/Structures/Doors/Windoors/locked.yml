@@ -1,0 +1,494 @@
+# Brass Windoors
+- type: entity
+  parent: BrassWindoorServiceLocked
+  id: BrassWindoorBarLocked
+  suffix: Bar, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsBar ]
+
+- type: entity
+  parent: BrassWindoorServiceLocked
+  id: BrassWindoorBarKitchenLocked
+  suffix: Bar&Kitchen, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsBarKitchen ]
+
+- type: entity
+  parent: WindoorBrass
+  id: BrassWindoorCargoLocked
+  suffix: Cargo, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsCargo ]
+    - type: Wires
+      layoutId: AirlockCargo
+
+- type: entity
+  parent: WindoorBrass
+  id: BrassWindoorChapelLocked
+  suffix: Shrine, Locked # Starlight: Chapel -> Shrine
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsChapel ]
+
+- type: entity
+  parent: BrassWindoorServiceLocked
+  id: BrassWindoorHydroponicsLocked
+  suffix: Hydroponics, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsHydroponics ]
+
+- type: entity
+  parent: BrassWindoorServiceLocked
+  id: BrassWindoorJanitorLocked
+  suffix: Janitor, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsJanitor ]
+
+- type: entity
+  parent: BrassWindoorServiceLocked
+  id: BrassWindoorKitchenLocked
+  suffix: Kitchen, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsKitchen ]
+
+- type: entity
+  parent: BrassWindoorServiceLocked
+  id: BrassWindoorKitchenHydroponicsLocked
+  suffix: Kitchen&Hydroponics, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsKitchenHydroponics ]
+
+- type: entity
+  parent: WindoorBrass
+  id: BrassWindoorServiceLocked
+  suffix: Service, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsService ]
+    - type: Wires
+      layoutId: AirlockService
+
+- type: entity
+  parent: BrassWindoorServiceLocked
+  id: BrassWindoorTheatreLocked
+  suffix: Theatre, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsTheatre ]
+
+- type: entity
+  parent: BrassWindoorCargoLocked
+  id: BrassWindoorMailLocked
+  suffix: Mail, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsMail ]
+
+- type: entity
+  parent: WindoorBrass
+  id: BrassWindoorSyndicateLocked
+  suffix: Syndicate, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsSyndicateAgent ]
+
+- type: entity
+  parent: WindoorBrass
+  id: BrassWindoorNukeopLocked
+  suffix: Nukeop, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsNukeop ]
+
+- type: entity
+  parent: WindoorBrass
+  id: BrassWindoorSecurityLocked
+  suffix: Security, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsSecurity ]
+    - type: Wires
+      layoutId: AirlockSecurity
+
+- type: entity
+  parent: BrassWindoorSecurityLocked
+  id: BrassWindoorInternalAffairsLocked
+  suffix: Internal Affairs, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsInternalAffairs ]
+
+- type: entity
+  parent: BrassWindoorSecurityLocked
+  id: BrassWindoorSecurityInternalAffairsLocked
+  suffix: Security/Internal Affairs, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsSecurityInternalAffairs ]
+
+- type: entity
+  parent: BrassWindoorServiceLocked
+  id: BrassWindoorLegalLocked
+  suffix: Legal, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsLegal ]
+
+- type: entity
+  parent: BrassWindoorSecurityLocked
+  id: BrassWindoorCourtroomLocked
+  suffix: Security/Internal Affairs/Legal (Courtroom), Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsCourtroom ]
+
+- type: entity
+  parent: BrassWindoorServiceLocked
+  id: BrassWindoorAttorneyLocked
+  suffix: Internal Affairs/Legal (Attorney), Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsAttorney ]
+
+# Secure Brass Windoors
+#- type: entity
+#  id: WindoorSecureBrass
+#  parent: BaseSecureBrassWindoor
+#  name: secure brass windoor
+#  description: It's a sturdy window and a sliding door. Wow!
+
+- type: entity
+  parent: WindoorSecureBrass
+  id: BrassWindoorSecureArmoryLocked
+  suffix: Armory, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsArmory ]
+    - type: Wires
+      layoutId: AirlockArmory
+
+- type: entity
+  parent: BrassWindoorSecureEngineeringLocked
+  id: BrassWindoorSecureAtmosphericsLocked
+  suffix: Atmospherics, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsAtmospherics ]
+
+- type: entity
+  parent: BrassWindoorSecureServiceLocked
+  id: BrassWindoorSecureBarLocked
+  suffix: Bar, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsBar ]
+
+- type: entity
+  parent: BrassWindoorSecureSecurityLocked
+  id: BrassWindoorSecureBrigLocked
+  suffix: Brig, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsBrig ]
+
+- type: entity
+  parent: WindoorSecureBrass
+  id: BrassWindoorSecureCargoLocked
+  suffix: Cargo, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsCargo ]
+    - type: Wires
+      layoutId: AirlockCargo
+
+- type: entity
+  parent: WindoorSecureBrass
+  id: BrassWindoorSecureChapelLocked
+  suffix: Shrine, Locked # Starlight: Chapel -> Shrine
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsChapel ]
+
+- type: entity
+  parent: BrassWindoorSecureMedicalLocked
+  id: BrassWindoorSecureChemistryLocked
+  suffix: Chemistry, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsChemistry ]
+
+- type: entity
+  parent: BrassWindoorSecureCommandLocked
+  id: BrassWindoorSecureCentralCommandLocked
+  suffix: Central Command, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsCentralCommand ]
+
+- type: entity
+  parent: WindoorSecureBrass
+  id: BrassWindoorSecureCommandLocked
+  suffix: Command, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsCommand ]
+    - type: WiresPanelSecurity
+      securityLevel: medSecurity
+    - type: Wires
+      layoutId: AirlockCommand
+
+- type: entity
+  parent: BrassWindoorSecureSecurityLocked
+  id: BrassWindoorSecureDetectiveLocked
+  suffix: Detective, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsDetective ]
+
+- type: entity
+  parent: WindoorSecureBrass
+  id: BrassWindoorSecureEngineeringLocked
+  suffix: Engineering, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsEngineering ]
+    - type: Wires
+      layoutId: AirlockEngineering
+
+- type: entity
+  parent: WindoorSecureBrass
+  id: BrassWindoorSecureExternalLocked
+  suffix: External, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsExternal ]
+    - type: Wires
+      layoutId: AirlockExternal
+
+- type: entity
+  parent: BrassWindoorSecureServiceLocked
+  id: BrassWindoorSecureJanitorLocked
+  suffix: Janitor, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsJanitor ]
+
+- type: entity
+  parent: BrassWindoorSecureServiceLocked
+  id: BrassWindoorSecureKitchenLocked
+  suffix: Kitchen, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsKitchen ]
+
+- type: entity
+  parent: BrassWindoorSecureSecurityLocked
+  id: BrassWindoorSecureSecurityInternalAffairsLocked
+  suffix: Security/Internal Affairs, Locked # Starlight
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsSecurityInternalAffairs ] # Starlight
+
+- type: entity
+  parent: WindoorSecureBrass
+  id: BrassWindoorSecureMedicalLocked
+  suffix: Medical, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsMedical ]
+    - type: Wires
+      layoutId: AirlockMedical
+
+- type: entity
+  parent: BrassWindoorSecureCommandLocked
+  id: BrassWindoorSecureResearchDirectorLocked
+  suffix: ResearchDirector, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsResearchDirector ]
+
+- type: entity
+  parent: BrassWindoorSecureCargoLocked
+  id: BrassWindoorSecureSalvageLocked
+  suffix: Salvage, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsSalvage ]
+
+- type: entity
+  parent: WindoorSecureBrass
+  id: BrassWindoorSecureSecurityLocked
+  suffix: Security, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsSecurity ]
+    - type: Wires
+      layoutId: AirlockSecurity
+
+- type: entity
+  parent: WindoorSecureBrass
+  id: BrassWindoorSecureScienceLocked
+  suffix: Science, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsResearch ]
+    - type: Wires
+      layoutId: AirlockScience
+
+- type: entity
+  parent: WindoorSecureBrass
+  id: BrassWindoorSecureServiceLocked
+  suffix: Service, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsService ]
+    - type: Wires
+      layoutId: AirlockService
+
+- type: entity
+  parent: BrassWindoorSecureCommandLocked
+  id: BrassWindoorSecureHeadOfPersonnelLocked
+  suffix: HeadOfPersonnel, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsHeadOfPersonnel ]
+
+- type: entity
+  parent: WindoorSecureBrass
+  id: BrassWindoorSecureSyndicateLocked
+  suffix: Syndicate, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsSyndicateAgent ]
+
+- type: entity
+  parent: WindoorSecureBrass
+  id: BrassWindoorSecureNukeopLocked
+  suffix: Nukeop, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsNukeop ]
+
+- type: entity
+  parent: BrassWindoorSecureCargoLocked
+  id: BrassWindoorSecureMiningLocked
+  suffix: Mining, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsMining ]
+
+- type: entity
+  parent: BrassWindoorSecureCargoLocked
+  id: BrassWindoorSecureSalvageMiningLocked
+  suffix: Salvage, Mining, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsSalvageMining ]
+
+- type: entity
+  parent: BrassWindoorSecureCargoLocked
+  id: BrassWindoorSecureMailLocked
+  suffix: Mail, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsMail ]
+
+- type: entity
+  parent: WindoorSecureBrass
+  id: BrassWindoorSecureRoboticsLocked
+  suffix: Robotics, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsRobotics ]
+    - type: Wires
+      layoutId: AirlockScience
+
+- type: entity
+  parent: BrassWindoorSecureSecurityLocked
+  id: BrassWindoorSecureInternalAffairsLocked
+  suffix: Internal Affairs, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsInternalAffairs ]
+
+- type: entity
+  parent: BrassWindoorSecureServiceLocked
+  id: BrassWindoorSecureLegalLocked
+  suffix: Legal, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsLegal ]
+
+- type: entity
+  parent: BrassWindoorSecureSecurityLocked
+  id: BrassWindoorSecureCourtroomLocked
+  suffix: Security/Internal Affairs/Legal (Courtroom), Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsCourtroom ]
+
+- type: entity
+  parent: BrassWindoorSecureServiceLocked
+  id: BrassWindoorSecureAttorneyLocked
+  suffix: Internal Affairs/Legal (Attorney), Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsAttorney ]

@@ -1,0 +1,23 @@
+- type: alert
+  id: MinersCourage
+  icons:
+  - sprite: /Textures/_Starlight/Interface/Alerts/dwarf.rsi
+    state: courage
+  name: alerts-miners-courage-name
+  description: alerts-miners-courage-desc
+
+- type: alert
+  id: MinersFortitude
+  icons:
+  - sprite: /Textures/_Starlight/Interface/Alerts/dwarf.rsi
+    state: fortitude
+  name: alerts-miners-fortitude-name
+  description: alerts-miners-fortitude-desc
+
+- type: alert
+  id: MinersFury
+  icons:
+  - sprite: /Textures/_Starlight/Interface/Alerts/dwarf.rsi
+    state: fury
+  name: alerts-miners-fury-name
+  description: alerts-miners-fury-desc

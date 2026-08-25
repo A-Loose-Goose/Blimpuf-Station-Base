@@ -481,7 +481,7 @@
               prototype: SheetSteel1
               amount: 1
           steps:
-          #To-Do: Add deconstruct visuals
+            #To-Do: Add deconstruct visuals
             - tool: Welding
               doAfter: 5
             - tool: Cutting

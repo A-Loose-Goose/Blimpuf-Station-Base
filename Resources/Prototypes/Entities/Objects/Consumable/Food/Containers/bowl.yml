@@ -13,7 +13,7 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 50 # enough to make cheese in.
+        maxVol: 60 # enough to make cheese in.
   - type: Sprite
     sprite: Objects/Consumable/Food/bowl.rsi
     layers:
@@ -67,6 +67,11 @@
     tags:
     - Trash
     - Dinnerware #Starlight
+  - type: ExaminableSolution
+    solution: food
+    heldOnly: true
+  - type: SolutionItemStatus
+    solution: food
 
 - type: entity
   parent: BaseItem

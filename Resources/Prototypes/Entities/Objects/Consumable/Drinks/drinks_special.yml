@@ -29,12 +29,14 @@
       drink:
         reagents:
         - ReagentId: Ice
-          Quantity: 200
+          Quantity: 180
   - type: Sprite
     sprite: Objects/Consumable/Drinks/icebucket.rsi
     state: icon
   - type: Item # Starlight
     size: Normal # Starlight
+    shape:
+    - 0,0,1,2
   - type: PhysicalComposition
     materialComposition:
       Steel: 75
@@ -48,10 +50,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 100
+        maxVol: 90
         reagents:
         - ReagentId: Tea
-          Quantity: 100
+          Quantity: 90
   - type: Sprite
     sprite: Objects/Consumable/Drinks/teapot.rsi
   - type: FitsInDispenser
@@ -118,7 +120,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 100
+        maxVol: 90
   - type: FitsInDispenser
     solution: drink
   - type: ExaminableSolution
@@ -128,6 +130,9 @@
     state: icon
   - type: Item
     sprite: Objects/Consumable/Drinks/shaker.rsi
+    size: Small
+    shape:
+    - 0,0,1,1
   - type: PhysicalComposition
     materialComposition:
       Steel: 50

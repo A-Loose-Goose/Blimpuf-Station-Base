@@ -10,7 +10,7 @@ public abstract partial class SharedTimeSystem : EntitySystem
     [Dependency] private SharedGameTicker _gameTicker = default!;
 
     // Default value is sensible but will be updated later.
-    protected DateTime Date = DateTime.UtcNow.AddYears(500);
+    protected DateTime Date = DateTime.UtcNow.AddYears(1000);
 
     public override void Initialize()
     {
@@ -40,7 +40,7 @@ public abstract partial class SharedTimeSystem : EntitySystem
     }
 
     /// <summary>
-    /// Gets the station's date. This is 500 years in the future from today's date.
+    /// Gets the station's date. This is 1000 years in the future from today's date.
     /// </summary>
     public string GetDate()
     {

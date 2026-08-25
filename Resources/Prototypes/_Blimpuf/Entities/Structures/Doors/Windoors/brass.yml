@@ -1,0 +1,230 @@
+- type: entity
+  id: BaseBrassWindoor
+  name: brass windoor
+  parent: BaseWindoor
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Structures/Doors/Windoors/brass_windoor.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+    - state: closed_unlit
+      shader: unshaded
+      map: ["enum.DoorVisualLayers.BaseUnlit"]
+      visible: false
+    - state: welded
+      map: ["enum.WeldableLayers.BaseWelded"]
+    - state: bolted_unlit
+      shader: unshaded
+      map: ["enum.DoorVisualLayers.BaseBolted"]
+    - state: emergency_unlit
+      shader: unshaded
+      map: ["enum.DoorVisualLayers.BaseEmergencyAccess"]
+    - state: panel_open
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+    - state: electrified_ai
+      sprite: Interface/Misc/ai_hud.rsi
+      shader: unshaded
+      visible: false
+      map: ["enum.ElectrifiedLayers.HUD"]
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      shader: unshaded
+      visible: false
+      map: ["enum.ElectrifiedLayers.Sparks"]
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors: # excess damage (nuke?). Avoid the computational cost of spawning entities.
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ShardGlassClockwork:
+            min: 1
+            max: 2
+          SheetBrass1:
+            min: 0
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Construction
+    graph: Windoor
+    node: windoorBrass
+    containers:
+    - board
+  - type: StaticPrice
+    price: 240
+
+- type: entity
+  id: BaseSecureBrassWindoor
+  parent: [BaseDeltaPressureReinforcedGlassQuarter, BaseWindoor]
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Structures/Doors/Windoors/brass_windoor.rsi
+      layers:
+        - state: secure_underlay
+        - state: closed
+          map: [ "enum.DoorVisualLayers.Base" ]
+        - state: closed_unlit
+          shader: unshaded
+          map: [ "enum.DoorVisualLayers.BaseUnlit" ]
+          visible: false
+        - state: welded
+          map: [ "enum.WeldableLayers.BaseWelded" ]
+        - state: bolted_unlit
+          shader: unshaded
+          map: [ "enum.DoorVisualLayers.BaseBolted" ]
+        - state: emergency_unlit
+          shader: unshaded
+          map: [ "enum.DoorVisualLayers.BaseEmergencyAccess" ]
+        - state: panel_open
+          map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+          visible: false
+        - state: electrified_ai
+          sprite: Interface/Misc/ai_hud.rsi
+          shader: unshaded
+          visible: false
+          map: [ "enum.ElectrifiedLayers.HUD" ]
+        - state: electrified
+          sprite: Effects/electricity.rsi
+          shader: unshaded
+          visible: false
+          map: [ "enum.ElectrifiedLayers.Sparks" ]
+        - state: sparks
+          map: ["enum.DoorVisualLayers.BaseEmagging"]
+          shader: unshaded
+          visible: false
+    - type: Damageable
+      damageModifierSet: RGlass
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 600
+          behaviors: # excess damage (nuke?). Avoid the computational cost of spawning entities.
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 400
+          behaviors:
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ShardGlassClockwork:
+                  min: 1
+                  max: 2
+                SheetBrassma1:
+                  min: 1
+                  max: 2
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+    - type: Construction
+      graph: Windoor
+      node: windoorBrassSecure
+    - type: StaticPrice
+      price: 350
+    - type: Tag
+      tags:
+        - SecureWindoor
+        # This tag is used to navigate the Airlock construction graph. It's needed because the construction graph is shared between Airlock, AirlockGlass, and HighSecDoor.
+        - BulletUnarmedCollide
+
+- type: entity
+  id: WindoorBrass
+  parent: BaseBrassWindoor
+  name: brass windoor
+  description: It's a sturdy window and a sliding door. Wow!
+
+- type: entity
+  id: WindoorSecureBrass
+  parent: BaseSecureBrassWindoor
+  name: secure brass windoor
+  description: It's a sturdy window and a sliding door. Wow!
+
+- type: entity
+  id: BrassWindoorAssembly
+  name: brass windoor assembly
+  description: It opens, it closes, and you can see through it!
+  parent: BaseStructure
+  components:
+    - type: InteractionOutline
+    - type: Sprite
+      sprite: _Blimpuf/Structures/Doors/Windoors/brass_windoor.rsi
+      layers:
+        - state: assembly
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.49,-0.49,0.49,-0.2"
+          density: 40
+          mask:
+            - Impassable
+            - HighImpassable
+    - type: Anchorable
+    - type: Pullable
+    - type: Rotatable
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Metallic
+    - type: RCDDeconstructable
+      cost: 6
+      delay: 8
+      fx: EffectRCDDeconstruct8
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                SheetSteel1:
+                  min: 1
+                  max: 3
+    - type: Construction
+      graph: Windoor
+      node: assemblyBrass
+  placement:
+    mode: SnapgridCenter
+
+- type: entity
+  id: BrassWindoorAssemblySecure
+  name: secure brass windoor assembly
+  description: It opens, it closes, and you can see through it! This one looks tough.
+  parent: WindoorAssembly
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Structures/Doors/Windoors/brass_windoor.rsi
+      layers:
+        - state: secure_underlay
+        - state: assembly
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 600
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                SheetBrassma1:
+                  min: 1
+                  max: 2
+    - type: Construction
+      graph: Windoor
+      node: assemblyBrassSecure

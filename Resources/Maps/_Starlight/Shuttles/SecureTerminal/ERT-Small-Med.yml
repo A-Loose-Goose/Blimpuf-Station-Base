@@ -69,6 +69,9 @@ entities:
     - type: SpreaderGrid
     - type: Shuttle
       dampingModifier: 0.25
+    - type: Tag
+      tags:
+        - ERTShuttle
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -2227,10 +2230,8 @@ entities:
           - 307
           - 326
           - 325
-          - 310
           - 330
           - 329
-          - 309
           - 311
           - 314
           - 323
@@ -3606,7 +3607,7 @@ entities:
     - type: Transform
       pos: 5.5,0.5
       parent: 1
-- proto: GasVentPump
+- proto: SecureCCGasVentPump
   entities:
   - uid: 502
     components:
@@ -4197,7 +4198,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: OrganCycloriteHeart
+- proto: OrganTNebriHeart
   entities:
   - uid: 307
     components:
@@ -4207,22 +4208,6 @@ entities:
       canCollide: False
     - type: InsideEntityStorage
   - uid: 308
-    components:
-    - type: Transform
-      parent: 304
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-- proto: OrganDwarfHeart
-  entities:
-  - uid: 309
-    components:
-    - type: Transform
-      parent: 304
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 310
     components:
     - type: Transform
       parent: 304

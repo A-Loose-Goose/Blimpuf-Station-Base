@@ -6,11 +6,8 @@
 
 #- type: entity
 #  save: false
-#  name: Urist McBrighteye
 #  parent: [BaseMobShadekin, BaseMob]
-#  id: MobBrighteye
 #  components:
-#  - type: Brighteye
 #    energy: 200
 #  - type: NpcFactionMember
 #    factions:

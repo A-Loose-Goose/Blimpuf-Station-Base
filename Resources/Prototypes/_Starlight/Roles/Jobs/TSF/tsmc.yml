@@ -10,7 +10,6 @@
   icon: JobIconTSF
   rules: job-rules-tsf-aligned
   supervisors: job-supervisors-solgov
-  canBeAntag: false
   access:
     - Solgov
   special:
@@ -32,7 +31,6 @@
   icon: JobIconTSF
   rules: job-rules-tsf-aligned
   supervisors: job-supervisors-solgov
-  canBeAntag: false
   access:
     - Solgov
   special:
@@ -51,12 +49,11 @@
       department: Security
       time: 18000 # 5h
     - !type:RolesRequirement
-      proto: ExtRolesReq
+      proto: CCEReq
   setPreference: false
   icon: JobIconTSF
   rules: job-rules-tsf-aligned
   supervisors: job-supervisors-solgov
-  canBeAntag: false
   access:
     - Solgov
   special:

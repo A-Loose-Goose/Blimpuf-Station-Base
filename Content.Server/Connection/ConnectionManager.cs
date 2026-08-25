@@ -9,6 +9,7 @@ using Content.Server.Connection.IPIntel;
 using Content.Server.Database;
 using Content.Server.GameTicking;
 using Content.Server.Preferences.Managers;
+using Content.Server._Blimpuf.Discord;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
 using Content.Shared.Players.PlayTimeTracking;
@@ -22,7 +23,6 @@ using Robust.Shared.Timing;
 
 #region Starlight
 using Content.Server._NullLink.Core;
-using Content.Server._NullLink.PlayerData;
 using Content.Server._Starlight.Connection;
 using Content.Server.Discord.DiscordLink;
 using Content.Shared._NullLink;
@@ -71,7 +71,7 @@ namespace Content.Server.Connection
     public sealed partial class ConnectionManager : IConnectionManager
     {
         [Dependency] private IActorRouter _actors = default!; // NullLink
-        [Dependency] private INullLinkPlayerManager _nullLinkPlayerManager = default!; // NullLink
+        [Dependency] private IBlimpufDiscordLinkService _blimpufDiscordLink = default!;
         [Dependency] private IBanManager _banManager = default!; // NullLink-edit: move to general method at Manager
         [Dependency] private IPlayerManager _plyMgr = default!;
         [Dependency] private IServerNetManager _netMgr = default!;
@@ -242,8 +242,11 @@ namespace Content.Server.Connection
                 if (reason == ConnectionDenyReason.Full)
                     properties["delay"] = _cfg.GetCVar(CCVars.GameServerFullReconnectDelay);
 
-                //NullLink discord link
-                properties["discord"] = _nullLinkPlayerManager.GetDiscordAuthUrl(e.UserId.ToString());
+                var discordAuthUrl = _blimpufDiscordLink.GetAuthUrl(e.UserId.ToString());
+                properties["discord"] = discordAuthUrl;
+
+                if (reason == ConnectionDenyReason.Whitelist)
+                    msg = BuildWhitelistDenyMessage(msg, properties);
 
                 e.Deny(new NetDenyReason(msg, properties));
             }
@@ -347,16 +350,17 @@ namespace Content.Server.Connection
                 var record = await _db.GetPlayerRecordByUserId(userId);
                 var bypassAllowed = _cfg.GetCVar(CCVars.BypassBunkerWhitelist) && await _db.GetWhitelistStatusAsync(userId);
 
-                // NullLink-start
                 try
                 {
-                    if (!bypassAllowed
-                        && _bunkerBypass is not null
-                        && _actors.TryGetServerGrain(out var serverGrain))
-                        bypassAllowed = await serverGrain.HasPlayerAnyRole(userId, _bunkerBypass.Roles);
+                    if (!bypassAllowed && _bunkerBypass is not null)
+                    {
+                        var roles = await _blimpufDiscordRoles.GetRolesAsync(userId);
+                        bypassAllowed = roles?.Roles.Any(role => _bunkerBypass.Roles.Contains(role)) == true;
+                    }
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
+                    _sawmill.Warning($"Can't get Blimpuf Discord roles for panic bunker bypass for {userId}: {ex}");
                 }
 
                 var minOverallMinutes = _cfg.GetCVar(CCVars.PanicBunkerMinOverallMinutes);
@@ -377,10 +381,7 @@ namespace Content.Server.Connection
                     _sawmill.Log(LogLevel.Warning, "Can't get NullLink playtime for {userId}! {ex}", e.UserId, ex);
                 }
 
-                /// If you see this message and this line in conflict, pls, don't do anything without help from NullLink Team, because you can break age bypass for our servers and downstreams.
-                /// Only change this if you know what you're doing.
                 var validAccountAge = record != null ? record.FirstSeenTime.CompareTo(DateTimeOffset.UtcNow - TimeSpan.FromMinutes(minMinutesAge)) <= 0 : overallTime.TimeSpent.TotalMinutes >= minMinutesAge;
-                // NullLink-end
 
                 // Use the custom reason if it exists & they don't have the minimum account age
                 if (customReason != string.Empty && !validAccountAge && !bypassAllowed)
@@ -473,6 +474,39 @@ namespace Content.Server.Connection
             }
 
             return null;
+        }
+
+        private string BuildWhitelistDenyMessage(string baseMessage, Dictionary<string, object> properties)
+        {
+            var lines = new List<string>
+            {
+                baseMessage,
+                "",
+                Loc.GetString("blimpuf-whitelist-denial-sync"),
+            };
+
+            var discordUrl = _cfg.GetCVar(CCVars.InfoLinksDiscord).Trim();
+            var websiteUrl = _cfg.GetCVar(CCVars.InfoLinksWebsite).Trim();
+
+            if (!string.IsNullOrWhiteSpace(discordUrl) || !string.IsNullOrWhiteSpace(websiteUrl))
+            {
+                lines.Add("");
+
+                if (!string.IsNullOrWhiteSpace(discordUrl) && !string.IsNullOrWhiteSpace(websiteUrl))
+                    lines.Add(Loc.GetString("blimpuf-whitelist-denial-apply-discord-and-website"));
+                else if (!string.IsNullOrWhiteSpace(discordUrl))
+                    lines.Add(Loc.GetString("blimpuf-whitelist-denial-apply-discord"));
+                else
+                    lines.Add(Loc.GetString("blimpuf-whitelist-denial-apply-website"));
+
+                if (!string.IsNullOrWhiteSpace(discordUrl))
+                    properties["applyDiscord"] = discordUrl;
+
+                if (!string.IsNullOrWhiteSpace(websiteUrl))
+                    properties["applyWebsite"] = websiteUrl;
+            }
+
+            return string.Join('\n', lines);
         }
 
         private bool HasTemporaryBypass(NetUserId user)

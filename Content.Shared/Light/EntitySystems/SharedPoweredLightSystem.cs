@@ -324,7 +324,7 @@ public abstract partial class SharedPoweredLightSystem : EntitySystem
             case LightBulbState.Normal:
                 if (powerReceiver.Powered && light.On && lightEnergy > 0)
                 {
-                    SetLight(uid, true, lightBulb.Color, light, lightRadius, lightEnergy, lightBulb.LightSoftness, HasComp<DarkLightComponent>(bulbUid.Value)); // Starlight
+                    SetLight(uid, true, lightBulb.Color, light, lightRadius, lightEnergy, lightBulb.LightSoftness);
                     _appearance.SetData(uid, PoweredLightVisuals.BulbState, PoweredLightState.On, appearance);
                     var time = GameTiming.CurTime;
                     if (time > light.LastThunk + ThunkDelay)
@@ -367,8 +367,7 @@ public abstract partial class SharedPoweredLightSystem : EntitySystem
         // Was it being repaired, or did it take damage?
         if (args.DamageIncreased)
         {
-            if (TryDestroyBulb(uid, component, args.Origin) && args.Origin is not null)
-                RaiseLocalEvent(args.Origin.Value, new OnLightBreakEvent(uid)); // SL
+            TryDestroyBulb(uid, component, args.Origin);
         }
     }
 
@@ -389,7 +388,7 @@ public abstract partial class SharedPoweredLightSystem : EntitySystem
             args.Affected = true;
     }
 
-    private void SetLight(EntityUid uid, bool value, Color? color = null, PoweredLightComponent? light = null, float? radius = null, float? energy = null, float? softness = null, bool darklight = false) // Starlight: Added darklight
+    private void SetLight(EntityUid uid, bool value, Color? color = null, PoweredLightComponent? light = null, float? radius = null, float? energy = null, float? softness = null)
     {
         if (!Resolve(uid, ref light))
             return;
@@ -415,13 +414,6 @@ public abstract partial class SharedPoweredLightSystem : EntitySystem
             if (softness != null)
                 _pointLight.SetSoftness(uid, (float)softness, pointLight);
         }
-
-        // Starlight - Start
-        if (darklight)
-            EnsureComp<DarkLightComponent>(uid);
-        else
-            RemComp<DarkLightComponent>(uid);
-        // Starlight - End
 
         // light bulbs burn your hands!
         if (TryComp<DamageOnInteractComponent>(uid, out var damageOnInteractComp))

@@ -130,9 +130,9 @@
     sprite: Clothing/Ears/Headsets/command.rsi
 
 - type: entity
-  parent: [ClothingHeadsetAlt, BaseBlueShieldContraband]
-  id: ClothingHeadsetAltBSO
-  name: central command enforcer over-ear headset
+  parent: [ClothingHeadsetAlt, BaseCommandContraband]
+  id: ClothingHeadsetAltCCRep
+  name: central command representative over-ear headset
   components:
   - type: ContainerFill
     containers:
@@ -140,12 +140,14 @@
       - EncryptionKeyCorporate
       - EncryptionKeyStationMaster
   - type: Sprite
-    sprite: Clothing/Ears/Headsets/command.rsi
+    sprite: Clothing/Ears/Headsets/centcom.rsi
   - type: Clothing
-    sprite: Clothing/Ears/Headsets/command.rsi
+    sprite: Clothing/Ears/Headsets/centcom.rsi
   - type: RadioChime
     sound:
       path: /Audio/_Starlight/Effects/Radio/bso.ogg
+  - type: StealTarget # Blimpuf
+    stealGroup: ClothingHeadsetAltCommand # Blimpuf
 
 - type: entity
   parent: [ClothingHeadsetAlt, BaseSyndicateContraband]
@@ -305,20 +307,3 @@
       sprite: _Starlight/Clothing/Ears/Headsets/admeme.rsi
     - type: Clothing
       sprite: _Starlight/Clothing/Ears/Headsets/admeme.rsi
-
-- type: entity
-  parent: [ ClothingHeadsetAlt, BaseMedTakContraband ]
-  id: ClothingHeadsetAltMedTak
-  name: MedTak operator headset
-  description: A headset used by MedTak operators.
-  components:
-    - type: Headset
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - EncryptionKeyMedTak
-          - EncryptionKeyCommon
-    - type: Sprite
-      sprite: _Starlight/Admeme/Clothing/Ears/Headsets/medtak.rsi
-    - type: Clothing
-      sprite: _Starlight/Admeme/Clothing/Ears/Headsets/medtak.rsi

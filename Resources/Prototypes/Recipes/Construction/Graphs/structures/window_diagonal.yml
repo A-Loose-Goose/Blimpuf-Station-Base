@@ -40,11 +40,23 @@
               amount: 2
               doAfter: 3
 
+        - to: brassWindowDiagonal # Blimpuf
+          steps:
+            - material: ClockworkGlass
+              amount: 2
+              doAfter: 3
+
         - to: windowDiagonal
           steps:
             - material: Glass
               amount: 2
               doAfter: 3
+
+        - to: reinforcedBrassWindowDiagonal # Blimpuf
+          steps:
+            - material: ReinforcedClockworkGlass
+              amount: 2
+              doAfter: 4
 
     - node: windowDiagonal
       entity: WindowDiagonal
@@ -60,6 +72,91 @@
               doAfter: 1
             - tool: Anchoring
               doAfter: 2
+
+        # Starlight Start
+
+        - to: reinforcedWindowDiagonal
+          completed:
+            - !type:GivePrototype
+              prototype: SheetGlass1
+              amount: 2
+          steps:
+            - material: ReinforcedGlass
+              amount: 2
+              doAfter: 3
+
+        - to: plasmaWindowDiagonal
+          completed:
+            - !type:GivePrototype
+              prototype: SheetGlass1
+              amount: 2
+          steps:
+            - material: PlasmaGlass
+              amount: 2
+              doAfter: 3
+
+        - to: reinforcedPlasmaWindowDiagonal
+          completed:
+            - !type:GivePrototype
+              prototype: SheetGlass1
+              amount: 2
+          steps:
+            - material: ReinforcedPlasmaGlass
+              amount: 2
+              doAfter: 3
+
+        - to: uraniumWindowDiagonal
+          completed:
+            - !type:GivePrototype
+              prototype: SheetGlass1
+              amount: 2
+          steps:
+            - material: UraniumGlass
+              amount: 2
+              doAfter: 3
+
+        - to: reinforcedUraniumWindowDiagonal
+          completed:
+            - !type:GivePrototype
+              prototype: SheetGlass1
+              amount: 2
+          steps:
+            - material: ReinforcedUraniumGlass
+              amount: 2
+              doAfter: 3
+
+        - to: clockworkWindowDiagonal
+          completed:
+            - !type:GivePrototype
+              prototype: SheetGlass1
+              amount: 2
+          steps:
+            - material: ClockworkGlass
+              amount: 2
+              doAfter: 3
+
+        - to: brassWindowDiagonal # Blimpuf
+          completed:
+            - !type:GivePrototype
+              prototype: SheetGlass1
+              amount: 2
+          steps:
+            - material: ClockworkGlass
+              amount: 2
+              doAfter: 3
+
+        - to: reinforcedBrassWindowDiagonal # Blimpuf
+          completed:
+            - !type:GivePrototype
+              prototype: SheetGlass1
+              amount: 2
+          steps:
+            - material: ReinforcedClockworkGlass
+              amount: 2
+              doAfter: 4
+
+        # Starlight End
+
 
     - node: reinforcedWindowDiagonal
       entity: ReinforcedWindowDiagonal
@@ -84,6 +181,50 @@
             - tool: Anchoring
               doAfter: 2
 
+        # Starlight Start
+
+        - to: plasmaWindowDiagonal
+          completed:
+            - !type:GivePrototype
+              prototype: SheetRGlass1
+              amount: 2
+          steps:
+            - material: PlasmaGlass
+              amount: 2
+              doAfter: 3
+
+        - to: reinforcedPlasmaWindowDiagonal
+          completed:
+            - !type:GivePrototype
+              prototype: SheetRGlass1
+              amount: 2
+          steps:
+            - material: ReinforcedPlasmaGlass
+              amount: 2
+              doAfter: 3
+
+        - to: uraniumWindowDiagonal
+          completed:
+            - !type:GivePrototype
+              prototype: SheetRGlass1
+              amount: 2
+          steps:
+            - material: UraniumGlass
+              amount: 2
+              doAfter: 3
+
+        - to: reinforcedUraniumWindowDiagonal
+          completed:
+            - !type:GivePrototype
+              prototype: SheetRGlass1
+              amount: 2
+          steps:
+            - material: ReinforcedUraniumGlass
+              amount: 2
+              doAfter: 3
+
+        # Starlight End
+
     - node: clockworkWindowDiagonal
       entity: ClockworkWindowDiagonal
       edges:
@@ -93,6 +234,52 @@
               prototype: SheetClockworkGlass1
               amount: 2
             - !type:DeleteEntity {}
+          steps:
+            - tool: Welding
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 1
+            - tool: Prying
+              doAfter: 2
+            - tool: Welding
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 2
+
+    - node: brassWindowDiagonal # Blimpuf
+      entity: BrassWindowDiagonal
+      edges:
+        - to: start
+          completed:
+            - !type:GivePrototype
+              prototype: SheetClockworkGlass1
+              amount: 2
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Welding
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 1
+            - tool: Prying
+              doAfter: 2
+            - tool: Welding
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 2
+
+    - node: reinforcedBrassWindowDiagonal # Blimpuf
+      entity: ReinforcedBrassWindowDiagonal
+      edges:
+        - to: start
+          completed:
+            - !type:GivePrototype
+              prototype: SheetReinforcedClockworkGlass1
+              amount: 2
+            - !type:DeleteEntity { }
           steps:
             - tool: Welding
               doAfter: 5
@@ -126,6 +313,40 @@
             - tool: Anchoring
               doAfter: 3
 
+        # Starlight Start
+
+        - to: reinforcedPlasmaWindowDiagonal
+          completed:
+            - !type:GivePrototype
+              prototype: SheetPGlass1
+              amount: 2
+          steps:
+            - material: ReinforcedPlasmaGlass
+              amount: 2
+              doAfter: 3
+
+        - to: uraniumWindowDiagonal
+          completed:
+            - !type:GivePrototype
+              prototype: SheetPGlass1
+              amount: 2
+          steps:
+            - material: UraniumGlass
+              amount: 2
+              doAfter: 3
+
+        - to: reinforcedUraniumWindowDiagonal
+          completed:
+            - !type:GivePrototype
+              prototype: SheetPGlass1
+              amount: 2
+          steps:
+            - material: ReinforcedUraniumGlass
+              amount: 2
+              doAfter: 3
+
+        # Starlight End
+
     - node: reinforcedPlasmaWindowDiagonal
       entity: ReinforcedPlasmaWindowDiagonal
       edges:
@@ -149,6 +370,30 @@
             - tool: Anchoring
               doAfter: 3
 
+        # Starlight Start
+
+        - to: uraniumWindowDiagonal
+          completed:
+            - !type:GivePrototype
+              prototype: SheetRPGlass1
+              amount: 2
+          steps:
+            - material: UraniumGlass
+              amount: 2
+              doAfter: 3
+
+        - to: reinforcedUraniumWindowDiagonal
+          completed:
+            - !type:GivePrototype
+              prototype: SheetRPGlass1
+              amount: 2
+          steps:
+            - material: ReinforcedUraniumGlass
+              amount: 2
+              doAfter: 3
+
+        # Starlight End
+
     - node: uraniumWindowDiagonal
       entity: UraniumWindowDiagonal
       edges:
@@ -167,6 +412,20 @@
               doAfter: 2
             - tool: Anchoring
               doAfter: 3
+
+        # Starlight Start
+
+        - to: reinforcedUraniumWindowDiagonal
+          completed:
+            - !type:GivePrototype
+              prototype: SheetUGlass1
+              amount: 2
+          steps:
+            - material: ReinforcedUraniumGlass
+              amount: 2
+              doAfter: 3
+
+        # Starlight End
 
     - node: reinforcedUraniumWindowDiagonal
       entity: ReinforcedUraniumWindowDiagonal

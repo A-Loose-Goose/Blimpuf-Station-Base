@@ -24,6 +24,16 @@
               amount: 2
               doAfter: 1
 
+        - to: brassGrilleDiagonal # Blimpuf
+          completed:
+            - !type:AdminLog
+              message: "Construction"
+              impact: High
+          steps:
+            - material: BrassRod
+              amount: 2
+              doAfter: 1
+
     - node: grilleDiagonal
       entity: GrilleDiagonal
       edges:
@@ -48,6 +58,21 @@
               message: "A grille was cut"
             - !type:SpawnPrototype
               prototype: PartRodMetal1
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Cutting
+              doAfter: 0.25
+
+    - node: brassGrilleDiagonal # Blimpuf
+      entity: BrassGrilleDiagonal
+      edges:
+        - to: start
+          completed:
+            - !type:AdminLog
+              message: "A grille was cut"
+            - !type:SpawnPrototype
+              prototype: PartRodBrass1
               amount: 2
             - !type:DeleteEntity
           steps:

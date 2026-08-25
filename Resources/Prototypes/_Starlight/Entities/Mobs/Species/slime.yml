@@ -33,6 +33,8 @@
         type: VampireClassBui
       enum.VampireLocateUiKey.Key: # SL
         type: VampireLocateBui
+  - type: InteractionPopup # Starlight
+    interactSuccessSound: /Audio/Voice/Slime/slime_squish.ogg # Starlight
   - type: Absorbable
   - type: Hunger
   - type: Thirst
@@ -99,7 +101,7 @@
       Burn:
         sprite: Mobs/Effects/burn_damage.rsi
   - type: Bloodstream
-    bloodReferenceSolution: # TODO Color slime blood based on their slime color or smth
+    bloodReferenceSolution:
       reagents:
       - ReagentId: Slime
         Quantity: 300
@@ -142,7 +144,6 @@
       types:
         Asphyxiation: -1.0
     maxSaturation: 15
-  - type: ShowThirstIcons # starlight
   - type: SolutionScanner # starlight
   - type: Wagging # starlight
   # Blimpuf - Start

@@ -128,14 +128,10 @@ namespace Content.Client.Lobby.UI
 
         private readonly ISawmill _sawmill;
 
-        #region Starlight
-
 
         // Cosmatic Drift Record System-start
         private readonly RecordEditorGui _recordsTab; // Tracks CD records UI state
         // Cosmatic Drift Record System-end
-
-        #endregion Starlight
 
         public HumanoidProfileEditor(
             IClientPreferencesManager preferencesManager,
@@ -204,6 +200,9 @@ namespace Content.Client.Lobby.UI
             };
 
             Traits.OnTraitsChanged += OnTraitsSelectionChanged; // Starlight
+
+            Antags.OnAntagsChanged += OnAntagsSelectionChanged; // Moffstation
+            Antags.OnLoadoutPressed += OnAntagLoadoutPressed; // Moffstation
 
             #region Left
 
@@ -285,6 +284,14 @@ namespace Content.Client.Lobby.UI
                 UpdateCustomSpecieNameEdit(); // Starlight
             };
             // Far Horizons end
+
+            // Blimpuf start
+            SpeciesVariantButton.OnItemSelected += args =>
+            {
+                SpeciesVariantButton.SelectId(args.Id);
+                SetSpeciesVariant(_speciesVariants[args.Id]);
+            };
+            // Blimpuf end
 
             //starlight start
             #region Size
@@ -632,9 +639,14 @@ namespace Content.Client.Lobby.UI
             if (Profile is null)
                 return;
 
-            // Remove all existing traits - iterate directly over readonly collection
+            // Keep traits managed outside the trait selector, such as species variants
             foreach (var existingTrait in Profile.TraitPreferences)
             {
+                if (_prototypeManager.TryIndex(existingTrait, out TraitPrototype? trait) &&
+                    _prototypeManager.TryIndex(trait.Category, out TraitCategoryPrototype? category) &&
+                    category.Hidden)
+                    continue;
+
                 Profile = Profile.WithoutTraitPreference(existingTrait, _prototypeManager);
             }
 
@@ -827,9 +839,12 @@ namespace Content.Client.Lobby.UI
             }
         }
 
+        #region Starlight
         public void RefreshAntags()
         {
-            AntagList.RemoveAllChildren();
+            var renderedAntags = Antags.RefreshAntags(Profile); // Starlight
+            UpdateAntagPreferences(renderedAntags); // Starlight
+            /*AntagList.RemoveAllChildren();
             var items = new[]
             {
                 ("humanoid-profile-editor-antag-preference-yes-button", 0),
@@ -935,8 +950,64 @@ namespace Content.Client.Lobby.UI
                 // Starlight ENd
 
                 AntagList.AddChild(antagContainer);
-            }
+            }*/
         }
+        private void OnAntagsSelectionChanged(HashSet<ProtoId<AntagPrototype>> antags)
+        {
+            if (UpdateAntagPreferences(antags))
+                ReloadPreview();
+        }
+
+        private bool UpdateAntagPreferences(IEnumerable<ProtoId<AntagPrototype>> antags)
+        {
+            if (Profile is null)
+                return false;
+
+            var selectedAntags = antags.ToHashSet();
+
+            if (selectedAntags.SetEquals(Profile.AntagPreferences))
+                return false;
+
+            Profile = Profile.WithAntagPreferences(selectedAntags);
+            SetDirty();
+            return true;
+        }
+
+        private void OnAntagLoadoutPressed(ProtoId<AntagPrototype> antagId)
+        {
+            if (Profile is null ||
+                !_prototypeManager.TryIndex<AntagPrototype>(antagId, out var antag))
+            {
+                return;
+            }
+
+            var antagLoadoutId = antag.RoleLoadout?.FirstOrDefault();
+
+            if (antagLoadoutId == null ||
+                !_prototypeManager.TryIndex<RoleLoadoutPrototype>(
+                    antagLoadoutId.Value,
+                    out var roleLoadoutProto))
+            {
+                return;
+            }
+
+            RoleLoadout? loadout = null;
+            Profile.Loadouts.TryGetValue(roleLoadoutProto.ID, out loadout);
+            loadout = loadout?.Clone();
+
+            if (loadout == null)
+            {
+                loadout = new RoleLoadout(roleLoadoutProto.ID);
+                loadout.SetDefault(
+                    Profile,
+                    _playerManager.LocalSession,
+                    _prototypeManager,
+                    force: true);
+            }
+
+            OpenAntagLoadout(antag, loadout, roleLoadoutProto);
+        }
+        #endregion
 
         private void SetDirty()
         {
@@ -993,6 +1064,7 @@ namespace Content.Client.Lobby.UI
 
             UpdateNameEdit();
             UpdateSubspecies(); // Far Horizons
+            UpdateSpeciesVariant(); // Blimpuf
             UpdateCustomSpecieNameEdit(); // Starlight
             UpdateCharacterInfoEditorText(); //Starlight
             UpdateSexControls();
@@ -1186,9 +1258,7 @@ namespace Content.Client.Lobby.UI
                     }
                     description.AddMessage(!reason.IsEmpty ? reason : FormattedMessage.FromMarkupPermissive(Loc.GetString("job-no-requirements")));
 
-                    var jobName = JobDisplayNameOverrides.GetLobbyDisplayName(job);
-
-                    selector.Setup(items, jobName, 200, description, icon, job.Guides);
+                    selector.Setup(items, job.LocalizedJobSelectName, 200, description, icon, job.Guides);
 
                     if (!allowed)
                     {
@@ -1569,10 +1639,13 @@ namespace Content.Client.Lobby.UI
         {
             Profile = Profile?.WithSpecies(newSpecies);
             UpdateSubspecies(); // Far Horizons
+            UpdateSpeciesVariant(); // Blimpuf
+            Traits.UpdateRequirements(Profile);
             OnSkinColorOnValueChanged(); // Species may have special color prefs, make sure to update it.
             Markings.SetSpecies(newSpecies); // Repopulate the markings tab as well.
             // In case there's job restrictions for the species
             RefreshJobs();
+            RefreshAntags(); // Starlight
             // In case there's species restrictions for loadouts
             RefreshLoadouts();
             UpdateSexControls(); // update sex for new species

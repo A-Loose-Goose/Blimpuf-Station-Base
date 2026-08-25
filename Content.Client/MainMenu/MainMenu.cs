@@ -5,6 +5,7 @@ using Robust.Client;
 using Robust.Client.ResourceManagement;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
+using Robust.Client.UserInterface.CustomControls;
 using Robust.Shared;
 using Robust.Shared.Configuration;
 using Robust.Shared.Network;
@@ -25,6 +26,8 @@ namespace Content.Client.MainMenu
         [Dependency] private IGameController _controllerProxy = default!;
         [Dependency] private IResourceCache _resourceCache = default!;
         [Dependency] private IUserInterfaceManager _userInterfaceManager = default!;
+        [Dependency] private IClipboardManager _clipboard = default!;
+        [Dependency] private IUriOpener _uriOpener = default!;
         [Dependency] private ILogManager _logManager = default!;
 
         private ISawmill _sawmill = default!;
@@ -181,9 +184,82 @@ namespace Content.Client.MainMenu
 
         private void _onConnectFailed(object? _, NetConnectFailArgs args)
         {
-            _userInterfaceManager.Popup(Loc.GetString("main-menu-failed-to-connect",("reason", args.Reason)));
+            var message = Loc.GetString("main-menu-failed-to-connect", ("reason", args.Reason));
+
+            if (HasConnectionFailUrls(args))
+                ShowConnectionFailPopup(message, args);
+            else
+                _userInterfaceManager.Popup(message);
+
             _netManager.ConnectFailed -= _onConnectFailed;
             _setConnectingState(false);
+        }
+
+        private static bool HasConnectionFailUrls(INetStructuredReason args)
+        {
+            return args.Message.StringOf("discord") != null
+                   || args.Message.StringOf("applyDiscord") != null
+                   || args.Message.StringOf("applyWebsite") != null
+                   || args.Message.StringOf("url") != null;
+        }
+
+        private void ShowConnectionFailPopup(string message, INetStructuredReason args)
+        {
+            var popup = new DefaultWindow
+            {
+                Title = Loc.GetString("popup-title"),
+            };
+
+            var label = new RichTextLabel
+            {
+                Text = $"[color=white]{FormattedMessage.EscapeText(message)}[/color]",
+            };
+
+            var vBox = new BoxContainer
+            {
+                Orientation = BoxContainer.LayoutOrientation.Vertical,
+            };
+
+            vBox.AddChild(label);
+
+            var hBox = new BoxContainer
+            {
+                Orientation = BoxContainer.LayoutOrientation.Horizontal,
+                HorizontalAlignment = Control.HAlignment.Right,
+            };
+
+            AddUrlButton(hBox, args.Message.StringOf("discord"), Loc.GetString("link-discord"));
+            AddUrlButton(hBox, args.Message.StringOf("applyDiscord"), Loc.GetString("blimpuf-join-discord"));
+            AddUrlButton(hBox, args.Message.StringOf("applyWebsite"), Loc.GetString("blimpuf-website"));
+            AddUrlButton(hBox, args.Message.StringOf("url"), Loc.GetString("connecting-open-browser"));
+
+            var copyButton = new Button
+            {
+                Text = Loc.GetString("popup-copy-button"),
+                HorizontalExpand = true,
+            };
+
+            copyButton.OnPressed += _ => _clipboard.SetText(message);
+            hBox.AddChild(copyButton);
+
+            vBox.AddChild(hBox);
+            popup.Contents.AddChild(vBox);
+            popup.OpenCentered();
+        }
+
+        private void AddUrlButton(BoxContainer box, string? url, string text)
+        {
+            if (string.IsNullOrWhiteSpace(url))
+                return;
+
+            var button = new Button
+            {
+                Text = text,
+                HorizontalExpand = true,
+            };
+
+            button.OnPressed += _ => _uriOpener.OpenUri(url);
+            box.AddChild(button);
         }
 
         private void _setConnectingState(bool state)

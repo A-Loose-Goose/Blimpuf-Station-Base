@@ -966,20 +966,20 @@
   description: A one-of-a-kind prototype energy weapon that uses various shotgun configurations. It offers the possibility of both lethal and non-lethal shots, making it a versatile weapon.
   components:
   - type: Sprite
-    sprite: _Starlight/Objects/Weapons/Guns/Battery/Energy_Shotgun.rsi # Starlight, sprite changed (Objects/Weapons/Guns/Battery/energy_shotgun.rsi)
+    sprite: Objects/Weapons/Guns/Battery/energy_shotgun.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
-      - state: energy-unshaded-4
+      - state: mag-unshaded-4
         map: ["enum.GunVisualLayers.MagUnshaded"]
         shader: unshaded
   - type: MagazineVisuals
-    magState: energy #Starlight
+    magState: mag #Starlight
     steps: 5
     zeroVisible: false
   - type: Appearance
   - type: Clothing
-    sprite:  _Starlight/Objects/Weapons/Guns/Battery/Energy_Shotgun.rsi # Starlight, sprite changed (Objects/Weapons/Guns/Battery/energy_shotgun.rsi)
+    sprite:  Objects/Weapons/Guns/Battery/energy_shotgun.rsi
   - type: Tag
     tags:
     - HighRiskItem
@@ -996,14 +996,14 @@
     fireModes:
     - proto: BulletLaserSpreadNarrow
       fireCost: 48 #Starlight
-      magState: energy #Starlight
+      magState: mag #Starlight
     - proto: BulletDisablerSmgSpread
       fireCost: 30 #Starlight
       pacifismAllowedMode: true
       magState: disable #Starlight
   - type: Item
     size: Large
-    sprite:  _Starlight/Objects/Weapons/Guns/Battery/Energy_Shotgun_inhands-x64.rsi # Starlight, sprite changed (Objects\Weapons\Guns\Battery\inhands_64x.rsi)
+    sprite:  Objects/Weapons/Guns/Battery/inhands_64x.rsi
     heldPrefix: empty #starlight
   - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
   - type: Battery
@@ -1236,3 +1236,27 @@
     fireRate: 2
     minAngle: 1
     maxAngle: 2
+
+- type: entity
+  id: WeaponLaser
+  parent: BaseWeaponBatterySmall
+  name: beam emitter
+  suffix: Debug
+  description: It looks old and weathered, what use is this?
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Weapons/Guns/Pistols/beamemitter.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Starlight/Objects/Weapons/Guns/Pistols/beamemitter.rsi
+  - type: Gun
+    fireRate: 1
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/magnetic_shot.ogg
+  - type: BatteryAmmoProvider
+    proto: LaserBeamEmitter
+    fireCost: 250
+  - type: BatterySelfRecharger
+    autoRechargeRate: 100

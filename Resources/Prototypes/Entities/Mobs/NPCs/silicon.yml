@@ -308,7 +308,7 @@
   - type: SolutionContainerManager
     solutions:
       absorbed:
-        maxVol: 50
+        maxVol: 60
   - type: MovementSpeedModifier
     baseWalkSpeed: 2
     baseSprintSpeed: 3

@@ -1,7 +1,7 @@
 {
   "version": 2,
   "license": "CC-BY-SA-4.0",
-  "copyright": "Made by ItsMaitake on Discord/Youtube",
+  "copyright": "Made by ItsMaitake on Discord/Youtube for Blimpuf Station",
   "size": {
     "x": 32,
     "y": 32
@@ -9,6 +9,18 @@
   "states": [
     {
       "name": "icon"
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "equipped-HELMET",
+      "directions": 4
     }
   ]
 }

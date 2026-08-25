@@ -8,6 +8,7 @@
     xmlns:traits="clr-namespace:Content.Client._Starlight.Traits.UI"
     xmlns:starlightHumanoid="clr-namespace:Content.Client._Starlight.Humanoid"
     xmlns:starlightProfileEditorControls="clr-namespace:Content.Client._Starlight.Lobby.UI.ProfileEditorControls"
+    xmlns:antags="clr-namespace:Content.Client._Moffstation.Antags.UI"
     HorizontalExpand="True">
     <!--  Left side  -->
     <BoxContainer
@@ -99,6 +100,11 @@
                                     <Label Text="{Loc 'humanoid-profile-editor-subspecies-label'}" />
                                     <Control HorizontalExpand="True"/>
                                     <OptionButton Name="SubspeciesButton" HorizontalAlignment="Right" />
+                                </BoxContainer>
+                                <BoxContainer Name="CSpeciesVariant" HorizontalExpand="True">
+                                    <Label Text="{Loc 'humanoid-profile-editor-species-variant'}" />
+                                    <Control HorizontalExpand="True"/>
+                                    <OptionButton Name="SpeciesVariantButton" HorizontalAlignment="Right" />
                                 </BoxContainer>
                                 <!-- Far Horizons end -->
                             <!--  Species // Starlight  -->
@@ -229,13 +235,14 @@
                     <BoxContainer Name="JobList" Orientation="Vertical" />
                 </ScrollContainer>
             </BoxContainer>
-            <BoxContainer Margin="10" Orientation="Vertical">
-                <!--  Antags  -->
-                <ScrollContainer VerticalExpand="True">
-                    <BoxContainer Name="AntagList" Orientation="Vertical" />
-                </ScrollContainer>
-            </BoxContainer>
             <!--  Starlight - Start  -->
+            <antags:SpecialRolesTab Name="Antags" /> <!-- Moffstation -->
+            <!-- <BoxContainer Margin="10" Orientation="Vertical"> -->
+                <!--  Antags  -->
+                <!-- <ScrollContainer VerticalExpand="True"> -->
+                    <!-- <BoxContainer Name="AntagList" Orientation="Vertical" /> -->
+                <!-- </ScrollContainer> -->
+            <!-- </BoxContainer> -->
             <!-- <BoxContainer Orientation="Vertical" Margin="10"> -->
             <!--  Traits  -->
             <!-- <ScrollContainer VerticalExpand="True"> -->

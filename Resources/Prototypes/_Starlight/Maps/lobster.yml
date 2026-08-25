@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightLobster
+  id: BlimpufLobster
   mapName: 'Lobster Station'
-  mapPath: /Maps/_Starlight/Stations/Lobster.yml
+  mapPath: /Maps/_Blimpuf/Stations/Lobster.yml
   minPlayers: 40
   maxPlayers: 150
   stations:
-    StarlightLobster:
+    BlimpufLobster:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
@@ -27,51 +27,51 @@
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             Reporter: [ 1, 1 ]
-            ServiceWorker: [ 4, 5 ]
+            ServiceWorker: [ 2, 3 ]
             Boxer: [ 2, 2 ]
             Lawyer: [ 2, 2 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 2, 2 ]
-            StationEngineer: [ 6, 7 ]
-            TechnicalAssistant: [ 3, 5 ]
+            StationEngineer: [ 5, 6 ]
+            TechnicalAssistant: [ 2, 3 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 2, 3 ]
-            MedicalDoctor: [ 7, 12 ]
-            MedicalIntern: [ 6, 8 ]
+            MedicalDoctor: [ 4, 5 ]
+            MedicalIntern: [ 2, 4 ]
             Psychologist: [ 1, 1 ]
             Paramedic: [ 2, 2 ]
             Surgeon: [ 2, 2 ]
             #science
             ResearchDirector: [ 1, 1 ]
-            Scientist: [ 4, 10 ]
-            ResearchAssistant: [ 4, 5 ]
-            Roboticist: [ 2, 3 ]
+            Scientist: [ 4, 5 ]
+            ResearchAssistant: [ 2, 3 ]
+            Roboticist: [ 1, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
             DutyOfficer: [ 1, 2 ]
             SecurityOfficer: [ 6, 8 ]
-            SecurityCadet: [ 3, 4 ]
+            SecurityCadet: [ 2, 3 ]
             Brigmedic: [ 1, 1 ]
             Detective: [ 1, 1 ]
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageLead: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
-            MiningSpecialist: [ 3, 3 ]
-            CargoTechnician: [ 6, 8 ]
+            MiningSpecialist: [ 2, 2 ]
+            CargoTechnician: [ 4, 5 ]
             MailTech: [ 2, 2 ]
             #civilian
             Assistant: [ -1, -1 ]
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 2, 2 ]
-            Performer: [ 4, 5 ]
+            Performer: [ 2, 3 ]
             #silicon
             StationAi: [ 1, 1 ]
-            Borg: [ 3, 6 ]
+            Borg: [ 3, 5 ]
             #law
             Magistrate: [ 1, 1 ]
             IAA: [ 2, 2 ]

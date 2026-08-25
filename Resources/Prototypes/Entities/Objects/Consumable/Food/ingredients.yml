@@ -15,7 +15,7 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 50
+        maxVol: 60
   - type: SolutionTransfer
     # This is potentially badly-handled due to 'drink opening',
     #  but it lets the flour be tampered with, refilled, etc.
@@ -35,6 +35,7 @@
     solution: food
   - type: TrashOnSolutionEmpty
     solution: food
+
 - type: entity
   abstract: true
   parent: ReagentContainerBase
@@ -70,6 +71,8 @@
     examinableWhileClosed: false
     heldOnly: true
   #Starlight end
+  - type: SolutionItemStatus
+    solution: food
 
 - type: entity
   abstract: true
@@ -104,10 +107,9 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 50
         reagents:
         - ReagentId: Flour
-          Quantity: 50
+          Quantity: 60
 
 - type: entity
   parent: [ReagentPacketBase, ItemHeftyBase]
@@ -120,10 +122,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 20
+        maxVol: 30
         reagents:
         - ReagentId: Flour
-          Quantity: 20
+          Quantity: 30
 
 - type: entity
   parent: ReagentPacketBase
@@ -147,7 +149,7 @@
       food:
         reagents:
         - ReagentId: Cornmeal
-          Quantity: 50
+          Quantity: 60
 
 - type: entity
   parent: ReagentPacketBase
@@ -160,10 +162,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 20
+        maxVol: 30
         reagents:
         - ReagentId: Cornmeal
-          Quantity: 20
+          Quantity: 30
 
 - type: entity
   parent: ReagentPacketBase
@@ -187,7 +189,7 @@
       food:
         reagents:
         - ReagentId: Rice
-          Quantity: 50
+          Quantity: 60
 
 - type: entity
   parent: ReagentPacketBase
@@ -200,10 +202,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 20
+        maxVol: 30
         reagents:
         - ReagentId: Rice
-          Quantity: 20
+          Quantity: 30
 
 - type: entity
   parent: ReagentPacketBase
@@ -227,7 +229,7 @@
       food:
         reagents:
         - ReagentId: Sugar
-          Quantity: 50
+          Quantity: 60
 
 - type: entity
   parent: ReagentPacketBase
@@ -240,10 +242,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 20
+        maxVol: 30
         reagents:
         - ReagentId: Sugar
-          Quantity: 20
+          Quantity: 30
 
 # Misc
 
@@ -267,10 +269,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 20
+        maxVol: 30
         reagents:
         - ReagentId: OilOlive
-          Quantity: 20
+          Quantity: 30
   - type: Edible
     edible: Drink # slurping sounds!
   #Starlight start
@@ -303,10 +305,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 50 # you always need more mayo
+        maxVol: 30
         reagents:
         - ReagentId: Mayo
-          Quantity: 50
+          Quantity: 30
   - type: Tag
     tags:
       - Mayo
@@ -881,7 +883,7 @@
   parent: FoodBakingBase
   id: FoodChevreSlice
   name: chèvre disk
-  description: A small disk of creamy Chèvre. An ideal adornment for French side dishes.
+  description: A small disk of creamy Chèvre. If you put your ear close to it, you can almost hear it bleat.
   components:
   - type: Item
     size: Tiny

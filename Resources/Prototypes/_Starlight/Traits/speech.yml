@@ -24,8 +24,6 @@
             - type: LizardAccent
             - type: MothAccent
             - type: GrowlingAccent
-            - type: ReplacementAccent
-              accent: dwarf
 
 - type: trait
   id: PoliteAccent

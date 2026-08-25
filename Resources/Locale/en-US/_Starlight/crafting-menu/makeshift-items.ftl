@@ -151,7 +151,7 @@ crafting-menu-name-IVT = improvised vest
 crafting-menu-text-IVT = Actually better than nothing, but still a bit on the heavy side, good at keeping you from getting stabbed.
 
 crafting-menu-name-FVT = forged vest
-crafting-menu-text-FVT = A high quality armor vest based upon old earth mongolian designs, it is very effective at what it does.
+crafting-menu-text-FVT = A high quality armor vest based upon old terran designs, it is very effective at what it does.
 
 crafting-menu-name-PVT = paladin suit
 crafting-menu-text-PVT = The best a tidersmith can make! Don this suit of armor and deal swift justice to evildoers! Or.. do the evil yourself, I won't judge.

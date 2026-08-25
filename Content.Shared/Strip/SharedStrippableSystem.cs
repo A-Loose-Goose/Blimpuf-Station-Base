@@ -863,7 +863,9 @@ public abstract partial class SharedStrippableSystem : EntitySystem
             return;
 
         if (TryOpenStrippingUi(args.User, (uid, component)))
+        {
             args.Handled = true;
+        }
     }
 
     /// <summary>

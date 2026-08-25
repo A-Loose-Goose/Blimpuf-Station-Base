@@ -68,6 +68,7 @@
     damageContainer: Biological
     damageModifierSet: Slime
   - type: Bloodstream
+    bloodReagentColor: "#52b4e9"
     bloodReferenceSolution:
       reagents:
       - ReagentId: Slime
@@ -99,7 +100,7 @@
       - !type:HealthChange
         damage:
           types:
-            Heat: 0.05 #Same as slime species
+            Heat: 0.5 #NOW its the same as the slime peoples damage. All slimes are created equal, and will be vanquished by the dangers of water.
       - !type:PopupMessage
         type: Local
         messages: [ "slime-hurt-by-water-popup" ]
@@ -202,6 +203,8 @@
           Base: green_adult_slime
         Dead:
           Base: green_adult_slime_dead
+    - type: Bloodstream
+      bloodReagentColor: "#2cf274"
     - type: MeleeWeapon
       damage:
         types:
@@ -242,6 +245,8 @@
           Base: yellow_adult_slime
         Dead:
           Base: yellow_adult_slime_dead
+    - type: Bloodstream
+      bloodReagentColor: "#f4e65a"
     - type: MeleeWeapon
       damage:
         types:
@@ -287,6 +292,8 @@
         - map: [ "enum.DamageStateVisualLayers.Base" ]
           state: gray_adult_slime
     - type: GerasColor
+    - type: Bloodstream
+      bloodReagentColor: "#999999"
     - type: MeleeWeapon
       attackRate: 2
       damage:

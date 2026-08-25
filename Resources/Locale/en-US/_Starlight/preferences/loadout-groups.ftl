@@ -78,6 +78,7 @@ loadout-group-mime-shoes = Mime shoes
 # Cargo
 loadout-group-cargo-technician-appraisal-tool = Cargo Technician appraisal tool
 loadout-group-mail-technician-head = Mail Technician head
+loadout-group-mail-technician-neck = Mail Technician neck
 loadout-group-mail-technician-jumpsuit = Mail Technician jumpsuit
 loadout-group-mail-technician-backpack = Mail Technician backpack
 loadout-group-mail-technician-outerclothing = Mail Technician outer clothing
@@ -92,6 +93,7 @@ loadout-group-salvagelead-id = Salvage Lead ID
 loadout-group-mining-id = Mining Specialist ID
 loadout-group-salvage-id = Salvage Specialist ID
 loadout-group-salvage-lead-mantle = Salvage Lead mantle
+loadout-group-cargo-technician-eyewear = Cargo Technician eyewear
 
 # Silicons
 loadout-group-borg-brain-type = Cyborg Brain Type
@@ -124,11 +126,6 @@ loadout-group-lawyer-shoes = Lawyer shoes
 loadout-group-scarves = Scarf
 loadout-group-pins = Pins
 loadout-group-pens = Pen
-
-# Brighteye
-loadout-group-brighteye-jumpsuit = Brighteye jumpsuit
-Loadout-group-brighteye-neck = Brighteye neck
-loadout-group-brighteye-gloves = Brighteye gloves
 
 # NCT
 loadout-group-NanotrasenCareerTrainer-jumpsuit = NanoTrasen Career Trainer jumpsuit

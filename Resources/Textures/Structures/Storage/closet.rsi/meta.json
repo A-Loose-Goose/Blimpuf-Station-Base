@@ -38,6 +38,9 @@
             "name": "armory"
         },
         {
+            "name": "nanotrasen-black_open"
+        },
+        {
             "name": "armory_door"
         },
         {
@@ -150,6 +153,9 @@
         },
         {
             "name": "cardboard_special"
+        },
+        {
+            "name": "cargo_whistle_exclamation"
         },
         {
             "name": "cargo"
@@ -451,6 +457,12 @@
         },
         {
             "name": "n2_door"
+        },
+        {
+            "name": "ntr"
+        },
+        {
+            "name": "ntr_door"
         },
         {
             "name": "oldcloset"

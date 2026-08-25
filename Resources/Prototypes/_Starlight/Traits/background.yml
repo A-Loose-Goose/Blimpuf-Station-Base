@@ -99,20 +99,6 @@
       background: PettyCriminal
 
 - type: trait
-  id: Burned
-  name: trait-background-burned-name
-  description: trait-background-burned-description
-  category: BackgroundTraits
-  cost: 0
-  effects:
-    - !type:BackgroundEffect
-      background: Burned
-  requirements:
-    - !type:SpeciesRequirement
-      species:
-        - Shadekin
-
-- type: trait
   id: Iterator
   name: trait-background-iterator-name
   description: trait-background-iterator-description

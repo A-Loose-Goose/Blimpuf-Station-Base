@@ -7,7 +7,7 @@
   components:
   - type: Stamp
     stampedName: Magistrate
-    stampedColor: "#FF5297"
+    stampedColor: "#01a100"
     stampState: "paper_stamp-magistrate"
   - type: Sprite
     sprite: _Starlight/Objects/Misc/stamps.rsi
@@ -36,7 +36,7 @@
     - type: Stamp
       stampedName: "Internal Affairs Agent"
       stampedColor: "#33CC33"
-      stampState: "paper_stamp-ok"
+      stampState: "paper_stamp-iaa"
     - type: Sprite
       sprite: _Starlight/Objects/Misc/stamps.rsi
       state: stamp-iaa
@@ -49,7 +49,7 @@
   components:
   - type: Stamp
     stampedName: "Central Command Enforcement Officer"
-    stampedColor: "#004281"
+    stampedColor: "#386c30"
     stampState: "paper_stamp-bso"
   - type: Sprite
     sprite: _Starlight/Objects/Misc/stamps.rsi
@@ -170,11 +170,11 @@
   components:
   - type: Stamp
     stampedName: "Central Special Operations Division"
-    stampedColor: "#741B47"
-    stampState: "paper_stamp-magistrate"
+    stampedColor: "#ad2a6b"
+    stampState: "paper_stamp-csop"
   - type: Sprite
     sprite: _Starlight/Objects/Misc/stamps.rsi
-    state: stamp-magistrate
+    state: stamp-csop
 
 - type: entity
   name: central security division rubber stamp
@@ -184,7 +184,7 @@
   components:
   - type: Stamp
     stampedName: "Central Security Division"
-    stampedColor: "#cc0000"
+    stampedColor: "#2c6682"
     stampState: "paper_stamp-hos"
   - type: Sprite
     state: stamp-hos
@@ -446,20 +446,6 @@
     stampState: "paper_stamp-qm"
   - type: Sprite
     state: stamp-detective
-
-# MedTak
-- type: entity
-  name: MedTak rubber stamp
-  parent: [ RubberStampBase, BaseMedTakContraband ]
-  id: RubberStampMedTak
-  categories: [ DoNotMap ]
-  components:
-  - type: Stamp
-    stampedName: "MedTak"
-    stampedColor: "#880606"
-    stampState: "paper_stamp-syndicate"
-  - type: Sprite
-    state: stamp-syndicate
 
 # Civilian stamps
 - type: entity

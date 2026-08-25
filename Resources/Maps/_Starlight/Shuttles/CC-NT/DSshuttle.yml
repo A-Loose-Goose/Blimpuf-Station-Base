@@ -82,7 +82,7 @@ entities:
             54: -2,4
             55: -3,4
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: HalfTileOverlayGreyscale
           decals:
             22: 2,3
@@ -98,7 +98,7 @@ entities:
             50: -3,-2
             51: -4,-2
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: HalfTileOverlayGreyscale180
           decals:
             21: 2,0
@@ -108,7 +108,7 @@ entities:
           decals:
             0: -3,2
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: HalfTileOverlayGreyscale270
           decals:
             19: 1,1
@@ -130,7 +130,7 @@ entities:
           decals:
             6: -2,2
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: HalfTileOverlayGreyscale90
           decals:
             17: 3,1
@@ -171,25 +171,25 @@ entities:
             10: -2,1
             12: -1,1
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: ThreeQuarterTileOverlayGreyscale
           decals:
             13: 1,3
             31: 5,1
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: ThreeQuarterTileOverlayGreyscale180
           decals:
             14: 3,0
             32: 6,-5
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: ThreeQuarterTileOverlayGreyscale270
           decals:
             15: 1,0
             30: 5,-5
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: ThreeQuarterTileOverlayGreyscale90
           decals:
             16: 3,3
@@ -1874,7 +1874,7 @@ entities:
       parent: 1
     - type: AtmosPipeColor
       color: '#FF1212FF'
-- proto: GasVentPump
+- proto: SecureCCGasVentPump
   entities:
   - uid: 303
     components:

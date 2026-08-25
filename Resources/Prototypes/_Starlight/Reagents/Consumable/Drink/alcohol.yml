@@ -130,13 +130,13 @@
         time: 3
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
       - !type:SpawnAttachedTo
-        entity: EffectDwarfCourage
+        entity: EffectMinersCourage
         number: 1
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf ]
+          type: [ Dipsomania ]
 
 - type: reagent
   id: TheLastCall

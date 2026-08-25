@@ -34,7 +34,7 @@
       - HideContextMenu
 
 - type: entity
-  id: EnergyDomeSmallPink
+  id: EnergyDomeSmallBlue
   categories: [ HideSpawnMenu ]
   parent: EnergyDomeBase
   components:
@@ -42,12 +42,12 @@
     sprite: Effects/EnergyDome/energydome_small.rsi
     layers:
     - state: small
-      color: "#f5166b"
+      color: "#54A9FF"
   - type: PointLight
     enabled: true
     radius: 5
     power: 2
-    color: "#f5166b"
+    color: "#54A9FF"
 
 - type: entity
   id: EnergyDomeSmallCap
@@ -170,8 +170,6 @@
     lastVisibility: 0.8
   - type: NullSpaceBlocker
     bypassPVS: true
-  - type: TheDarkImmune
-    ranged: true
 
 - type: entity
   id: EnergyDomeProtectorNullspace

@@ -64,9 +64,9 @@
 
 - type: entity
   parent: BookBase
-  id: BookIanAntarctica
-  name: adventures of robert & ian - exploring antarctica
-  description: The book is a small paperback in good condition, with an illustration of Ian the corgi and the colony of penguins on the cover. The title, "Ian and Robert's Antarctic Adventure", is written in bold white letters against a blue background. The back cover features a brief summary of the story, highlighting the themes of humility, resilience, and the beauty of nature.
+  id: BookIanFrozenWastes
+  name: adventures of robert & ian - exploring the frozen wastes
+  description: The book is a small paperback in good condition, with an illustration of Ian the corgi and the colony of penguins on the cover. The title is written in bold white letters against a blue background. The back cover features a brief summary of the story, highlighting the themes of humility, resilience, and the beauty of nature.
   components:
     - type: Sprite
       sprite: Objects/Misc/books.rsi
@@ -80,7 +80,7 @@
       - state: detail_bookmark
         color: "#ab5e24"
     - type: Paper
-      content: book-text-ian-antarctica
+      content: book-text-ian-frozen-wastes
 
 - type: entity
   parent: BookBase
@@ -417,9 +417,9 @@
 
 - type: entity
   parent: BookBase
-  id: BookEarth
-  name: earthly longing
-  description: The book is in good condition, with a slightly faded cover due to exposure to sunlight.  The cover of the book depicts a panoramic view of the Earth from space, with a bright blue ocean and green landmasses. In the foreground, a lone astronaut is seen sitting in front of a window, gazing wistfully at the Earth. The title of the book, "Earthly Longing," is written in bold white letters against a black background at the top of the cover.
+  id: BookTerra
+  name: longing for terra
+  description: The book is in good condition, with a slightly faded cover due to exposure to sunlight.  The cover of the book depicts a panoramic view of Terra from space, with a bright blue ocean and green landmasses. In the foreground, a lone astronaut is seen sitting in front of a window, gazing wistfully at Terra. The title of the book, "Longing for Terra," is written in bold white letters against a black background at the top of the cover.
   components:
     - type: Sprite
       sprite: Objects/Misc/books.rsi
@@ -436,13 +436,13 @@
       - state: detail_bookmark
         color: "#2c5491"
     - type: Paper
-      content: book-text-earth
+      content: book-text-terra
 
 - type: entity
   parent: BookBase
   id: BookAurora
   name: journey beyond - the starship aurora mission
-  description: The book is in excellent condition, with a shiny cover depicting a spaceship hovering above a planet, perhaps with the Earth in the background. The title "Journey Beyond - The Starship Aurora Mission" is written in bold, silver letters. The cover also features a quote from a review, "A breathtaking tale of human achievement and exploration" to entice potential readers.
+  description: The book is in excellent condition, with a shiny cover depicting a spaceship hovering above a planet, perhaps with Terra in the background. The title "Journey Beyond - The Starship Aurora Mission" is written in bold, silver letters. The cover also features a quote from a review, "A breathtaking tale of human achievement and exploration" to entice potential readers.
   components:
     - type: Sprite
       sprite: Objects/Misc/books.rsi

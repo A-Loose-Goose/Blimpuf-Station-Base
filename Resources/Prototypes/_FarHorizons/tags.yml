@@ -19,55 +19,52 @@
   id: OilPack
 
 - type: Tag
-  id: ProtoArachnid
+  id: NeoArachnid
 
 - type: Tag
-  id: ProtoAvali
+  id: NeoAvali
 
 - type: Tag
-  id: ProtoCyclorite # Starlight, Cyclops -> Cyclorite
+  id: NeoTNebri # Blimpuf, Cyclorite -> T'Nebri
 
 - type: Tag
-  id: ProtoDwarf # Starlight, Dawi -> Dwarf
+  id: NeoDiona # Starlight, Dionae -> Diona
 
 - type: Tag
-  id: ProtoDiona # Starlight, Dionae -> Diona
+  id: NeoFelionoid # Starlight, Feline -> Felionoid
 
 - type: Tag
-  id: ProtoFelionoid # Starlight, Feline -> Felionoid
+  id: NeoHuman # Starlight, Humie -> Human
 
 - type: Tag
-  id: ProtoHuman # Starlight, Humie -> Human
+  id: NeoMoth
 
 - type: Tag
-  id: ProtoMoth
+  id: NeoReptilian # Blimpuf, ProtoReptilian -> NeoReptilian
 
 - type: Tag
-  id: ProtoReptilian # Starlight, ProtoReptile -> ProtoReptilian
+  id: NeoResomi
 
 - type: Tag
-  id: ProtoResomi
+  id: NeoSlimePerson
 
 - type: Tag
-  id: ProtoSlimePerson
+  id: NeoThaven
 
 - type: Tag
-  id: ProtoThaven
+  id: NeoVox
 
 - type: Tag
-  id: ProtoVox
+  id: NeoVulp
 
 - type: Tag
-  id: ProtoVulp
+  id: NeoShadekin
 
 - type: Tag
-  id: ProtoKin
+  id: Neocyte
 
 - type: Tag
-  id: Protogen
-
-- type: Tag
-  id: ProtogenCybernetics
+  id: NeocyteCybernetics
 
 - type: Tag
   id: RamChip
@@ -76,4 +73,4 @@
   id: SiliconEmotesFH
 
 - type: Tag
-  id: TrueProtogen
+  id: TrueNeocyte

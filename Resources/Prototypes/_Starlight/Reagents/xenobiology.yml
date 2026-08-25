@@ -33,11 +33,11 @@
             Toxin: -2
             Airloss: -2
             Brute: -2
-        # Starlight-Start: Cyclorite Metabolism
+        # Starlight-Start: T'Nebri Metabolism
         - !type:AdjustReagent
           conditions:
           - !type:MetabolizerTypeCondition
-            type: [ Cyclorite ]
+            type: [ TNebri ]
           reagent: RegenerativeJelly
           amount: -0.5
         # Starlight-End
@@ -57,7 +57,6 @@
           speciesList:
             - Arachnid
             - Diona
-            - Dwarf
             - Gingerbread
             - Human
             - Moth
@@ -69,34 +68,33 @@
             - Vulpkanin
             - Abductor
             - Avali
-            - Cyclorite
+            - TNebri
             - Felionoid
             - Shadekin
             - Thaven
             - Elf
             - Lagomorph
-            - ProtoArachnid
-            - ProtoDiona
-            - ProtoDwarf
-            - ProtoHuman
-            - ProtoMoth
-            - ProtoReptilian
-            - ProtoResomi
-            - ProtoSlimePerson
-            - ProtoVox
-            - ProtoVulp
-            - ProtoAvali
-            - ProtoCyclorite
-            - ProtoFelionoid
-            - ProtoKin
-            - ProtoThaven
-            - ProtoElf
-            - ProtoLagomorph
-        # Starlight-Start: Cyclorite Metabolism
+            - NeoArachnid
+            - NeoDiona
+            - NeoHuman
+            - NeoMoth
+            - NeoReptilian
+            - NeoResomi
+            - NeoSlimePerson
+            - NeoVox
+            - NeoVulp
+            - NeoAvali
+            - NeoTNebri
+            - NeoFelionoid
+            - NeoShadekin
+            - NeoThaven
+            - NeoElf
+            - NeoLagomorph
+        # Starlight-Start: T'Nebri Metabolism
         - !type:AdjustReagent
           conditions:
             - !type:MetabolizerTypeCondition
-              type: [ Cyclorite ]
+              type: [ TNebri ]
           reagent: UnstableMutationToxin
           amount: -0.5
         # Starlight-End
@@ -114,11 +112,11 @@
       effects:
         - !type:ChangeSpecies
           species: SlimePerson
-        # Starlight-Start: Cyclorite Metabolism
+        # Starlight-Start: T'Nebri Metabolism
         - !type:AdjustReagent
           conditions:
             - !type:MetabolizerTypeCondition
-              type: [ Cyclorite ]
+              type: [ TNebri ]
           reagent: ImperfectMutationToxin
           amount: -0.5
         # Starlight-End
@@ -136,11 +134,11 @@
       effects:
         - !type:MutateIntoEntity
           entity: XenobiologySlimeGray
-        # Starlight-Start: Cyclorite Metabolism
+        # Starlight-Start: T'Nebri Metabolism
         - !type:AdjustReagent
           conditions:
             - !type:MetabolizerTypeCondition
-              type: [ Cyclorite ]
+              type: [ TNebri ]
           reagent: AdvancedMutationToxin
           amount: -0.5
         # Starlight-End

@@ -31,16 +31,6 @@
                     0.5
                 ]
             ]
-        },
-        {
-            "name": "noportal"
-        },
-        {
-            "name": "rejuvenate"
-        },
-        {
-            "name": "thedark",
-            "directions": 1
         }
     ]
 }

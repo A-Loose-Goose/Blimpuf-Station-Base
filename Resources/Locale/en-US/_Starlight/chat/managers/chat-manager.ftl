@@ -8,7 +8,7 @@ chat-manager-entity-say-bold-wrap-message = [BubbleHeader][bold][Name]{$entityNa
 chat-manager-entity-whisper-wrap-message = [font size=11][italic][BubbleHeader][Name]{$entityName}[/Name][/BubbleHeader] whispers: "[BubbleContent][color={$color}][font="{$fontType}"]{$message}[/font][/color][/BubbleContent][font size=11]"[/italic][/font]
 chat-manager-entity-whisper-unknown-wrap-message = [font size=11][italic][BubbleHeader]Someone[/BubbleHeader] whispers: "[BubbleContent][color={$color}][font="{$fontType}"]{$message}[/color][/font][/BubbleContent][font size=11]"[/italic][/font]
 
-chat-manager-send-ooc-wrap-message = OOC: [bold]{$playerTitle} [color={$nameColor}]{$playerName}:[/color] [color={$messageColor}]{$message}[/color][/bold]
+chat-manager-send-ooc-wrap-message = OOC: [bold][color={$nameColor}]{$playerTitle} {$playerName}:[/color] [color={$messageColor}]{$message}[/color][/bold]
 
 chat-speech-verb-name-felionoid = Felionoid
 chat-speech-verb-felionoid-1 = purrs

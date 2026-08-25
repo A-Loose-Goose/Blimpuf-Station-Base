@@ -152,14 +152,6 @@ public sealed partial class ProfilePreviewSpriteView
 
                 var antagLoadoutId = selectedAntagProto.RoleLoadout?.FirstOrDefault();
 
-                // Brighteye Color Valid
-                if (selectedAntagProto.PreviewStartingGear.HasValue || antagLoadoutId is not null)
-                    if (selectedAntagProto.ID == "Brighteye")
-                    {
-                        humanoid.Appearance.EyeColor = EyeColor.MakeBrighteyeValid(humanoid.Appearance.EyeColor);
-                        humanoid.Appearance.EyeGlowing = true;
-                    }
-
                 if (antagLoadoutId is not null)
                 {
                     loadout = humanoid.GetLoadoutOrDefault(

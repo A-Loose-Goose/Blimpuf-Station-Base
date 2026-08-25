@@ -1,0 +1,59 @@
+# Jumpsuits
+- type: loadout
+  id: CargoTechnicianJumpsuitCourier
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSpaceCourier
+  effects:
+    - !type:JobRequirementLoadoutEffect
+      requirement:
+        !type:RoleTimeRequirement
+        role: JobCargoTechnician
+        time: 270000 # 75 hrs
+
+# Eyewear
+- type: loadout
+  id: CargoTechnicianCourierGoggles
+  equipment:
+    eyes: ClothingEyesSpaceCourierGoggles
+  effects:
+    - !type:JobRequirementLoadoutEffect
+      requirement:
+        !type:RoleTimeRequirement
+        role: JobCargoTechnician
+        time: 270000 # 75 hrs
+
+# Coats
+- type: loadout
+  id: CargoTechnicianCourierCoat
+  equipment:
+    outerClothing: ClothingOuterCoatSpaceCourier
+  effects:
+    - !type:JobRequirementLoadoutEffect
+      requirement:
+        !type:RoleTimeRequirement
+        role: JobCargoTechnician
+        time: 270000 # 75 hrs
+
+# Boots
+- type: loadout
+  id: CargoTechnicianCourierBoots
+  equipment:
+    shoes: ClothingShoesBootsSpaceCourier
+  effects:
+    - !type:JobRequirementLoadoutEffect
+      requirement:
+        !type:RoleTimeRequirement
+        role: JobCargoTechnician
+        time: 270000 # 75 hrs
+
+#Backpacks
+- type: loadout
+  id: CargoTechnicianAICourierTrunk
+  equipment:
+    back: ClothingBackpackTrunkSpaceCourierPAI
+  effects:
+    - !type:JobRequirementLoadoutEffect
+      requirement:
+        !type:RoleTimeRequirement
+        role: JobCargoTechnician
+        time: 270000 # 75 hrs

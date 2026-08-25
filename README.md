@@ -37,28 +37,10 @@ Space-Station 14 has [docs site](https://docs.spacestation14.io/) documentation 
 
 ## License
 
+All contributions to this repository are licensed under [MIT](https://opensource.org/license/MIT).
 
+Works submitted to Starlight between **2024-11-04** (commit `84205e38`) through **2026-02-28** (commit `01eff0f7`) may still fall under the [Starlight license](https://github.com/ss14Starlight/space-station-14/blob/starlight-dev/LICENSE-Starlight.TXT). Relicensing requests are tracked in [Starlight issue #3499](https://github.com/ss14Starlight/space-station-14/issues/3499).
 
-> [!NOTE]
-> **Relicensing in progress.** The Starlight Fork License (`LICENSE-Starlight.TXT`) was applied to Starlight contributions
-> from **2024-11-04** (commit `84205e38`) through **2026-02-28** (commit `01eff0f7`).
-> This license **remains in effect** for contributions made during that period until explicit relicensing
-> consent is received from the respective authors. Once consent is given, those contributions are relicensed under MIT.
-> All contributions outside of that range are licensed under MIT (`LICENSE.TXT`).
-> Relicensing requests are tracked in [issue #3499](https://github.com/ss14Starlight/space-station-14/issues/3499).
+Assets are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) unless otherwise stated. Some assets may be licensed under non-commercial licenses, such as [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) and [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). These assets may not be used for commercial purposes under any circumstance except by the copyright holder.
 
-### Click each banner for further information
-
----
-
-<details>
-<summary><a href="#"><img src="https://img.shields.io/badge/licence-MIT-green?style=for-the-badge" alt="MIT license"></a></summary>
-
->Some files are licensed under [MIT license](https://opensource.org/license/MIT), these files are Space Wizards Federation code.
-</details>
-
-<details>
-<summary><a href="#"><img src="https://img.shields.io/badge/licence-CC_3.0_BY--SA-lightblue?style=for-the-badge" alt="Creative Commons 3.0 BY-SA"></a></summary>
-
->All other non-code STARLIGHT Assets, including icons and sound files, are licensed under the [Creative Commons 3.0 BY-SA](https://creativecommons.org/licenses/by-sa/3.0/) license unless otherwise noted in the folder or file.
-</details>
+See [LEGAL.md](https://github.com/Blimpuf-Station/BlimpufStation/blob/starlight-dev/LEGAL.md) for more information.

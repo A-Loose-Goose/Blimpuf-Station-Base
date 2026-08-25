@@ -308,6 +308,7 @@
         - id: ClothingBackpackDuffelCargo
         - id: ClothingBackpackTrunkMail
       - id: MailBag
+      - id: CargoWhistle
       - id: ClothingShoesBootsMail
       - id: ClothingHandsGlovesFingerless
       - id: WeaponMeleeBoxcutter

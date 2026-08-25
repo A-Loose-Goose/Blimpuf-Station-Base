@@ -4,26 +4,19 @@
   text: "/ServerInfo/Guidebook/Mobs/Species.xml"
   children:
   - Arachnid
-  - Cyclorite
   - Diona
   - Elf
-  - Harpy
   - Human
   - Moth
-  - Protogen
+  - Neocyte
   - Reptilian
   - Resomi
   - Rodentia #Starlight
-  - Shadekin
   - SlimePerson
+  - TNebri
   - Thaven
   - Vox
   - Vulpkanin
-  #- Avali Blimpuf disabled roundstart
-  #- Dwarf Blimpuf disabled roundstart
-  #- Felionoid Blimpuf disabled roundstart
-  #- IPC Blimpuf disabled roundstart
-  #- Lagomorph Blimpuf disabled roundstart
 
 - type: guideEntry
   id: Arachnid

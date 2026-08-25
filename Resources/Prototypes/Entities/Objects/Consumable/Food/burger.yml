@@ -189,7 +189,7 @@
   name: bacon burger
   parent: FoodBurgerBase
   id: FoodBurgerBacon
-  description: The perfect combination of all things American.
+  description: The perfect combination of all things good in these worlds.
   components:
   - type: FlavorProfile
     flavors:

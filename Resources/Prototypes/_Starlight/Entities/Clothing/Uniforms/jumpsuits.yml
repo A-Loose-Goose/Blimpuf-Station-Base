@@ -73,7 +73,7 @@
   parent: [ ClothingUniformBase, BaseCommandContraband ]
   id: ClothingUniformJumpsuitNtrepNoble
   name: cc representative's noble jumpsuit
-  description: A more classical and elegant style of clothing, designed to emulate the fashion of old earth nobility.
+  description: A more classical and elegant style of clothing, designed to emulate the fashion of old terran nobility.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Uniforms/Jumpsuit/ntrepnoble.rsi
@@ -83,7 +83,7 @@
 - type: entity
   parent: [ClothingUniformBase, BaseBlueShieldContraband]
   id: ClothingUniformJumpsuitBlueShield
-  name: central command enforcement suit
+  name: enforcer suit
   description: The suit of a glorified bodyguard.
   components:
   - type: Sprite
@@ -94,7 +94,7 @@
 - type: entity
   parent: [ClothingUniformBase, BaseBlueShieldContraband]
   id: ClothingUniformJumpsuitEliteBlueShield
-  name: elite central command enforcement suit
+  name: elite enforcer suit
   description: The suit of an elite CCE. To reach such a level, you must have protected Command from [REDACTED].
   components:
   - type: Sprite
@@ -105,7 +105,7 @@
 - type: entity
   parent: [ClothingUniformBase, BaseBlueShieldContraband]
   id: ClothingUniformJumpsuitBlueShieldShirt
-  name: central command enforcement officer's shirt
+  name: enforcement officer's shirt
   description: A collared shirt and pants for the central command enforcement officer who likes to keep it business casual.
   components:
   - type: Sprite
@@ -183,6 +183,38 @@
     zombificationResistanceCoefficient: 0.90
 
 - type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformJumpsuitFormalBrigmedic
+  name: formal brigmedic jumpsuit
+  description: A formal suit for the brigmedic.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Clothing/Uniforms/Jumpsuit/brigmedic_alt.rsi
+  - type: Clothing
+    sprite: _Starlight/Clothing/Uniforms/Jumpsuit/brigmedic_alt.rsi
+  - type: Armor # so zombification resistance shows up
+    modifiers:
+      coefficients: { }
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.90
+
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformJumpsuitSeniorBrigmedic
+  name: senior formal brigmedic jumpsuit
+  description: A formal suit for the seasoned brigmedic.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Clothing/Uniforms/Jumpsuit/brigmedic_senior.rsi
+  - type: Clothing
+    sprite: _Starlight/Clothing/Uniforms/Jumpsuit/brigmedic_senior.rsi
+  - type: Armor # so zombification resistance shows up
+    modifiers:
+      coefficients: { }
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.90
+
+- type: entity
   parent: [ClothingUniformBase, ClothingUniformFoldableBase]
   id: ClothingUniformJumpsuitOfLife
   name: suit of life
@@ -201,6 +233,39 @@
 
 - type: entity
   parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformJumpsuitFormalDeputy
+  name: deputy's jumpsuit
+  description: An attire for one who feels destined for the desert.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Clothing/Uniforms/Jumpsuit/deputy.rsi
+  - type: Clothing
+    sprite: _Starlight/Clothing/Uniforms/Jumpsuit/deputy.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformJumpsuitFormalSecoff
+  name: formal security jumpsuit
+  description: A formal attire for the security officer.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Clothing/Uniforms/Jumpsuit/secoff_formal.rsi
+  - type: Clothing
+    sprite: _Starlight/Clothing/Uniforms/Jumpsuit/secoff_formal.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformJumpsuitFormalSeniorSecoff
+  name: formal senior security jumpsuit
+  description: A formal attire for the senior security officer.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Clothing/Uniforms/Jumpsuit/secoff_formal_senior.rsi
+  - type: Clothing
+    sprite: _Starlight/Clothing/Uniforms/Jumpsuit/secoff_formal_senior.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
   id: ClothingUniformJumpsuitDutyOfficer
   name: duty officer's uniform
   description: A vibrant security suit for the warden's partner in chains.
@@ -209,6 +274,17 @@
     sprite: _Starlight/Clothing/Uniforms/Jumpsuit/dutyofficer.rsi
   - type: Clothing
     sprite: _Starlight/Clothing/Uniforms/Jumpsuit/dutyofficer.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformJumpsuitFormalWarden
+  name: warden's formal jumpsuit
+  description: A formal attire for the warden, missing a holster for the truncheon sadly.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Clothing/Uniforms/Jumpsuit/warden_formal.rsi
+  - type: Clothing
+    sprite: _Starlight/Clothing/Uniforms/Jumpsuit/warden_formal.rsi
 
 - type: entity
   parent: [ClothingUniformBase, ClothingUniformFoldableBase]
@@ -537,7 +613,7 @@
   parent: [ ClothingUniformBase, BaseCommandContraband ]
   id: ClothingUniformJumpsuitCaptainNoble
   name: captain's noble jumpsuit
-  description: A more classical and elegant style of clothing, designed to emulate the fashion of old earth nobility.
+  description: A more classical and elegant style of clothing, designed to emulate the fashion of old Terran nobility.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Uniforms/Jumpsuit/captainnoble.rsi
@@ -580,7 +656,7 @@
 - type: entity
   parent: [ClothingUniformBase, BaseBlueShieldContraband]
   id: ClothingUniformJumpsuitFormalBlueShield
-  name: formal central command enforcement officer suit
+  name: formal enforcer suit
   description: A textile jumpsuit, reinforced with thick leather in some areas.
   components:
   - type: Sprite
@@ -912,3 +988,25 @@
       - state: equipped-INNERCLOTHING
         color: "#3f3f3f"
       - state: trinkets-equipped-INNERCLOTHING
+
+- type: entity
+  parent: [ ClothingUniformBase, BaseCentcommContraband ]
+  id: ClothingUniformJumpsuitCentCommServiceWorker
+  name: CentComm service worker's jumpsuit
+  description: It's a jumpsuit worn by CentComm service workers. Those boots need licking.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Clothing/Uniforms/Jumpsuit/centcommserviceworker.rsi
+  - type: Clothing
+    sprite: _Starlight/Clothing/Uniforms/Jumpsuit/centcommserviceworker.rsi
+
+- type: entity
+  parent: [ ClothingUniformBase, BaseCentcommContraband ]
+  id: ClothingUniformJumpsuitCentCommBartender
+  name: CentComm bartender's jumpsuit
+  description: It's a jumpsuit worn by CentComm bartenders. Those drinks won't serve themselves.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Clothing/Uniforms/Jumpsuit/centcommbartender.rsi
+  - type: Clothing
+    sprite: _Starlight/Clothing/Uniforms/Jumpsuit/centcommbartender.rsi

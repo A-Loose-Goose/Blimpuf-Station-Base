@@ -1,0 +1,15 @@
+- type: construction
+  id: BrassRod
+  graph: BrassRod
+  startNode: start
+  targetNode: BrassRod
+  category: construction-category-materials
+  objectType: Item
+
+- type: construction
+  id: SheetReinforcedClockworkGlass
+  graph: Glass
+  startNode: start
+  targetNode: SheetReinforcedClockworkGlass
+  category: construction-category-materials
+  objectType: Item

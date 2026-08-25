@@ -10,7 +10,7 @@
   parent: BaseFlag
   id: BlankFlag
   name: blank flag
-  description: Some piece of white cloth. Definitely not the flag of France.
+  description: Is that someone's white shirt, or is it just a blank piece of fabric?
   components:
   - type: Sprite
     state: blank_flag

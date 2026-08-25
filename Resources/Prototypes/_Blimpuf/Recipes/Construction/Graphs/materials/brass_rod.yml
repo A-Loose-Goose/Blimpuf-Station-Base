@@ -1,0 +1,16 @@
+- type: constructionGraph
+  id: BrassRod
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: BrassRod
+          completed:
+            - !type:SetStackCount
+              amount: 2
+          steps:
+            - material: Brass
+              amount: 1
+
+    - node: BrassRod
+      entity: PartRodBrass

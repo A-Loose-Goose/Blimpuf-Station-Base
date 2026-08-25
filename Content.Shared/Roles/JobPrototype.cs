@@ -32,11 +32,20 @@ namespace Content.Shared.Roles
         [DataField]
         public string Name { get; private set; } = string.Empty;
 
+        /// <summary>
+        ///     Optional alternate name for compact job select UI.
+        /// </summary>
+        [DataField]
+        public string? JobSelectName { get; private set; }
+
         [DataField("hidden")] // 🌟Starlight🌟
         public bool Hidden { get; private set; } = false;
 
         [ViewVariables(VVAccess.ReadOnly)]
         public string LocalizedName => Loc.GetString(Name);
+
+        [ViewVariables(VVAccess.ReadOnly)]
+        public string LocalizedJobSelectName => JobSelectName is null ? LocalizedName : Loc.GetString(JobSelectName);
 
         /// <summary>
         ///     The name of this job as displayed to players.
@@ -90,9 +99,6 @@ namespace Content.Shared.Roles
         /// </summary>
         [DataField]
         public bool? OverrideConsoleVisibility { get; private set; } = null;
-
-        [DataField]
-        public bool CanBeAntag { get; private set; } = true;
 
         /// <summary>
         ///     STARLIGHT: Whether to bypass EOR pacification.

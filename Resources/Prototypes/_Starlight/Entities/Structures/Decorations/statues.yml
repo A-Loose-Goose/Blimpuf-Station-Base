@@ -41,8 +41,6 @@
       sprite: _Starlight/Structures/Decorations/Phoronic.rsi
       state: phoronic
     - type: SpriteFade
-    - type: TheDarkImmune
-      ranged: true
     - type: Fixtures
       fixtures:
         fix1:

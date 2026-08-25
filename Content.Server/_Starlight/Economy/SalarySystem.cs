@@ -105,7 +105,7 @@ public sealed partial class SalarySystem : SharedSalarySystem
 
         foreach (var bonus in _prototypes.EnumeratePrototypes<SalaryRoleBonusPrototype>())
             if(bonus.Roles.Any(playerData.Roles.Contains))
-                bonusMultiplier += bonus.Multiplayer;
+                bonusMultiplier += bonus.Multiplier;
 
         var stationPenalty = GetStationSalaryPenalty();
         return (int)Math.Ceiling(baseSalary * bonusMultiplier * (1f - stationPenalty));

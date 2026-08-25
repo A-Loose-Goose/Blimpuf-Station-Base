@@ -1,6 +1,7 @@
 - type: job
   id: NanoTrasenRepresentative
   name: job-name-ntrep
+  jobSelectName: job-name-ntrep-job-select
   description: job-description-ntrep
   playTimeTracker: JobNanoTrasenRepresentative
   requirements:
@@ -10,11 +11,14 @@
     - !type:RoleTimeRequirement
       role: JobIAA
       time: 8h
+    - !type:TraitsRequirement
+      traits:
+        - Iterator
+      inverted: true
   startingGear: CentralCommandRepresentativeGear
   icon: JobIconNanoTrasenRepresentative
   rules: job-rules-corporate-aligned
   supervisors: job-supervisors-centcom
-  canBeAntag: false
   displayWeight: 50
   access:
     - Cryogenics
@@ -62,9 +66,9 @@
     #shoes: ClothingShoesBootsLaceup
     #head: ClothingHeadHatCapNtrep
     id: NanoTrasenRepresentativePDA
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltCCRep
     outerClothing: ClothingOuterCoatNtrep
-    belt: BoxFolderNanoTrasenClipboard
+    belt: BoxFolderCentComClipboard
   storage:
     back:
     - RubberStampNtrep

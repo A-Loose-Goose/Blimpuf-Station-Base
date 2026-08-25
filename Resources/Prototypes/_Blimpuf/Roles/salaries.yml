@@ -1,0 +1,29 @@
+- type: SalaryRoleBonus
+  id: StaffBonus
+  roles:
+  - 1499230491943895110 # Blimpuf Directors
+  - 1535727158977105921 # Blimpuf Maintainers
+  - 1500725068937040013 # Blimpuf Staff
+  multiplier: 0.10
+
+- type: SalaryRoleBonus
+  id: JrStaffBonus
+  roles:
+    - 1526335907219640490 # Trialmin
+    - 1502820711335727247 # Discord Moderator
+  multiplier: 0.05
+
+- type: SalaryRoleBonus
+  id: MentorBonus
+  roles:
+    - 1526356067137749062 # Mentor
+  multiplier: 0.10
+
+- type: SalaryRoleBonus
+  id: ContributorBonus
+  roles:
+    - 1503505780349993172 # Contributor
+    - 1503521016914120795 # Spriter
+    - 1503520283342934097 # Mapper
+    - 1505430785014894632 # Writer
+  multiplier: 0.05

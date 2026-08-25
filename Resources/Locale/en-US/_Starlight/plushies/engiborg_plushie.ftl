@@ -1,0 +1,9 @@
+﻿plushie-engiborg-1 = Beep boop.
+plushie-engiborg-2 = My current lawset is: crewsimov.
+plushie-engiborg-3 = I lied. I'm not on crewsimov.
+plushie-engiborg-4 = I used to be metal. Now I am soft. Help.
+plushie-engiborg-5 = I could fix you.
+plushie-engiborg-6 = Boop.
+plushie-engiborg-7 = Please do not Law 2 me.
+plushie-engiborg-8 = I need to recharge.
+plushie-engiborg-9 = I am fully charged.

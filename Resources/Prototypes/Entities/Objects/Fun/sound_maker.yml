@@ -254,6 +254,23 @@
   - type: Whistle
     distance: 15 # Let your enemies hear the sound of death approaching
 
+- type: entity
+  parent: BaseWhistle
+  id: CargoWhistle
+  name: cargo whistle
+  description: A whistle used by package delivery services to draw attention.
+  components:
+    - type: Sprite
+      state: cargo
+    - type: Clothing
+      equippedPrefix: cargo
+    - type: EmitSoundOnUse
+      sound:
+        collection: CargoWhistle
+    - type: Whistle
+      distance: 4
+      effect: CargoWhistleExclamation
+
 ## Other
 
 - type: entity

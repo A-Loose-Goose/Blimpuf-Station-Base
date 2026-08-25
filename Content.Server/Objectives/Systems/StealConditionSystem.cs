@@ -187,16 +187,6 @@ public sealed partial class StealConditionSystem : EntitySystem
                 }
             }
 
-            // Starlight
-            if (HasComp<RailroadKeepEntityInTheDarkTaskComponent>(condition.Owner))
-            {
-                var TheDarkQuery = AllEntityQuery<StealTargetComponent>();
-                while (TheDarkQuery.MoveNext(out var uid, out var target))
-                {
-                    if (_shadekin.AreWeInTheDark(uid))
-                        CheckEntity(uid, condition, ref containerStack, ref count);
-                }
-            }
         }
 
         //check pulling object

@@ -1,0 +1,14 @@
+- type: material
+  id: ReinforcedClockworkGlass
+  stackEntity: SheetReinforcedClockworkGlass1
+  name: materials-reinforced-clockwork-glass
+  icon: { sprite: _Blimpuf/Objects/Materials/Sheets/reinforced_clockwork_glass.rsi, state: rcglass }
+  color: "#549bb0"
+  price: 0.225 # 1-0.5 mix of glass and metal.
+  # Interpolated properties
+  properties: # FH edit
+    electrical: 3.66
+    thermal: 4
+    hard: 3
+    density: 2.66
+    chemical: 5.33

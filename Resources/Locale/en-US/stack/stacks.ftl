@@ -3,6 +3,7 @@ stack-bananium = bananium
 stack-glass = glass
 stack-plasteel = plasteel
 stack-brass = brass
+stack-brassma = brassma
 stack-plastic = plastic
 stack-silver = silver
 stack-gold = gold
@@ -11,6 +12,7 @@ stack-plasma-glass = plasma glass
 stack-uranium = uranium
 stack-uranium-glass = uranium glass
 stack-clockwork-glass = clockwork glass
+stack-reinforced-clockwork-glass = reinforced clockwork glass
 stack-reinforced-plasma-glass = reinforced plasma glass
 stack-reinforced-uranium-glass = reinforced uranium glass
 stack-gunpowder = gunpowder
@@ -51,6 +53,10 @@ stack-durathread = {$amount ->
 stack-rods = {$amount ->
     [1] rod
     *[other] rods
+}
+stack-brass-rods = {$amount ->
+    [1] brass rod
+    *[other] brass rods
 }
 stack-meat-sheet = {$amount ->
     [1] meat sheet
@@ -122,7 +128,7 @@ stack-inflatable-door = inflatable door
 stack-ointment = ointment
 stack-aloe-cream = aloe cream
 stack-gauze = gauze
-#stack-brutepack = brutepack # Starlight - we split this out to ours
+# stack-brutepack = brutepack # Starlight - we split this out to ours
 stack-bloodpack = bloodpack
 stack-medicated-suture = medicated-suture
 stack-regenerative-mesh = regenerative-mesh

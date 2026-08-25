@@ -16,7 +16,7 @@
         - id: ClothingUniformJumpsuitNtrep
         - id: ClothingOuterCoatNtrep
         - id: ClothingShoesBootsLaceup
-        - id: ClothingHeadsetAltCommand
+        - id: ClothingHeadsetAltCCRep
         - id: WeaponDisabler
         - id: LuxuryPen
         - id: BoxFolderClipboardFilled
@@ -54,11 +54,11 @@
         - id: MagistrateUniformSkirt
         - id: ClothingOuterRobesMagistrate
         - id: ClothingShoesBootsLaceup
-        - id: ClothingHeadsetMagistrate
+        - id: ClothingHeadsetAltCCRep
         - id: WeaponDisabler
         - id: BookSpaceLaw
         - id: LuxuryPen
-        - id: BoxFolderNanoTrasenClipboard
+        - id: BoxFolderCentComClipboard
         - id: PrinterDocFlatpack
         - id: FaxMachineFlatpack
         - id: BoxMagiCircuitBoards
@@ -94,7 +94,7 @@
         - id: ClothingHeadsetIAA
         - id: BookSpaceLaw
         - id: LuxuryPen
-        - id: BoxFolderNanoTrasenClipboard
+        - id: BoxFolderCentComClipboard
         - id: BriefcaseBrown # Empty
         - !type:NestedSelector
           tableId: CriminalDocumentTable
@@ -115,6 +115,7 @@
           amount: 3
         - id: MedkitAdvancedFilled
         - id: WeaponMultiphaseGun
+        - id: GreenLightShield
         - id: ClothingEyesGlassesBlueShield
         - id: ClothingEyesHudBlueShield
         - id: ClothingHeadHatBeretBlueShield

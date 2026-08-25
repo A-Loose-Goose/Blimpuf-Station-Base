@@ -1,0 +1,176 @@
+# Brass construction entities.
+
+- type: entity
+  id: BrassGirder
+  parent: Girder
+  name: brass girder
+  description: A large structural assembly made out of brass; It requires a layer of brass before it can be considered a wall.
+  components:
+    - type: Transform
+      anchored: true
+      noRot: false
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.45,-0.45,0.45,0.45"
+          density: 60
+          mask:
+            - MachineMask
+          layer:
+            - GlassAirlockLayer
+    - type: InteractionOutline
+    - type: Construction
+      graph: BrassGirder
+      node: brassgirder
+    - type: Sprite
+      sprite: _Blimpuf/Structures/Walls/brass.rsi
+      state: brass_wall_girder
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: StructuralMetallic
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 200
+          behaviors: # excess damage, don't spawn entities.
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 50
+          behaviors:
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                SheetSteel1:
+                  min: 1
+                  max: 1
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+    - type: StaticPrice
+      price: 60
+
+- type: entity
+  id: ReinforcedBrassGirder
+  parent: BrassGirder
+  name: reinforced brass girder
+  description: A large structural assembly made out of metal and plasteel; It requires a layer of plasteel before it can be considered a reinforced wall.
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Structures/Walls/brass.rsi
+      state: reinforced_brass_wall_girder
+    - type: Construction
+      graph: BrassGirder
+      node: reinforcedbrassgirder
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 200
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+        - trigger:
+            !type:DamageTrigger
+            damage: 50
+          behaviors:
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                SheetSteel1:
+                  min: 1
+                  max: 1
+                SheetPlasteel1:
+                  min: 1
+                  max: 1
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+    - type: StaticPrice
+      price: 160
+
+- type: entity
+  id: BrassGrille
+  parent: Grille
+  name: brass grille
+  description: A flimsy framework of brass rods.
+  components:
+    - type: Sprite
+      drawdepth: Walls
+      sprite: _Blimpuf/Structures/Walls/brass_grille.rsi
+      state: brassgrille
+      layers:
+        - state: brassgrille
+    - type: Icon
+      sprite: _Blimpuf/Structures/Walls/brass_grille.rsi
+      state: brassgrille
+    - type: Construction
+      graph: BrassGrille
+      node: brassGrille
+      deconstructionTarget: start
+
+- type: entity
+  id: BrassGrilleBroken
+  parent: GrilleBroken
+  name: brass grille
+  description: A flimsy framework of brass rods. It has seen better days.
+  components:
+    - type: Sprite
+      drawdepth: Walls
+      sprite: _Blimpuf/Structures/Walls/brass_grille.rsi
+      state: brassgrille_broken
+    - type: Icon
+      sprite: _Blimpuf/Structures/Walls/brass_grille.rsi
+      state: brassgrille_broken
+    - type: Construction
+      graph: BrassGrille
+      node: brassGrilleBroken
+
+- type: entity
+  id: BrassGrilleDiagonal
+  parent: BrassGrille
+  name: diagonal brass grille
+  components:
+    - type: Sprite
+      drawdepth: Walls
+      sprite: _Blimpuf/Structures/Walls/brass_grille.rsi
+      layers:
+        - state: brassgrille_diagonal
+        - state: electrified_diagonal
+          sprite: Effects/electricity.rsi
+          map: ["enum.ElectrifiedLayers.Sparks"]
+          shader: unshaded
+          visible: false
+    - type: Icon
+      sprite: _Blimpuf/Structures/Walls/brass_grille.rsi
+      state: brassgrille_diagonal
+    - type: Tag
+      tags:
+        - Diagonal
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PolygonShape
+            vertices:
+              - "-0.5,-0.5"
+              - "0.5,0.5"
+              - "0.5,-0.5"
+          mask:
+            - FullTileMask
+          layer:
+            - GlassLayer
+    - type: Construction
+      graph: GrilleDiagonal
+      node: brassGrilleDiagonal

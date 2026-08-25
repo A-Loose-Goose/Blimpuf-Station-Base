@@ -85,7 +85,6 @@
         weight: 9
       - id: OddDeerPlushie
         weight: 1
-    - id: VikaPviPlushie
 #STARLIGHT-End
 
 # Weh!
@@ -310,6 +309,7 @@
     - id: ClothingShoesSkatesCool # Starlight
     - id: CrazyGlue
     - id: CrazyLube
+    - id: JailFree # Starlight
     - !type:NestedSelector
       tableId: AllBoardGamesTable
     - !type:GroupSelector # Where there's Chips there's Dips
@@ -361,6 +361,7 @@
       children:
       - id: Whistle
         weight: 5
+      - id: CargoWhistle
       - id: SecurityWhistle
       - id: CommanderWhistle # Starlight - Syndicate -> Commander
         weight: 0.5 # 1 in 143

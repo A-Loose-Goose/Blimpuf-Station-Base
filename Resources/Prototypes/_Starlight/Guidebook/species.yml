@@ -14,9 +14,9 @@
   text: "/ServerInfo/_Starlight/Guidebook/Mobs/Shadekin.xml"
 
 - type: guideEntry
-  id: Cyclorite
-  name: species-name-cyclorite
-  text: "/ServerInfo/_Starlight/Guidebook/Mobs/Cyclorite.xml"
+  id: TNebri
+  name: species-name-tnebri
+  text: "/ServerInfo/_Starlight/Guidebook/Mobs/TNebri.xml"
 
 - type: guideEntry
   id: Resomi

@@ -6,6 +6,5 @@ public sealed partial class ShadekinSystem : EntitySystem
     {
         base.Initialize();
 
-        InitializeBrighteye();
     }
 }

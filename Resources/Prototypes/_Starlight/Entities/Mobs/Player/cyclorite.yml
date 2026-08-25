@@ -1,5 +1,0 @@
-﻿- type: entity
-  save: false
-  name: Urist McCyclorite
-  parent: BaseMobCyclorite
-  id: MobCyclorite

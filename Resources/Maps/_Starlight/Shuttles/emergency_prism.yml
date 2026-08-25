@@ -83,7 +83,7 @@ entities:
           decals:
             64: -10,7
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickCornerOverlayNE
           decals:
             140: 7,7
@@ -98,7 +98,7 @@ entities:
           decals:
             62: -13,7
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickCornerOverlayNW
           decals:
             139: 4,7
@@ -113,7 +113,7 @@ entities:
           decals:
             86: -10,5
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickCornerOverlaySE
           decals:
             141: 7,5
@@ -128,7 +128,7 @@ entities:
           decals:
             66: -13,5
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickCornerOverlaySW
           decals:
             138: 4,5
@@ -141,7 +141,7 @@ entities:
             180: 8,2
             181: 8,1
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickLineOverlayE
           decals:
             124: 2,5
@@ -161,7 +161,7 @@ entities:
             70: -11,7
             71: -12,7
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickLineOverlayN
           decals:
             143: 5,7
@@ -180,7 +180,7 @@ entities:
             68: -12,5
             69: -11,5
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickLineOverlayS
           decals:
             145: 5,5
@@ -457,7 +457,7 @@ entities:
           decals:
             157: 2,0
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: BrickTileWhiteInnerNe
           decals:
             126: 2,4
@@ -514,7 +514,7 @@ entities:
           decals:
             216: -10,1
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: WarnLineGreyscaleE
           decals:
             127: 2,6
@@ -534,7 +534,7 @@ entities:
           decals:
             219: -8,1
         - node:
-            color: '#DE3A3A96'
+            color: '#37789B96'
             id: WarnLineGreyscaleW
           decals:
             149: 4,6
@@ -2931,22 +2931,6 @@ entities:
       parent: 1
     - type: AtmosPipeColor
       color: '#0335FCFF'
-  - uid: 367
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 6.5,6.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0335FCFF'
-  - uid: 368
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 6.5,2.5
-      parent: 1
-    - type: AtmosPipeColor
-      color: '#0335FCFF'
   - uid: 369
     components:
     - type: Transform
@@ -4531,4 +4515,22 @@ entities:
     - type: Transform
       pos: -8.5,2.5
       parent: 1
+- proto: SecureGasVentPump
+  entities:
+  - uid: 618
+    components:
+    - type: Transform
+      pos: 6.5,6.5
+      parent: 1
+      rot: 4.71238898038469 rad
+    - type: AtmosPipeColor
+      color: '#0335FCFF'
+  - uid: 619
+    components:
+    - type: Transform
+      pos: 6.5,2.5
+      parent: 1
+      rot: 4.71238898038469 rad
+    - type: AtmosPipeColor
+      color: '#0335FCFF'
 ...

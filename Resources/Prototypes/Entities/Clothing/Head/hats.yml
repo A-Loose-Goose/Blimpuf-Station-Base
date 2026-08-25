@@ -32,7 +32,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadHatBeretFrench
   name: french beret
-  description: A French beret. "Vive la France!"
+  description: A French beret, whatever a "French" is.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/beret_french.rsi
@@ -575,7 +575,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadHatSombrero
   name: sombrero
-  description: "\"Perfect for Space Mexico, si?\""
+  description: "\"Perfect for keeping the sun off your head, si?\""
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/sombrero.rsi
@@ -939,7 +939,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadFishCap
   name: fishing cap
-  description: "\"Women fear me. Fish fear me. Men turn their eyes away from me. As I walk no beast dares make a sound in my presence. I am alone on this barren Earth.\""
+  description: "\"Women fear me. Fish fear me. Men turn their eyes away from me. As I walk no beast dares make a sound in my presence. I am alone on this barren planet.\""
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/fishcap.rsi
