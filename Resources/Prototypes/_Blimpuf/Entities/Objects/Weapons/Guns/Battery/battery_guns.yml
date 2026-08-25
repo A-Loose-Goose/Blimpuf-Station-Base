@@ -46,7 +46,6 @@
   parent: [ BaseSyndicateContraband, BaseWeaponBatterySmall ]
   id: WeaponLaserTaipanRevolver
   description: An energy revolver that feels way too heavy for how small it is. It's covered in warning signage. What the hell did they put in this? 5 bricks of C-4? Oh wait...There's a tag that says "Made with 5 bricks of C-4"...This has to be incredibly unstable.
-  suffix: Not Exploding
   components:
   - type: Sprite
     sprite: _Blimpuf/Objects/Weapons/Guns/Battery/syndicate-taipan-revolver.rsi
@@ -106,7 +105,7 @@
   parent: [ BaseSyndicateContraband, BaseItem ]
   id: WeaponLaserTaipanRevolverExploding
   description: Now it's extremely unstable! Those 5 bricks of C-4 can't be doing it any favors! Fuckin' RUN!!!
-  suffix: Exploding
+  categories: [ HideSpawnMenu ] # We, yes we, are NOT that stupid enough to let people accidentally spawn a "gun" that will blow up in 5 seconds
   components:
   - type: Sprite
     sprite: _Blimpuf/Objects/Weapons/Guns/Battery/syndicate-taipan-revolver.rsi
@@ -233,16 +232,20 @@
     - type: BatteryWeaponFireModes
       fireModes:
         - proto: BulletSyndieEnergyShotgunBuckshotSpread
-          fireCost: 60 #Starlight
-          magState: energy #Starlight
+          fireCost: 60
+          color: red
         - proto: BulletSyndieEnergyShotgunBeanbag
-          fireCost: 45 #Starlight
+          fireCost: 45
+          color: green
         - proto: BulletSyndieEnergyShotgunSlug
           fireCost: 60
+          color: black
         - proto: BulletSyndieEnergyShotgunBuckshotIncendiarySpread
           fireCost: 90
+          color: orange
         - proto: BulletSyndieEnergyShotgunBuckshotUraniumSpread
           fireCost: 90
+          color: lightgreen
     - type: Item
       size: Large
       sprite:  _Starlight/Objects/Weapons/Guns/Battery/Energy_Shotgun_inhands-x64.rsi # Starlight, sprite changed (Objects\Weapons\Guns\Battery\inhands_64x.rsi)

@@ -51,6 +51,12 @@ public sealed partial class BatteryWeaponFireMode
     public bool PacifismAllowedMode = false;
 
     /// <summary>
+    /// Blimpuf Edit: Color to set the mag states to once they are selected
+    /// </summary>
+    [DataField("color")]
+    public Color? color;
+
+    /// <summary>
     /// Conditions that must be satisfied to activate this firing mode
     /// </summary>
     [DataField("conditions", serverOnly: true)]
