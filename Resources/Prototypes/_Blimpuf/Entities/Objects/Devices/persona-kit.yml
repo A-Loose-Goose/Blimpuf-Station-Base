@@ -1,18 +1,13 @@
 ﻿- type: entity
   parent: [BaseItem, BaseSyndicateContraband]
   id: PersonaHologramGeneratorNoBattery
-  name: persona hologram generator
-  description: An experimental strain of Holoparasite technology used to create a hard-light replica of most living beings around you. Disguise is destroyed when physical contact is made or deactivated. Doesn't allow the user to become Humanoids or Cyborgs.
+  name: persona kit
+  description: Both incredibly advanced and inconspicuous, this device allows the user to transform into any living or mechanical beings. Unfortunately it does not work on other humanoids or cyborgs as their anatomies are too advanced.
   components:
     - type: Sprite
-      sprite: /Textures/Objects/Devices/chameleon_projector.rsi
+      sprite: /Textures/_Blimpuf/Objects/Misc/persona_kit.rsi
       layers:
-        - state: icon
-        - state: powered
-          map: [ "enum.PowerDeviceVisualLayers.Powered" ]
-        - state: decharging
-          map: [ "enum.PowerDeviceVisualLayers.Charging" ]
-          visible: false
+        - state: folder-stealthkit
     - type: ChameleonProjector
       whitelist:
         components:
@@ -30,8 +25,8 @@
 - type: entity
   parent: PersonaHologramGeneratorNoBattery
   id: PersonaHologramGenerator
-  name: persona hologram generator
-  description: An experimental strain of Holoparasite technology used to create a hard-light replica of most living beings around you. Disguise is destroyed when physical contact is made or deactivated. Doesn't allow the user to become Humanoids or Cyborgs.
+  name: persona kit
+  description: Both incredibly advanced and inconspicuous, this device allows the user to transform into any living or mechanical beings. Unfortunately it does not work on other humanoids or cyborgs as their anatomies are too advanced.
   suffix: Battery
   components:
     - type: Appearance
