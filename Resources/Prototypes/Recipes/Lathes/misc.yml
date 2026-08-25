@@ -240,3 +240,12 @@
   completetime: 2
   materials:
     Cloth: 300
+
+# Blimpuf Recipes
+- type: latheRecipe
+  parent: BaseToolRecipe
+  id: CargoWhistle
+  result: CargoWhistle
+  materials:
+    Steel: 50
+    Plastic: 100

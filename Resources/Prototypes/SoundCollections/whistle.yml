@@ -15,3 +15,13 @@
     - /Audio/Items/Whistle/trench_whistle_1.ogg
     - /Audio/Items/Whistle/trench_whistle_2.ogg
     - /Audio/Items/Whistle/trench_whistle_3.ogg
+
+- type: soundCollection
+  id: CargoWhistle
+  files:
+    - /Audio/Items/Whistle/cargo_whistle_1.ogg
+    - /Audio/Items/Whistle/cargo_whistle_2.ogg
+    - /Audio/Items/Whistle/cargo_whistle_3.ogg
+    - /Audio/Items/Whistle/cargo_whistle_4.ogg
+    - /Audio/Items/Whistle/cargo_whistle_5.ogg
+    - /Audio/Items/Whistle/cargo_whistle_6.ogg

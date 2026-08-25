@@ -1,7 +1,7 @@
 trait-category-background = Background
 
 trait-background-civilian-name = TSF Coreworlder
-trait-background-civilian-description = You grew up in the core of the Trans Solar Federation. From Alrescha to Sabik, maybe even hailing from the human birthrock of Earth, you come from one of the 160 Worlds that make up the TSF. Life in the core is prosperous, simple, free of conflict. But something drove you here, into the arms of NanoTrasen in the far Corporate Frontiers. What was it? Bordeom? Betrayal? A desire for something more?
+trait-background-civilian-description = You grew up in the core of the Trans Solar Federation. From Alrescha to Sabik, maybe even hailing from the human birthrock of Terra, you come from one of the 160 Worlds that make up the TSF. Life in the core is prosperous, simple, free of conflict. But something drove you here, into the arms of NanoTrasen in the far Corporate Frontiers. What was it? Bordeom? Betrayal? A desire for something more?
 
 trait-background-fringe-name = Outer Fringes
 trait-background-fringe-description = The far side of nowhere. The very limits of known space, out where the great expanse leads to the rest of the unclaimed galaxy. Where countless unknown splendors and horrors await. Strange cultures are said to form here, from hiding criminals or religious expeditions, with no hope of support from the frontier or core worlds. What was it like to grow up here? Who were the people who raised you - and why were they all the way out here? What were they trying to find - or trying to escape?

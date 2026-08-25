@@ -10,11 +10,14 @@
   - !type:DepartmentTimeRequirement
     department: Security
     time: 36000 # 10h
+  - !type:TraitsRequirement # Starlight
+    traits:
+      - Iterator
+    inverted: true
   startingGear: IAAGear
   icon: "JobIconIAA"
   rules: job-rules-corporate-aligned
-  supervisors: job-supervisors-magistrate
-  canBeAntag: false
+  supervisors: job-supervisors-centcom
   displayWeight: 20
   access:
   - IAA
@@ -34,7 +37,7 @@
     id: IAAPDA
     eyes: ClothingEyesGlassesSunglasses
     ears: ClothingHeadsetIAA
-    belt: BoxFolderNanoTrasenClipboard
+    belt: BoxFolderCentComClipboard
   inhand:
     - BriefcaseIAAFilled
 

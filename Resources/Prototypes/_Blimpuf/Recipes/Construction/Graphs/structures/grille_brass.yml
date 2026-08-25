@@ -1,0 +1,49 @@
+- type: constructionGraph
+  id: BrassGrille
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: brassGrille
+          completed:
+            - !type:AdminLog
+              message: "Construction"
+              impact: High
+            - !type:SnapToGrid
+              southRotation: true
+          steps:
+            - material: BrassRod
+              amount: 2
+              doAfter: 1
+
+    - node: brassGrille
+      entity: BrassGrille
+      edges:
+        - to: start
+          completed:
+            - !type:AdminLog # Needs a log for start of attempt in addition to the completion log
+              message: "A grille was cut"
+            - !type:SpawnPrototype
+              prototype: PartRodBrass1
+              amount: 2
+            - !type:DeleteEntity
+          steps:
+            - tool: Cutting
+              doAfter: 0.25
+
+    - node: brassGrilleBroken
+      entity: BrassGrilleBroken
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: PartRodBrass1
+              amount: 1
+            - !type:DeleteEntity
+          steps:
+            - tool: Cutting
+        - to: brassGrille
+          steps:
+            - material: BrassRod
+              amount: 1
+              doAfter: 0.5

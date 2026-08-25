@@ -57,7 +57,7 @@ public sealed partial class VentSpawnRule : StationEventSystem<VentSpawnRuleComp
         if (ent.Comp.ValidLocations.Count == 0) return;
 
         var pair = ent.Comp.ValidLocations[RobustRandom.Next(ent.Comp.ValidLocations.Count)];
-        ent.Comp.Vent[args.Entity] = pair;
+        ent.Comp.Vent[args.Antag.ID] = pair;
         args.Coordinates.Add(pair.Coords);
 
         Sawmill.Info($"Picked location {pair.Coords} for {ToPrettyString(ent.Owner):rule}");
@@ -65,8 +65,7 @@ public sealed partial class VentSpawnRule : StationEventSystem<VentSpawnRuleComp
 
     private void OnAfterSelection(Entity<VentSpawnRuleComponent> ent, ref AfterAntagEntitySelectedEvent args)
     {
-        if (!ent.Comp.InsertInVent) return;
-        if (!ent.Comp.Vent.TryGetValue(args.EntityUid, out var vent)) return;
+        if (!ent.Comp.Vent.TryGetValue(args.Def.ID, out var vent)) return;
 
         if (!_ventCrawl.TryInsert(vent.Uid, args.EntityUid))
             Log.Warning($"VentSpawnRule: failed to insert {ToPrettyString(args.EntityUid)} into vent {ToPrettyString(vent.Uid)}");

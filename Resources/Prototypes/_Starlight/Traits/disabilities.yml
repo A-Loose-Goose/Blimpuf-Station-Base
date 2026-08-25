@@ -121,13 +121,6 @@
     - !type:AddStatusEffect
       statusEffects:
         - StatusEffectHemophiliaTrait
-  requirements:
-    - !type:SpeciesRequirement
-      species:
-        - Shadekin
-        - ProtoKin
-        - IPC
-      inverted: true
 
 - type: trait
   id: ImpairedMobility
@@ -143,52 +136,6 @@
       item: OffsetCane
 
 - type: trait
-  id: HighLightSensitivity
-  name: trait-highlightsensitivity-name
-  description: trait-highlightsensitivity-desc
-  category: Disabilities
-  cost: -1
-  effects:
-    - !type:OverrideCompsEffect
-      components:
-        - type: Shadekin
-          thresholds:
-            0.7: Low
-            0.8: Annoying
-            5: High
-            10: Extreme
-  requirements:
-    - !type:SpeciesRequirement
-      species:
-        - Shadekin
-        - ProtoKin
-  conflicts:
-    - ExtremeLightSensitivity
-
-- type: trait
-  id: ExtremeLightSensitivity
-  name: trait-extremelightsensitivity-name
-  description: trait-extremelightsensitivity-desc
-  category: Disabilities
-  cost: -2
-  effects:
-    - !type:OverrideCompsEffect
-      components:
-        - type: Shadekin
-          thresholds:
-            0.6: Low
-            0.7: Annoying
-            0.8: High
-            5: Extreme
-  requirements:
-    - !type:SpeciesRequirement
-      species:
-        - Shadekin
-        - ProtoKin
-  conflicts:
-    - HighLightSensitivity
-
-- type: trait
   id: Nightblind
   name: trait-nightblind-name
   description: trait-nightblind-desc
@@ -201,9 +148,7 @@
   requirements:
     - !type:SpeciesRequirement
       species:
-        - Cyclorite
-        - ProtoCyclorite
+        - TNebri
+        - NeoTNebri
         - Resomi
-        - ProtoResomi
-        - Shadekin
-        - ProtoKin
+        - NeoResomi

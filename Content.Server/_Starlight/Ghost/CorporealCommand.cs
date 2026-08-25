@@ -1,6 +1,7 @@
 using System.Linq;
 using Content.Server.Administration;
 using Content.Server.Ghost;
+using Content.Shared._Starlight.Administration.Components;
 using Content.Shared.Administration;
 using Content.Shared.Emoting;
 using Content.Shared.Eye;
@@ -36,7 +37,6 @@ public sealed class CorporealCommand : ToolshedCommand
         ghost.AlwaysVisible = true;
         ghost.BypassGhostChat = true;
         EntityManager.Dirty(uid, ghost);
-        EnsureComp<SpeechComponent>(uid);
         EnsureComp<EmotingComponent>(uid);
         EnsureComp<VocalComponent>(uid);
         ToggleVisibility(uid, true);
@@ -73,7 +73,6 @@ public sealed class CorporealCommand : ToolshedCommand
         ghost.AlwaysVisible = false;
         ghost.BypassGhostChat = false;
         EntityManager.Dirty(uid, ghost);
-        RemComp<SpeechComponent>(uid);
         RemComp<EmotingComponent>(uid);
         RemComp<VocalComponent>(uid);
         ToggleVisibility(uid, false);
@@ -105,11 +104,14 @@ public sealed class CorporealCommand : ToolshedCommand
         {
             _visibility.AddLayer((uid, visComp), (int)VisibilityFlags.Normal, false);
             _visibility.RemoveLayer((uid, visComp), (int)VisibilityFlags.Ghost, false);
+            _visibility.RemoveLayer((uid, visComp), (int)VisibilityFlags.Admin, false);
         }
         else
         {
-            _visibility.AddLayer((uid, visComp), (int)VisibilityFlags.Ghost, false);
             _visibility.RemoveLayer((uid, visComp), (int)VisibilityFlags.Normal, false);
+            if(TryComp<AdminGhostComponent>(uid, out var aghost) && aghost.HiddenFromNonAdminGhosts)
+                _visibility.AddLayer(uid, (int)VisibilityFlags.Admin, false);
+            else _visibility.AddLayer((uid, visComp), (int)VisibilityFlags.Ghost, false);
         }
         _visibility.RefreshVisibility((uid, visComp));
     }

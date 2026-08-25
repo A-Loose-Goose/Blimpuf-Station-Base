@@ -647,7 +647,7 @@
     chemicalCost: 20
 
 - type: entity
-  id: ActionToggleProtogenDisguise
+  id: ActionToggleNeocyteDisguise
   name: Toggle Neocyte Disguise
   description: Form a fake neocyte cybernetic frame. Costs 0 chemicals.
   categories: [ HideSpawnMenu ]
@@ -659,7 +659,7 @@
       sprite: _Starlight/Actions/changeling.rsi
       state: protogen_armor
   - type: InstantAction
-    event: !type:ActionProtogenDisguiseEvent {}
+    event: !type:ActionNeocyteDisguiseEvent {}
   - type: ChangelingAction
     chemicalCost: 0
 

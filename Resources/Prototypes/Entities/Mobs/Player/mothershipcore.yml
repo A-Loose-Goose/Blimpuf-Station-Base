@@ -148,6 +148,7 @@
     - Mothership
     - Xenoborg
     - Binary
+    defaultChannel: Mothership
   - type: ActiveRadio
     channels:
     - Mothership

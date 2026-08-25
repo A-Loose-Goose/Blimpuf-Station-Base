@@ -1,9 +1,9 @@
 - type: radioChannel
   id: Common
   name: chat-radio-common
-  keycode: ";"
+  #keycode: "#" # Blimpuf Removed Common Comms keycode
   frequency: 1459
-  color: "#2cdb2c"
+  color: "#dfc8fa"
   headsetTransmittable: false # Moffstation - remove common
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
@@ -45,7 +45,7 @@
   name: chat-radio-medical
   keycode: 'm'
   frequency: 1355
-  color: "#57b8f0"
+  color: "#8fd6ff"
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: medical
@@ -65,7 +65,7 @@
   name: chat-radio-security
   keycode: 's'
   frequency: 1359
-  color: "#ff4242"
+  color: "#02cfe0"
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: security
@@ -75,7 +75,7 @@
   name: chat-radio-service
   keycode: 'v'
   frequency: 1349
-  color: "#539c00"
+  color: "#a6e012"
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: service

@@ -115,7 +115,7 @@
   - DaBling
   - CrapPlushie ##not a typo
   - LighterGatcha
-  #- MagicCrayon starlight edit commented out for now due to lag - 31-05-2026
+  - MagicCrayon
   - HappyHonk
   - LeftRipperArm
   - RightMechwrightArm
@@ -151,10 +151,10 @@
   minLimit: 3
   hidden: true
   loadouts:
+  - EmergencyDipsomania # Blimpuf
   - EmergencyNitrogen
   - EmergencyOxygen
   - EmergencyElfOxygen # Starlight
-  - EmergencyDwarfOxygen # Starlight
   - LoadoutSpeciesVoxNitrogen
   - EmergencyNonBreather # 🌟Starlight🌟
   - EmergencyIPC # 🌟Starlight🌟
@@ -734,10 +734,10 @@
   minLimit: 2
   hidden: true
   loadouts:
+  - EmergencyDipsomaniaClown # Blimpuf
   - EmergencyNitrogenClown
   - EmergencyOxygenClown
   - EmergencyElfOxygenClown # Starlight
-  - EmergencyDwarfOxygenClown # Starlight
   - LoadoutSpeciesVoxNitrogen
   - EmergencyNonBreatherClown # 🌟Starlight🌟
   - EmergencyIPC # 🌟Starlight🌟
@@ -805,10 +805,10 @@
   minLimit: 2
   hidden: true
   loadouts:
+  - EmergencyDipsomaniaMime # Blimpuf
   - EmergencyNitrogenMime
   - EmergencyOxygenMime
   - EmergencyElfOxygenMime # Starlight
-  - EmergencyDwarfOxygenMime # Starlight
   - EmergencySpeciesMothMime
   - LoadoutSpeciesVoxNitrogen
   - EmergencyNonBreatherMime # 🌟Starlight🌟
@@ -946,6 +946,12 @@
   - CargoTechnicianBeretFormal # Starlight
 
 - type: loadoutGroup
+  id: CargoTechnicianEyewear
+  name: loadout-group-cargo-technician-eyewear
+  loadouts:
+    - CargoTechnicianCourierGoggles
+
+- type: loadoutGroup
   id: CargoTechnicianJumpsuit
   name: loadout-group-cargo-technician-jumpsuit
   loadouts:
@@ -956,6 +962,7 @@
   - CargoTechnicianJumpskirtFormal # afterlight end
   - CargoTechnicianOveralls # Starlight
   - CargoTechnicianJumpsuitInformal # DeltaV
+  - CargoTechnicianJumpsuitCourier # Blimpuf
 
 - type: loadoutGroup
   id: CargoTechnicianBackpack
@@ -968,6 +975,7 @@
   - SeniorCourierSatchel
   - SeniorCourierDuffel
   - LeatherSatchel # starlight end
+  - CargoTechnicianAICourierTrunk # Blimpuf
 
 - type: loadoutGroup
   id: CargoTechnicianOuterClothing
@@ -977,6 +985,7 @@
   - CargoTechnicianWintercoat
   - SeniorCourierWintercoat # Starlight
   - WindbreakerCargo #Starlight
+  - CargoTechnicianCourierCoat # Blimpuf
 
 - type: loadoutGroup
   id: CargoTechnicianShoes
@@ -991,6 +1000,7 @@
   - LeatherShoes
   - WorkBoots
   - Heels # Starlight end
+  - CargoTechnicianCourierBoots # Blimpuf
 
 - type: loadoutGroup
   id: CargoTechnicianID
@@ -1212,10 +1222,10 @@
   minLimit: 2
   hidden: true
   loadouts:
+  - EmergencyDipsomaniaExtended # Blimpuf
   - EmergencyNitrogenExtended
   - EmergencyOxygenExtended
   - EmergencyElfOxygenExtended # Starlight
-  - EmergencyDwarfOxygenExtended # Starlight
   - LoadoutSpeciesVoxNitrogen
   - EmergencyNonBreatherExtended # 🌟Starlight🌟
   - EmergencyIPC # 🌟Starlight🌟
@@ -1437,6 +1447,8 @@
   loadouts:
   - WardenJumpsuit
   - WardenJumpskirt
+  - ClothingUniformJumpsuitFormalWarden #starlight
+  - ClothingUniformJumpskirtFormalWarden #starlight
 
 
 - type: loadoutGroup
@@ -1468,6 +1480,7 @@
   - SecurityBeret
   - SecurityHat
   - TrooperHat
+  - DeputyHat # starlight
 
 - type: loadoutGroup
   id: SecurityJumpsuit
@@ -1482,6 +1495,12 @@
   - TrooperUniform
   - SecurityJumpsuitBlue
   - SecurityJumpskirtBlue # starlight start
+  - FormalOfficerJumpsuit
+  - FormalOfficerJumpskirt
+  - FormalSeniorOfficerJumpsuit
+  - FormalSeniorOfficerJumpskirt
+  - DeputyFormalJumpskirt
+  - DeputyFormalJumpsuit
   - SecurityTshirt # starlight end
 
 - type: loadoutGroup
@@ -1604,10 +1623,10 @@
   minLimit: 2
   hidden: true
   loadouts:
+  - EmergencyDipsomaniaSecurity # Blimpuf
   - EmergencyNitrogenSecurity
   - EmergencyOxygenSecurity
   - EmergencyElfOxygenSecurity # Starlight
-  - EmergencyDwarfOxygenSecurity # Starlight
   - LoadoutSpeciesVoxNitrogen
   - EmergencyNonbreatherSecurity # 🌟Starlight🌟
   - EmergencyIPC # 🌟Starlight🌟
@@ -1655,10 +1674,10 @@
   minLimit: 2
   hidden: true
   loadouts:
+  - EmergencyDipsomaniaSyndicate # Blimpuf
   - EmergencyNitrogenSyndicate
   - EmergencyOxygenSyndicate
   - EmergencyElfOxygenSyndicate # Starlight
-  - EmergencyDwarfOxygenSyndicate # Starlight
   - LoadoutSpeciesVoxNitrogen
   - EmergencyNonBreatherSyndicate # 🌟Starlight🌟
   - EmergencyIPC # 🌟Starlight🌟
@@ -1670,10 +1689,10 @@
   minLimit: 2
   hidden: true
   loadouts:
+  - EmergencyDipsomaniaMilitaryDouble # Blimpuf
   - EmergencyNitrogenMilitaryDouble
   - EmergencyOxygenMilitaryDouble
   - EmergencyElfOxygenMilitaryDouble # Starlight
-  - EmergencyDwarfOxygenMilitaryDouble # Starlight
   - EmergencyIPC # 🌟Starlight🌟
   - EmergencyCheeseMilitary # Starlight
 

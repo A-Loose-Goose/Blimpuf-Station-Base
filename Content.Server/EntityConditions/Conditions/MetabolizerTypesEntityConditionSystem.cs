@@ -1,4 +1,4 @@
-﻿using Content.Shared.Body.Components;
+using Content.Shared.Body.Components;
 using Content.Shared.EntityConditions;
 using Content.Shared.EntityConditions.Conditions.Body;
 
@@ -12,9 +12,6 @@ public sealed partial class MetabolizerTypeEntityConditionSystem : EntityConditi
 {
     protected override void Condition(Entity<MetabolizerComponent> entity, ref EntityConditionEvent<MetabolizerTypeCondition> args)
     {
-        if (entity.Comp.MetabolizerTypes == null)
-            return;
-
-        args.Result = entity.Comp.MetabolizerTypes.Overlaps(args.Condition.Type);
+        args.Result = entity.Comp.MetabolizerTypes?.Overlaps(args.Condition.Type) == true;
     }
 }

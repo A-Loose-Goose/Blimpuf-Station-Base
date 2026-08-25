@@ -1,7 +1,7 @@
 - type: entity
   parent: [ClothingOuterArmorBase, BaseBlueShieldContraband]
   id: ClothingOuterArmorBlueShield
-  name: central command enforcemer bulletproof vest
+  name: enforcer bulletproof vest
   description: Much better than a standard Type 1 security vest. Try not to lose it, you won't get a second replacement.
   components:
     - type: Sprite
@@ -450,7 +450,8 @@
     - type: Clothing
       sprite: _Starlight/Clothing/OuterClothing/Vests/greenshield_vest.rsi
     - type: Tag
-      tags: []
+      tags:
+        - WhitelistChameleon
     - type: ClothingSpeedModifier
       walkModifier: 1 #Got to be able to keep up with the nice walk of the officials
     - type: Storage
@@ -482,7 +483,7 @@
         coefficients:
           Blunt: 0.65
           Slash: 0.65
-          Piercing: 0.60
+          Piercing: 0.65
           Heat: 0.80
     - type: ExplosionResistance
       damageCoefficient: 0.85

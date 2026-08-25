@@ -12,11 +12,14 @@
       time: 30h
     - !type:RolesRequirement
       proto: MagiReq
+    - !type:TraitsRequirement
+      traits:
+        - Iterator
+      inverted: true
   startingGear: MagistrateGear
   icon: "JobIconMagistrate"
   rules: job-rules-corporate-aligned
   supervisors: job-supervisors-centcom
-  canBeAntag: false
   displayWeight: 45
   setPreference: true
   access:
@@ -46,9 +49,9 @@
     #gloves: ClothingHandsGlovesColorWhite
     #outerClothing: ClothingOuterRobesJudge
     id: MagistratePDA
-    ears: ClothingHeadsetMagistrate
+    ears: ClothingHeadsetAltCCRep
     #head: ClothingHeadHatPwig
-    belt: BoxFolderNanoTrasenClipboard
+    belt: BoxFolderCentComClipboard
   storage:
     back:
     - RubberStampMagistrate

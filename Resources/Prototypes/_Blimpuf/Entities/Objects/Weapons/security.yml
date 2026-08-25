@@ -1,0 +1,10 @@
+- type: entity
+  name: enforcer stun baton
+  parent: [ Stunbaton, BaseSecurityContraband ]
+  id: EnforcerStunbaton
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Weapons/Melee/ccestunbaton.rsi
+    layers:
+    - state: stunbaton_off
+      map: [ "enum.ToggleableVisuals.Layer" ]

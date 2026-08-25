@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "license": "CC-BY-SA-3.0",
+  "license": "CC-BY-SA-4.0",
   "copyright": "State based Copyright",
   "size": {
     "x": 32,
@@ -21,7 +21,7 @@
     },
     {
       "name": "cpu_law",
-      "copyright": "Taken from https://github.com/tgstation/tgstation at 0d9c9a8233dfc3fc55edc538955a761a6328bee0, edited by redmushie (discord, github) based off cpu_science."
+      "copyright": "Taken from https://github.com/tgstation/tgstation at 0d9c9a8233dfc3fc55edc538955a761a6328bee0, edited by redmushie (discord, github) based off cpu_science, edited by stellee for Blimpuf Station"
     }
   ]
 }

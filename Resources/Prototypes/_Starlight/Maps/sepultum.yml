@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightSepultum
+  id: BlimpufSepultum
   mapName: 'Sepultum Station'
-  mapPath: /Maps/_Starlight/Stations/Sepultum.yml
+  mapPath: /Maps/_Blimpuf/Stations/Sepultum.yml
   minPlayers: 50
   maxPlayers: 350
   stations:
-    Sepultum:
+    BlimpufSepultum:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
@@ -21,59 +21,59 @@
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
             Bartender: [ 2, 3 ]
-            Botanist: [ 3, 3 ]
+            Botanist: [ 2, 3 ]
             Chef: [ 2, 2 ]
             Janitor: [ 2, 3 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             Lawyer: [ 2, 2 ]
-            ServiceWorker: [ 4, 5 ]
+            ServiceWorker: [ 3, 4 ]
             Reporter: [ 2, 2 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 3, 3 ]
             StationEngineer: [ 6, 8 ]
-            TechnicalAssistant: [ 4, 4 ]
+            TechnicalAssistant: [ 2, 3 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 2, 3 ]
-            MedicalDoctor: [ 6, 8 ]
+            MedicalDoctor: [ 5, 6 ]
             Paramedic: [ 2, 2 ]
-            MedicalIntern: [ 4, 4 ]
+            MedicalIntern: [ 2, 3 ]
             Surgeon: [ 1, 2 ]
             Psychologist: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
-            Scientist: [ 5, 6 ]
-            ResearchAssistant: [ 3, 3 ]
-            Roboticist: [ 2, 2 ]
+            Scientist: [ 4, 5 ]
+            ResearchAssistant: [ 2, 2 ]
+            Roboticist: [ 1, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
             DutyOfficer: [ 1, 2 ]
-            SecurityOfficer: [ 10, 12 ]
-            SecurityCadet: [ 5, 6 ]
+            SecurityOfficer: [ 9, 10 ]
+            SecurityCadet: [ 2, 3 ]
             Brigmedic: [ 2, 2 ]
             Detective: [ 2, 2 ]
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageLead: [ 1, 1 ]
-            SalvageSpecialist: [ 4, 4 ]
-            MiningSpecialist: [ 4, 4 ]
-            CargoTechnician: [ 9, 10 ]
+            SalvageSpecialist: [ 3, 4 ]
+            MiningSpecialist: [ 2, 3 ]
+            CargoTechnician: [ 5, 6 ]
             MailTech: [ 2, 2 ]
             #civilian
             Assistant: [ -1, -1 ]
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
-            Musician: [ 4, 4 ]
-            Performer: [ 4, 5 ]
+            Musician: [ 2, 3 ]
+            Performer: [ 2, 3 ]
             #silicon
             StationAi: [ 1, 1 ]
             Borg: [ 3, 5 ]
             #law
             Magistrate: [ 1, 1 ]
-            IAA: [ 1, 2 ]
+            IAA: [ 2, 2 ]
             #Representatives
             BlueShield: [ 1, 1 ]
             NanoTrasenRepresentative: [ 1, 1 ]

@@ -14,6 +14,7 @@
     DrinkAbsintheBottleFull: 2
     DrinkAleBottleFull: 5
     DrinkBeerBottleFull: 5
+    DrinkMeadBottleFull: 5 # Blimpuf
     DrinkBlueCuracaoBottleFull: 2
     DrinkCognacBottleFull: 4
     DrinkCoconutWaterCarton: 3

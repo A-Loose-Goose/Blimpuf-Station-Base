@@ -39,7 +39,7 @@
   parent: FlaskBase
   id: DrinkShinyFlask
   name: shiny flask
-  description: A shiny metal flask. It appears to have a Greek symbol inscribed on it.
+  description: A shiny metal flask. It appears to have some mathematical symbol inscribed on it.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Drinks/shinyflask.rsi

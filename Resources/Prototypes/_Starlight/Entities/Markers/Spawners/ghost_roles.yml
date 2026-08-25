@@ -16,29 +16,7 @@
     layers:
     - state: green
     - sprite: Mobs/Silicon/Chassis/derelict.rsi
-      state: derelict_icon
-
-#- type: entity
-#  categories: [ HideSpawnMenu, Spawner ]
-#  parent: BaseAntagSpawner
-#  id: SpawnPointGhostBrighteye
-#  name: ghost role spawn point
-#  suffix: brighteye
-#  components:
-#  - type: GhostRole
-#    important: true # SL
-#    name: roles-antag-brighteye-name
-#    description: roles-antag-brighteye-description
-#    mindRoles:
-#    - MindRoleBrighteye
-#    raffle:
-#      settings: default
-#  - type: Sprite
-#    sprite: Markers/jobs.rsi
-#    layers:
-#    - state: green
-#    - sprite: _Starlight/Mobs/Species/Shadekin/parts.rsi
-#      state: full
+      state: borg
 
 - type: entity
   categories: [ HideSpawnMenu, Spawner ]
@@ -76,7 +54,7 @@
 - type: entity
   categories: [ HideSpawnMenu, Spawner ]
   parent: SpawnPointGhostDerelictCyborg
-  id: SpawnPointGhostXenoBorgHeavyDerelict
+  id: SpawnPointGhostDerelictHeavyXenoborg
   components:
     - type: GhostRole
       name: ghostrole-information-derelict-heavy-xenoborg-name
@@ -88,7 +66,7 @@
 - type: entity
   categories: [ HideSpawnMenu, Spawner ]
   parent: SpawnPointGhostDerelictCyborg
-  id: SpawnPointGhostXenoborgEngiDerelict
+  id: SpawnPointGhostDerelictEngiXenoborg
   components:
     - type: GhostRole
       name: ghostrole-information-derelict-engi-xenoborg-name
@@ -100,7 +78,7 @@
 - type: entity
   categories: [ HideSpawnMenu, Spawner ]
   parent: SpawnPointGhostDerelictCyborg
-  id: SpawnPointGhostXenoborgScoutDerelict
+  id: SpawnPointGhostDerelictScoutXenoborg
   components:
     - type: GhostRole
       name: ghostrole-information-derelict-scout-xenoborg-name
@@ -112,7 +90,7 @@
 - type: entity
   categories: [ HideSpawnMenu, Spawner ]
   parent: SpawnPointGhostDerelictCyborg
-  id: SpawnPointGhostXenoborgStealthDerelict
+  id: SpawnPointGhostDerelictStealthXenoborg
   components:
     - type: GhostRole
       name: ghostrole-information-derelict-stealth-xenoborg-name
@@ -124,7 +102,7 @@
 - type: entity
   categories: [ HideSpawnMenu, Spawner ]
   parent: SpawnPointGhostDerelictBorgi
-  id: SpawnPointGhostXenoBorgiDerelict
+  id: SpawnPointGhostDerelictXenoBorgi
   components:
     - type: GhostRole
       name: ghostrole-information-derelict-borgi-xenoborg-name

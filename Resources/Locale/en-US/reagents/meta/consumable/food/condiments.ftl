@@ -20,7 +20,7 @@ reagent-name-ketchup = ketchup
 reagent-desc-ketchup = Made from pureed tomatoes and flavored with spices.
 
 reagent-name-ketchunaise = ketchunaise
-reagent-desc-ketchunaise = So-called Russian dressing, popular among Space Americans.
+reagent-desc-ketchunaise = So-called rushin' dressing, popular among Space Tourists.
 
 reagent-name-laughin-syrup = laughin' syrup
 reagent-desc-laughin-syrup = The product of juicing Laughin' Peas. Fizzy, and seems to change flavour based on what it's used with!

@@ -43,7 +43,7 @@ public sealed partial class ShadegenSystem : EntitySystem
             var lightQuery = _lookup.GetEntitiesInRange<PointLightComponent>(Transform(uid).Coordinates, shadegen.Range);
             foreach (var light in lightQuery)
             {
-                if (light.Comp.ContainerOccluded || HasComp<DarkLightComponent>(light))
+                if (light.Comp.ContainerOccluded)
                     continue;
 
                 _lightSys.SetContainerOccluded(light.Owner, true, light.Comp);

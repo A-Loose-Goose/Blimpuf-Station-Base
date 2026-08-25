@@ -36,6 +36,7 @@
 
 - type: loadout
   id: NanoTrasenRepresentativeMonocle
+  loadoutName: cc representative monocle
   equipment:
     eyes: ClothingEyesNTRMonocle
 

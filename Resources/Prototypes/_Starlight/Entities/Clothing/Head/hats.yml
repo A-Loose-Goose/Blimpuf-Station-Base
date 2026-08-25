@@ -12,7 +12,7 @@
 - type: entity
   parent: [ClothingHeadBase, BaseBlueShieldContraband]
   id: ClothingHeadHatBeretBlueShield
-  name: central command enforcer beret
+  name: enforcer beret
   description: This beret completes the outfit of any true Central Command Enforcement Officer.
   components:
     - type: Sprite
@@ -23,7 +23,7 @@
 - type: entity
   parent: [ClothingHeadBase, BaseBlueShieldContraband]
   id: ClothingHeadHatBlueShieldSheriff
-  name: central command enforcement bounty hunter's hat
+  name: enforcer bounty hunter's hat
   description: For when your charges do not wish to be tracked down.
   components:
     - type: Sprite
@@ -200,6 +200,23 @@
         - HamsterWearable
         - WhitelistChameleon
 
+- type: entity
+  parent: [ClothingHeadBase, BaseSecurityContraband]
+  id: ClothingHeadDeputyHat
+  name: deputy's hat
+  description: el desperados...
+  components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/Head/Hats/deputy_hat.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/Head/Hats/deputy_hat.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - HamsterWearable
+        - WhitelistChameleon
+
 #USSP
 - type: entity
   parent: [ClothingHeadBase, BaseSovietContraband]
@@ -285,8 +302,8 @@
 - type: entity
   parent: ClothingHeadBase # Hat, not an actual helmet
   id: ClothingHeadHelmetSilverMusician
-  name: legendary silver helm
-  description: The old silver helm of the famous musician duo. One more time?
+  name: chrome music helmet
+  description: A shiny, chrome helmet packed with electronics, like a built in speaker and chromatic lights.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Head/Hats/daft_punk_silver.rsi
@@ -598,12 +615,12 @@
 - type: entity
   parent: ClothingHeadHatBeretNCTBlack
   id: ClothingHeadHatBeretNCTGreen
-  description: A beret worn by the mentors and trainers of the Career Training Team. This one is green!
+  description: A beret worn by the mentors and trainers of the Career Training Team. This one is blue!
   components:
     - type: Sprite
-      sprite: _Starlight/Clothing/Head/Hats/beret_nct_green.rsi
+      sprite: _Starlight/Clothing/Head/Hats/beret_nct_blue.rsi
     - type: Clothing
-      sprite: _Starlight/Clothing/Head/Hats/beret_nct_green.rsi
+      sprite: _Starlight/Clothing/Head/Hats/beret_nct_blue.rsi
 
 - type: entity
   parent: [ClothingHeadBase, BaseCommandContraband]
@@ -626,6 +643,17 @@
     sprite: _Starlight/Clothing/Head/Hats/retro_officer_cap.rsi
   - type: Clothing
     sprite: _Starlight/Clothing/Head/Hats/retro_officer_cap.rsi
+
+- type: entity
+  parent: ClothingHeadHatWizard
+  id: ClothingHeadHatWitchyHat
+  name: witchy hat
+  description: Wicky-wicky-witchy hat!
+  components:
+  - type: Sprite
+    sprite: _Starlight/Clothing/Head/Hats/witchyhat.rsi
+  - type: Clothing
+    sprite: _Starlight/Clothing/Head/Hats/witchyhat.rsi
 
 # Wizard duel!
 - type: entity
@@ -699,3 +727,22 @@
       sprite: _Starlight/Clothing/Head/Hats/bunnygang.rsi
     - type: Clothing
       sprite: _Starlight/Clothing/Head/Hats/bunnygang.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretPrison
+  name: prison beret
+  description: A criminal's least favorite headwear.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Clothing/Head/Hats/beret_prison.rsi
+  - type: Clothing
+    sprite: _Starlight/Clothing/Head/Hats/beret_prison.rsi
+  - type: Tag
+    tags:
+    - PetWearable
+    - CorgiWearable
+    - ClothMade
+    - Recyclable
+    - HamsterWearable
+    - WhitelistChameleon

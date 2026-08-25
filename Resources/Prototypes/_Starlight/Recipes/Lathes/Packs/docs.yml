@@ -57,6 +57,9 @@
   - PrintedDocumentProductOrderRecipe
   # Communications
   - PrintedDocumentCentCommCommunicationRecipe
+  # Blimpuf
+  - PrintedDocumentChemicalContrabandRecipe
+  - PrintedDocumentCargoShuttleDepartureRecipe
 
 #- type: latheRecipePack
 #  id: StarlightDocsEmag

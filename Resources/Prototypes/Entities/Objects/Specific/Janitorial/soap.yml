@@ -45,14 +45,14 @@
   - type: SolutionContainerManager
     solutions:
       soap:
-        maxVol: 50
+        maxVol: 60
         reagents:
         - ReagentId: SoapReagent
-          Quantity: 50
+          Quantity: 60
   - type: SolutionTransfer
     transferAmount: 10
     minTransferAmount: 1
-    maxTransferAmount: 25
+    maxTransferAmount: 30
     canReceive: false
     canChangeTransferAmount: true
   - type: DrainableSolution
@@ -66,6 +66,7 @@
     solution: soap
   - type: BadFood
   - type: CleansForensics
+  - type: CleansScent # Starlight
   - type: Residue
     residueAdjective: residue-slippery
 
@@ -97,10 +98,10 @@
   - type: SolutionContainerManager
     solutions:
       soap:
-        maxVol: 100
+        maxVol: 90
         reagents:
         - ReagentId: SoapReagent
-          Quantity: 100
+          Quantity: 90
   - type: Residue
     residueColor: residue-grey
 

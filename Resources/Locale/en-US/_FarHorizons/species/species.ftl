@@ -1,25 +1,25 @@
 species-name-ipc = IPC
 
-species-name-protogen = Neocyte
-guidebook-armor-protogen = Neocyte Frames
-# Starlight, Neocyte Frames, True Neocyte, Neo Slime, Human, Felionoid, Dwarf, and Cyclorite renamed
-subspecies-name-trueprotogen = True Neocyte
-subspecies-name-protovulp = Neo-Vulpkanin
-subspecies-name-protovox = Neo-Vox
-subspecies-name-protothaven = Neo-Thaven
-subspecies-name-protoslimeperson = Neo-Slime
-subspecies-name-protokin = Neo-Shadekin
-subspecies-name-protoresomi = Neo-Resomi
-subspecies-name-protoreptilian = Neo-Reptilian
-subspecies-name-protomoth = Neo-Moth
-subspecies-name-protohuman = Neo-Human
-subspecies-name-protofelionoid = Neo-Felionoid
-subspecies-name-protodwarf = Neo-Dwarf
-subspecies-name-protodiona = Neo-Diona
-subspecies-name-protocyclorite = Neo-Cyclorite
-subspecies-name-protoavali = Neo-Avali
-subspecies-name-protoarachnid = Neo-Arachnid
+species-name-neocyte = Neocyte
+guidebook-armor-neocyte = Neocyte Frames
+# Starlight Neo Slime, Human, Felionoid renamed
+# Blimpuf - Neocytes, Elves, T'Nebri renamed
+subspecies-name-trueneocyte = True Neocyte
+subspecies-name-neovulp = Neo-Vulpkanin
+subspecies-name-neovox = Neo-Vox
+subspecies-name-neothaven = Neo-Thaven
+subspecies-name-neoslimeperson = Neo-Slime
+subspecies-name-neoshadekin = Neo-Shadekin
+subspecies-name-neoresomi = Neo-Resomi
+subspecies-name-neoreptilian = Neo-Reptilian
+subspecies-name-neomoth = Neo-Moth
+subspecies-name-neohuman = Neo-Human
+subspecies-name-neofelionoid = Neo-Felionoid
+subspecies-name-neodiona = Neo-Diona
+subspecies-name-neotnebri = Neo-T'Nebri
+subspecies-name-neoavali = Neo-Avali
+subspecies-name-neoarachnid = Neo-Arachnid
 
 # Starlight Species added after Neocytes
-subspecies-name-protoelf = Neo-Elf
-subspecies-name-protolagomorph = Neo-Lagomorph
+subspecies-name-neoelf = Neo-Elf
+subspecies-name-neolagomorph = Neo-Lagomorph

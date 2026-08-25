@@ -1,0 +1,5 @@
+- type: entity
+  save: false
+  name: "Urist McT'Nebri"
+  parent: BaseMobTNebri
+  id: MobTNebri

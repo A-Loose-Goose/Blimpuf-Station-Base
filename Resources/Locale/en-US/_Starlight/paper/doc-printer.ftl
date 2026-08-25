@@ -1273,3 +1273,47 @@ doc-text-printer-enemy-of-corporation-designation =
    ⠀ [italic]and tried normally as per Corporate Law.[/italic]
     ────────────────────────────────────────
    ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+
+doc-text-printer-chemical-contraband-form =
+                              [head=3]NT-CC Consortium Services[/head]
+
+                   [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+     ────────────────────────────────────────
+    ⠀⠀                 [bold]CHEMICAL CONTRABAND FORM[/bold]
+     ────────────────────────────────────────
+     Date and Time: [datetime]
+     Document Compiler: [signature]
+
+     I, [signature], authorize the storage of the following contraband chemicals, in the listed quantities:
+    - [form]
+    - [form]
+    - [form]
+    - [form]
+    - [form]
+    - [form]
+
+     Stored Location: [form]
+     ────────────────────────────────────────
+    ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+
+doc-text-printer-cargo-shuttle-depature-form =
+                              [head=3]NT-CC Consortium Services[/head]
+
+                   [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+     ────────────────────────────────────────
+    ⠀⠀                 [bold]CARGO SHUTTLE DEPARTURE FORM[/bold]
+     ──────────────────────────────────────
+    Due to recent changes in logistics, ownership of the Automated Trade Station (ATS) is now under Central Command operation. All flights to the ATS must be logged before departure.
+
+    - [signature] [datetime]
+    - [signature] [datetime]
+    - [signature] [datetime]
+    - [signature] [datetime]
+    - [signature] [datetime]
+    - [signature] [datetime]
+    - [signature] [datetime]
+    - [signature] [datetime]
+    - [signature] [datetime]
+    - [signature] [datetime]
+
+     ────────────────────────────────────────

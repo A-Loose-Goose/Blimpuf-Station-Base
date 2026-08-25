@@ -5,12 +5,11 @@
   playTimeTracker: JobCentralCommandOfficial
   requirements:
   - !type:RolesRequirement
-    proto: StaffAndMentorOnlyRolesReq
+    proto: MentorReq
   setPreference: false
   startingGear: CentcommGear
   icon: "JobIconCentralCommandOfficial" #Starlight
   supervisors: job-supervisors-hos
-  canBeAntag: false
   accessGroups:
   - AllAccess
   access:

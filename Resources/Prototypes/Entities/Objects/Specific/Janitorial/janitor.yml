@@ -42,7 +42,7 @@
   - type: SolutionContainerManager
     solutions:
       absorbed:
-        maxVol: 100
+        maxVol: 90
   - type: UseDelay
     delay: 1
   - type: PhysicalComposition

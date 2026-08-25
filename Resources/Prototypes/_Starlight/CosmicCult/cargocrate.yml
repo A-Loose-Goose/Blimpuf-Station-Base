@@ -10,7 +10,7 @@
       drink:
         reagents:
         - ReagentId: Holywater
-          Quantity: 200
+          Quantity: 180
 
 - type: entity
   parent: CratePlastic

@@ -10,7 +10,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 100
+        maxVol: 90
   - type: Tag
     tags:
     - DrinkBottle
@@ -24,7 +24,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 50
+        maxVol: 60
   - type: Tag
     tags:
     - DrinkBottle
@@ -38,7 +38,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 50
+        maxVol: 60
 
 - type: entity
   abstract: true
@@ -48,7 +48,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 100
+        maxVol: 90
 
 # Small bottles
 

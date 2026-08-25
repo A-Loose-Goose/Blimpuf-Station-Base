@@ -1,0 +1,6 @@
+- type: stack
+  parent: BaseSheetStack
+  id: ReinforcedClockworkGlass
+  name: stack-reinforced-clockwork-glass
+  icon: { sprite: /Textures/_Blimpuf/Objects/Materials/Sheets/reinforced_clockwork_glass.rsi, state: rcglass }
+  spawn: SheetReinforcedClockworkGlass1

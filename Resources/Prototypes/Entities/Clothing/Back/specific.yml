@@ -59,8 +59,8 @@
       tank:
         maxVol: 1000 #much water
   - type: SolutionTransfer
-    transferAmount: 50
-    maxTransferAmount: 100
+    transferAmount: 45
+    maxTransferAmount: 90
     minTransferAmount: 10
     canChangeTransferAmount: true
   - type: UserInterface
@@ -76,6 +76,8 @@
   - type: ExaminableSolution
     solution: tank
     exactVolume: true
+  - type: SolutionItemStatus
+    solution: tank
 
 - type: entity
   parent: ClothingBackpack

@@ -36,6 +36,20 @@
                                   Visible="False"
                                   StyleClasses="OpenBoth"/>
                           <!-- NullLink end-->
+                          <!-- Blimpuf start -->
+                          <Button Name="JoinDiscordButton"
+                                  Text="{Loc 'blimpuf-join-discord'}"
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Bottom"
+                                  Visible="False"
+                                  StyleClasses="OpenBoth"/>
+                          <Button Name="WebsiteButton"
+                                  Text="{Loc 'blimpuf-website'}"
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Bottom"
+                                  Visible="False"
+                                  StyleClasses="OpenBoth"/>
+                          <!-- Blimpuf end -->
                           <!-- Starlight start -->
                           <Button Name="OpenUrlButton"
                                   Text="{Loc 'connecting-open-browser'}"

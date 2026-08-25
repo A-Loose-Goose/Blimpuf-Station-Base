@@ -15,7 +15,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 100
+        maxVol: 90
   - type: TrashOnSolutionEmpty
     solution: drink
   - type: Item
@@ -34,7 +34,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 50
+        maxVol: 60
   - type: Item
     size: Small
 
@@ -46,7 +46,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 150
+        maxVol: 120
   - type: Tag
     tags:
     - DrinkBottle # Need this to fit in the soda dispenser, probably needs a better name
@@ -64,7 +64,7 @@
       drink:
         reagents:
         - ReagentId: JuiceLime
-          Quantity: 50
+          Quantity: 60
   - type: Sprite
     sprite: Objects/Consumable/Drinks/limejuice.rsi
 
@@ -79,7 +79,7 @@
       drink:
         reagents:
         - ReagentId: JuiceOrange
-          Quantity: 50
+          Quantity: 60
   - type: Sprite
     sprite: Objects/Consumable/Drinks/orangejuice.rsi
 
@@ -94,7 +94,7 @@
       drink:
         reagents:
         - ReagentId: JuiceTomato
-          Quantity: 50
+          Quantity: 60
   - type: Sprite
     sprite: Objects/Consumable/Drinks/tomatojuice.rsi
 
@@ -109,7 +109,7 @@
       drink:
         reagents:
         - ReagentId: CoconutWater
-          Quantity: 50
+          Quantity: 60
   - type: Sprite
     sprite: Objects/Consumable/Drinks/coconutwater.rsi
 
@@ -124,7 +124,7 @@
       drink:
         reagents:
         - ReagentId: Cream
-          Quantity: 50
+          Quantity: 60
   - type: Sprite
     sprite: Objects/Consumable/Drinks/cream.rsi
 
@@ -139,7 +139,7 @@
       drink:
         reagents:
         - ReagentId: JuiceLemon
-          Quantity: 50
+          Quantity: 60
   - type: Sprite
     sprite: Objects/Consumable/Drinks/lemonjuice.rsi
 
@@ -154,7 +154,7 @@
       drink:
         reagents:
         - ReagentId: JuicePineapple
-          Quantity: 50
+          Quantity: 60
   - type: Sprite
     sprite: Objects/Consumable/Drinks/pineapplejuice.rsi
 
@@ -171,7 +171,7 @@
       drink:
         reagents:
         - ReagentId: Milk
-          Quantity: 100
+          Quantity: 90
   - type: Sprite
     sprite: Objects/Consumable/Drinks/milk.rsi
 
@@ -186,7 +186,7 @@
       drink:
         reagents:
         - ReagentId: MilkSoy
-          Quantity: 100
+          Quantity: 90
   - type: Sprite
     sprite: Objects/Consumable/Drinks/soymilk.rsi
 
@@ -201,7 +201,7 @@
       drink:
         reagents:
         - ReagentId: MilkOat
-          Quantity: 100
+          Quantity: 90
   - type: Sprite
     sprite: Objects/Consumable/Drinks/oatmilk.rsi
 
@@ -216,14 +216,14 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 150
+        maxVol: 120
         reagents:
         - ReagentId: JuiceLime
-          Quantity: 150
+          Quantity: 120
   - type: Label
     currentLabel: reagent-name-juice-lime
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/limejuice.rsi
+    sprite: _Blimpuf/Objects/Consumable/Drinks/largelimebottle.rsi # Blimpuf
 
 - type: entity
   parent: DrinkCartonBaseXtraLargeFull
@@ -234,14 +234,14 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 150
+        maxVol: 120
         reagents:
         - ReagentId: JuiceOrange
-          Quantity: 150
+          Quantity: 120
   - type: Label
     currentLabel: reagent-name-juice-orange
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/orangejuice.rsi
+    sprite: _Blimpuf/Objects/Consumable/Drinks/largeorangejuicebottle.rsi # Blimpuf
 
 - type: entity
   parent: DrinkCartonBaseXtraLargeFull
@@ -252,11 +252,11 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 150
+        maxVol: 120
         reagents:
         - ReagentId: Cream
-          Quantity: 150
+          Quantity: 120
   - type: Label
     currentLabel: reagent-name-cream
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/cream.rsi
+    sprite: _Blimpuf/Objects/Consumable/Drinks/largecreambottle.rsi # Blimpuf

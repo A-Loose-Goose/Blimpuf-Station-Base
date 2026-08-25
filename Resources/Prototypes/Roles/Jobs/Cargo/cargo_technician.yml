@@ -9,6 +9,7 @@
   access:
   - Cargo
   - Maintenance
+  - Shuttle # Starlight
   extendedAccess:
   - Salvage
   - Mining # Starlight

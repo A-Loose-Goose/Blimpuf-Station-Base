@@ -107,6 +107,15 @@
     - type: SubFloorHide
       visibleLayers:
       - enum.SubfloorLayers.FirstLayer
+    # Starlight start
+    - type: VentCrawlTube
+    - type: VentCrawlJunction
+      degrees:
+        - 0
+    - type: ContainerContainer
+      containers:
+        VentCrawlTube: !type:Container
+    # Starlight end
     - type: Sprite
       drawdepth: FloorObjects
       sprite: Structures/Piping/Atmospherics/vent.rsi
@@ -149,7 +158,9 @@
       time: 3
     # Starlight start
     - type: VentCrawlTube
-    - type: VentCrawlEntry
+    - type: VentCrawlJunction
+      degrees:
+        - 0
     - type: ContainerContainer
       containers:
         VentCrawlTube: !type:Container
@@ -556,7 +567,7 @@
 
 #Blimpuf - Start
 - type: entity
-  parent: GasVentPump
+  parent: [GasUnaryBase, AirSensorBase]
   id: SecureGasVentPump
   name: secure air vent
   description: A highly secure vent that has a valve and a pump attached to it.
@@ -573,16 +584,6 @@
         - - Armory
     - type: Lock
       locked: true # Start locked
-    - type: DeviceNetwork
-      prefix: device-address-prefix-vent
-      deviceNetId: Wireless
-      receiveFrequencyId: BasicDevice
-    - type: WirelessNetworkConnection
-      range: 200
-    - type: DeviceLinkSink
-      ports:
-        - Pressurize
-        - Depressurize
     # Blimpuf - End
     # Starlight start
     - type: VentCrawlTube
@@ -593,6 +594,8 @@
         # Starlight end
     - type: ApcPowerReceiver
     - type: ExtensionCableReceiver
+    - type: DeviceNetwork
+      prefix: device-address-prefix-vent
     - type: Tag
       tags:
         - GasVent
@@ -630,9 +633,6 @@
             Welded: { state: vent_welded }
             Lockout: { state: vent_lockout }
     - type: GasVentPump
-      inlet: inlet
-      outlet: outlet
-      canLink: true
     - type: Construction
       graph: SecureVentsBlimpuf
       node: secureventpump
@@ -667,8 +667,6 @@
         - - Armory
     - type: Lock
       locked: true # Start locked
-    - type: VentCrawlTube
-    - type: VentCrawlEntry
     # Blimpuf - End
     - type: SubFloorHide
       visibleLayers:
@@ -704,4 +702,26 @@
         - PassiveVent
     - type: StaticPrice
       price: 100
+
+- type: entity
+  parent: SecureGasVentPump
+  id: SecureCCGasVentPump
+  name: secure corporate air vent
+  description: A highly secure vent used by Central Command that has a valve and a pump attached to it.
+  placement:
+    mode: AlignAtmosPipeLayers # starlight
+  components:
+    # Blimpuf - Start
+    - type: AccessReader
+      enabled: true
+      access:
+        - - CentralCommand
+    - type: AtmosPipeLayers
+      alternativePrototypes:
+        Primary: SecureCCGasVentPump
+        Secondary: SecureCCGasVentPumpAlt1
+        Tertiary: SecureCCGasVentPumpAlt2
+        Quaternary: SecureCCGasVentPumpAlt3
+        Quinary: SecureCCGasVentPumpAlt4
 #Blimpuf - End
+

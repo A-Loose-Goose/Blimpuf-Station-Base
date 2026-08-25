@@ -17,7 +17,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 100
+        maxVol: 90
   - type: Sprite
     sprite: Objects/Consumable/Drinks/alco-bottle.rsi # fallback
   - type: Tool
@@ -62,7 +62,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 50
+        maxVol: 60
   - type: Item
     size: Small
   - type: Sprite
@@ -83,7 +83,7 @@
       drink:
         reagents:
         - ReagentId: Absinthe
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-absinthe
   - type: Sprite
@@ -100,7 +100,7 @@
       drink:
         reagents:
         - ReagentId: BlueCuracao
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-blue-curacao
   - type: Sprite
@@ -124,7 +124,7 @@
       drink:
         reagents:
         - ReagentId: Nothing
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-nothing
   - type: Sprite
@@ -141,7 +141,7 @@
       drink:
         reagents:
         - ReagentId: Champagne
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-champagne
   - type: Sprite
@@ -162,7 +162,7 @@
       drink:
         reagents:
         - ReagentId: Cognac
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-cognac
   - type: Sprite
@@ -179,7 +179,7 @@
       drink:
         reagents:
         - ReagentId: Grenadine
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-grenadine
   - type: Sprite
@@ -203,7 +203,7 @@
       drink:
         reagents:
         - ReagentId: Gin
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-gin
   - type: Sprite
@@ -220,7 +220,7 @@
       drink:
         reagents:
         - ReagentId: Gildlager
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-gildlager
   - type: Sprite
@@ -237,7 +237,7 @@
       drink:
         reagents:
         - ReagentId: CoffeeLiqueur
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-coffeeliqueur
   - type: Sprite
@@ -254,7 +254,7 @@
       drink:
         reagents:
         - ReagentId: MelonLiquor
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-melon-liquor
   - type: Sprite
@@ -278,7 +278,7 @@
       drink:
         reagents:
         - ReagentId: Patron
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-patron
   - type: Sprite
@@ -295,7 +295,7 @@
       drink:
         reagents:
         - ReagentId: PoisonWine
-          Quantity: 100
+          Quantity: 90
   - type: Sprite
     sprite: Objects/Consumable/Drinks/pwinebottle.rsi
   - type: Tag
@@ -314,7 +314,7 @@
       drink:
         reagents:
         - ReagentId: Rum
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-rum
   - type: Sprite
@@ -331,7 +331,7 @@
       drink:
         reagents:
         - ReagentId: Tequila
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-tequila
   - type: Sprite
@@ -348,7 +348,7 @@
       drink:
         reagents:
         - ReagentId: Vermouth
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-vermouth
   - type: Sprite
@@ -358,14 +358,14 @@
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBaseFull]
   id: DrinkVodkaBottleFull
   name: vodka bottle
-  description: Aah, vodka. Prime choice of drink AND fuel by Russians worldwide.
+  description: Aah, vodka. The prime choice of drink and fuel by members of labor groups across the galaxies.
   components:
   - type: SolutionContainerManager
     solutions:
       drink:
         reagents:
         - ReagentId: Vodka
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-vodka
   - type: Sprite
@@ -382,7 +382,7 @@
       drink:
         reagents:
         - ReagentId: Whiskey
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-whiskey
   - type: Sprite
@@ -399,7 +399,7 @@
       drink:
         reagents:
         - ReagentId: Wine
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-wine
   - type: Sprite
@@ -420,14 +420,14 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 150
+        maxVol: 120
         reagents:
         - ReagentId: Beer
-          Quantity: 150
+          Quantity: 120
   - type: Label
     currentLabel: reagent-name-beer
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/beer.rsi
+    sprite: _Blimpuf/Objects/Consumable/Drinks/largebeerbottle.rsi # Blimpuf
   - type: Openable
     closeable: false # sprite is just a beer bottle, but this should be removed when there's a more appropriate sprite
   - type: Sealable
@@ -438,6 +438,24 @@
     - DrinkBottle
 
 - type: entity
+  parent: [DrinkVisualsOpenable, DrinkBottleGlassBaseFull]
+  id: DrinkMeadJug
+  name: mead jug
+  description: It has strong notes of honey, fruit, and flowers. The handles are reminiscent of a bee's wings.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 120
+        reagents:
+          - ReagentId: Mead
+            Quantity: 120
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Consumable/Drinks/largemeadbottle.rsi # Blimpuf
+  - type: Label
+    currentLabel: reagent-name-mead
+
+- type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBaseFull]
   id: DrinkAleBottleFullGrowler
   name: Magm-Ale growler
@@ -446,14 +464,14 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 150
+        maxVol: 120
         reagents:
         - ReagentId: Ale
-          Quantity: 150
+          Quantity: 120
   - type: Label
     currentLabel: reagent-name-ale
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/alebottle.rsi
+    sprite: _Blimpuf/Objects/Consumable/Drinks/largealebottle.rsi # Blimpuf
   - type: Openable
     closeable: false # sprite is just a beer bottle, but this should be removed when there's a more appropriate sprite
   - type: Sealable
@@ -473,7 +491,7 @@
       drink:
         reagents:
         - ReagentId: Beer
-          Quantity: 50
+          Quantity: 60
   - type: Label
     currentLabel: reagent-name-beer
   - type: Sprite
@@ -497,7 +515,7 @@
       drink:
         reagents:
         - ReagentId: Ale
-          Quantity: 50
+          Quantity: 60
   - type: Label
     currentLabel: reagent-name-ale
   - type: Sprite
@@ -506,6 +524,24 @@
     closeable: false # can't put the cap back on
   - type: Sealable
     examineTextUnsealed: "sealable-component-on-examine-is-unsealed-crown-cap" # tell the player why it can't close
+
+- type: entity
+  parent: [DrinkVisualsOpenable, DrinkBottleGlassSmallBaseFull]
+  id: DrinkMeadBottleFull
+  name: mead bottle
+  description: It has strong notes of honey, fruit, and flowers.
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          maxVol: 60
+          reagents:
+            - ReagentId: Mead
+              Quantity: 60
+    - type: Sprite
+      sprite: _Blimpuf/Objects/Consumable/Drinks/meadbottle.rsi # Blimpuf
+    - type: Label
+      currentLabel: reagent-name-mead
 
 - type: entity
   parent: [DrinkVisualsOpenable, DrinkBottleGlassSmallBaseFull]
@@ -518,7 +554,7 @@
       drink:
         reagents:
         - ReagentId: Sake
-          Quantity: 50
+          Quantity: 60
   - type: Label
     currentLabel: reagent-name-sake
   - type: Sprite

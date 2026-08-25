@@ -36,6 +36,7 @@ using Content.Shared._Starlight.Atmos;
 using Content.Shared._Starlight.Atmos.Components;
 using Content.Shared.Prototypes;
 using Content.Shared._Starlight.Plumbing.Components;
+using Content.Shared.Doors.Components;
 // Starlight End
 
 namespace Content.Shared.RCD.Systems;
@@ -69,6 +70,7 @@ public sealed partial class RCDSystem : EntitySystem
     private readonly ProtoId<RCDPrototype> _deconstructTileProto = "DeconstructTile";
     private readonly ProtoId<RCDPrototype> _deconstructLatticeProto = "DeconstructLattice";
     private static readonly ProtoId<TagPrototype> CatwalkTag = "Catwalk";
+    private static readonly ProtoId<TagPrototype> _unstackableTag = "Unstackable"; // Starlight edit
 
     private HashSet<EntityUid> _intersectingEntities = new();
 
@@ -539,7 +541,7 @@ public sealed partial class RCDSystem : EntitySystem
         if (charges == 0)
         {
             if (popMsgs)
-                _popup.PopupClient(Loc.GetString("rcd-component-no-ammo-message"), uid, user);
+                _popup.PopupClient(Loc.GetString("rcd-component-no-ammo-message", ("device", Name(uid))), uid, user); // Starlight-edit: name the actual device (RCD/RPD/RPLD)
 
             return false;
         }
@@ -547,7 +549,7 @@ public sealed partial class RCDSystem : EntitySystem
         if (prototype.Cost > charges)
         {
             if (popMsgs)
-                _popup.PopupClient(Loc.GetString("rcd-component-insufficient-ammo-message"), uid, user);
+                _popup.PopupClient(Loc.GetString("rcd-component-insufficient-ammo-message", ("device", Name(uid))), uid, user); // Starlight-edit: name the actual device (RCD/RPD/RPLD)
 
             return false;
         }
@@ -636,12 +638,20 @@ public sealed partial class RCDSystem : EntitySystem
         // Check rule: The tile is unoccupied
         var isWindow = prototype.ConstructionRules.Contains(RcdConstructionRule.IsWindow);
         var isCatwalk = prototype.ConstructionRules.Contains(RcdConstructionRule.IsCatwalk);
+        var isAirlock = prototype.ConstructionRules.Contains(RcdConstructionRule.IsAirlock); // Starlight: airlocks can be built over firelocks
+        var isFirelock = prototype.ConstructionRules.Contains(RcdConstructionRule.IsFirelock); // Starlight: firelocks can be built over airlocks
         // Starlight Start: RPLD
         var isPlumbingMachinePlacement = component.IsRPLD
             && prototype.Prototype != null
             && _protoManager.TryIndex<EntityPrototype>(prototype.Prototype, out var constructionProto)
             && constructionProto.HasComponent<PlumbingConnectorAppearanceComponent>(_entityManager.ComponentFactory);
         // Starlight End: RPLD
+        // Starlight Start: RPD
+        var isUnstackablePlacement = prototype.Prototype != null
+             && _protoManager.TryIndex<EntityPrototype>(prototype.Prototype, out var constructionRpdProto)
+             && constructionRpdProto.TryGetComponent<TagComponent>(out var buildTags, _entityManager.ComponentFactory)
+             && _tags.HasTag(buildTags, _unstackableTag);
+        // Starlight End: RPD
         _intersectingEntities.Clear();
         _lookup.GetLocalEntitiesIntersecting(gridUid, position, _intersectingEntities, -0.05f, LookupFlags.Uncontained);
 
@@ -649,6 +659,12 @@ public sealed partial class RCDSystem : EntitySystem
         {
             if (isWindow && HasComp<SharedCanBuildWindowOnTopComponent>(ent))
                 continue;
+            // Starlight Start: Airlocks and Firelocks can be built on top of one another
+            if (isAirlock && HasComp<FirelockComponent>(ent))
+                continue;
+            if (isFirelock && HasComp<AirlockComponent>(ent))
+                continue;
+            // Starlight End
             // Starlight Start: RPLD
             if (isPlumbingMachinePlacement && Transform(ent).Anchored && HasComp<PlumbingConnectorAppearanceComponent>(ent))
             {
@@ -665,6 +681,16 @@ public sealed partial class RCDSystem : EntitySystem
 
                 return false;
             }
+
+            // Starlight Start: RPD
+            if (_tags.HasTag(ent, _unstackableTag) && isUnstackablePlacement)
+            {
+                if (popMsgs)
+                    _popup.PopupClient(Loc.GetString("rcd-component-cannot-build-on-occupied-tile-message"), uid, user);
+
+                return false;
+            }
+            // Starlight End: RPD
 
             if (prototype.CollisionMask != CollisionGroup.None && TryComp<FixturesComponent>(ent, out var fixtures))
             {
@@ -928,6 +954,12 @@ public sealed partial class RCDSystem : EntitySystem
             return RpdMode.Free; // default to Free mode
 
         return component.CurrentMode;
+    }
+
+    public void SetSelectedLayer(Entity<RCDComponent> ent, AtmosPipeLayer layer)
+    {
+        ent.Comp.LastSelectedLayer = layer;
+        Dirty(ent);
     }
     // Starlight End: RPD
 

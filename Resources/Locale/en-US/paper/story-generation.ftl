@@ -90,7 +90,7 @@ story-gen-book-character33 = Ratvar cultist
 story-gen-book-character34 = assistant
 story-gen-book-character35 = arachnid
 story-gen-book-character36 = vox
-story-gen-book-character37 = dwarf
+story-gen-book-character37 = rodentia
 story-gen-book-character38 = thief
 story-gen-book-character39 = wizard
 

@@ -34,8 +34,8 @@
   name: metabolizer-type-plant
 
 - type: metabolizerType
-  id: Dwarf
-  name: metabolizer-type-dwarf
+  id: Dipsomania
+  name: metabolizer-type-dipsomania
 
 - type: metabolizerType
   id: Moth

@@ -136,10 +136,10 @@ public sealed partial class PlayerProvidedCharacterRecords
         Allergies = other.Allergies;
         DrugAllergies = other.DrugAllergies;
         PostmortemInstructions = other.PostmortemInstructions;
-        MedicalEntries = other.MedicalEntries.Select(x => new RecordEntry(x)).ToList();
-        SecurityEntries = other.SecurityEntries.Select(x => new RecordEntry(x)).ToList();
-        EmploymentEntries = other.EmploymentEntries.Select(x => new RecordEntry(x)).ToList();
-        AdminEntries = other.AdminEntries.Select(x => new RecordEntry(x)).ToList();
+        MedicalEntries = other.MedicalEntries?.Select(x => new RecordEntry(x)).ToList() ?? [];
+        SecurityEntries = other.SecurityEntries?.Select(x => new RecordEntry(x)).ToList() ?? [];
+        EmploymentEntries = other.EmploymentEntries?.Select(x => new RecordEntry(x)).ToList() ?? [];
+        AdminEntries = other.AdminEntries?.Select(x => new RecordEntry(x)).ToList() ?? [];
     }
 
     // Template with sensible defaults used when a profile has no saved character records.
@@ -271,8 +271,11 @@ public sealed partial class PlayerProvidedCharacterRecords
         }
     }
 
-    private static string ClampString(string value, int length)
+    private static string ClampString(string? value, int length)
     {
+        if (value == null)
+            return string.Empty;
+
         // Avoid printing garbage characters by trimming to the console text limits.
         if (value.Length <= length)
             return value;

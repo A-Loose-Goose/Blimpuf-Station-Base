@@ -1,0 +1,14 @@
+- type: trait
+  id: Dipsomania
+  name: trait-dipsomania-name
+  description: trait-dipsomania-desc
+  category: Quirks
+  cost: 0
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Dipsomania
+  requirements:
+    - !type:SpeciesRequirement
+      species:
+        - Human

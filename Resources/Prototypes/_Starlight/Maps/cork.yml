@@ -1,13 +1,13 @@
 - type: gameMap
-  id: StarlightCork
+  id: BlimpufCork
   mapName: 'Cork Outpost'
-  mapPath: /Maps/_Starlight/Stations/Cork.yml
+  mapPath: /Maps/_Blimpuf/Stations/Cork.yml
   maxRandomOffset: 0
   randomRotation: false
   minPlayers: 0
   maxPlayers: 15
   stations:
-    StarlightCork:
+    BlimpufCork:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
@@ -22,9 +22,9 @@
             # cargo
             Quartermaster: [ 1, 1 ]
             SalvageLead: [ 1, 1 ]
-            SalvageSpecialist: [ 3, 3 ]
+            SalvageSpecialist: [ 2, 3 ]
             CargoTechnician: [ 3, 3 ]
-            MiningSpecialist: [ 2, 2 ]
+            MiningSpecialist: [ 1, 2 ]
             MailTech: [ 1, 1 ]
             # engineering
             ChiefEngineer: [ 1, 1 ]
@@ -34,21 +34,21 @@
             # medical
             ChiefMedicalOfficer: [ 1, 1 ]
             MedicalDoctor: [ 3, 3 ]
-            MedicalIntern: [ 2, 2 ]
+            MedicalIntern: [ 1, 2 ]
             Psychologist: [ 1, 1 ]
             Paramedic: [ 1, 1 ]
             Chemist: [ 1, 1 ]
             # science
             ResearchDirector: [ 1, 1 ]
             Roboticist: [ 1, 1 ]
-            Scientist: [ 3, 3 ]
-            ResearchAssistant: [ 2, 2 ]
+            Scientist: [ 2, 3 ]
+            ResearchAssistant: [ 1, 1 ]
             # security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
             DutyOfficer: [ 1, 1 ]
             SecurityOfficer: [ 2, 3 ]
-            SecurityCadet: [ 2, 2 ]
+            SecurityCadet: [ 1, 2 ]
             Brigmedic: [ 1, 1 ]
             Detective: [ 1, 1 ]
             #law
@@ -67,8 +67,8 @@
             Mime: [ 1, 1 ]
             Musician: [ 2, 2 ]
             Reporter: [ 1, 1 ]
-            ServiceWorker: [ 3, 3 ]
-            Performer: [ 2, 2 ]
+            ServiceWorker: [ 2, 3 ]
+            Performer: [ 1, 2 ]
             Assistant: [ -1, -1 ]
             # silicon
             StationAi: [ 1, 1 ]

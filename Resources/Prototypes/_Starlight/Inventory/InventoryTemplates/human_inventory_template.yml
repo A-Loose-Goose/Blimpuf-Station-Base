@@ -1,5 +1,5 @@
-﻿- type: inventoryTemplate
-  id: cyclorite
+- type: inventoryTemplate
+  id: tnebri
   slots:
     - name: shoes
       slotTexture: shoes

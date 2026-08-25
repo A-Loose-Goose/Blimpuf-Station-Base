@@ -17,6 +17,8 @@
     - Service
     - Supply
     - Corporate
+    defaultChannel: Common
+    allowBlacklistedComms: true
   - type: ActiveRadio
     channels:
     - Binary
@@ -343,7 +345,7 @@
   - type: DeviceNetwork
     deviceNetId: Wired
   - type: DeviceLinkSource
-    range: 20
+    range: 200
     ports:
       - AiLawConsoleSender
 # Starlight-end

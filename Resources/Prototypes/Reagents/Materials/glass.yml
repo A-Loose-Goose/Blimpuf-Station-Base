@@ -64,12 +64,12 @@
   color: "#9b6f07"
   price: 0.225 # average of glass and brass.
   # Interpolated properties
-  properties: # FH edit
-    electrical: 4
-    thermal: 4.5
+  properties: # Blimpuf
+    electrical: 3
+    thermal: 3
     hard: 3
-    density: 3
-    chemical: 5.5
+    density: 2
+    chemical: 5
 
 - type: material
   id: UraniumGlass

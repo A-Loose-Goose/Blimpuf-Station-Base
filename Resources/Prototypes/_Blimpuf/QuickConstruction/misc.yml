@@ -1,0 +1,4 @@
+- type: quickConstructionCategory
+  id: BrassRod
+  constructionEntries:
+    - Grille

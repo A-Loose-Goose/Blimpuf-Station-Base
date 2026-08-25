@@ -3,7 +3,7 @@
   name: chat-radio-corporate
   keycode: "p"
   frequency: 1780
-  color: "#1d66a2"
+  color: "#10c410"
   icon:
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: law
@@ -86,15 +86,6 @@
   keycode: "g"
   frequency: 9998
   color: "#954fff"
-  longRange: true
-
-# Medtak
-- type: radioChannel
-  id: MedTak
-  name: chat-radio-medtak
-  keycode: "k"
-  frequency: 1505
-  color: "#880606"
   longRange: true
 
 # Hiveminds

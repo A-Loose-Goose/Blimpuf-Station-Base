@@ -268,6 +268,9 @@ entities:
     - type: OccluderTree
     - type: Shuttle
       dampingModifier: 0.25
+    - type: Tag
+      tags:
+        - ERTShuttle
     - type: GridPathfinding
     - type: RadiationGridResistance
     - type: SpreaderGrid
@@ -1295,7 +1298,7 @@ entities:
       parent: 1
     - type: AtmosPipeColor
       color: '#0055CCFF'
-- proto: GasVentPump
+- proto: SecureCCGasVentPump
   entities:
   - uid: 157
     components:

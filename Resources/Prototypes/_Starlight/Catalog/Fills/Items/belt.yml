@@ -68,7 +68,7 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: Stunbaton
+        - id: EnforcerStunbaton
         - id: Handcuffs
         - id: Handcuffs
         - id: GrenadeFlashBang
@@ -265,11 +265,10 @@
           children:
             - id: Truncheon
             - id: Handcuffs
+            - id: Handcuffs
             - id: PinpointerUniversal
             - id: CombatMedipen
-            - id: CombatMedipen
             - id: MedkitCombatFilled
-            - id: CombatMedipen
             - id: CombatMedipen
             - id: FlashlightSeclite
             - id: BodyBagCCFolded

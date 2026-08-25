@@ -79,6 +79,11 @@
   result: NullspaceAnchorMachineCircuitboard
 
 - type: latheRecipe
-  parent: BaseGoldCircuitboardRecipe
-  id: DarkBreacherMachineCircuitboard
-  result: DarkBreacherMachineCircuitboard
+  parent: BaseCircuitboardRecipe
+  id: IceCreamMakerMachineCircuitBoard
+  result: IceCreamMakerMachineCircuitBoard
+
+- type: latheRecipe
+  parent: [ BaseGoldCircuitboardRecipe, BaseEngineeringMachineRecipeCategory ]
+  id: APCAdvancedElectronics
+  result: APCAdvancedElectronics

@@ -267,7 +267,7 @@ rr-martini = Martini
 rr-martini-desc = Cool elegance served in a triangular glass.
 
 rr-mead = Mead
-rr-mead-desc = Ancient honey wine — because vikings knew how to have fun.
+rr-mead-desc = Ancient honey wine — because they still knew how to have fun back then.
 
 rr-mojito = Mojito
 rr-mojito-desc = Minty, fresh, and perfect for pretending you’re on vacation.
@@ -297,7 +297,7 @@ rr-radler = Radler
 rr-radler-desc = Beer that decided to take a lemonade break.
 
 rr-sbiten = Sbiten
-rr-sbiten-desc = Old Russian warmth in a cup — fight the cold, not your friends.
+rr-sbiten-desc = Warmth in a cup — fight the cold, not your friends.
 
 rr-screwdrivercocktail = Screwdriver Cocktail
 rr-screwdrivercocktail-desc = Orange juice and vodka walk into a bar...
@@ -372,7 +372,7 @@ rr-bluehawaiian = Blue Hawaiian
 rr-bluehawaiian-desc = Beach vacation in a glass — umbrella optional.
 
 rr-caipirinha = Caipirinha
-rr-caipirinha-desc = Lime, sugar, and a Brazilian sense of adventure.
+rr-caipirinha-desc = Lime, sugar, and a sense of adventure.
 
 rr-moscowmule = Moscow Mule
 rr-moscowmule-desc = A moss-covered cow — mule? What? These cocktail names are wild. I’ve gotta try one of those.
@@ -413,37 +413,3 @@ rr-thelastcall-desc = There are no good or bad choices. Only consequences.
 # Mail
 rr-mail-open = Mail
 rr-mail-open-desc = Did they write to me? I really want to know.
-
-# Brighteye
-rr-brighteye-dark = Darkness
-rr-brighteye-dark-desc = Spread the influence of the Dark. Give unto them the comfort of nothingness.
-
-rr-brighteye-portal-crit = Portal
-rr-brighteye-portal-crit-desc = Influence and enhance the flow of the Dark. Unleash the shadows. (Make your portal go Supercritical.)
-
-rr-brighteye-teachalesson = Dangerous Lightwalker
-rr-brighteye-teachalesson-desc = Teach a Lightwalker a Lesson... Teach them to fear the dark.
-
-rr-brighteye-protect = Protect Kin
-rr-brighteye-protect-desc = The light is a dangerous place, this kin will need our protection.
-
-rr-brighteye-sanctuary = Sanctuary
-rr-brighteye-sanctuary-desc = Burned ones need a sanctuary in this place of light, lets give them one.
-
-rr-brighteye-returnhome = Grounded
-rr-brighteye-returnhome-desc = This kin must return to the darkness, Send them home.
-
-rr-brighteye-impersonate = Impersonation
-rr-brighteye-impersonate-desc = Lets learn about the lightwalkers, lets take their suit and learn about their tasks.
-
-rr-brighteye-lights = See no evil
-rr-brighteye-lights-desc = There is many lights in this place... We must break them to spread the darkness.
-
-rr-brighteye-backup = Backup
-rr-brighteye-backup-desc = We will need help for our next move...
-
-rr-brighteye-darkstation = Dark Station
-rr-brighteye-darkstation-desc = Let the dark consume the station and all the lightwalkers with it.
-
-rr-brighteye-steal-secureknowledge = Hear no evil
-rr-brighteye-steal-secureknowledge-desc = This is a threat... We must remove that information from the lightwalkers hands.

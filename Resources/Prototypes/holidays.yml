@@ -107,8 +107,8 @@
   beginMonth: April
 
 - type: holiday
-  id: EarthDay
-  name: holiday-name-earth-day
+  id: TerraDay
+  name: holiday-name-terra-day
   beginDay: 22
   beginMonth: April
 

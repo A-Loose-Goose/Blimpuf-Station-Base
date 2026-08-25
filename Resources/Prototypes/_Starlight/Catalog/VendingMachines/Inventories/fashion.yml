@@ -550,16 +550,16 @@
     - !type:ListingLimitedStockCondition
       stock: 1
 
-- type: listing
-  id: ClothingOuterBrimstoneDT4
-  productEntity: ClothingOuterBrimstoneDT4
-  cost:
-    NTCredit: 2000
-  categories:
-    - SLFashionOther
-  conditions:
-    - !type:ListingLimitedStockCondition
-      stock: 1
+#- type: listing
+#  id: ClothingOuterBrimstoneDT4
+#  productEntity: ClothingOuterBrimstoneDT4
+#  cost:
+#    NTCredit: 2000
+#  categories:
+#    - SLFashionOther
+#  conditions:
+#    - !type:ListingLimitedStockCondition
+#      stock: 1
 
 - type: listing
   id: ClothingEyesTechnology
@@ -693,16 +693,16 @@
     - !type:ListingLimitedStockCondition
       stock: 1
 
-- type: listing
-  id: ClothingBackpackBunnyGangBundle
-  productEntity: ClothingBackpackBunnyGangBundle
-  cost:
-    NTCredit: 500
-  categories:
-    - SLFashionOther
-  conditions:
-    - !type:ListingLimitedStockCondition
-      stock: 2
+#- type: listing
+#  id: ClothingBackpackBunnyGangBundle
+#  productEntity: ClothingBackpackBunnyGangBundle
+#  cost:
+#    NTCredit: 500
+#  categories:
+#    - SLFashionOther
+#  conditions:
+#    - !type:ListingLimitedStockCondition
+#      stock: 2
 
 - type: listing
   id: ClothingHeadHatBunny

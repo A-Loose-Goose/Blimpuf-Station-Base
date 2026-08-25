@@ -30,7 +30,8 @@
     - alertType: Rooted
     - alertType: Pacified
     - alertType: Stealthy
-    - alertType: DwarfCourage # Starlight
+    - alertType: MinersCourage # Blimpuf renamed
+    - alertType: GPSAlert # Starlight
     - alertType: Offer # Starlight
 
 - type: entity

@@ -46,7 +46,7 @@
   - type: SolutionItemStatus
     solution: fryer
   - type: SolutionTransfer
-    maxTransferAmount: 50
+    maxTransferAmount: 60
   - type: Sprite
     sprite: _TP/Structures/Machines/deepfryer.rsi
     layers:

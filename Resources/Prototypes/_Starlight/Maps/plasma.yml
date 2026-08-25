@@ -1,11 +1,11 @@
 - type: gameMap
-  id: StarlightPlasma
+  id: BlimpufPlasma
   mapName: 'Plasma'
-  mapPath: /Maps/_Starlight/Stations/Plasma.yml
+  mapPath: /Maps/_Blimpuf/Stations/Plasma.yml
   minPlayers: 25
   maxPlayers: 80
   stations:
-    StarlightPlasma:
+    BlimpufPlasma:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
@@ -19,7 +19,7 @@
           path: /Maps/_Starlight/Shuttles/cargo_plasma.yml
         - type: StationJobs
           availableJobs:
-            #command (7)
+            #command
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
             ChiefEngineer: [ 1, 1 ]
@@ -27,51 +27,51 @@
             ResearchDirector: [ 1, 1 ]
             HeadOfSecurity: [ 1, 1 ]
             Quartermaster: [ 1, 1 ]
-            #service (15 - 17)
+            #service
             Bartender: [ 2, 2 ]
             Botanist: [ 2, 3 ]
             Chef: [ 2, 2 ]
-            Janitor: [ 3, 3 ]
+            Janitor: [ 2, 3 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 2, 2 ]
             Performer: [ 2, 2 ]
             Reporter: [ 2, 3 ]
             Lawyer: [ 1, 1 ]
-            #engineering (8)
+            #engineering
             AtmosphericTechnician: [ 4, 4 ]
             StationEngineer: [ 4, 4 ]
-            TechnicalAssistant: [ 4, 4 ] #intern, not counted
-            #medical (10 - 11)
+            TechnicalAssistant: [ 2, 3 ]
+            #medical
             Chemist: [ 2, 2 ]
             MedicalDoctor: [ 3, 3 ]
             Paramedic: [ 2, 2 ]
             Surgeon: [ 1, 2 ]
-            MedicalIntern: [ 4, 4 ] #intern, not counted
+            MedicalIntern: [ 2, 3 ]
             Psychologist: [ 1, 1 ]
-            #science (4)
-            Scientist: [ 3, 3 ]
+            #science
+            Scientist: [ 3, 4 ]
             Roboticist: [ 1, 1 ]
-            ResearchAssistant: [ 4, 4 ] #intern, not counted
-            #security (11 - 13)
+            ResearchAssistant: [ 2, 3 ]
+            #security
             Warden: [ 1, 1 ]
             DutyOfficer: [ 1, 1 ]
             SecurityOfficer: [ 4, 6 ]
-            SecurityCadet: [ 2, 3 ] #intern, not counted
+            SecurityCadet: [ 2, 3 ]
             Brigmedic: [ 1, 1 ]
-            Detective: [ 1, 2 ] #good cop, bad cop
-            #supply (12 - 15)
+            Detective: [ 1, 2 ]
+            #supply
             SalvageLead: [ 1, 1 ]
-            SalvageSpecialist: [ 3, 3 ] #the salvagers yearn for the mines
-            MiningSpecialist: [ 3, 3 ] #the miners... yearn for the mines...
+            SalvageSpecialist: [ 3, 3 ]
+            MiningSpecialist: [ 2, 2 ]
             MailTech: [ 1, 2 ]
             CargoTechnician: [ 4, 6 ]
-            #civilian (3 - 4+)
-            Assistant: [ -1, -1 ]  #infinite, the tiders yearn for the mines
-            Clown: [ 1, 2 ] # this might be fun!
+            #civilian
+            Assistant: [ -1, -1 ]
+            Clown: [ 1, 2 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
-            #silicon (3 - 5)
+            #silicon
             Borg: [ 2, 4 ]
             StationAi: [ 1, 1 ]
             #law

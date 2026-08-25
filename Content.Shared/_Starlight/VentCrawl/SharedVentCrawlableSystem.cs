@@ -3,6 +3,7 @@ using Content.Shared.Body.Components;
 using Content.Shared.Tools.Components;
 using Content.Shared.Item;
 using Content.Shared.Lock;
+using Content.Shared.Interaction.Events;
 using Content.Shared.Movement.Events;
 using Content.Shared._Starlight.VentCrawl.Components;
 using Robust.Shared.Audio.Systems;
@@ -31,7 +32,35 @@ public sealed class SharedVentCrawlableSystem : EntitySystem
 
         SubscribeLocalEvent<VentCrawlHolderComponent, ComponentStartup>(OnComponentStartup);
         SubscribeLocalEvent<VentCrawlHolderComponent, MoveInputEvent>(OnMoveInput);
+        // Blimpuf start - abilities that require consciousness or use of hands should be blocked from use while ventcrawling
+        SubscribeLocalEvent<VentCrawlerComponent, InteractionAttemptEvent>(OnInteractionAttempt);
+        SubscribeLocalEvent<VentCrawlerComponent, ConsciousAttemptEvent>(OnConsciousAttempt);
+        SubscribeLocalEvent<BeingVentCrawlComponent, InteractionAttemptEvent>(OnInteractionAttempt);
+        SubscribeLocalEvent<BeingVentCrawlComponent, ConsciousAttemptEvent>(OnConsciousAttempt);
     }
+
+    private static void OnInteractionAttempt(Entity<VentCrawlerComponent> ent, ref InteractionAttemptEvent args)
+    {
+        if (ent.Comp.InTube)
+            args.Cancelled = true;
+    }
+
+    private static void OnConsciousAttempt(Entity<VentCrawlerComponent> ent, ref ConsciousAttemptEvent args)
+    {
+        if (ent.Comp.InTube)
+            args.Cancelled = true;
+    }
+
+    private static void OnInteractionAttempt(Entity<BeingVentCrawlComponent> ent, ref InteractionAttemptEvent args)
+    {
+        args.Cancelled = true;
+    }
+
+    private static void OnConsciousAttempt(Entity<BeingVentCrawlComponent> ent, ref ConsciousAttemptEvent args)
+    {
+        args.Cancelled = true;
+    }
+    // Blimpuf end
 
     /// <summary>
     /// Handles the MoveInputEvent for VentCrawlHolderComponent.

@@ -11,6 +11,7 @@
   priority: 5
   maxTraits: 1
   accentColor: "#efc0a3" # pale orange
+  hidden: true # Blimpuf
 
 - type: traitCategory
   id: Disabilities

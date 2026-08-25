@@ -1,20 +1,20 @@
 - type: listing
-  id: VendorGoldenBeaker
-  productEntity: GoldenBeaker
+  id: VendorStasisBeaker
+  productEntity: CryostasisBeaker
   cost:
-    NTCredit: 300
+    NTCredit: 800
   categories:
   - SLChemistry
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 3
+    stock: 2
   - !type:BuyerAccessCondition
 
 - type: listing
-  id: VendorSilverBeaker
-  productEntity: SilverBeaker
+  id: VendorLightBeaker
+  productEntity: LightBeaker
   cost:
-    NTCredit: 200
+    NTCredit: 100
   categories:
   - SLChemistry
   conditions:

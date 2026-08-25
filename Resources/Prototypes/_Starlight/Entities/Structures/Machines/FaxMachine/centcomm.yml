@@ -19,6 +19,66 @@
           map: [ "base" ]
           color: "#00b700"
 
+- type: entity
+  parent: FaxMachineCentralCommandBase
+  id: FaxMachineCCRep
+  suffix: "CC: CCR"
+  components:
+    - type: FaxMachine
+      group: FaxGroupCentralCommand
+      name: "Central Command Representative"
+      order: 100
+
+- type: entity
+  parent: FaxMachineCentralCommandBase
+  id: FaxMachineCCRepCCE
+  suffix: "CC: CCR & CCE"
+  components:
+    - type: FaxMachine
+      group: FaxGroupCentralCommand
+      name: "Central Command Representative & Central Command Enforcer"
+      order: 100
+
+- type: entity
+  parent: FaxMachineCentralCommandBase
+  id: FaxMachineCCMagi
+  suffix: "CC: Magi"
+  components:
+    - type: FaxMachine
+      group: FaxGroupCentralCommand
+      name: "Magistrate"
+      order: 200
+
+- type: entity
+  parent: FaxMachineCentralCommandBase
+  id: FaxMachineCCMagiInternalAffairs
+  suffix: "CC: Magi & IAA"
+  components:
+    - type: FaxMachine
+      group: FaxGroupCentralCommand
+      name: "Magi & Internal Affairs"
+      order: 300
+
+- type: entity
+  parent: FaxMachineCentralCommandBase
+  id: FaxMachineCCInternalAffairs
+  suffix: "CC: IAA"
+  components:
+    - type: FaxMachine
+      group: FaxGroupCentralCommand
+      name: "Internal Affairs"
+      order: 300
+
+- type: entity
+  parent: FaxMachineCentralCommandBase
+  id: FaxMachineCCEnforcer
+  suffix: "CC: CCE"
+  components:
+    - type: FaxMachine
+      group: FaxGroupCentralCommand
+      name: "Central Command Enforcer"
+      order: 600
+
 # Fax machines
 
 ## Primary CC fax machine is from upstream, so it's missing here, it has order=100.

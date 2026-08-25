@@ -68,7 +68,7 @@
   name: margherita pizza
   parent: FoodPizzaBase
   id: FoodPizzaMargherita
-  description: The flavor of Italy.
+  description: The most basic of all pizzas, but no less delicious.
   components:
   - type: FlavorProfile
     flavors:
@@ -85,7 +85,7 @@
   name: slice of margherita pizza
   parent: FoodPizzaSliceBase
   id: FoodPizzaMargheritaSlice
-  description: A slice of Italy.
+  description: A slice of the most basic of pizzas.
   components:
   - type: FlavorProfile
     flavors:

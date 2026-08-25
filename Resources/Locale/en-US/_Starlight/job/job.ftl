@@ -1,7 +1,5 @@
 job-name-magistrate = Magistrate
-job-name-ntrep = Central Command Representative
 job-name-iaa = Internal Affairs Agent
-job-name-blueshield = Central Command Enforcer
 job-name-ntncblueshield = NanoTrasen Navy Corps Marine
 job-name-greenshield = Greenshield Officer
 job-name-miningspec = Mining Specialist
@@ -13,6 +11,10 @@ job-name-nanotrasen-special-forces = NTSF Operative
 job-name-decimus = Decimus Operative
 job-name-nct = NanoTrasen Career Trainer
 job-name-ert = Emergency Response Team
+job-name-cc-serviceworker = CentComm Service Worker
+job-name-cc-chef = CentComm Chef
+job-name-cc-bartender = CentComm Bartender
+job-name-cc-janitor = CentComm Janitor
 
 job-name-performer = Performer
 job-name-salvagelead = Salvage Lead

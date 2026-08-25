@@ -7104,7 +7104,7 @@ entities:
       nextSound: -295.666538
     - type: AtmosPipeColor
       color: '#0335FCFF'
-- proto: GasVentPump
+- proto: SecureCCGasVentPump
   entities:
   - uid: 315
     mapInit: true
