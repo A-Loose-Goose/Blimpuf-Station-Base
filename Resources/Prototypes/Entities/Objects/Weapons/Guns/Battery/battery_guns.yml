@@ -1049,7 +1049,6 @@
         validPrototypes:
           - SheetUranium
           - SheetUranium1
-          - SheetUranium30
       - displayName: defibrillator
         validPrototypes:
           - BaseDefibrillator
@@ -1149,16 +1148,11 @@
       - displayName: gyroscope machine board
         validPrototypes:
           - GyroscopeMachineCircuitboard
-      - displayName: regular command member's cloak
+      - displayName: cloth
         validPrototypes:
-          - ClothingNeckCloakCap
-          - ClothingNeckCloakCC
-          - ClothingNeckCloakNtr
-          - ClothingNeckCloakHos
-          - ClothingNeckCloakHop
-          - ClothingNeckCloakCe
-          - ClothingNeckCloakRd
-          - ClothingNeckCloakCe
+          - MaterialCloth
+          - MaterialCloth10
+          - MaterialCloth1
       - displayName: modular grenade payload
         validPrototypes:
           - ExplosivePayload

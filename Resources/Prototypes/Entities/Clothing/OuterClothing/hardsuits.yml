@@ -589,7 +589,6 @@
         validPrototypes:
           - SheetUranium
           - SheetUranium1
-          - SheetUranium30
       - displayName: baseball bat
         validPrototypes:
           - BaseBallBat
