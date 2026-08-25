@@ -479,7 +479,7 @@ namespace Content.Server.Cargo.Systems
                 ? bank.PrimaryAccount
                 : component.Account;
 
-            var data = new CargoOrderData(GenerateOrderId(orderDatabase), product.Product, product.Name, product.Cost, args.Amount, args.Requester, args.Reason, component.Account, GetNetEntity(stationUid.Value));
+            var data = new CargoOrderData(GenerateOrderId(orderDatabase), product.Product, product.Name, product.Cost, args.Amount, args.Requester, args.Reason, component.Account, GetNetEntity(stationUid.Value), product.ID, product.GasType, product.GasMoles, product.GasTemperature);
 
             if (component.Mode == CargoOrderConsoleMode.InstantApprove)
             {
