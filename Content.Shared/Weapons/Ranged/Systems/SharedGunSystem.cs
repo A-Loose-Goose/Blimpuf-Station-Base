@@ -413,18 +413,28 @@ public abstract partial class SharedGunSystem : EntitySystem
 
     private bool AttemptShoot(EntityUid user, Entity<GunComponent> gun)
     {
-        if (gun.Comp.FireRateModified <= 0f ||
-            !_actionBlockerSystem.CanAttack(user))
+        // Blimpuf Start
+        var curTime = Timing.CurTime;
+        var lastFire = gun.Comp.NextFire;
+
+        if (gun.Comp.FireRateModified <= 0f)
         {
+            if (gun.Comp.NextFire <= Timing.CurTime)
+            {
+                gun.Comp.NextFire = TimeSpan.FromSeconds(Math.Max(lastFire.TotalSeconds + SafetyNextFire, gun.Comp.NextFire.TotalSeconds));
+                Audio.PlayPredicted(gun.Comp.SoundEmpty, gun, user);
+            }
             return false;
         }
+        // Blimpuf End
+
+        if (!_actionBlockerSystem.CanAttack(user))
+            return false;
 
         var toCoordinates = gun.Comp.ShootCoordinates;
 
         if (toCoordinates == null)
             return false;
-
-        var curTime = Timing.CurTime;
 
         // check if anything wants to prevent shooting
         var prevention = new ShotAttemptedEvent
@@ -457,7 +467,6 @@ public abstract partial class SharedGunSystem : EntitySystem
             gun.Comp.NextFire = curTime;
 
         var shots = 0;
-        var lastFire = gun.Comp.NextFire;
 
         while (gun.Comp.NextFire <= curTime)
         {
