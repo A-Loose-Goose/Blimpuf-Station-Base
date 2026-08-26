@@ -75,6 +75,23 @@
     - type: TimedDespawn
       lifetime: 0.5
 
+## Blimpuf Start
+- type: entity
+  id: UltimaFlashEffect
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: PointLight
+      enabled: true
+      radius: 5
+      energy: 8
+      netsync: false
+      color: "#50ff50" # Yeah this is the only thing I changed, so?
+    - type: LightFade
+      duration: 0.5
+    - type: TimedDespawn
+      lifetime: 0.5
+## Blimpuf End
+
 # Tuned to be a general bomb that deals equipment damage without explicitly gibbing, however it will still gladly instakill anyone that mishandles it.
 # One of the few syndie bombs that should punch holes in space.
 - type: entity

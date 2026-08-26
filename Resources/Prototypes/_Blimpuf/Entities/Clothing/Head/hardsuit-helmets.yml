@@ -44,27 +44,18 @@
       clothingVisuals:
         head:
           - state: off-equipped-HELMET
-            shader: unshaded
         head-vox:
           - state: off-equipped-HELMET-vox
-            shader: unshaded
         head-vulpkanin:
           - state: off-equipped-HELMET
-            shader: unshaded
         head-reptilian:
           - state: off-equipped-HELMET
-            shader: unshaded
         head-dog:
           - state: off-equipped-HELMET-dog
-            shader: unshaded
-        # Starlight - Start
         head-avali:
           - state: off-equipped-HELMET-avali
-            shader: unshaded
         head-resomi:
           - state: off-equipped-HELMET-resomi
-            shader: unshaded
-        # Starlight - End
     - type: PointLight
       color: "#50ff50" # Starlight
     - type: PressureProtection

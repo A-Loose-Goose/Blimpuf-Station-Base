@@ -5,12 +5,11 @@ using Content.Shared.Emp;
 using Content.Shared.Popups;
 using Content.Shared.PowerCell;
 using Content.Shared.PowerCell.Components;
-using Robust.Shared.Containers;
 using Content.Shared.Actions;
-using Content.Shared.Actions.Components;
-using Content.Shared.Charges.Systems;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
+using Robust.Server.Audio;
+using Robust.Shared.Audio;
 
 namespace Content.Server._Blimpuf.Traitor.Systems;
 
@@ -18,13 +17,13 @@ public sealed class UltimaHardsuitSystem : EntitySystem
 {
     [Dependency] private readonly SharedEmpSystem _emp = default!;
     [Dependency] private readonly PowerCellSystem _powerCell = default!;
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly SharedChargesSystem _charges = default!;
     [Dependency] private readonly SharedActionsSystem _actions = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly FlashSystem _flash = default!;
     [Dependency] private readonly ExplosionSystem _explosionSystem = default!;
+    [Dependency] private AudioSystem _audio = default!;
+    [Dependency] private IEntityManager _entityManager = default!;
 
 
     public override void Initialize()
@@ -96,8 +95,10 @@ public sealed class UltimaHardsuitSystem : EntitySystem
         }
 
         _emp.EmpPulse(Transform(user).Coordinates, 6, 100000f, TimeSpan.FromSeconds(60), user);
-
         args.Handled = true;
+
+        var sound = new SoundPathSpecifier("/Audio/Effects/Lightning/lightningbolt.ogg");
+        _audio.PlayPvs(sound, suit);
     }
 
     private void OnFlashbang(UltimaHardsuitFlashbangEvent args)
@@ -131,8 +132,12 @@ public sealed class UltimaHardsuitSystem : EntitySystem
         }
 
         _flash.FlashArea(suit, suit, 6, TimeSpan.FromSeconds(8));
-
         args.Handled = true;
+
+        var sound = new SoundPathSpecifier("/Audio/Effects/flash_bang.ogg");
+        _audio.PlayPvs(sound, suit);
+        var coords = Transform(suit).Coordinates;
+        _entityManager.SpawnEntity("UltimaFlashEffect", coords);
     }
 
     private void OnBlast(UltimaHardsuitBlastEvent args)
