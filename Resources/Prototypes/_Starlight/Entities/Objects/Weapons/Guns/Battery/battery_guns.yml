@@ -963,6 +963,10 @@
       - displayName: stun baton
         validPrototypes:
           - Stunbaton
+          - EnforcerStunbaton
+          - DoubleStunbaton
+          - PurpleStunbaton
+          - ClothingHandsKnuckleDustersStun
       - displayName: disabler
         validPrototypes:
           - WeaponDisabler
