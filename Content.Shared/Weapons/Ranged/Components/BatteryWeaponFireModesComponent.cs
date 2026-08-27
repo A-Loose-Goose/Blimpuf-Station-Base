@@ -54,7 +54,7 @@ public sealed partial class BatteryWeaponFireMode
     /// Blimpuf Edit: Color to set the mag states to once they are selected
     /// </summary>
     [DataField("color")]
-    public Color? color;
+    public Color? Color;
 
     /// <summary>
     /// Conditions that must be satisfied to activate this firing mode

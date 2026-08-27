@@ -219,6 +219,7 @@
       magState: mag
       steps: 5
       zeroVisible: false
+      color: red
     - type: Appearance
     - type: Clothing
       sprite: _Blimpuf/Objects/Weapons/Guns/Battery/Energy_Shotgun.rsi
@@ -239,7 +240,7 @@
           color: green
         - proto: BulletSyndieEnergyShotgunSlug
           fireCost: 60
-          color: black
+          color: white
         - proto: BulletSyndieEnergyShotgunBuckshotIncendiarySpread
           fireCost: 90
           color: orange

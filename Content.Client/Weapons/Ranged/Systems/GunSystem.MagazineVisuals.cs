@@ -53,15 +53,10 @@ public sealed partial class GunSystem
             _sprite.LayerSetVisible((ent, sprite), GunVisualLayers.MagUnshaded, false);
 
             // Blimpuf Start
-            if (TryComp<BatteryWeaponFireModesComponent>(ent, out var fireModes))
-            {
-                var fireMode = fireModes.FireModes[fireModes.CurrentFireMode];
-
-                if (fireMode.color is { } color)
-                    _sprite.LayerSetColor((ent, sprite), GunVisualLayers.MagUnshaded, color);
-                else
-                    _sprite.LayerSetColor((ent, sprite), GunVisualLayers.MagUnshaded, Color.White);
-            }
+            if (ent.Comp.Color != null)
+                _sprite.LayerSetColor((ent, sprite), GunVisualLayers.MagUnshaded, ent.Comp.Color.Value);
+            else
+                _sprite.LayerSetColor((ent, sprite), GunVisualLayers.MagUnshaded, Color.White);
             // Blimpuf End
         }
     }
@@ -121,18 +116,6 @@ public sealed partial class GunSystem
             {
                 _sprite.LayerSetVisible((ent, sprite), GunVisualLayers.MagUnshaded, true);
                 _sprite.LayerSetRsiState((ent, sprite), GunVisualLayers.MagUnshaded, $"{ent.Comp.MagState}-unshaded-{step}");
-
-                // Blimpuf Start
-                if (TryComp<BatteryWeaponFireModesComponent>(ent, out var fireModes))
-                {
-                    var fireMode = fireModes.FireModes[fireModes.CurrentFireMode];
-
-                    if (fireMode.color is { } color)
-                        _sprite.LayerSetColor((ent, sprite), GunVisualLayers.MagUnshaded, color);
-                    else
-                        _sprite.LayerSetColor((ent, sprite), GunVisualLayers.MagUnshaded, Color.White);
-                }
-                // Blimpuf End
             }
 
             if (_sprite.LayerMapTryGet((ent, sprite), GunVisualLayers.Tip, out _, false)) //🌟Starlight🌟

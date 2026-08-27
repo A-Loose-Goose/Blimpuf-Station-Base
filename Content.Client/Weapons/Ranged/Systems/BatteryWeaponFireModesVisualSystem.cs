@@ -7,6 +7,7 @@ namespace Content.Client.Weapons.Ranged.Systems;
 public sealed partial class BatteryWeaponFireModesVisualSystem : EntitySystem
 {
     [Dependency] private GunSystem _gun = default!;
+    [Dependency] private SpriteSystem _sprite = default!;
 
     public override void Initialize()
     {
@@ -27,5 +28,12 @@ public sealed partial class BatteryWeaponFireModesVisualSystem : EntitySystem
 
         if (TryComp<MagazineVisualsComponent>(uid, out var magVisualsComp) && fireMode.MagState != null)
             _gun.SetMagState(uid, fireMode.MagState, false, magVisualsComp);
+
+        // Blimpuf Start
+        if (fireMode.Color is { } color)
+            _sprite.LayerSetColor((uid, sprite), GunVisualLayers.MagUnshaded, color);
+        else
+            _sprite.LayerSetColor((uid, sprite), GunVisualLayers.MagUnshaded, Color.White);
+        // Blimpuf End
     }
 }
