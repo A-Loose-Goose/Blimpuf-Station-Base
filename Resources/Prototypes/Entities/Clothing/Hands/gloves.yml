@@ -580,6 +580,11 @@
       - displayName: chemical analysis goggles
         validPrototypes:
           - ClothingEyesGlassesChemical
+          - ClothingEyesHudChemical
+          - ClothingEyeGlassesChemicalPrescription
+          - ClothingEyesGlassesJensenChemical
+          - ClothingEyesEyepatchHudChemical
+          - ClothingEyesEyepatchHudChemicalFlipped
       - displayName: brute automender
         validPrototypes:
           - AutoMenderBrute
