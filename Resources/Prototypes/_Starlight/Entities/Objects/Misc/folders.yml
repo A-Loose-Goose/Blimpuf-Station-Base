@@ -233,9 +233,21 @@
             - ClothingEyesHudMedical
             - ClothingEyesEyepatchHudMedical
             - ClothingEyesEyepatchHudMedicalFlipped
+            - ClothingEyeGlassesMedicalPrescription
+            - ClothingEyesHudMedSec
+            - ClothingEyesGlassesBrigmedicPrescription
+            - ClothingEyesGlassesBrigmedic
+            - ClothingEyesHudBrigmedic
+            - ClothingEyesEyepatchHudBrigmedic
+            - ClothingEyesEyepatchHudBrigmedicFlipped
+            - ClothingEyesHudCorpsman
+            - ClothingEyesHudBlueShield
+            - ClothingEyesEyepatchHudBlueShieldFlipped
+            - ClothingEyesEyepatchHudBlueShield
         - displayName: spray painter
           validPrototypes:
             - SprayPainter
+            - SprayPainterEmpty
       researchUnlockId: UplinkPersonaHologramGenerator
       researchAnnouncementString: research-announcement-persona-hologram-generator
 

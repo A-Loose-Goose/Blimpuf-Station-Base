@@ -1057,6 +1057,9 @@
           - DefibrillatorOneHandedUnpowered
           - DefibrillatorCompact
           - DefibrillatorSyndicate
+          - DefibrillatorSyndicateOneHandedUnpowered
+          - DefibrillatorBrigmedical
+          - DefibrillatorParamed
       - displayName: rifle stock
         validPrototypes:
           - RifleStock
@@ -1067,6 +1070,14 @@
         validPrototypes:
           - Flash
           - SciFlash
+          - Flash4Use
+          - Flash3Use
+          - Flash2Use
+          - Flash1Use
+          - Flash0Use
+          - GrenadeFlashBang
+          - ClusterBangFull
+          - FlashPayload
     researchUnlockId: UplinkSyndieEnergyShotgun
     researchAnnouncementString: research-announcement-syndie-energy-shotgun
 
@@ -1137,11 +1148,19 @@
           - MaterialGunpowder
       - displayName: empty implanter
         validPrototypes:
-          - BaseImplanter
+          - Implanter
       - displayName: flash
         validPrototypes:
           - Flash
           - SciFlash
+          - Flash4Use
+          - Flash3Use
+          - Flash2Use
+          - Flash1Use
+          - Flash0Use
+          - GrenadeFlashBang
+          - ClusterBangFull
+          - FlashPayload
       - displayName: node scanner
         validPrototypes:
           - NodeScanner

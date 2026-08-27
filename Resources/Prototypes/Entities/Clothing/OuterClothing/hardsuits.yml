@@ -595,10 +595,22 @@
       - displayName: stun baton
         validPrototypes:
           - Stunbaton
+          - EnforcerStunbaton
+          - DoubleStunbaton
+          - PurpleStunbaton
+          - ClothingHandsKnuckleDustersStun
       - displayName: flash
         validPrototypes:
           - Flash
           - SciFlash
+          - Flash4Use
+          - Flash3Use
+          - Flash2Use
+          - Flash1Use
+          - Flash0Use
+          - GrenadeFlashBang
+          - ClusterBangFull
+          - FlashPayload
       - displayName: defibrillator
         validPrototypes:
           - BaseDefibrillator
@@ -607,6 +619,9 @@
           - DefibrillatorOneHandedUnpowered
           - DefibrillatorCompact
           - DefibrillatorSyndicate
+          - DefibrillatorSyndicateOneHandedUnpowered
+          - DefibrillatorBrigmedical
+          - DefibrillatorParamed
       - displayName: plasma spear
         validPrototypes:
           - SpearPlasma
@@ -616,6 +631,7 @@
       - displayName: pickaxe
         validPrototypes:
           - Pickaxe
+          - PickaxeDiamond
     researchUnlockId: UplinkClothingOuterHardsuitUltima
     researchAnnouncementString: research-announcement-clothing-outer-hardsuit-ultima
 

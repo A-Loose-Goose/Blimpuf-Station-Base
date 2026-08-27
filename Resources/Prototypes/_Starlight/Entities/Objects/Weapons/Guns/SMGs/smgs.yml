@@ -416,6 +416,18 @@
           - ClothingEyesGlassesSecurity
           - ClothingEyesHudSecurity
           - ClothingEyesEyepatchHudSecurity
+          - ClothingEyesEyepatchHudSecurityFlipped
+          - ClothingEyeGlassesSecurityPrescription
+          - ClothingEyesHudMedSec
+          - ClothingEyesGlassesBrigmedicPrescription
+          - ClothingEyesGlassesBrigmedic
+          - ClothingEyesHudBrigmedic
+          - ClothingEyesEyepatchHudBrigmedic
+          - ClothingEyesEyepatchHudBrigmedicFlipped
+          - ClothingEyesHudCorpsman
+          - ClothingEyesHudBlueShield
+          - ClothingEyesEyepatchHudBlueShieldFlipped
+          - ClothingEyesEyepatchHudBlueShield
       - displayName: circular saw
         validPrototypes:
           - SawElectric
@@ -440,6 +452,10 @@
           - KitchenKnife
           - CombatKnife
           - SurvivalKnife
+          - RescueKnife
+          - KukriKnife
+          - UtilityKnife
+          - ThrowingKnife
     researchUnlockId: UplinkWt551Compact
     researchAnnouncementString: research-announcement-wt551-compact
 
