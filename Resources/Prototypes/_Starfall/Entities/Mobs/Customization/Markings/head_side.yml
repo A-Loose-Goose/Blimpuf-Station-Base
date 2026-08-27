@@ -1,0 +1,24 @@
+- type: marking
+  id: LumariHeadPlasmafire
+  bodyPart: HeadSide
+  groupWhitelist: [ Lumari ]
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: plasmafire
+
+- type: marking
+  id: LumariHeadMaple
+  bodyPart: HeadSide
+  groupWhitelist: [ Lumari ]
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: maple
+
+- type: marking
+  id: LumariHeadFeathery
+  bodyPart: HeadSide
+  groupWhitelist: [ Lumari ]
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: feathery
+
