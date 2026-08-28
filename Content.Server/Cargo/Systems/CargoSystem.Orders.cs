@@ -242,6 +242,13 @@ namespace Content.Server.Cargo.Systems
             // Blimpuf Start
             if (component.DirectDelivery)
             {
+                if (order.GasType != null)
+                {
+                    ConsolePopup(args.Actor, Loc.GetString("cargo-console-unfulfilled"));
+                    PlayDenySound(uid, component);
+                    return;
+                }
+
                 var spawnCoordinates = Transform(player).Coordinates;
 
                 if (!TryFulfillDirectOrder(order, order.Account, spawnCoordinates, orderDatabase.PrinterOutput))
@@ -546,6 +553,13 @@ namespace Content.Server.Cargo.Systems
 
             if (component.DirectDelivery)
             {
+                if (order.GasType != null)
+                {
+                    ConsolePopup(player, Loc.GetString("cargo-console-unfulfilled"));
+                    PlayDenySound(uid, component);
+                    return false;
+                }
+
                 var spawnCoordinates = Transform(player).Coordinates;
 
                 if (!TryFulfillDirectOrder(order, order.Account, spawnCoordinates, orderDatabase.PrinterOutput))
