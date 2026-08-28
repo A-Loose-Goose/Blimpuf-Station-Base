@@ -981,11 +981,16 @@
           - AirTankFilled
           - NitrousOxideTank
           - NitrousOxideTankFilled
+          - HealiumTankEmpty
+          - HealiumTankFilled
+          - ZXATankEmpty
+          - ZXATankFilled
       - displayName: cautery
         validPrototypes:
           - Cautery
           - CauteryCyber
           - CauteryRipper
+          - CauteryAbductor
       - displayName: torch
         validPrototypes:
           - Torch

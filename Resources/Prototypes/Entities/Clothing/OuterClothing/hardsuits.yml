@@ -627,6 +627,7 @@
       - displayName: fireaxe
         validPrototypes:
           - FireAxe
+          - FireAxeFlaming
       - displayName: pickaxe
         validPrototypes:
           - Pickaxe

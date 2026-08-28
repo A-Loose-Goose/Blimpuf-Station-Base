@@ -1045,6 +1045,10 @@
           - WelderMini
           - WelderIndustrial
           - WelderIndustrialAdvanced
+          - WelderAbductor
+          - Cowelder
+          - WelderInvisible
+          - RefuelingWelder
       - displayName: uranium
         validPrototypes:
           - SheetUranium
@@ -1145,7 +1149,7 @@
       - displayName: gunpowder
         validPrototypes:
           - MaterialGunpowder
-      - displayName: empty implanter
+      - displayName: implant extractor
         validPrototypes:
           - Implanter
       - displayName: flash

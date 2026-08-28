@@ -434,13 +434,16 @@
           - SawRipper
           - SawCyber
           - SawAdvanced
+          - SawAbductor
       - displayName: APC/Substation/SMES electronics
         validPrototypes:
           - APCElectronics
+          - APCAdvancedElectronics
           - SubstationMachineCircuitboard
           - WallmountSubstationElectronics
           - SMESMachineCircuitboard
           - SMESAdvancedMachineCircuitboard
+          - SMESHyperAdvancedMachineCircuitboard
       - displayName: thruster machine board
         validPrototypes:
           - ThrusterMachineCircuitboard
@@ -456,6 +459,7 @@
           - KukriKnife
           - UtilityKnife
           - ThrowingKnife
+          - WeaponMeleeBoxcutter
     researchUnlockId: UplinkWt551Compact
     researchAnnouncementString: research-announcement-wt551-compact
 

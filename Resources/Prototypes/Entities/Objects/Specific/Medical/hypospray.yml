@@ -63,12 +63,18 @@
           - JetInjector
           - AdvancedJetInjector
           - TacticalJetInjector
+          - DeforestJetInjector
       - displayName: spray painter
         validPrototypes:
           - SprayPainter
+          - SprayPainterEmpty
       - displayName: multitool
         validPrototypes:
           - Multitool
+          - MultitoolAbductor
+          - MultitoolImprovised
+          - Mooltitool
+          - MultitoolInvisible
       - displayName: health analyzer
         validPrototypes:
           - HandheldHealthAnalyzer

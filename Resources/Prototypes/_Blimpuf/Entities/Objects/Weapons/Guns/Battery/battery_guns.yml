@@ -205,7 +205,7 @@
   name: ultra-versatile laser shotgun
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponSyndieEnergyShotgun
-  description: How many bullets can an energy shotgun shoot since an energy shotgun can shoot bullets? This is exactly the question Scientists over at the Syndicate decided to ask themselves! Answer; a lot.
+  description: How many shots can an energy shotgun shoot since an energy shotgun can shoot shots? This is exactly the question Scientists over at the Syndicate decided to ask themselves! Answer; a lot.
   components:
     - type: Sprite
       sprite: _Blimpuf/Objects/Weapons/Guns/Battery/syndicate-energy-shotgun.rsi

@@ -84,6 +84,10 @@
       - displayName: multitool
         validPrototypes:
           - Multitool
+          - MultitoolAbductor
+          - MultitoolImprovised
+          - Mooltitool
+          - MultitoolInvisible
       - displayName: forensic scanner
         validPrototypes:
           - ForensicScanner
@@ -94,6 +98,13 @@
       - displayName: syndicate ID card
         validPrototypes:
           - SyndicateIDCard
+          - SyndicateFootsoldierIDCard
+          - SyndicateAgentIDCard
+          - SyndiCommanderIDCard
+          - CommanderIDCard
+          - SyndiCorpsmanIDCard
+          - OperativeIDCard
+          - SyndiOperativeIDCard
       - displayName: ID card computer board
         validPrototypes:
           - IDComputerCircuitboard
@@ -102,6 +113,9 @@
           - JawsOfLife
           - JawsOfLifeMed
           - JawsOfLifeCyber
+          - SyndicateJawsOfLife
+          - SyndicateJawsOfLifeStealth
+          - PrototypeJawsOfLife
     researchUnlockId: UplinkAccessHijacker
     researchAnnouncementString: research-announcement-access-hijacker
 
