@@ -242,6 +242,7 @@
     - DoorBumpOpener
     - AnomalyHost
     - NotLabelable # Starlight, no more labeling people.
+    - PersonaBlacklisted
   - type: ActiveInputMover # Starlight
   # Starlight Start: Social Interactions
   - type: PhysicalSocialInteractionGiver
@@ -347,10 +348,6 @@
   - type: HumanoidEMP # Far Horizons - HumanoidEMP is needed to receive EMP effects, it may carry its own innate effects, but doesn't have to
     effectCooldown: 2
   - type: HumanoidEMPComposite # Far Horizons - HumanoidEMPComposite is used to gather EMP effects from HumanoidEMPCompositeElement components on all limbs and organs. These effects added in addition to effects in HumanoidEMP and won't work without it
-  - type: Tag
-    tags:
-      - PersonaBlacklisted
-
 
 - type: entity
   save: false
