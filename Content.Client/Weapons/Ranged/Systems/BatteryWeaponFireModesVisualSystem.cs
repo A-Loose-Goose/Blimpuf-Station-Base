@@ -30,10 +30,11 @@ public sealed partial class BatteryWeaponFireModesVisualSystem : EntitySystem
             _gun.SetMagState(uid, fireMode.MagState, false, magVisualsComp);
 
         // Blimpuf Start
-        if (fireMode.Color is { } color)
+        if (_sprite.LayerExists((uid, sprite), GunVisualLayers.MagUnshaded))
+        {
+            var color = fireMode.Color ?? Color.White;
             _sprite.LayerSetColor((uid, sprite), GunVisualLayers.MagUnshaded, color);
-        else
-            _sprite.LayerSetColor((uid, sprite), GunVisualLayers.MagUnshaded, Color.White);
+        }
         // Blimpuf End
     }
 }
