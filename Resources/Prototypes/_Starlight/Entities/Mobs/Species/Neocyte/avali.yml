@@ -30,6 +30,7 @@
         - NeoAvali
         - SiliconEmotesFH
         - NotLabelable
+        - PersonaBlacklisted # Blimpuf
     - type: HumanoidAppearance
       species: NeoAvali
       hideLayersOnEquip:
