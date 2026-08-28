@@ -19,26 +19,26 @@
       clothingVisuals:
         head:
           - state: on-equipped-HELMET
-            shader: unshaded
+            shader: shaded
         head-vox:
           - state: on-equipped-HELMET-vox
-            shader: unshaded
+            shader: shaded
         head-vulpkanin:
           - state: on-equipped-HELMET
-            shader: unshaded
+            shader: shaded
         head-reptilian:
           - state: on-equipped-HELMET
-            shader: unshaded
+            shader: shaded
         head-dog:
           - state: on-equipped-HELMET-dog
-            shader: unshaded
+            shader: shaded
         # Starlight - Start
         head-avali:
           - state: on-equipped-HELMET-avali
-            shader: unshaded
+            shader: shaded
         head-resomi:
           - state: on-equipped-HELMET
-            shader: unshaded
+            shader: shaded
         # Starlight - End
     - type: Clothing
       clothingVisuals:

@@ -43,3 +43,4 @@
     - AnomalyHost
     - NotLabelable # Starlight, no more labeling people.
     - Elf
+    - PersonaBlacklisted # Blimpuf

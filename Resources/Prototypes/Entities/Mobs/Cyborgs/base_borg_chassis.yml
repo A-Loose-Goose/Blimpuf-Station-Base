@@ -247,6 +247,7 @@
     - SiliconEmotes
     - Unimplantable
     - SiliconEmotesFH #FH, yes it's intentional that there's two of them.
+    - PersonaBlacklisted
   - type: Emoting
   - type: GuideHelp
     guides:
@@ -285,9 +286,6 @@
   id: BaseBorgChassis
   components:
   - type: IonStormTarget
-  - type: Tag
-    tags:
-      - PersonaBlacklisted
 
 - type: entity
   abstract: true
@@ -507,7 +505,6 @@
     moduleWhitelist:
       tags:
       - XenoborgModuleGeneric
-      - PersonaBlacklisted
   - type: TypingIndicator
     proto: xenoborg
   - type: Speech

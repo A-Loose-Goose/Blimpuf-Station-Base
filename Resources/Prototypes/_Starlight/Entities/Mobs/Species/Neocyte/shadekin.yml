@@ -271,6 +271,7 @@
         - NeoShadekin
         - SiliconEmotesFH
         - NotLabelable
+        - PersonaBlacklisted # Blimpuf
 
 - type: entity
   save: false

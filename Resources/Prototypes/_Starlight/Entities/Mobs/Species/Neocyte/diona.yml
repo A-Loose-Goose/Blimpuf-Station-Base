@@ -30,6 +30,7 @@
     - NeoDiona
     - SiliconEmotesFH
     - NotLabelable
+    - PersonaBlacklisted # Blimpuf
   - type: HumanoidAppearance
     species: NeoDiona
   - type: Hunger
