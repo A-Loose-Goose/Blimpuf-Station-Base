@@ -78,6 +78,7 @@
   - type: Tag
     tags:
     - FootstepSound
+    - PersonaBlacklisted # Blimpuf
   - type: NpcFactionMember
     factions:
       - Xeno
