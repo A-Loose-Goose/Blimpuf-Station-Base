@@ -244,7 +244,7 @@ namespace Content.Server.Cargo.Systems
             {
                 var spawnCoordinates = Transform(player).Coordinates;
 
-                if (!FulfillOrder(order, order.Account, spawnCoordinates, orderDatabase.PrinterOutput))
+                if (!TryFulfillDirectOrder(order, order.Account, spawnCoordinates, orderDatabase.PrinterOutput))
                 {
                     ConsolePopup(args.Actor, Loc.GetString("cargo-console-unfulfilled"));
                     PlayDenySound(uid, component);
@@ -386,7 +386,19 @@ namespace Content.Server.Cargo.Systems
 
             return tradeDestination;
         }
+        // Blimpuf start
+        private bool TryFulfillDirectOrder(CargoOrderData order, ProtoId<CargoAccountPrototype> account, EntityCoordinates spawn, string? paperProto)
+        {
+            while (order.NumDispatched < order.OrderQuantity)
+            {
+                if (!FulfillOrder(order, account, spawn, paperProto))
+                    return false;
 
+                order.NumDispatched++;
+            }
+            return true;
+        }
+        // Blimpuf End
         private void GetTradeStations(StationDataComponent data, ref List<EntityUid> ents)
         {
             foreach (var gridUid in data.Grids)
@@ -534,10 +546,9 @@ namespace Content.Server.Cargo.Systems
 
             if (component.DirectDelivery)
             {
-                //
                 var spawnCoordinates = Transform(player).Coordinates;
 
-                if (!FulfillOrder(order, order.Account, spawnCoordinates, orderDatabase.PrinterOutput))
+                if (!TryFulfillDirectOrder(order, order.Account, spawnCoordinates, orderDatabase.PrinterOutput))
                     return false;
 
                 ev.Handled = true;
