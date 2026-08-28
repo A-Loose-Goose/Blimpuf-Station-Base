@@ -421,7 +421,8 @@ public abstract partial class SharedGunSystem : EntitySystem
         {
             if (gun.Comp.NextFire <= Timing.CurTime)
             {
-                gun.Comp.NextFire = TimeSpan.FromSeconds(Math.Max(lastFire.TotalSeconds + SafetyNextFire, gun.Comp.NextFire.TotalSeconds));
+                gun.Comp.NextFire = curTime + TimeSpan.FromSeconds(SafetyNextFire);
+                DirtyField(gun.AsNullable(), nameof(GunComponent.NextFire));
                 Audio.PlayPredicted(gun.Comp.SoundEmpty, gun, user);
             }
             return false;
