@@ -1,0 +1,14 @@
+- type: cargoAccount
+  id: Syndicate
+  name: cargo-account-syndicate-name
+  code: cargo-account-syndicate-code
+  color: "#680f15"
+  radioChannel: Syndicate
+  acquisitionSlip: PaperAcquisitionSlipSyndicate
+  # Starlight BEGIN
+  tamperSealName: tamper-seal-account-name-syndicate
+  tamperSealColor: "#680f15"
+  tamperSealAccesses:
+    - allOf: [ "SyndicateAgent" ] # Regular crew
+  invisible: true # Blimpuf - Makes the account invisible on consoles that would normally view it
+  # Starlight END

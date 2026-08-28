@@ -38,3 +38,5 @@ tamper-seal-account-name-medical = Medical
 tamper-seal-account-name-science = Science
 tamper-seal-account-name-security = Security
 tamper-seal-account-name-service = Service
+# Blimpuf Edit
+tamper-seal-account-name-syndicate = Syndicate

@@ -1,0 +1,67 @@
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
+  id: ClothingHeadHelmetHardsuitUltima
+  name: cybersun ultima hardsuit helmet
+  description: An experimental hardsuit helmet for the Syndicate.
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Clothing/Head/Hardsuits/syndicate-experimental-hardsuit.rsi
+      layers:
+        - state: icon
+        - state: icon-flash
+          visible: false
+          shader: unshaded
+          map: [ "light" ]
+    - type: HandheldLight
+      addPrefix: false
+    - type: ToggleableVisuals
+      spriteLayer: light
+      clothingVisuals:
+        head:
+          - state: on-equipped-HELMET
+            shader: unshaded
+        head-vox:
+          - state: on-equipped-HELMET-vox
+            shader: unshaded
+        head-vulpkanin:
+          - state: on-equipped-HELMET
+            shader: unshaded
+        head-reptilian:
+          - state: on-equipped-HELMET
+            shader: unshaded
+        head-dog:
+          - state: on-equipped-HELMET-dog
+            shader: unshaded
+        # Starlight - Start
+        head-avali:
+          - state: on-equipped-HELMET-avali
+            shader: unshaded
+        head-resomi:
+          - state: on-equipped-HELMET
+            shader: unshaded
+        # Starlight - End
+    - type: Clothing
+      clothingVisuals:
+        head:
+          - state: off-equipped-HELMET
+        head-vox:
+          - state: off-equipped-HELMET-vox
+        head-vulpkanin:
+          - state: off-equipped-HELMET
+        head-reptilian:
+          - state: off-equipped-HELMET
+        head-dog:
+          - state: off-equipped-HELMET-dog
+        head-avali:
+          - state: off-equipped-HELMET-avali
+        head-resomi:
+          - state: off-equipped-HELMET-resomi
+    - type: PointLight
+      color: "#50ff50" # Starlight
+    - type: PressureProtection
+      highPressureMultiplier: 0.1
+      lowPressureMultiplier: 1000
+    - type: Tag
+      tags:
+        - CorgiWearable
+        - WhitelistChameleon
