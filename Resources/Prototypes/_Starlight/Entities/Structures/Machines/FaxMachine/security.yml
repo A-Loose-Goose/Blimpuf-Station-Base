@@ -3,7 +3,7 @@
   id: FaxGroupSecurity
   name: fax-group-security
   order: 4000
-  color: "#ff4242"
+  color: "#02cfe0"
 
 # Base
 - type: entity
@@ -15,7 +15,7 @@
       layers:
         - state: icon
           map: [ "base" ]
-          color: "#ff4242"
+          color: "#02cfe0"
 
 # Fax machines
 - type: entity
@@ -27,7 +27,7 @@
       layers:
         - state: icon
           map: [ "base" ]
-          color: "#ff4242"
+          color: "#02cfe0"
     - type: FaxMachine
       group: FaxGroupSecurity
       name: "Security"

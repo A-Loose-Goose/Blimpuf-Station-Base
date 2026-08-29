@@ -404,7 +404,7 @@
   parent: ERTSecurityGearEVA
   id: ERTSecurityGearArmedVanguard
   equipment:
-    suitstorage: WeaponSubMachineGunWt550r
+    suitstorage: WeaponSubMachineGunWt550b
   storage:
     back:
     - ClothingShoesBootsJump

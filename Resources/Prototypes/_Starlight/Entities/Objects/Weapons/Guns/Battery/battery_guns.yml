@@ -929,7 +929,7 @@
     #sprite: _Starlight/Objects/Weapons/Guns/Battery/energy_smg.rsi
     #heldPrefix: energy
   - type: StealTarget
-    stealGroup: HOSWeapon # Proto5x and WT550r
+    stealGroup: HOSWeapon # Proto5x and WT550b
   - type: Tag
     tags:
     - HighRiskItem
