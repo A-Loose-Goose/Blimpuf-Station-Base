@@ -3961,7 +3961,7 @@ Entries:
   changes:
   - message: Added in the beginning framework for Syndicate Research. To Be continued.
     type: Add
-  - message: Nerfed the WT550 to make HoS' WT550b stand out more.
+  - message: Nerfed the WT550 to make HoS' WT550r stand out more.
     type: Tweak
   - message: Removed Steal Objectives to replace them with Research Objectives.
     type: Remove
