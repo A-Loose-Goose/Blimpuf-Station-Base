@@ -807,6 +807,9 @@
   productEntity: SyndicateIDCard
   categories:
   - UplinkDeception
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2 # Blimpuf. To prevent people from buying infinite ID cards to microwave to gain AA. You get 2 chances. Good luck.
 
 - type: listing
   id: UplinkAgentIDCard
