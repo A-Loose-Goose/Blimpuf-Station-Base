@@ -1,0 +1,17 @@
+- type: entity
+  parent: BoxFolderBaseEmpty
+  id: BoxFolderAnomalyReports
+  name: anomaly report folder
+  components:
+  - type: Sprite
+    layers:
+    - state: folder-colormap
+      color: "#cd7ccd"
+    - state: folder-base
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: PrintedDocumentAnomalyReport
+          amount: 2
+        - id: Paper
