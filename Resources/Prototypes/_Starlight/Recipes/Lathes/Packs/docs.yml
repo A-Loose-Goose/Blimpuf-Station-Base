@@ -60,6 +60,7 @@
   # Blimpuf
   - PrintedDocumentChemicalContrabandRecipe
   - PrintedDocumentCargoShuttleDepartureRecipe
+  - PrintedDocumentAnomalyReportRecipe
 
 #- type: latheRecipePack
 #  id: StarlightDocsEmag

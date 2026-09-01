@@ -533,3 +533,13 @@
   applyMaterialDiscount: false
   materials:
     SheetPrinter: 100
+
+- type: latheRecipe
+  id: PrintedDocumentAnomalyReportRecipe
+  result: PrintedDocumentAnomalyReport
+  categories:
+    - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100

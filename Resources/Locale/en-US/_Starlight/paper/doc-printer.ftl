@@ -1317,3 +1317,30 @@ doc-text-printer-cargo-shuttle-depature-form =
     - [signature] [datetime]
 
      ────────────────────────────────────────
+
+doc-text-printer-anomaly-report =
+                             [head=3]NT-CC Consortium Services[/head]
+
+                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+    ─────────────────────────────────────────
+   ⠀⠀                       [bold]ANOMALY REPORT[/bold]
+    ─────────────────────────────────────────
+     Date and Time: [datetime]
+    Document Compiler: [signature]
+
+    Type of anomaly: [form]
+    Location: [form]
+
+    Particle Responses
+    Dangerous: [form]
+    Unstable: [form]
+    Containment: [form]
+    Transformation: [form]
+
+    Anomaly status: [form]
+    Behavior deviations: [form]
+
+    Additional notes:
+
+    ─────────────────────────────────────────
+   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
