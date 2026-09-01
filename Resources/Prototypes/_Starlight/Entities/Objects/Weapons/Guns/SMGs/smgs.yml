@@ -450,6 +450,7 @@
       - displayName: gavel hammer
         validPrototypes:
           - GavelHammer
+          - HeavyGavelHammer
       - displayName: knife
         validPrototypes:
           - KitchenKnife

@@ -5,7 +5,10 @@
     NitrogenTankFilled: 13  #Starlight +3
     CoolingUnit: 13 #Starlight
   emaggedInventory: # Blimpuf
+    DoubleEmergencyNitrogenTankFilled: 1 # Blimpuf
+    DoubleEmergencyOxygenTankFilled: 1 # Blimpuf
     EmergencyFunnyOxygenTankFilled: 3 # Blimpuf
+    PlasmaTankFilled: 3
 
 - type: vendingMachineInventory
   id: TankDispenserEngineeringInventory
@@ -15,4 +18,6 @@
     OxygenTankFilled: 10
     CoolingUnit: 10 #Starlight
   emaggedInventory: # Blimpuf
+    DoubleEmergencyNitrogenTankFilled: 1 # Blimpuf
+    DoubleEmergencyOxygenTankFilled: 1 # Blimpuf
     EmergencyFunnyOxygenTankFilled: 3 # Blimpuf

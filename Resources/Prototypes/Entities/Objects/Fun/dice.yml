@@ -40,7 +40,7 @@
   - type: Sprite
     state: d20_20
 
-# Blimpuf - This should always roll a 200
+# Blimpuf - This should always roll a 20
 - type: entity
   parent: d20Dice
   id: Loadedd20Dice

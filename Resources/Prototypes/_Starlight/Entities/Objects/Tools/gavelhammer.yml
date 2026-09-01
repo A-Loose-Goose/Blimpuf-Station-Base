@@ -29,7 +29,7 @@
       attackRate: 0.4
       damage:
         groups:
-          Brute: 10
+          Blunt: 10
     - type: Wieldable
     - type: IncreaseDamageOnWield
       damage:

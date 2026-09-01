@@ -53,6 +53,6 @@
     DrinkBottleOfNothingFull: 1
     DrinkPoisonWinebottleFull: 2
   emaggedInventory: # Blimpuf
-    StrangePill: 1 # Blimpuf
+    OminousPill: 1 # Blimpuf
     DrinkPoisonWinebottleFull: 2 # Blimpuf
     DrinkVodkizineSmallBottleUsed: 1 # Blimpuf

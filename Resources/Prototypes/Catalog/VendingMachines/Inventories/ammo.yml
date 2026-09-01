@@ -19,11 +19,11 @@
     BoxLethalshot: 6
     BoxShotgunPractice: 3
   emaggedInventory: # Blimpuf
-    CartridgeRifleUranium: 7 # Blimpuf - 7 bullets, not boxes. A box of rifle ammo has 50 bullets, the vendors also don't always spawn in with max number of bullets.
-    CartridgeRifleIncendiary: 7 # Blimpuf
-    CartridgePistolUranium: 7 # Blimpuf
-    CartridgePistolIncendiary: 7 # Blimpuf
-    CartridgeMagnumUranium: 7 # Blimpuf
-    CartridgeMagnumIncendiary: 7 # Blimpuf
-    CartridgeLightRifleUranium: 7 # Blimpuf
-    CartridgeLightRifleIncendiary: 7 # Blimpuf
+    MagazineBoxRifleUranium: 1 # Blimpuf
+    MagazineBoxRifleIncendiary: 1 # Blimpuf
+    MagazineBoxPistolUranium: 1 # Blimpuf
+    MagazineBoxPistolIncendiary: 1 # Blimpuf
+    MagazineBoxMagnumUranium: 1 # Blimpuf
+    MagazineBoxMagnumIncendiary: 1 # Blimpuf
+    MagazineBoxLightRifleUranium: 1 # Blimpuf
+    MagazineBoxLightRifleIncendiary: 1 # Blimpuf
