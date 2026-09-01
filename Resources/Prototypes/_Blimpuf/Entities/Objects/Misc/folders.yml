@@ -4,83 +4,83 @@
   name: black market digi-board
   description: A bulky electric clipboard used to access the Syndicate's black market connections and deliver orders right to you, on high command's speso. Production was a bit of a rush-job, hence the damage literally everywhere.
   components:
-    - type: Sprite
-      sprite: _Blimpuf/Objects/Misc/syndie_clipboard.rsi
-      layers:
-        - state: syndie_clipboard
-        - state: syndie_clipboard_paper
-          map: ["syndie_clipboard_paper"]
-          visible: false
-        - state: syndie_clipboard_pen
-          map: ["syndie_clipboard_pen"]
-          visible: false
-        - state: syndie_clipboard_over
-    - type: ItemSlots
-      slots:
-        pen_slot:
-          name: clipboard-slot-component-slot-name-pen
-          whitelist:
-            tags:
-              - Write
-          insertOnInteract: true
-    - type: Item
-      sprite: _Blimpuf/Objects/Misc/syndie_clipboard.rsi
-      size: Normal
-    - type: Clothing
-      sprite: _Blimpuf/Objects/Misc/syndie_clipboard.rsi
-    - type: Storage
-      grid:
-        - 0,0,4,3
-      quickInsert: true
-    - type: ItemMapper
-      mapLayers:
-        syndie_clipboard_paper:
-          whitelist:
-            tags:
-              - Document
-        syndie_clipboard_pen:
-          whitelist:
-            tags:
-              - Write
-    - type: CargoOrderConsole
-      removeLimitAccess: [ "SyndicateAgent" ]
-      announcementChannel: Syndicate
-      baseAnnouncementChannel: Syndicate
-      account: Syndicate
-      mode: InstantApprove
-      directDelivery: True
-    - type: ActivatableUI
-      verbText: qm-clipboard-computer-verb-text
-      key: enum.CargoConsoleUiKey.Orders
-    - type: UserInterface
-      interfaces:
-        enum.CargoConsoleUiKey.Orders:
-          type: CargoOrderConsoleBoundUserInterface
-        enum.StorageUiKey.Key:
-          type: StorageBoundUserInterface
-    - type: MeleeWeapon
-      damage:
-        types:
-          Blunt: 10
-          Slash: 5
-    - type: Tag
-      tags:
-        - Folder
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Misc/syndie_clipboard.rsi
+    layers:
+    - state: syndie_clipboard
+    - state: syndie_clipboard_paper
+      map: ["syndie_clipboard_paper"]
+      visible: false
+    - state: syndie_clipboard_pen
+      map: ["syndie_clipboard_pen"]
+      visible: false
+    - state: syndie_clipboard_over
+  - type: ItemSlots
+    slots:
+      pen_slot:
+        name: clipboard-slot-component-slot-name-pen
+        whitelist:
+          tags:
+          - Write
+        insertOnInteract: true
+  - type: Item
+    sprite: _Blimpuf/Objects/Misc/syndie_clipboard.rsi
+    size: Normal
+  - type: Clothing
+    sprite: _Blimpuf/Objects/Misc/syndie_clipboard.rsi
+  - type: Storage
+    grid:
+    - 0,0,4,3
+    quickInsert: true
+  - type: ItemMapper
+    mapLayers:
+      syndie_clipboard_paper:
+        whitelist:
+          tags:
+          - Document
+      syndie_clipboard_pen:
+        whitelist:
+          tags:
+          - Write
+  - type: CargoOrderConsole
+    removeLimitAccess: [ "SyndicateAgent" ]
+    announcementChannel: Syndicate
+    baseAnnouncementChannel: Syndicate
+    account: Syndicate
+    mode: InstantApprove
+    directDelivery: True
+  - type: ActivatableUI
+    verbText: qm-clipboard-computer-verb-text
+    key: enum.CargoConsoleUiKey.Orders
+  - type: UserInterface
+    interfaces:
+      enum.CargoConsoleUiKey.Orders:
+        type: CargoOrderConsoleBoundUserInterface
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 10
+        Slash: 5
+  - type: Tag
+    tags:
+    - Folder
 
 - type: entity
   parent: BoxFolderBaseEmpty
   id: BoxFolderAnomalyReports
   name: anomaly report folder
   components:
-    - type: Sprite
-      layers:
-        - state: folder-colormap
-          color: "#cd7ccd"
-        - state: folder-base
-    - type: EntityTableContainerFill
-      containers:
-        storagebase: !type:AllSelector
-          children:
-            - id: PrintedDocumentAnomalyReport
-              amount: 2
-            - id: Paper
+  - type: Sprite
+    layers:
+    - state: folder-colormap
+      color: "#cd7ccd"
+    - state: folder-base
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: PrintedDocumentAnomalyReport
+          amount: 2
+        - id: Paper
