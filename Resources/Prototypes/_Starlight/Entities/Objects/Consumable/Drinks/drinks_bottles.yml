@@ -20,8 +20,8 @@
 
 # Blimpuf - Half Full Vodkizine Bottle for the Russian Soda Machine
 - type: entity
-  parent: DrinkVodkizineBottleFull
-  id: DrinkVodkizineBottle
+  parent: DrinkVodkizineLargeBottleFull
+  id: DrinkVodkizineBottleFull
   name: vodkizine bottle
   components:
     - type: SolutionContainerManager
