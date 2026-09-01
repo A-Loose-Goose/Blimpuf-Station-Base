@@ -1,7 +1,7 @@
 - type: entity
   parent: [ DrinkVisualsAllFilled, DrinkBottleGlassBaseFull ]
-  id: DrinkVodkizineBottleFull
-  name: vodkizine bottle
+  id: DrinkVodkizineLargeBottleFull
+  name: large vodkizine bottle
   description: The best cure for and cause of a hangover.
   components:
   - type: SolutionContainerManager
@@ -9,7 +9,7 @@
       drink:
         reagents:
         - ReagentId: Vodkizine
-          Quantity: 100
+          Quantity: 90
   - type: Label
     currentLabel: reagent-name-vodkizine
   - type: Sprite
@@ -18,3 +18,16 @@
   - type: StaticPrice
     price: 300
 
+# Blimpuf - Half Full Vodkizine Bottle for the Russian Soda Machine
+- type: entity
+  parent: DrinkVodkizineBottleFull
+  id: DrinkVodkizineBottle
+  name: vodkizine bottle
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          maxVol: 60
+          reagents:
+            - ReagentId: Vodkizine
+              Quantity: 40

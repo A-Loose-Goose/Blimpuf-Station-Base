@@ -4,22 +4,26 @@
     MagazineBoxCaselessRifle: 5 # Starlight
     MagazineBoxCaselessRiflePractice: 3
     MagazineBoxCaselessRifleRubber: 1 # Starlight
-
     MagazineBoxLightRifleBig: 5 # Starlight
     MagazineBoxLightRiflePractice: 3
     MagazineBoxLightRifleRubber: 1 # Starlight
-
     MagazineBoxMagnumSP: 5 # Starlight
     MagazineBoxMagnumPractice: 3
     MagazineBoxMagnumRubber: 1 # Starlight
-
     MagazineBoxPistolSP: 5 # Starlight
     MagazineBoxPistolPractice: 3
     MagazineBoxPistolRubber: 1 # Starlight
-
     MagazineBoxRifleSP: 5 # Starlight
     MagazineBoxRiflePractice: 3
     MagazineBoxRifleRubber: 1 # Starlight
-
     BoxLethalshot: 6
     BoxShotgunPractice: 3
+  emaggedInventory: # Blimpuf
+    CartridgeRifleUranium: 7 # Blimpuf - 7 bullets, not boxes. A box of rifle ammo has 50 bullets, the vendors also don't always spawn in with max number of bullets.
+    CartridgeRifleIncendiary: 7 # Blimpuf
+    CartridgePistolUranium: 7 # Blimpuf
+    CartridgePistolIncendiary: 7 # Blimpuf
+    CartridgeMagnumUranium: 7 # Blimpuf
+    CartridgeMagnumIncendiary: 7 # Blimpuf
+    CartridgeLightRifleUranium: 7 # Blimpuf
+    CartridgeLightRifleIncendiary: 7 # Blimpuf

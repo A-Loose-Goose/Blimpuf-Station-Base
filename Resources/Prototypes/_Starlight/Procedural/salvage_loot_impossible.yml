@@ -247,7 +247,7 @@
           prob: 0.2
           cost: 2
 
-        - proto: DrinkVodkizineBottleFull
+        - proto: DrinkVodkizineLargeBottleFull
           cost: 3
         - proto: MedkitBruteFilled
           cost: 6
