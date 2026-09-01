@@ -134,6 +134,7 @@
       - AnomalyHost
       - IPC
       - SiliconEmotesFH
+      - PersonaBlacklisted # Blimpuf
   - type: Stamina
     staminaAlert: "IPCStamina"
   - type: Damageable

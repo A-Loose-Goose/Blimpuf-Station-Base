@@ -4715,5 +4715,13 @@ Entries:
   id: 12501
   time: '2026-08-21T20:47:20.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/125
+- author: ALooseGoose, ItsMaitake, Archangel_06, rainyrivulet, Davyei
+  changes:
+  - message: Added all the remaining Syndicate Research items required. Now ready
+      for playtesting!
+    type: Add
+  id: 12801
+  time: '2026-08-28T09:11:10.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/128
 Order: -1
 

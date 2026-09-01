@@ -84,6 +84,7 @@
     - NeoFelionoid
     - SiliconEmotesFH
     - NotLabelable
+    - PersonaBlacklisted # Blimpuf
   - type: Fixtures
     fixtures:
       fix1:

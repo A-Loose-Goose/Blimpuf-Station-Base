@@ -5,9 +5,14 @@
   description: A handheld device that scans devices to tell all Syndicate Agents what needs to be done to research a given object of interest.
   components:
     - type: Sprite
-      sprite: Objects/Devices/forensic_scanner.rsi
+      sprite: _Blimpuf/Objects/Devices/syndicate-research-scanner.rsi
       state: icon
     - type: Item
       size: Small
       storedRotation: 90
+    - type: Clothing
+      sprite: _Blimpuf/Objects/Devices/syndicate-research-scanner.rsi
+      quickEquip: false
+      slots:
+        - Belt
     - type: SyndicateResearchScanner

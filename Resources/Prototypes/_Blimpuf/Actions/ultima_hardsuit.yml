@@ -1,0 +1,47 @@
+﻿- type: entity
+  parent: BaseAction
+  id: ActionUltimaHardsuitEmp
+  name: Self Destruct (EMP)
+  description: Unleash an EMP Explosion from your suit.
+  components:
+    - type: Action
+      useDelay: 20
+      icon:
+        sprite: Objects/Weapons/Grenades/empgrenade.rsi
+        state: icon
+      itemIconStyle: BigAction
+      priority: -13
+    - type: InstantAction
+      event: !type:UltimaHardsuitEmpEvent {}
+
+- type: entity
+  parent: BaseAction
+  id: ActionUltimaHardsuitFlashbang
+  name: Self Destruct (Flashbang)
+  description: Unleash a Flash Explosion from your suit.
+  components:
+    - type: Action
+      useDelay: 20
+      icon:
+        sprite: Objects/Weapons/Grenades/flashbang.rsi
+        state: icon
+      itemIconStyle: BigAction
+      priority: -13
+    - type: InstantAction
+      event: !type:UltimaHardsuitFlashbangEvent {}
+
+- type: entity
+  parent: BaseAction
+  id: ActionUltimaHardsuitBlast
+  name: Self Destruct (Blast)
+  description: Unleash a Blast Explosion from your suit.
+  components:
+    - type: Action
+      useDelay: 20
+      icon:
+        sprite: Objects/Weapons/Grenades/grenade.rsi
+        state: icon
+      itemIconStyle: BigAction
+      priority: -13
+    - type: InstantAction
+      event: !type:UltimaHardsuitBlastEvent {}

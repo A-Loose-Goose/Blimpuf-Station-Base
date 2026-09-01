@@ -247,6 +247,7 @@
     - SiliconEmotes
     - Unimplantable
     - SiliconEmotesFH #FH, yes it's intentional that there's two of them.
+    - PersonaBlacklisted
   - type: Emoting
   - type: GuideHelp
     guides:

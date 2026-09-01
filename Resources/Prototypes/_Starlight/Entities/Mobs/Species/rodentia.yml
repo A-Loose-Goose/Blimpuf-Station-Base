@@ -128,6 +128,7 @@
       - AnomalyHost
       - Rodentia
       - NotLabelable
+      - PersonaBlacklisted # Blimpuf
   - type: Item
     size: Huge
     allowDirectHandPickup: false

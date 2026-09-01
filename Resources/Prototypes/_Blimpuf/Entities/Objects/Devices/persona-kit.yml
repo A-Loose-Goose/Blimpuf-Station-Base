@@ -1,0 +1,66 @@
+﻿- type: entity
+  parent: [BaseItem, BaseSyndicateContraband]
+  id: PersonaHologramGeneratorNoBattery
+  name: persona kit
+  description: Both incredibly advanced and inconspicuous, this device allows the user to transform into any living or mechanical beings. Unfortunately it does not work on other humanoids, cyborgs, or spiders as their anatomies are too advanced.
+  components:
+    - type: Sprite
+      sprite: /Textures/_Blimpuf/Objects/Misc/persona_kit.rsi
+      layers:
+        - state: folder-stealthkit
+    - type: ChameleonProjector
+      whitelist:
+        components:
+          - MindContainer
+        tags:
+          - Bot # for funny bot moments
+          - PersonaWhitelisted # You'd never guess but this is for stuff that is whitelisted
+      blacklist:
+        tags:
+          - PersonaBlacklisted # You'd never guess but this is for stuff that is blacklisted
+      disguiseProto: ChameleonDisguise
+    - type: StaticPrice
+      price: 5000
+
+- type: entity
+  parent: PersonaHologramGeneratorNoBattery
+  id: PersonaHologramGenerator
+  name: persona kit
+  description: Both incredibly advanced and inconspicuous, this device allows the user to transform into any living or mechanical beings. Unfortunately it does not work on other humanoids or cyborgs as their anatomies are too advanced.
+  suffix: Battery
+  components:
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.BatteryVisuals.State:
+          enum.PowerDeviceVisualLayers.Powered:
+            Full: { visible: true }
+            Neither: { visible: true }
+            Empty: { visible: false }
+        enum.BatteryVisuals.Charging:
+          enum.PowerDeviceVisualLayers.Charging:
+            Charging: { visible: false }
+            Decharging: { visible: true }
+            Constant: { visible: false }
+    - type: BatteryVisuals
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          name: power-cell-slot-component-slot-name-default
+          startingItem: PowerCellMedium
+          #Starlight Start
+          blacklist:
+            tags:
+              - MechReactor
+          #Starlight End
+    - type: PowerCellSlot
+      cellSlotId: cell_slot
+    - type: PowerCellDraw
+      drawRate: 4 # About 3 minutes with a medium cell.
+    - type: ToggleCellDraw
+    - type: ItemToggle
+      onActivate: false
+      onUse: false

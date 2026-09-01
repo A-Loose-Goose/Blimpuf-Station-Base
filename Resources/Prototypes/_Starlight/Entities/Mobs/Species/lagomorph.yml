@@ -81,6 +81,7 @@
     - AnomalyHost
     - NotLabelable # Starlight, no more labeling people.
     - Lagomorph
+    - PersonaBlacklisted # Blimpuf
   - type: Sprite
     layers:
     - map: [ "enum.HumanoidVisualLayers.Chest" ]

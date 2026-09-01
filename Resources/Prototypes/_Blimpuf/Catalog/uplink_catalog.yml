@@ -1,3 +1,15 @@
+# Ammo
+- type: listing
+  id: UplinkMagazinePistolWt550
+  name: uplink-pistol-magazine-wt550-name
+  description: uplink-pistol-magazine-wt550-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag_top_mounted.rsi, state: base }
+  productEntity: MagazinePistolSubMachineGunTopMounted
+  cost:
+    Telecrystal: 10
+  categories:
+    - UplinkAmmo
+
 # Research
 - type: listing
   id: UplinkResearchAnalyzer
@@ -11,6 +23,10 @@
       blacklist:
         tags:
           - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
 
 - type: listing
   id: UplinkSyndicateTacticalLaser
@@ -30,6 +46,10 @@
       blacklist:
         tags:
           - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
 
 - type: listing
   id: UplinkTeleportationRelay
@@ -49,6 +69,10 @@
       blacklist:
         tags:
           - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
 
 - type: listing
   id: UplinkClothingShoesBootsMagSyndieAdvanced
@@ -65,6 +89,10 @@
       blacklist:
         tags:
           - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
 
 - type: listing
   id: UplinkAccessHijacker
@@ -84,6 +112,103 @@
       blacklist:
         tags:
           - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
+
+- type: listing
+  id: UplinkClothingOuterHardsuitUltima
+  name: uplink-clothing-outer-hardsuit-ultima-name
+  description: uplink-clothing-outer-hardsuit-ultima-desc
+  productEntity: ClothingOuterHardsuitUltima
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 50
+  cost:
+    Telecrystal: 75
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
+
+- type: listing
+  id: UplinkWeaponLaserTaipanRevolver
+  name: uplink-weapon-laser-taipan-name
+  description: uplink-weapon-laser-taipan-desc
+  productEntity: WeaponLaserTaipanRevolver
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 50
+  cost:
+    Telecrystal: 75
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
+
+- type: listing
+  id: UplinkWeaponLaserIncinerator
+  name: uplink-weapon-laser-incinerator-name
+  description: uplink-weapon-laser-incinerator-desc
+  productEntity: WeaponLaserIncinerator
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 70
+  cost:
+    Telecrystal: 85
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
+
+- type: listing
+  id: UplinkWt551Compact
+  name: uplink-wt551-compact-name
+  description: uplink-wt551-compact-desc
+  icon: { sprite: /Textures/_Blimpuf/Objects/Weapons/Guns/SMGs/syndicate-wt551.rsi, state: icon }
+  productEntity: WeaponSubMachineGunWt551Compact
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 50
+  cost:
+    Telecrystal: 70
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
 
 - type: listing
   id: UplinkAdvancedGorlexHypospray
@@ -103,3 +228,116 @@
       blacklist:
         tags:
           - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
+
+- type: listing
+  id: UplinkJetpackSpeedster
+  name: uplink-jetpack-speedster-name
+  description: uplink-jetpack-speedster-desc
+  productEntity: JetpackSpeedsterFilled
+  cost:
+    Telecrystal: 25
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
+
+- type: listing
+  id: UplinkPersonaHologramGenerator
+  name: uplink-persona-hologram-generator-name
+  description: uplink-persona-hologram-generator-desc
+  productEntity: PersonaHologramGenerator
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 15
+  cost:
+    Telecrystal: 20
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
+
+- type: listing
+  id: UplinkSyndieClipboard
+  name: uplink-syndie-clipboard-name
+  description: uplink-syndie-clipboard-desc
+  productEntity: BoxFolderSyndieClipboard
+  cost:
+    Telecrystal: 100
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
+
+- type: listing
+  id: UplinkSyndieEnergyShotgun
+  name: uplink-syndie-energy-shotgun-name
+  description: uplink-syndie-energy-shotgun-desc
+  productEntity: WeaponSyndieEnergyShotgun
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 60
+  cost:
+    Telecrystal: 70
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
+
+- type: listing
+  id: UplinkGlovesKnuckleDustersStimulant
+  name: uplink-gloves-knuckle-dusters-stimulant-name
+  description: uplink-gloves-knuckle-dusters-stimulant-desc
+  productEntity: ClothingHandsKnuckleDustersStimulant
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 35
+  cost:
+    Telecrystal: 50
+  categories:
+    - UplinkResearch
+  conditions:
+    - !type:ResearchCondition
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle

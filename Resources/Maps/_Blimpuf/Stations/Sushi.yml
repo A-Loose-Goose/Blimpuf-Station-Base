@@ -116666,18 +116666,6 @@ entities:
     - type: Transform
       pos: 114.5,81.5
       parent: 2
-- proto: MagazinePistolSubMachineGunTopMounted
-  entities:
-  - uid: 17048
-    components:
-    - type: Transform
-      pos: 98.345695,110.4372
-      parent: 2
-  - uid: 17049
-    components:
-    - type: Transform
-      pos: 98.835236,110.4323
-      parent: 2
 - proto: MailBag
   entities:
   - uid: 17050
@@ -137557,13 +137545,6 @@ entities:
     components:
     - type: Transform
       pos: 101.5,100.5
-      parent: 2
-- proto: SpawnPointWardenWeapon
-  entities:
-  - uid: 20236
-    components:
-    - type: Transform
-      pos: 100.5,96.5
       parent: 2
 - proto: Spear
   entities:
@@ -162747,7 +162728,7 @@ entities:
     - type: Gun
       lastFire: 6780.0098869
       currentAngle: 0.01745329251994332 rad
-- proto: WeaponSubMachineGunWt550r
+- proto: SpawnPointHeadOfSecurityWeapon
   entities:
   - uid: 25164
     components:

@@ -99,9 +99,10 @@ public sealed partial class CargoOrderConsoleComponent : Component
     public ProtoId<RadioChannelPrototype> AnnouncementChannel = "Supply";
 
     /// <summary>
-    /// Secondary radio channel which always receives order announcements.
+    /// Secondary radio channel which always receives order announcements. - Blimpuf Edit; Removed Readonly, this can now be edited
     /// </summary>
-    public static readonly ProtoId<RadioChannelPrototype> BaseAnnouncementChannel = "Supply";
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public ProtoId<RadioChannelPrototype> BaseAnnouncementChannel = "Supply";
 
     /// <summary>
     /// The behaviour of the cargo console regarding orders
@@ -144,6 +145,12 @@ public sealed partial class CargoOrderConsoleComponent : Component
     /// </summary>
     [DataField]
     public TimeSpan DenySoundDelay = TimeSpan.FromSeconds(2);
+
+    /// <summary>
+    /// Blimpuf Edit - Approved orders will appear on the user instead of going to the ATS
+    /// </summary>
+    [DataField]
+    public Boolean DirectDelivery = false;
 }
 
 /// <summary>
@@ -164,6 +171,10 @@ public enum CargoOrderConsoleMode : byte
     /// Transfers the order to the primary account
     /// </summary>
     SendToPrimary,
+    /// <summary>
+    /// Blimpuf Edit - Instantly approve order upon placing it
+    /// </summary>
+    InstantApprove
 }
 
 /// <summary>

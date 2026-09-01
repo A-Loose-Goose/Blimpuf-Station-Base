@@ -40,3 +40,218 @@
           tags:
             - PowerCell
             - PowerCellSmall
+
+- type: entity
+  name: taipan energy revolver
+  parent: [ BaseSyndicateContraband, BaseWeaponBatterySmall ]
+  id: WeaponLaserTaipanRevolver
+  description: An energy revolver that feels way too heavy for how small it is. It's covered in warning signage. What the hell did they put in this? 5 bricks of C-4? Oh wait...There's a tag that says "Made with 5 bricks of C-4"...This has to be incredibly unstable.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Weapons/Guns/Battery/syndicate-taipan-revolver.rsi
+    state: icon
+  - type: Item
+    shape:
+      - 0,0,1,0
+      - 0,1,0,1
+    storedOffset: 0,-7
+    sprite: _Blimpuf/Objects/Weapons/Guns/Battery/syndicate-taipan-revolver.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 5
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+            params:
+              volume: -4
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            WeaponLaserTaipanRevolverExploding:
+              min: 1
+              max: 1
+          transferForensics: true
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+  - type: DamageOnLand
+    damage:
+      types:
+        Blunt: 10
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 5
+  - type: DamageOnHighSpeedImpact
+    minimumSpeed: 2
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
+  - type: BatteryAmmoProvider
+    proto: BulletLaserTaipan  # Starlight - Hitscan
+    fireCost: 75
+
+- type: entity
+  name: taipan energy revolver # Version that blows up, I know this *technically* isnt a gun but I mean it kinda is
+  parent: [ BaseSyndicateContraband, BaseItem ]
+  id: WeaponLaserTaipanRevolverExploding
+  description: Now it's extremely unstable! Those 5 bricks of C-4 can't be doing it any favors! Fuckin' RUN!!!
+  categories: [ HideSpawnMenu ] # We, yes we, are NOT that stupid enough to let people accidentally spawn a "gun" that will blow up in 5 seconds
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Weapons/Guns/Battery/syndicate-taipan-revolver.rsi
+    state: base-on
+  - type: Item
+    shape:
+      - 0,0,1,0
+      - 0,1,0,1
+    storedOffset: 0,-7
+    sprite: _Blimpuf/Objects/Weapons/Guns/Battery/syndicate-taipan-revolver.rsi
+  - type: TriggerOnSpawn
+  - type: TimerTrigger
+    delay: 6
+    beepSound:
+      path: /Audio/_Blimpuf/Effects/fuze.ogg
+      params:
+        volume: 1
+    beepInterval: 1
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 50
+    intensitySlope: 125
+    totalIntensity: 1000
+  - type: ExplodeOnTrigger
+    keysIn:
+      - timer
+
+- type: entity
+  name: incinerator overcharged energy SMG
+  parent: [BaseWeaponBattery, BaseSyndicateContraband]
+  id: WeaponLaserIncinerator
+  description: A wise man once said. Nanotrasen fears no man. But the one who wields this beauty...? They scare them...
+  components:
+    - type: Appearance
+    - type: Sprite
+      sprite: _Blimpuf/Objects/Weapons/Guns/Battery/syndicateflamesmg.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: laser
+          map: ["enum.FireModesLayers.FireMode"]
+        - state: laser-unshaded-0
+          map: ["enum.GunVisualLayers.MagUnshaded"]
+          shader: unshaded
+    - type: Clothing
+      sprite: _Blimpuf/Objects/Weapons/Guns/Battery/syndicateflamesmg.rsi
+    - type: MagazineVisuals
+      magState: laser
+      steps: 6
+      zeroVisible: false
+    - type: Gun
+      fireRate: 10
+      minAngle: 20
+      maxAngle: 40
+      angleIncrease: 2.5
+      selectedMode: FullAuto
+      availableModes:
+        - FullAuto
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+        params:
+          volume: -2
+    - type: BatteryAmmoProvider
+      proto: BulletEnergyIncineratorLaser
+      fireCost: 2.5
+    - type: BatteryWeaponFireModes
+      fireModes:
+        - proto: BulletEnergyIncineratorLaser
+          fireCost: 2.5
+          magState: laser
+          visualState: laser
+        - proto: BulletEnergyIncineratorDisabler
+          fireCost: 2.5
+          magState: disable
+          visualState: disable
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,3,1
+      #sprite: _Starlight/Objects/Weapons/Guns/Battery/energy_smg.rsi
+      #heldPrefix: energy
+    #- type: GunRequiresWield #remove when inaccuracy on spreads is fixed
+    - type: Battery
+      maxCharge: 250
+      startingCharge: 250
+    - type: ContainerContainer
+      containers:
+        firing_pin: !type:Container
+    - type: ContainerFill
+      containers:
+        firing_pin:
+          - FiringPinAdvancedLaser
+    - type: FiringPinHolder
+      supportedPins: [ AdvancedLaser ]
+
+- type: entity
+  name: ultra-versatile laser shotgun
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseSyndicateContraband]
+  id: WeaponSyndieEnergyShotgun
+  description: How many shots can an energy shotgun shoot since an energy shotgun can shoot shots? This is exactly the question Scientists over at the Syndicate decided to ask themselves! Answer; a lot.
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Objects/Weapons/Guns/Battery/syndicate-energy-shotgun.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-unshaded-4
+          map: ["enum.GunVisualLayers.MagUnshaded"]
+          shader: unshaded
+    - type: MagazineVisuals
+      magState: mag
+      steps: 5
+      zeroVisible: false
+      color: red
+    - type: Appearance
+    - type: Clothing
+      sprite: _Blimpuf/Objects/Weapons/Guns/Battery/Energy_Shotgun.rsi
+    - type: Gun
+      fireRate: 1
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+    - type: BatteryAmmoProvider
+      proto: BulletSyndieEnergyShotgunBuckshotSpread
+      fireCost: 60 #Starlight
+    - type: BatteryWeaponFireModes
+      fireModes:
+        - proto: BulletSyndieEnergyShotgunBuckshotSpread
+          fireCost: 60
+          color: red
+        - proto: BulletSyndieEnergyShotgunBeanbag
+          fireCost: 45
+          color: green
+        - proto: BulletSyndieEnergyShotgunSlug
+          fireCost: 60
+          color: white
+        - proto: BulletSyndieEnergyShotgunBuckshotIncendiarySpread
+          fireCost: 90
+          color: orange
+        - proto: BulletSyndieEnergyShotgunBuckshotUraniumSpread
+          fireCost: 90
+          color: lightgreen
+    - type: Item
+      size: Large
+      sprite:  _Starlight/Objects/Weapons/Guns/Battery/Energy_Shotgun_inhands-x64.rsi # Starlight, sprite changed (Objects\Weapons\Guns\Battery\inhands_64x.rsi)
+      heldPrefix: empty #starlight
+    - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
+    - type: Battery
+      maxCharge: 540
+      startingCharge: 540

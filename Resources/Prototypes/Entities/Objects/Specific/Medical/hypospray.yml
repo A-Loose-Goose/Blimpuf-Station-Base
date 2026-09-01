@@ -63,12 +63,18 @@
           - JetInjector
           - AdvancedJetInjector
           - TacticalJetInjector
+          - DeforestJetInjector
       - displayName: spray painter
         validPrototypes:
           - SprayPainter
+          - SprayPainterEmpty
       - displayName: multitool
         validPrototypes:
           - Multitool
+          - MultitoolAbductor
+          - MultitoolImprovised
+          - Mooltitool
+          - MultitoolInvisible
       - displayName: health analyzer
         validPrototypes:
           - HandheldHealthAnalyzer
@@ -82,9 +88,9 @@
       - displayName: chemmaster 4000 machine board
         validPrototypes:
           - ChemMasterMachineCircuitboard
-      - displayName: jug
+      - displayName: dropper
         validPrototypes:
-          - Jug
+          - Dropper
     researchUnlockId: UplinkAdvancedGorlexHypospray
     researchAnnouncementString: research-announcement-advanced-gorlex-hypospray
 
