@@ -87,7 +87,7 @@
         - id: BoxMRE
         - id: FoodTinMRE
         - id: FoodTinBeans
-        - id: DrinkVodkizineLargeBottleFull
+        - id: DrinkVodkizineBottleFull
         - id: WeaponPistolMakarov
         - id: ToolDebug
         - id: WelderIndustrial
@@ -109,7 +109,7 @@
         - id: BoxFolderBase
         - id: BoxFolderClipboard
         - id: BodyBagFolded
-        - id: DrinkVodkizineLargeBottleFull
+        - id: DrinkVodkizineBottleFull
         - id: Flash
         - id: CigarGoldCase
         - id: FlippoEngravedLighter

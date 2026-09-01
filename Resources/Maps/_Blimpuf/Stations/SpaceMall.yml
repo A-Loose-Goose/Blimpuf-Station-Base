@@ -122302,7 +122302,7 @@ entities:
     - type: Transform
       pos: 25.612682,46.193058
       parent: 2
-- proto: DrinkVodkizineLargeBottleFull
+- proto: DrinkVodkizineBottleFull
   entities:
   - uid: 20130
     components:

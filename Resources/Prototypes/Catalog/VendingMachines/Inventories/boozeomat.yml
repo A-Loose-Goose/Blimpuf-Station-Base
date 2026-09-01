@@ -55,4 +55,4 @@
   emaggedInventory: # Blimpuf
     StrangePill: 1 # Blimpuf
     DrinkPoisonWinebottleFull: 2 # Blimpuf
-    DrinkVodkizineBottleFull: 1 # Blimpuf
+    DrinkVodkizineSmallBottleUsed: 1 # Blimpuf

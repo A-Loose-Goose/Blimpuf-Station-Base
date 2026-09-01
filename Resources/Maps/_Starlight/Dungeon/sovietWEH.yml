@@ -14646,7 +14646,7 @@ entities:
     - type: Transform
       pos: 1.2871013,46.65585
       parent: 1
-- proto: DrinkVodkizineLargeBottleFull
+- proto: DrinkVodkizineBottleFull
   entities:
   - uid: 2330
     components:
