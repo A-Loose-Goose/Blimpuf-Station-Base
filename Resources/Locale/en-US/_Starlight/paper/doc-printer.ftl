@@ -1340,7 +1340,7 @@ doc-text-printer-anomaly-report =
     Anomaly status: [form]
     Behavior deviations: [form]
 
-    Additional notes:
+    Additional notes: [form]
 
     ─────────────────────────────────────────
    ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
