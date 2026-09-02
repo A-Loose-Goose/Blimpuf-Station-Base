@@ -4751,5 +4751,13 @@ Entries:
   id: 13301
   time: '2026-09-02T18:16:00.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/133
+- author: ItsMaitake
+  changes:
+  - message: Added new Cryptographic Sequencer/Emag functionality to over 42 machines
+      and vendors!
+    type: Add
+  id: 13901
+  time: '2026-09-02T18:25:51.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/139
 Order: -1
 
