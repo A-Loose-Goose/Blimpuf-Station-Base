@@ -4737,5 +4737,19 @@ Entries:
   id: 13701
   time: '2026-09-02T17:54:06.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/137
+- author: ItsMaitake
+  changes:
+  - message: Updated TC costs of Syndicate Uplink Items.
+    type: Tweak
+  - message: DAGD Traitors now have 200 TC instead of the standard 100 TC.
+    type: Tweak
+  - message: Fists of the North Star now have the "Insulated" property.
+    type: Tweak
+  - message: You can now buy a maximum of 2 Syndicate IDs from the Uplink (for free),
+      instead of infinite amounts of them.
+    type: Tweak
+  id: 13301
+  time: '2026-09-02T18:16:00.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/133
 Order: -1
 
