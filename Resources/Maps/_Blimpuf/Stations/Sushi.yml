@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 07:56:23
-  entityCount: 25274
+  entityCount: 25283
 maps:
 - 1
 grids:
@@ -22626,11 +22626,6 @@ entities:
     - type: Transform
       pos: 138.5,100.5
       parent: 2
-  - uid: 1974
-    components:
-    - type: Transform
-      pos: 132.5,100.5
-      parent: 2
   - uid: 1975
     components:
     - type: Transform
@@ -34902,6 +34897,56 @@ entities:
     components:
     - type: Transform
       pos: 27.5,71.5
+      parent: 2
+  - uid: 25516
+    components:
+    - type: Transform
+      pos: 133.5,100.5
+      parent: 2
+  - uid: 25517
+    components:
+    - type: Transform
+      pos: 133.5,101.5
+      parent: 2
+  - uid: 25518
+    components:
+    - type: Transform
+      pos: 133.5,102.5
+      parent: 2
+  - uid: 25519
+    components:
+    - type: Transform
+      pos: 133.5,103.5
+      parent: 2
+  - uid: 25520
+    components:
+    - type: Transform
+      pos: 133.5,104.5
+      parent: 2
+  - uid: 25521
+    components:
+    - type: Transform
+      pos: 134.5,104.5
+      parent: 2
+  - uid: 25522
+    components:
+    - type: Transform
+      pos: 135.5,104.5
+      parent: 2
+  - uid: 25523
+    components:
+    - type: Transform
+      pos: 136.5,104.5
+      parent: 2
+  - uid: 25524
+    components:
+    - type: Transform
+      pos: 137.5,104.5
+      parent: 2
+  - uid: 25525
+    components:
+    - type: Transform
+      pos: 138.5,104.5
       parent: 2
 - proto: CableApcExtensionUncuttable
   entities:
