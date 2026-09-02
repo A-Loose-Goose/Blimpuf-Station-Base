@@ -7953,43 +7953,43 @@ entities:
         - node:
             zIndex: 3
             color: '#FFFFFFFF'
-            id: slsign1
+            id: blsign1
           decals:
             7322: -11,9
         - node:
             zIndex: 3
             color: '#FFFFFFFF'
-            id: slsign2
+            id: blsign2
           decals:
             7323: -10,9
         - node:
             zIndex: 1
             color: '#FFFFFFFF'
-            id: slsign3
+            id: blsign3
           decals:
             8049: -9,9
         - node:
             zIndex: 1
             color: '#FFFFFFFF'
-            id: slsign4
+            id: blsign4
           decals:
             8050: -8,9
         - node:
             zIndex: 1
             color: '#FFFFFFFF'
-            id: slsign5
+            id: blsign5
           decals:
             8051: -7,9
         - node:
             zIndex: 3
             color: '#FFFFFFFF'
-            id: slsign6
+            id: blsign6
           decals:
             7319: -6,9
         - node:
             zIndex: 3
             color: '#FFFFFFFF'
-            id: slsign7
+            id: blsign7
           decals:
             7318: -5,9
         - node:
