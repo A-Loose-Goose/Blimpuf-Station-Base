@@ -1319,13 +1319,13 @@ doc-text-printer-cargo-shuttle-depature-form =
      ────────────────────────────────────────
 
 doc-text-printer-syndicate-recruitment-offer =
-                             [color=#FF0000]╔══════════════════╗
-                             ║▄█▀░██████████░▀█▄║
-                             ║██░░████▄▄░░░░░░██║
-                             ║██░░░░▀▀████▄▄░░██║
-                             ║██░░░░░░░░▀▀██░░██║
-                             ║▀█▄░██████████░▄█▀║
-                             ╚══════════════════╝
+                                 [color=#ff0000]╔══════════════════╗
+                                 ║▄█▀░██████████░▀█▄║
+                                 ║██░░████▄▄░░░░░░██║
+                                 ║██░░░░▀▀████▄▄░░██║
+                                 ║██░░░░░░░░▀▀██░░██║
+                                 ║▀█▄░██████████░▄█▀║
+                                 ╚══════════════════╝
                  [head=2][bold]SYNDICATE RECRUITMENT OFFER[/bold][/head]
      ══════════════════════════════════════════ [/color]
      [color=#FF0000][head=3]AN INVITATION TO BE MORE[/head][/color]
@@ -1352,6 +1352,12 @@ doc-text-printer-syndicate-recruitment-offer =
      [bold]By signing this I accept this offer. I am ready for more than this station. I am ready to join the Syndicate.[/bold]
      
      [mono]YOUR NEW LIFE BEGINS AFTER SHIFT // GLORY TO THE SYNDICATE[/mono]
+     
+     
+     
+     [color=#ff0000]══════════════════════════════════════════
+                          [mono]DEATH TO NANOTRASEN
+                       GLORY TO THE SYNDICATE[/mono][/color]
 
 doc-text-printer-syndicate-operation-takeover =
                                  [color=#ff0000]╔══════════════════╗
@@ -1366,10 +1372,11 @@ doc-text-printer-syndicate-operation-takeover =
                    [head=3][mono]SYNDICATE HIGH-COMMAND CLASSIFIED[/mono][/head]
      [head=3]///////////////////////////////////////////////////[/head]
      
+     ──────────────────────────────────────────
                                 [head=2]PRIMARY OBJECTIVE(S)[/head][/color]
      • You are to recruit from within Nanotrasen's internal staffing and bring in as many new recruits as possible.
      
-     [color=#ff0000][head=3]///////////////////////////////////////////////////[/head][/color]
+     [color=#ff0000]─────────────────────────────────────────[/color]
      
      [color=#ff0000][head=2]PHASE 1: ORGANIZE[/head][/color]
      • Ensure that your on-station team understands the point of this mission.
@@ -1383,7 +1390,7 @@ doc-text-printer-syndicate-operation-takeover =
      [color=#ff0000][head=2]PHASE 3: EVACUATE[/head][/color]
      • Evacuate to Central Command as normal. We will be sending an undercover team to pick up newly Syndicate aligned individuals. You will not be joining us unless you feel that Nanotrasen has suspicicions of your activities on station.
      
-     [color=#ff0000][head=3]///////////////////////////////////////////////////[/head]
+     [color=#ff0000]══════════════════════════════════════════
                           [mono]DEATH TO NANOTRASEN
                        GLORY TO THE SYNDICATE[/mono][/color]
 
@@ -1401,24 +1408,27 @@ doc-text-printer-syndicate-operation-borgification =
      [head=3]///////////////////////////////////////////////////[/head]
      
      ──────────────────────────────────────────
-     [color=red][bold]In the ongoing fight to rightfully regain our lost territory, we have received countless losses to our available supply of working cyborgs. Syndicate High-Command humbly requests your aid in finding willing participants to join our cyborg forces. We will accept all willing sapient entities, regardless of bodily or mental strength.[/bold][/color]
-     
-     Patients Name:   [color=#002AAF]Sample Person[/color]
-     
+     [bold]In the ongoing fight to rightfully regain our lost territory, we have received countless losses to our available supply of working cyborgs. Syndicate High-Command humbly requests your aid in finding willing participants to join our cyborg forces. We will accept all willing sapient entities, regardless of bodily or mental strength.[/bold]
      ──────────────────────────────────────────
      
-                                 [head=2]PATIENT STATEMENT[/head]
+                                 [head=2]PATIENT STATEMENT[/head][/color]
      Based upon informed consent, I, the undersigned, hereby direct that borgification will be underway within one week of this shift's closure. The process of borgification is irreversible, and I yield any claims to current or future ownership of a biological form.
      
-     Applicable Signature:   [color=#002AAF]Sample Signature[/color]
+     [bold]Applicable Signature:[/bold] [signature]
      
-     ─────────────────────────────────────────
-     [bold]BY STAMPING BELOW, YOU HEREBY CERTIFY:
-     1. You have informed the patientof the implications of this order.
+     [color=#ff0000]─────────────────────────────────────────
+     [bold]BY STAMPING BELOW, YOU HEREBY CERTIFY:[/color]
+     1. You have informed the patient of the implications of this order.
      2. You witnessed the signing of the document by the patient.
      3. You vouch for the authenticity of the signature and document.[/bold]
      
      [italic]               When complete, please stamp in the area below
+     
+     
+     
+     [color=#ff0000]══════════════════════════════════════════
+                          [mono]DEATH TO NANOTRASEN
+                       GLORY TO THE SYNDICATE[/mono][/color]
 
 doc-text-printer-official-syndicate-communication =
                                    [color=#ff0000]╔══════════════════╗
@@ -1431,14 +1441,16 @@ doc-text-printer-official-syndicate-communication =
                                  [head=2]OFFICIAL SYNDICATE[/head]
                                     [head=2]COMMUNICATION[/head]
      
-     [bold]TO:[/bold]
-     [bold]FROM:[/bold]
-     [bold]SUBJECT:[/bold]
-     ══════════════════════════════════════════[/color]
+     [bold]TO:[/bold][/color] [form]
+     [color=#ff0000][bold]FROM:[/bold][/color] [signature]
+     [color=#ff0000][bold]SUBJECT:[/bold][/color] [form]
+     [color=#ff0000]══════════════════════════════════════════[/color]
      
-     
+     [form]
      
      [color=#ff0000]══════════════════════════════════════════
+                          [mono]DEATH TO NANOTRASEN
+                       GLORY TO THE SYNDICATE[/mono][/color]
 
 doc-text-printer-syndicate-did-you-know =
                                    [color=#ff0000]╔══════════════════╗
@@ -1459,6 +1471,5 @@ doc-text-printer-syndicate-did-you-know =
      
      Do you want to be happy, or do you want to continue down the path of being overworked and underappreciated, paid in the galactic equivalent of toy money?
      [color=#ff0000]══════════════════════════════════════════
-     
                           [mono]DEATH TO NANOTRASEN
                        GLORY TO THE SYNDICATE[/mono][/color]
