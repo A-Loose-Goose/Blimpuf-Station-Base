@@ -60,6 +60,7 @@
   # Blimpuf
   - PrintedDocumentChemicalContrabandRecipe
   - PrintedDocumentCargoShuttleDepartureRecipe
+  - PrintedDocumentAnomalyReportRecipe
 
 # Blimpuf - Emagged Document Printero
 - type: latheRecipePack

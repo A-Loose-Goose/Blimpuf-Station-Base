@@ -4723,5 +4723,12 @@ Entries:
   id: 12801
   time: '2026-08-28T09:11:10.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/128
+- author: Limerent-Sun
+  changes:
+  - message: Added anomaly report document.
+    type: Add
+  id: 13801
+  time: '2026-09-02T13:08:52.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/138
 Order: -1
 

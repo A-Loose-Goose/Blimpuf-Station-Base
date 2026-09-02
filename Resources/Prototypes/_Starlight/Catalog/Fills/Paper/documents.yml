@@ -505,6 +505,16 @@
     - type: Paper
       content: doc-text-printer-cargo-shuttle-depature-form
 
+# Anomaly Documentation
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentAnomalyReport
+  name: Anomaly Report
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-anomaly-report
+
 # Blimpuf Emag Additions
 
 - type: entity
