@@ -395,7 +395,7 @@
   parent: WeaponNinjaChainSickle
   id: WeaponGrapplingGunSyndie
   name: grappler gun # Starlight
-  description: There's a heft to this grappling gun... you wonder what could possible be inside.
+  description: There's a heft to this grappling gun... you wonder what could possibly be inside.
   components:
     - type: GrapplingGun
       reelMassCoefficient: 200 # You can pull everyone.
