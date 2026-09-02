@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 07:56:23
-  entityCount: 25283
+  entityCount: 25275
 maps:
 - 1
 grids:
@@ -122547,6 +122547,18 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 102.5,101.5
       parent: 2
+  - uid: 25513
+    components:
+    - type: Transform
+      rot: 4.71238898038469 rad
+      pos: 87.5,68.5
+      parent: 2
+  - uid: 25514
+    components:
+    - type: Transform
+      rot: 4.71238898038469 rad
+      pos: 87.5,70.5
+      parent: 2
 - proto: PoweredlightBlue
   entities:
   - uid: 17983
@@ -122937,18 +122949,6 @@ entities:
       parent: 2
 - proto: PoweredlightGreen
   entities:
-  - uid: 17990
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 87.5,70.5
-      parent: 2
-  - uid: 17991
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 87.5,68.5
-      parent: 2
   - uid: 18050
     components:
     - type: Transform
@@ -125904,36 +125904,6 @@ entities:
       parent: 2
 - proto: RailingEnd
   entities:
-  - uid: 17423
-    components:
-    - type: Transform
-      pos: 86.5,68.5
-      parent: 2
-  - uid: 17424
-    components:
-    - type: Transform
-      pos: 84.5,71.5
-      parent: 2
-  - uid: 19023
-    components:
-    - type: Transform
-      pos: 86.5,71.5
-      parent: 2
-  - uid: 19772
-    components:
-    - type: Transform
-      pos: 87.5,71.5
-      parent: 2
-  - uid: 19817
-    components:
-    - type: Transform
-      pos: 87.5,68.5
-      parent: 2
-  - uid: 24886
-    components:
-    - type: Transform
-      pos: 84.5,68.5
-      parent: 2
   - uid: 25014
     components:
     - type: Transform
@@ -164694,5 +164664,12 @@ entities:
     components:
     - type: Transform
       pos: 127.5,37.5
+      parent: 2
+- proto: ClothingShoeSlippersLizard
+  entities:
+  - uid: 25515
+    components:
+    - type: Transform
+      pos: 86.5,68.5
       parent: 2
 ...
