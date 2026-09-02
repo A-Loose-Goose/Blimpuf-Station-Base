@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 07:56:23
-  entityCount: 25275
+  entityCount: 25274
 maps:
 - 1
 grids:
@@ -162607,11 +162607,6 @@ entities:
       - 24509
 - proto: WeaponEnergyTurretAIControlPanel
   entities:
-  - uid: 73
-    components:
-    - type: Transform
-      pos: 86.5,65.5
-      parent: 2
   - uid: 24509
     components:
     - type: Transform
