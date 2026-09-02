@@ -47,4 +47,5 @@
   - type: MindRole
     exclusiveAntag: true
     antagPrototype: SamuraiAntag
+    roleType: FreeAgent
   - type: Samurai
