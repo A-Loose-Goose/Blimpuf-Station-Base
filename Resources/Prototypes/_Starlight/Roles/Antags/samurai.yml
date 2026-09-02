@@ -9,6 +9,40 @@
     time: 3h
   playTimeTracker: AntagSamurai
 
+- type: antagSpecifier
+  parent: RestrictedAntag
+  id: Samurai
+  prefRoles: # Starlight
+    - GenericSiliconAntagonist # Starlight
+  spawnerPrototype: SpawnPointSamurai
+  min: 1
+  max: 1
+  pickPlayer: false
+  startingGear: SamuraiGear
+  roleLoadout:
+    - AntagWizardDuelist
+  components:
+    - type: Samurai
+    - type: SamuraiCodes
+    - type: RandomMetadata
+      nameSegments:
+        - NamesSamurai
+        - NamesSamuraiClan
+      nameFormat: name-format-standard
+    - type: ThermalVision # Starlight
+    - type: AutoImplant
+      implants:
+        - DeathAcidifierImplant
+  mindRoles:
+    - MindRoleSamurai
+  tags:
+    - Samurai
+    - CantBecomeRevolutionary
+  briefing:
+    text: samurai-role-greeting
+    color: red
+    sound: /Audio/Misc/ninja_greeting.ogg
+
 - type: startingGear
   id: SamuraiGear
   equipment:

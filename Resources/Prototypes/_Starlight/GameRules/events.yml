@@ -257,30 +257,10 @@
     speciesOverride: Human
     speciesOverrideBlacklist:
   - type: AntagSelection
-    definitions:
-    - spawnerPrototype: SpawnPointSamurai
-      min: 1
-      max: 1
-      pickPlayer: false
-      startingGear: SamuraiGear
-      roleLoadout:
-      - AntagWizardDuelist
-      components:
-      - type: Samurai
-      - type: SamuraiCodes
-      - type: RandomMetadata
-        nameSegments:
-        - NamesSamurai
-        - NamesSamuraiClan
-        nameFormat: name-format-standard
-      mindRoles:
-      - MindRoleSamurai
-      tags:
-        - Samurai
-        - CantBecomeRevolutionary
-      briefing:
-        text: samurai-role-greeting
-        color: red
-        sound: /Audio/Misc/ninja_greeting.ogg
+    agentName: samurai-round-end-agent-name
+    antags:
+      - !type:FixedAntagCount
+        proto: Samurai
+
   - type: DynamicRuleCost
     cost: 100
