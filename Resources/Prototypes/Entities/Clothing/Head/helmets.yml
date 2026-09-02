@@ -569,8 +569,8 @@
   - type: PointLight
     enabled: false
     radius: 1.4
-    energy: 2.5
-    color: red
+    energy: 6.5
+    color: blue
     netsync: false
     mask: /Textures/Effects/LightMasks/double_cone.png
   - type: RotatingLight
