@@ -514,7 +514,7 @@
 
 #Justice Helmet
 - type: entity
-  parent: ClothingHeadHelmetBasic
+  parent: [ClothingHeadHelmetArmoredBase, BaseSecurityContraband]
   id: ClothingHeadHelmetJustice
   name: justice helm
   description: Advanced security gear. Protects the station from ne'er-do-wells.
@@ -554,11 +554,9 @@
         volume: -4
   - type: UseDelay
     delay: 1.0
-    # Starlight begin - redundant button, the normal sec helmet has a light toggle already
-    #  - type: ToggleClothing
-    #    action: ActionToggleJusticeHelm
-    #    mustEquip: false
-    # Starlight end
+  - type: ToggleClothing
+    action: ActionToggleJusticeHelm
+    mustEquip: false
   - type: ItemTogglePointLight
   - type: ToggleableVisuals
     spriteLayer: light
