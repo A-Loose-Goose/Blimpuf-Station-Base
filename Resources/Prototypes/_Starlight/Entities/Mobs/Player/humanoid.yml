@@ -1125,8 +1125,6 @@
       state: TSFOfficer
     - type: RandomHumanoidSpawner
       settings: SamuraiBasic
-      raffle:
-        settings: default
 
 - type: randomHumanoidSettings
   id: SamuraiBasic
@@ -1159,13 +1157,15 @@
       rules: ghost-role-information-antagonist-rules # Starlight
       mindRoles:
       - MindRoleSamurai
+      raffle:
+        settings: default
     - type: Loadout
       prototypes: [SamuraiGear]
       roleLoadout: [RoleSurvivalWizardDuelist]
     - type: RandomMetadata
       nameSegments:
-        - NamesRegalratKingdom
-        - NamesRegalratTitle
-      nameFormat: name-format-ert
+        - NamesSamurai
+        - NamesSamuraiClan
+      nameFormat: name-format-standard
     - type: Samurai
     - type: SamuraiCodes
