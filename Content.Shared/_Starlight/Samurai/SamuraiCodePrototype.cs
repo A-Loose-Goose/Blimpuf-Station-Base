@@ -71,7 +71,7 @@ public partial class SamuraiCode
             CodeName = CodeName,
             CodeDesc = CodeDesc,
             Conflicts = Conflicts,
-            CodeVars = CodeVars
+            CodeVars = new Dictionary<string, string>(CodeVars)
         };
     }
 }
