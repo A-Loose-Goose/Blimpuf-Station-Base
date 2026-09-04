@@ -6017,37 +6017,37 @@ entities:
             4997: 59,34
         - node:
             color: '#FFFFFFFF'
-            id: slsign1
+            id: blsign1
           decals:
             4747: 15,31
         - node:
             color: '#FFFFFFFF'
-            id: slsign2
+            id: blsign2
           decals:
             4748: 16,31
         - node:
             color: '#FFFFFFFF'
-            id: slsign3
+            id: blsign3
           decals:
             4749: 17,31
         - node:
             color: '#FFFFFFFF'
-            id: slsign4
+            id: blsign4
           decals:
             4750: 18,31
         - node:
             color: '#FFFFFFFF'
-            id: slsign5
+            id: blsign5
           decals:
             4751: 19,31
         - node:
             color: '#FFFFFFFF'
-            id: slsign6
+            id: blsign6
           decals:
             4752: 20,31
         - node:
             color: '#FFFFFFFF'
-            id: slsign7
+            id: blsign7
           decals:
             4753: 21,31
         - node:

@@ -4634,17 +4634,17 @@ entities:
           decals:
             4537: -54.04312,34.905552
         - node:
-            id: slsign1
+            id: blsign1
           decals:
             5071: 39,33
         - node:
             color: '#FFFFFFFF'
-            id: slsign2
+            id: blsign2
           decals:
             5072: 40,33
         - node:
             color: '#FFFFFFFF'
-            id: slsign3
+            id: blsign3
           decals:
             5073: 41,33
         - node:

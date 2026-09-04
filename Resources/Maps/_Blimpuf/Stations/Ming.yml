@@ -6589,37 +6589,37 @@ entities:
             5796: 11,-77
         - node:
             color: '#FFFFFFFF'
-            id: slsign1
+            id: blsign1
           decals:
             5620: -61,16
         - node:
             color: '#FFFFFFFF'
-            id: slsign2
+            id: blsign2
           decals:
             5621: -60,16
         - node:
             color: '#FFFFFFFF'
-            id: slsign3
+            id: blsign3
           decals:
             5640: -59,16
         - node:
             color: '#FFFFFFFF'
-            id: slsign4
+            id: blsign4
           decals:
             5641: -58,16
         - node:
             color: '#FFFFFFFF'
-            id: slsign5
+            id: blsign5
           decals:
             5642: -57,16
         - node:
             color: '#FFFFFFFF'
-            id: slsign6
+            id: blsign6
           decals:
             5629: -56,16
         - node:
             color: '#FFFFFFFF'
-            id: slsign7
+            id: blsign7
           decals:
             5630: -55,16
         - node:
