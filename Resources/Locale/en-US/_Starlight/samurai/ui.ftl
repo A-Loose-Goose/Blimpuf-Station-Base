@@ -4,7 +4,7 @@ samurai-codes-update-notify = You feel compelled to check your code of honour.
 
 samurai-codes-ui-verb = Edit Codes
 samurai-codes-admin-ui-title = Edit Codes
-samurai-codes-admin-ui-new-mood = New Code
+samurai-codes-admin-ui-new-code = New Code
 samurai-codes-admin-ui-save = Save
 samurai-code-admin-ui-move-up = Move Up
 samurai-code-admin-ui-move-down = Move Down
