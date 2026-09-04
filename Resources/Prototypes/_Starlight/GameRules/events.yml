@@ -236,7 +236,7 @@
     cost: 125
 
 - type: entity
-  parent: BaseGameRule
+  parent: BaseAntagGhostRoleRule
   id: SamuraiSpawn
   components:
   - type: StationEvent

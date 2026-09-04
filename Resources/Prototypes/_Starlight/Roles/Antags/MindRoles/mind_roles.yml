@@ -49,3 +49,4 @@
     antagPrototype: SamuraiAntag
     roleType: FreeAgent
   - type: Samurai
+  - type: SamuraiRole
