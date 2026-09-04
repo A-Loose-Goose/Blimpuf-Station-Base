@@ -4759,5 +4759,12 @@ Entries:
   id: 13901
   time: '2026-09-02T18:25:51.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/139
+- author: Limerent-Sun
+  changes:
+  - message: NPCs will no longer seek out liquids to satisfy hunger.
+    type: Fix
+  id: 14501
+  time: '2026-09-04T16:25:37.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/145
 Order: -1
 
