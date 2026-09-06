@@ -21,3 +21,9 @@
     whitelist:
       tags:
         - SalvageScrap
+
+- type: entity
+  parent: ScrapBag
+  id: BorgScrapBag
+  name: integrated scrap bag
+  description: A scrap bag built into the frame of a mining cyborg.
