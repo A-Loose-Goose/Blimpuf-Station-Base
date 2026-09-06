@@ -1,7 +1,7 @@
 names-samurai-clan-dataset-1 = Clan Holodragon
 names-samurai-clan-dataset-2 = Clan Holocarp
 names-samurai-clan-dataset-3 = Clan Rainbowcarp
-names-samurai-clan-dataset-4 = Clan Ranbowdragon
+names-samurai-clan-dataset-4 = Clan Rainbowdragon
 names-samurai-clan-dataset-5 = Clan Brokenspider
 names-samurai-clan-dataset-6 = Clan Noble Buffoon
 names-samurai-clan-dataset-7 = Clan Severed Head

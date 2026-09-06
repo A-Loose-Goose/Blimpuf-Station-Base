@@ -1302,12 +1302,12 @@
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetHardsuitSamurai
-  name: Samurai Hardsuit Helmet
+  name: red samurai hardsuit helmet
   components:
     - type: Sprite
-      sprite: _Starlight/Clothing/Head/Hardsuits/samurai.rsi
+      sprite: _Blimpuf/Clothing/Head/Hardsuits/samurai-red.rsi
     - type: Clothing
-      sprite: _Starlight/Clothing/Head/Hardsuits/samurai.rsi
+      sprite: _Blimpuf/Clothing/Head/Hardsuits/samurai-red.rsi
     - type: PressureProtection
       highPressureMultiplier: 0.45
       lowPressureMultiplier: 10000
@@ -1318,3 +1318,33 @@
           Slash: 0.9
           Piercing: 0.9
           Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHelmetHardsuitSamurai
+  id: ClothingHeadHelmetHardsuitBlueSamurai
+  name: blue samurai hardsuit helmet
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Clothing/Head/Hardsuits/samurai-blue.rsi
+    - type: Clothing
+      sprite: _Blimpuf/Clothing/Head/Hardsuits/samurai-blue.rsi
+
+- type: entity
+  parent: ClothingHeadHelmetHardsuitSamurai
+  id: ClothingHeadHelmetHardsuitGreenSamurai
+  name: green samurai hardsuit helmet
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Clothing/Head/Hardsuits/samurai-green.rsi
+    - type: Clothing
+      sprite: _Blimpuf/Clothing/Head/Hardsuits/samurai-green.rsi
+
+- type: entity
+  parent: ClothingHeadHelmetHardsuitSamurai
+  id: ClothingHeadHelmetHardsuitPurpleSamurai
+  name: purple samurai hardsuit helmet
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Clothing/Head/Hardsuits/samurai-purple.rsi
+    - type: Clothing
+      sprite: _Blimpuf/Clothing/Head/Hardsuits/samurai-purple.rsi

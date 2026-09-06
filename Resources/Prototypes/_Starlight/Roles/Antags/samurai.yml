@@ -45,8 +45,8 @@
   id: SamuraiGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitKimono
-    shoes: ClothingShoesWizard
+    shoes: ClothingShoesSamurai
     id: SamuraiPDA
     ears: ClothingHeadsetFreelance
     belt: SamuraiElectrodachiSheathFilled
-    back: Katana
+    back: ClothingBackpackSatchelLeather
