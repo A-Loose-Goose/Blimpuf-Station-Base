@@ -47737,28 +47737,28 @@ entities:
     - type: Transform
       pos: 1.6343083,32.799072
       parent: 1
-- proto: RubberStampCAD
+- proto: RubberStampCDAA
   entities:
   - uid: 6904
     components:
     - type: Transform
       pos: -1.3751099,32.799072
       parent: 1
-- proto: RubberStampCCD
+- proto: RubberStampCDL
   entities:
   - uid: 6905
     components:
     - type: Transform
       pos: -1.3843691,32.493515
       parent: 1
-- proto: RubberStampCDD
+- proto: RubberStampCDGS
   entities:
   - uid: 6906
     components:
     - type: Transform
       pos: -1.1251099,32.799072
       parent: 1
-- proto: RubberStampCED
+- proto: RubberStampCDE
   entities:
   - uid: 6907
     components:
@@ -47772,21 +47772,21 @@ entities:
     - type: Transform
       pos: -0.32881355,32.66944
       parent: 1
-- proto: RubberStampCMD
+- proto: RubberStampCDHM
   entities:
   - uid: 6910
     components:
     - type: Transform
       pos: -0.8658507,32.55833
       parent: 1
-- proto: RubberStampCRD
+- proto: RubberStampCDR
   entities:
   - uid: 6911
     components:
     - type: Transform
       pos: -0.6251099,32.80833
       parent: 1
-- proto: RubberStampCSD
+- proto: RubberStampCDSW
   entities:
   - uid: 6912
     components:

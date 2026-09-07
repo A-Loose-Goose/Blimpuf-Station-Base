@@ -70,93 +70,93 @@
       sprite: _Starlight/Objects/Misc/stamps.rsi
       state: stamp-brigmedic
 
-# CC Division Stamps
+# CC Department Stamps
 - type: entity
-  name: central administration division rubber stamp
+  name: central administrative department rubber stamp
   parent: RubberStampBase
-  id: RubberStampCAD
+  id: RubberStampCDAA
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Administration Division"
+    stampedName: "Central Administrative Department"
     stampedColor: "#1155CC"
     stampState: "paper_stamp-cap"
   - type: Sprite
     state: stamp-cap
 
 - type: entity
-  name: central cargo division rubber stamp
+  name: central logistics division rubber stamp
   parent: RubberStampBase
-  id: RubberStampCCD
+  id: RubberStampCDL
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Cargo Division"
+    stampedName: "Central Logistics Department"
     stampedColor: "#9e794a"
     stampState: "paper_stamp-qm"
   - type: Sprite
     state: stamp-detective
 
 - type: entity
-  name: central engineering division rubber stamp
+  name: central engineering department rubber stamp
   parent: RubberStampBase
-  id: RubberStampCED
+  id: RubberStampCDE
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Engineering Division"
+    stampedName: "Central Engineering Department"
     stampedColor: "#e39919"
     stampState: "paper_stamp-ntrep"
   - type: Sprite
     state: stamp-ce
 
 - type: entity
-  name: central medical division rubber stamp
+  name: central medicine department rubber stamp
   parent: RubberStampBase
-  id: RubberStampCMD
+  id: RubberStampCDHM
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Medical Division"
+    stampedName: "Central Medicine Department"
     stampedColor: "#0AAFC3"
     stampState: "paper_stamp-cmo"
   - type: Sprite
     state: stamp-cmo
 
 - type: entity
-  name: central research division rubber stamp
+  name: central research department rubber stamp
   parent: RubberStampBase
-  id: RubberStampCRD
+  id: RubberStampCDR
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Research Division"
+    stampedName: "Central Research Department"
     stampedColor: "#9900FF"
     stampState: "paper_stamp-rd"
   - type: Sprite
     state: stamp-wizard
 
 - type: entity
-  name: central domestic division rubber stamp
+  name: central services department rubber stamp
   parent: RubberStampBase
-  id: RubberStampCDD
+  id: RubberStampCDGS
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Domestic Division"
+    stampedName: "Central Services Department"
     stampedColor: "#6AA84F"
     stampState: "paper_stamp-centcom"
   - type: Sprite
     state: stamp-centcom
 
 - type: entity
-  name: central security division rubber stamp
+  name: central security department rubber stamp
   parent: RubberStampBase
-  id: RubberStampCSD
+  id: RubberStampCDSW
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Security Division"
+    stampedName: "Central Security Department"
     stampedColor: "#2c6682"
     stampState: "paper_stamp-hos"
   - type: Sprite
@@ -179,13 +179,13 @@
         storagebase: !type:AllSelector
           children:
             - id: RubberStampCentcom
-            - id: RubberStampCAD
-            - id: RubberStampCCD
-            - id: RubberStampCED
-            - id: RubberStampCMD
-            - id: RubberStampCRD
-            - id: RubberStampCDD
-            - id: RubberStampCSD
+            - id: RubberStampCDAA
+            - id: RubberStampCDL
+            - id: RubberStampCDE
+            - id: RubberStampCDHM
+            - id: RubberStampCDR
+            - id: RubberStampCDGS
+            - id: RubberStampCDSW
     - type: Sprite
       sprite: _Starlight/Objects/Storage/boxes.rsi
       layers:

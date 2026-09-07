@@ -31,9 +31,9 @@
     - RubberStampCentcom
     - MindShieldImplanter
 
-# Central Domestic Division CDD
+# Central Department of Guest Services CDGS
 - type: startingGear
-  id: CentralDomesticDivisionGear
+  id: CentralGuestServicesDepartmentGear
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommResearchFormalWear
     back: ClothingBackpackSatchelCentcomm
@@ -46,12 +46,12 @@
     pocket2: BoxFolderCentComClipboardEmpty
   storage:
     back:
-    - RubberStampCRD
+    - RubberStampCDGS
     - MindShieldImplanter
 
-# Central Administration Division CAD
+# Central Department of Administrative Action CDAA
 - type: startingGear
-  id: CentralAdministrationDivisionGear
+  id: CentralAdministrativeDepartmentGear
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommAdminFormalWear
     back: ClothingBackpackSatchelCentcomm
@@ -65,10 +65,10 @@
     pocket2: BoxFolderCentComClipboardEmpty
   storage:
     back:
-    - RubberStampCAD
+    - RubberStampCDAA
     - MindShieldImplanter
 
-# Central Cargo Division CCD
+# Central Department of Logistics CDL
 - type: startingGear
   id: CentralCargoDivisionGear
   equipment:
@@ -83,12 +83,12 @@
     pocket2: BoxFolderCentComClipboardEmpty
   storage:
     back:
-    - RubberStampCCD
+    - RubberStampCDL
     - MindShieldImplanter
 
-# Central Engineering Division CED
+# Central Department of Engineering CDE
 - type: startingGear
-  id: CentralEngineeringDivisionGear
+  id: CentralEngineeringDepartmentGear
   equipment:
     jumpsuit: ClothingUniformJumpskirtEngiCentcommFormalWear
     back: ClothingBackpackSatchelCentcomm
@@ -103,12 +103,12 @@
     pocket2: BoxFolderCentComClipboardEmpty
   storage:
     back:
-    - RubberStampCED
+    - RubberStampCDE
     - MindShieldImplanter
 
-# Central Medical Division CMD
+# Central Department of Health and Medicine CDHM
 - type: startingGear
-  id: CentralMedicalDivisionGear
+  id: CentralMedicineDepartmentGear
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommMedFormalWear
     back: ClothingBackpackSatchelCentcomm
@@ -121,12 +121,12 @@
     pocket2: BoxFolderCentComClipboardEmpty
   storage:
     back:
-    - RubberStampCMD
+    - RubberStampCDHM
     - MindShieldImplanter
 
-# Central Research Division CRD
+# Central Department of Research CRD
 - type: startingGear
-  id: CentralResearchDivisionGear
+  id: CentralResearchDepartmentGear
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommResearchFormalWear
     back: ClothingBackpackSatchelCentcomm
@@ -140,12 +140,12 @@
     pocket2: BoxFolderCentComClipboardEmpty
   storage:
     back:
-    - RubberStampCRD
+    - RubberStampCDR
     - MindShieldImplanter
 
-# Central Security Division CSD
+# Central Department of Security and Welfare CDSW
 - type: startingGear
-  id: CentralSecurityDivisionGear
+  id: CentralSecurityDepartmentGear
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommSecurityFormalWear
     back: ClothingBackpackSatchelCentcomm
@@ -160,7 +160,7 @@
     pocket2: BoxFolderCentComClipboardEmpty
   storage:
     back:
-    - RubberStampCSD
+    - RubberStampCDSW
     - MindShieldImplanter
 
 
