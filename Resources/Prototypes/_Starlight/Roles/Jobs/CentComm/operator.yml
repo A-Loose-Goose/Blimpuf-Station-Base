@@ -106,24 +106,6 @@
     - RubberStampCED
     - MindShieldImplanter
 
-# Central Intelligence Division CID
-- type: startingGear
-  id: CentralIntelligenceDivisionGear
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtCentcommIntelFormalWear
-    back: ClothingBackpackSatchelCentcomm
-    shoes: ClothingShoesBootsLaceup
-    gloves: ClothingHandsGlovesColorBlack
-    eyes: ClothingEyesGlassesCentComm
-    id: CentcomPDA
-    ears: ClothingHeadsetAltCentCom
-    pocket1: WeaponPistolN1984
-    pocket2: BoxFolderCentComClipboardEmpty
-  storage:
-    back:
-    - RubberStampCID
-    - MindShieldImplanter
-
 # Central Medical Division CMD
 - type: startingGear
   id: CentralMedicalDivisionGear
@@ -181,23 +163,5 @@
     - RubberStampCSD
     - MindShieldImplanter
 
-# Central Special Operations Division CSOD
-- type: startingGear
-  id: CentralSpecialOperationsDivisionGear
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtCentcommSpecialOpsFormalWear
-    back: ClothingBackpackSatchelCentcomm
-    shoes: ClothingShoesBootsCombatFilled
-    eyes: ClothingEyesGlassesCentComm
-    gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterArmorCentcommCarapace
-    id: CentcomPDA
-    ears: ClothingHeadsetAltCentCom
-    belt: CentcommVibrobladeSheathFilled
-    pocket1: WeaponPistolN1984
-    pocket2: BoxFolderCentComClipboardEmpty
-  storage:
-    back:
-    - RubberStampCSOD
-    - MindShieldImplanter
+
 
