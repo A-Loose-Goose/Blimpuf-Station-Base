@@ -70,7 +70,7 @@
 
 # Central Department of Logistics CDL
 - type: startingGear
-  id: CentralCargoDivisionGear
+  id: CentralLogisticsDepartmentGear
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommCargoFormalWear
     back: ClothingBackpackSatchelCentcomm
