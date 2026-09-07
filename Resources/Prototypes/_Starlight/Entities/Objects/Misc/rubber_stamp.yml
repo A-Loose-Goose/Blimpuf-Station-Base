@@ -85,7 +85,7 @@
     state: stamp-cap
 
 - type: entity
-  name: central logistics division rubber stamp
+  name: central logistics department rubber stamp
   parent: RubberStampBase
   id: RubberStampCDL
   categories: [ DoNotMap ]
