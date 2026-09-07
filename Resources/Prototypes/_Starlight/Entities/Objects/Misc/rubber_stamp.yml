@@ -111,19 +111,6 @@
     state: stamp-ce
 
 - type: entity
-  name: central intelligence division rubber stamp
-  parent: RubberStampBase
-  id: RubberStampCID
-  categories: [ DoNotMap ]
-  components:
-  - type: Stamp
-    stampedName: "Central Intelligence Division"
-    stampedColor: "#660089"
-    stampState: "paper_stamp-rd"
-  - type: Sprite
-    state: stamp-rd
-
-- type: entity
   name: central medical division rubber stamp
   parent: RubberStampBase
   id: RubberStampCMD
@@ -163,20 +150,6 @@
     state: stamp-centcom
 
 - type: entity
-  name: central special operations division rubber stamp
-  parent: RubberStampBase
-  id: RubberStampCSOD
-  suffix: DO NOT MAP
-  components:
-  - type: Stamp
-    stampedName: "Central Special Operations Division"
-    stampedColor: "#ad2a6b"
-    stampState: "paper_stamp-csop"
-  - type: Sprite
-    sprite: _Starlight/Objects/Misc/stamps.rsi
-    state: stamp-csop
-
-- type: entity
   name: central security division rubber stamp
   parent: RubberStampBase
   id: RubberStampCSD
@@ -209,11 +182,9 @@
             - id: RubberStampCAD
             - id: RubberStampCCD
             - id: RubberStampCED
-            - id: RubberStampCID
             - id: RubberStampCMD
             - id: RubberStampCRD
             - id: RubberStampCDD
-            - id: RubberStampCSOD
             - id: RubberStampCSD
     - type: Sprite
       sprite: _Starlight/Objects/Storage/boxes.rsi

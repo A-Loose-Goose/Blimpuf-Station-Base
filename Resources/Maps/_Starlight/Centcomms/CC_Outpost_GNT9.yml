@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/08/2026 22:41:22
-  entityCount: 8701
+  entityCount: 8699
 maps: []
 grids:
 - 1
@@ -47772,13 +47772,6 @@ entities:
     - type: Transform
       pos: -0.32881355,32.66944
       parent: 1
-- proto: RubberStampCID
-  entities:
-  - uid: 6909
-    components:
-    - type: Transform
-      pos: -0.8751099,32.799072
-      parent: 1
 - proto: RubberStampCMD
   entities:
   - uid: 6910
@@ -47799,13 +47792,6 @@ entities:
     components:
     - type: Transform
       pos: -0.60659134,32.56759
-      parent: 1
-- proto: RubberStampCSOD
-  entities:
-  - uid: 6913
-    components:
-    - type: Transform
-      pos: -1.6158507,32.66944
       parent: 1
 - proto: RubberStampDeferToCommand
   entities:
