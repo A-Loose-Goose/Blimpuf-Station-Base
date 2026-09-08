@@ -1,7 +1,7 @@
 - type: contrabandTier
   id: Tier1
   level: 1
-  descriptor: contraband-tier
+  descriptor: contraband-tier-1
   color: "#f5d142"
 
 - type: contrabandTier
