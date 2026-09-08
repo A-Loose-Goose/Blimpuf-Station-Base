@@ -3,8 +3,5 @@
   abstract: true
   components:
   - type: Contraband
-    severity: MedTak
-
-- type: contrabandSeverity
-  id: MedTak
-  examineText: contraband-examine-text-medtak
+    tier: Tier1 # Blimpuf
+    contrabandType: MedTak # Blimpuf

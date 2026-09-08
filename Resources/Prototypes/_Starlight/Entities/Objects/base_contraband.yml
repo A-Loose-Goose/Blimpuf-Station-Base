@@ -3,7 +3,8 @@
   abstract: true
   components:
   - type: Contraband
-    severity: Soviet
+    tier: Tier3 # Blimpuf
+    contrabandType: Soviet # Blimpuf
 
 - type: entity
   id: BaseTSFContraband
@@ -11,7 +12,8 @@
   components:
   - type: Contraband
     allowedDepartments: [ TSF ]
-    severity: TSF
+    tier: Tier3 # Blimpuf
+    contrabandType: TSF # Blimpuf
 
 # Roboticist
 - type: entity
@@ -28,7 +30,8 @@
   abstract: true
   components:
   - type: Contraband
-    severity: AdvancedCyberlimbs
+    tier: Tier3 # Blimpuf
+    contrabandType: Cybernetic # Blimpuf
 
 - type: entity
   id: BaseSalvageContraband
@@ -174,7 +177,7 @@
   abstract: true
   components:
   - type: Contraband
-    severity: GrandTheft
+    tier: Tier3 # Blimpuf
     allowedDepartments: [ Command ]
     allowedJobs: [ Warden ]
 
@@ -183,7 +186,7 @@
   abstract: true
   components:
   - type: Contraband
-    severity: GrandTheft
+    tier: Tier3 # Blimpuf
     allowedDepartments: [ Command ]
     allowedJobs: [ Detective ]
 

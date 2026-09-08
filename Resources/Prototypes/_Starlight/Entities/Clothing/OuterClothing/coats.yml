@@ -9,7 +9,7 @@
         Cold: 0.9
 
 - type: entity
-  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing, BaseBlueShieldContraband]
+  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing, BaseBlueShieldContraband, BaseContrabandTier2] # Blimpuf
   id: ClothingOuterCoatBlueShield
   name: enforcer's overcoat
   description: A coat worn by Central Command Enforcement Officers who don't mind a little cold. Heavily reinforced, for when diplomacy won't cut it.
@@ -133,7 +133,7 @@
   name: senior chemist lab coat
 
 - type: entity
-  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing, BaseSecurityContraband, ClothingOuterWinterCoatToggleable]
+  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing, BaseSecurityContraband, ClothingOuterWinterCoatToggleable, BaseContrabandTier2] # Blimpuf
   id: ClothingOuterCoatCorpsman
   name: corpsman's armored jacket
   description: Stylish black and red jacket, with tacticooly placed armor plating.
@@ -170,7 +170,7 @@
     zombificationResistanceCoefficient: 0.75
 
 - type: entity
-  parent: [ClothingOuterStorageFoldableBase, AllowSuitStorageClothing, BaseSecurityContraband]
+  parent: [ClothingOuterStorageFoldableBase, AllowSuitStorageClothing, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   id: ClothingOuterCoatLabBrigmedic
   name: brigmedic's reminisced overcoat
   description: A labcoat from reminisced, peaceful days. It's been reinforced several times over.
@@ -199,7 +199,7 @@
   name: brigmedic's reminisced overcoat
 
 - type: entity
-  parent: [ClothingOuterStorageFoldableBase, AllowSuitStorageClothing, BaseSecurityContraband]
+  parent: [ClothingOuterStorageFoldableBase, AllowSuitStorageClothing, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   id: ClothingOuterCoatLabCorpsman
   name: corpsman's nostalgic overcoat
   description: A dark labcoat that's been reinforced several times over. Peaceful days died.

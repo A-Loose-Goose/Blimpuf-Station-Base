@@ -1,6 +1,6 @@
 - type: entity
   name: enforcer stun baton
-  parent: [ Stunbaton, BaseSecurityContraband ]
+  parent: [ Stunbaton, BaseSecurityContraband, BaseContrabandTier2 ] # Blimpuf
   id: EnforcerStunbaton
   components:
   - type: Sprite

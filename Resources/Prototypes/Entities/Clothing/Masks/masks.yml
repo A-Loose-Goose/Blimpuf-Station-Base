@@ -429,7 +429,7 @@
   #endregion Starlight
 
 - type: entity
-  parent: [ ClothingMaskGas, BaseSecurityContraband ]
+  parent: [ ClothingMaskGas, BaseSecurityContraband, BaseContrabandTier2 ] # Blimpuf
   id: ClothingMaskGasSwat
   name: swat gas mask
   description: A elite issue Security gas mask.
