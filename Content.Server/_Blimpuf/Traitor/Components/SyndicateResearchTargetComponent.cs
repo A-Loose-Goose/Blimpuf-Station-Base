@@ -1,7 +1,6 @@
 using Content.Shared._Blimpuf.Antags.Traitor;
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization;
 
 namespace Content.Server._Blimpuf.Traitor.Components;
 

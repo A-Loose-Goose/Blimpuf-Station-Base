@@ -2,7 +2,6 @@ using System.Linq;
 using Content.Server._Blimpuf.Traitor.Components;
 using Content.Server.Chat.Systems;
 using Content.Server.Popups;
-using Content.Server.SyndicateResearch;
 using Content.Shared._Blimpuf.Antags.Traitor.Components;
 using Content.Shared._Starlight.Antags.Traitor;
 using Content.Shared.DoAfter;
