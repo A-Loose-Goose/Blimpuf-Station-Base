@@ -38,7 +38,7 @@
 - type: entity
   id: SpeedLoaderShotgunEmpty
   name: 12 gauge speedloader
-  parent: [ BaseSpeedLoaderShotgun, BaseSecuritySalvageContraband, BaseContrabandTier3 ] # Blimpuf
+  parent: [ BaseSpeedLoaderShotgun, BaseSecurityContraband, BaseSalvageContraband, BaseContrabandTier3 ] # Blimpuf
   components:
   - type: BallisticAmmoProvider
     proto: null
@@ -74,7 +74,7 @@
 - type: entity
   id: SpeedLoaderShotgunBeanbag
   name: 12 gauge beanbag speedloader
-  parent: [ BaseSpeedLoaderShotgun, BaseSecurityBartenderContraband, BaseContrabandTier2 ] # Blimpuf
+  parent: [ BaseSpeedLoaderShotgun, BaseSecurityContraband, BaseBartenderContraband, BaseContrabandTier2 ] # Blimpuf
   components:
   - type: BallisticAmmoProvider
     proto: ShellShotgunBeanbag
@@ -128,7 +128,7 @@
 - type: entity
   id: SpeedLoaderShotgunBirdshot
   name: 12 gauge birdshot speedloader
-  parent: [ BaseSpeedLoaderShotgun, BaseSecuritySalvageContraband, BaseContrabandTier3 ] # Blimpuf
+  parent: [ BaseSpeedLoaderShotgun, BaseSecurityContraband, BaseSalvageContraband, BaseContrabandTier3 ] # Blimpuf
   components:
   - type: BallisticAmmoProvider
     proto: ShellShotgunBirdshot

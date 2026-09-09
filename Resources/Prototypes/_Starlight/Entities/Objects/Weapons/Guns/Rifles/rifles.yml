@@ -25,7 +25,7 @@
 
 - type: entity
   name: lr-30
-  parent: [BaseItem, BaseGunWieldable, BaseSecuritySalvageContraband, BaseContrabandTier3] # Blimpuf
+  parent: [BaseItem, BaseGunWieldable, BaseSecurityContraband, BaseSalvageContraband, BaseContrabandTier3] # Blimpuf
   id: WeaponLr30
   description: Energy carbine with lethal mode.
   components:

@@ -124,7 +124,7 @@
 
 #Salvage Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseSalvageMiningContraband] # Starlight
+  parent: [ClothingOuterHardsuitBase, BaseSalvageContraband, BaseMiningContraband] # Starlight
   id: ClothingOuterHardsuitSalvage
   name: salvage hardsuit # Starlight - rename for mining hardsuit addition
   description: A special suit that protects against hazardous, low pressure environments. Has reinforced plating for wildlife encounters.

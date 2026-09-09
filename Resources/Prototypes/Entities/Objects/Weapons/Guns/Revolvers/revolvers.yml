@@ -67,7 +67,7 @@
 
 - type: entity
   name: deckard # Starlight, capitalization
-  parent: [BaseWeaponRevolver, BaseSecurityCommandContraband, BaseContrabandTier3] # Blimpuf
+  parent: [BaseWeaponRevolver, BaseSecurityContraband, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   id: WeaponRevolverDeckard
   description: A beautifully machined, custom-built revolver. Used when there is no time for the Voight-Kampff test. Loads 6 rounds of .45 magnum. # Starlight, 5 -> 6
   components:

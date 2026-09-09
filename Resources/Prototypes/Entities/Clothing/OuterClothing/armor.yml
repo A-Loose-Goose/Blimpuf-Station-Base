@@ -29,7 +29,7 @@
 
 #Standard armor vest, allowed for security and bartenders
 - type: entity
-  parent: [ BaseSecurityBartenderContraband, ClothingOuterArmorBase, BaseContrabandTier2] # Blimpuf
+  parent: [ BaseSecurityContraband, BaseBartenderContraband, ClothingOuterArmorBase, BaseContrabandTier2] # Blimpuf
   id: ClothingOuterArmorBasic
   components:
   - type: Tag

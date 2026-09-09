@@ -450,7 +450,7 @@
 
 #Mining Specialist Advanced hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseSalvageMiningContraband]
+  parent: [ClothingOuterHardsuitBase, BaseSalvageContraband, BaseMiningContraband]
   id: ClothingOuterHardsuitAdvancedMining
   name: advanced mining hardsuit
   description: An advanced jetpack-equipped hardsuit designed for mining operations.
@@ -517,7 +517,7 @@
 
 #Mining Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseSalvageMiningContraband]
+  parent: [ClothingOuterHardsuitBase, BaseSalvageContraband, BaseMiningContraband]
   id: ClothingOuterHardsuitMining
   name: mining hardsuit
   description: A special suit that protects against hazardous, low pressure environments encountered during space mining.

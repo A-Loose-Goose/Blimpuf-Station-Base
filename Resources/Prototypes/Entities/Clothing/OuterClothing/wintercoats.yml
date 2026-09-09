@@ -395,7 +395,7 @@
 
 ##########################################################
 - type: entity
-  parent: [ClothingOuterArmorHoS, ClothingOuterWinterCoatToggleable, BaseSecurityCommandContraband, BaseContrabandTier2] # Blimpuf
+  parent: [ClothingOuterArmorHoS, ClothingOuterWinterCoatToggleable, BaseSecurityContraband, BaseCommandContraband, BaseContrabandTier2] # Blimpuf
   id: ClothingOuterWinterHoS
   name: head of security's armored winter coat
   suffix: Armored #SL Edit
@@ -424,7 +424,7 @@
 ##########################################################
 
 - type: entity
-  parent: [ClothingOuterWinterCoatToggleable, BaseSecurityCommandContraband]
+  parent: [ClothingOuterWinterCoatToggleable, BaseSecurityContraband, BaseCommandContraband]
   id: ClothingOuterWinterHoSUnarmored
   name: head of security's winter coat
   suffix: Unarmored #SL Edit

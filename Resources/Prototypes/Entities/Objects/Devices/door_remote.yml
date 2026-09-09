@@ -110,7 +110,7 @@
     - Security
 
 - type: entity
-  parent: [DoorRemoteDefault, BaseSecurityCommandContraband]
+  parent: [DoorRemoteDefault, BaseSecurityContraband, BaseCommandContraband]
   id: DoorRemoteArmory
   name: armory door remote
   components:

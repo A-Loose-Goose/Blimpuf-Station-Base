@@ -172,6 +172,10 @@ public sealed class ContrabandTest : GameTest
         });
     }
 
+    [TestCase("EncryptionKeyStationMaster", "Tier4", "CentralCommand", false, new[] { "Command", "CentralCommand" }, new string[0])]
+    [TestCase("WeaponEnergyShotgun", "Tier3", null, false, new[] { "Command" }, new[] { "Warden" })]
+    [TestCase("WeaponEnergyMagnum", "Tier3", null, false, new[] { "Command" }, new[] { "Detective" })]
+    [TestCase("ClothingHandsMercGlovesCombat", "Tier2", null, false, new[] { "Engineering", "Security", "Command" }, new[] { "SalvageSpecialist", "SalvageLead", "MiningSpecialist" })]
     [TestCase("EncryptionKeySecurity", "Tier1", null, false, new[] { "Security" }, new[] { "IAA" })]
     [TestCase("Stunbaton", "Tier2", null, false, new[] { "Security" }, new string[0])]
     [TestCase("WeaponPistolMk58Nonlethal", "Tier3", null, true, new[] { "Security" }, new[] { "SalvageSpecialist", "SalvageLead" })]

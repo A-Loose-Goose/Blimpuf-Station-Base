@@ -411,7 +411,7 @@
 
 - type: entity
   name: immolator laser gun
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecuritySalvageContraband, BaseContrabandTier3] # Blimpuf
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband, BaseSalvageContraband, BaseContrabandTier3] # Blimpuf
   id: WeaponLaserImmolator
   description: An irregular, unstable firearm. It remains warm to the touch long after it has finished firing.
   components:
