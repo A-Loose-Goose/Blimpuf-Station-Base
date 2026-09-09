@@ -21,6 +21,7 @@
     HandLabeler: 2
     #added law encryption key for starlight
     EncryptionKeyCorporate: 1
+    GavelHammer: 3
   contrabandInventory:
     ClothingOuterRobesJudge: 1
     ClothingHeadHatPwig: 1
