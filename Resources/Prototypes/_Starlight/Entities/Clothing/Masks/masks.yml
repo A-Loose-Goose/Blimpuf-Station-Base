@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ ClothingMaskGas, BaseBlueShieldContraband ]
+  parent: [ ClothingMaskGas, BaseBlueShieldContraband, BaseContrabandTier2 ]
   id: ClothingMaskGasCCE
   name: enforcer's gas mask
   description: An elite issue gas mask made by Central Command. Now in green!
