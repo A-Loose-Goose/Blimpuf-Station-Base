@@ -35,7 +35,7 @@
 - type: startingGear
   id: CentralGuestServicesDepartmentGear
   equipment:
-    jumpsuit: ClothingUniformJumpskirtCentcommResearchFormalWear
+    jumpsuit: ClothingUniformJumpskirtCentcommDomesticFormalWear
     back: ClothingBackpackSatchelCentcomm
     shoes: ClothingShoesBootsLaceup
     eyes: ClothingEyesGlassesCentComm
