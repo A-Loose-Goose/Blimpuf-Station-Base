@@ -4766,5 +4766,15 @@ Entries:
   id: 14501
   time: '2026-09-04T16:25:37.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/145
+- author: ItsMaitake
+  changes:
+  - message: Scrap Bag and Scrap Bag of Holding have been added, which can magnet
+      pick up scrap!
+    type: Add
+  - message: Salvage Scrap items that can be found on wrecks now drop salvage tickets.
+    type: Tweak
+  id: 14801
+  time: '2026-09-09T01:46:05.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/148
 Order: -1
 
