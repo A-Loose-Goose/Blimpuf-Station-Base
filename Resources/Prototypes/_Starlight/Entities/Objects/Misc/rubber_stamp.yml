@@ -72,91 +72,91 @@
 
 # CC Department Stamps
 - type: entity
-  name: central administrative department rubber stamp
+  name: central department of administrative action rubber stamp
   parent: RubberStampBase
   id: RubberStampCDAA
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Administrative Department"
+    stampedName: "Central Department of Administrative Action"
     stampedColor: "#1155CC"
     stampState: "paper_stamp-cap"
   - type: Sprite
     state: stamp-cap
 
 - type: entity
-  name: central logistics department rubber stamp
+  name: central department of logistics rubber stamp
   parent: RubberStampBase
   id: RubberStampCDL
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Logistics Department"
+    stampedName: "Central Department of Logistics"
     stampedColor: "#9e794a"
     stampState: "paper_stamp-qm"
   - type: Sprite
     state: stamp-detective
 
 - type: entity
-  name: central engineering department rubber stamp
+  name: central department of engineering rubber stamp
   parent: RubberStampBase
   id: RubberStampCDE
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Engineering Department"
+    stampedName: "Central Department of Engineering"
     stampedColor: "#e39919"
     stampState: "paper_stamp-ntrep"
   - type: Sprite
     state: stamp-ce
 
 - type: entity
-  name: central medicine department rubber stamp
+  name: central department of health and medicine rubber stamp
   parent: RubberStampBase
   id: RubberStampCDHM
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Medicine Department"
+    stampedName: "Central Department of Health and Medicine"
     stampedColor: "#0AAFC3"
     stampState: "paper_stamp-cmo"
   - type: Sprite
     state: stamp-cmo
 
 - type: entity
-  name: central research department rubber stamp
+  name: central department of research rubber stamp
   parent: RubberStampBase
   id: RubberStampCDR
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Research Department"
+    stampedName: "Central Department of Research"
     stampedColor: "#9900FF"
     stampState: "paper_stamp-rd"
   - type: Sprite
     state: stamp-wizard
 
 - type: entity
-  name: central services department rubber stamp
+  name: central department of guest services rubber stamp
   parent: RubberStampBase
   id: RubberStampCDGS
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Services Department"
+    stampedName: "Central Department of Guest Services"
     stampedColor: "#6AA84F"
     stampState: "paper_stamp-centcom"
   - type: Sprite
     state: stamp-centcom
 
 - type: entity
-  name: central security department rubber stamp
+  name: central department of security and welfare rubber stamp
   parent: RubberStampBase
   id: RubberStampCDSW
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Security Department"
+    stampedName: "Central Department of Security and Welfare"
     stampedColor: "#2c6682"
     stampState: "paper_stamp-hos"
   - type: Sprite
