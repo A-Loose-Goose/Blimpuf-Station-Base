@@ -224,6 +224,8 @@
   name: SSF marine goggles
   description: The iconic soviet goggles, in use broadly by the soviet forces throughout.
   components:
+    - type: Contraband # Blimpuf
+      tier: Tier3
     - type: Sprite
       sprite: _Starlight/Clothing/Eyes/Soviet/marine_goggles.rsi
     - type: Clothing

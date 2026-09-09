@@ -3,7 +3,7 @@
   abstract: true
   components:
   - type: Contraband
-    tier: Tier3 # Blimpuf
+    # Blimpuf: classify origin only; equipment supplies its own tier when above Tier1.
     contrabandType: Soviet # Blimpuf
 
 - type: entity

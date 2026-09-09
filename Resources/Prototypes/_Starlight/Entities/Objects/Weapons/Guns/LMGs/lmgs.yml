@@ -59,7 +59,7 @@
 - type: entity
   name: DP-28 LMG
   id: WeaponLightMachineGunDP28
-  parent: [BaseWeaponLightMachineGun, BaseSovietContraband]
+  parent: [BaseWeaponLightMachineGun, BaseSovietContraband, BaseContrabandTier3] # Blimpuf
   description: From RA-TA-TA-TA with love. Uses .30 ammo.
   components:
   - type: Sprite

@@ -119,7 +119,7 @@
 #PPSH
 - type: entity
   name: PPSH 59 SMG
-  parent: [BaseWeaponSubMachineGun, BaseSovietContraband]
+  parent: [BaseWeaponSubMachineGun, BaseSovietContraband, BaseContrabandTier3] # Blimpuf
   id: WeaponSubMachineGunPPSH
   description: Beloved by USSP veterans and feared by friendly fire protocols everywhere. Uses .35 ammo.
   components:

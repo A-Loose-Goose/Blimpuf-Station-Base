@@ -83,7 +83,7 @@
 
 - type: entity
   name: AKMS
-  parent: [ BaseWeaponRifle, BaseSovietContraband ]
+  parent: [ BaseWeaponRifle, BaseSovietContraband, BaseContrabandTier3 ] # Blimpuf
   id: WeaponRifleAk
   description: A somewhat battered combat rifle of a design originating from old Terra. Favored by criminals, militias, and terrorists due to its famed reliability and easy-to-manufacture design. Feeds from .30 rifle magazines.
   components:

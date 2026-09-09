@@ -46,6 +46,8 @@
   name: soviet encryption key
   description: Priyom. Priyom.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier3
   - type: EncryptionKey
     channels:
     - Soviet

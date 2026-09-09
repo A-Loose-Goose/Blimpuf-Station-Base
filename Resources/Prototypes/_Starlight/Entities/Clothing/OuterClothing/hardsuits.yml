@@ -272,6 +272,8 @@
   name: SSF marine hardsuit
   description: SMIRNO!
   components:
+    - type: Contraband # Blimpuf
+      tier: Tier3
     - type: Sprite
       sprite: _Starlight/Clothing/OuterClothing/Hardsuits/sovietmarine.rsi
     - type: Clothing

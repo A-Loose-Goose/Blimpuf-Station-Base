@@ -203,7 +203,7 @@
     state: poster17_contraband
 
 - type: entity
-  parent: PosterBase
+  parent: [PosterBase, BaseSovietContraband] # Blimpuf
   id: PosterContrabandCommunistState
   name: "Communist State"
   description: "All hail the Communist party!"

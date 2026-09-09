@@ -4,6 +4,8 @@
   name: old war uniform
   description: Relics of war, many of which have laid the foundation of the USSP. Wearing this may cause unsolicited war stories.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier3
   - type: Sprite
     sprite: _Starlight/Clothing/Uniforms/Jumpsuit/soviet.rsi
   - type: Clothing
@@ -717,6 +719,8 @@
   name: soviet admiral jumpsuit
   description: They are one phone call away from ruining your life.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier3
   - type: Sprite
     sprite: _Starlight/Clothing/Uniforms/Jumpsuit/sovietadmiral.rsi
   - type: Clothing
@@ -739,6 +743,8 @@
   name: SSF marine combat fatigues
   description: Not one step back.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier3
   - type: Sprite
     sprite: _Starlight/Clothing/Uniforms/Jumpsuit/sovietuniform.rsi
   - type: Clothing

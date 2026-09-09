@@ -74,6 +74,8 @@
   parent: [BaseElectronics, BaseSovietContraband]
   name: law board (commiemov)
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier3
   - type: Sprite
     sprite: Objects/Misc/module.rsi
     state: std_mod

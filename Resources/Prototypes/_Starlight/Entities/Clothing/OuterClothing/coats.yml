@@ -293,6 +293,8 @@
   name: soviet great coat
   description: Smells like damp concrete and expired rations.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier3
   - type: Sprite
     sprite: _Starlight/Clothing/OuterClothing/Coats/soviet_greatcoat.rsi
   - type: Clothing

@@ -62,6 +62,8 @@
   name: SSF marine over-ear headset
   description: Priyom.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier3
   - type: Headset
   - type: ContainerFill
     containers:

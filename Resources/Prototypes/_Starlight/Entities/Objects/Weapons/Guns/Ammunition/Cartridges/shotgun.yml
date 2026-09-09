@@ -59,7 +59,7 @@
 - type: entity
   id: ShellShotgunToz
   name: 20 gauge shell
-  parent: [ BaseShellShotgunToz, BaseSovietContraband ]
+  parent: [ BaseShellShotgunToz, BaseSovietContraband, BaseContrabandTier3 ] # Blimpuf
   components:
   - type: Sprite
     layers:

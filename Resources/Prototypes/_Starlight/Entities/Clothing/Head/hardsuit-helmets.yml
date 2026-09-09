@@ -201,6 +201,8 @@
   name: SSF marine hardsuit helmet
   description: From the soviet dieselpunk world.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier3
   - type: Sprite
     sprite: _Starlight/Clothing/Head/Helmets/sovietmarine_helmet.rsi
   - type: Clothing
