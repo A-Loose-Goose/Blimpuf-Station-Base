@@ -254,7 +254,7 @@
     state: pda-lawyer
 
 - type: entity
-  parent: [ BasePDA, BaseBlueShieldContraband ]
+  parent: [ BasePDA, BaseRepresentativesContraband ]
   id: BlueShieldPDA
   name: central command enforcer PDA
   description: Comes with a built-in medtek to assess command staff's wounds after you heroically save them.

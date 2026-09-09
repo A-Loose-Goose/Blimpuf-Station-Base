@@ -117,7 +117,7 @@
     stealGroup: RareGlassesCollection
 
 - type: entity
-  parent: [ClothingEyesBase, BaseBlueShieldContraband]
+  parent: [ClothingEyesBase, BaseRepresentativesContraband]
   id: ClothingEyesGlassesBlueShield
   name: enforcer glasses
   description: The innovative blue lenses hide your eyes from light flashes and have a built-in visor.

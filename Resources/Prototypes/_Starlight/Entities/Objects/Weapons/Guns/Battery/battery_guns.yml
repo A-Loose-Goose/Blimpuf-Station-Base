@@ -231,10 +231,12 @@
 
 - type: entity
   name: X-01 multiphase energy gun
-  parent: [ BaseWeaponBatterySmall, BaseBlueShieldContraband, BaseGrandTheftContraband ]
+  parent: [ BaseWeaponBatterySmall, BaseRepresentativesContraband ]
   id: WeaponMultiphaseGun
   description: This is an expensive, modern version of the antique laser pistol, with several unique fire modes.
   components:
+  - type: Contraband
+    tier: Tier3
   - type: Appearance
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Battery/multiphase_gun.rsi

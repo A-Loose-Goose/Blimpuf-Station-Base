@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ IDCardStandard, BaseCommandContraband ]
+  parent: [ IDCardStandard, BaseRepresentativesContraband ]
   id: MagistrateIDCard
   name: magistrate ID card
   components:
@@ -58,7 +58,7 @@
     job: Roboticist
 
 - type: entity
-  parent: [ IDCardStandard, BaseCommandContraband ]
+  parent: [ IDCardStandard, BaseRepresentativesContraband ]
   id: NanoTrasenRepresentativeIDCard
   name: Central Command representative ID Card
   components:
@@ -80,7 +80,7 @@
     job: NanoTrasenRepresentative
 
 - type: entity
-  parent: [ IDCardStandard, BaseLawContraband ]
+  parent: [ IDCardStandard, BaseRepresentativesContraband ]
   id: IAAIDCard
   name: internal affairs agent ID card
   components:
@@ -95,7 +95,7 @@
     job: IAA
 
 - type: entity
-  parent: [ IDCardStandard, BaseBlueShieldContraband ]
+  parent: [ IDCardStandard, BaseRepresentativesContraband ]
   id: BlueShieldIDCard
   name: central command enforcement ID card
   components:

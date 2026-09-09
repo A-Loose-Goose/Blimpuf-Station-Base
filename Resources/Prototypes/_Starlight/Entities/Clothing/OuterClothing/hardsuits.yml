@@ -1,6 +1,6 @@
 # CCE hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseBlueShieldContraband, BaseContrabandTier2] # Blimpuf
+  parent: [ClothingOuterHardsuitBase, BaseRepresentativesContraband, BaseContrabandTier2] # Blimpuf
   id: ClothingOuterHardsuitBlueshield
   name: central command enforcer hardsuit
   description: A high-tech hardsuit perfect for diving in front of Mr. Pre- Er, Captain.
@@ -41,11 +41,13 @@
 
 #NTRep Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseGrandTheftContraband]
+  parent: [ClothingOuterHardsuitBase, BaseRepresentativesContraband]
   id: ClothingOuterHardsuitNtrep
   name: Central Command representative hardsuit
   description: It used to be blue, but too many premium cigars turned it tobacco brown.
   components:
+    - type: Contraband
+      tier: Tier3
     - type: Sprite
       sprite: _Starlight/Clothing/OuterClothing/Hardsuits/ntrepspace.rsi
     - type: Clothing

@@ -1,7 +1,7 @@
 # NT stamps
 - type: entity
   name: magistrate stamp
-  parent: [ RubberStampBase, BaseCommandContraband ]
+  parent: [ RubberStampBase, BaseRepresentativesContraband ]
   id: RubberStampMagistrate
   suffix: DO NOT MAP
   components:
@@ -15,7 +15,7 @@
 
 - type: entity
   name: cc representative's rubber stamp
-  parent: [ RubberStampBase, BaseCommandContraband ]
+  parent: [ RubberStampBase, BaseRepresentativesContraband ]
   id: RubberStampNtrep
   suffix: DO NOT MAP
   components:
@@ -29,7 +29,7 @@
 
 - type: entity
   name: internal affairs agent's rubber stamp
-  parent: [ RubberStampBase, BaseLawContraband ]
+  parent: [ RubberStampBase, BaseRepresentativesContraband ]
   id: RubberStampIAA
   suffix: DO NOT MAP
   components:
@@ -43,7 +43,7 @@
 
 - type: entity
   name: central enforcer rubber stamp
-  parent: [ RubberStampBase, BaseBlueShieldContraband ]
+  parent: [ RubberStampBase, BaseRepresentativesContraband ]
   id: RubberStampBSO
   suffix: DO NOT MAP
   components:

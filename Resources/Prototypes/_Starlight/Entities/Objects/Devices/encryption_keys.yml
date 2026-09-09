@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ EncryptionKey, BaseLawContraband ]
+  parent: [ EncryptionKey, BaseRepresentativesContraband ]
   id: EncryptionKeyCorporate
   name: Corporate encryption key
   description: An encryption key used by the most meticulous person.
@@ -17,7 +17,7 @@
       - EncryptionCorporate
 
 - type: entity
-  parent: [ EncryptionKey, BaseNanoTrasenContraband ]
+  parent: [ EncryptionKey, BaseRepresentativesContraband ]
   id: EncryptionKeyNanoTrasen
   name: nanotrasen encryption key
   description: An encryption key used by captain's bosses' bosses.
@@ -115,7 +115,7 @@
     stealGroup: EncryptionKeyHybrid
 
 - type: entity
-  parent: [ EncryptionKey, BaseNanoTrasenContraband ]
+  parent: [ EncryptionKey, BaseRepresentativesContraband ]
   id: EncryptionKeyNCTrainer
   name: nanotrasen career trainer encryption key
   description: An encryption key used by your well-taught corporate training team.

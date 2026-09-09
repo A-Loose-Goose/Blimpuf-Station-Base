@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ClothingEyesBase, BaseBlueShieldContraband]
+  parent: [ClothingEyesBase, BaseRepresentativesContraband]
   id: ClothingEyesHudBlueShield
   name: enforcer hud
   description: An innovative heads-up display that scans the humanoids in view and provides accurate data about their ID status, security records, and medical information.
@@ -203,7 +203,7 @@
       protectionTime: 5
 
 - type: entity
-  parent: [ClothingEyesBase, BaseCommandContraband]
+  parent: [ClothingEyesBase, BaseRepresentativesContraband]
   id: ClothingEyesNTRMonocle
   name: Central Command representative monocle
   description: A fancy monocle that also functions as a HUD to make sure no functionality is lost for style.

@@ -148,7 +148,7 @@
     price: 2000
 
 - type: entity
-  parent: [ ClothingNeckBase, BaseBlueShieldContraband ]
+  parent: [ ClothingNeckBase, BaseRepresentativesContraband ]
   id: ClothingNeckCloakBsoElite
   name: elite enforcer cloak
   description: An elite Central Command Enforcement Officer's cloak crafted from the latest composite glowing fabric. No true CCE is afraid of shining in the dark!
@@ -165,7 +165,7 @@
     price: 2000
 
 - type: entity
-  parent: [ ClothingNeckBase, BaseBlueShieldContraband ]
+  parent: [ ClothingNeckBase, BaseRepresentativesContraband ]
   id: ClothingNeckCloakBsoCape
   name: enforcer formal cloak
   description: An incredibly large coat, owned only by the most experienced Central Command Enforcement Officers. It's said the sleeves have never been worn.
@@ -177,7 +177,7 @@
       - neck
 
 - type: entity
-  parent: [ ClothingNeckBase, BaseBlueShieldContraband ]
+  parent: [ ClothingNeckBase, BaseRepresentativesContraband ]
   id: ClothingNeckCloakBsoPoncho
   name: enforcer poncho
   description: This type of poncho was the signature garment of a legendary CCE with no name, or so it is said.

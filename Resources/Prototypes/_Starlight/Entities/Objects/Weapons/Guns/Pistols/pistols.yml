@@ -197,8 +197,9 @@
 
 - type: entity
   name: due process
-  parent: [BaseWeaponPistol, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
-  id: WeaponPistolDP
+  parent: BaseWeaponPistol
+  id: BaseWeaponPistolDP
+  abstract: true
   description: A pistol that packs a punch for brig defense, just as NanoTrasen intended.
   components:
     - type: Sprite
@@ -237,8 +238,12 @@
 
 
 - type: entity
+  parent: [BaseWeaponPistolDP, BaseSecurityContraband, BaseContrabandTier3]
+  id: WeaponPistolDP
+
+- type: entity
   name: sp-8t
-  parent: [WeaponPistolDP, BaseBlueShieldContraband, BaseGrandTheftContraband]
+  parent: [BaseWeaponPistolDP, BaseRepresentativesContraband, BaseContrabandTier3]
   id: WeaponPistolBlueguard
   components:
     - type: Gun
