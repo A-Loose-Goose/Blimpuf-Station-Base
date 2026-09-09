@@ -25,12 +25,22 @@ public sealed class ContrabandTest : GameTest
     private const string TestPrototypes = """
         - type: entity
           id: ContrabandAuthorizationParent
+          parent: BaseRestrictedContraband
           abstract: true
           components:
           - type: Contraband
             contrabandType: Syndicate
             allowedDepartments: [ Security ]
             allowedJobs: [ Detective ]
+
+        - type: entity
+          id: ContrabandAdditionalAuthorizationParent
+          parent: BaseRestrictedContraband
+          abstract: true
+          components:
+          - type: Contraband
+            allowedDepartments: [ Command ]
+            allowedJobs: [ Warden ]
 
         - type: entity
           id: ContrabandTierParent
@@ -42,7 +52,7 @@ public sealed class ContrabandTest : GameTest
 
         - type: entity
           id: ContrabandInheritanceChild
-          parent: [ ContrabandAuthorizationParent, ContrabandTierParent ]
+          parent: [ ContrabandAuthorizationParent, ContrabandAdditionalAuthorizationParent, ContrabandTierParent ]
           components:
           - type: Contraband
             contrabandType: Magical
@@ -149,9 +159,9 @@ public sealed class ContrabandTest : GameTest
             Assert.That(contraband.Tier.Id, Is.EqualTo("Tier3"));
             Assert.That(contraband.ContrabandType?.Id, Is.EqualTo("Magical"));
             Assert.That(contraband.AllowedDepartments,
-                Is.EquivalentTo(new ProtoId<DepartmentPrototype>[] { "Security", "Medical" }));
+                Is.EquivalentTo(new ProtoId<DepartmentPrototype>[] { "Security", "Command", "Medical" }));
             Assert.That(contraband.AllowedJobs,
-                Is.EquivalentTo(new ProtoId<JobPrototype>[] { "Detective", "Chemist" }));
+                Is.EquivalentTo(new ProtoId<JobPrototype>[] { "Detective", "Warden", "Chemist" }));
 
             Assert.That(reagent.ContrabandTier?.Id, Is.EqualTo("Tier2"));
             Assert.That(reagent.ContrabandType?.Id, Is.EqualTo("Magical"));
@@ -159,6 +169,28 @@ public sealed class ContrabandTest : GameTest
                 Is.EquivalentTo(new ProtoId<DepartmentPrototype>[] { "Security", "Medical" }));
             Assert.That(reagent.AllowedJobs,
                 Is.EquivalentTo(new ProtoId<JobPrototype>[] { "Detective", "Chemist" }));
+        });
+    }
+
+    [TestCase("EncryptionKeySecurity", "Tier1", null, false, new[] { "Security" }, new[] { "IAA" })]
+    [TestCase("Stunbaton", "Tier2", null, false, new[] { "Security" }, new string[0])]
+    [TestCase("WeaponPistolMk58Nonlethal", "Tier3", null, true, new[] { "Security" }, new[] { "SalvageSpecialist", "SalvageLead" })]
+    public async Task EquipmentHasExpectedContrabandPermissions(
+        string prototype, string tier, string type, bool detectable, string[] departments, string[] jobs)
+    {
+        var client = Pair.Client;
+        var protoMan = client.ResolveDependency<IPrototypeManager>();
+        var componentFactory = client.ResolveDependency<IComponentFactory>();
+
+        await client.WaitAssertion(() =>
+        {
+            var entity = protoMan.Index<EntityPrototype>(prototype);
+            Assert.That(entity.TryGetComponent<ContrabandComponent>(out var contraband, componentFactory), Is.True);
+            Assert.That(contraband.Tier.Id, Is.EqualTo(tier));
+            Assert.That(contraband.ContrabandType?.Id, Is.EqualTo(type));
+            Assert.That(contraband.AllowedDepartments.Select(id => id.Id), Is.EquivalentTo(departments));
+            Assert.That(contraband.AllowedJobs.Select(id => id.Id), Is.EquivalentTo(jobs));
+            Assert.That(entity.TryGetComponent<ScanDetectableComponent>(out _, componentFactory), Is.EqualTo(detectable));
         });
     }
 

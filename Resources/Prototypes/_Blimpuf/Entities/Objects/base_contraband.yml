@@ -52,7 +52,7 @@
   - type: Contraband
     tier: Tier3
 
-# Tier-only mixins for authorized items. Put these last in a parent list so the requested tier wins.
+# Tier-only mixins for authorized items. Put these before any parent that supplies a different tier.
 # Tier 3 contraband is also detectable by security scanners.
 - type: entity
   id: BaseContrabandTier2
@@ -74,8 +74,9 @@
   abstract: true
   components:
   - type: Contraband
-    tier: Tier1
+    # Use the component's Tier1 default so authorization bases do not override an inherited tier.
 
+# Authorization lists combine across parents. For tier and type, the first parent specifying a value wins.
 # Single-department authorization bases.
 - type: entity
   id: BaseCentcommContraband

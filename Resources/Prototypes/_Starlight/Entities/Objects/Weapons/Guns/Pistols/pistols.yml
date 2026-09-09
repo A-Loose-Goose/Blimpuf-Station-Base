@@ -48,7 +48,7 @@
 
 - type: entity
   id: WeaponPistolMk58Nonlethal
-  parent: [WeaponPistolMk58, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
+  parent: WeaponPistolMk58 # Blimpuf
   suffix: Non-lethal
   components:
     - type: ItemSlots
