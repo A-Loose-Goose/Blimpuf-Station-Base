@@ -5,7 +5,6 @@ using Content.Client.Guidebook.Richtext;
 using Content.Client.Message;
 using Content.Client.UserInterface.ControlExtensions;
 using Content.Shared._Starlight.Medical.Body.Prototypes;
-using Content.Shared.CCVar;
 using Content.Shared.Chemistry.Reaction;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared._Blimpuf.Contraband; // Blimpuf
@@ -15,7 +14,6 @@ using Robust.Client.Graphics;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
-using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
@@ -30,7 +28,6 @@ public sealed partial class GuideReagentEmbed : BoxContainer, IDocumentTag, ISea
     [Dependency] private IEntitySystemManager _systemManager = default!;
     [Dependency] private ILogManager _logManager = default!;
     [Dependency] private IPrototypeManager _prototype = default!;
-    [Dependency] private IConfigurationManager _config = default!;
 
     private readonly ChemistryGuideDataSystem _chemistryGuideData;
     private readonly ContrabandSystem _contraband;
@@ -211,26 +208,7 @@ public sealed partial class GuideReagentEmbed : BoxContainer, IDocumentTag, ISea
         description.AddMarkupOrThrow(Loc.GetString("guidebook-reagent-physical-description",
             ("description", reagent.LocalizedPhysicalDescription)));
 
-        // Blimpuf start - show tier, type, and authorization independently
-        if (_config.GetCVar(CCVars.ContrabandExamine) && reagent.ContrabandTier is { } tier)
-        {
-            description.PushNewline();
-            description.AddMarkupPermissive(_contraband.GetClassificationMessage(
-                tier,
-                reagent.ContrabandType,
-                ContrabandItemType.Reagent));
-
-            if (reagent.AllowedJobs.Count > 0 || reagent.AllowedDepartments.Count > 0 || reagent.RequiresPrescription)
-            {
-                description.PushNewline();
-                description.AddMarkupPermissive(_contraband.GetAuthorizationMessage(
-                    reagent.AllowedDepartments,
-                    reagent.AllowedJobs,
-                    ContrabandItemType.Reagent,
-                    reagent.RequiresPrescription));
-            }
-        }
-        // Blimpuf end
+        _contraband.AppendReagentDescription(description, reagent); // Blimpuf
 
         ReagentDescription.SetMessage(description);
     }

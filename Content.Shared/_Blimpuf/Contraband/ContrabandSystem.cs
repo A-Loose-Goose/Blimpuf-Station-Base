@@ -1,6 +1,7 @@
 using System.Linq;
 using Content.Shared.Access.Systems;
 using Content.Shared.CCVar;
+using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Examine;
 using Content.Shared.Localizations;
 using Content.Shared.Roles;
@@ -146,6 +147,29 @@ public sealed partial class ContrabandSystem : EntitySystem
         return Loc.GetString("contraband-examine-text-restricted",
             ("authorizations", list),
             ("itemType", itemType));
+    }
+
+    /// <summary>
+    /// Appends reagent classification and authorization to a guidebook entry or visible solution contents.
+    /// This is responsible for checking whether the reagent's identity is visible.
+    /// </summary>
+    public void AppendReagentDescription(FormattedMessage message, ReagentPrototype reagent)
+    {
+        if (!_contrabandExamineEnabled || reagent.ContrabandTier is not { } tier)
+            return;
+
+        message.PushNewline();
+        message.AddMarkupPermissive(GetClassificationMessage(tier, reagent.ContrabandType, ContrabandItemType.Reagent));
+
+        if (reagent.AllowedDepartments.Count > 0 || reagent.AllowedJobs.Count > 0 || reagent.RequiresPrescription)
+        {
+            message.PushNewline();
+            message.AddMarkupPermissive(GetAuthorizationMessage(
+                reagent.AllowedDepartments,
+                reagent.AllowedJobs,
+                ContrabandItemType.Reagent,
+                reagent.RequiresPrescription));
+        }
     }
 
     private bool IsAuthorizedToCarry(EntityUid user, ContrabandComponent contraband)

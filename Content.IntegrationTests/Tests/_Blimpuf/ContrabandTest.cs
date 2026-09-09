@@ -1,8 +1,10 @@
 using System.Linq;
 using Content.IntegrationTests.Fixtures;
+using Content.IntegrationTests.Fixtures.Attributes;
 using Content.Shared._Blimpuf.Contraband;
 using Content.Shared._Starlight.ScanGate.Components;
 using Content.Shared.Access.Components;
+using Content.Shared.CCVar;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Roles;
 using Content.Shared.Verbs;
@@ -250,6 +252,35 @@ public sealed class ContrabandTest : GameTest
 
             Assert.That(prescriptionAuthorization, Does.Contain("This reagent is restricted"));
             Assert.That(prescriptionAuthorization, Does.Contain("patients with a valid prescription"));
+        });
+    }
+
+    [TestCase("Water", true, false)]
+    [TestCase("Psicodine", true, true)]
+    [TestCase("Psicodine", false, false)]
+    [EnsureCVar(Side.Server, typeof(CCVars), nameof(CCVars.ContrabandExamineOnlyInHUD), true)]
+    public async Task ReagentDescriptionsRespectClassificationAndDisplaySetting(
+        string prototype, bool enabled, bool showsDescription)
+    {
+        await OverrideCVar(Side.Server, CCVars.ContrabandExamine, enabled);
+        var client = Pair.Client;
+        var protoMan = client.ResolveDependency<IPrototypeManager>();
+        var systemManager = client.ResolveDependency<IEntitySystemManager>();
+
+        await client.WaitAssertion(() =>
+        {
+            var contraband = systemManager.GetEntitySystem<ContrabandSystem>();
+            var message = new FormattedMessage();
+            message.AddText("Reagent contents");
+            contraband.AppendReagentDescription(message, protoMan.Index<ReagentPrototype>(prototype));
+            var expected = "Reagent contents";
+            if (showsDescription)
+            {
+                expected += "\nThis is a restricted tier 1 contraband reagent." +
+                            "\nThis reagent is restricted to patients with a valid prescription.";
+            }
+
+            Assert.That(message.ToString(), Is.EqualTo(expected));
         });
     }
 
