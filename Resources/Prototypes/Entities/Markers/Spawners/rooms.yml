@@ -9,14 +9,14 @@
     offset: 0.2
     table: !type:AllSelector
       children:
-      - id: WeaponSubMachineGunWt550r # Starlight. Recolored, steal target.
+      - id: WeaponSubMachineGunWt550b # Starlight. Recolored, steal target.
       - id: MagazinePistolSubMachineGunTopMounted
       - id: MagazinePistolSubMachineGunTopMounted
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
     - state: green
-    - sprite: _Starlight/Objects/Weapons/Guns/SMGs/wt550r.rsi # Starlight
+    - sprite: _Starlight/Objects/Weapons/Guns/SMGs/wt550b.rsi # Starlight
       state: icon
 
 - type: entity

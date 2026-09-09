@@ -583,6 +583,57 @@
     price: 750
   - type: StealTarget
     stealGroup: ClothingOuterHardsuitRd
+  - type: SyndicateResearchTarget
+    researchProtoIds:
+      - displayName: uranium
+        validPrototypes:
+          - SheetUranium
+          - SheetUranium1
+      - displayName: baseball bat
+        validPrototypes:
+          - BaseBallBat
+      - displayName: stun baton
+        validPrototypes:
+          - Stunbaton
+          - EnforcerStunbaton
+          - DoubleStunbaton
+          - PurpleStunbaton
+          - ClothingHandsKnuckleDustersStun
+      - displayName: flash
+        validPrototypes:
+          - Flash
+          - SciFlash
+          - Flash4Use
+          - Flash3Use
+          - Flash1Use
+          - Flash0Use
+          - GrenadeFlashBang
+          - ClusterBangFull
+          - FlashPayload
+      - displayName: defibrillator
+        validPrototypes:
+          - BaseDefibrillator
+          - Defibrillator
+          - DefibrillatorEmpty
+          - DefibrillatorOneHandedUnpowered
+          - DefibrillatorCompact
+          - DefibrillatorSyndicate
+          - DefibrillatorSyndicateOneHandedUnpowered
+          - DefibrillatorBrigmedical
+          - DefibrillatorParamed
+      - displayName: plasma spear
+        validPrototypes:
+          - SpearPlasma
+      - displayName: fireaxe
+        validPrototypes:
+          - FireAxe
+          - FireAxeFlaming
+      - displayName: pickaxe
+        validPrototypes:
+          - Pickaxe
+          - PickaxeDiamond
+    researchUnlockId: UplinkClothingOuterHardsuitUltima
+    researchAnnouncementString: research-announcement-clothing-outer-hardsuit-ultima
 
 #Head of Security's Hardsuit
 - type: entity

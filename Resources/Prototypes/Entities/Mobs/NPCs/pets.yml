@@ -945,6 +945,7 @@
     - VimPilot
     - DoorBumpOpener
     - FootstepSound
+    - PersonaBlacklisted # Blimpuf
   - type: StealTarget
     stealGroup: AnimalShiva
   # Starlight start: Shiva contains 5 telecrystals

@@ -25,6 +25,12 @@ public sealed partial class MagazineVisualsComponent : Component
     /// </summary>
     [DataField]
     public bool ZeroVisible;
+
+    /// <summary>
+    /// Blimpuf Edit: Color to set the mag states to
+    /// </summary>
+    [DataField("color")]
+    public Color? Color;
 }
 
 public enum GunVisualLayers : byte

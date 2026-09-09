@@ -1,0 +1,81 @@
+- type: entity
+  name: WT551 Compact
+  parent: [BaseWeaponSubMachineGun, BaseSyndicateContraband]
+  id: WeaponSubMachineGunWt551Compact
+  description: A truly unique firearm, the WT551 had it's designs "borrowed" by NanoTrasen's Small Arms Division as a compact submachine gun. I guess the Syndicate took that as a Challenge and tried to make it even smaller! Even if that kinda messes with it's internals a bit when smaller.
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Objects/Weapons/Guns/SMGs/syndicate-wt551.rsi
+      layers:
+        - state: icon-folded
+          map: ["enum.GunVisualLayers.Base"]
+        - state: base
+          visible: false
+          shader: unshaded
+          map: [ "unfolded" ]
+        - state: mag-0
+          map: ["enum.GunVisualLayers.Mag"]
+        - state: mag-unshaded-0
+          map: ["enum.GunVisualLayers.MagUnshaded"]
+          shader: unshaded
+    - type: Clothing
+      sprite: _Blimpuf/Objects/Weapons/Guns/SMGs/syndicate-wt551.rsi
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: null
+    - type: Item
+      size: Small
+      shape:
+      - 0,0,0,1
+    - type: Gun
+      fireRate: 0
+      minAngle: 1
+      maxAngle: 6
+      angleIncrease: 1.5
+      angleDecay: 6
+      selectedMode: FullAuto
+      shotsPerBurst: 5
+      burstCooldown: 0.2
+      burstFireRate: 7
+      availableModes:
+        - Burst
+        - FullAuto
+        - SemiAuto
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazinePistolSubMachineGunTopMounted
+          insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazinePistolSubMachineGunTopMounted
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgePistol
+    - type: MagazineVisuals
+      magState: mag
+      steps: 6
+      zeroVisible: true
+    - type: Appearance
+    - type: ItemToggle
+      soundActivate:
+        path: /Audio/_Blimpuf/Weapons/Guns/Folding/gun-unfold.ogg
+      soundDeactivate:
+        path: /Audio/_Blimpuf/Weapons/Guns/Folding/gun-fold.ogg
+      verbToggleOn: unfold-verb
+      verbToggleOff: fold-verb
+      onUse: false
+    - type: ItemToggleSize
+      activatedSize: Large
+      activatedShape:
+      - 0,0,2,1
+    - type: ToggleableVisuals
+      spriteLayer: unfolded
+    - type: ItemToggleGun
+      activatedFirerate: 5.5

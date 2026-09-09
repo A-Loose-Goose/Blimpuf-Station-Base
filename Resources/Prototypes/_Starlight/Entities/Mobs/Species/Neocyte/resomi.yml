@@ -300,6 +300,7 @@
     - NeoResomi
     - SiliconEmotesFH
     - NotLabelable
+    - PersonaBlacklisted # Blimpuf
   - type: Vocal
     sounds:
       Male: NeoResomiMSounds

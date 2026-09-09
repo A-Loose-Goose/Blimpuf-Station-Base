@@ -929,7 +929,7 @@
     #sprite: _Starlight/Objects/Weapons/Guns/Battery/energy_smg.rsi
     #heldPrefix: energy
   - type: StealTarget
-    stealGroup: HOSWeapon # Proto5x and WT550r
+    stealGroup: HOSWeapon # Proto5x and WT550b
   - type: Tag
     tags:
     - HighRiskItem
@@ -949,6 +949,53 @@
       - FiringPinAdvancedLaser
   - type: FiringPinHolder
     supportedPins: [ AdvancedLaser ]
+  - type: SyndicateResearchTarget
+    researchProtoIds:
+      - displayName: fire bomb
+        validPrototypes:
+          - FireBomb
+      - displayName: turbo recharger machine board
+        validPrototypes:
+          - TurboItemRechargerCircuitboard
+      - displayName: atmos fire suit
+        validPrototypes:
+          - ClothingOuterSuitAtmosFire
+      - displayName: stun baton
+        validPrototypes:
+          - Stunbaton
+          - EnforcerStunbaton
+          - DoubleStunbaton
+          - PurpleStunbaton
+          - ClothingHandsKnuckleDustersStun
+      - displayName: disabler
+        validPrototypes:
+          - WeaponDisabler
+          - WeaponDisablerSMG
+      - displayName: large internals tank
+        validPrototypes:
+          - OxygenTank
+          - OxygenTankFilled
+          - NitrogenTank
+          - NitrogenTankFilled
+          - AirTank
+          - AirTankFilled
+          - NitrousOxideTank
+          - NitrousOxideTankFilled
+          - HealiumTankEmpty
+          - HealiumTankFilled
+          - ZXATankEmpty
+          - ZXATankFilled
+      - displayName: cautery
+        validPrototypes:
+          - Cautery
+          - CauteryCyber
+          - CauteryRipper
+          - CauteryAbductor
+      - displayName: torch
+        validPrototypes:
+          - Torch
+    researchUnlockId: UplinkWeaponLaserIncinerator
+    researchAnnouncementString: research-announcement-weapon-laser-incinerator
 
 - type: entity
   name: pulse cannon

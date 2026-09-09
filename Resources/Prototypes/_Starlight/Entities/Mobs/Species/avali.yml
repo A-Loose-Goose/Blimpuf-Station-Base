@@ -44,6 +44,7 @@
         - AnomalyHost
         - Avali
         - NotLabelable
+        - PersonaBlacklisted # Blimpuf
     - type: Absorbable
     - type: HumanoidAppearance
       species: Avali

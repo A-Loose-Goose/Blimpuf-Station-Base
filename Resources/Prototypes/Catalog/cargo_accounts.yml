@@ -66,12 +66,12 @@
   id: Security
   name: cargo-account-security-name
   code: cargo-account-security-code
-  color: "#ff4242"
+  color: "#02cfe0"
   radioChannel: Security
   acquisitionSlip: PaperAcquisitionSlipSecurity
   # Starlight BEGIN
   tamperSealName: tamper-seal-account-name-security
-  tamperSealColor: "#e63c3c"
+  tamperSealColor: "#06b8c7"
   tamperSealAccesses:
     - allOf: [ "Security" ] # Regular crew
       noneOf: [ "Borg" ]

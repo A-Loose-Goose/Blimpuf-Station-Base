@@ -49,6 +49,12 @@ public sealed partial class CargoAccountPrototype : IPrototype
     [DataField]
     public EntProtoId AcquisitionSlip;
 
+    /// <summary>
+    /// Blimpuf Edit - should this account show up on station consoles?
+    /// </summary>
+    [DataField]
+    public Boolean Invisible = false;
+
     #region Starlight
     /// <summary>
     /// The name of the recipient to use on tamper seal examination.

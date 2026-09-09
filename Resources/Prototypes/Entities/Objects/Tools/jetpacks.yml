@@ -189,6 +189,36 @@
     sprintModifier: 1.0
   - type: HeldSpeedModifier
 #Starlight End
+  - type: SyndicateResearchTarget
+    researchProtoIds:
+      - displayName: gas tank dispenser circuitboard
+        validPrototypes:
+          - VendingMachineTankDispenserEVACircuitboard
+      - displayName: improvised vest
+        validPrototypes:
+          - ClothingOuterArmorImprovised
+      - displayName: thruster machine board
+        validPrototypes:
+          - ThrusterMachineCircuitboard
+      - displayName: moon boots
+        validPrototypes:
+          - ClothingShoesBootsMoon
+      - displayName: exosuit airtank
+        validPrototypes:
+          - MechAirTank
+      - displayName: exosuit thruster
+        validPrototypes:
+          - MechThruster
+      - displayName: plasteel
+        validPrototypes:
+          - SheetPlasteel
+          - SheetPlasteel1
+          - SheetPlasteel10
+      - displayName: jump boots
+        validPrototypes:
+          - ClothingShoesBootsJump
+    researchUnlockId: UplinkJetpackSpeedster
+    researchAnnouncementString: research-announcement-speedster-jetpack
 
 # Filled captain
 - type: entity

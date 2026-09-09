@@ -242,6 +242,7 @@
     - DoorBumpOpener
     - AnomalyHost
     - NotLabelable # Starlight, no more labeling people.
+    - PersonaBlacklisted
   - type: ActiveInputMover # Starlight
   # Starlight Start: Social Interactions
   - type: PhysicalSocialInteractionGiver

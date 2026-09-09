@@ -82,6 +82,7 @@
     - AnomalyHost
     - Felionoid
     - NotLabelable
+    - PersonaBlacklisted # Blimpuf
   - type: Fixtures
     fixtures:
       fix1:

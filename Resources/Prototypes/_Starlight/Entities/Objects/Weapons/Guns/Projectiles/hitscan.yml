@@ -954,6 +954,7 @@
         Blunt: 2
         Heat: 15
   - type: HitscanIgniteEffect
+
   - type: HitscanPierce
     chance: 0.69
   - type: HitscanRicochet

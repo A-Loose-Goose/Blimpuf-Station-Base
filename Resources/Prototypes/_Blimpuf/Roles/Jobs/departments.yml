@@ -2,7 +2,7 @@
   id: Representatives
   name: department-Representatives
   description: department-Representatives-description
-  color: "#05255D"
+  color: "#2C6E2E"
   roles:
     - BlueShield
     - Magistrate

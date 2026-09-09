@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Modified by ItsMaitake on Blimpuf Station (https://github.com/Blimpuf-Station/BlimpufStation). Originally taken from cev-eris at https://github.com/discordia-space/CEV-Eris/raw/e1a3cbe9ba2e6e29b7f1cad1bb456b390aac936d/icons/obj/guns/projectile.dmi, backpack sprite originally by Peptide (copy of Atreides), and sprite modification originally by Jaсkal 298, backpack sling sprite originally edited by Boaz1111, Inhands originally modified by Seam_Lesss (Github)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon",
+	  "copyright": "CEV-Eris, wonderfulnewworld",
+	  "license": "CC-BY-SA-3.0"
+    },
+    {
+      "name": "icon-folded"
+    },
+    {
+      "name": "base",
+      "delays": [
+        [
+          0.1,
+          0.3
+        ]
+      ],
+	  "copyright": "CEV-Eris, wonderfulnewworld",
+	  "license": "CC-BY-SA-3.0"
+    },
+    {
+      "name": "mag-0",
+      "delays": [
+        [
+          0.1,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "mag-unshaded-0",
+      "delays": [
+        [
+          0.1,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "mag-1",
+      "delays": [
+          [
+            0.1,
+            0.3
+          ]
+      ]
+    },
+    {
+      "name": "mag-unshaded-1",
+      "delays": [
+        [
+          0.1,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "mag-2",
+      "delays": [
+        [
+          0.1,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "mag-unshaded-2",
+      "delays": [
+        [
+          0.1,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "mag-3",
+      "delays": [
+        [
+          0.1,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "mag-unshaded-3",
+      "delays": [
+        [
+          0.1,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "mag-4",
+      "delays": [
+        [
+          0.1,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "mag-unshaded-4",
+      "delays": [
+        [
+          0.1,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "mag-5",
+      "delays": [
+        [
+          0.1,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "mag-unshaded-5",
+      "delays": [
+        [
+          0.1,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4,
+	  "copyright": "CEV-Eris, Seam_Lesss, wonderfulnewworld",
+	  "license": "CC-BY-SA-3.0"
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4,
+	  "copyright": "CEV-Eris, Seam_Lesss, wonderfulnewworld",
+	  "license": "CC-BY-SA-3.0"
+    },
+    {
+      "name": "equipped-BACKPACK",
+      "directions": 4,
+	  "copyright": "CEV-Eris, Peptide, Atreides, Jaсkal 298, Boaz1111, wonderfulnewworld",
+	  "license": "CC-BY-SA-3.0"
+    },
+	{
+      "name": "equipped-SUITSTORAGE",
+      "directions": 4,
+	  "copyright": "CEV-Eris, Peptide, Atreides, Jaсkal 298, Boaz1111, wonderfulnewworld",
+	  "license": "CC-BY-SA-3.0"
+    }
+  ]
+}

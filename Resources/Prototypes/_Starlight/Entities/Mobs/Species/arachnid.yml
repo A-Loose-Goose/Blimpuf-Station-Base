@@ -34,6 +34,7 @@
     - AnomalyHost
     - Arachnid
     - NotLabelable # Starlight
+    - PersonaBlacklisted # Blimpuf
   - type: Butcherable
     butcheringType: Spike
     spawned:

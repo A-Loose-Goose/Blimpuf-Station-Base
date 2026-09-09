@@ -296,6 +296,11 @@
       Unsexed: UnisexArachnid
   - type: TypingIndicator
     proto: spider
+  - type: Tag
+    tags:
+    - PersonaBlacklisted # Blimpuf
+    - DoorBumpOpener
+    - FootstepSound
 
 - type: entity
   id: MobSpiderSpaceSalvage

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by rainyrivulet (@ADHD_water_rat on Blimpuf Station's Discord) for Blimpuf Station. Sprites derrived from QM's Clipboard sprites by Endecc (Github) for SS14 Wizard's Den, taken from https://github.com/space-wizards/space-station-14/pull/21023, syndie_clipboard_paper is a modified version of paper from bureaucracy.rsi.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "syndie_clipboard"
+    },
+    {
+      "name": "syndie_clipboard_over"
+    },
+    {
+      "name": "syndie_clipboard_paper"
+    },
+    {
+      "name": "syndie_clipboard_pen"
+    },
+    {
+      "name": "equipped-BELT",
+      "directions": 4
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    }
+  ]
+}

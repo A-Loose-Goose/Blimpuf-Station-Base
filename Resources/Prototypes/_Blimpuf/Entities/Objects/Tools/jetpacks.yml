@@ -1,0 +1,44 @@
+# empty speedster
+- type: entity
+  id: JetpackSpeedster
+  parent: [BaseJetpack, BaseSyndicateContraband]
+  name: speedster jetpack
+  description: An incredibly aerodynamic jetpack designed to make the wearer much faster than normal when worn. It can hold 5 L of gas.
+  suffix: Empty
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Objects/Tanks/Jetpacks/bloodredjetpack.rsi
+    - type: Clothing
+      sprite: _Blimpuf/Objects/Tanks/Jetpacks/bloodredjetpack.rsi
+      slots:
+        - Back
+        - SuitStorage
+    - type: Item
+      sprite: _Blimpuf/Objects/Tanks/Jetpacks/bloodredjetpack.rsi
+      size: Normal
+    - type: ClothingSpeedModifier
+      walkModifier: 1.75
+      sprintModifier: 1.75
+    - type: HeldSpeedModifier
+      mirrorClothingModifier: false
+      walkModifier: 1.0
+      sprintModifier: 1.0
+    - type: GasTank
+      outputPressure: 42.6
+
+# Filled speedster
+- type: entity
+  id: JetpackSpeedsterFilled
+  parent: JetpackSpeedster
+  name: speedster jetpack
+  suffix: Filled
+  components:
+    - type: GasTank
+      outputPressure: 42.6
+      air:
+        # 13 minutes of thrust
+        volume: 5
+        temperature: 293.15
+        moles:
+          Oxygen: 1.025689525 # oxygen
+          Nitrogen: 1.025689525 # nitrogen

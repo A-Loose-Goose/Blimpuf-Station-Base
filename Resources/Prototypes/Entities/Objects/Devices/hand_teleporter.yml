@@ -42,6 +42,7 @@
       - displayName: fire extinguisher
         validPrototypes:
           - FireExtinguisher
+          - FireExtinguisherMini
       - displayName: engineering goggles
         validPrototypes:
           - ClothingEyesGlassesMeson
@@ -51,12 +52,17 @@
       - displayName: RCD
         validPrototypes:
           - RCD
+          - RCDEmpty
+          - RCDChiefEngineer
       - displayName: poison auto-injector
         validPrototypes:
           - AntiPoisonMedipen
       - displayName: cautery
         validPrototypes:
           - Cautery
+          - CauteryCyber
+          - CauteryRipper
+          - CauteryAbductor
     researchUnlockId: UplinkTeleportationRelay
     researchAnnouncementString: research-announcement-teleportation-relay
 

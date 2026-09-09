@@ -136,6 +136,7 @@
       - SiliconEmotesFH
       - NotLabelable
       - TrueNeocyte
+      - PersonaBlacklisted # Blimpuf
   - type: Temperature
     currentTemperature: 310.15
     specificHeat: 42 # Starlight

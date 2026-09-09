@@ -19,7 +19,7 @@
       - Anchorable
       - Item
       tags:
-      - Bot # for funny bot moments
+      #- Bot # for funny bot moments - Blimpuf edit, Bot disguises are now on the Persona Hologram generator
     blacklist:
       components: # TODO: This blacklist should be cut down by a lot once Chameleon Projector code is less buggy. See #40510
       - ChameleonDisguise # no becoming kleiner

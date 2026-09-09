@@ -23,6 +23,7 @@
     - AnomalyHost
     - Diona
     - NotLabelable # Starlight
+    - PersonaBlacklisted # Blimpuf
   - type: HumanoidAppearance
     species: Diona
   - type: Hunger

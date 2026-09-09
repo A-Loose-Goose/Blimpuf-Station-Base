@@ -1,0 +1,38 @@
+- type: entity
+  parent: [ClothingHandsBase, BaseSyndicateContraband]
+  id: ClothingHandsKnuckleDustersStimulant
+  name: Syndicate Stimulant Knuckle Dusters
+  description: "Chemical warfare; the use of toxic chemical substances as weapons to kill, seriously injure, or incapacitate humans, or to destroy plant life and environments during a conflict. Seeing as this is used to stimulate, that makes it perfectly okay to use!"
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Clothing/Hands/Gloves/KnuckleDusters/syndicate-speed-knuckles.rsi
+      state: syndicatespeedknuckles
+    - type: Clothing
+      sprite: _Blimpuf/Clothing/Hands/Gloves/KnuckleDusters/syndicate-speed-knuckles.rsi
+    - type: Fiber
+      fiberColor: fibers-silver
+    - type: MeleeWeapon
+      autoAttack: true # starlight
+      attackRate: 1.5
+      damage:
+        types:
+          Blunt: 10
+          Piercing: 5
+          Slash: 5
+          Structural: 20 #Starlight
+      soundHit:
+        collection: Knuckles #Starlight
+        params:
+          variation: 0.125
+      animation: WeaponArcFist
+      mustBeEquippedToUse: true
+    - type: Tag
+      tags:
+        - WhitelistChameleon
+        - Kangaroo
+    - type: InjectReagentWhileWorn
+      reagentPrimary: Desoxyephedrine
+      quantityPrimary: 0.5
+      reagentSecondary: Ethylredoxrazine
+      quantitySecondary: 0.5
+      time: 1

@@ -34,6 +34,7 @@
     - NotLabelable # Starlight
     - CanPilot
     - DoorBumpOpener
+    - PersonaBlacklisted # Blimpuf
   - type: MobState
   - type: MobThresholds
     thresholds:

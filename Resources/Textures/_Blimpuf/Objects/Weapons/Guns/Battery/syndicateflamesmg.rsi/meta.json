@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Modified by ItsMaitake on Blimpuf Station (https://github.com/Blimpuf-Station/BlimpufStation). Original made by PubliclyExecutedPig and Salem on Starlight:",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+        "name": "icon"
+    },
+    {
+        "name": "base"
+    },
+    {
+      "name": "laser"
+    },
+    {
+      "name": "laser-unshaded-0",
+      "delays": [
+        [
+          0.1,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "laser-unshaded-1",
+      "delays": [
+        [
+          0.1,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "laser-unshaded-2",
+      "delays": [
+        [
+          0.1,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "laser-unshaded-3",
+      "delays": [
+        [
+          0.1,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "laser-unshaded-4",
+      "delays": [
+        [
+          0.1,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "laser-unshaded-5",
+      "delays": [
+        [
+          0.1,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "disable"
+    },
+    {
+      "name": "disable-unshaded-0",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "disable-unshaded-1",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "disable-unshaded-2",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "disable-unshaded-3",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "disable-unshaded-4",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "disable-unshaded-5",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "equipped-BACKPACK",
+      "directions": 4
+    },
+	{
+      "name": "equipped-SUITSTORAGE",
+      "directions": 4
+    }
+  ]
+}

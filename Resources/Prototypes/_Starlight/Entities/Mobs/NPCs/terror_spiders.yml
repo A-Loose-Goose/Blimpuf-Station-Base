@@ -138,6 +138,7 @@
     tags:
     - DoorBumpOpener
     - FootstepSound
+    - PersonaBlacklisted # Blimpuf
   - type: PassiveDamage
     allowedStates:
     - Alive

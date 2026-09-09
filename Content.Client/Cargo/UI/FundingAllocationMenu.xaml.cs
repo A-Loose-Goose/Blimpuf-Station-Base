@@ -83,6 +83,12 @@ public sealed partial class FundingAllocationMenu : FancyWindow
     {
         foreach (var kvp in bank.Accounts)
         {
+            // Blimpuf Start
+            var account = _prototypeManager.Index(kvp.Key);
+
+            if (account.Invisible)
+                continue;
+            // Blimpuf End
             if (_allowPrimaryAccountAllocation || kvp.Key != bank.PrimaryAccount)
             {
                 yield return kvp;

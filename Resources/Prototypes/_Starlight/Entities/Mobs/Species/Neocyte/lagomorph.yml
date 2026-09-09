@@ -142,6 +142,7 @@
     - Lagomorph
     - NeoLagomorph
     - Neocyte
+    - PersonaBlacklisted # Blimpuf
 
 - type: entity
   parent: BaseSpeciesDummy

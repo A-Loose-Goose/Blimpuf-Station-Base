@@ -1,0 +1,9 @@
+﻿# PUT YOUR TAGS IN ALPHABETICAL ORDER
+# ALSO DOCUMENT WHAT THE HELL THEY DO
+## A ##
+
+- type: Tag
+  id: PersonaBlacklisted # Attached to entities that cannot and should not be disguisable with the persona hologram generator. As of time of writing this is only Borgs and Humanoids as it has funky behaviour.
+
+- type: Tag
+  id: PersonaWhitelisted # Attached to entities that should be disguisable with the persona hologram generator. This is for things that arent included in the whitelist as easily. As of time of writing, this is only for Mechs.

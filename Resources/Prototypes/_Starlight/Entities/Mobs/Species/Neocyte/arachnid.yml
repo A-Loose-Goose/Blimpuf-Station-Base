@@ -41,6 +41,7 @@
     - NeoArachnid
     - SiliconEmotesFH
     - NotLabelable
+    - PersonaBlacklisted # Blimpuf
   - type: Butcherable
     butcheringType: Spike
     spawned:
