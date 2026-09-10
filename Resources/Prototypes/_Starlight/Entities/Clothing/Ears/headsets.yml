@@ -9,6 +9,7 @@
         key_slots:
         - EncryptionKeyCommon
         - EncryptionKeyNCTrainer
+        - EncryptionKeySecurity
     - type: Sprite
       sprite: Clothing/Ears/Headsets/servicesecurity.rsi
 
