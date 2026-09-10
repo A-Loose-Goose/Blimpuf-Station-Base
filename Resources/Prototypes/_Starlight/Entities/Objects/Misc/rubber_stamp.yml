@@ -70,120 +70,93 @@
       sprite: _Starlight/Objects/Misc/stamps.rsi
       state: stamp-brigmedic
 
-# CC Division Stamps
+# CC Department Stamps
 - type: entity
-  name: central administration division rubber stamp
+  name: central department of administrative action rubber stamp
   parent: RubberStampBase
-  id: RubberStampCAD
+  id: RubberStampCDAA
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Administration Division"
+    stampedName: "Central Department of Administrative Action"
     stampedColor: "#1155CC"
     stampState: "paper_stamp-cap"
   - type: Sprite
     state: stamp-cap
 
 - type: entity
-  name: central cargo division rubber stamp
+  name: central department of logistics rubber stamp
   parent: RubberStampBase
-  id: RubberStampCCD
+  id: RubberStampCDL
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Cargo Division"
+    stampedName: "Central Department of Logistics"
     stampedColor: "#9e794a"
     stampState: "paper_stamp-qm"
   - type: Sprite
     state: stamp-detective
 
 - type: entity
-  name: central engineering division rubber stamp
+  name: central department of engineering rubber stamp
   parent: RubberStampBase
-  id: RubberStampCED
+  id: RubberStampCDE
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Engineering Division"
+    stampedName: "Central Department of Engineering"
     stampedColor: "#e39919"
     stampState: "paper_stamp-ntrep"
   - type: Sprite
     state: stamp-ce
 
 - type: entity
-  name: central intelligence division rubber stamp
+  name: central department of health and medicine rubber stamp
   parent: RubberStampBase
-  id: RubberStampCID
+  id: RubberStampCDHM
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Intelligence Division"
-    stampedColor: "#660089"
-    stampState: "paper_stamp-rd"
-  - type: Sprite
-    state: stamp-rd
-
-- type: entity
-  name: central medical division rubber stamp
-  parent: RubberStampBase
-  id: RubberStampCMD
-  categories: [ DoNotMap ]
-  components:
-  - type: Stamp
-    stampedName: "Central Medical Division"
+    stampedName: "Central Department of Health and Medicine"
     stampedColor: "#0AAFC3"
     stampState: "paper_stamp-cmo"
   - type: Sprite
     state: stamp-cmo
 
 - type: entity
-  name: central research division rubber stamp
+  name: central department of research rubber stamp
   parent: RubberStampBase
-  id: RubberStampCRD
+  id: RubberStampCDR
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Research Division"
+    stampedName: "Central Department of Research"
     stampedColor: "#9900FF"
     stampState: "paper_stamp-rd"
   - type: Sprite
     state: stamp-wizard
 
 - type: entity
-  name: central domestic division rubber stamp
+  name: central department of guest services rubber stamp
   parent: RubberStampBase
-  id: RubberStampCDD
+  id: RubberStampCDGS
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Domestic Division"
+    stampedName: "Central Department of Guest Services"
     stampedColor: "#6AA84F"
     stampState: "paper_stamp-centcom"
   - type: Sprite
     state: stamp-centcom
 
 - type: entity
-  name: central special operations division rubber stamp
+  name: central department of security and welfare rubber stamp
   parent: RubberStampBase
-  id: RubberStampCSOD
-  suffix: DO NOT MAP
-  components:
-  - type: Stamp
-    stampedName: "Central Special Operations Division"
-    stampedColor: "#ad2a6b"
-    stampState: "paper_stamp-csop"
-  - type: Sprite
-    sprite: _Starlight/Objects/Misc/stamps.rsi
-    state: stamp-csop
-
-- type: entity
-  name: central security division rubber stamp
-  parent: RubberStampBase
-  id: RubberStampCSD
+  id: RubberStampCDSW
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Security Division"
+    stampedName: "Central Department of Security and Welfare"
     stampedColor: "#2c6682"
     stampState: "paper_stamp-hos"
   - type: Sprite
@@ -206,15 +179,13 @@
         storagebase: !type:AllSelector
           children:
             - id: RubberStampCentcom
-            - id: RubberStampCAD
-            - id: RubberStampCCD
-            - id: RubberStampCED
-            - id: RubberStampCID
-            - id: RubberStampCMD
-            - id: RubberStampCRD
-            - id: RubberStampCDD
-            - id: RubberStampCSOD
-            - id: RubberStampCSD
+            - id: RubberStampCDAA
+            - id: RubberStampCDL
+            - id: RubberStampCDE
+            - id: RubberStampCDHM
+            - id: RubberStampCDR
+            - id: RubberStampCDGS
+            - id: RubberStampCDSW
     - type: Sprite
       sprite: _Starlight/Objects/Storage/boxes.rsi
       layers:
