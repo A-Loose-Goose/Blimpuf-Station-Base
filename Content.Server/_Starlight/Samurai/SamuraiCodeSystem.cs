@@ -363,21 +363,4 @@ public sealed partial class SamuraiCodesSystem : SharedSamuraiCodeSystem
         if (TryComp<ActionComponent>(act, out var action))
             _actions.RemoveAction(act);
     }
-
-    protected override void OnEmagged(Entity<SamuraiCodesComponent> ent, ref GotEmaggedEvent args)
-    {
-        base.OnEmagged(ent, ref args);
-        if (!args.Handled)
-            return;
-
-        TryAddRandomCode(ent, ent.Comp.Wildcard);
-    }
-
-    // Tries to add a code on an ion storm event
-    public void OnIonStorm(Entity<SamuraiCodesComponent> ent)
-    {
-        if (!_random.Prob(ent.Comp.IonStormCodeChance))
-            return;
-        TryAddRandomCode(ent, ent.Comp.Wildcard);
-    }
 }
