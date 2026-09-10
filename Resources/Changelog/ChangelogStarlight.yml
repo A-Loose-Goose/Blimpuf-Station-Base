@@ -4776,5 +4776,14 @@ Entries:
   id: 14801
   time: '2026-09-09T01:46:05.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/148
+- author: Coletheconquer
+  changes:
+  - message: Updated CC Department names.
+    type: Tweak
+  - message: Defunct CC department names.
+    type: Remove
+  id: 14901
+  time: '2026-09-10T18:29:51.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/149
 Order: -1
 
