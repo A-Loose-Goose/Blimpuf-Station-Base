@@ -202,6 +202,8 @@
   name: syndicate infiltration hardsuit
   description: The Syndicate's Special Operations' hardsuit of choice, this hardsuit, as well as durability, has been built with stealth in mind.
   components:
+    - type: Contraband # Blimpuf
+      tier: Tier4
     - type: Sprite
       sprite: _Starlight/Clothing/OuterClothing/Hardsuits/infiltrationsyndie.rsi
     - type: Clothing

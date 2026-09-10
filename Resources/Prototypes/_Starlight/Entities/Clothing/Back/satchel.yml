@@ -76,6 +76,8 @@
   name: syndicate satchel
   description: Ask not what the syndicate satchel can do for you, but rather, what can't it do.
   components:
+  - type: Contraband # Blimpuf
+    contrabandType: Syndicate
   - type: Sprite
     sprite: _Starlight/Clothing/Back/Satchels/syndicate.rsi
   - type: Storage

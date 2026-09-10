@@ -4,6 +4,9 @@
   name: cybersun ultima hardsuit helmet
   description: An experimental hardsuit helmet for the Syndicate.
   components:
+    - type: Contraband # Blimpuf
+      tier: Tier4
+      contrabandType: Syndicate
     - type: Sprite
       sprite: _Blimpuf/Clothing/Head/Hardsuits/syndicate-experimental-hardsuit.rsi
       layers:

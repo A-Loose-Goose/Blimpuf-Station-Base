@@ -166,6 +166,9 @@
   name: syndicate's winter boots
   description: Durable heavy boots, looks like merch from "Syndieland".
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier1
+    contrabandType: Syndicate
   - type: Sprite
     sprite: Clothing/Shoes/Boots/winterbootssyndicate.rsi
   - type: Clothing

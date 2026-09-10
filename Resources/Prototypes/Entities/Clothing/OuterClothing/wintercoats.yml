@@ -857,6 +857,9 @@
   name: syndicate's winter coat
   description: "The syndicate's winter coat is made of durable fabric, with gilded patterns, and coarse wool."
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier4
+    contrabandType: Syndicate
   - type: Sprite
     sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
     layers:
@@ -882,6 +885,8 @@
   name: syndicate's armored winter coat
   description: "The syndicate's armored winter coat is made of durable fabric, with gilded patterns, and coarse wool."
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier4
   - type: Sprite
     sprite: Clothing/OuterClothing/WinterCoats/syndicate/coatsyndiecaparmored.rsi
   - type: Clothing
@@ -896,6 +901,9 @@
   name: syndicate's winter coat
   description: Insulated winter coat, looks like a merch from "Syndieland".
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier1
+    contrabandType: Syndicate
   - type: Sprite
     sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
     layers:

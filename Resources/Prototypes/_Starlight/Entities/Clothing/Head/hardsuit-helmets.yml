@@ -172,6 +172,9 @@
   categories: [ HideSpawnMenu ]
   name: syndicate infiltration hardsuit helmet
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier4
+    contrabandType: Syndicate
   - type: Sprite
     sprite: _Starlight/Clothing/Head/Hardsuits/infiltrationsyndie.rsi
   - type: Clothing

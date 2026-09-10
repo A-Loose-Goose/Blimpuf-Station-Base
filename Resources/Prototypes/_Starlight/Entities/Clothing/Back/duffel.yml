@@ -103,6 +103,8 @@
   name: deluxe syndicate duffel bag
   description: A huge duffel bag for holding an obscene amount of Syndicate goods.
   components:
+  - type: Contraband # Blimpuf
+    contrabandType: Syndicate
   - type: Sprite
     sprite: Clothing/Back/Duffels/syndicate.rsi
   - type: ExplosionResistance

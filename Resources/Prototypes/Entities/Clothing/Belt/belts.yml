@@ -132,6 +132,8 @@
   name: syndicate shoulder holster
   description: A deep shoulder holster capable of holding many types of ballistics.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier2
   - type: Sprite
     sprite: Clothing/Belt/syndieholster.rsi
   - type: Clothing
@@ -196,6 +198,8 @@
   name: chest rig
   description: A set of tactical webbing worn by Syndicate boarding parties.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier4
   - type: Storage #Starlight
     grid:
     - 0,0,1,0 #left
@@ -236,6 +240,8 @@
   name: ERT chest rig
   description: A set of tactical webbing worn by Emergency Response Team operatives.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier3 # Keep the ERT variant's existing tier.
   - type: Sprite
     sprite: Clothing/Belt/militarywebbingert.rsi
   - type: Clothing

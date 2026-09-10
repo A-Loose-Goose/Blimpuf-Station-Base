@@ -556,6 +556,9 @@
   categories: [ HideSpawnMenu ]
   name: syndicate coat hood
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier1
+    contrabandType: Syndicate
   - type: Sprite
     sprite: Clothing/Head/Hoods/Coat/hoodsyndicate.rsi
   - type: Clothing
