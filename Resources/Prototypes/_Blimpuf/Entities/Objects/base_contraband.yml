@@ -3,7 +3,7 @@
 
 # General classification bases for items that do not use departmental authorization.
 - type: entity
-  id: BaseHighlyIllegalContraband
+  id: BaseContrabandTier4
   abstract: true
   components:
   - type: ScanDetectable
