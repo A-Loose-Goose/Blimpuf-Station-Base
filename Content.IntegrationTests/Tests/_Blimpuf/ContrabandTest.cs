@@ -20,6 +20,7 @@ public sealed class ContrabandTest : GameTest
     private const string InheritanceChild = "ContrabandInheritanceChild";
     private const string ClearanceTarget = "ContrabandClearanceTarget";
     private const string ReagentInheritanceChild = "ContrabandReagentInheritanceChild";
+    private const string PrescriptionReagent = "ContrabandPrescriptionReagent";
     private static readonly ProtoId<JobPrototype> ChemistJob = "Chemist";
     private static readonly ProtoId<JobPrototype> DetectiveJob = "Detective";
 
@@ -79,6 +80,14 @@ public sealed class ContrabandTest : GameTest
           contrabandType: Magical
           allowedDepartments: [ Medical ]
           allowedJobs: [ Chemist ]
+
+        - type: reagent
+          id: ContrabandPrescriptionReagent
+          name: reagent-name-water
+          desc: reagent-desc-water
+          physicalDesc: reagent-physical-desc-translucent
+          contrabandTier: Tier1
+          requiresPrescription: true
 
         - type: entity
           id: ContrabandClearanceTarget
@@ -256,8 +265,8 @@ public sealed class ContrabandTest : GameTest
     }
 
     [TestCase("Water", true, false)]
-    [TestCase("Psicodine", true, true)]
-    [TestCase("Psicodine", false, false)]
+    [TestCase(PrescriptionReagent, true, true)]
+    [TestCase(PrescriptionReagent, false, false)]
     [EnsureCVar(Side.Server, typeof(CCVars), nameof(CCVars.ContrabandExamineOnlyInHUD), true)]
     public async Task ReagentDescriptionsRespectClassificationAndDisplaySetting(
         string prototype, bool enabled, bool showsDescription)
