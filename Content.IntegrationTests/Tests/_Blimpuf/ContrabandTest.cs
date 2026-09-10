@@ -175,7 +175,7 @@ public sealed class ContrabandTest : GameTest
     }
 
     // Cover parent-order-sensitive equipment and the department-specific versions of shared items.
-    [TestCase("EncryptionKeyStationMaster", "Tier4", "CentralCommand", false, new[] { "Command", "CentralCommand" }, new string[0])]
+    [TestCase("EncryptionKeyStationMaster", "Tier4", "CentralCommand", true, new[] { "Command", "CentralCommand" }, new string[0])]
     [TestCase("WeaponEnergyShotgun", "Tier3", null, true, new[] { "Command" }, new[] { "Warden" })]
     [TestCase("WeaponEnergyMagnum", "Tier3", null, true, new[] { "Command" }, new[] { "Detective" })]
     [TestCase("ClothingHandsMercGlovesCombat", "Tier2", null, false, new[] { "Engineering", "Security", "Command" }, new[] { "SalvageSpecialist", "SalvageLead", "MiningSpecialist" })]
@@ -183,7 +183,7 @@ public sealed class ContrabandTest : GameTest
     [TestCase("Stunbaton", "Tier2", null, false, new[] { "Security" }, new string[0])]
     [TestCase("WeaponPistolDP", "Tier3", null, true, new[] { "Security" }, new string[0])]
     [TestCase("WeaponPistolMk58Nonlethal", "Tier3", null, true, new[] { "Security" }, new[] { "SalvageSpecialist", "SalvageLead" })]
-    [TestCase("GreenLightShield", "Tier4", "CentralCommand", false, new[] { "CentralCommand" }, new string[0])]
+    [TestCase("GreenLightShield", "Tier4", "CentralCommand", true, new[] { "CentralCommand" }, new string[0])]
     [TestCase("EnforcerStunbaton", "Tier2", null, false, new[] { "Representatives" }, new string[0])]
     [TestCase("WeaponPistolBlueguard", "Tier3", null, true, new[] { "Representatives" }, new string[0])]
     [TestCase("BlueLightShield", "Tier3", "CentralCommand", false, new[] { "Representatives" }, new string[0])]
