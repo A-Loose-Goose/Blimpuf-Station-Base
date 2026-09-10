@@ -888,11 +888,14 @@
     sprite: Clothing/Head/Hats/truckershat.rsi
 
 - type: entity
-  parent: [ ClothingHeadBase, BaseMinorContraband ] #SL EDIT, Syndie to Minor
+  parent: ClothingHeadBase # Blimpuf
   id: ClothingHeadPyjamaSyndicateBlack
   name: syndicate black pyjama hat
   description: For keeping that traitor head of yours warm.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier1
+    contrabandType: Syndicate
   - type: Sprite
     sprite: Clothing/Head/Hats/pyjamasyndicateblack.rsi
   - type: Clothing
@@ -904,11 +907,14 @@
       HeadSide : HEAD
 
 - type: entity
-  parent: [ ClothingHeadBase, BaseMinorContraband ] #SL EDIT, Syndie to Minor
+  parent: ClothingHeadBase # Blimpuf
   id: ClothingHeadPyjamaSyndicatePink
   name: syndicate pink pyjama hat
   description: For keeping that traitor head of yours warm.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier1
+    contrabandType: Syndicate
   - type: Sprite
     sprite: Clothing/Head/Hats/pyjamasyndicatepink.rsi
   - type: Clothing
@@ -920,11 +926,14 @@
       HeadSide : HEAD
 
 - type: entity
-  parent: [ ClothingHeadBase, BaseMinorContraband ] #SL EDIT, Syndie to Minor
+  parent: ClothingHeadBase # Blimpuf
   id: ClothingHeadPyjamaSyndicateRed
   name: syndicate red pyjama hat
   description: For keeping that traitor head of yours warm.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier1
+    contrabandType: Syndicate
   - type: Sprite
     sprite: Clothing/Head/Hats/pyjamasyndicatered.rsi
   - type: Clothing

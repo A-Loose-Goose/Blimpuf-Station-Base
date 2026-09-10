@@ -762,33 +762,42 @@
       sprite: Clothing/Uniforms/Jumpsuit/lawyergood.rsi
 
 - type: entity
-  parent: [UnsensoredClothingUniformBase, BaseMinorContraband] #SL EDIT, Syndie to minor
+  parent: UnsensoredClothingUniformBase # Blimpuf
   id: ClothingUniformJumpsuitPyjamaSyndicateBlack
   name: black syndicate pyjamas
   description: For those long nights in perma.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier1
+    contrabandType: Syndicate
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/pyjamasyndicateblack.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/pyjamasyndicateblack.rsi
 
 - type: entity
-  parent: [UnsensoredClothingUniformBase, BaseMinorContraband] #SL EDIT, Syndie to minor
+  parent: UnsensoredClothingUniformBase # Blimpuf
   id: ClothingUniformJumpsuitPyjamaSyndicatePink
   name: pink syndicate pyjamas
   description: For those long nights in perma.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier1
+    contrabandType: Syndicate
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/pyjamasyndicatepink.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/pyjamasyndicatepink.rsi
 
 - type: entity
-  parent: [UnsensoredClothingUniformBase, BaseMinorContraband] #SL EDIT, Syndie to minor
+  parent: UnsensoredClothingUniformBase # Blimpuf
   id: ClothingUniformJumpsuitPyjamaSyndicateRed
   name: red syndicate pyjamas
   description: For those long nights in perma.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier1
+    contrabandType: Syndicate
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/pyjamasyndicatered.rsi
   - type: Clothing
