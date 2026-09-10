@@ -29,7 +29,7 @@ entities:
   - uid: 1
     components:
     - type: MetaData
-      name: Atakebune
+      name: Daimyo-Tekkōsen
     - type: Transform
       pos: -0.50160986,-0.5203037
       parent: invalid
