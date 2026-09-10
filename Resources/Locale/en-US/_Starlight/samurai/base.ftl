@@ -8,7 +8,7 @@ samurai-code-polite-name = Code of Courtesy
 samurai-code-polite-desc = Remain composed and polite, to become vulgar is to dishonor your nobility.
 
 samurai-code-law-name = Code of Law
-samurai-code-law-desc = Just as you follow your codes, others must respect the rule of law. Those who do respect your rule of law disrespect the wisdom behind it.
+samurai-code-law-desc = Just as you follow your codes, others must respect the rule of law. Those who do not follow the law disrespect the wisdom behind it.
 
 samurai-code-charity-name = Code of Charity
 samurai-code-charity-desc = Nobles care for the poor and downtrodden. To fail to care for them is to dishonor the soul.

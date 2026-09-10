@@ -13,9 +13,9 @@
   parent: RestrictedAntag
   id: Samurai
   prefRoles: # Starlight
-    - GenericSiliconAntagonist # Starlight
+    - SpaceNinja # Starlight
   spawnerPrototype: SpawnPointSamurai
-  pickPlayer: false
+  # pickPlayer: false
   startingGear: SamuraiGear
   roleLoadout:
     - AntagWizardDuelist

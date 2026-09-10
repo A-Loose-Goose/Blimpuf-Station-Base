@@ -1169,3 +1169,16 @@
       nameFormat: name-format-standard
     - type: Samurai
     - type: SamuraiCodes
+    - type: AntagObjectives
+      objectives:
+        - HonorObjective
+        - WisdomObjective
+        - PunishObjective
+    - type: AntagSelection
+      agentName: samurai-round-end-agent-name
+      antags:
+        - !type:FixedAntagCount
+          proto: Samurai
+    - type: Tag
+      tags:
+        - Samurai

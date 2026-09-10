@@ -253,14 +253,11 @@
     - WisdomObjective
     - PunishObjective
   - type: AntagLoadProfileRule
-    applyCharacterProfile: true
-    speciesOverride: Human
-    speciesOverrideBlacklist:
   - type: AntagSelection
     agentName: samurai-round-end-agent-name
     antags:
       - !type:FixedAntagCount
         proto: Samurai
-
   - type: DynamicRuleCost
     cost: 100
+  - type: Tag
