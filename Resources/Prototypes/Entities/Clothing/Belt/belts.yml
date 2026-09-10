@@ -235,13 +235,11 @@
     sprite: Clothing/Belt/militarywebbingmed.rsi
 
 - type: entity
-  parent: ClothingBeltMilitaryWebbing
+  parent: [ BaseCentcommContraband, ClothingBeltMilitaryWebbing ] # Blimpuf
   id: ClothingBeltMilitaryWebbingERT
   name: ERT chest rig
   description: A set of tactical webbing worn by Emergency Response Team operatives.
   components:
-  - type: Contraband # Blimpuf
-    tier: Tier3 # Keep the ERT variant's existing tier.
   - type: Sprite
     sprite: Clothing/Belt/militarywebbingert.rsi
   - type: Clothing

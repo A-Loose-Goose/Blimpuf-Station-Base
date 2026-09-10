@@ -628,7 +628,7 @@
     sprite: _Starlight/Clothing/OuterClothing/Coats/chef-senior.rsi
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: [ BaseCentcommContraband, ClothingOuterStorageBase ] # Blimpuf
   id: ClothingOuterCoatChefCentComm
   name: centcomm chef's jacket
   description: A distinct white and green jacket worn by the chefs at Central Command. Turns you into a walking advertisement.

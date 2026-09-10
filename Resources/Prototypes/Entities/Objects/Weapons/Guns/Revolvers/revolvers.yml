@@ -139,7 +139,7 @@
       path: /Audio/Weapons/Guns/Gunshots/mateba.ogg
 
 - type: entity
-  parent: WeaponRevolverMateba
+  parent: [ BaseCentcommContraband, WeaponRevolverMateba ] # Blimpuf
   id: WeaponRevolverMatebaAP # For deathsquad
   suffix: armor-piercing
   components:
