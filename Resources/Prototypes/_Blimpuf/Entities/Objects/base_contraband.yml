@@ -83,6 +83,7 @@
   parent: BaseRestrictedContraband
   abstract: true
   components:
+  - type: ScanDetectable # Blimpuf
   - type: Contraband
     tier: Tier4
     contrabandType: CentralCommand

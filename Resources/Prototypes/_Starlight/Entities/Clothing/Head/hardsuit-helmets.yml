@@ -172,6 +172,7 @@
   categories: [ HideSpawnMenu ]
   name: syndicate infiltration hardsuit helmet
   components:
+  - type: ScanDetectable # Blimpuf
   - type: Contraband # Blimpuf
     tier: Tier4
     contrabandType: Syndicate

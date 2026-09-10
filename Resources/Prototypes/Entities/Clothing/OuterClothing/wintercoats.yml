@@ -857,6 +857,7 @@
   name: syndicate's winter coat
   description: "The syndicate's winter coat is made of durable fabric, with gilded patterns, and coarse wool."
   components:
+  - type: ScanDetectable # Blimpuf
   - type: Contraband # Blimpuf
     tier: Tier4
     contrabandType: Syndicate

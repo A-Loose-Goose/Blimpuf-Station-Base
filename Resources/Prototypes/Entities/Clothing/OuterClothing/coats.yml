@@ -437,6 +437,7 @@
   name: syndicate's coat
   description: The syndicate's coat is made of durable fabric, with gilded patterns.
   components:
+  - type: ScanDetectable # Blimpuf
   - type: Contraband # Blimpuf
     tier: Tier4
     contrabandType: Syndicate
