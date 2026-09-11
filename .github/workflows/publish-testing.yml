@@ -11,6 +11,7 @@ on:
 
 jobs:
   build:
+    if: github.ref == 'refs/heads/blimpuf-staging'
     runs-on: ubuntu-latest
     environment:
       name: prod
@@ -64,6 +65,7 @@ jobs:
 
   update-changelog:
     name: Publish Changelogs
+    if: github.ref == 'refs/heads/blimpuf-staging'
 #    needs: build
     runs-on: ubuntu-latest
     environment: prod

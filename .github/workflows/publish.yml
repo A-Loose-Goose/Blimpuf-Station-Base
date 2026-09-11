@@ -10,6 +10,7 @@ on:
 jobs:
   build:
     name: Build & Package
+    if: github.ref == 'refs/heads/blimpuf-live'
     runs-on: ubuntu-latest
     environment: prod
     steps:
@@ -51,6 +52,7 @@ jobs:
 
   update-changelog:
     name: Publish Changelogs
+    if: github.ref == 'refs/heads/blimpuf-live'
 #    needs: build
     runs-on: ubuntu-latest
     environment: prod
