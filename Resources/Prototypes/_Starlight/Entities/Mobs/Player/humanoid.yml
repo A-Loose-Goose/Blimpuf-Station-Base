@@ -1122,8 +1122,8 @@
   categories: [ HideSpawnMenu ] # Blimpuf edit - hide until we can add objectives at spawn
   components:
     - type: Sprite
-      sprite: _Starlight/Markers/jobs.rsi
-      state: TSFOfficer
+      sprite: Markers/jobs.rsi
+      state: green
     - type: RandomHumanoidSpawner
       settings: SamuraiBasic
 
