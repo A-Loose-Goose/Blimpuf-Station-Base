@@ -117969,7 +117969,7 @@ entities:
     - type: Contraband
       allowedJobs: []
       allowedDepartments: []
-      severity: Major
+      tier: Tier3 # Blimpuf
 - proto: FoodCartCold
   entities:
   - uid: 13563
@@ -118170,7 +118170,7 @@ entities:
     - type: Contraband
       allowedJobs: []
       allowedDepartments: []
-      severity: Major
+      tier: Tier3 # Blimpuf
 - proto: FoodMeatSpider
   entities:
   - uid: 36678
@@ -118362,7 +118362,7 @@ entities:
     - type: Contraband
       allowedJobs: []
       allowedDepartments: []
-      severity: Major
+      tier: Tier3 # Blimpuf
 - proto: FoodSoupSlime
   entities:
   - uid: 13602
@@ -118373,7 +118373,7 @@ entities:
     - type: Contraband
       allowedJobs: []
       allowedDepartments: []
-      severity: Major
+      tier: Tier3 # Blimpuf
 - proto: FoodSoupVegetable
   entities:
   - uid: 13603
