@@ -1,7 +1,7 @@
 contraband-tier-1 = restricted
-contraband-tier-2 = dangerous
+contraband-tier-2 = heavily regulated
 contraband-tier-3 = serious
-contraband-tier-4 = highly dangerous
+contraband-tier-4 = highly illegal
 contraband-tier-5 = extremely dangerous
 
 contraband-type-syndicate = Syndicate
