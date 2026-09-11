@@ -113630,7 +113630,7 @@ entities:
       allowedJobs: []
       allowedDepartments:
       - Security
-      severity: Minor
+      tier: Tier2 # Blimpuf
   - uid: 16401
     components:
     - type: Transform

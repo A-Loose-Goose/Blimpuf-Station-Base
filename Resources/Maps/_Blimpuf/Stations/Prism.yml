@@ -167307,7 +167307,7 @@ entities:
     - type: Contraband
       allowedDepartments:
       - Security
-      severity: Restricted
+      tier: Tier3 # Blimpuf
 - proto: WeaponTurretSyndicateBroken
   entities:
   - uid: 24875
