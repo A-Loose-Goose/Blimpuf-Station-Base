@@ -165,7 +165,7 @@
     sprite: Clothing/Shoes/Specific/wizard.rsi
 
 - type: entity
-  parent: [ClothingShoesWizard, ClothingShoesBootsMagBase, BaseJetpack, BaseHighlyIllegalContraband, ClothingShoesMilitaryBase]
+  parent: [ClothingShoesWizard, ClothingShoesBootsMagBase, BaseJetpack, BaseContrabandTier4, ClothingShoesMilitaryBase]
   id: ClothingShoesSamurai
   name: waraji
   description: A traditional pair of shoes contrasted by a pair of jet thrusters sticking out the soles.

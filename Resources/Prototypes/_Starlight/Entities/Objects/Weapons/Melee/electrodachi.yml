@@ -1,6 +1,6 @@
 - type: entity
   name: electrodachi
-  parent: [ BaseSword, BaseHighlyIllegalContraband ]
+  parent: [ BaseSword, BaseContrabandTier4 ]
   id: Electrodachi
   description: An ancient weapon, itching to slay the dishonorable
   components:

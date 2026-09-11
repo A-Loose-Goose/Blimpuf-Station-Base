@@ -423,7 +423,7 @@
 
 #Samurai Sheath
 - type: entity
-  parent: [ClothingBeltBase, ClothingSlotBase]
+  parent: [ClothingBeltBase, ClothingSlotBase, BaseContrabandTier4]
   id: SamuraiElectrodachiSheath
   name: Samurai Electrodachi Sheath
   description: This sheath is designed to shield the wearer from the consequences of carrying an electric sword on your hip.

@@ -1345,7 +1345,7 @@
 
 #Samurai Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseHighlyIllegalContraband]
+  parent: [ClothingOuterHardsuitBase, BaseContrabandTier4]
   id: ClothingOuterHardsuitSamurai
   name: red samurai hardsuit
   description: A long passed down relic of the Carp Tooth Clan.
