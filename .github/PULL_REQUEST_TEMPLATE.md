@@ -20,11 +20,11 @@ If your PR contains in-game changes you must provide screenshots/videos of the c
 
 **Changelog**
 <!--
-If you want the players to know about changes made in this PR, specify them using the template outside the comment. Short and informative.
+If you want the players to know about changes made in this PR, specify them using the template outside the comment. Short and informative. Remove this section entirely if your PR does not make in-game changes.
 
-:cl: STARLIGHT TEAM
-- add: Added Starlight.
-- remove: Removed SS13.
-- tweak: Changed SS14.
-- fix: Fixed Rinary.
+:cl: YourNameHere
+- add: Added new thing.
+- remove: Removed old thing.
+- tweak: Changed overpowered thing.
+- fix: Fixed broken thing.
 -->

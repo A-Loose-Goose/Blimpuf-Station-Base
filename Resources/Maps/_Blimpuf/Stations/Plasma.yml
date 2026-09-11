@@ -25463,7 +25463,8 @@ entities:
       allowedJobs: []
       allowedDepartments:
       - Security
-      severity: Syndicate
+      tier: Tier3 # Blimpuf
+      contrabandType: Syndicate # Blimpuf
 - proto: BarSignComboCafe
   entities:
   - uid: 2262
@@ -25662,7 +25663,8 @@ entities:
       allowedJobs: []
       allowedDepartments:
       - Security
-      severity: Syndicate
+      tier: Tier3 # Blimpuf
+      contrabandType: Syndicate # Blimpuf
   - uid: 2296
     components:
     - type: Transform
@@ -136060,7 +136062,8 @@ entities:
       allowedJobs: []
       allowedDepartments:
       - Security
-      severity: Syndicate
+      tier: Tier3 # Blimpuf
+      contrabandType: Syndicate # Blimpuf
 - proto: LockerWardenFilled
   entities:
   - uid: 20312
@@ -139571,7 +139574,8 @@ entities:
     - type: Contraband
       allowedJobs: []
       allowedDepartments: []
-      severity: Syndicate
+      tier: Tier3 # Blimpuf
+      contrabandType: Syndicate # Blimpuf
 - proto: PlushieSlime
   entities:
   - uid: 20508
@@ -154515,7 +154519,8 @@ entities:
       allowedJobs: []
       allowedDepartments:
       - Security
-      severity: Syndicate
+      tier: Tier3 # Blimpuf
+      contrabandType: Syndicate # Blimpuf
 - proto: SlimeExtractBag
   entities:
   - uid: 22907
@@ -159899,7 +159904,8 @@ entities:
       allowedJobs: []
       allowedDepartments:
       - Security
-      severity: Syndicate
+      tier: Tier3 # Blimpuf
+      contrabandType: Syndicate # Blimpuf
     - type: Fixtures
       fixtures: {}
 - proto: SyndieHandyFlag
@@ -161665,7 +161671,8 @@ entities:
     - type: Contraband
       allowedJobs: []
       allowedDepartments: []
-      severity: Syndicate
+      tier: Tier3 # Blimpuf
+      contrabandType: Syndicate # Blimpuf
   - uid: 24038
     components:
     - type: Transform
@@ -181737,7 +181744,8 @@ entities:
     - type: Contraband
       allowedJobs: []
       allowedDepartments: []
-      severity: Syndicate
+      tier: Tier3 # Blimpuf
+      contrabandType: Syndicate # Blimpuf
 - proto: WehpetInstrument
   entities:
   - uid: 20233
