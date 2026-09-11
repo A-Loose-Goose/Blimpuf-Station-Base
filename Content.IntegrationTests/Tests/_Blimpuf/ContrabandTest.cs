@@ -239,7 +239,7 @@ public sealed class ContrabandTest : GameTest
             Assert.That(itemClassification, Does.Contain("piece"));
             Assert.That(itemClassification, Does.Not.Contain("reagent"));
 
-            Assert.That(reagentClassification, Does.Contain("dangerous tier 2 magical contraband reagent"));
+            Assert.That(reagentClassification, Does.Contain("heavily regulated tier 2 magical contraband reagent"));
 
             Assert.That(itemAuthorization, Does.Contain("This item is restricted"));
             Assert.That(itemAuthorization, Does.Contain("Security"));
