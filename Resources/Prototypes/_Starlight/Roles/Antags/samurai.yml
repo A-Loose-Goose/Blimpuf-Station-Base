@@ -12,8 +12,6 @@
 - type: antagSpecifier
   parent: RestrictedAntag
   id: Samurai
-  prefRoles: # Starlight
-    - SpaceNinja # Starlight
   spawnerPrototype: SpawnPointSamurai
   # pickPlayer: false
   startingGear: SamuraiGear
