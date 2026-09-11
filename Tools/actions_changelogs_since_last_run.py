@@ -223,7 +223,10 @@ def send_embed(embed: dict[str, Any]):
 
 
 def ping_role_once(role_id: str):
-    content = f"<@&{role_id}> A new Blimpuf live build is available. Changelog follows."
+    announcement = "A new Blimpuf live build is available. Changelog follows."
+    if os.environ.get("CHANGELOG_ONLY") == "true":
+        announcement = "Blimpuf changelog updates."
+    content = f"<@&{role_id}> {announcement}"
     payload = {
         "content": content,
         "allowed_mentions": {"parse": [], "roles": [role_id]},

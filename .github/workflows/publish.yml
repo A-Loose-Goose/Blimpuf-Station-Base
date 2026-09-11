@@ -6,11 +6,16 @@ concurrency:
 
 on:
   workflow_dispatch:
+    inputs:
+      changelog_only:
+        description: Send Discord changelog without building or uploading
+        type: boolean
+        default: false
 
 jobs:
   build:
     name: Build & Package
-    if: github.ref == 'refs/heads/blimpuf-live'
+    if: github.ref == 'refs/heads/blimpuf-live' && !inputs.changelog_only
     runs-on: ubuntu-latest
     environment: prod
     steps:
@@ -53,7 +58,9 @@ jobs:
 
   update-changelog:
     name: Publish Changelogs
-    if: github.ref == 'refs/heads/blimpuf-live'
+    if: >-
+      !cancelled() && github.ref == 'refs/heads/blimpuf-live' &&
+      (inputs.changelog_only || needs.build.result == 'success')
     needs: build
     runs-on: ubuntu-latest
     environment: prod
@@ -76,3 +83,4 @@ jobs:
           # The webhook must target live changelog channel 1500641641768423614.
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           DISCORD_CHANGELOG_ROLE_ID: "1548096887570178148"
+          CHANGELOG_ONLY: ${{ inputs.changelog_only }}
