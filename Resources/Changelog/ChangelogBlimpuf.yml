@@ -1,5 +1,5 @@
 Entries:
-- author: DivineHobo # Beginning of Blimpuf Changelog
+- author: DivineHobo
   changes:
   - message: Added commits from main starlight.
     type: Add
@@ -907,4 +907,13 @@ Entries:
   id: 14501
   time: '2026-09-04T16:25:37.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/145
+- author: ALooseGoose
+  changes:
+  - message: Closet Skeletons, Rat Kings, Monkeys and Kobolds have been turned to
+      Free Agents.
+    type: Tweak
+  id: 14001
+  time: '2026-09-11T08:07:34.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/140
 Order: -1
+
