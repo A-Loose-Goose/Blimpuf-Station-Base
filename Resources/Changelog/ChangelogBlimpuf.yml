@@ -915,5 +915,16 @@ Entries:
   id: 14001
   time: '2026-09-11T08:07:34.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/140
+- author: Limerent-Sun
+  changes:
+  - message: Inspecting solutions with chemical goggles now reveals the contraband
+      status of any reagents.
+    type: Add
+  - message: Contraband system has been reworked into a 5-tiered system with independent
+      types and authorizations.
+    type: Tweak
+  id: 15201
+  time: '2026-09-11T12:31:06.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/152
 Order: -1
 
