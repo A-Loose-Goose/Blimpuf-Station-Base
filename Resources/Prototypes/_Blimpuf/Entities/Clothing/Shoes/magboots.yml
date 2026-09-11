@@ -26,7 +26,11 @@
   - type: Item
     sprite: null
     size: Normal
-  - type: StaminaResistance # I cannot see how this could possibly be overpowered in the slightest c:
-    damageCoefficient: 0.5
   - type: StaticPrice
     price: 1500
+  - type: ComponentToggler
+    components:
+      - type: NoSlip
+      - type: StaminaResistance # I cannot see how this could possibly be overpowered in the slightest c:
+        damageCoefficient: 0.5
+
