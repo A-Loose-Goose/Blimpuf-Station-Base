@@ -2,7 +2,7 @@ name: "Labels: Review"
 
 # Cancel older jobs on PRs when new changes are pushed
 concurrency:
-  group: ${{ github.workflow }}-${{ github.event.workflow_run.display_title || format('Review labels for PR #{0}', github.event.pull_request.number) }}
+  group: "${{ github.workflow }}-${{ github.event.workflow_run.display_title || format('Review labels for PR #{0}', github.event.pull_request.number) }}"
   cancel-in-progress: true
 
 on:
