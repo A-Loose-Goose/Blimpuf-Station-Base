@@ -1,10 +1,16 @@
 - type: antag
   id: SamuraiAntag
-  name: samurai-ghost-role-name
+  name: roles-antag-samurai-name
   antagonist: true
+  setPreference: true # Starlight - allow setting pref for ninja
   objective: roles-antag-samurai-objective
   requirements:
+  - !type:OverallPlaytimeRequirement
+      time: 24h
   - !type:RoleTimeRequirement
+      role: JobSecurityOfficer # It's better than nothing.
+      time: 1h
+  - !type:RoleTimeRequirement # So they understand how to follow their codes and such
     role: JobBorg
     time: 3h
   playTimeTracker: AntagSamurai
@@ -12,6 +18,8 @@
 - type: antagSpecifier
   parent: RestrictedAntag
   id: Samurai
+  prefRoles: # Starlight
+    - SpaceNinja # Starlight
   spawnerPrototype: SpawnPointSamurai
   # pickPlayer: false
   startingGear: SamuraiGear
