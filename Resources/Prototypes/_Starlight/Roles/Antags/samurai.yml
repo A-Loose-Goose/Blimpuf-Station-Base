@@ -4,6 +4,7 @@
   antagonist: true
   setPreference: true # Starlight - allow setting pref for ninja
   objective: roles-antag-samurai-objective
+  roleLoadout: [ AntagSamurai ] # Starlight
   requirements:
   - !type:OverallPlaytimeRequirement
       time: 24h
@@ -19,7 +20,7 @@
   parent: RestrictedAntag
   id: Samurai
   prefRoles: # Starlight
-    - SpaceNinja # Starlight
+    - SamuraiAntag # Starlight
   spawnerPrototype: SpawnPointSamurai
   # pickPlayer: false
   startingGear: SamuraiGear
