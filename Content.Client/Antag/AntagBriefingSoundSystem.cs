@@ -2,7 +2,6 @@ using Content.Shared.Antag;
 using Robust.Client.Player;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
-using Robust.Shared.Player;
 using Robust.Shared.Timing;
 
 namespace Content.Client.Antag;
@@ -34,8 +33,6 @@ public sealed class AntagBriefingSystem : EntitySystem
         if (_pendingSounds.Count == 0)
             return;
 
-        // PlayLocal uses predicted audio, so wait until we're
-        // on the first predicted tick.
         if (!_timing.IsFirstTimePredicted)
             return;
 
@@ -46,10 +43,7 @@ public sealed class AntagBriefingSystem : EntitySystem
         {
             var sound = _pendingSounds.Dequeue();
 
-            _audio.PlayLocal(
-                sound,
-                entity,
-                entity);
+            _audio.PlayLocal(sound, entity, entity);
         }
     }
 }
