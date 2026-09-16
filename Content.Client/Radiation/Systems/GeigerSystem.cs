@@ -2,6 +2,7 @@ using Content.Client.Items;
 using Content.Client.Radiation.UI;
 using Content.Shared.Radiation.Components;
 using Content.Shared.Radiation.Systems;
+using Robust.Client.Replays.Playback;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Timing;
 
@@ -11,6 +12,7 @@ public sealed class GeigerSystem : SharedGeigerSystem
 {
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private IReplayPlaybackManager _replayPlayback = default!;
 
     private readonly HashSet<EntityUid> _pendingSoundUpdates = new();
 
@@ -59,6 +61,9 @@ public sealed class GeigerSystem : SharedGeigerSystem
             return;
 
         if (!component.Sounds.TryGetValue(component.DangerLevel, out var sounds))
+            return;
+
+        if (_replayPlayback.Replay != null)
             return;
 
         var param = sounds.Params.WithLoop(true).WithVolume(component.Volume);
