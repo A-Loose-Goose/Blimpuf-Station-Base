@@ -1,3 +1,4 @@
+using Content.Shared.Whitelist;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
@@ -72,6 +73,12 @@ public sealed partial class StealthComponent : Component
     /// </summary>
     [DataField("examinedDesc")]
     public string ExaminedDesc = "stealth-visual-effect";
+
+    /// <summary>
+    /// Blimpuf edit - Only invisible to entities with these components/tags
+    /// </summary>
+    [DataField]
+    public EntityWhitelist? AffectedEntities;
 }
 
 [Serializable, NetSerializable]
