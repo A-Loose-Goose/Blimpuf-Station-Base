@@ -51,6 +51,8 @@ public sealed partial class ChangelingComponent : Component
 
     public bool StealthEnabled = false;
 
+    public bool IsContorted = false;
+
     [DataField]
     public float StealthDrain = 1.5f;
 
@@ -184,5 +186,6 @@ public enum ChangelingStealthMode
 {
     None,
     ChameleonSkin,
-    CyberneticCamouflage
+    CyberneticCamouflage,
+    ContortBody
 }

@@ -32,8 +32,9 @@ using Content.Server._Starlight.Language;
 using Content.Shared._Starlight.Overlay.Components;
 using Content.Shared._Starlight.Changeling;
 using Content.Server._Starlight.Objectives.Components;
+using Content.Shared._Blimpuf.Changeling;
+using Content.Shared._Starlight.VentCrawl;
 using Content.Shared.Flash;
-using Content.Shared.Silicons.Laws.Components;
 using Content.Shared.Stealth;
 using Content.Shared.Whitelist;
 
@@ -79,7 +80,7 @@ public sealed partial class ChangelingSystem : EntitySystem
         SubscribeLocalEvent<ChangelingComponent, ActionThermalEyesightEvent>(OnThermalEyesight); // Starlight
         SubscribeLocalEvent<ChangelingComponent, ActionBiodegradeEvent>(OnBiodegrade);
         SubscribeLocalEvent<ChangelingComponent, ActionChameleonSkinEvent>(OnChameleonSkin);
-        SubscribeLocalEvent<ChangelingComponent, ActionCyberneticCamouflageEvent>(OnCyberneticCamouflage);
+        SubscribeLocalEvent<ChangelingComponent, ActionCyberneticCamouflageEvent>(OnCyberneticCamouflage); // Blimpuf
         SubscribeLocalEvent<ChangelingComponent, ActionEphedrineOverdoseEvent>(OnEphedrineOverdose);
         SubscribeLocalEvent<ChangelingComponent, ActionDesoxyephedrineOverdoseEvent>(OnDesoxyephedrineOverdose); // Starlight
         SubscribeLocalEvent<ChangelingComponent, ActionAmalgamOverdoseEvent>(OnAmalgamOverdose); // Starlight
@@ -90,6 +91,7 @@ public sealed partial class ChangelingSystem : EntitySystem
         SubscribeLocalEvent<ChangelingComponent, ActionNeocyteDisguiseEvent>(OnNeocyteDisguise); // Starlight
         SubscribeLocalEvent<ChangelingComponent, ActionHivemindAccessEvent>(OnHivemindAccess);
         SubscribeLocalEvent<ChangelingComponent, FakeMindShieldToggleEvent>(OnFakeMindShieldToggle);
+        SubscribeLocalEvent<ChangelingComponent, ActionContortBodyEvent>(OnContortBody); // Blimpuf
 
         SubscribeLocalEvent<ChangelingActionComponent, ActionAttemptEvent>(OnAttemptLingAction, before: [typeof(RetractableItemActionSystem)]);
     }
@@ -483,7 +485,7 @@ public sealed partial class ChangelingSystem : EntitySystem
 
     private void OnChameleonSkin(EntityUid uid, ChangelingComponent comp, ref ActionChameleonSkinEvent args)
     {
-        if (comp.StealthMode == ChangelingStealthMode.CyberneticCamouflage)
+        if (comp.StealthMode == ChangelingStealthMode.CyberneticCamouflage || comp.StealthMode == ChangelingStealthMode.ContortBody)
         {
             _popup.PopupEntity(Loc.GetString("changeling-stealth-blocked"), uid, uid);
             return;
@@ -519,7 +521,7 @@ public sealed partial class ChangelingSystem : EntitySystem
 
     private void OnCyberneticCamouflage(EntityUid uid, ChangelingComponent comp, ref ActionCyberneticCamouflageEvent args)
     {
-        if (comp.StealthMode == ChangelingStealthMode.ChameleonSkin)
+        if (comp.StealthMode == ChangelingStealthMode.ChameleonSkin || comp.StealthMode == ChangelingStealthMode.ContortBody)
         {
             _popup.PopupEntity(Loc.GetString("changeling-stealth-blocked"), uid, uid);
             return;
@@ -689,6 +691,40 @@ public sealed partial class ChangelingSystem : EntitySystem
 
     public void OnFakeMindShieldToggle(EntityUid uid, ChangelingComponent comp, FakeMindShieldToggleEvent toggleEvent) => EnsureComp<FakeMindShieldComponent>(uid);
     #endregion
+
+    private void OnContortBody(EntityUid uid, ChangelingComponent comp, ref ActionContortBodyEvent args)
+    {
+        if (comp.StealthMode == ChangelingStealthMode.ChameleonSkin || comp.StealthMode == ChangelingStealthMode.CyberneticCamouflage)
+        {
+            _popup.PopupEntity(Loc.GetString("changeling-stealth-blocked"), uid, uid);
+            return;
+        }
+
+        if (!comp.IsContorted)
+        {
+            EnsureComp<ChangelingContortionComponent>(uid);
+            EnsureComp<VentCrawlerComponent>(uid);
+            comp.StealthEnabled = true;
+            comp.StealthDrain = 0.0f;
+            comp.IsContorted = true;
+            comp.StealthMode = ChangelingStealthMode.ContortBody;
+            _popup.PopupEntity(Loc.GetString("changeling-contort-body-start"), uid, uid);
+        }
+        else
+        {
+            if (HasComp<VentCrawlerComponent>(uid))
+                RemComp<VentCrawlerComponent>(uid);
+
+            if (HasComp<ChangelingContortionComponent>(uid))
+                RemComp<ChangelingContortionComponent>(uid);
+
+            comp.IsContorted = false;
+            comp.StealthEnabled = false;
+            comp.StealthDrain = 1.5f;
+            comp.StealthMode = ChangelingStealthMode.None;
+            _popup.PopupEntity(Loc.GetString("changeling-contort-body-end"), uid, uid);
+        }
+    }
 
     private void OnAttemptLingAction(Entity<ChangelingActionComponent> ent, ref ActionAttemptEvent ev)
     {
