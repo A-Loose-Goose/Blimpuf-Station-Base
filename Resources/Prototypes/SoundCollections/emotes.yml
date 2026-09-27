@@ -99,6 +99,7 @@
   id: Bubbles
   files:
     - /Audio/Effects/Chemistry/bubbles.ogg
+    - /Audio/_Starlight/Voice/Slime/slime_bubble.ogg # Blimpuf
 
 - type: soundCollection
   id: Sloshes
@@ -110,6 +111,7 @@
   files:
     - /Audio/_Funkystation/Voice/Slime/slime_pop_1.ogg
     - /Audio/_Funkystation/Voice/Slime/slime_pop_2.ogg
+    - /Audio/_Starlight/Voice/Slime/slime_pop.ogg # Blimpuf
 
 - type: soundCollection
   id: Fizzes
