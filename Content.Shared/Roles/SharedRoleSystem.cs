@@ -1,5 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using Content.Shared._Blimpuf.CCVar; // Blimpuf
 using Content.Shared._Blimpuf.Roles; // Blimpuf
 using Content.Shared._NullLink; // Blimpuf
 using Content.Shared.Administration.Logs;
@@ -741,9 +742,16 @@ public abstract partial class SharedRoleSystem : EntitySystem
         if (requirements == null || player == null)
             return requirements;
 
+        var overrides = _cfg.GetCVar(BlimpufCCVars.DiscordJobTimeOverrides);
+        if (string.IsNullOrWhiteSpace(overrides))
+            return requirements;
+
         var roles = IoCManager.Resolve<ISharedNullLinkPlayerRolesReqManager>();
-        foreach (var grant in _prototypes.EnumeratePrototypes<DiscordJobTimeOverridePrototype>())
+        foreach (var id in overrides.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries))
         {
+            if (!_prototypes.TryIndex<DiscordJobTimeOverridePrototype>(id, out var grant))
+                continue;
+
             if ((!grant.AllJobs && !grant.Jobs.Contains(job.ID)) || !roles.IsAnyRole(player, grant.Roles))
                 continue;
 

@@ -1,6 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Client.Administration.Managers; // Blimpuf
+using Content.Shared._Blimpuf.CCVar; // Blimpuf
 using Content.Shared.CCVar;
 using Content.Shared.Players;
 using Content.Shared.Players.JobWhitelist;
@@ -66,6 +67,7 @@ public sealed partial class JobRequirementsManager : ISharedPlaytimeManager
 
         _client.RunLevelChanged += ClientOnRunLevelChanged;
         _discordRoles.PlayerRolesChanged += () => Updated?.Invoke(); // Blimpuf
+        _cfg.OnValueChanged(BlimpufCCVars.DiscordJobTimeOverrides, _ => Updated?.Invoke()); // Blimpuf
     }
 
     // Nulllink start
