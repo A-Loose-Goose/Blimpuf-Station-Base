@@ -1,5 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using Content.Shared._Blimpuf.Roles; // Blimpuf
+using Content.Shared._NullLink; // Blimpuf
 using Content.Shared.Administration.Logs;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
@@ -728,6 +730,31 @@ public abstract partial class SharedRoleSystem : EntitySystem
         return job.Requirements;
     }
 
+    // Blimpuf start
+    /// <summary>
+    /// Applies Discord job permissions after the server's requirement preset, without changing the prototype.
+    /// Other restrictions still apply, and the permissions do not extend to loadouts or antagonists.
+    /// </summary>
+    public HashSet<JobRequirement>? GetRoleRequirements(JobPrototype job, ICommonSession? player)
+    {
+        var requirements = GetRoleRequirements(job);
+        if (requirements == null || player == null)
+            return requirements;
+
+        var roles = IoCManager.Resolve<ISharedNullLinkPlayerRolesReqManager>();
+        foreach (var grant in _prototypes.EnumeratePrototypes<DiscordJobTimeOverridePrototype>())
+        {
+            if ((!grant.AllJobs && !grant.Jobs.Contains(job.ID)) || !roles.IsAnyRole(player, grant.Roles))
+                continue;
+
+            return requirements.Where(requirement => requirement is not
+                (OverallPlaytimeRequirement or DepartmentTimeRequirement or RoleTimeRequirement)).ToHashSet();
+        }
+
+        return requirements;
+    }
+    // Blimpuf end
+
     // TODO ROLES Change to readonly?
     /// <inheritdoc cref="GetRoleRequirements(JobPrototype)"/>
     public HashSet<JobRequirement>? GetRoleRequirements(AntagPrototype antag)
@@ -744,6 +771,14 @@ public abstract partial class SharedRoleSystem : EntitySystem
     {
         return _prototypes.TryIndex(jobId, out var job) ? GetRoleRequirements(job) : null;
     }
+
+    // Blimpuf start
+    /// <inheritdoc cref="GetRoleRequirements(JobPrototype, ICommonSession?)"/>
+    public HashSet<JobRequirement>? GetRoleRequirements(ProtoId<JobPrototype> jobId, ICommonSession? player)
+    {
+        return _prototypes.TryIndex(jobId, out var job) ? GetRoleRequirements(job, player) : null;
+    }
+    // Blimpuf end
 
     // TODO ROLES Change to readonly?
     /// <inheritdoc cref="GetRoleRequirements(JobPrototype)"/>

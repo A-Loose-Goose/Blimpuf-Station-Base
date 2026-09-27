@@ -1,5 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using Content.Client.Administration.Managers; // Blimpuf
 using Content.Shared.CCVar;
 using Content.Shared.Players;
 using Content.Shared.Players.JobWhitelist;
@@ -29,6 +30,7 @@ public sealed partial class JobRequirementsManager : ISharedPlaytimeManager
     [Dependency] private IEntityManager _entManager = default!;
     [Dependency] private IPlayerManager _playerManager = default!;
     [Dependency] private IPrototypeManager _prototypes = default!;
+    [Dependency] private INullLinkPlayerRolesManager _discordRoles = default!; // Blimpuf
 
     private readonly List<string> _jobBans = new();
     private readonly List<string> _antagBans = new();
@@ -63,6 +65,7 @@ public sealed partial class JobRequirementsManager : ISharedPlaytimeManager
         // NullLink end
 
         _client.RunLevelChanged += ClientOnRunLevelChanged;
+        _discordRoles.PlayerRolesChanged += () => Updated?.Invoke(); // Blimpuf
     }
 
     // Nulllink start
@@ -233,7 +236,7 @@ public sealed partial class JobRequirementsManager : ISharedPlaytimeManager
             return true;
 
         // Check other role requirements
-        var reqs = _entManager.System<SharedRoleSystem>().GetRoleRequirements(job);
+        var reqs = _entManager.System<SharedRoleSystem>().GetRoleRequirements(job, player); // Blimpuf
         if (!CheckRoleRequirements(reqs, player, profile, out reason))
             return false;
 
