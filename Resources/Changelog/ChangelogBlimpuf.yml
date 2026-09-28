@@ -1020,5 +1020,14 @@ Entries:
   id: 13601
   time: '2026-09-28T13:15:40.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/136
+- author: Frogoo, Shimmers
+  changes:
+  - message: Added more slime emotes and sounds.
+    type: Add
+  - message: New slime emote sprites.
+    type: Tweak
+  id: 17601
+  time: '2026-09-28T13:33:22.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/176
 Order: -1
 
