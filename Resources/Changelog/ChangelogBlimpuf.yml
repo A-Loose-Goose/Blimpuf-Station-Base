@@ -1011,5 +1011,14 @@ Entries:
   id: 17501
   time: '2026-09-24T14:23:14.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/175
+- author: ItsMaitake & Limerent-Sun
+  changes:
+  - message: Those stunned by the Space Ninja's gloves now emit green digital particles.
+    type: Add
+  - message: The sound of the Space Ninja stun has been given new unique audio.
+    type: Tweak
+  id: 13601
+  time: '2026-09-28T13:15:40.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/136
 Order: -1
 
