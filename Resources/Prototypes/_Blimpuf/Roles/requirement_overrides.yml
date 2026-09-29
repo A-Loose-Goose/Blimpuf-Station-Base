@@ -99,7 +99,7 @@
       traits:
       - Iterator
       inverted: true
-    Blueshield:
+    BlueShield:
     - !type:RolesRequirement
       proto: CCEReq
     - !type:TraitsRequirement
@@ -268,7 +268,7 @@
     - !type:TraitsRequirement
       traits:
       - Iterator
-    Blueshield:
+    BlueShield:
     - !type:RolesRequirement
       proto: DiscordMemberReq
     - !type:TraitsRequirement
