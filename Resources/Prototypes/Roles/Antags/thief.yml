@@ -10,6 +10,8 @@
 - type: antagSpecifier
   parent: RestrictedAntag
   id: Thief
+  jobBlacklist:
+  - SalvageSpecialist
   prefRoles:
   - Thief
   allowNonHumans: true
