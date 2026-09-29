@@ -210,3 +210,79 @@
     - !type:DepartmentTimeRequirement
       department: Science
       time: 2h
+
+- type: jobRequirementOverride
+  id: PlaytestDiscordOverride
+  jobs:
+    Captain:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    HeadOfPersonnel:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    ChiefEngineer:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    ChiefMedicalOfficer:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    HeadOfSecurity:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    Quartermaster:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    ResearchDirector:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    NanoTrasenRepresentative:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    Magistrate:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    Blueshield:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    Warden:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    SalvageLead:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
