@@ -68,6 +68,7 @@ public sealed partial class JobRequirementsManager : ISharedPlaytimeManager
         _client.RunLevelChanged += ClientOnRunLevelChanged;
         _discordRoles.PlayerRolesChanged += () => Updated?.Invoke(); // Blimpuf
         _cfg.OnValueChanged(BlimpufCCVars.DiscordJobTimeOverrides, _ => Updated?.Invoke()); // Blimpuf
+        _cfg.OnValueChanged(CCVars.GameRoleTimers, _ => Updated?.Invoke()); // Blimpuf
     }
 
     // Nulllink start
@@ -289,13 +290,14 @@ public sealed partial class JobRequirementsManager : ISharedPlaytimeManager
     {
         reason = new FormattedMessage(); // Starlight
 
-        if (requirements == null || !_cfg.GetCVar(CCVars.GameRoleTimers))
+        if (requirements == null)
             return true;
 
+        var playTimes = _cfg.GetCVar(CCVars.GameRoleTimers) ? _mergedRoles : null; // Blimpuf
         var success = true; // Starlight
         foreach (var requirement in requirements)
         {
-            if (!requirement.Check(_entManager, player, _prototypes, profile, _mergedRoles, out var checkDetails))
+            if (!requirement.Check(_entManager, player, _prototypes, profile, playTimes, out var checkDetails))
                 success = false; // Starlight
 
             if (!reason.IsEmpty) // Starlight BEGIN
