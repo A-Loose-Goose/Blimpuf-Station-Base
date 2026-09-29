@@ -14,6 +14,7 @@ using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Players;
 using Content.Shared.Players.PlayTimeTracking;
+using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Robust.Server.Player;
 using Robust.Shared.Configuration;
@@ -191,7 +192,7 @@ public sealed partial class PlayTimeTrackingSystem : EntitySystem
         }
         // Starlight end
 
-        if (!IsAllowed(ev.Player, ev.Jobs) || !IsAllowed(ev.Player, ev.Antags))
+        if (!IsAllowed(ev.Player, ev.Jobs, ev.Profile) || !IsAllowed(ev.Player, ev.Antags))
             ev.Cancelled = true;
     }
 
@@ -223,15 +224,16 @@ public sealed partial class PlayTimeTrackingSystem : EntitySystem
     /// </summary>
     /// <param name="player">The player.</param>
     /// <param name="jobs">A list of role prototype IDs</param>
+    /// <param name="selectedProfile">The specific character to check, or null to check enabled characters.</param>
     /// <returns>Returns true if all requirements were met or there were no requirements.</returns>
-    public bool IsAllowed(ICommonSession player, List<ProtoId<JobPrototype>>? jobs)
+    public bool IsAllowed(ICommonSession player, List<ProtoId<JobPrototype>>? jobs, HumanoidCharacterProfile? selectedProfile = null)
     {
         if (jobs is null)
             return true;
 
         foreach (var job in jobs)
         {
-            if (!IsAllowed(player, job))
+            if (!IsAllowed(player, job, selectedProfile))
                 return false;
         }
 
@@ -263,8 +265,9 @@ public sealed partial class PlayTimeTrackingSystem : EntitySystem
     /// </summary>
     /// <param name="player">The player.</param>
     /// <param name="job">A list of role prototype IDs</param>
+    /// <param name="selectedProfile">The specific character to check, or null to check enabled characters.</param>
     /// <returns>Returns true if all requirements were met or there were no requirements.</returns>
-    public bool IsAllowed(ICommonSession player, ProtoId<JobPrototype> job)
+    public bool IsAllowed(ICommonSession player, ProtoId<JobPrototype> job, HumanoidCharacterProfile? selectedProfile = null)
     {
         /* Starlight start - we check this in GetPlayTimeIfEnabled
         if (!_cfg.GetCVar(CCVars.GameRoleTimers))
@@ -280,6 +283,11 @@ public sealed partial class PlayTimeTrackingSystem : EntitySystem
         var playTimes = GetPlayTimesIfEnabled(player);
 
         var requirements = _roles.GetRoleRequirements(job, player); // Blimpuf
+
+        /// Blimpuf start - check the selected character instead of searching other enabled profiles.
+        if (selectedProfile != null)
+            return JobRequirements.TryRequirementsMet(requirements, player, playTimes, out _, EntityManager, _prototypes, selectedProfile);
+        // Blimpuf end
 
         // Starlight start
         // If this is a non-profile-selectable antag, don't check profiles
