@@ -5,7 +5,7 @@
 
 - type: reagent
   id: Entropy
-  group: Toxins
+  group: Metashielded
   name: reagent-name-entropy
   desc: reagent-desc-entropy
   flavor: entropic

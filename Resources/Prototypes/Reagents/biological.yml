@@ -140,7 +140,7 @@
 - type: reagent #starlight start
   id: ZombieBlood
   name: reagent-name-mortucussus
-  group: Biological
+  group: Metashielded
   desc: reagent-desc-mortucussus
   physicalDesc: reagent-physical-desc-necrotic
   flavor: bitter

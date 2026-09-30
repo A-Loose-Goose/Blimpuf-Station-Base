@@ -12,6 +12,7 @@
   - Botanical
   - Biological
   - Special
+  - Metashielded
   - Others
   filterEnabled: True
 
@@ -61,6 +62,12 @@
   id: Special
   name: guide-entry-special
   text: "/ServerInfo/Guidebook/ChemicalTabs/Special.xml"
+  filterEnabled: True
+
+- type: guideEntry
+  id: Metashielded
+  name: guide-entry-metashielded
+  text: "/ServerInfo/Guidebook/ChemicalTabs/Metashielded.xml"
   filterEnabled: True
 
 - type: guideEntry

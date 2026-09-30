@@ -657,7 +657,7 @@
 - type: reagent
   id: Romerol
   name: reagent-name-romerol
-  group: Toxins
+  group: Metashielded
   desc: reagent-desc-romerol
   physicalDesc: reagent-physical-desc-necrotic
   contrabandTier: Tier4 # Blimpuf
@@ -930,7 +930,7 @@
 - type: reagent
   id: Vestine
   name: reagent-name-vestine
-  group: Toxins
+  group: Metashielded
   desc: reagent-desc-vestine
   physicalDesc: reagent-physical-desc-shiny
   contrabandTier: Tier3 # Blimpuf

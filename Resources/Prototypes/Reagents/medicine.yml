@@ -832,7 +832,7 @@
 - type: reagent
   id: Ambuzol
   name: reagent-name-ambuzol
-  group: Medicine
+  group: Metashielded
   desc: reagent-desc-ambuzol
   physicalDesc: reagent-physical-desc-crisp
   flavor: medicine
@@ -859,7 +859,7 @@
 - type: reagent
   id: AmbuzolPlus
   name: reagent-name-ambuzol-plus
-  group: Medicine
+  group: Metashielded
   desc: reagent-desc-ambuzol-plus
   physicalDesc: reagent-physical-desc-crisp
   flavor: medicine

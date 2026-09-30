@@ -2,7 +2,7 @@
   parent: Blood
   id: AbductorBlood
   name: reagent-name-abductor-blood
-  group: Biological
+  group: Metashielded
   desc: reagent-desc-abductor-blood
   flavor: abductorBlood
   color: "#d600bd"
@@ -121,7 +121,7 @@
 - type: reagent
   id: Amalgam
   name: reagent-name-amalgam
-  group: Biological
+  group: Metashielded
   desc: reagent-desc-amalgam
   physicalDesc: reagent-physical-desc-unidentifiable
   flavor: acid
