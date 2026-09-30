@@ -4,7 +4,7 @@ using Robust.Shared.Prototypes;
 namespace Content.Shared._Blimpuf.Roles;
 
 /// <summary>
-/// Discord roles that bypass playtime requirements for selected jobs or all jobs.
+/// Discord roles that bypass playtime requirements for selected jobs, all jobs, or all antagonists.
 /// </summary>
 [Prototype("discordJobTimeOverride")]
 public sealed partial class DiscordJobTimeOverridePrototype : IPrototype
@@ -17,6 +17,9 @@ public sealed partial class DiscordJobTimeOverridePrototype : IPrototype
 
     [DataField]
     public bool AllJobs;
+
+    [DataField]
+    public bool AllAntags;
 
     [DataField]
     public HashSet<ProtoId<JobPrototype>> Jobs = [];

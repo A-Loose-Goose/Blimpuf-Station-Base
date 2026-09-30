@@ -733,12 +733,24 @@ public abstract partial class SharedRoleSystem : EntitySystem
 
     // Blimpuf start
     /// <summary>
-    /// Applies Discord job permissions after the server's requirement preset, without changing the prototype.
-    /// Other restrictions still apply, and the permissions do not extend to loadouts or antagonists.
+    /// Applies Discord playtime overrides after the server's requirement preset, without changing the prototype.
+    /// Other restrictions still apply, and the overrides do not extend to loadouts.
     /// </summary>
     public HashSet<JobRequirement>? GetRoleRequirements(JobPrototype job, ICommonSession? player)
     {
-        var requirements = GetRoleRequirements(job);
+        return ApplyDiscordTimeOverrides(GetRoleRequirements(job), player, grant => grant.AllJobs || grant.Jobs.Contains(job.ID));
+    }
+
+    public HashSet<JobRequirement>? GetRoleRequirements(AntagPrototype antag, ICommonSession? player)
+    {
+        return ApplyDiscordTimeOverrides(GetRoleRequirements(antag), player, grant => grant.AllAntags);
+    }
+
+    private HashSet<JobRequirement>? ApplyDiscordTimeOverrides(
+        HashSet<JobRequirement>? requirements,
+        ICommonSession? player,
+        Func<DiscordJobTimeOverridePrototype, bool> applies)
+    {
         if (requirements == null || player == null)
             return requirements;
 
@@ -752,7 +764,7 @@ public abstract partial class SharedRoleSystem : EntitySystem
             if (!_prototypes.TryIndex<DiscordJobTimeOverridePrototype>(id, out var grant))
                 continue;
 
-            if ((!grant.AllJobs && !grant.Jobs.Contains(job.ID)) || !roles.IsAnyRole(player, grant.Roles))
+            if (!applies(grant) || !roles.IsAnyRole(player, grant.Roles))
                 continue;
 
             return requirements.Where(requirement => requirement is not
@@ -794,6 +806,13 @@ public abstract partial class SharedRoleSystem : EntitySystem
     {
         return _prototypes.TryIndex(antagId, out var antag) ? GetRoleRequirements(antag) : null;
     }
+
+    // Blimpuf start
+    public HashSet<JobRequirement>? GetRoleRequirements(ProtoId<AntagPrototype> antagId, ICommonSession? player)
+    {
+        return _prototypes.TryIndex(antagId, out var antag) ? GetRoleRequirements(antag, player) : null;
+    }
+    // Blimpuf end
 
     /// <summary>
     /// Returns the localized name of a role type's subtype. If the provided subtype parameter turns out to be empty, it returns the localized name of the role type instead.

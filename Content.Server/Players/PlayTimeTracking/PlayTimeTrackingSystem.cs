@@ -327,7 +327,7 @@ public sealed partial class PlayTimeTrackingSystem : EntitySystem
         */// Starlight end
 
         var playTimes = GetPlayTimesIfEnabled(player);
-        var requirements = _roles.GetRoleRequirements(antag); // Starlight-edit - moved this up a bit
+        var requirements = _roles.GetRoleRequirements(antag, player); // Blimpuf
 
         // Starlight start
         // If this is a non-profile-selectable antag, don't check profiles
@@ -424,7 +424,7 @@ public sealed partial class PlayTimeTrackingSystem : EntitySystem
 
         foreach (var antag in antags)
         {
-            var requirements = _roles.GetRoleRequirements(antag);
+            var requirements = _roles.GetRoleRequirements(antag, player); // Blimpuf
             if (!JobRequirements.TryRequirementsMet(requirements, player, playTimes, out _, EntityManager, _prototypes, null))
                 return false;
         }

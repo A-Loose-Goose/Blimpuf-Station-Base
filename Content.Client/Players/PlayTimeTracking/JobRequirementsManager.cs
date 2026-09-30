@@ -270,7 +270,7 @@ public sealed partial class JobRequirementsManager : ISharedPlaytimeManager
             return true;
 
         // Check other role requirements
-        var reqs = _entManager.System<SharedRoleSystem>().GetRoleRequirements(antag);
+        var reqs = _entManager.System<SharedRoleSystem>().GetRoleRequirements(antag, player); // Blimpuf
         if (!CheckRoleRequirements(reqs, player, profile, out reason))
             return false;
 
