@@ -66,10 +66,25 @@ public sealed partial class JobRequirementsManager : ISharedPlaytimeManager
         // NullLink end
 
         _client.RunLevelChanged += ClientOnRunLevelChanged;
-        _discordRoles.PlayerRolesChanged += () => Updated?.Invoke(); // Blimpuf
-        _cfg.OnValueChanged(BlimpufCCVars.DiscordJobTimeOverrides, _ => Updated?.Invoke()); // Blimpuf
-        _cfg.OnValueChanged(CCVars.GameRoleTimers, _ => Updated?.Invoke()); // Blimpuf
+
+        // Blimpuf start
+        _discordRoles.PlayerRolesChanged += NotifyRequirementsUpdated;
+        _cfg.OnValueChanged(BlimpufCCVars.DiscordJobTimeOverrides, _ => NotifyRequirementsUpdated());
+        _cfg.OnValueChanged(CCVars.GameRoleTimers, _ => NotifyRequirementsUpdated());
+
+        // Refresh again once the client's game systems have started.
+        _client.PlayerJoinedServer += (_, _) => NotifyRequirementsUpdated();
     }
+
+    private void NotifyRequirementsUpdated()
+    {
+        // Do not refresh the UI before the role system is available.
+        if (!_entManager.TrySystem<SharedRoleSystem>(out _))
+            return;
+
+        Updated?.Invoke();
+    }
+    // Blimpuf end
 
     // Nulllink start
     private void Update(MsgUpdatePlayerPlayTime message)
