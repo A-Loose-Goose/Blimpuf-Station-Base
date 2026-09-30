@@ -153,6 +153,27 @@
       time: 30h
       inverted: true
     # Cargo
+    SalvageSpecialist:
+    - !type:RoleTimeRequirement
+      role: JobCargoTechnician
+      time: 1h
+    MiningSpecialist:
+    - !type:OverallPlaytimeRequirement
+      time: 1h
+    SalvageLead:
+    - !type:RoleTimeRequirement
+      role: JobSalvageSpecialist
+      time: 5h
+    # Engineering
+    StationEngineer:
+    - !type:RoleTimeRequirement
+      role: JobTechnicalAssistant
+      time: 1h
+    AtmosphericTechnician:
+    - !type:RoleTimeRequirement
+      role: JobStationEngineer
+      time: 2h
+    # Medical
     MedicalDoctor:
     - !type:RoleTimeRequirement
       role: JobMedicalIntern
@@ -165,14 +186,20 @@
     - !type:RoleTimeRequirement
       role: JobMedicalDoctor
       time: 1h
-    StationEngineer:
+    Surgeon:
     - !type:RoleTimeRequirement
-      role: JobTechnicalAssistant
+      role: JobMedicalDoctor
       time: 1h
-    AtmosphericTechnician:
+    # Science
+    Scientist:
     - !type:RoleTimeRequirement
-      role: JobStationEngineer
+      role: JobResearchAssistant
+      time: 1h
+    Roboticist:
+    - !type:DepartmentTimeRequirement
+      department: Science
       time: 2h
+    # Silicon
     StationAi:
     - !type:RoleTimeRequirement
       role: JobBorg
@@ -180,36 +207,16 @@
     Borg:
     - !type:OverallPlaytimeRequirement
       time: 1h
-    Scientist:
-    - !type:RoleTimeRequirement
-      role: JobResearchAssistant
-      time: 1h
-    SalvageSpecialist:
-    - !type:RoleTimeRequirement
-      role: JobCargoTechnician
-      time: 1h
+    # Service
     Lawyer:
     - !type:OverallPlaytimeRequirement
       time: 3h
-    MiningSpecialist:
-    - !type:OverallPlaytimeRequirement
-      time: 1h
-    SalvageLead:
-    - !type:RoleTimeRequirement
-      role: JobSalvageSpecialist
-      time: 5h
     - !type:TraitsRequirement
       traits:
       - Iterator
       inverted: true
-    Surgeon:
-    - !type:RoleTimeRequirement
-      role: JobMedicalDoctor
-      time: 1h
-    Roboticist:
-    - !type:DepartmentTimeRequirement
-      department: Science
-      time: 2h
+    Reporter:
+      []
 
 - type: jobRequirementOverride
   id: PlaytestDiscordOverride
