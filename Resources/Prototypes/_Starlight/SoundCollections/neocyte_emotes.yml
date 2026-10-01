@@ -16,7 +16,7 @@
     - /Audio/_FarHorizons/Voice/Proto/Avali/avali_laugh.ogg
 
 - type: soundCollection
-  id: NeoCycloriteLaugh
+  id: NeoTNebriLaugh
   files:
     - /Audio/_FarHorizons/Voice/Proto/Cyclorite/laugh.ogg
 
@@ -74,19 +74,19 @@
   - /Audio/_FarHorizons/Voice/Proto/Resomi/resomi_squawk_1.ogg
 
 - type: soundCollection
-  id: NeoVulpkaninBark
+  id: NeoVulpBark
   files:
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/dog_bark1.ogg
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/dog_bark2.ogg
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/dog_bark3.ogg
 
 - type: soundCollection
-  id: NeoVulpkaninYip
+  id: NeoVulpYip
   files:
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/yip.ogg
 
 - type: soundCollection
-  id: NeoVulpkaninHowl
+  id: NeoVulpHowl
   files:
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/howl.ogg
 
@@ -97,14 +97,14 @@
   - /Audio/_FarHorizons/Voice/Proto/Felionoid/cat_growl2.ogg
 
 - type: soundCollection
-  id: NeoVulpkaninGrowl
+  id: NeoVulpGrowl
   files:
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/growl1.ogg
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/growl2.ogg
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/growl3.ogg
 
 - type: soundCollection
-  id: NeoVulpkaninSnarls
+  id: NeoVulpSnarls
   files:
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/dog_snarl1.ogg
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/dog_snarl2.ogg
@@ -181,12 +181,12 @@
   - /Audio/_FarHorizons/Voice/Proto/Felionoid/cat_mew4.ogg
 
 - type: soundCollection
-  id: NeoKinWurble
+  id: NeoShadekinWurble
   files:
   - /Audio/_FarHorizons/Voice/Proto/Shadekin/wurble.ogg
 
 - type: soundCollection
-  id: NeoKinMarr
+  id: NeoShadekinMarr
   files:
   - /Audio/_FarHorizons/Voice/Proto/Shadekin/mar.ogg
 
@@ -265,6 +265,6 @@
     - /Audio/_FarHorizons/Voice/Proto/Resomi/resomi_whistle.ogg
 
 - type: soundCollection
-  id: NeoCycloriteWhistles
+  id: NeoTNebriWhistles
   files:
     - /Audio/_FarHorizons/Voice/Proto/Cyclorite/whistle.ogg

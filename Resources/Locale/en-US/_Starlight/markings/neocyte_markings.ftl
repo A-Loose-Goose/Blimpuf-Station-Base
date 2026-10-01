@@ -27,40 +27,40 @@ marking-NeocyteLEDFaceRound-rounded = Round LEDs
 marking-NeocyteMediumArmor = Standard Neocyte Cybernetics
 marking-NeocyteMediumArmor-medium = Standard Neocyte Cybernetics
 
-marking-NeoVulpkaninPawSocksFeet = Paw Socks (Feet)
-marking-NeoVulpkaninPawSocksFeet-pawsocks_feet = Paw Socks (Feet)
-marking-NeoVulpkaninPawSocksLegs = Paw Socks (Legs)
-marking-NeoVulpkaninPawSocksLegs-pawsocks_legs = Paw Socks (Legs)
+marking-NeoVulpPawSocksFeet = Paw Socks (Feet)
+marking-NeoVulpPawSocksFeet-pawsocks_feet = Paw Socks (Feet)
+marking-NeoVulpPawSocksLegs = Paw Socks (Legs)
+marking-NeoVulpPawSocksLegs-pawsocks_legs = Paw Socks (Legs)
 
-marking-NeoVulpkaninLights = Circular LEDs
-marking-NeoVulpkaninLights-body = Circular LEDs
-marking-NeoVulpkaninLightsAngled = Angled LEDs
-marking-NeoVulpkaninLightsAngled-bodyangled = Angled LEDs
-marking-NeoVulpkaninLightsAngled-bodyangled_inner = Angled LEDs
-marking-NeoVulpkaninVisor = Vulpine/Reptile Visor
-marking-NeoVulpkaninVisor-vulpvisor = Vulpine/Reptile Visor
-marking-NeoVulpkaninLEDFace = Default Vulpine LEDs
-marking-NeoVulpkaninLEDFace-face = Default Vulpine LEDs
-marking-NeoVulpkaninVisorFourEyes = Large Vulpine Visor
-marking-NeoVulpkaninVisorFourEyes-vulpvisor-four-eyes = Large Vulpine Visor
-marking-NeoVulpkaninLEDFaceFourEyes = Four-eyes Vulpine LEDs
-marking-NeoVulpkaninLEDFaceFourEyes-four-eyes = Four-eyes Vulpine LEDs
-marking-NeoVulpkaninSnoutLong = Long Vulpine Visor
-marking-NeoVulpkaninSnoutLong-snout = Long Vulpine Visor
-marking-NeoVulpkaninLEDFaceLong = Long Vulpine LEDs
-marking-NeoVulpkaninLEDFaceLong-long = Long Vulpine LEDs
+marking-NeoVulpLights = Circular LEDs
+marking-NeoVulpLights-body = Circular LEDs
+marking-NeoVulpLightsAngled = Angled LEDs
+marking-NeoVulpLightsAngled-bodyangled = Angled LEDs
+marking-NeoVulpLightsAngled-bodyangled_inner = Angled LEDs
+marking-NeoVulpVisor = Vulpine/Reptile Visor
+marking-NeoVulpVisor-vulpvisor = Vulpine/Reptile Visor
+marking-NeoVulpLEDFace = Default Vulpine LEDs
+marking-NeoVulpLEDFace-face = Default Vulpine LEDs
+marking-NeoVulpVisorFourEyes = Large Vulpine Visor
+marking-NeoVulpVisorFourEyes-vulpvisor-four-eyes = Large Vulpine Visor
+marking-NeoVulpLEDFaceFourEyes = Four-eyes Vulpine LEDs
+marking-NeoVulpLEDFaceFourEyes-four-eyes = Four-eyes Vulpine LEDs
+marking-NeoVulpSnoutLong = Long Vulpine Visor
+marking-NeoVulpSnoutLong-snout = Long Vulpine Visor
+marking-NeoVulpLEDFaceLong = Long Vulpine LEDs
+marking-NeoVulpLEDFaceLong-long = Long Vulpine LEDs
 
-marking-NeoVulpkaninClaws = Vulpine Claws
-marking-NeoVulpkaninClaws-claws = Vulpine Claws
-marking-NeoVulpkaninClawsLong = Long Vulpine Claws
-marking-NeoVulpkaninClawsLong-clawslong = Long Vulpine Claws
-marking-NeoVulpkaninVisorSideWings = Side Visor Wings
-marking-NeoVulpkaninVisorSideWings-side-visor-wings = Side Visor Wings
+marking-NeoVulpClaws = Vulpine Claws
+marking-NeoVulpClaws-claws = Vulpine Claws
+marking-NeoVulpClawsLong = Long Vulpine Claws
+marking-NeoVulpClawsLong-clawslong = Long Vulpine Claws
+marking-NeoVulpVisorSideWings = Side Visor Wings
+marking-NeoVulpVisorSideWings-side-visor-wings = Side Visor Wings
 
-marking-NeoVulpkaninMediumArmor = Standard Neocyte-Vulpine Cybernetics
-marking-NeoVulpkaninMediumArmor-medium = Standard Neocyte-Vulpine Cybernetics
-marking-NeoVulpkaninMediumArmorAngled = Angled Standard Neocyte-Vulpine Cybernetics
-marking-NeoVulpkaninMediumArmorAngled-mediumangled = Angled Standard Neocyte-Vulpine Cybernetics
+marking-NeoVulpMediumArmor = Standard Neo-Vulpine Cybernetics
+marking-NeoVulpMediumArmor-medium = Standard Neo-Vulpine Cybernetics
+marking-NeoVulpMediumArmorAngled = Angled Standard Neo-Vulpine Cybernetics
+marking-NeoVulpMediumArmorAngled-mediumangled = Angled Standard Neo-Vulpine Cybernetics
 
 marking-NeoVoxVisor = Vox Visor
 marking-NeoVoxVisor-visor = Vox Visor
@@ -71,8 +71,8 @@ marking-NeoVoxLights-body = Circular LEDs
 marking-NeoVoxClaws = Long Vox Claws
 marking-NeoVoxClaws-claws = Long Vox Claws
 
-marking-NeoVoxMediumArmor = Standard Neocyte-Vox Cybernetics
-marking-NeoVoxMediumArmor-medium = Standard Neocyte-Vox Cybernetics
+marking-NeoVoxMediumArmor = Standard Neo-Vox Cybernetics
+marking-NeoVoxMediumArmor-medium = Standard Neo-Vox Cybernetics
 
 marking-NeoThavenVisor = Thaven Visor
 marking-NeoThavenVisor-visor = Thaven Visor
@@ -81,8 +81,8 @@ marking-NeoThavenLEDFace-face = Default Thaven LEDs
 marking-NeoThavenLights = Circular LEDs
 marking-NeoThavenLights-body = Circular LEDs
 
-marking-NeoThavenMediumArmor = Standard Neocyte-Thaven Cybernetics
-marking-NeoThavenMediumArmor-medium = Standard Neocyte-Thaven Cybernetics
+marking-NeoThavenMediumArmor = Standard Neo-Thaven Cybernetics
+marking-NeoThavenMediumArmor-medium = Standard Neo-Thaven Cybernetics
 
 marking-NeoSlimePersonVisor = Laspi Visor
 marking-NeoSlimePersonVisor-visor = Laspi Visor
@@ -91,18 +91,18 @@ marking-NeoSlimePersonLEDFace-face = Default Laspi LEDs
 marking-NeoSlimePersonLights = Circular LEDs
 marking-NeoSlimePersonLights-body = Circular LEDs
 
-marking-NeoSlimePersonMediumArmor = Standard Neocyte-Laspi Cybernetics
-marking-NeoSlimePersonMediumArmor-medium = Standard Neocyte-Laspi Cybernetics
+marking-NeoSlimePersonMediumArmor = Standard Neo-Laspi Cybernetics
+marking-NeoSlimePersonMediumArmor-medium = Standard Neo-Laspi Cybernetics
 
-marking-NeoKinVisor = Kin Visor
-marking-NeoKinVisor-visor = Kin Visor
-marking-NeoKinLEDFace = Default Kin LEDs
-marking-NeoKinLEDFace-face = Default Kin LEDs
-marking-NeoKinLights = Circular LEDs
-marking-NeoKinLights-body = Circular LEDs
+marking-NeoShadekinVisor = Shadekin Visor
+marking-NeoShadekinVisor-visor = Shadekin Visor
+marking-NeoShadekinLEDFace = Default Shadekin LEDs
+marking-NeoShadekinLEDFace-face = Default Shadekin LEDs
+marking-NeoShadekinLights = Circular LEDs
+marking-NeoShadekinLights-body = Circular LEDs
 
-marking-NeoKinMediumArmor = Standard Neocyte-Kin Cybernetics
-marking-NeoKinMediumArmor-medium = Standard Neocyte-Kin Cybernetics
+marking-NeoShadekinMediumArmor = Standard Neo-Shadekin Cybernetics
+marking-NeoShadekinMediumArmor-medium = Standard Neo-Shadekin Cybernetics
 
 marking-NeoResomiVisor = Resomi Visor
 marking-NeoResomiVisor-visor = Resomi Visor
@@ -111,16 +111,16 @@ marking-NeoResomiLEDFace-face = Default Resomi LEDs
 marking-NeoResomiLights = Circular LEDs
 marking-NeoResomiLights-body = Circular LEDs
 
-marking-NeoResomiMediumArmor = Standard Neocyte-Resomi Cybernetics
-marking-NeoResomiMediumArmor-medium = Standard Neocyte-Resomi Cybernetics
+marking-NeoResomiMediumArmor = Standard Neo-Resomi Cybernetics
+marking-NeoResomiMediumArmor-medium = Standard Neo-Resomi Cybernetics
 
 marking-NeoReptilianLEDFaceBoxy = Default Reptile LEDs
 marking-NeoReptilianLEDFaceBoxy-boxy = Default Reptile LEDs
 marking-NeoReptilianClaws = Long Reptile Claws
 marking-NeoReptilianClaws-claws = Long Reptile Claws
 
-marking-NeoReptilianMediumArmor = Standard Neocyte-Reptile Cybernetics
-marking-NeoReptilianMediumArmor-medium = Standard Neocyte-Reptile Cybernetics
+marking-NeoReptilianMediumArmor = Standard Neo-Reptile Cybernetics
+marking-NeoReptilianMediumArmor-medium = Standard Neo-Reptile Cybernetics
 
 marking-NeoMothVisor = Moth Visor
 marking-NeoMothVisor-visor = Moth Visor
@@ -131,8 +131,8 @@ marking-NeoMothLights-body = Circular LEDs
 marking-NeoMothClaws = Long Moth Claws
 marking-NeoMothClaws-claws = Long Moth Claws
 
-marking-NeoMothMediumArmor = Standard Neocyte-Moth Cybernetics
-marking-NeoMothMediumArmor-medium = Standard Neocyte-Moth Cybernetics
+marking-NeoMothMediumArmor = Standard Neo-Moth Cybernetics
+marking-NeoMothMediumArmor-medium = Standard Neo-Moth Cybernetics
 
 marking-NeoFelionoidVisor = Felionoid Visor
 marking-NeoFelionoidVisor-visor = Felionoid Visor
@@ -143,8 +143,8 @@ marking-NeoFelionoidLights-body = Circular LEDs
 marking-NeoFelionoidClaws = Long Felionoid Claws
 marking-NeoFelionoidClaws-claws = Long Felionoid Claws
 
-marking-NeoFelionoidMediumArmor = Standard Neocyte-Felionoid Cybernetics
-marking-NeoFelionoidMediumArmor-medium = Standard Neocyte-Felionoid Cybernetics
+marking-NeoFelionoidMediumArmor = Standard Neo-Felionoid Cybernetics
+marking-NeoFelionoidMediumArmor-medium = Standard Neo-Felionoid Cybernetics
 
 marking-NeoDionaVisor = Diona Visor
 marking-NeoDionaVisor-visor = Diona Visor
@@ -155,18 +155,18 @@ marking-NeoDionaLights-body = Circular LEDs
 marking-NeoDionaVines = Long Diona Vines
 marking-NeoDionaVines-vines = Long Diona Vines
 
-marking-NeoDionaMediumArmor = Standard Neocyte-Diona Cybernetics
-marking-NeoDionaMediumArmor-medium = Standard Neocyte-Diona Cybernetics
+marking-NeoDionaMediumArmor = Standard Neo-Diona Cybernetics
+marking-NeoDionaMediumArmor-medium = Standard Neo-Diona Cybernetics
 
-marking-NeoCycloriteVisor = Cyclorite Visor
-marking-NeoCycloriteVisor-visor = Cyclorite Visor
-marking-NeoCycloriteLEDFace = Default Cyclorite LEDs
-marking-NeoCycloriteLEDFace-face = Default Cyclorite LEDs
-marking-NeoCycloriteLights = Circular LEDs
-marking-NeoCycloriteLights-body = Circular LEDs
+marking-NeoTNebriVisor = T'Nebri Visor
+marking-NeoTNebriVisor-visor = T'Nebri Visor
+marking-NeoTNebriLEDFace = Default T'Nebri LEDs
+marking-NeoTNebriLEDFace-face = Default T'Nebri LEDs
+marking-NeoTNebriLights = Circular LEDs
+marking-NeoTNebriLights-body = Circular LEDs
 
-marking-NeoCycloriteMediumArmor = Standard Neocyte-Cyclorite Cybernetics
-marking-NeoCycloriteMediumArmor-medium = Standard Neocyte-Cyclorite Cybernetics
+marking-NeoTNebriMediumArmor = Standard Neo-T'Nebri Cybernetics
+marking-NeoTNebriMediumArmor-medium = Standard Neo-T'Nebri Cybernetics
 
 marking-NeoAvaliVisor = Avali Visor
 marking-NeoAvaliVisor-visor = Avali Visor
@@ -177,8 +177,8 @@ marking-NeoAvaliLights-body = Circular LEDs
 marking-NeoAvaliWings = Hardlight Avali Wings
 marking-NeoAvaliWings-wings = Hardlight Avali Wings
 
-marking-NeoAvaliMediumArmor = Standard Neocyte-Avali Cybernetics
-marking-NeoAvaliMediumArmor-medium = Standard Neocyte-Avali Cybernetics
+marking-NeoAvaliMediumArmor = Standard Neo-Avali Cybernetics
+marking-NeoAvaliMediumArmor-medium = Standard Neo-Avali Cybernetics
 
 marking-NeoArachnidVisor = Arachnid Visor
 marking-NeoArachnidVisor-visor = Arachnid Visor

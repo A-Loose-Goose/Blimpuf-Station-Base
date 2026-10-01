@@ -1,4 +1,3 @@
-# Species tags
 - type: Tag
   id: NeoArachnid
 
@@ -6,34 +5,22 @@
   id: NeoAvali
 
 - type: Tag
-  id: NeoCyclorite
+  id: NeoTNebri # Blimpuf, Cyclorite -> T'Nebri
 
 - type: Tag
-  id: NeoDiona
+  id: NeoDiona # Starlight, Dionae -> Diona
 
 - type: Tag
-  id: NeoDwarf
+  id: NeoFelionoid # Starlight, Feline -> Felionoid
 
 - type: Tag
-  id: NeoElf
-
-- type: Tag
-  id: NeoFelionoid
-
-- type: Tag
-  id: NeoHuman
-
-- type: Tag
-  id: NeoKin
-
-- type: Tag
-  id: NeoLagomorph
+  id: NeoHuman # Starlight, Humie -> Human
 
 - type: Tag
   id: NeoMoth
 
 - type: Tag
-  id: NeoReptilian
+  id: NeoReptilian # Blimpuf, ProtoReptilian -> NeoReptilian
 
 - type: Tag
   id: NeoResomi
@@ -48,7 +35,10 @@
   id: NeoVox
 
 - type: Tag
-  id: NeoVulpkanin
+  id: NeoVulp
+
+- type: Tag
+  id: NeoShadekin
 
 - type: Tag
   id: Neocyte

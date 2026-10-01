@@ -194,9 +194,9 @@ MobProtoReptilian: MobNeoReptilian
 MobProtoMoth: MobNeoMoth
 MobProtoHuman: MobNeoHuman
 MobProtoFelionoid: MobNeoFelionoid
-MobProtoDwarf: MobNeoDwarf
+MobProtoDwarf: MobNeocyte # Blimpuf - we don't have dwarfs, put a neocyte there instead
 MobProtoDiona: MobNeoDiona
-MobProtoCyclorite: MobNeoCyclorite
+MobProtoCyclorite: MobNeoTNebri
 MobProtoAvali: MobNeoAvali
 MobProtoArachnid: MobNeoArachnid
 MobProtoElf: MobNeoElf
@@ -229,18 +229,18 @@ OrganProtoArachnidHeart: OrganNeoArachnidHeart
 OrganProtoAvaliStomach: OrganNeoAvaliStomach
 OrganProtoAvaliHeart: OrganNeoAvaliHeart
 OrganProtoAvaliLiver: OrganNeoAvaliLiver
-OrganProtoCycloriteLungs: OrganNeoCycloriteLungs
-OrganProtoCycloriteEye: OrganNeoCycloriteEye
-OrganProtoCycloriteHeart: OrganNeoCycloriteHeart
+OrganProtoCycloriteLungs: OrganNeoTNebriLungs
+OrganProtoCycloriteEye: OrganNeoTNebriEye
+OrganProtoCycloriteHeart: OrganNeoTNebriHeart
 OrganProtoDionaStomach: OrganNeoDionaStomach
 OrganProtoDionaLungs: OrganNeoDionaLungs
 OrganProtoDionaStomachNymph: OrganNeoDionaStomachNymph
 OrganProtoDionaNymphStomach: OrganNeoDionaNymphStomach
 OrganProtoDionaLungsNymph: OrganNeoDionaLungsNymph
 OrganProtoDionaNymphLungs: OrganNeoDionaNymphLungs
-OrganProtoDwarfHeart: OrganNeoDwarfHeart
-OrganProtoDwarfLiver: OrganNeoDwarfLiver
-OrganProtoDwarfStomach: OrganNeoDwarfStomach
+OrganProtoDwarfHeart: OrganNeocyteHeart # Blimpuf - we don't have dwarfs, put a neocyte's there instead
+OrganProtoDwarfLiver: OrganNeocyteLiver  # Blimpuf - we don't have dwarfs, put a neocyte's there instead
+OrganProtoDwarfStomach: OrganNeocyteStomach # Blimpuf - we don't have dwarfs, put a neocyte's there instead
 OrganProtoLagomorphStomach: OrganNeoLagomorphStomach
 OrganProtoLagomorphHeart: OrganNeoLagomorphHeart
 OrganProtoMothStomach: OrganNeoMothStomach
@@ -259,9 +259,9 @@ OrganProtoSlimeSlurpoid: OrganNeoSlimeSlurpoid
 AppearanceProtogen: AppearanceNeocyte
 AppearanceProtoArachnid: AppearanceNeoArachnid
 AppearanceProtoAvali: AppearanceNeoAvali
-AppearanceProtoCyclorite: AppearanceNeoCyclorite
+AppearanceProtoCyclorite: AppearanceNeoTNebri
 AppearanceProtoDiona: AppearanceNeoDiona
-AppearanceProtoDwarf: AppearanceNeoDwarf
+AppearanceProtoDwarf: AppearanceNeocyte  # Blimpuf - we don't have dwarfs, put a neocyte there instead
 AppearanceProtoElf: AppearanceNeoElf
 AppearanceProtoFelionoid: AppearanceNeoFelionoid
 AppearanceProtoHuman: AppearanceNeoHuman
@@ -274,63 +274,3 @@ AppearanceProtoSlimePerson: AppearanceNeoSlimePerson
 AppearanceProtoThaven: AppearanceNeoThaven
 AppearanceProtoVox: AppearanceNeoVox
 AppearanceProtoVulp: AppearanceNeoVulp
-
-#2026-08-01 - Plushie clean up, fixing IDs.
-AbductorPlushie: PlushieAbductor
-AxolotlPlushie: PlushieAxolotl
-BorbPlushie: PlushieBorb
-PlushieBrighteyes: PlushieBrightheart
-SquishimsCow: PlushieCowSquishims
-CreaturePlushie: PlushieCreature
-SquishimsFrog: PlushieFrogSquishims
-GoatPlushie: PlushieGoat
-GnomePlushie: PlushieGnome
-KittenPlushie: PlushieKitten
-PlushieMimeLizard: PlushieLizardJobMime # upstream
-PandaPlushie: PlushiePanda
-PigPlushie: PlushiePig
-RenaultPlushie: PlushieRenault
-SnailPlushie: PlushieSnail
-SusPlushie: PlushieSus
-IanPlushie: ToyIan # upstream
-LisaPlushie: ToyIan # upstream
-PlushieDoxesTheCaptain: PlushieDoxes
-MozanPlush: PlushieMozan
-
-#2026-08-01 - Plushie removals. Lots of maps used these for decor, so we'll swap removed plushies with another one so the space isn't left empty.
-PlushieAmali: PlushieLizard
-PlushieAsh: PlushieVulp
-PlushieBarfo: PlushieKitten
-DeerPlushie: PlushieLizard
-OddDeerPlushie: PlushieLizard
-PlushieLiz: PlushieBorb
-PlushieEina: PlushieBorb
-PlushieEmmie: PlushieBorb
-PlushieFixes: PlushieLizardJobChiefengineer
-PlushieGlados: PlushieBorg # made generic
-PlushieWEH: PlushieBorg # made generic
-IgnisPlush: PlushieLizard
-JessPlush: PlushieLizard
-PlushieKilla: PlushieKitten
-PlushieKiller: PlushieKitten
-PlushieKiosha: PlushieBorb
-LivvyPlush: PlushieLizard
-PlushieMalachi: PlushieLizard
-PlushieMatthew: PlushieBorb
-MinaPlush: PlushieLizardJobHeadofpersonnel
-PlushieMorgana: PlushieVulp
-PlushieMorganaRound: PlushieVulp
-PlushieOog: PlushieHuman
-PlushiePercy: ToyFigurineAssistant
-PlushiePoley: PlushieLizardJobSalvagespecialist
-PlushieRedwoods: PlushieVulp
-PlushieRemiie: PlushieLizard
-PlushieRhea: PlushieBorb
-PlushieRomero: ToyFigurineHeadOfSecurity
-PlushieRufia: PlushieVulp
-StalksPlush: PlushieLizard
-SiffyPlush: PlushieLizardJobChiefengineer
-StinkyPlush: PlushieLizard
-PlushieVanilla: PlushieVulp
-VikaPviPlushie: PlushieLizard
-PlushieVirus: PlushieLizard

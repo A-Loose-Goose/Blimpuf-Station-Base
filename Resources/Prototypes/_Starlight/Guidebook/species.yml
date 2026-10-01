@@ -30,20 +30,15 @@
   children:
   - NeocyteFrames
   - TrueNeocyte
-  - NeoElf # You just have to ruin the alphabetical order, don't you?
   - NeoArachnid
-  - NeoAvali
-  - NeoCyclorite
+  - NeoTNebri # Blimpuf
   - NeoDiona
-  - NeoDwarf
-  - NeoFelionoid
+  - NeoElf
   - NeoHuman
-  - NeoKin
-  - NeoLagomorph
-  - NeoSlimePerson
-  - NeoThaven
   - NeoMoth
   - NeoReptilian
   - NeoResomi
+  - NeoSlimePerson
+  - NeoThaven
   - NeoVox
-  - NeoVulpkanin
+  - NeoVulp

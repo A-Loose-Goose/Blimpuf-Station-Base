@@ -44,15 +44,15 @@
     Trill:
       collection: NeoFelionoidTrill
     Bark:
-      collection: NeoVulpkaninBark
+      collection: NeoVulpBark
     Yip:
-      collection: NeoVulpkaninYip
+      collection: NeoVulpYip
     Whine:
       collection: Whine
     Growl:
-      collection: NeoVulpkaninGrowl
+      collection: NeoVulpGrowl
     Howl:
-      collection: NeoVulpkaninHowl
+      collection: NeoVulpHowl
     Liss:
       collection: NeoReptilianHiss
     Lurr:
@@ -90,11 +90,11 @@
     Squawk:
       collection: NeoResomiSquawk
     Marr:
-      collection: NeoKinMarr
+      collection: NeoShadekinMarr
     Wurble:
-      collection: NeoKinWurble
+      collection: NeoShadekinWurble
     Snarl:
-      collection: NeoVulpkaninSnarls
+      collection: NeoVulpSnarls
     ThavenGlub: # Starlight start
       collection: ThavenGlub
     ThavenHum:
@@ -118,11 +118,11 @@
     variation: 0.125
   sounds:
     Snarl:
-      collection: NeoVulpkaninSnarls
+      collection: NeoVulpSnarls
     Marr:
-      collection: NeoKinMarr
+      collection: NeoShadekinMarr
     Wurble:
-      collection: NeoKinWurble
+      collection: NeoShadekinWurble
     Chirp:
       collection: NeoResomiChirp
     Scree:
@@ -174,15 +174,15 @@
     Trill:
       collection: NeoFelionoidTrill
     Bark:
-      collection: NeoVulpkaninBark
+      collection: NeoVulpBark
     Yip:
-      collection: NeoVulpkaninYip
+      collection: NeoVulpYip
     Whine:
       collection: Whine # Starlight
     Growl:
-      collection: NeoVulpkaninGrowl
+      collection: NeoVulpGrowl
     Howl:
-      collection: NeoVulpkaninHowl
+      collection: NeoVulpHowl
     Liss:
       collection: NeoReptilianHiss
     Lurr:
@@ -274,25 +274,25 @@
 
 - type: emoteSounds
   parent: NeoHumanMSounds
-  id: NeoVulpkaninMSounds
+  id: NeoVulpMSounds
   sounds:
     Sneeze:
-      collection: NeoVulpkaninSneeze
+      collection: NeoVulpSneeze
     Yawn:
-      collection: NeoVulpkaninYawns
+      collection: NeoVulpYawns
     Scream:
-      collection: NeoVulpkaninScreams
+      collection: NeoVulpScreams
 
 - type: emoteSounds
   parent: NeoHumanFSounds
-  id: NeoVulpkaninFSounds
+  id: NeoVulpFSounds
   sounds:
     Sneeze:
-      collection: NeoVulpkaninSneeze
+      collection: NeoVulpSneeze
     Yawn:
-      collection: NeoVulpkaninYawns
+      collection: NeoVulpYawns
     Scream:
-      collection: NeoVulpkaninScreams
+      collection: NeoVulpScreams
 
 - type: emoteSounds
   parent: NeoHumanMSounds
@@ -464,41 +464,41 @@
 
 - type: emoteSounds
   parent: NeoHumanMSounds
-  id: NeoCycloriteMSounds
+  id: NeoTNebriMSounds
   sounds:
     Scream:
-      collection: NeoCycloriteScreams
+      collection: NeoTNebriScreams
     Laugh:
-      collection: NeoCycloriteLaugh
+      collection: NeoTNebriLaugh
     Sneeze:
-      collection: NeoCycloriteCoughs
+      collection: NeoTNebriCoughs
     Cough:
-      collection: NeoCycloriteCoughs
+      collection: NeoTNebriCoughs
     Crying:
-      collection: NeoCycloriteScreams
+      collection: NeoTNebriScreams
     Whistle:
-      collection: NeoCycloriteWhistles
+      collection: NeoTNebriWhistles
     Yawn:
-      collection: NeoCycloriteYawn
+      collection: NeoTNebriYawn
 
 - type: emoteSounds
   parent: NeoHumanFSounds
-  id: NeoCycloriteFSounds
+  id: NeoTNebriFSounds
   sounds:
     Scream:
-      collection: NeoCycloriteScreams
+      collection: NeoTNebriScreams
     Laugh:
-      collection: NeoCycloriteLaugh
+      collection: NeoTNebriLaugh
     Sneeze:
-      collection: NeoCycloriteCoughs
+      collection: NeoTNebriCoughs
     Cough:
-      collection: NeoCycloriteCoughs
+      collection: NeoTNebriCoughs
     Crying:
-      collection: NeoCycloriteScreams
+      collection: NeoTNebriScreams
     Whistle:
-      collection: NeoCycloriteWhistles
+      collection: NeoTNebriWhistles
     Yawn:
-      collection: NeoCycloriteYawn
+      collection: NeoTNebriYawn
 
 - type: emoteSounds
   parent: NeoHumanMSounds
@@ -532,7 +532,7 @@
 
 - type: emoteSounds
   parent: NeoHumanMSounds
-  id: NeoKinMSounds
+  id: NeoShadekinMSounds
   sounds:
     Scream:
       collection: ShadekinMaleScreams # Starlight
@@ -541,7 +541,7 @@
 
 - type: emoteSounds
   parent: NeoHumanFSounds
-  id: NeoKinFSounds
+  id: NeoShadekinFSounds
   sounds:
     Scream:
       collection: ShadekinFemaleScreams # Starlight
