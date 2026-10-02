@@ -1029,5 +1029,12 @@ Entries:
   id: 17601
   time: '2026-09-28T13:33:22.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/176
+- author: Limerent-Sun
+  changes:
+  - message: Overhauled role hour requirements.
+    type: Tweak
+  id: 17801
+  time: '2026-10-02T09:51:03.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/178
 Order: -1
 
