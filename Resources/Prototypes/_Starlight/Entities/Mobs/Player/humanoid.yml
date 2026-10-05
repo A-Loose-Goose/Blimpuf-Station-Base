@@ -13,13 +13,22 @@
     - Shadekin
     - Felionoid
     - Thaven
-    - NeoDiona
-    - NeoResomi
-    - NeoVox
+    - NeoArachnid
     - NeoAvali
+    - NeoTNebri # Blimpuf rename
+    - NeoDiona
     - NeoFelionoid
-    - NeoShadekin
+    - NeoHuman
+    - NeoMoth
+    - NeoReptilian
+    - NeoResomi
+    - NeoSlimePerson
     - NeoThaven
+    - NeoVox
+    - NeoVulp
+    - NeoShadekin
+    - NeoElf
+    - NeoLagomorph
   components:
     - type: AutoImplant
       implants:
@@ -776,20 +785,21 @@
     - Lagomorph
     - Elf
     - NeoArachnid
+    - NeoAvali
+    - NeoTNebri # Blimpuf rename
     - NeoDiona
+    - NeoFelionoid
+    - NeoHuman
+    - NeoMoth
     - NeoReptilian
     - NeoResomi
+    - NeoSlimePerson
+    - NeoThaven
     - NeoVox
     - NeoVulp
-    - NeoAvali
-    - NeoFelionoid
     - NeoShadekin
-    - NeoThaven
-    - NeoTNebri
-    - NeoMoth
-    - NeoSlimePerson
-    - NeoLagomorph
     - NeoElf
+    - NeoLagomorph
     - Neocyte
   components:
     - type: GhostRole
@@ -916,6 +926,22 @@
   id: CCGreenshieldBasic
   speciesBlacklist:
     - Vox
+    - NeoArachnid
+    - NeoAvali
+    - NeoTNebri # Blimpuf rename
+    - NeoDiona
+    - NeoFelionoid
+    - NeoHuman
+    - NeoMoth
+    - NeoReptilian
+    - NeoResomi
+    - NeoSlimePerson
+    - NeoThaven
+    - NeoVox
+    - NeoVulp
+    - NeoShadekin
+    - NeoElf
+    - NeoLagomorph
   parent: EventHumanoidCentcomm
   randomizeName: false
   components:
@@ -1103,6 +1129,22 @@
   id: SamuraiBasic
   speciesBlacklist:
     - Vox
+    - NeoArachnid
+    - NeoAvali
+    - NeoTNebri # Blimpuf rename
+    - NeoDiona
+    - NeoFelionoid
+    - NeoHuman
+    - NeoMoth
+    - NeoReptilian
+    - NeoResomi
+    - NeoSlimePerson
+    - NeoThaven
+    - NeoVox
+    - NeoVulp
+    - NeoShadekin
+    - NeoElf
+    - NeoLagomorph
   parent: EventHumanoid
   randomizeName: false
   components:

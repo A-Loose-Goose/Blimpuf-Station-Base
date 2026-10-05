@@ -2,6 +2,23 @@
 
 - type: randomHumanoidSettings
   id: EventHumanoid
+  speciesBlacklist: # Blimpuf- prevent nearly half of event humanoids from being Neocyte subvariants
+    - NeoArachnid
+    - NeoAvali
+    - NeoTNebri
+    - NeoDiona
+    - NeoFelionoid
+    - NeoHuman
+    - NeoMoth
+    - NeoReptilian
+    - NeoResomi
+    - NeoSlimePerson
+    - NeoThaven
+    - NeoVox
+    - NeoVulp
+    - NeoShadekin
+    - NeoElf
+    - NeoLagomorph
   components:
     - type: RandomHumanoidAppearance
       randomizeName: false
