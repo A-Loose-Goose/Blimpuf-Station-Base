@@ -1895,8 +1895,6 @@ namespace Content.Client.Lobby.UI
             {
                 return;
             }
-            var count = _markingManager.MarkingsByCategoryAndSpecies(MarkingCategories.Hair, Profile.Species).Count;
-            _sawmill.Info($"Hair markings for {Profile.Species}: {count}");
 
             var hairMarking = Profile.Appearance.HairStyleId == HairStyles.DefaultHairStyle
                 ? new List<Marking>()
