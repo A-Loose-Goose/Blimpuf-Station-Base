@@ -38,4 +38,4 @@ markings-category-Legs = Legs
 markings-category-Tail = Tail
 markings-category-Overlay = Overlay
 # Aurora's Song
-markings-layer-NeckFluff = Neck Fluff
+markings-category-NeckFluff = Neck Fluff
