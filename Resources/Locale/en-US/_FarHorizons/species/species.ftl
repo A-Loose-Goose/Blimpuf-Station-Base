@@ -1,5 +1,4 @@
 species-name-ipc = IPC
-
 species-name-neocyte = Neocyte
 guidebook-armor-neocyte = Neocyte Frames
 # Starlight Neo Slime, Human, Felionoid renamed
@@ -19,7 +18,7 @@ subspecies-name-neodiona = Neo-Diona
 subspecies-name-neotnebri = Neo-T'Nebri
 subspecies-name-neoavali = Neo-Avali
 subspecies-name-neoarachnid = Neo-Arachnid
-
 # Starlight Species added after Neocytes
 subspecies-name-neoelf = Neo-Elf
 subspecies-name-neolagomorph = Neo-Lagomorph
+# Starlight, Neocyte species names moved to _Starlight/species/neocyte.ftl because they were all renamed. FH's IPC name remains here.
