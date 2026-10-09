@@ -1895,7 +1895,6 @@ namespace Content.Client.Lobby.UI
             {
                 return;
             }
-
             var hairMarking = Profile.Appearance.HairStyleId == HairStyles.DefaultHairStyle
                 ? new List<Marking>()
                 : new() { new(Profile.Appearance.HairStyleId, new List<Color>() { Profile.Appearance.HairColor }, Profile.Appearance.HairGlowing) };
