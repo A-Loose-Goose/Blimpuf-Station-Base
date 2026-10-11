@@ -151,14 +151,6 @@
     rules: ghost-role-information-nonantagonist-rules
     raffle:
       settings: short
-  - type: TypingIndicator
-    proto: slime
-  - type: NpcFactionMember
-    factions:
-    - SimpleNeutral
-  - type: HTN
-    rootTask:
-      task: SimpleHostileCompound
 
 - type: entity
   name: blue slime
@@ -248,12 +240,6 @@
           Base: yellow_adult_slime_dead
     - type: Bloodstream
       bloodReagentColor: "#f4e65a"
-    - type: MeleeWeapon
-      damage:
-        types:
-          Blunt: 6
-          Structural: 4
-          Caustic: 4
 
 - type: entity
   name: yellow slime
@@ -281,14 +267,10 @@
   components:
     # they portable...
     - type: GerasBall
-    - type: HTN
-      rootTask:
-        task: SimpleHostileCompound
     - type: MultiHandedItem
     - type: Item
       size: Huge
     - type: Sprite
-      sprite: Mobs/Aliens/slimes.rsi
       layers:
         - map: [ "enum.DamageStateVisualLayers.Base" ]
           state: gray_adult_slime
