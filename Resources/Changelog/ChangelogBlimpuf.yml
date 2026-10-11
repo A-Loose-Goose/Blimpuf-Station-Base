@@ -1068,5 +1068,12 @@ Entries:
   id: 18101
   time: '2026-10-09T10:55:32.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/181
+- author: Shimmers
+  changes:
+  - message: Add marking support for character imports from Delta-V.
+    type: Add
+  id: 18601
+  time: '2026-10-11T08:58:26.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/186
 Order: -1
 
