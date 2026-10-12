@@ -61,10 +61,6 @@
     {
       "name": "torso_m",
       "directions": 4
-    },
-    {
-      "name": "neck_fluff",
-      "directions": 4
     }
   ]
 }
