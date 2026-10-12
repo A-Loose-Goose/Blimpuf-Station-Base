@@ -72,13 +72,16 @@ public sealed partial class StealthSystem : SharedStealthSystem
     // Blimpuf Start
     private bool ShouldApplyStealth(StealthComponent component)
     {
-        if (component.AffectedEntities == null)
-            return true;
-
         var viewer = _player.LocalEntity;
 
         if (!viewer.HasValue)
             return false;
+
+        if (component.UnaffectedEntities != null && _whitelistSystem.IsWhitelistPass(component.UnaffectedEntities, viewer.Value))
+            return false;
+
+        if (component.AffectedEntities == null)
+            return true;
 
         return _whitelistSystem.IsWhitelistPass(component.AffectedEntities, viewer.Value);
     }

@@ -4,6 +4,7 @@ using Content.Shared.Stealth.Components;
 using Robust.Shared.GameStates;
 using Robust.Shared.Timing;
 using Content.Shared.Whitelist;
+using Robust.Shared.Physics;
 using Robust.Shared.Player;
 
 namespace Content.Shared.Stealth;
@@ -32,6 +33,9 @@ public abstract partial class SharedStealthSystem : EntitySystem
 
     private void OnExamineAttempt(EntityUid uid, StealthComponent component, ExamineAttemptEvent args)
     {
+        if (component.UnaffectedEntities != null && _whitelist.IsWhitelistPass(component.UnaffectedEntities, args.Examiner))
+            return;
+
         var affected = component.AffectedEntities == null || _whitelist.IsWhitelistPass(component.AffectedEntities, args.Examiner);
 
         if (!component.Enabled || GetVisibility(uid, component) > component.ExamineThreshold || !affected)
@@ -103,7 +107,7 @@ public abstract partial class SharedStealthSystem : EntitySystem
 
     private void OnStealthGetState(EntityUid uid, StealthComponent component, ref ComponentGetState args)
     {
-        args.State = new StealthComponentState(component.LastVisibility, component.LastUpdated, component.Enabled, component.AffectedEntities);
+        args.State = new StealthComponentState(component.LastVisibility, component.LastUpdated, component.Enabled, component.AffectedEntities, component.UnaffectedEntities);
     }
 
     private void OnStealthHandleState(EntityUid uid, StealthComponent component, ref ComponentHandleState args)
@@ -115,6 +119,7 @@ public abstract partial class SharedStealthSystem : EntitySystem
         component.LastVisibility = cast.Visibility;
         component.LastUpdated = cast.LastUpdated;
         component.AffectedEntities = cast.AffectedEntities;
+        component.UnaffectedEntities = cast.UnaffectedEntities;
     }
 
     private void OnMove(EntityUid uid, StealthOnMoveComponent component, ref MoveEvent args)

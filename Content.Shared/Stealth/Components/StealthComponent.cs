@@ -79,6 +79,12 @@ public sealed partial class StealthComponent : Component
     /// </summary>
     [DataField]
     public EntityWhitelist? AffectedEntities;
+
+    /// <summary>
+    /// Blimpuf edit - Entities with these components and tags can see the user no matter what
+    /// </summary>
+    [DataField]
+    public EntityWhitelist? UnaffectedEntities;
 }
 
 [Serializable, NetSerializable]
@@ -88,12 +94,14 @@ public sealed class StealthComponentState : ComponentState
     public readonly TimeSpan? LastUpdated;
     public readonly bool Enabled;
     public readonly EntityWhitelist? AffectedEntities;
+    public readonly EntityWhitelist? UnaffectedEntities;
 
-    public StealthComponentState(float stealthLevel, TimeSpan? lastUpdated, bool enabled, EntityWhitelist? affectedEntities)
+    public StealthComponentState(float stealthLevel, TimeSpan? lastUpdated, bool enabled, EntityWhitelist? affectedEntities, EntityWhitelist? unaffectedEntities)
     {
         Visibility = stealthLevel;
         LastUpdated = lastUpdated;
         Enabled = enabled;
         AffectedEntities = affectedEntities;
+        UnaffectedEntities = unaffectedEntities;
     }
 }

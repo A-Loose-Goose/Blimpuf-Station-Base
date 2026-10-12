@@ -36,6 +36,7 @@ using Content.Shared._Blimpuf.Changeling;
 using Content.Shared._Starlight.VentCrawl;
 using Content.Shared.Flash;
 using Content.Shared.Stealth;
+using Content.Shared.Tag;
 using Content.Shared.Whitelist;
 
 // Starlight edit end
@@ -549,6 +550,10 @@ public sealed partial class ChangelingSystem : EntitySystem
             stealth.AffectedEntities = new EntityWhitelist
             {
                 Components = new[] { "SiliconLawBound" }
+            };
+            stealth.UnaffectedEntities = new EntityWhitelist
+            {
+                Components = new[] { "Xenoborg" }
             };
             stealth.MinVisibility = -1;
             stealth.MaxVisibility = -1;
