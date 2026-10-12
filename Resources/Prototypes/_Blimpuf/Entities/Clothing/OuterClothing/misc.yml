@@ -42,3 +42,6 @@
         Heat: 0.75
         Caustic: 0.75
         Radiation: 0.75
+  - type: Contraband # Blimpuf
+    tier: Tier2
+    contrabandType: Syndicate

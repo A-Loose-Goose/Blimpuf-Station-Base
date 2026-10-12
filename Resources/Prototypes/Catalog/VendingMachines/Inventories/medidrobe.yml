@@ -52,8 +52,6 @@
     ClothingUniformJumpskirtOfLife: 1
     ClothingUniformJumpsuitOfLife: 1 # Starlight
     ClothingHeadNurseHatOfLife: 1 # Starlight
-    ClothingHeadHatSurgcapCybersun: 1 # DeltaV
-    UniformScrubsColorCybersun: 1 # DeltaV
     ToyFigurineMedicalDoctor: 1
     ToyFigurineParamedic: 1
     ToyFigurineChiefMedicalOfficer: 1
@@ -61,3 +59,4 @@
     ClothingHeadHatSyndie: 1 # Blimpuf
     ClothingOuterWinterSyndieCap: 1 # Blimpuf
     UniformScrubsColorCybersun: 1 # Blimpuf
+    ClothingHeadHatSurgcapCybersun: 1 # Blimpuf
