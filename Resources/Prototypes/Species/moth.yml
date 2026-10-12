@@ -34,7 +34,7 @@
     RLeg: MobMothRLeg
     LFoot: MobMothLFoot
     RFoot: MobMothRFoot
-    NeckFluff: MobMothNeckFluff
+    NeckFluff: MobHumanoidAnyMarking
 
 - type: humanoidBaseSprite
   id: MobMothEyes
@@ -172,9 +172,3 @@
   baseSprite:
     sprite: _Starfall/Mobs/Species/Lumari/parts.rsi
     state: r_foot
-
-- type: humanoidBaseSprite
-  id: MobMothNeckFluff
-  baseSprite:
-    sprite: _Starfall/Mobs/Species/Lumari/parts.rsi
-    state: neck_fluff
