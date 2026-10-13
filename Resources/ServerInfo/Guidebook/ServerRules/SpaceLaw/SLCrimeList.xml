@@ -1,9 +1,10 @@
 <Document>
   # Corporate Law: Crime Listing
   Colored cells in the Quick Crime Guide identify linked crime categories, which are collections of crimes whose sentences should not be combined.
+  Crime reference codes combine the tier number with the row code, such as 2-01 for Endangerment.
 
   ## Quick Crime Guide
-  <Table Columns="5">
+  <Table Columns="6">
     <ColorBox>
       <Box>
         Tier 1
@@ -27,6 +28,11 @@
     <ColorBox>
       <Box>
         Tier 5
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Code
       </Box>
     </ColorBox>
     <ColorBox Color="#704338">
@@ -56,6 +62,11 @@
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        00
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
       </Box>
     </ColorBox>
     <ColorBox Color="#743e43">
@@ -80,6 +91,11 @@
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        01
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
       </Box>
     </ColorBox>
     <ColorBox Color="#6b4b30">
@@ -100,6 +116,11 @@
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Prevention of Revival
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        02
       </Box>
     </ColorBox>
     <ColorBox Color="#655b2f">
@@ -127,6 +148,11 @@
         Treason
       </Box>
     </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        03
+      </Box>
+    </ColorBox>
     <ColorBox Color="#3e5a38">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Vandalism
@@ -150,6 +176,11 @@
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Terrorism
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        04
       </Box>
     </ColorBox>
     <ColorBox Color="#345773">
@@ -176,6 +207,11 @@
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
       </Box>
     </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        05
+      </Box>
+    </ColorBox>
     <ColorBox Color="#51446d">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Petty Theft
@@ -199,6 +235,11 @@
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
       </Box>
     </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        06
+      </Box>
+    </ColorBox>
     <ColorBox Color="#683f56">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Petty Fraud
@@ -220,6 +261,11 @@
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        07
       </Box>
     </ColorBox>
   </Table>
