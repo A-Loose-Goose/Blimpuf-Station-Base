@@ -158,6 +158,9 @@ marking-MothAntennasChitinidWeevil-weevil = Antennae
 marking-MothHeadBeetleHorn = Horn (Beetle Horn)
 marking-MothHeadBeetleHorn-mothbeetlehorn = Horn
 
+marking-MothAntennasTattered = Antennae (Tattered)
+marking-MothHeadBeetleHorn-tattered = Antennae
+
 marking-MothAntennaless = Antennaless
 marking-MothAntennaless-blank = Nothing
 
