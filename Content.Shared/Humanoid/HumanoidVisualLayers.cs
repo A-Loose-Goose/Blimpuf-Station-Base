@@ -9,6 +9,8 @@ namespace Content.Shared.Humanoid
         Special, // for the cat ears
         TailExtras, // Starlight
         Tail,
+        TailOverlay, // Aurora's Song
+        NeckFluff, // Aurora's Song
         Hair,
         FacialHair,
         UndergarmentTop,
@@ -32,8 +34,6 @@ namespace Content.Shared.Humanoid
         StencilMask,
         Ensnare,
         Fire,
-        NeckFluff, // Aurora's Song
-        TailOverlay, // Aurora's Song
 
         FaceCover, // Far Horizons
         FaceCoverCover, // Far Horizons
