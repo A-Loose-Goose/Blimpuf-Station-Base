@@ -63,3 +63,14 @@
     sprite: _Blimpuf/Clothing/Uniforms/Jumpskirt/scientist_syndie.rsi
   - type: Clothing
     sprite: _Blimpuf/Clothing/Uniforms/Jumpskirt/scientist_syndie.rsi
+
+- type: entity
+  parent: UniformScrubsColorCybersun
+  id: UniformScrubsSkirtColorCybersun
+  name: cybersun scrub skirt
+  description: The official uniform of Cybersun's biotechnology division.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Clothing/Uniforms/Jumpskirt/cybersun_scrub_skirt.rsi
+  - type: Clothing
+    sprite: _Blimpuf/Clothing/Uniforms/Jumpskirt/cybersun_scrub_skirt.rsi
