@@ -1075,5 +1075,12 @@ Entries:
   id: 18601
   time: '2026-10-11T08:58:26.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/186
+- author: Limerent-Sun
+  changes:
+  - message: Reworked Space Law. Yes, all of it.
+    type: Tweak
+  id: 19001
+  time: '2026-10-14T17:10:48.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/190
 Order: -1
 
