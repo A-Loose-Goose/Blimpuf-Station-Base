@@ -270,24 +270,24 @@
     </ColorBox>
   </Table>
 
-  ## Linked Crimes:
-  Crimes that are linked can not be charged together. For more information, refer to Sentencing.
+  ## Concurrent Sentences:
+  Certain crimes of a similar nature, listed below and indicated by sharing a colour on the Quick Crime Guide, should have their sentences carried out concurrently; their duration should not be added together. For more information, refer to Sentencing.
 
-  1. Failure to Comply, Breach of Arrest, Breach of Custody, Refusal of Mental Shielding
+  1. Contraband crimes of any tier.
 
-  2. Possession or Use of Minor Contraband, Major Contraband, or Significant Syndicate Contraband
+  2. Endangerment, Manslaughter, Murder, and Mass Murder.
 
-  3. Petty Theft, Grand Theft, and Armed Robbery
+  3. Assault and Major Assault.
 
-  4. Vandalism, Tampering with Machinery, Damage of Property, Destruction of Property, Mass Destruction, Terrorism
+  4. Disturbance, Rioting, and Sedition.
 
-  5. Trespass, Secure Trespass
+  5. Vandalism, Destruction of Property, and Mass Destruction.
 
-  6. Endangerment, Minor Assault, Major Assault, Manslaughter, Attempted Murder, Murder, Prevention of Revival, Mass Murder, Unlawful Execution
+  6. Tresspass and Secure Tresspass.
 
-  7. Disturbance, Vigilantism, Rioting
+  7. Petty Theft and Theft.
 
-  8. Sedition, Conspiracy, Treason
+  8. Petty Fraud and Fraud.
 
   # Full Crime List
   Sentence durations are indicated in minutes. W indicates a Warning, P indicates Permanent confinement, E indicates Execution.
