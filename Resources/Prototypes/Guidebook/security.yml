@@ -29,7 +29,6 @@
   text: "/ServerInfo/Guidebook/ServerRules/SpaceLaw/SpaceLaw.xml"
   children:
   - SpaceLawCrimeList
-  - SupernaturalEntities #Starlight
 
 - type: guideEntry
   id: SpaceLawCrimeList
