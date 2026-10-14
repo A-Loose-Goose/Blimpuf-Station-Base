@@ -35,27 +35,27 @@
         Code
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Handling Tier 1 Contraband
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Handling Tier 2 Contraband
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Handling Tier 3 Contraband
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Handling Tier 4 Contraband
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Handling Tier 5 Contraband
       </Box>
@@ -69,22 +69,22 @@
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
       </Box>
     </ColorBox>
-    <ColorBox Color="#743e43">
+    <ColorBox Color="#7c4b27">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Endangerment
       </Box>
     </ColorBox>
-    <ColorBox Color="#743e43">
+    <ColorBox Color="#7c4b27">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Manslaughter
       </Box>
     </ColorBox>
-    <ColorBox Color="#743e43">
+    <ColorBox Color="#7c4b27">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Murder
       </Box>
     </ColorBox>
-    <ColorBox Color="#743e43">
+    <ColorBox Color="#7c4b27">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Mass Murder
       </Box>
@@ -98,12 +98,12 @@
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
       </Box>
     </ColorBox>
-    <ColorBox Color="#6b4b30">
+    <ColorBox Color="#6e612b">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Assault
       </Box>
     </ColorBox>
-    <ColorBox Color="#6b4b30">
+    <ColorBox Color="#6e612b">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Major Assault
       </Box>
@@ -123,17 +123,17 @@
         02
       </Box>
     </ColorBox>
-    <ColorBox Color="#655b2f">
+    <ColorBox Color="#46643c">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Disturbance
       </Box>
     </ColorBox>
-    <ColorBox Color="#655b2f">
+    <ColorBox Color="#46643c">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Rioting
       </Box>
     </ColorBox>
-    <ColorBox Color="#655b2f">
+    <ColorBox Color="#46643c">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Sedition
       </Box>
@@ -153,12 +153,12 @@
         03
       </Box>
     </ColorBox>
-    <ColorBox Color="#3e5a38">
+    <ColorBox Color="#2e6464">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Vandalism
       </Box>
     </ColorBox>
-    <ColorBox Color="#3e5a38">
+    <ColorBox Color="#2e6464">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Destruction of Property
       </Box>
@@ -168,7 +168,7 @@
         Breach of Arrest
       </Box>
     </ColorBox>
-    <ColorBox Color="#3e5a38">
+    <ColorBox Color="#2e6464">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Mass Destruction
       </Box>
@@ -183,7 +183,7 @@
         04
       </Box>
     </ColorBox>
-    <ColorBox Color="#345773">
+    <ColorBox Color="#36577d">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Trespass
       </Box>
@@ -193,7 +193,7 @@
         Bribery
       </Box>
     </ColorBox>
-    <ColorBox Color="#345773">
+    <ColorBox Color="#36577d">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Secure Trespass
       </Box>
@@ -213,7 +213,7 @@
         05
       </Box>
     </ColorBox>
-    <ColorBox Color="#51446d">
+    <ColorBox Color="#4b4380">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Petty Theft
       </Box>
@@ -223,7 +223,7 @@
         Animal Cruelty
       </Box>
     </ColorBox>
-    <ColorBox Color="#51446d">
+    <ColorBox Color="#4b4380">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Grand Theft
       </Box>
@@ -241,12 +241,12 @@
         06
       </Box>
     </ColorBox>
-    <ColorBox Color="#683f56">
+    <ColorBox Color="#684578">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Petty Fraud
       </Box>
     </ColorBox>
-    <ColorBox Color="#683f56">
+    <ColorBox Color="#684578">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Fraud
       </Box>
@@ -313,92 +313,92 @@
         Description
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Contraband - Tier 1
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: W\nMax: 3
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Making, possessing or using Tier 1 classified contraband without authorization, such as a departmental uniform, potentially unsafe chemicals, or objects displaying corporations or ideas that NanoTrasen has deemed dangerous.
       </Box>
     </ColorBox>
-    <ColorBox Color="#655b2f">
+    <ColorBox Color="#46643c">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Disturbance
       </Box>
     </ColorBox>
-    <ColorBox Color="#655b2f">
+    <ColorBox Color="#46643c">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: W\nMax: 3
       </Box>
     </ColorBox>
-    <ColorBox Color="#655b2f">
+    <ColorBox Color="#46643c">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Exhibiting behaviour that is disruptive to productivity on NanoTrasen stations, such as public nudity, participating in disorderly gatherings, brawling, or inciting crime.
       </Box>
     </ColorBox>
-    <ColorBox Color="#3e5a38">
+    <ColorBox Color="#2e6464">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Vandalism
       </Box>
     </ColorBox>
-    <ColorBox Color="#3e5a38">
+    <ColorBox Color="#2e6464">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: W\nMax: 2
       </Box>
     </ColorBox>
-    <ColorBox Color="#3e5a38">
+    <ColorBox Color="#2e6464">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Deliberately defacing or destroying property, such as breaking another person’s belongings, graffiti, or construction on NanoTrasen property without authorization.
       </Box>
     </ColorBox>
-    <ColorBox Color="#345773">
+    <ColorBox Color="#36577d">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Trespass
       </Box>
     </ColorBox>
-    <ColorBox Color="#345773">
+    <ColorBox Color="#36577d">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: W\nMax: 2
       </Box>
     </ColorBox>
-    <ColorBox Color="#345773">
+    <ColorBox Color="#36577d">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Entering a non-secured area without permission, such as a station Kitchen or EVA room.
       </Box>
     </ColorBox>
-    <ColorBox Color="#51446d">
+    <ColorBox Color="#4b4380">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Petty Theft
       </Box>
     </ColorBox>
-    <ColorBox Color="#51446d">
+    <ColorBox Color="#4b4380">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: W\nMax: 3
       </Box>
     </ColorBox>
-    <ColorBox Color="#51446d">
+    <ColorBox Color="#4b4380">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Taking inexpensive or non-vital property belonging to a person or corporation without consent.
       </Box>
     </ColorBox>
-    <ColorBox Color="#683f56">
+    <ColorBox Color="#684578">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Petty Fraud
       </Box>
     </ColorBox>
-    <ColorBox Color="#683f56">
+    <ColorBox Color="#684578">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: W\nMax: 5
       </Box>
     </ColorBox>
-    <ColorBox Color="#683f56">
+    <ColorBox Color="#684578">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Deliberately acting with deception or misrepresentation for the purpose of personal enrichment.
       </Box>
@@ -425,77 +425,77 @@
         Description
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Contraband - Tier 2
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: W\nMax: 5
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Making, possessing or using Tier 2 classified contraband without authorization, such as a makeshift weapon, Security equipment, or extremely dangerous chemicals.
       </Box>
     </ColorBox>
-    <ColorBox Color="#743e43">
+    <ColorBox Color="#7c4b27">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Endangerment
       </Box>
     </ColorBox>
-    <ColorBox Color="#743e43">
+    <ColorBox Color="#7c4b27">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: 2\nMax: 5
       </Box>
     </ColorBox>
-    <ColorBox Color="#743e43">
+    <ColorBox Color="#7c4b27">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Recklessly endangering oneself or others through intentional or negligent actions, such as medical malpractice, industrial negligence, or failing to secure the health and safety of a prisoner in one’s custody.
       </Box>
     </ColorBox>
-    <ColorBox Color="#6b4b30">
+    <ColorBox Color="#6e612b">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Assault
       </Box>
     </ColorBox>
-    <ColorBox Color="#6b4b30">
+    <ColorBox Color="#6e612b">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: 1\nMax: 4
       </Box>
     </ColorBox>
-    <ColorBox Color="#6b4b30">
+    <ColorBox Color="#6e612b">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Exerting or threatening unlawful and non-consensual force against another person.
       </Box>
     </ColorBox>
-    <ColorBox Color="#655b2f">
+    <ColorBox Color="#46643c">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Rioting
       </Box>
     </ColorBox>
-    <ColorBox Color="#655b2f">
+    <ColorBox Color="#46643c">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: 2\nMax: 5
       </Box>
     </ColorBox>
-    <ColorBox Color="#655b2f">
+    <ColorBox Color="#46643c">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Participating in a large group creating an unlawful public disturbance. Riot leaders may also be charged with crimes committed under their leadership.
       </Box>
     </ColorBox>
-    <ColorBox Color="#3e5a38">
+    <ColorBox Color="#2e6464">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Destruction of Property
       </Box>
     </ColorBox>
-    <ColorBox Color="#3e5a38">
+    <ColorBox Color="#2e6464">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: 1\nMax: 5
       </Box>
     </ColorBox>
-    <ColorBox Color="#3e5a38">
+    <ColorBox Color="#2e6464">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Deliberately tampering with, damaging or destroying property or equipment, such as electronics, NanoTrasen silicons, or the walls or windows of a NanoTrasen station.
       </Box>
@@ -530,17 +530,17 @@
         Maliciously causing unnecessary harm or suffering to non-sapient creatures, excluding authorized animal testing and butchery.
       </Box>
     </ColorBox>
-    <ColorBox Color="#683f56">
+    <ColorBox Color="#684578">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Fraud
       </Box>
     </ColorBox>
-    <ColorBox Color="#683f56">
+    <ColorBox Color="#684578">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: 1\nMax: 6
       </Box>
     </ColorBox>
-    <ColorBox Color="#683f56">
+    <ColorBox Color="#684578">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Deliberately acting with deception or misrepresentation in official NanoTrasen or Central Command documentation, including perjury committed while under oath.
       </Box>
@@ -567,62 +567,62 @@
         Description
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Contraband - Tier 3
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: 3\nMax: 8
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Making, possessing or using Tier 3 classified contraband without authorization, such as a firearm, Command equipment, or chemicals whose use has been outlawed entirely.
       </Box>
     </ColorBox>
-    <ColorBox Color="#743e43">
+    <ColorBox Color="#7c4b27">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Manslaughter
       </Box>
     </ColorBox>
-    <ColorBox Color="#743e43">
+    <ColorBox Color="#7c4b27">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: 5\nMax: 10
       </Box>
     </ColorBox>
-    <ColorBox Color="#743e43">
+    <ColorBox Color="#7c4b27">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Killing of another sapient being without intent, including through negligence or self-defence.
       </Box>
     </ColorBox>
-    <ColorBox Color="#6b4b30">
+    <ColorBox Color="#6e612b">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Major Assault
       </Box>
     </ColorBox>
-    <ColorBox Color="#6b4b30">
+    <ColorBox Color="#6e612b">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: 2\nMax: 7
       </Box>
     </ColorBox>
-    <ColorBox Color="#6b4b30">
+    <ColorBox Color="#6e612b">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Exerting unlawful and non-consensual force against another person resulting in serious physical harm or with the use of a weapon.
       </Box>
     </ColorBox>
-    <ColorBox Color="#655b2f">
+    <ColorBox Color="#46643c">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Sedition
       </Box>
     </ColorBox>
-    <ColorBox Color="#655b2f">
+    <ColorBox Color="#46643c">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: 3\nMax: 10
       </Box>
     </ColorBox>
-    <ColorBox Color="#655b2f">
+    <ColorBox Color="#46643c">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Encouraging rebellion against station authority, including Command, Security, Central Command or NanoTrasen.
       </Box>
@@ -642,32 +642,32 @@
         Intentionally resisting and fleeing an active physical arrest or detention, including uncuffing someone or otherwise helping them escape an arrest.
       </Box>
     </ColorBox>
-    <ColorBox Color="#345773">
+    <ColorBox Color="#36577d">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Secure Trespass
       </Box>
     </ColorBox>
-    <ColorBox Color="#345773">
+    <ColorBox Color="#36577d">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: 2\nMax: 8
       </Box>
     </ColorBox>
-    <ColorBox Color="#345773">
+    <ColorBox Color="#36577d">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Entering a secured area without permission, such as the vault, chemistry lab, major station systems rooms, or any area secured by Security or Command access.
       </Box>
     </ColorBox>
-    <ColorBox Color="#51446d">
+    <ColorBox Color="#4b4380">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Grand Theft
       </Box>
     </ColorBox>
-    <ColorBox Color="#51446d">
+    <ColorBox Color="#4b4380">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: 2\nMax: 6
       </Box>
     </ColorBox>
-    <ColorBox Color="#51446d">
+    <ColorBox Color="#4b4380">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Taking critical or irreplaceable property without consent, including Command equipment, irreplaceable hardsuits and machine parts, and vehicles.
       </Box>
@@ -707,32 +707,32 @@
         Description
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Contraband - Tier 4
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: 4\nMax: 12
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Making, possessing or using Tier 4 classified contraband without authorization, such as equipment reserved for use exclusively by Central Command and NanoTrasen executive personnel, or military-grade weaponry and gear.
       </Box>
     </ColorBox>
-    <ColorBox Color="#743e43">
+    <ColorBox Color="#7c4b27">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Murder
       </Box>
     </ColorBox>
-    <ColorBox Color="#743e43">
+    <ColorBox Color="#7c4b27">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: 5\nMax: 15
       </Box>
     </ColorBox>
-    <ColorBox Color="#743e43">
+    <ColorBox Color="#7c4b27">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Maliciously killing a sapient being.
       </Box>
@@ -767,17 +767,17 @@
         Causing or allowing through negligence major financial losses, massive destruction of NanoTrasen property, or the negligent disclosure of NanoTrasen Corporate Secrets.
       </Box>
     </ColorBox>
-    <ColorBox Color="#3e5a38">
+    <ColorBox Color="#2e6464">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Mass Destruction
       </Box>
     </ColorBox>
-    <ColorBox Color="#3e5a38">
+    <ColorBox Color="#2e6464">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: 5\nMax: 10
       </Box>
     </ColorBox>
-    <ColorBox Color="#3e5a38">
+    <ColorBox Color="#2e6464">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Causing destruction of major station systems which endanger the lives and productivity of the crew, such as station power, chemistry, or atmospherics.
       </Box>
@@ -817,32 +817,32 @@
         Description
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Contraband - Tier 5
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: 10\nMax: E
       </Box>
     </ColorBox>
-    <ColorBox Color="#704338">
+    <ColorBox Color="#783541">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Making, possessing or using Tier 5 classified contraband that NanoTrasen has deemed to pose an existential threat to all life in the galaxy.
       </Box>
     </ColorBox>
-    <ColorBox Color="#743e43">
+    <ColorBox Color="#7c4b27">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Mass Murder
       </Box>
     </ColorBox>
-    <ColorBox Color="#743e43">
+    <ColorBox Color="#7c4b27">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Min: 20\nMax: E
       </Box>
     </ColorBox>
-    <ColorBox Color="#743e43">
+    <ColorBox Color="#7c4b27">
       <Box HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">
         Maliciously killing three or more sapient beings.
       </Box>
