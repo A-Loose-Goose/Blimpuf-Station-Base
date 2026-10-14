@@ -37,27 +37,27 @@
     </ColorBox>
     <ColorBox Color="#704338">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Contraband - Tier 1
+        Handling Tier 1 Contraband
       </Box>
     </ColorBox>
     <ColorBox Color="#704338">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Contraband - Tier 2
+        Handling Tier 2 Contraband
       </Box>
     </ColorBox>
     <ColorBox Color="#704338">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Contraband - Tier 3
+        Handling Tier 3 Contraband
       </Box>
     </ColorBox>
     <ColorBox Color="#704338">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Contraband - Tier 4
+        Handling Tier 4 Contraband
       </Box>
     </ColorBox>
     <ColorBox Color="#704338">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Contraband - Tier 5
+        Handling Tier 5 Contraband
       </Box>
     </ColorBox>
     <ColorBox>
@@ -289,9 +289,11 @@
 
   8. Sedition, Conspiracy, Treason
 
-  ## Minor Crimes
-  Those who commit a minor crime should be issued a warning for their first offense, however repeat offenses are cumulative and should result in jail time of up to 5 minutes per minor crime committed.
-  <Table Columns="2">
+  ## Tier 1
+  Tier 1 crimes are typically minor misbehaviours that can be disruptive to a safe and productive workplace environment. First-time offenders are recommended to be issued a stern warning so that they may promptly resume work.
+
+  Fines for tier 1 crimes are not to exceed a maximum of 30 credits.
+  <Table Columns="3">
     <ColorBox>
       <Box>
         Offense
@@ -299,84 +301,111 @@
     </ColorBox>
     <ColorBox>
       <Box>
+        Sentence
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
         Description
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#704338">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Animal Cruelty
+        Contraband - Tier 1
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#704338">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To inflict unnecessary suffering or harm on a non-sentient being with malicious intent. This does not include legitimate and authorized animal testing, or the butchering of livestock for meat. This also does not extend to vermin, or hostile creatures.
+        Min: Warning\nMax: 3 minutes
       </Box>
     </ColorBox>
-    <ColorBox Color="#2f3832">
+    <ColorBox Color="#704338">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Possession or Use of Minor Contraband
+        Making, possessing or using Tier 1 classified contraband without authorization, such as a departmental uniform, potentially unsafe chemicals, or objects displaying corporations or ideas that NanoTrasen has deemed dangerous.
       </Box>
     </ColorBox>
-    <ColorBox Color="#2f3832">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To make, hold, or use minor contraband without authorization. Authorization may only be granted by the Warden, the Head of Security, or the Captain.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#2e422e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Petty Theft
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#2e422e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      	To take non-vital or inexpensive property of another individual, organization, or common property, without consent. Theft of safety or medical equipment such as breath masks, air tanks, or necessary mobility aids are considered vital, and exceed petty theft.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#453a59">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Vandalism
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#453a59">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      	To intentionally deface or superficially damage public or private property. Examples include graffiti, smashing glasses or windows, excessively littering, and excessively producing spills. Art or construction with an appropriate permit is not vandalism.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#59563a">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Trespass
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#59563a">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Trespass - To enter a non-secured area without permission, such as climbing over counters to enter employee areas like the Bar or Kitchen.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#3b4354">
+    <ColorBox Color="#655b2f">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Disturbance
       </Box>
     </ColorBox>
-    <ColorBox Color="#3b4354">
+    <ColorBox Color="#655b2f">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To cause a public disturbance. This is the catch-all for excessive obnoxious behavior, and includes public nudity, harassment, inciting crime, repeated and intentional misgendering, and disruption of authorities or communications.
+        Min: Warning\nMax: 3 minutes
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#655b2f">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Impersonation and Fraud
+        Exhibiting behaviour that is disruptive to productivity on NanoTrasen stations, such as public nudity, participating in disorderly gatherings, brawling, or inciting crime.
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#3e5a38">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To pretend to be someone you are not, or attempting to commit fraud in any fashion. Impersonation may be elevated to a Moderate crime if the perpetrator is impersonating a member of Security, or a Major crime if they are impersonating a member of Command or Central Command.
+        Vandalism
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#3e5a38">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Min: Warning\nMax: 2 minutes
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#3e5a38">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Deliberately defacing or destroying property, such as breaking another person’s belongings, graffiti, or construction on NanoTrasen property without authorization.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#345773">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Trespass
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#345773">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Min: Warning\nMax: 2 minutes
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#345773">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Entering a non-secured area without permission, such as a station Kitchen or EVA room.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#51446d">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Petty Theft
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#51446d">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Min: Warning\nMax: 3 minutes
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#51446d">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Taking inexpensive or non-vital property belonging to a person or corporation without consent.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#683f56">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Petty Fraud
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#683f56">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Min: Warning\nMax: 5 minutes
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#683f56">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Deliberately acting with deception or misrepresentation for the purpose of personal enrichment.
       </Box>
     </ColorBox>
   </Table>
 
-  ## Moderate Crimes
-  Those who commit a moderate crime should receive up to a 5 minute sentence per moderate crime committed.
-  <Table Columns="2">
+  ## Tier 2
+  Tier 2 crimes are typically major disturbances that may pose a danger to the health, safety, and productivity of NanoTrasen employees and property. Verbal warnings and deescalations are still recommended for dealing with Tier 2 crimes, depending on circumstance.
+
+  Fines for tier 2 crimes are not to exceed a maximum of 100 credits.
+  <Table Columns="3">
     <ColorBox>
       <Box>
         Offense
@@ -384,67 +413,87 @@
     </ColorBox>
     <ColorBox>
       <Box>
+        Sentence
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
         Description
       </Box>
     </ColorBox>
-    <ColorBox Color="#593a4e">
+    <ColorBox Color="#704338">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Failure to Comply
+        Contraband - Tier 2
       </Box>
     </ColorBox>
-    <ColorBox Color="#593a4e">
+    <ColorBox Color="#704338">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To resist reasonable orders given by an authority. This includes lawful detainment and authorized searches. Officers are required to warn the individual before resorting to arrest.
+        Min: Warning\nMax: 5 minutes
       </Box>
     </ColorBox>
-    <ColorBox Color="#2f3832">
+    <ColorBox Color="#704338">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Possession/Use of Major Contraband
+        Making, possessing or using Tier 2 classified contraband without authorization, such as a makeshift weapon, Security equipment, or extremely dangerous chemicals.
       </Box>
     </ColorBox>
-    <ColorBox Color="#2f3832">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To make, hold, or use major contraband without authorization. Authorization may only be granted by the Warden, the Head of Security, or the Captain. Any items restricted to a Department or Job are considered major contraband.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#453a59">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Tampering with Machinery
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#453a59">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To tamper with a machine such as cutting wires or modifying their functions. Includes but is not limited to; consoles, airlocks, and Silicons.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#453a59">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Damage of Property
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#453a59">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To maliciously damage or deface public or private property or equipment. This includes equipment vendors, drink dispensers, computers, and machinery such as lathes.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox Color="#743e43">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Endangerment
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox Color="#743e43">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To recklessly put yourself or others in danger, either through direct action or failure to act. This includes negligence, accidents, medical malpractice, destruction or impairment of safety features such as firelocks and exterior windows, and reckless piloting of shuttles.
+        Min: 2 minutes\nMax: 5 minutes
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox Color="#743e43">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Minor Assault
+        Recklessly endangering oneself or others through intentional or negligent actions, such as medical malpractice, industrial negligence, or failing to secure the health and safety of a prisoner in one’s custody.
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox Color="#6b4b30">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To assault another without a weapon and without causing serious injury. Serious injury is defined as any life altering injury such as loss of limb, damage to the eyes or ears, or any other damages measured by a Health Analyzer to be exceeding 30 total.
+        Assault
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#6b4b30">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Min: 1 minute\nMax: 4 minutes
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#6b4b30">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Exerting or threatening unlawful and non-consensual force against another person.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#655b2f">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Rioting
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#655b2f">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Min: 2 minutes\nMax: 5 minutes
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#655b2f">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Participating in a large group creating an unlawful public disturbance. Riot leaders may also be charged with crimes committed under their leadership.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#3e5a38">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Destruction of Property
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#3e5a38">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Min: 1 minute\nMax: 5 minutes
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#3e5a38">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Deliberately tampering with, damaging or destroying property or equipment, such as electronics, NanoTrasen silicons, or the walls or windows of a NanoTrasen station.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -454,24 +503,51 @@
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To attempt or succeed to bribe officials to be derelict of their duties or commit a crime with any payment including but not limited to; Services, favors, spesos, credits, materials, or items of any kind. This also applies to anyone caught accepting a bribe, and is cumulative with whatever crime they were bribed to commit.
+        Min: 2 minutes\nMax: 4 minutes
       </Box>
     </ColorBox>
-    <ColorBox Color="#3b4354">
+    <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Vigilantism
+        Offering or accepting payment, services, favours or other benefits to make an official neglect their duties or commit a crime. Covers attempted as well as successful bribery.
       </Box>
     </ColorBox>
-    <ColorBox Color="#3b4354">
+    <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To attempt to unlawfully enforce Corporate Law without vested authority. See: Enforcement of the Law.
+        Animal Cruelty
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Min: Warning\nMax: 5 minutes
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Maliciously causing unnecessary harm or suffering to non-sapient creatures, excluding authorized animal testing and butchery.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#683f56">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Fraud
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#683f56">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Min: 1 minute\nMax: 6 minutes
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#683f56">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Deliberately acting with deception or misrepresentation in official NanoTrasen or Central Command documentation, including perjury committed while under oath.
       </Box>
     </ColorBox>
   </Table>
 
-  ## Major Crimes
-  Those who commit a major crime should receive up to 10 minutes of jail time per major crime committed. Major assault and manslaughter are linked crimes and do not stack against a suspect.
-  <Table Columns="2">
+  ## Tier 3
+  Tier 3 crimes are those which escalate well beyond any reasonable verbal deescalation, and Security are encouraged to use force to resolve ongoing situations.
+
+  Fines for tier 3 crimes are not to exceed a maximum of 500 credits.
+  <Table Columns="3">
     <ColorBox>
       <Box>
         Offense
@@ -479,182 +555,182 @@
     </ColorBox>
     <ColorBox>
       <Box>
+        Sentence
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
         Description
       </Box>
     </ColorBox>
-    <ColorBox Color="#475c7d">
+    <ColorBox Color="#704338">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Conspiracy
+        Contraband - Tier 3
       </Box>
     </ColorBox>
-    <ColorBox Color="#475c7d">
+    <ColorBox Color="#704338">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To conspire or plan to commit a moderate or major crime with reasonable evidence that the suspect was going to go through with the plan. This would include declaring they are going to commit a crime.
+        Min: 3 minutes\nMax: 8 minutes
       </Box>
     </ColorBox>
-    <ColorBox Color="#2e422e">
+    <ColorBox Color="#704338">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Armed Robbery
+        Making, possessing or using Tier 3 classified contraband without authorization, such as a firearm, Command equipment, or chemicals whose use has been outlawed entirely.
       </Box>
     </ColorBox>
-    <ColorBox Color="#2e422e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To steal something with the threat of violence using anything that can be considered a weapon, whether or not the weapon is contraband or not. This can include knives, toolboxes, crowbars, or any number of other improvised weaponry. There must be an active threat of violence, or the implication of violence if the victim does not comply, in order to be considered armed robbery.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#475c7d">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Sedition
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#475c7d">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      	To incite rebellion against the authority of the station including but not limited to; Command, Security, Central Command, or Nanotrasen.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-       Perjury
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-     	  To intentionally lie under oath or make a false statement in a written document
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Forgery
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To forge a written document through illicit means, such as rewriting a stamped document, unauthorized use of an official stamp, or any other means.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#593a4e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Breach of Arrest
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#593a4e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        	To intentionally resist and flee arrest or detainment by an authorized staff. This only applies if someone is actively being physically arrested. People uncuffing or assisting others out of an arrest can also be charged with this. Breach of custody is a separate crime.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#2e422e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Grand Theft
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#2e422e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      	To take critical or irreplaceable property of another individual or organization without consent. This includes command items such as door remotes, hardsuits, machine parts, and hijacking a department shuttle.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#2e422e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-       Destruction of Property
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      	To destroy the property of another or the station. This includes but is not limited to work consoles, airlocks, and destroying or critically damaging a Cyborg's chassis.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#59563a">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Secure Trespass
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#59563a">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-       To enter a secured area without permission. If the area is behind a locked door, it is secure trespass. This includes non-public department spaces and especially security areas, command areas, the vault, and the armory.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-       Major Assault
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      	To assault another with a weapon or unarmed assault resulting in serious injury. Serious injury is defined as any life altering injury such as loss of limb, damage to the eyes or ears, or any other damages measured by a Health Analyzer to be exceeding 30 total.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox Color="#743e43">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Manslaughter
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox Color="#743e43">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      	To incidentally kill a sentient humanoid without intent. This includes manslaughter in self-defense and negligent manslaughter.
+        Min: 5 minutes\nMax: 10 minutes
       </Box>
     </ColorBox>
-    <ColorBox Color="#3b4354">
+    <ColorBox Color="#743e43">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Rioting
+        Killing of another sapient being without intent, including through negligence or self-defence.
       </Box>
     </ColorBox>
-    <ColorBox Color="#3b4354">
+    <ColorBox Color="#6b4b30">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To participate in a large group of personnel creating an unlawful public disturbance. Leaders of a riot may be charged with all the crimes committed under their lead, plus sedition.
+        Major Assault
       </Box>
     </ColorBox>
-  </Table>
-
-  ## Extreme Crimes
-  Those who commit an extreme crime may receive up to 20 minutes of jail time per extreme crime committed. Particularly violent offenders may be placed in perma. Attempted murder and murder are linked crimes and cannot be stacked together.
-  <Table Columns="2">
+    <ColorBox Color="#6b4b30">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Min: 2 minutes\nMax: 7 minutes
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#6b4b30">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Exerting unlawful and non-consensual force against another person resulting in serious physical harm or with the use of a weapon.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#655b2f">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Sedition
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#655b2f">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Min: 3 minutes\nMax: 10 minutes
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#655b2f">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Encouraging rebellion against station authority, including Command, Security, Central Command or NanoTrasen.
+      </Box>
+    </ColorBox>
     <ColorBox>
-      <Box>
-        Offense
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Breach of Arrest
       </Box>
     </ColorBox>
     <ColorBox>
-      <Box>
-        Description
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Min: 2 minutes\nMax: 8 minutes
       </Box>
     </ColorBox>
-    <ColorBox Color="#593a4e">
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Intentionally resisting and fleeing an active physical arrest or detention, including uncuffing someone or otherwise helping them escape an arrest.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#345773">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Secure Trespass
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#345773">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Min: 2 minutes\nMax: 8 minutes
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#345773">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Entering a secured area without permission, such as the vault, chemistry lab, major station systems rooms, or any area secured by Security or Command access.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#51446d">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Grand Theft
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#51446d">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Min: 2 minutes\nMax: 6 minutes
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#51446d">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Taking critical or irreplaceable property without consent, including Command equipment, irreplaceable hardsuits and machine parts, and vehicles.
+      </Box>
+    </ColorBox>
+    <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Breach of Custody
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To break out of a cell or custody with the intention of escaping. This applies to people breaking others out. Repeat offenses may have this charge increased to permanent confinement and later elevated to an execution with the Captain's authority only if the suspect has repeatedly committed breach of custody. Breach of custody for the preservation of life, not including to escape execution, such as to vacate a location made dangerous due to gunfire, fire, spacing, or lack of oxygen- may be reduced or ignored at the Warden or Head of Security's discretion.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#2f3832">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Possession or Use of Significant Syndicate Contraband
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#2f3832">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To make, hold, or use Significant Syndicate contraband. Significant Syndicate contraband may only be used in emergencies, and only to prevent death or gross bodily harm. Significant Syndicate contraband is any Syndicate contraband that can be used to hinder the station or aid it's enemies in an obvious way. Any syndicate contraband that does not meet this definition is to be considered minor contraband.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#2e422e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Corporate Disturbance
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#2e422e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      	Causing notable losses, damages, or disruption to other corporations. As Central Command and NanoTrasen would be liable for these actions, they are treated severely. This includes theft of equipment or shuttles belonging to outside corporations, and the Automated Trade Station.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#2e422e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-       Mass Destruction
+        Min: 3 minutes\nMax: 10 minutes
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      	To cause massive damage to an area or major station system. This includes major bombings and sabotage of critical station systems like power, medical, chemistry, substations, and atmospherics.
+        Escaping a cell or security custody, or helping someone else escape.
+      </Box>
+    </ColorBox>
+  </Table>
+
+  ## Tier 4
+  Tier 4 crimes cover breaches of Space Law that are so violent or egregious in nature that additional punitive measures such as dismissal, implantation, and security supervision should be considered alongside any imprisonment or fine.
+  <Table Columns="3">
+    <ColorBox>
+      <Box>
+        Offense
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Sentence
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
+        Description
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#704338">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Contraband - Tier 4
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#704338">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Min: 4 minutes\nMax: 12 minutes
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#704338">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Making, possessing or using Tier 4 classified contraband without authorization, such as equipment reserved for use exclusively by Central Command and NanoTrasen executive personnel, or military-grade weaponry and gear.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#743e43">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Murder
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#743e43">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Min: 5 minutes\nMax: 15 minutes
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#743e43">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Maliciously killing a sapient being.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -664,37 +740,42 @@
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To unlawfully restrain, transport, control, or confine a sentient humanoid being against that individual's will. This is a catchall to cover any form of kidnapping or forced control.
+        Min: 4 minutes\nMax: 13 minutes
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Attempted Murder
+        Unlawfully restraining, transporting, controlling or confining a sapient being against their will, including by forcefully altering their cognition.
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To make an attempt to end someone's life, using physical force or otherwise. Proof that action was taken with the intent to kill is necessary, such as a lethal weapon being used.
+        Corporate Negligence
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Murder
+        Min: 5 minutes\nMax: Permanent
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To kill a sentient humanoid with malicious intent. If the victim must be revived, it is murder and not attempted murder.
+        Causing or allowing through negligence major financial losses, massive destruction of NanoTrasen property, or the negligent disclosure of NanoTrasen Corporate Secrets.
       </Box>
     </ColorBox>
-    <ColorBox Color="#475c7d">
+    <ColorBox Color="#3e5a38">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Treason
+        Mass Destruction
       </Box>
     </ColorBox>
-    <ColorBox Color="#475c7d">
+    <ColorBox Color="#3e5a38">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To willfully betray allegiances to NanoTrasen. This includes collaborating with terrorists, and especially applies to members of Command attempting to illegally forsake their duties to the detriment of the Station and NanoTrasen.
+        Min: 5 minutes\nMax: 10 minutes
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#3e5a38">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Causing destruction of major station systems which endanger the lives and productivity of the crew, such as station power, chemistry, or atmospherics.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -704,14 +785,19 @@
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To consume any part of a sentient humanoid. Consumption of vital components should be treated more harshly. This can be charged on top of other charges such as Murder or Assault if the suspect committed these crimes to obtain the parts consumed.
+        Min: 4 minutes\nMax: 8 minutes
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Knowingly consuming any part of a sapient being as food.
       </Box>
     </ColorBox>
   </Table>
 
-  ## Capital Crimes
-  Those who commit a capital crime should be detained in perma with confirmation from Captain. If a capital criminal escapes they are to be executed and transported to CC in a body bag at the end of shift. Emergency executions may be enacted by Captain or the Head of Security with at least 3 other Command as witnesses, but must be reported directly to Central Command afterwards for review.
-  <Table Columns="2">
+  ## Tier 5
+  Tier 5 crimes are considered major affronts to NanoTrasen itself, and executions for such crimes may be approved by a Magistrate or Captain without approval of Central Command. Detailed reports on those convicted of Tier 5 crimes should be delivered to a Central Department of Security and Welfare member during post-shift debriefing.
+  <Table Columns="3">
     <ColorBox>
       <Box>
         Offense
@@ -719,57 +805,87 @@
     </ColorBox>
     <ColorBox>
       <Box>
+        Sentence
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box>
         Description
       </Box>
     </ColorBox>
-    <ColorBox Color="#593a4e">
+    <ColorBox Color="#704338">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Refusal of Mental Shielding
+        Contraband - Tier 5
       </Box>
     </ColorBox>
-    <ColorBox Color="#593a4e">
+    <ColorBox Color="#704338">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To refuse to comply with a reasonable Mind Shielding procedure. Applies if the suspect is excessively uncooperative or the implant fails to function due to the mental state of the prisoner being too far gone. [bold]If the implant fails, execution is heavily recommended and may be approved by the Captain or Central Command. See Implantation for more.[/bold]
+        Min: 10 minutes\nMax: Execution
       </Box>
     </ColorBox>
-    <ColorBox Color="#2e422e">
+    <ColorBox Color="#704338">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Terrorism
+        Making, possessing or using Tier 5 classified contraband that NanoTrasen has deemed to pose an existential threat to all life in the galaxy.
       </Box>
     </ColorBox>
-    <ColorBox Color="#2e422e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      	To engage in malicious destructive actions which threaten to destroy or successfully destroy a vessel, habitat, or station. This includes extreme sabotage of station systems or setting off the self-destruction systems.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Unlawful Execution
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To unlawfully execute an individual without authorization or outside of Standard Operating Procedure. This law is distinct from murder, and applies primarily to Security, Command, and Central Command forces such as Emergency Response Teams.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Prevention of Revival
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To render a body un-resurrectable. This includes gibbing, throwing a body into space, intentionally hiding a body, unlawfully incinerating a body, or any other ways of preventing a body with a soul from being resurrected.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox Color="#743e43">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Mass Murder
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox Color="#743e43">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To kill three or more sentient humanoids with malicious intent. This only applies when there have been multiple killings with intention.
+        Min: 20 minutes\nMax: Execution
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#743e43">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Maliciously killing three or more sapient beings.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Prevention of Revival
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Min: 15 minutes\nMax: Execution
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Making a body impossible to revive, including destroying it, spacing it, deliberately hiding it, unlawfully incinerating it, or otherwise preventing revival of a body with a soul.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Treason
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Min: Permanent\nMax: Execution
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Participating in any activity that endangers the authority, safety, and sovereignty of NanoTrasen, such as providing aid to a terrorist, deliberately exposing NanoTrasen Corporate Secrets, or denouncing NanoTrasen as a sworn member of Command or Central Command.
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Terrorism
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Min: Permanent\nMax: Execution
+      </Box>
+    </ColorBox>
+    <ColorBox>
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Malicious destruction that threatens to destroy, or actually destroys, NanoTrasen stations and settlements, including extreme systems sabotage or any attempt to activate a station’s self-destruct mechanism.
       </Box>
     </ColorBox>
   </Table>
