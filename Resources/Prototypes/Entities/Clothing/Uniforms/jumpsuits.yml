@@ -855,7 +855,6 @@
   components:
   - type: Contraband # Blimpuf
     tier: Tier2
-    contrabandType: Syndicate
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/operative.rsi
   - type: Clothing
