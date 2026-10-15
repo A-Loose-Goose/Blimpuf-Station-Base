@@ -10,3 +10,4 @@ guide-entry-blimpuf-rule-8 = 8. Properly use LOOC during the round.
 guide-entry-blimpuf-rule-9 = 9. No Metagaming
 guide-entry-blimpuf-rule-10 = 10. SSD/AFK Rules
 guide-entry-blimpuf-rule-11 = 11. No Griefing, Bug Abuse or Exploits
+guide-entry-blimpuf-metashield = Metashield

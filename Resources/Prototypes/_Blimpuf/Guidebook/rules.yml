@@ -16,6 +16,7 @@
   - BlimpufRule9
   - BlimpufRule10
   - BlimpufRule11
+  - BlimpufMetashield
 
 - type: guideEntry
   id: BlimpufRule1
@@ -93,3 +94,10 @@
   ruleEntry: true
   priority: 11
   text: "/ServerInfo/_Blimpuf/Guidebook/ServerRules/RuleGriefing.xml"
+
+- type: guideEntry
+  id: BlimpufMetashield
+  name: guide-entry-blimpuf-metashield
+  ruleEntry: true
+  priority: 12
+  text: "/ServerInfo/_Blimpuf/Guidebook/ServerRules/Metashield.xml"
