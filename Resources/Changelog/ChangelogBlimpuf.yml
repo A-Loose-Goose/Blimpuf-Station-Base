@@ -1082,5 +1082,12 @@ Entries:
   id: 19001
   time: '2026-10-14T17:10:48.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/190
+- author: Shimmers
+  changes:
+  - message: Corrected various minor Guidebook discrepancies.
+    type: Fix
+  id: 19101
+  time: '2026-10-15T13:57:18.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/191
 Order: -1
 
