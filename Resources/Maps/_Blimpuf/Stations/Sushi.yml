@@ -4,7 +4,7 @@ meta:
   engineVersion: 277.0.0
   forkId: ""
   forkVersion: ""
-  time: 09/20/2026 20:23:00
+  time: 10/15/2026 01:23:05
   entityCount: 25299
 maps:
 - 1
@@ -119037,6 +119037,13 @@ entities:
     - type: Transform
       pos: 124.5,32.5
       parent: 2
+    - type: StationAiCore
+      lawConsole: 17986
+    - type: DeviceLinkSource
+      linkedPorts:
+        17986:
+        - - AiLawConsoleSender
+          - AiLawConsoleReceiver
 - proto: Plunger
   entities:
   - uid: 17368
@@ -137900,6 +137907,11 @@ entities:
       rot: 3.141592653589793 rad
       pos: 124.5,29.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - ResearchDirector
+    - type: SiliconLawUpdater
+      core: 17367
 - proto: StationAnchor
   entities:
   - uid: 20273
