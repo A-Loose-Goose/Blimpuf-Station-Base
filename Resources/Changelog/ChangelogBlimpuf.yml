@@ -1104,5 +1104,15 @@ Entries:
   id: 18801
   time: '2026-10-15T18:51:24.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/188
+- author: OmgDev
+  changes:
+  - message: Smile and other slime-kin can also Squish, Pop, and Bubble!
+    type: Add
+  - message: Added an option to SpeechComponent that allows entities to opt-in to
+      vocal emotes rather then having to blacklist global ones!
+    type: Tweak
+  id: 19701
+  time: '2026-10-16T08:42:52.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/197
 Order: -1
 
