@@ -157,7 +157,7 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
             BreakOnDamage = true,
             NeedHand = true,
             BreakOnWeightlessMove = true,
-            BlockDuplicate = false,
+            BlockDuplicate = true,
             CancelDuplicate = false
         };
 
