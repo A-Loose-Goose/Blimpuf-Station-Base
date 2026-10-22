@@ -88,7 +88,7 @@
     <GuideEntityEmbed Entity="WeaponAntiqueLaser" Caption=""/>
     <GuideEntityEmbed Entity="JetpackCaptainFilled" Caption=""/>
   </Box>
-  - Researching the [color=#5b97bc]Chief Medical Officer[/color]'s [bold]hypospray[/bold] or [bold]handheld crew monitor[/bold].
+  - Researching the [color=#5b97bc]Chief Medical Officer[/color]'s [bold]hypospray[/bold].
   <Box>
     <GuideEntityEmbed Entity="Hypospray" Caption=""/>
   </Box>
