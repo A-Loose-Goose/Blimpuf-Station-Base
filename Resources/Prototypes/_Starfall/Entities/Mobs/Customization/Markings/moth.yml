@@ -2607,7 +2607,7 @@
 - type: marking
   id: MothHeadChitinidWeevil
   bodyPart: Snout
-  speciesRestriction: Moth # FH
+  speciesRestriction: [Moth] # FH
   sprites:
   - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
     state: weevil_head
@@ -2616,7 +2616,7 @@
 - type: marking
   id: MothHeadBeak
   bodyPart: Snout
-  speciesRestriction: Moth # FH
+  speciesRestriction: [Moth] # FH
   sprites:
   - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
     state: beak
@@ -2625,7 +2625,7 @@
 - type: marking
   id: MothHeadFangs
   bodyPart: Snout
-  speciesRestriction: Moth # FH
+  speciesRestriction: [Moth] # FH
   sprites:
   - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
     state: fangs
