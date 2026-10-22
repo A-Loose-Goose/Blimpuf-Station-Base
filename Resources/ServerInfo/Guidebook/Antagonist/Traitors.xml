@@ -82,7 +82,7 @@
   You can buy as many of these as you want for free, so don't worry about losing it. This is still [color=red]Contraband[/color] though, and will get you arrested by Security if you're caught with it and gives your affiliation away, so be careful!
 
   Some of the things you may be tasked to research might include:
-  - Researching the [color=yellow]Captain[/color]'s [bold]ID Card[/bold], [bold]antique laser pistol[/bold], [bold]jetpack[/bold], or [bold]nuclear authentication disk[/bold].
+  - Researching the [color=yellow]Captain[/color]'s [bold]ID Card[/bold], [bold]antique laser pistol[/bold], or [bold]jetpack[/bold].
   <Box>
     <GuideEntityEmbed Entity="CaptainIDCard" Caption=""/>
     <GuideEntityEmbed Entity="WeaponAntiqueLaser" Caption=""/>
